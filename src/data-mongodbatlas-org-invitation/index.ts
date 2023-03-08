@@ -54,7 +54,7 @@ export class DataMongodbatlasOrgInvitation extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_org_invitation',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

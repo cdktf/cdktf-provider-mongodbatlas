@@ -128,6 +128,11 @@ export class DataMongodbatlasServerlessInstancesResultsOutputReference extends c
     }
   }
 
+  // connection_strings_private_endpoint_srv - computed: true, optional: false, required: false
+  public get connectionStringsPrivateEndpointSrv() {
+    return this.getListAttribute('connection_strings_private_endpoint_srv');
+  }
+
   // connection_strings_standard_srv - computed: true, optional: false, required: false
   public get connectionStringsStandardSrv() {
     return this.getStringAttribute('connection_strings_standard_srv');
@@ -240,7 +245,7 @@ export class DataMongodbatlasServerlessInstances extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_serverless_instances',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -314,7 +314,7 @@ export class DataMongodbatlasOnlineArchives extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_online_archives',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

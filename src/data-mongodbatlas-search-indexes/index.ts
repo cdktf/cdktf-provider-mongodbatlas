@@ -218,6 +218,11 @@ export class DataMongodbatlasSearchIndexesResultsOutputReference extends cdktf.C
   public get synonyms() {
     return this._synonyms;
   }
+
+  // wait_for_index_build_completion - computed: true, optional: false, required: false
+  public get waitForIndexBuildCompletion() {
+    return this.getBooleanAttribute('wait_for_index_build_completion');
+  }
 }
 
 export class DataMongodbatlasSearchIndexesResultsList extends cdktf.ComplexList {
@@ -265,7 +270,7 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_search_indexes',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

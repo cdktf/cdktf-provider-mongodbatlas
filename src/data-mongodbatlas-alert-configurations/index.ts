@@ -833,7 +833,7 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_alert_configurations',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -50,7 +50,7 @@ export class PrivateIpMode extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_private_ip_mode',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

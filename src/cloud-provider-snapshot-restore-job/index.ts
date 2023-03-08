@@ -318,7 +318,7 @@ export class CloudProviderSnapshotRestoreJob extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cloud_provider_snapshot_restore_job',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
