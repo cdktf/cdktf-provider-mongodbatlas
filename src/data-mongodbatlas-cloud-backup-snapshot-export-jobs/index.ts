@@ -317,7 +317,7 @@ export class DataMongodbatlasCloudBackupSnapshotExportJobs extends cdktf.Terrafo
       terraformResourceType: 'mongodbatlas_cloud_backup_snapshot_export_jobs',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

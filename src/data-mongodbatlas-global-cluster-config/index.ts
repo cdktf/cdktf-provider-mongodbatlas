@@ -252,7 +252,7 @@ export class DataMongodbatlasGlobalClusterConfig extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_global_cluster_config',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -183,7 +183,7 @@ export class MongodbatlasProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'mongodbatlas',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       terraformProviderSource: 'mongodb/mongodbatlas'

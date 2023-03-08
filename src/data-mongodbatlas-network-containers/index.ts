@@ -169,7 +169,7 @@ export class DataMongodbatlasNetworkContainers extends cdktf.TerraformDataSource
       terraformResourceType: 'mongodbatlas_network_containers',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

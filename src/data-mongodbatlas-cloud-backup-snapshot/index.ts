@@ -128,7 +128,7 @@ export class DataMongodbatlasCloudBackupSnapshot extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_cloud_backup_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -134,7 +134,7 @@ export class DataMongodbatlasX509AuthenticationDatabaseUser extends cdktf.Terraf
       terraformResourceType: 'mongodbatlas_x509_authentication_database_user',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -70,7 +70,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

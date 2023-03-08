@@ -58,7 +58,7 @@ export class DataMongodbatlasProjectIpAccessList extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_project_ip_access_list',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

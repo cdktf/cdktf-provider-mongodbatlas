@@ -314,7 +314,7 @@ export class DataMongodbatlasProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_projects',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

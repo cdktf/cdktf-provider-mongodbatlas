@@ -371,7 +371,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_online_archive',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

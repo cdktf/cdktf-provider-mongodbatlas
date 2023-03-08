@@ -121,7 +121,7 @@ export class DataMongodbatlasFederatedSettingsOrgRoleMapping extends cdktf.Terra
       terraformResourceType: 'mongodbatlas_federated_settings_org_role_mapping',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.0',
+        providerVersion: '1.8.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
