@@ -50,7 +50,7 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
       terraformResourceType: 'mongodbatlas_cloud_backup_snapshot_export_bucket',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -16,6 +16,10 @@ export interface OnlineArchiveConfig extends cdktf.TerraformMetaArguments {
   */
   readonly collName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/online_archive#collection_type OnlineArchive#collection_type}
+  */
+  readonly collectionType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/online_archive#db_name OnlineArchive#db_name}
   */
   readonly dbName: string;
@@ -371,7 +375,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_online_archive',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -384,6 +388,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
     });
     this._clusterName = config.clusterName;
     this._collName = config.collName;
+    this._collectionType = config.collectionType;
     this._dbName = config.dbName;
     this._id = config.id;
     this._paused = config.paused;
@@ -426,6 +431,22 @@ export class OnlineArchive extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get collNameInput() {
     return this._collName;
+  }
+
+  // collection_type - computed: true, optional: true, required: false
+  private _collectionType?: string; 
+  public get collectionType() {
+    return this.getStringAttribute('collection_type');
+  }
+  public set collectionType(value: string) {
+    this._collectionType = value;
+  }
+  public resetCollectionType() {
+    this._collectionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get collectionTypeInput() {
+    return this._collectionType;
   }
 
   // db_name - computed: false, optional: false, required: true
@@ -544,6 +565,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
     return {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       coll_name: cdktf.stringToTerraform(this._collName),
+      collection_type: cdktf.stringToTerraform(this._collectionType),
       db_name: cdktf.stringToTerraform(this._dbName),
       id: cdktf.stringToTerraform(this._id),
       paused: cdktf.booleanToTerraform(this._paused),

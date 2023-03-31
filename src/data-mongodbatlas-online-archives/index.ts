@@ -236,6 +236,11 @@ export class DataMongodbatlasOnlineArchivesResultsOutputReference extends cdktf.
     return this.getStringAttribute('coll_name');
   }
 
+  // collection_type - computed: true, optional: false, required: false
+  public get collectionType() {
+    return this.getStringAttribute('collection_type');
+  }
+
   // criteria - computed: true, optional: false, required: false
   private _criteria = new DataMongodbatlasOnlineArchivesResultsCriteriaList(this, "criteria", false);
   public get criteria() {
@@ -314,7 +319,7 @@ export class DataMongodbatlasOnlineArchives extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_online_archives',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

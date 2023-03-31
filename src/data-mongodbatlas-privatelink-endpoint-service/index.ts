@@ -137,7 +137,7 @@ export class DataMongodbatlasPrivatelinkEndpointService extends cdktf.TerraformD
       terraformResourceType: 'mongodbatlas_privatelink_endpoint_service',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

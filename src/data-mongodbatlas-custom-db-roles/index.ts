@@ -335,7 +335,7 @@ export class DataMongodbatlasCustomDbRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_custom_db_roles',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
