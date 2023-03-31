@@ -235,7 +235,7 @@ export class LdapConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_ldap_configuration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

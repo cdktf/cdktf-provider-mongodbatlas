@@ -518,7 +518,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
       terraformResourceType: 'mongodbatlas_federated_settings_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

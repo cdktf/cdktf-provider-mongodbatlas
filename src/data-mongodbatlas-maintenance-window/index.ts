@@ -46,7 +46,7 @@ export class DataMongodbatlasMaintenanceWindow extends cdktf.TerraformDataSource
       terraformResourceType: 'mongodbatlas_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.1',
+        providerVersion: '1.8.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
