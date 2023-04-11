@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/event
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 eventtrigger.NewEventTrigger(scope Construct, id *string, config EventTriggerConfig) EventTrigger
 ```
@@ -391,7 +391,7 @@ func ResetUnordered()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 eventtrigger.EventTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 eventtrigger.EventTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ eventtrigger.EventTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 eventtrigger.EventTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -1109,7 +1109,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 &eventtrigger.EventTriggerConfig {
 	Connection: interface{},
@@ -1135,7 +1135,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigge
 	ConfigSchedule: *string,
 	ConfigServiceId: *string,
 	Disabled: interface{},
-	EventProcessors: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.eventTrigger.EventTriggerEventProcessors,
+	EventProcessors: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.eventTrigger.EventTriggerEventProcessors,
 	FunctionId: *string,
 	Id: *string,
 	Unordered: interface{},
@@ -1496,10 +1496,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTriggerEventProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 &eventtrigger.EventTriggerEventProcessors {
-	AwsEventbridge: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.eventTrigger.EventTriggerEventProcessorsAwsEventbridge,
+	AwsEventbridge: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.eventTrigger.EventTriggerEventProcessorsAwsEventbridge,
 }
 ```
 
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTriggerEventProcessorsAwsEventbridge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 &eventtrigger.EventTriggerEventProcessorsAwsEventbridge {
 	ConfigAccountId: *string,
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTriggerEventProcessorsAwsEventbridgeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 eventtrigger.NewEventTriggerEventProcessorsAwsEventbridgeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventTriggerEventProcessorsAwsEventbridgeOutputReference
 ```
@@ -1885,7 +1885,7 @@ func InternalValue() EventTriggerEventProcessorsAwsEventbridge
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.eventTrigger.EventTriggerEventProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger"
 
 eventtrigger.NewEventTriggerEventProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventTriggerEventProcessorsOutputReference
 ```

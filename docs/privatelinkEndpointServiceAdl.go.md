@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/priva
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceAdl.PrivatelinkEndpointServiceAdl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointserviceadl"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatelinkendpointserviceadl"
 
 privatelinkendpointserviceadl.NewPrivatelinkEndpointServiceAdl(scope Construct, id *string, config PrivatelinkEndpointServiceAdlConfig) PrivatelinkEndpointServiceAdl
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceAdl.PrivatelinkEndpointServiceAdl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointserviceadl"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatelinkendpointserviceadl"
 
 privatelinkendpointserviceadl.PrivatelinkEndpointServiceAdl_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceAdl.PrivatelinkEndpointServiceAdl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointserviceadl"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatelinkendpointserviceadl"
 
 privatelinkendpointserviceadl.PrivatelinkEndpointServiceAdl_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ privatelinkendpointserviceadl.PrivatelinkEndpointServiceAdl_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceAdl.PrivatelinkEndpointServiceAdl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointserviceadl"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatelinkendpointserviceadl"
 
 privatelinkendpointserviceadl.PrivatelinkEndpointServiceAdl_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceAdl.PrivatelinkEndpointServiceAdlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointserviceadl"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatelinkendpointserviceadl"
 
 &privatelinkendpointserviceadl.PrivatelinkEndpointServiceAdlConfig {
 	Connection: interface{},
