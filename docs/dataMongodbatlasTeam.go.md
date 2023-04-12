@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/team 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasteam"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasteam"
 
 datamongodbatlasteam.NewDataMongodbatlasTeam(scope Construct, id *string, config DataMongodbatlasTeamConfig) DataMongodbatlasTeam
 ```
@@ -287,7 +287,7 @@ func ResetTeamId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasteam"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasteam"
 
 datamongodbatlasteam.DataMongodbatlasTeam_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasteam"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasteam"
 
 datamongodbatlasteam.DataMongodbatlasTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datamongodbatlasteam.DataMongodbatlasTeam_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasteam"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasteam"
 
 datamongodbatlasteam.DataMongodbatlasTeam_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasteam"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasteam"
 
 &datamongodbatlasteam.DataMongodbatlasTeamConfig {
 	Connection: interface{},

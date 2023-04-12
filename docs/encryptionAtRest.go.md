@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/encry
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.NewEncryptionAtRest(scope Construct, id *string, config EncryptionAtRestConfig) EncryptionAtRest
 ```
@@ -354,7 +354,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.EncryptionAtRest_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.EncryptionAtRest_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ encryptionatrest.EncryptionAtRest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.EncryptionAtRest_IsTerraformResource(x interface{}) *bool
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 &encryptionatrest.EncryptionAtRestAwsKmsConfig {
 	AccessKeyId: *string,
@@ -877,7 +877,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 &encryptionatrest.EncryptionAtRestAzureKeyVaultConfig {
 	Enabled: interface{},
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 &encryptionatrest.EncryptionAtRestConfig {
 	Connection: interface{},
@@ -1033,11 +1033,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptiona
 	Provisioners: *[]interface{},
 	ProjectId: *string,
 	AwsKms: *map[string]*string,
-	AwsKmsConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig,
+	AwsKmsConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.encryptionAtRest.EncryptionAtRestAwsKmsConfig,
 	AzureKeyVault: *map[string]*string,
-	AzureKeyVaultConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfig,
+	AzureKeyVaultConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfig,
 	GoogleCloudKms: *map[string]*string,
-	GoogleCloudKmsConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfig,
+	GoogleCloudKmsConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfig,
 	Id: *string,
 }
 ```
@@ -1244,7 +1244,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 &encryptionatrest.EncryptionAtRestGoogleCloudKmsConfig {
 	Enabled: interface{},
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.NewEncryptionAtRestAwsKmsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EncryptionAtRestAwsKmsConfigOutputReference
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() EncryptionAtRestAwsKmsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.NewEncryptionAtRestAzureKeyVaultConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EncryptionAtRestAzureKeyVaultConfigOutputReference
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() EncryptionAtRestAzureKeyVaultConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest"
 
 encryptionatrest.NewEncryptionAtRestGoogleCloudKmsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EncryptionAtRestGoogleCloudKmsConfigOutputReference
 ```

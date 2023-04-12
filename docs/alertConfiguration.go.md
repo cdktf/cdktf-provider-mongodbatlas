@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/alert
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfiguration(scope Construct, id *string, config AlertConfigurationConfig) AlertConfiguration
 ```
@@ -367,7 +367,7 @@ func ResetThresholdConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.AlertConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.AlertConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ alertconfiguration.AlertConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.AlertConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -865,7 +865,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationConfig {
 	Connection: interface{},
@@ -882,9 +882,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfig
 	Id: *string,
 	Matcher: interface{},
 	MetricThreshold: *map[string]*string,
-	MetricThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig,
+	MetricThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.alertConfiguration.AlertConfigurationMetricThresholdConfig,
 	Threshold: *map[string]*string,
-	ThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig,
+	ThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2.alertConfiguration.AlertConfigurationThresholdConfig,
 }
 ```
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationMatcher {
 	FieldName: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationMetricThresholdConfig {
 	MetricName: *string,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationNotification {
 	ApiToken: *string,
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationThresholdConfig {
 	Operator: *string,
@@ -1696,7 +1696,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationMatcherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertConfigurationMatcherList
 ```
@@ -1839,7 +1839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertConfigurationMatcherOutputReference
 ```
@@ -2193,7 +2193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationMetricThresholdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConfigurationMetricThresholdConfigOutputReference
 ```
@@ -2587,7 +2587,7 @@ func InternalValue() AlertConfigurationMetricThresholdConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertConfigurationNotificationList
 ```
@@ -2730,7 +2730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertConfigurationNotificationOutputReference
 ```
@@ -3733,7 +3733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationThresholdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConfigurationThresholdConfigOutputReference
 ```
