@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/custo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope Construct, id *string, config DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) DataMongodbatlasCustomDnsConfigurationClusterAws
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfig
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 &datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig {
 	Connection: interface{},

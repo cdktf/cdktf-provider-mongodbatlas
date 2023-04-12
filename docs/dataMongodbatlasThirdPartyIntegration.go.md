@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/third
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasThirdPartyIntegration.DataMongodbatlasThirdPartyIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasthirdpartyintegration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasthirdpartyintegration"
 
 datamongodbatlasthirdpartyintegration.NewDataMongodbatlasThirdPartyIntegration(scope Construct, id *string, config DataMongodbatlasThirdPartyIntegrationConfig) DataMongodbatlasThirdPartyIntegration
 ```
@@ -308,7 +308,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasThirdPartyIntegration.DataMongodbatlasThirdPartyIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasthirdpartyintegration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasthirdpartyintegration"
 
 datamongodbatlasthirdpartyintegration.DataMongodbatlasThirdPartyIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasThirdPartyIntegration.DataMongodbatlasThirdPartyIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasthirdpartyintegration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasthirdpartyintegration"
 
 datamongodbatlasthirdpartyintegration.DataMongodbatlasThirdPartyIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ datamongodbatlasthirdpartyintegration.DataMongodbatlasThirdPartyIntegration_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasThirdPartyIntegration.DataMongodbatlasThirdPartyIntegration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasthirdpartyintegration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasthirdpartyintegration"
 
 datamongodbatlasthirdpartyintegration.DataMongodbatlasThirdPartyIntegration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasThirdPartyIntegration.DataMongodbatlasThirdPartyIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasthirdpartyintegration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasthirdpartyintegration"
 
 &datamongodbatlasthirdpartyintegration.DataMongodbatlasThirdPartyIntegrationConfig {
 	Connection: interface{},
