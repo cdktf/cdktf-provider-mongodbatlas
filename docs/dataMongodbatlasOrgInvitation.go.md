@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/org_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrgInvitation.DataMongodbatlasOrgInvitation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasorginvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorginvitation"
 
 datamongodbatlasorginvitation.NewDataMongodbatlasOrgInvitation(scope Construct, id *string, config DataMongodbatlasOrgInvitationConfig) DataMongodbatlasOrgInvitation
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrgInvitation.DataMongodbatlasOrgInvitation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasorginvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorginvitation"
 
 datamongodbatlasorginvitation.DataMongodbatlasOrgInvitation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrgInvitation.DataMongodbatlasOrgInvitation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasorginvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorginvitation"
 
 datamongodbatlasorginvitation.DataMongodbatlasOrgInvitation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datamongodbatlasorginvitation.DataMongodbatlasOrgInvitation_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrgInvitation.DataMongodbatlasOrgInvitation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasorginvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorginvitation"
 
 datamongodbatlasorginvitation.DataMongodbatlasOrgInvitation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrgInvitation.DataMongodbatlasOrgInvitationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasorginvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorginvitation"
 
 &datamongodbatlasorginvitation.DataMongodbatlasOrgInvitationConfig {
 	Connection: interface{},

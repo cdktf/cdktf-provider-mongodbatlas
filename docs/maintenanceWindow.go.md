@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/maint
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.maintenanceWindow.MaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/maintenancewindow"
 
 maintenancewindow.NewMaintenanceWindow(scope Construct, id *string, config MaintenanceWindowConfig) MaintenanceWindow
 ```
@@ -315,7 +315,7 @@ func ResetNumberOfDeferrals()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.maintenanceWindow.MaintenanceWindow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.maintenanceWindow.MaintenanceWindow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ maintenancewindow.MaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.maintenanceWindow.MaintenanceWindow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.maintenanceWindow.MaintenanceWindowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/maintenancewindow"
 
 &maintenancewindow.MaintenanceWindowConfig {
 	Connection: interface{},
