@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshotrestorejob"
 
 datamongodbatlascloudprovidersnapshotrestorejob.NewDataMongodbatlasCloudProviderSnapshotRestoreJob(scope Construct, id *string, config DataMongodbatlasCloudProviderSnapshotRestoreJobConfig) DataMongodbatlasCloudProviderSnapshotRestoreJob
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshotrestorejob"
 
 datamongodbatlascloudprovidersnapshotrestorejob.DataMongodbatlasCloudProviderSnapshotRestoreJob_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshotrestorejob"
 
 datamongodbatlascloudprovidersnapshotrestorejob.DataMongodbatlasCloudProviderSnapshotRestoreJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datamongodbatlascloudprovidersnapshotrestorejob.DataMongodbatlasCloudProviderSna
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshotrestorejob"
 
 datamongodbatlascloudprovidersnapshotrestorejob.DataMongodbatlasCloudProviderSnapshotRestoreJob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshotrestorejob"
 
 &datamongodbatlascloudprovidersnapshotrestorejob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig {
 	Connection: interface{},
