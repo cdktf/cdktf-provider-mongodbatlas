@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/priva
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.NewDataMongodbatlasPrivateEndpointRegionalMode(scope Construct, id *string, config DataMongodbatlasPrivateEndpointRegionalModeConfig) DataMongodbatlasPrivateEndpointRegionalMode
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegio
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivateendpointregionalmode"
 
 &datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalModeConfig {
 	Connection: interface{},

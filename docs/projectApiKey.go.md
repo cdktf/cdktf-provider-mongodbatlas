@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/proje
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectapikey"
 
 projectapikey.NewProjectApiKey(scope Construct, id *string, config ProjectApiKeyConfig) ProjectApiKey
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectapikey"
 
 projectapikey.ProjectApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectapikey"
 
 projectapikey.ProjectApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ projectapikey.ProjectApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectapikey"
 
 projectapikey.ProjectApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectapikey"
 
 &projectapikey.ProjectApiKeyConfig {
 	Connection: interface{},
