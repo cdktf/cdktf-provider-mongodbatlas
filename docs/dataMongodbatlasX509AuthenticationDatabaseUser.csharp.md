@@ -1,3 +1,7 @@
+# `data_mongodbatlas_x509_authentication_database_user`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_x509_authentication_database_user`](https://www.terraform.io/docs/providers/mongodbatlas/d/x509_authentication_database_user).
+
 # `dataMongodbatlasX509AuthenticationDatabaseUser` Submodule <a name="`dataMongodbatlasX509AuthenticationDatabaseUser` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

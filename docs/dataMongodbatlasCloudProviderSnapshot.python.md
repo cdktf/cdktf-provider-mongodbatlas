@@ -1,3 +1,7 @@
+# `data_mongodbatlas_cloud_provider_snapshot`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_provider_snapshot`](https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_snapshot).
+
 # `dataMongodbatlasCloudProviderSnapshot` Submodule <a name="`dataMongodbatlasCloudProviderSnapshot` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

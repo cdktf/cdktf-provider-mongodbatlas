@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas`](https://www.terraform.io/docs/providers/mongodbatlas).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-mongodbatlas.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

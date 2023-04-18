@@ -1,3 +1,7 @@
+# `mongodbatlas_privatelink_endpoint_service_adl`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas_privatelink_endpoint_service_adl`](https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service_adl).
+
 # `privatelinkEndpointServiceAdl` Submodule <a name="`privatelinkEndpointServiceAdl` Submodule" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceAdl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

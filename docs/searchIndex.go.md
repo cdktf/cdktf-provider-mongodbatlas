@@ -1,3 +1,7 @@
+# `mongodbatlas_search_index`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas_search_index`](https://www.terraform.io/docs/providers/mongodbatlas/r/search_index).
+
 # `searchIndex` Submodule <a name="`searchIndex` Submodule" id="@cdktf/provider-mongodbatlas.searchIndex"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

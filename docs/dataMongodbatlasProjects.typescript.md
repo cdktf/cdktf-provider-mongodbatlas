@@ -1,3 +1,7 @@
+# `data_mongodbatlas_projects`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_projects`](https://www.terraform.io/docs/providers/mongodbatlas/d/projects).
+
 # `dataMongodbatlasProjects` Submodule <a name="`dataMongodbatlasProjects` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `mongodbatlas_encryption_at_rest`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas_encryption_at_rest`](https://www.terraform.io/docs/providers/mongodbatlas/r/encryption_at_rest).
+
 # `encryptionAtRest` Submodule <a name="`encryptionAtRest` Submodule" id="@cdktf/provider-mongodbatlas.encryptionAtRest"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

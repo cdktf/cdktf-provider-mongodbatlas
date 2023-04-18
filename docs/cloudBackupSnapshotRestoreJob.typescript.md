@@ -1,3 +1,7 @@
+# `mongodbatlas_cloud_backup_snapshot_restore_job`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_backup_snapshot_restore_job`](https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_restore_job).
+
 # `cloudBackupSnapshotRestoreJob` Submodule <a name="`cloudBackupSnapshotRestoreJob` Submodule" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
