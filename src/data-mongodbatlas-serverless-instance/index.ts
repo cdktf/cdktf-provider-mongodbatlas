@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasServerlessInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance#continuous_backup_enabled DataMongodbatlasServerlessInstance#continuous_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance#continuous_backup_enabled DataMongodbatlasServerlessInstance#continuous_backup_enabled}
   */
   readonly continuousBackupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance#name DataMongodbatlasServerlessInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance#name DataMongodbatlasServerlessInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance#project_id DataMongodbatlasServerlessInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance#project_id DataMongodbatlasServerlessInstance#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance#state_name DataMongodbatlasServerlessInstance#state_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance#state_name DataMongodbatlasServerlessInstance#state_name}
   */
   readonly stateName?: string;
   /**
   * links block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance#links DataMongodbatlasServerlessInstance#links}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance#links DataMongodbatlasServerlessInstance#links}
   */
   readonly links?: DataMongodbatlasServerlessInstanceLinks[] | cdktf.IResolvable;
 }
@@ -112,7 +112,7 @@ export class DataMongodbatlasServerlessInstanceLinksList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance mongodbatlas_serverless_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance mongodbatlas_serverless_instance}
 */
 export class DataMongodbatlasServerlessInstance extends cdktf.TerraformDataSource {
 
@@ -126,7 +126,7 @@ export class DataMongodbatlasServerlessInstance extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/serverless_instance mongodbatlas_serverless_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/serverless_instance mongodbatlas_serverless_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

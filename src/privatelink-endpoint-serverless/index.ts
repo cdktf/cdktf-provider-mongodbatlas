@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface PrivatelinkEndpointServerlessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#id PrivatelinkEndpointServerless#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#id PrivatelinkEndpointServerless#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#instance_name PrivatelinkEndpointServerless#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#instance_name PrivatelinkEndpointServerless#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#project_id PrivatelinkEndpointServerless#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#project_id PrivatelinkEndpointServerless#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#provider_name PrivatelinkEndpointServerless#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#provider_name PrivatelinkEndpointServerless#provider_name}
   */
   readonly providerName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#timeouts PrivatelinkEndpointServerless#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#timeouts PrivatelinkEndpointServerless#timeouts}
   */
   readonly timeouts?: PrivatelinkEndpointServerlessTimeouts;
 }
 export interface PrivatelinkEndpointServerlessTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#create PrivatelinkEndpointServerless#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#create PrivatelinkEndpointServerless#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless#delete PrivatelinkEndpointServerless#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless#delete PrivatelinkEndpointServerless#delete}
   */
   readonly delete?: string;
 }
 
-export function privatelinkEndpointServerlessTimeoutsToTerraform(struct?: PrivatelinkEndpointServerlessTimeoutsOutputReference | PrivatelinkEndpointServerlessTimeouts | cdktf.IResolvable): any {
+export function privatelinkEndpointServerlessTimeoutsToTerraform(struct?: PrivatelinkEndpointServerlessTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -64,7 +64,7 @@ export class PrivatelinkEndpointServerlessTimeoutsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): PrivatelinkEndpointServerlessTimeouts | cdktf.IResolvable | undefined {
@@ -137,7 +137,7 @@ export class PrivatelinkEndpointServerlessTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless}
 */
 export class PrivatelinkEndpointServerless extends cdktf.TerraformResource {
 
@@ -151,7 +151,7 @@ export class PrivatelinkEndpointServerless extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

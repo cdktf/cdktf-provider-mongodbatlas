@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface CloudProviderSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot#cluster_name CloudProviderSnapshot#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot#cluster_name CloudProviderSnapshot#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot#description CloudProviderSnapshot#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot#description CloudProviderSnapshot#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot#id CloudProviderSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot#id CloudProviderSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot#project_id CloudProviderSnapshot#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot#project_id CloudProviderSnapshot#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot#retention_in_days CloudProviderSnapshot#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot#retention_in_days CloudProviderSnapshot#retention_in_days}
   */
   readonly retentionInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot#timeout CloudProviderSnapshot#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot#timeout CloudProviderSnapshot#timeout}
   */
   readonly timeout?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot}
 */
 export class CloudProviderSnapshot extends cdktf.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CloudProviderSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

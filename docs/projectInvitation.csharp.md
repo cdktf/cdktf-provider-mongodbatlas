@@ -1,6 +1,6 @@
 # `mongodbatlas_project_invitation`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_project_invitation`](https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation).
+Refer to the Terraform Registory for docs: [`mongodbatlas_project_invitation`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation).
 
 # `projectInvitation` Submodule <a name="`projectInvitation` Submodule" id="@cdktf/provider-mongodbatlas.projectInvitation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_project_invitation`](h
 
 ### ProjectInvitation <a name="ProjectInvitation" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation mongodbatlas_project_invitation}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation mongodbatlas_project_invitation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.Initializer"></a>
 
@@ -346,7 +346,7 @@ ProjectInvitation.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -452,10 +452,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -658,7 +658,7 @@ using HashiCorp.Cdktf.Providers.Mongodbatlas;
 
 new ProjectInvitationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -676,16 +676,16 @@ new ProjectInvitationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#project_id ProjectInvitation#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.roles">Roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#roles ProjectInvitation#roles}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#username ProjectInvitation#username}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#id ProjectInvitation#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#project_id ProjectInvitation#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.roles">Roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#roles ProjectInvitation#roles}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#username ProjectInvitation#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#id ProjectInvitation#id}. |
 
 ---
 
@@ -702,10 +702,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -767,7 +767,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#project_id ProjectInvitation#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#project_id ProjectInvitation#project_id}.
 
 ---
 
@@ -779,7 +779,7 @@ public string[] Roles { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#roles ProjectInvitation#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#roles ProjectInvitation#roles}.
 
 ---
 
@@ -791,7 +791,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#username ProjectInvitation#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#username ProjectInvitation#username}.
 
 ---
 
@@ -803,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation#id ProjectInvitation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation#id ProjectInvitation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/d/network_container
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_container
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasNetworkContainerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_container#container_id DataMongodbatlasNetworkContainer#container_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_container#container_id DataMongodbatlasNetworkContainer#container_id}
   */
   readonly containerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_container#id DataMongodbatlasNetworkContainer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_container#id DataMongodbatlasNetworkContainer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_container#project_id DataMongodbatlasNetworkContainer#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_container#project_id DataMongodbatlasNetworkContainer#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_container mongodbatlas_network_container}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_container mongodbatlas_network_container}
 */
 export class DataMongodbatlasNetworkContainer extends cdktf.TerraformDataSource {
 
@@ -39,7 +39,7 @@ export class DataMongodbatlasNetworkContainer extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_container mongodbatlas_network_container} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_container mongodbatlas_network_container} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

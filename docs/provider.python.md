@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas`](https://www.terraform.io/docs/providers/mongodbatlas).
+Refer to the Terraform Registory for docs: [`mongodbatlas`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-mongodbatlas.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas`](https://www.terrafor
 
 ### MongodbatlasProvider <a name="MongodbatlasProvider" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas mongodbatlas}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs mongodbatlas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer"></a>
 
@@ -40,17 +40,17 @@ provider.MongodbatlasProvider(
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole">assume_role</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a></code> | assume_role block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsAccessKeyId">aws_access_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_access_key_id MongodbatlasProvider#aws_access_key_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSecretAccessKey">aws_secret_access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSessionToken">aws_session_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_session_token MongodbatlasProvider#aws_session_token}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsAccessKeyId">aws_access_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSecretAccessKey">aws_secret_access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSessionToken">aws_session_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_session_token MongodbatlasProvider#aws_session_token}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.baseUrl">base_url</a></code> | <code>str</code> | MongoDB Atlas Base URL. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.isMongodbgovCloud">is_mongodbgov_cloud</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | MongoDB Atlas Base URL default to gov. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | MongoDB Atlas Programmatic Private Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.publicKey">public_key</a></code> | <code>str</code> | MongoDB Atlas Programmatic Public Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.realmBaseUrl">realm_base_url</a></code> | <code>str</code> | MongoDB Realm Base URL. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#region MongodbatlasProvider#region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.secretName">secret_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#secret_name MongodbatlasProvider#secret_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#sts_endpoint MongodbatlasProvider#sts_endpoint}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#region MongodbatlasProvider#region}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.secretName">secret_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#secret_name MongodbatlasProvider#secret_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}. |
 
 ---
 
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#alias MongodbatlasProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#alias MongodbatlasProvider#alias}
 
 ---
 
@@ -88,7 +88,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#assume_role MongodbatlasProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#assume_role MongodbatlasProvider#assume_role}
 
 ---
 
@@ -96,7 +96,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_access_key_id MongodbatlasProvider#aws_access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}.
 
 ---
 
@@ -104,7 +104,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_session_token MongodbatlasProvider#aws_session_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_session_token MongodbatlasProvider#aws_session_token}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 MongoDB Atlas Base URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#base_url MongodbatlasProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#base_url MongodbatlasProvider#base_url}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 MongoDB Atlas Base URL default to gov.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 MongoDB Atlas Programmatic Private Key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#private_key MongodbatlasProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#private_key MongodbatlasProvider#private_key}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 MongoDB Atlas Programmatic Public Key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#public_key MongodbatlasProvider#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#public_key MongodbatlasProvider#public_key}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 MongoDB Realm Base URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#realm_base_url MongodbatlasProvider#realm_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#realm_base_url MongodbatlasProvider#realm_base_url}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#region MongodbatlasProvider#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#region MongodbatlasProvider#region}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#secret_name MongodbatlasProvider#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#secret_name MongodbatlasProvider#secret_name}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#sts_endpoint MongodbatlasProvider#sts_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}.
 
 ---
 
@@ -892,7 +892,7 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#duration MongodbatlasProvider#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#duration MongodbatlasProvider#duration}
 
 ---
 
@@ -906,7 +906,7 @@ duration_seconds: typing.Union[int, float]
 
 The duration, in seconds, of the role session.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#duration_seconds MongodbatlasProvider#duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#duration_seconds MongodbatlasProvider#duration_seconds}
 
 ---
 
@@ -920,7 +920,7 @@ external_id: str
 
 A unique identifier that might be required when you assume a role in another account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#external_id MongodbatlasProvider#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#external_id MongodbatlasProvider#external_id}
 
 ---
 
@@ -934,7 +934,7 @@ policy: str
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#policy MongodbatlasProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#policy MongodbatlasProvider#policy}
 
 ---
 
@@ -948,7 +948,7 @@ policy_arns: typing.List[str]
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#policy_arns MongodbatlasProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#policy_arns MongodbatlasProvider#policy_arns}
 
 ---
 
@@ -962,7 +962,7 @@ role_arn: str
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#role_arn MongodbatlasProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#role_arn MongodbatlasProvider#role_arn}
 
 ---
 
@@ -976,7 +976,7 @@ session_name: str
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#session_name MongodbatlasProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#session_name MongodbatlasProvider#session_name}
 
 ---
 
@@ -990,7 +990,7 @@ source_identity: str
 
 Source identity specified by the principal assuming the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#source_identity MongodbatlasProvider#source_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#source_identity MongodbatlasProvider#source_identity}
 
 ---
 
@@ -1004,7 +1004,7 @@ tags: typing.Mapping[str]
 
 Assume role session tags.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#tags MongodbatlasProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#tags MongodbatlasProvider#tags}
 
 ---
 
@@ -1018,7 +1018,7 @@ transitive_tag_keys: typing.List[str]
 
 Assume role session tag keys to pass to any subsequent sessions.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
 
 ---
 
@@ -1052,17 +1052,17 @@ provider.MongodbatlasProviderConfig(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole">assume_role</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a></code> | assume_role block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsAccessKeyId">aws_access_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_access_key_id MongodbatlasProvider#aws_access_key_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSecretAccessKey">aws_secret_access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSessionToken">aws_session_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_session_token MongodbatlasProvider#aws_session_token}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsAccessKeyId">aws_access_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSecretAccessKey">aws_secret_access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSessionToken">aws_session_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_session_token MongodbatlasProvider#aws_session_token}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.baseUrl">base_url</a></code> | <code>str</code> | MongoDB Atlas Base URL. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.isMongodbgovCloud">is_mongodbgov_cloud</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | MongoDB Atlas Base URL default to gov. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.privateKey">private_key</a></code> | <code>str</code> | MongoDB Atlas Programmatic Private Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.publicKey">public_key</a></code> | <code>str</code> | MongoDB Atlas Programmatic Public Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.realmBaseUrl">realm_base_url</a></code> | <code>str</code> | MongoDB Realm Base URL. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#region MongodbatlasProvider#region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.secretName">secret_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#secret_name MongodbatlasProvider#secret_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#sts_endpoint MongodbatlasProvider#sts_endpoint}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#region MongodbatlasProvider#region}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.secretName">secret_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#secret_name MongodbatlasProvider#secret_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#alias MongodbatlasProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#alias MongodbatlasProvider#alias}
 
 ---
 
@@ -1090,7 +1090,7 @@ assume_role: MongodbatlasProviderAssumeRole
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#assume_role MongodbatlasProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#assume_role MongodbatlasProvider#assume_role}
 
 ---
 
@@ -1102,7 +1102,7 @@ aws_access_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_access_key_id MongodbatlasProvider#aws_access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}.
 
 ---
 
@@ -1114,7 +1114,7 @@ aws_secret_access_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}.
 
 ---
 
@@ -1126,7 +1126,7 @@ aws_session_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#aws_session_token MongodbatlasProvider#aws_session_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#aws_session_token MongodbatlasProvider#aws_session_token}.
 
 ---
 
@@ -1140,7 +1140,7 @@ base_url: str
 
 MongoDB Atlas Base URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#base_url MongodbatlasProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#base_url MongodbatlasProvider#base_url}
 
 ---
 
@@ -1154,7 +1154,7 @@ is_mongodbgov_cloud: typing.Union[bool, IResolvable]
 
 MongoDB Atlas Base URL default to gov.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
 
 ---
 
@@ -1168,7 +1168,7 @@ private_key: str
 
 MongoDB Atlas Programmatic Private Key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#private_key MongodbatlasProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#private_key MongodbatlasProvider#private_key}
 
 ---
 
@@ -1182,7 +1182,7 @@ public_key: str
 
 MongoDB Atlas Programmatic Public Key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#public_key MongodbatlasProvider#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#public_key MongodbatlasProvider#public_key}
 
 ---
 
@@ -1196,7 +1196,7 @@ realm_base_url: str
 
 MongoDB Realm Base URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#realm_base_url MongodbatlasProvider#realm_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#realm_base_url MongodbatlasProvider#realm_base_url}
 
 ---
 
@@ -1208,7 +1208,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#region MongodbatlasProvider#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#region MongodbatlasProvider#region}.
 
 ---
 
@@ -1220,7 +1220,7 @@ secret_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#secret_name MongodbatlasProvider#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#secret_name MongodbatlasProvider#secret_name}.
 
 ---
 
@@ -1232,7 +1232,7 @@ sts_endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas#sts_endpoint MongodbatlasProvider#sts_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}.
 
 ---
 

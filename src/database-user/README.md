@@ -1,3 +1,3 @@
 # `mongodbatlas_database_user`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_database_user`](https://www.terraform.io/docs/providers/mongodbatlas/r/database_user).
+Refer to the Terraform Registory for docs: [`mongodbatlas_database_user`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/database_user).

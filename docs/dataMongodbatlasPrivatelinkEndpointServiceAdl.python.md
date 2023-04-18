@@ -1,6 +1,6 @@
 # `data_mongodbatlas_privatelink_endpoint_service_adl`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_adl`](https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_adl`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl).
 
 # `dataMongodbatlasPrivatelinkEndpointServiceAdl` Submodule <a name="`dataMongodbatlasPrivatelinkEndpointServiceAdl` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpo
 
 ### DataMongodbatlasPrivatelinkEndpointServiceAdl <a name="DataMongodbatlasPrivatelinkEndpointServiceAdl" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpoin
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,15 +36,15 @@ dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpoin
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -461,7 +461,7 @@ dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpoin
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -553,10 +553,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -719,7 +719,7 @@ from cdktf_cdktf_provider_mongodbatlas import data_mongodbatlas_privatelink_endp
 
 dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -736,15 +736,15 @@ dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpoin
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}. |
 
 ---
 
@@ -761,10 +761,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -826,7 +826,7 @@ endpoint_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}.
 
 ---
 
@@ -838,7 +838,7 @@ project_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}.
 
 ---
 
@@ -850,7 +850,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

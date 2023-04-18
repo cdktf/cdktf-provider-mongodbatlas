@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface PrivatelinkEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#endpoint_service_id PrivatelinkEndpointService#endpoint_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#endpoint_service_id PrivatelinkEndpointService#endpoint_service_id}
   */
   readonly endpointServiceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#gcp_project_id PrivatelinkEndpointService#gcp_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#gcp_project_id PrivatelinkEndpointService#gcp_project_id}
   */
   readonly gcpProjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#id PrivatelinkEndpointService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#id PrivatelinkEndpointService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#private_endpoint_ip_address PrivatelinkEndpointService#private_endpoint_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#private_endpoint_ip_address PrivatelinkEndpointService#private_endpoint_ip_address}
   */
   readonly privateEndpointIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#private_link_id PrivatelinkEndpointService#private_link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#private_link_id PrivatelinkEndpointService#private_link_id}
   */
   readonly privateLinkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#project_id PrivatelinkEndpointService#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#project_id PrivatelinkEndpointService#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#provider_name PrivatelinkEndpointService#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#provider_name PrivatelinkEndpointService#provider_name}
   */
   readonly providerName: string;
   /**
   * endpoints block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#endpoints PrivatelinkEndpointService#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#endpoints PrivatelinkEndpointService#endpoints}
   */
   readonly endpoints?: PrivatelinkEndpointServiceEndpoints[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#timeouts PrivatelinkEndpointService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#timeouts PrivatelinkEndpointService#timeouts}
   */
   readonly timeouts?: PrivatelinkEndpointServiceTimeouts;
 }
 export interface PrivatelinkEndpointServiceEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#endpoint_name PrivatelinkEndpointService#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#endpoint_name PrivatelinkEndpointService#endpoint_name}
   */
   readonly endpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#ip_address PrivatelinkEndpointService#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#ip_address PrivatelinkEndpointService#ip_address}
   */
   readonly ipAddress?: string;
 }
@@ -187,16 +187,16 @@ export class PrivatelinkEndpointServiceEndpointsList extends cdktf.ComplexList {
 }
 export interface PrivatelinkEndpointServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#create PrivatelinkEndpointService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#create PrivatelinkEndpointService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service#delete PrivatelinkEndpointService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service#delete PrivatelinkEndpointService#delete}
   */
   readonly delete?: string;
 }
 
-export function privatelinkEndpointServiceTimeoutsToTerraform(struct?: PrivatelinkEndpointServiceTimeoutsOutputReference | PrivatelinkEndpointServiceTimeouts | cdktf.IResolvable): any {
+export function privatelinkEndpointServiceTimeoutsToTerraform(struct?: PrivatelinkEndpointServiceTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -216,7 +216,7 @@ export class PrivatelinkEndpointServiceTimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): PrivatelinkEndpointServiceTimeouts | cdktf.IResolvable | undefined {
@@ -289,7 +289,7 @@ export class PrivatelinkEndpointServiceTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service}
 */
 export class PrivatelinkEndpointService extends cdktf.TerraformResource {
 
@@ -303,7 +303,7 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

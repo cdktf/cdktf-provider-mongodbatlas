@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasCloudBackupScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule#cluster_name DataMongodbatlasCloudBackupSchedule#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule#cluster_name DataMongodbatlasCloudBackupSchedule#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule#id DataMongodbatlasCloudBackupSchedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule#id DataMongodbatlasCloudBackupSchedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule#project_id DataMongodbatlasCloudBackupSchedule#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule#project_id DataMongodbatlasCloudBackupSchedule#project_id}
   */
   readonly projectId: string;
 }
@@ -514,7 +514,7 @@ export class DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyList extends cdk
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}
 */
 export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSource {
 
@@ -528,7 +528,7 @@ export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

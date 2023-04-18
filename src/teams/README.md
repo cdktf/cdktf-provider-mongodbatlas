@@ -1,3 +1,3 @@
 # `mongodbatlas_teams`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_teams`](https://www.terraform.io/docs/providers/mongodbatlas/r/teams).
+Refer to the Terraform Registory for docs: [`mongodbatlas_teams`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams).
