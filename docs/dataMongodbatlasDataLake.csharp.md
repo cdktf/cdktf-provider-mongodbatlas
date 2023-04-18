@@ -1,3 +1,7 @@
+# `data_mongodbatlas_data_lake`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_data_lake`](https://www.terraform.io/docs/providers/mongodbatlas/d/data_lake).
+
 # `dataMongodbatlasDataLake` Submodule <a name="`dataMongodbatlasDataLake` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasDataLake"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_mongodbatlas_org_invitation`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_org_invitation`](https://www.terraform.io/docs/providers/mongodbatlas/d/org_invitation).
+
 # `dataMongodbatlasOrgInvitation` Submodule <a name="`dataMongodbatlasOrgInvitation` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrgInvitation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_mongodbatlas_advanced_cluster`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_advanced_cluster`](https://www.terraform.io/docs/providers/mongodbatlas/d/advanced_cluster).
+
 # `dataMongodbatlasAdvancedCluster` Submodule <a name="`dataMongodbatlasAdvancedCluster` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAdvancedCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

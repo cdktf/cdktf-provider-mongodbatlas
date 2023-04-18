@@ -1,3 +1,7 @@
+# `data_mongodbatlas_network_peerings`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_network_peerings`](https://www.terraform.io/docs/providers/mongodbatlas/d/network_peerings).
+
 # `dataMongodbatlasNetworkPeerings` Submodule <a name="`dataMongodbatlasNetworkPeerings` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkPeerings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

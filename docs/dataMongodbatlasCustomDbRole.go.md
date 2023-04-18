@@ -1,3 +1,7 @@
+# `data_mongodbatlas_custom_db_role`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_db_role`](https://www.terraform.io/docs/providers/mongodbatlas/d/custom_db_role).
+
 # `dataMongodbatlasCustomDbRole` Submodule <a name="`dataMongodbatlasCustomDbRole` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDbRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

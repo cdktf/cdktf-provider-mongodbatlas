@@ -1,3 +1,7 @@
+# `data_mongodbatlas_cloud_backup_snapshot_export_job`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_backup_snapshot_export_job`](https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_snapshot_export_job).
+
 # `dataMongodbatlasCloudBackupSnapshotExportJob` Submodule <a name="`dataMongodbatlasCloudBackupSnapshotExportJob` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

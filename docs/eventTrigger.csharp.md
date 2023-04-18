@@ -1,3 +1,7 @@
+# `mongodbatlas_event_trigger`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas_event_trigger`](https://www.terraform.io/docs/providers/mongodbatlas/r/event_trigger).
+
 # `eventTrigger` Submodule <a name="`eventTrigger` Submodule" id="@cdktf/provider-mongodbatlas.eventTrigger"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

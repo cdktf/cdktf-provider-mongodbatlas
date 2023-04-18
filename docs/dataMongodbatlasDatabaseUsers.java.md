@@ -1,3 +1,7 @@
+# `data_mongodbatlas_database_users`
+
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_database_users`](https://www.terraform.io/docs/providers/mongodbatlas/d/database_users).
+
 # `dataMongodbatlasDatabaseUsers` Submodule <a name="`dataMongodbatlasDatabaseUsers` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasDatabaseUsers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

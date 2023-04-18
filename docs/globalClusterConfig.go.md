@@ -1,3 +1,7 @@
+# `mongodbatlas_global_cluster_config`
+
+Refer to the Terraform Registory for docs: [`mongodbatlas_global_cluster_config`](https://www.terraform.io/docs/providers/mongodbatlas/r/global_cluster_config).
+
 # `globalClusterConfig` Submodule <a name="`globalClusterConfig` Submodule" id="@cdktf/provider-mongodbatlas.globalClusterConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
