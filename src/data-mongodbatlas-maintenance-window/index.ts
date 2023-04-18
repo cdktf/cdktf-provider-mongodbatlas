@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/d/maintenance_window
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/maintenance_window
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasMaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/maintenance_window#id DataMongodbatlasMaintenanceWindow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/maintenance_window#id DataMongodbatlasMaintenanceWindow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/maintenance_window#project_id DataMongodbatlasMaintenanceWindow#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/maintenance_window#project_id DataMongodbatlasMaintenanceWindow#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/maintenance_window mongodbatlas_maintenance_window}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/maintenance_window mongodbatlas_maintenance_window}
 */
 export class DataMongodbatlasMaintenanceWindow extends cdktf.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataMongodbatlasMaintenanceWindow extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/maintenance_window mongodbatlas_maintenance_window} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/maintenance_window mongodbatlas_maintenance_window} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

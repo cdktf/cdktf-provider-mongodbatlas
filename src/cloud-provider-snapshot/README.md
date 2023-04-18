@@ -1,3 +1,3 @@
 # `mongodbatlas_cloud_provider_snapshot`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_snapshot`](https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_provider_snapshot).
+Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_snapshot`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot).

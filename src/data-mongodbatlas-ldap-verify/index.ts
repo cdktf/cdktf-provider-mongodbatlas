@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/d/ldap_verify
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/ldap_verify
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasLdapVerifyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/ldap_verify#id DataMongodbatlasLdapVerify#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/ldap_verify#id DataMongodbatlasLdapVerify#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/ldap_verify#project_id DataMongodbatlasLdapVerify#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/ldap_verify#project_id DataMongodbatlasLdapVerify#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/ldap_verify#request_id DataMongodbatlasLdapVerify#request_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/ldap_verify#request_id DataMongodbatlasLdapVerify#request_id}
   */
   readonly requestId: string;
 }
@@ -163,7 +163,7 @@ export class DataMongodbatlasLdapVerifyValidationsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/ldap_verify mongodbatlas_ldap_verify}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/ldap_verify mongodbatlas_ldap_verify}
 */
 export class DataMongodbatlasLdapVerify extends cdktf.TerraformDataSource {
 
@@ -177,7 +177,7 @@ export class DataMongodbatlasLdapVerify extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/ldap_verify mongodbatlas_ldap_verify} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

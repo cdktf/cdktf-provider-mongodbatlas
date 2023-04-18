@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasRolesOrgIdConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id#id DataMongodbatlasRolesOrgId#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id#id DataMongodbatlasRolesOrgId#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +17,7 @@ export interface DataMongodbatlasRolesOrgIdConfig extends cdktf.TerraformMetaArg
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id mongodbatlas_roles_org_id}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id mongodbatlas_roles_org_id}
 */
 export class DataMongodbatlasRolesOrgId extends cdktf.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataMongodbatlasRolesOrgId extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id mongodbatlas_roles_org_id} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

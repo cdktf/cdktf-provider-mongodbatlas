@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,51 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectIpAccessListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#aws_security_group ProjectIpAccessList#aws_security_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#aws_security_group ProjectIpAccessList#aws_security_group}
   */
   readonly awsSecurityGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#cidr_block ProjectIpAccessList#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#cidr_block ProjectIpAccessList#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#comment ProjectIpAccessList#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#comment ProjectIpAccessList#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#id ProjectIpAccessList#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#id ProjectIpAccessList#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#ip_address ProjectIpAccessList#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#ip_address ProjectIpAccessList#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#project_id ProjectIpAccessList#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#project_id ProjectIpAccessList#project_id}
   */
   readonly projectId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
   */
   readonly timeouts?: ProjectIpAccessListTimeouts;
 }
 export interface ProjectIpAccessListTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#delete ProjectIpAccessList#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#delete ProjectIpAccessList#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list#read ProjectIpAccessList#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list#read ProjectIpAccessList#read}
   */
   readonly read?: string;
 }
 
-export function projectIpAccessListTimeoutsToTerraform(struct?: ProjectIpAccessListTimeoutsOutputReference | ProjectIpAccessListTimeouts | cdktf.IResolvable): any {
+export function projectIpAccessListTimeoutsToTerraform(struct?: ProjectIpAccessListTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -72,7 +72,7 @@ export class ProjectIpAccessListTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ProjectIpAccessListTimeouts | cdktf.IResolvable | undefined {
@@ -145,7 +145,7 @@ export class ProjectIpAccessListTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list mongodbatlas_project_ip_access_list}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}
 */
 export class ProjectIpAccessList extends cdktf.TerraformResource {
 
@@ -159,7 +159,7 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list mongodbatlas_project_ip_access_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
