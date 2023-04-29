@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasProjectApiKeysAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys#id DataMongodbatlasProjectApiKeysA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys#id DataMongodbatlasProjectApiKeysA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys#items_per_page DataMongodbatlasProjectApiKeysA#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys#items_per_page DataMongodbatlasProjectApiKeysA#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys#page_num DataMongodbatlasProjectApiKeysA#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys#page_num DataMongodbatlasProjectApiKeysA#page_num}
   */
   readonly pageNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys#project_id DataMongodbatlasProjectApiKeysA#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys#project_id DataMongodbatlasProjectApiKeysA#project_id}
   */
   readonly projectId: string;
 }
@@ -113,7 +113,7 @@ export class DataMongodbatlasProjectApiKeysResultsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys mongodbatlas_project_api_keys}
 */
 export class DataMongodbatlasProjectApiKeysA extends cdktf.TerraformDataSource {
 
@@ -127,7 +127,7 @@ export class DataMongodbatlasProjectApiKeysA extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class DataMongodbatlasProjectApiKeysA extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_project_api_keys',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.2',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `mongodbatlas_private_ip_mode`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_private_ip_mode`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode).
+Refer to the Terraform Registory for docs: [`mongodbatlas_private_ip_mode`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode).
 
 # `privateIpMode` Submodule <a name="`privateIpMode` Submodule" id="@cdktf/provider-mongodbatlas.privateIpMode"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_private_ip_mode`](http
 
 ### PrivateIpMode <a name="PrivateIpMode" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpMode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode mongodbatlas_private_ip_mode}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode mongodbatlas_private_ip_mode}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpMode.Initializer"></a>
 
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatei
 | <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode#enabled PrivateIpMode#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode#project_id PrivateIpMode#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode#id PrivateIpMode#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode#enabled PrivateIpMode#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode#project_id PrivateIpMode#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode#id PrivateIpMode#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode#enabled PrivateIpMode#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode#enabled PrivateIpMode#enabled}.
 
 ---
 
@@ -711,7 +711,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode#project_id PrivateIpMode#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode#project_id PrivateIpMode#project_id}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode#id PrivateIpMode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode#id PrivateIpMode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

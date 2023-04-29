@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,70 +8,70 @@ import * as cdktf from 'cdktf';
 
 export interface EncryptionAtRestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#aws_kms EncryptionAtRest#aws_kms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#aws_kms EncryptionAtRest#aws_kms}
   */
   readonly awsKms?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#azure_key_vault EncryptionAtRest#azure_key_vault}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#azure_key_vault EncryptionAtRest#azure_key_vault}
   */
   readonly azureKeyVault?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#google_cloud_kms EncryptionAtRest#google_cloud_kms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#google_cloud_kms EncryptionAtRest#google_cloud_kms}
   */
   readonly googleCloudKms?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#id EncryptionAtRest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#id EncryptionAtRest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}
   */
   readonly projectId: string;
   /**
   * aws_kms_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
   */
   readonly awsKmsConfig?: EncryptionAtRestAwsKmsConfig;
   /**
   * azure_key_vault_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
   */
   readonly azureKeyVaultConfig?: EncryptionAtRestAzureKeyVaultConfig;
   /**
   * google_cloud_kms_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
   */
   readonly googleCloudKmsConfig?: EncryptionAtRestGoogleCloudKmsConfig;
 }
 export interface EncryptionAtRestAwsKmsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#access_key_id EncryptionAtRest#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#access_key_id EncryptionAtRest#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#customer_master_key_id EncryptionAtRest#customer_master_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#customer_master_key_id EncryptionAtRest#customer_master_key_id}
   */
   readonly customerMasterKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#region EncryptionAtRest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#region EncryptionAtRest#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#role_id EncryptionAtRest#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#role_id EncryptionAtRest#role_id}
   */
   readonly roleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#secret_access_key EncryptionAtRest#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#secret_access_key EncryptionAtRest#secret_access_key}
   */
   readonly secretAccessKey?: string;
 }
@@ -251,39 +251,39 @@ export class EncryptionAtRestAwsKmsConfigOutputReference extends cdktf.ComplexOb
 }
 export interface EncryptionAtRestAzureKeyVaultConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#azure_environment EncryptionAtRest#azure_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#azure_environment EncryptionAtRest#azure_environment}
   */
   readonly azureEnvironment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#client_id EncryptionAtRest#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#client_id EncryptionAtRest#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#key_identifier EncryptionAtRest#key_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#key_identifier EncryptionAtRest#key_identifier}
   */
   readonly keyIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#key_vault_name EncryptionAtRest#key_vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#key_vault_name EncryptionAtRest#key_vault_name}
   */
   readonly keyVaultName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#resource_group_name EncryptionAtRest#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#resource_group_name EncryptionAtRest#resource_group_name}
   */
   readonly resourceGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#secret EncryptionAtRest#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#secret EncryptionAtRest#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#subscription_id EncryptionAtRest#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#subscription_id EncryptionAtRest#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#tenant_id EncryptionAtRest#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#tenant_id EncryptionAtRest#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -529,15 +529,15 @@ export class EncryptionAtRestAzureKeyVaultConfigOutputReference extends cdktf.Co
 }
 export interface EncryptionAtRestGoogleCloudKmsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#key_version_resource_id EncryptionAtRest#key_version_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#key_version_resource_id EncryptionAtRest#key_version_resource_id}
   */
   readonly keyVersionResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest#service_account_key EncryptionAtRest#service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest#service_account_key EncryptionAtRest#service_account_key}
   */
   readonly serviceAccountKey?: string;
 }
@@ -648,7 +648,7 @@ export class EncryptionAtRestGoogleCloudKmsConfigOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}
 */
 export class EncryptionAtRest extends cdktf.TerraformResource {
 
@@ -662,7 +662,7 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -673,7 +673,7 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_encryption_at_rest',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.2',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

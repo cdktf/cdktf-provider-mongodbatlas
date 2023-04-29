@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/data_lake
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasDataLakeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake#id DataMongodbatlasDataLake#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/data_lake#id DataMongodbatlasDataLake#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake#name DataMongodbatlasDataLake#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/data_lake#name DataMongodbatlasDataLake#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake#project_id DataMongodbatlasDataLake#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/data_lake#project_id DataMongodbatlasDataLake#project_id}
   */
   readonly projectId: string;
 }
@@ -576,7 +576,7 @@ export class DataMongodbatlasDataLakeStorageStoresList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake mongodbatlas_data_lake}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/data_lake mongodbatlas_data_lake}
 */
 export class DataMongodbatlasDataLake extends cdktf.TerraformDataSource {
 
@@ -590,7 +590,7 @@ export class DataMongodbatlasDataLake extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake mongodbatlas_data_lake} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/data_lake mongodbatlas_data_lake} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -601,7 +601,7 @@ export class DataMongodbatlasDataLake extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_data_lake',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.8.2',
+        providerVersion: '1.9.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

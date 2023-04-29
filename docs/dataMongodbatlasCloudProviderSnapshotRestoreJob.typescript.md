@@ -1,6 +1,6 @@
 # `data_mongodbatlas_cloud_provider_snapshot_restore_job`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_provider_snapshot_restore_job`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_provider_snapshot_restore_job`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job).
 
 # `dataMongodbatlasCloudProviderSnapshotRestoreJob` Submodule <a name="`dataMongodbatlasCloudProviderSnapshotRestoreJob` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_provider_sn
 
 ### DataMongodbatlasCloudProviderSnapshotRestoreJob <a name="DataMongodbatlasCloudProviderSnapshotRestoreJob" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJob.Initializer"></a>
 
@@ -758,10 +758,10 @@ const dataMongodbatlasCloudProviderSnapshotRestoreJobConfig: dataMongodbatlasClo
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#cluster_name DataMongodbatlasCloudProviderSnapshotRestoreJob#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.jobId">jobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#job_id DataMongodbatlasCloudProviderSnapshotRestoreJob#job_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#project_id DataMongodbatlasCloudProviderSnapshotRestoreJob#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#id DataMongodbatlasCloudProviderSnapshotRestoreJob#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#cluster_name DataMongodbatlasCloudProviderSnapshotRestoreJob#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.jobId">jobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#job_id DataMongodbatlasCloudProviderSnapshotRestoreJob#job_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#project_id DataMongodbatlasCloudProviderSnapshotRestoreJob#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshotRestoreJob.DataMongodbatlasCloudProviderSnapshotRestoreJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#id DataMongodbatlasCloudProviderSnapshotRestoreJob#id}. |
 
 ---
 
@@ -843,7 +843,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#cluster_name DataMongodbatlasCloudProviderSnapshotRestoreJob#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#cluster_name DataMongodbatlasCloudProviderSnapshotRestoreJob#cluster_name}.
 
 ---
 
@@ -855,7 +855,7 @@ public readonly jobId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#job_id DataMongodbatlasCloudProviderSnapshotRestoreJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#job_id DataMongodbatlasCloudProviderSnapshotRestoreJob#job_id}.
 
 ---
 
@@ -867,7 +867,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#project_id DataMongodbatlasCloudProviderSnapshotRestoreJob#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#project_id DataMongodbatlasCloudProviderSnapshotRestoreJob#project_id}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job#id DataMongodbatlasCloudProviderSnapshotRestoreJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job#id DataMongodbatlasCloudProviderSnapshotRestoreJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

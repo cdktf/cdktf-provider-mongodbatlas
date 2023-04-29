@@ -4,6 +4,7 @@ export * as advancedCluster from './advanced-cluster';
 export * as alertConfiguration from './alert-configuration';
 export * as apiKey from './api-key';
 export * as auditing from './auditing';
+export * as backupCompliancePolicy from './backup-compliance-policy';
 export * as cloudBackupSchedule from './cloud-backup-schedule';
 export * as cloudBackupSnapshot from './cloud-backup-snapshot';
 export * as cloudBackupSnapshotExportBucket from './cloud-backup-snapshot-export-bucket';
@@ -59,6 +60,7 @@ export * as dataMongodbatlasAlertConfigurations from './data-mongodbatlas-alert-
 export * as dataMongodbatlasApiKey from './data-mongodbatlas-api-key';
 export * as dataMongodbatlasApiKeys from './data-mongodbatlas-api-keys';
 export * as dataMongodbatlasAuditing from './data-mongodbatlas-auditing';
+export * as dataMongodbatlasBackupCompliancePolicy from './data-mongodbatlas-backup-compliance-policy';
 export * as dataMongodbatlasCloudBackupSchedule from './data-mongodbatlas-cloud-backup-schedule';
 export * as dataMongodbatlasCloudBackupSnapshot from './data-mongodbatlas-cloud-backup-snapshot';
 export * as dataMongodbatlasCloudBackupSnapshotExportBucket from './data-mongodbatlas-cloud-backup-snapshot-export-bucket';
