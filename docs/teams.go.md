@@ -1,6 +1,6 @@
 # `mongodbatlas_teams`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_teams`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams).
+Refer to the Terraform Registory for docs: [`mongodbatlas_teams`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams).
 
 # `teams` Submodule <a name="`teams` Submodule" id="@cdktf/provider-mongodbatlas.teams"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_teams`](https://regist
 
 ### Teams <a name="Teams" id="@cdktf/provider-mongodbatlas.teams.Teams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams mongodbatlas_teams}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams mongodbatlas_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.teams.Teams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/teams"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/teams"
 
 teams.NewTeams(scope Construct, id *string, config TeamsConfig) Teams
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.teams.Teams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/teams"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/teams"
 
 teams.Teams_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.teams.Teams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/teams"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/teams"
 
 teams.Teams_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ teams.Teams_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.teams.Teams.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/teams"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/teams"
 
 teams.Teams_IsTerraformResource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.teams.TeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/teams"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/teams"
 
 &teams.TeamsConfig {
 	Connection: interface{},
@@ -649,10 +649,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/teams"
 | <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#name Teams#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#org_id Teams#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.usernames">Usernames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#usernames Teams#usernames}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#id Teams#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#name Teams#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#org_id Teams#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.usernames">Usernames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#usernames Teams#usernames}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.teams.TeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#id Teams#id}. |
 
 ---
 
@@ -734,7 +734,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#name Teams#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#name Teams#name}.
 
 ---
 
@@ -746,7 +746,7 @@ OrgId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#org_id Teams#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#org_id Teams#org_id}.
 
 ---
 
@@ -758,7 +758,7 @@ Usernames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#usernames Teams#usernames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#usernames Teams#usernames}.
 
 ---
 
@@ -770,7 +770,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/teams#id Teams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/teams#id Teams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
