@@ -1,6 +1,6 @@
 # `data_mongodbatlas_team`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_team`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_team`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team).
 
 # `dataMongodbatlasTeam` Submodule <a name="`dataMongodbatlasTeam` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_team`](https://re
 
 ### DataMongodbatlasTeam <a name="DataMongodbatlasTeam" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team mongodbatlas_team}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team mongodbatlas_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer"></a>
 
@@ -45,10 +45,10 @@ DataMongodbatlasTeam.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#id DataMongodbatlasTeam#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#name DataMongodbatlasTeam#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#id DataMongodbatlasTeam#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#name DataMongodbatlasTeam#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeam.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#id DataMongodbatlasTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#id DataMongodbatlasTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#name DataMongodbatlasTeam#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#name DataMongodbatlasTeam#name}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}.
 
 ---
 
@@ -742,10 +742,10 @@ DataMongodbatlasTeamConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#id DataMongodbatlasTeam#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#name DataMongodbatlasTeam#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#id DataMongodbatlasTeam#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#name DataMongodbatlasTeam#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasTeam.DataMongodbatlasTeamConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}. |
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.String getOrgId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#org_id DataMongodbatlasTeam#org_id}.
 
 ---
 
@@ -839,7 +839,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#id DataMongodbatlasTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#id DataMongodbatlasTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +854,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#name DataMongodbatlasTeam#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#name DataMongodbatlasTeam#name}.
 
 ---
 
@@ -866,7 +866,7 @@ public java.lang.String getTeamId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/team#team_id DataMongodbatlasTeam#team_id}.
 
 ---
 
