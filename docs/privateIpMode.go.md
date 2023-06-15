@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privateipmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privateipmode"
 
 privateipmode.NewPrivateIpMode(scope Construct, id *string, config PrivateIpModeConfig) PrivateIpMode
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpMode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privateipmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privateipmode"
 
 privateipmode.PrivateIpMode_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpMode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privateipmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privateipmode"
 
 privateipmode.PrivateIpMode_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ privateipmode.PrivateIpMode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpMode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privateipmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privateipmode"
 
 privateipmode.PrivateIpMode_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privateIpMode.PrivateIpModeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privateipmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privateipmode"
 
 &privateipmode.PrivateIpModeConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshots.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 datamongodbatlascloudprovidersnapshots.NewDataMongodbatlasCloudProviderSnapshots(scope Construct, id *string, config DataMongodbatlasCloudProviderSnapshotsConfig) DataMongodbatlasCloudProviderSnapshots
 ```
@@ -291,7 +291,7 @@ func ResetPageNum()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshots.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 datamongodbatlascloudprovidersnapshots.DataMongodbatlasCloudProviderSnapshots_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshots.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 datamongodbatlascloudprovidersnapshots.DataMongodbatlasCloudProviderSnapshots_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datamongodbatlascloudprovidersnapshots.DataMongodbatlasCloudProviderSnapshots_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshots.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 datamongodbatlascloudprovidersnapshots.DataMongodbatlasCloudProviderSnapshots_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshotsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 &datamongodbatlascloudprovidersnapshots.DataMongodbatlasCloudProviderSnapshotsConfig {
 	Connection: interface{},
@@ -821,7 +821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshotsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 &datamongodbatlascloudprovidersnapshots.DataMongodbatlasCloudProviderSnapshotsResults {
 
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshotsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 datamongodbatlascloudprovidersnapshots.NewDataMongodbatlasCloudProviderSnapshotsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasCloudProviderSnapshotsResultsList
 ```
@@ -968,7 +968,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudProviderSnapshots.DataMongodbatlasCloudProviderSnapshotsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovidersnapshots"
 
 datamongodbatlascloudprovidersnapshots.NewDataMongodbatlasCloudProviderSnapshotsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasCloudProviderSnapshotsResultsOutputReference
 ```
