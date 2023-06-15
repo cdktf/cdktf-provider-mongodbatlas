@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProviders(scope Construct, id *string, config DataMongodbatlasFederatedSettingsIdentityProvidersConfig) DataMongodbatlasFederatedSettingsIdentityProviders
 ```
@@ -291,7 +291,7 @@ func ResetPageNum()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProviders.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProviders_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProviders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProviders_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSett
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProviders.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProviders_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersConfig {
 	Connection: interface{},
@@ -774,7 +774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResults {
 
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgs {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappings {
 
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignments {
 
@@ -826,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflicts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflicts {
 
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfo {
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 &datamongodbatlasfederatedsettingsidentityproviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificates {
 
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsList
 ```
@@ -999,7 +999,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsOutputReference
 ```
@@ -1343,7 +1343,7 @@ func InternalValue() DataMongodbatlasFederatedSettingsIdentityProvidersResultsAs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsList
 ```
@@ -1475,7 +1475,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsOutputReference
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() DataMongodbatlasFederatedSettingsIdentityProvidersResultsAs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsList
 ```
@@ -1907,7 +1907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsOutputReference
 ```
@@ -2207,7 +2207,7 @@ func InternalValue() DataMongodbatlasFederatedSettingsIdentityProvidersResultsAs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflictsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflictsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflictsList
 ```
@@ -2339,7 +2339,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflictsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflictsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflictsOutputReference
 ```
@@ -2661,7 +2661,7 @@ func InternalValue() DataMongodbatlasFederatedSettingsIdentityProvidersResultsAs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsList
 ```
@@ -2793,7 +2793,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference
 ```
@@ -3203,7 +3203,7 @@ func InternalValue() DataMongodbatlasFederatedSettingsIdentityProvidersResults
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesList
 ```
@@ -3335,7 +3335,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesOutputReference
 ```
@@ -3624,7 +3624,7 @@ func InternalValue() DataMongodbatlasFederatedSettingsIdentityProvidersResultsPe
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoList
 ```
@@ -3756,7 +3756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProviders.DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasfederatedsettingsidentityproviders"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettingsidentityproviders"
 
 datamongodbatlasfederatedsettingsidentityproviders.NewDataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoOutputReference
 ```
