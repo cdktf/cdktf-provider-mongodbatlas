@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 cloudprovidersnapshotrestorejob.NewCloudProviderSnapshotRestoreJob(scope Construct, id *string, config CloudProviderSnapshotRestoreJobConfig) CloudProviderSnapshotRestoreJob
 ```
@@ -304,7 +304,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 cloudprovidersnapshotrestorejob.CloudProviderSnapshotRestoreJob_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 cloudprovidersnapshotrestorejob.CloudProviderSnapshotRestoreJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ cloudprovidersnapshotrestorejob.CloudProviderSnapshotRestoreJob_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 cloudprovidersnapshotrestorejob.CloudProviderSnapshotRestoreJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 &cloudprovidersnapshotrestorejob.CloudProviderSnapshotRestoreJobConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudpro
 	ProjectId: *string,
 	SnapshotId: *string,
 	DeliveryType: *map[string]*string,
-	DeliveryTypeConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJobDeliveryTypeConfig,
+	DeliveryTypeConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJobDeliveryTypeConfig,
 	Id: *string,
 }
 ```
@@ -960,7 +960,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJobDeliveryTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 &cloudprovidersnapshotrestorejob.CloudProviderSnapshotRestoreJobDeliveryTypeConfig {
 	Automated: interface{},
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotRestoreJob.CloudProviderSnapshotRestoreJobDeliveryTypeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovidersnapshotrestorejob"
 
 cloudprovidersnapshotrestorejob.NewCloudProviderSnapshotRestoreJobDeliveryTypeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudProviderSnapshotRestoreJobDeliveryTypeConfigOutputReference
 ```
