@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.NewCloudProviderSnapshotBackupPolicy(scope Construct, id *string, config CloudProviderSnapshotBackupPolicyConfig) CloudProviderSnapshotBackupPolicy
 ```
@@ -318,7 +318,7 @@ func ResetUpdateSnapshots()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 &cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicyConfig {
 	Connection: interface{},
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 &cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicyPolicies {
 	Id: *string,
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyPoliciesPolicyItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 &cloudprovidersnapshotbackuppolicy.CloudProviderSnapshotBackupPolicyPoliciesPolicyItem {
 	FrequencyInterval: *f64,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.NewCloudProviderSnapshotBackupPolicyPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudProviderSnapshotBackupPolicyPoliciesList
 ```
@@ -1267,7 +1267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.NewCloudProviderSnapshotBackupPolicyPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudProviderSnapshotBackupPolicyPoliciesOutputReference
 ```
@@ -1591,7 +1591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyPoliciesPolicyItemList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.NewCloudProviderSnapshotBackupPolicyPoliciesPolicyItemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudProviderSnapshotBackupPolicyPoliciesPolicyItemList
 ```
@@ -1734,7 +1734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderSnapshotBackupPolicy.CloudProviderSnapshotBackupPolicyPoliciesPolicyItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovidersnapshotbackuppolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovidersnapshotbackuppolicy"
 
 cloudprovidersnapshotbackuppolicy.NewCloudProviderSnapshotBackupPolicyPoliciesPolicyItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudProviderSnapshotBackupPolicyPoliciesPolicyItemOutputReference
 ```
