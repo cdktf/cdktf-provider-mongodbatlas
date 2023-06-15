@@ -1,6 +1,6 @@
 # `mongodbatlas_project`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_project`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project).
+Refer to the Terraform Registory for docs: [`mongodbatlas_project`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project).
 
 # `project` Submodule <a name="`project` Submodule" id="@cdktf/provider-mongodbatlas.project"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_project`](https://regi
 
 ### Project <a name="Project" id="@cdktf/provider-mongodbatlas.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project mongodbatlas_project}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project mongodbatlas_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.Project.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetIsCollectDatabaseSpecificsStatisticsEnabled">ResetIsCollectDatabaseSpecificsStatisticsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetIsDataExplorerEnabled">ResetIsDataExplorerEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetIsExtendedStorageSizesEnabled">ResetIsExtendedStorageSizesEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetIsPerformanceAdvisorEnabled">ResetIsPerformanceAdvisorEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetIsRealtimePerformancePanelEnabled">ResetIsRealtimePerformancePanelEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.resetIsSchemaAdvisorEnabled">ResetIsSchemaAdvisorEnabled</a></code> | *No description.* |
@@ -318,6 +319,12 @@ private void ResetIsCollectDatabaseSpecificsStatisticsEnabled()
 private void ResetIsDataExplorerEnabled()
 ```
 
+##### `ResetIsExtendedStorageSizesEnabled` <a name="ResetIsExtendedStorageSizesEnabled" id="@cdktf/provider-mongodbatlas.project.Project.resetIsExtendedStorageSizesEnabled"></a>
+
+```csharp
+private void ResetIsExtendedStorageSizesEnabled()
+```
+
 ##### `ResetIsPerformanceAdvisorEnabled` <a name="ResetIsPerformanceAdvisorEnabled" id="@cdktf/provider-mongodbatlas.project.Project.resetIsPerformanceAdvisorEnabled"></a>
 
 ```csharp
@@ -456,6 +463,7 @@ Project.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isCollectDatabaseSpecificsStatisticsEnabledInput">IsCollectDatabaseSpecificsStatisticsEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isDataExplorerEnabledInput">IsDataExplorerEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isExtendedStorageSizesEnabledInput">IsExtendedStorageSizesEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isPerformanceAdvisorEnabledInput">IsPerformanceAdvisorEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isRealtimePerformancePanelEnabledInput">IsRealtimePerformancePanelEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isSchemaAdvisorEnabledInput">IsSchemaAdvisorEnabledInput</a></code> | <code>object</code> | *No description.* |
@@ -468,6 +476,7 @@ Project.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isCollectDatabaseSpecificsStatisticsEnabled">IsCollectDatabaseSpecificsStatisticsEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isDataExplorerEnabled">IsDataExplorerEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isExtendedStorageSizesEnabled">IsExtendedStorageSizesEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isPerformanceAdvisorEnabled">IsPerformanceAdvisorEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isRealtimePerformancePanelEnabled">IsRealtimePerformancePanelEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.Project.property.isSchemaAdvisorEnabled">IsSchemaAdvisorEnabled</a></code> | <code>object</code> | *No description.* |
@@ -701,6 +710,16 @@ public object IsDataExplorerEnabledInput { get; }
 
 ---
 
+##### `IsExtendedStorageSizesEnabledInput`<sup>Optional</sup> <a name="IsExtendedStorageSizesEnabledInput" id="@cdktf/provider-mongodbatlas.project.Project.property.isExtendedStorageSizesEnabledInput"></a>
+
+```csharp
+public object IsExtendedStorageSizesEnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `IsPerformanceAdvisorEnabledInput`<sup>Optional</sup> <a name="IsPerformanceAdvisorEnabledInput" id="@cdktf/provider-mongodbatlas.project.Project.property.isPerformanceAdvisorEnabledInput"></a>
 
 ```csharp
@@ -815,6 +834,16 @@ public object IsCollectDatabaseSpecificsStatisticsEnabled { get; }
 
 ```csharp
 public object IsDataExplorerEnabled { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `IsExtendedStorageSizesEnabled`<sup>Required</sup> <a name="IsExtendedStorageSizesEnabled" id="@cdktf/provider-mongodbatlas.project.Project.property.isExtendedStorageSizesEnabled"></a>
+
+```csharp
+public object IsExtendedStorageSizesEnabled { get; }
 ```
 
 - *Type:* object
@@ -938,8 +967,8 @@ new ProjectApiKeys {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectApiKeys.property.apiKeyId">ApiKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#api_key_id Project#api_key_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectApiKeys.property.roleNames">RoleNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#role_names Project#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectApiKeys.property.apiKeyId">ApiKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#api_key_id Project#api_key_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectApiKeys.property.roleNames">RoleNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#role_names Project#role_names}. |
 
 ---
 
@@ -951,7 +980,7 @@ public string ApiKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#api_key_id Project#api_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#api_key_id Project#api_key_id}.
 
 ---
 
@@ -963,7 +992,7 @@ public string[] RoleNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#role_names Project#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#role_names Project#role_names}.
 
 ---
 
@@ -988,6 +1017,7 @@ new ProjectConfig {
     string Id = null,
     object IsCollectDatabaseSpecificsStatisticsEnabled = null,
     object IsDataExplorerEnabled = null,
+    object IsExtendedStorageSizesEnabled = null,
     object IsPerformanceAdvisorEnabled = null,
     object IsRealtimePerformancePanelEnabled = null,
     object IsSchemaAdvisorEnabled = null,
@@ -1009,19 +1039,20 @@ new ProjectConfig {
 | <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#name Project#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.orgId">OrgId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#org_id Project#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#name Project#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.orgId">OrgId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#org_id Project#org_id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.apiKeys">ApiKeys</a></code> | <code>object</code> | api_keys block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#id Project#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isCollectDatabaseSpecificsStatisticsEnabled">IsCollectDatabaseSpecificsStatisticsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_collect_database_specifics_statistics_enabled Project#is_collect_database_specifics_statistics_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isDataExplorerEnabled">IsDataExplorerEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_data_explorer_enabled Project#is_data_explorer_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isPerformanceAdvisorEnabled">IsPerformanceAdvisorEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_performance_advisor_enabled Project#is_performance_advisor_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isRealtimePerformancePanelEnabled">IsRealtimePerformancePanelEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_realtime_performance_panel_enabled Project#is_realtime_performance_panel_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isSchemaAdvisorEnabled">IsSchemaAdvisorEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_schema_advisor_enabled Project#is_schema_advisor_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.projectOwnerId">ProjectOwnerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#project_owner_id Project#project_owner_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.regionUsageRestrictions">RegionUsageRestrictions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#region_usage_restrictions Project#region_usage_restrictions}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isCollectDatabaseSpecificsStatisticsEnabled">IsCollectDatabaseSpecificsStatisticsEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_collect_database_specifics_statistics_enabled Project#is_collect_database_specifics_statistics_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isDataExplorerEnabled">IsDataExplorerEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_data_explorer_enabled Project#is_data_explorer_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isExtendedStorageSizesEnabled">IsExtendedStorageSizesEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_extended_storage_sizes_enabled Project#is_extended_storage_sizes_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isPerformanceAdvisorEnabled">IsPerformanceAdvisorEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_performance_advisor_enabled Project#is_performance_advisor_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isRealtimePerformancePanelEnabled">IsRealtimePerformancePanelEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_realtime_performance_panel_enabled Project#is_realtime_performance_panel_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isSchemaAdvisorEnabled">IsSchemaAdvisorEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_schema_advisor_enabled Project#is_schema_advisor_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.projectOwnerId">ProjectOwnerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#project_owner_id Project#project_owner_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.regionUsageRestrictions">RegionUsageRestrictions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#region_usage_restrictions Project#region_usage_restrictions}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.teams">Teams</a></code> | <code>object</code> | teams block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.withDefaultAlertsSettings">WithDefaultAlertsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#with_default_alerts_settings Project#with_default_alerts_settings}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectConfig.property.withDefaultAlertsSettings">WithDefaultAlertsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#with_default_alerts_settings Project#with_default_alerts_settings}. |
 
 ---
 
@@ -1103,7 +1134,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#name Project#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#name Project#name}.
 
 ---
 
@@ -1115,7 +1146,7 @@ public string OrgId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#org_id Project#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#org_id Project#org_id}.
 
 ---
 
@@ -1129,7 +1160,7 @@ public object ApiKeys { get; set; }
 
 api_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#api_keys Project#api_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#api_keys Project#api_keys}
 
 ---
 
@@ -1141,7 +1172,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1187,7 @@ public object IsCollectDatabaseSpecificsStatisticsEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_collect_database_specifics_statistics_enabled Project#is_collect_database_specifics_statistics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_collect_database_specifics_statistics_enabled Project#is_collect_database_specifics_statistics_enabled}.
 
 ---
 
@@ -1168,7 +1199,19 @@ public object IsDataExplorerEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_data_explorer_enabled Project#is_data_explorer_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_data_explorer_enabled Project#is_data_explorer_enabled}.
+
+---
+
+##### `IsExtendedStorageSizesEnabled`<sup>Optional</sup> <a name="IsExtendedStorageSizesEnabled" id="@cdktf/provider-mongodbatlas.project.ProjectConfig.property.isExtendedStorageSizesEnabled"></a>
+
+```csharp
+public object IsExtendedStorageSizesEnabled { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_extended_storage_sizes_enabled Project#is_extended_storage_sizes_enabled}.
 
 ---
 
@@ -1180,7 +1223,7 @@ public object IsPerformanceAdvisorEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_performance_advisor_enabled Project#is_performance_advisor_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_performance_advisor_enabled Project#is_performance_advisor_enabled}.
 
 ---
 
@@ -1192,7 +1235,7 @@ public object IsRealtimePerformancePanelEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_realtime_performance_panel_enabled Project#is_realtime_performance_panel_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_realtime_performance_panel_enabled Project#is_realtime_performance_panel_enabled}.
 
 ---
 
@@ -1204,7 +1247,7 @@ public object IsSchemaAdvisorEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#is_schema_advisor_enabled Project#is_schema_advisor_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#is_schema_advisor_enabled Project#is_schema_advisor_enabled}.
 
 ---
 
@@ -1216,7 +1259,7 @@ public string ProjectOwnerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#project_owner_id Project#project_owner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#project_owner_id Project#project_owner_id}.
 
 ---
 
@@ -1228,7 +1271,7 @@ public string RegionUsageRestrictions { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#region_usage_restrictions Project#region_usage_restrictions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#region_usage_restrictions Project#region_usage_restrictions}.
 
 ---
 
@@ -1242,7 +1285,7 @@ public object Teams { get; set; }
 
 teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#teams Project#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#teams Project#teams}
 
 ---
 
@@ -1254,7 +1297,7 @@ public object WithDefaultAlertsSettings { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#with_default_alerts_settings Project#with_default_alerts_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#with_default_alerts_settings Project#with_default_alerts_settings}.
 
 ---
 
@@ -1275,8 +1318,8 @@ new ProjectTeams {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectTeams.property.roleNames">RoleNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#role_names Project#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectTeams.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#team_id Project#team_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectTeams.property.roleNames">RoleNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#role_names Project#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.project.ProjectTeams.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#team_id Project#team_id}. |
 
 ---
 
@@ -1288,7 +1331,7 @@ public string[] RoleNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#role_names Project#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#role_names Project#role_names}.
 
 ---
 
@@ -1300,7 +1343,7 @@ public string TeamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project#team_id Project#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project#team_id Project#team_id}.
 
 ---
 

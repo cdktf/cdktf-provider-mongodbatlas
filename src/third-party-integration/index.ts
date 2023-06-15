@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,108 +8,80 @@ import * as cdktf from 'cdktf';
 
 export interface ThirdPartyIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#account_id ThirdPartyIntegration#account_id}
-  */
-  readonly accountId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#api_key ThirdPartyIntegration#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#api_key ThirdPartyIntegration#api_key}
   */
   readonly apiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#api_token ThirdPartyIntegration#api_token}
-  */
-  readonly apiToken?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#channel_name ThirdPartyIntegration#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#channel_name ThirdPartyIntegration#channel_name}
   */
   readonly channelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#enabled ThirdPartyIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#enabled ThirdPartyIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#flow_name ThirdPartyIntegration#flow_name}
-  */
-  readonly flowName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#id ThirdPartyIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#id ThirdPartyIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#license_key ThirdPartyIntegration#license_key}
-  */
-  readonly licenseKey?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#microsoft_teams_webhook_url ThirdPartyIntegration#microsoft_teams_webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#microsoft_teams_webhook_url ThirdPartyIntegration#microsoft_teams_webhook_url}
   */
   readonly microsoftTeamsWebhookUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#org_name ThirdPartyIntegration#org_name}
-  */
-  readonly orgName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#password ThirdPartyIntegration#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#password ThirdPartyIntegration#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#project_id ThirdPartyIntegration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#project_id ThirdPartyIntegration#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#read_token ThirdPartyIntegration#read_token}
-  */
-  readonly readToken?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#region ThirdPartyIntegration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#region ThirdPartyIntegration#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#routing_key ThirdPartyIntegration#routing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#routing_key ThirdPartyIntegration#routing_key}
   */
   readonly routingKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#scheme ThirdPartyIntegration#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#scheme ThirdPartyIntegration#scheme}
   */
   readonly scheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#secret ThirdPartyIntegration#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#secret ThirdPartyIntegration#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#service_discovery ThirdPartyIntegration#service_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#service_discovery ThirdPartyIntegration#service_discovery}
   */
   readonly serviceDiscovery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#service_key ThirdPartyIntegration#service_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#service_key ThirdPartyIntegration#service_key}
   */
   readonly serviceKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#team_name ThirdPartyIntegration#team_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#team_name ThirdPartyIntegration#team_name}
   */
   readonly teamName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#type ThirdPartyIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#type ThirdPartyIntegration#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#url ThirdPartyIntegration#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#url ThirdPartyIntegration#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#user_name ThirdPartyIntegration#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration#user_name ThirdPartyIntegration#user_name}
   */
   readonly userName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration#write_token ThirdPartyIntegration#write_token}
-  */
-  readonly writeToken?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}
 */
 export class ThirdPartyIntegration extends cdktf.TerraformResource {
 
@@ -128,7 +95,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,7 +106,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_third_party_integration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.9.0',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -150,19 +117,13 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountId = config.accountId;
     this._apiKey = config.apiKey;
-    this._apiToken = config.apiToken;
     this._channelName = config.channelName;
     this._enabled = config.enabled;
-    this._flowName = config.flowName;
     this._id = config.id;
-    this._licenseKey = config.licenseKey;
     this._microsoftTeamsWebhookUrl = config.microsoftTeamsWebhookUrl;
-    this._orgName = config.orgName;
     this._password = config.password;
     this._projectId = config.projectId;
-    this._readToken = config.readToken;
     this._region = config.region;
     this._routingKey = config.routingKey;
     this._scheme = config.scheme;
@@ -173,28 +134,11 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     this._type = config.type;
     this._url = config.url;
     this._userName = config.userName;
-    this._writeToken = config.writeToken;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // account_id - computed: false, optional: true, required: false
-  private _accountId?: string; 
-  public get accountId() {
-    return this.getStringAttribute('account_id');
-  }
-  public set accountId(value: string) {
-    this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId;
-  }
 
   // api_key - computed: false, optional: true, required: false
   private _apiKey?: string; 
@@ -210,22 +154,6 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get apiKeyInput() {
     return this._apiKey;
-  }
-
-  // api_token - computed: false, optional: true, required: false
-  private _apiToken?: string; 
-  public get apiToken() {
-    return this.getStringAttribute('api_token');
-  }
-  public set apiToken(value: string) {
-    this._apiToken = value;
-  }
-  public resetApiToken() {
-    this._apiToken = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiTokenInput() {
-    return this._apiToken;
   }
 
   // channel_name - computed: false, optional: true, required: false
@@ -260,22 +188,6 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // flow_name - computed: false, optional: true, required: false
-  private _flowName?: string; 
-  public get flowName() {
-    return this.getStringAttribute('flow_name');
-  }
-  public set flowName(value: string) {
-    this._flowName = value;
-  }
-  public resetFlowName() {
-    this._flowName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get flowNameInput() {
-    return this._flowName;
-  }
-
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -292,22 +204,6 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // license_key - computed: false, optional: true, required: false
-  private _licenseKey?: string; 
-  public get licenseKey() {
-    return this.getStringAttribute('license_key');
-  }
-  public set licenseKey(value: string) {
-    this._licenseKey = value;
-  }
-  public resetLicenseKey() {
-    this._licenseKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get licenseKeyInput() {
-    return this._licenseKey;
-  }
-
   // microsoft_teams_webhook_url - computed: false, optional: true, required: false
   private _microsoftTeamsWebhookUrl?: string; 
   public get microsoftTeamsWebhookUrl() {
@@ -322,22 +218,6 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get microsoftTeamsWebhookUrlInput() {
     return this._microsoftTeamsWebhookUrl;
-  }
-
-  // org_name - computed: false, optional: true, required: false
-  private _orgName?: string; 
-  public get orgName() {
-    return this.getStringAttribute('org_name');
-  }
-  public set orgName(value: string) {
-    this._orgName = value;
-  }
-  public resetOrgName() {
-    this._orgName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get orgNameInput() {
-    return this._orgName;
   }
 
   // password - computed: false, optional: true, required: false
@@ -367,22 +247,6 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
     return this._projectId;
-  }
-
-  // read_token - computed: false, optional: true, required: false
-  private _readToken?: string; 
-  public get readToken() {
-    return this.getStringAttribute('read_token');
-  }
-  public set readToken(value: string) {
-    this._readToken = value;
-  }
-  public resetReadToken() {
-    this._readToken = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readTokenInput() {
-    return this._readToken;
   }
 
   // region - computed: false, optional: true, required: false
@@ -542,41 +406,19 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._userName;
   }
 
-  // write_token - computed: false, optional: true, required: false
-  private _writeToken?: string; 
-  public get writeToken() {
-    return this.getStringAttribute('write_token');
-  }
-  public set writeToken(value: string) {
-    this._writeToken = value;
-  }
-  public resetWriteToken() {
-    this._writeToken = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get writeTokenInput() {
-    return this._writeToken;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
       api_key: cdktf.stringToTerraform(this._apiKey),
-      api_token: cdktf.stringToTerraform(this._apiToken),
       channel_name: cdktf.stringToTerraform(this._channelName),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      flow_name: cdktf.stringToTerraform(this._flowName),
       id: cdktf.stringToTerraform(this._id),
-      license_key: cdktf.stringToTerraform(this._licenseKey),
       microsoft_teams_webhook_url: cdktf.stringToTerraform(this._microsoftTeamsWebhookUrl),
-      org_name: cdktf.stringToTerraform(this._orgName),
       password: cdktf.stringToTerraform(this._password),
       project_id: cdktf.stringToTerraform(this._projectId),
-      read_token: cdktf.stringToTerraform(this._readToken),
       region: cdktf.stringToTerraform(this._region),
       routing_key: cdktf.stringToTerraform(this._routingKey),
       scheme: cdktf.stringToTerraform(this._scheme),
@@ -587,7 +429,6 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       url: cdktf.stringToTerraform(this._url),
       user_name: cdktf.stringToTerraform(this._userName),
-      write_token: cdktf.stringToTerraform(this._writeToken),
     };
   }
 }

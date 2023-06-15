@@ -1,6 +1,6 @@
 # `mongodbatlas_alert_configuration`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_alert_configuration`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration).
+Refer to the Terraform Registory for docs: [`mongodbatlas_alert_configuration`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration).
 
 # `alertConfiguration` Submodule <a name="`alertConfiguration` Submodule" id="@cdktf/provider-mongodbatlas.alertConfiguration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_alert_configuration`](
 
 ### AlertConfiguration <a name="AlertConfiguration" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfiguration(scope Construct, id *string, config AlertConfigurationConfig) AlertConfiguration
 ```
@@ -371,7 +371,7 @@ func ResetThresholdConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.AlertConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.AlertConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ alertconfiguration.AlertConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.AlertConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationConfig {
 	Connection: interface{},
@@ -886,9 +886,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 	Id: *string,
 	Matcher: interface{},
 	MetricThreshold: *map[string]*string,
-	MetricThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4.alertConfiguration.AlertConfigurationMetricThresholdConfig,
+	MetricThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig,
 	Threshold: *map[string]*string,
-	ThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4.alertConfiguration.AlertConfigurationThresholdConfig,
+	ThresholdConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig,
 }
 ```
 
@@ -903,15 +903,15 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.notification">Notification</a></code> | <code>interface{}</code> | notification block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#id AlertConfiguration#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#id AlertConfiguration#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.matcher">Matcher</a></code> | <code>interface{}</code> | matcher block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.metricThreshold">MetricThreshold</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#metric_threshold AlertConfiguration#metric_threshold}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.metricThreshold">MetricThreshold</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#metric_threshold AlertConfiguration#metric_threshold}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.metricThresholdConfig">MetricThresholdConfig</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig">AlertConfigurationMetricThresholdConfig</a></code> | metric_threshold_config block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.threshold">Threshold</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.threshold">Threshold</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationConfig.property.thresholdConfig">ThresholdConfig</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig">AlertConfigurationThresholdConfig</a></code> | threshold_config block. |
 
 ---
@@ -994,7 +994,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Notification interface{}
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
 
 ---
 
@@ -1020,7 +1020,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#id AlertConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#id AlertConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1061,7 +1061,7 @@ Matcher interface{}
 
 matcher block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
 
 ---
 
@@ -1073,7 +1073,7 @@ MetricThreshold *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#metric_threshold AlertConfiguration#metric_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#metric_threshold AlertConfiguration#metric_threshold}.
 
 ---
 
@@ -1087,7 +1087,7 @@ MetricThresholdConfig AlertConfigurationMetricThresholdConfig
 
 metric_threshold_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
 
 ---
 
@@ -1099,7 +1099,7 @@ Threshold *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}.
 
 ---
 
@@ -1113,7 +1113,7 @@ ThresholdConfig AlertConfigurationThresholdConfig
 
 threshold_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
 
 ---
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationMatcher {
 	FieldName: *string,
@@ -1135,9 +1135,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.property.fieldName">FieldName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#value AlertConfiguration#value}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.property.fieldName">FieldName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcher.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#value AlertConfiguration#value}. |
 
 ---
 
@@ -1149,7 +1149,7 @@ FieldName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}.
 
 ---
 
@@ -1161,7 +1161,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#value AlertConfiguration#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#value AlertConfiguration#value}.
 
 ---
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationMetricThresholdConfig {
 	MetricName: *string,
@@ -1197,11 +1197,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.threshold">Threshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.units">Units</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#units AlertConfiguration#units}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.threshold">Threshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig.property.units">Units</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#units AlertConfiguration#units}. |
 
 ---
 
@@ -1213,7 +1213,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}.
 
 ---
 
@@ -1237,7 +1237,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Threshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}.
 
 ---
 
@@ -1261,7 +1261,7 @@ Units *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#units AlertConfiguration#units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#units AlertConfiguration#units}.
 
 ---
 
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationNotification {
 	ApiToken: *string,
@@ -1280,14 +1280,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 	DelayMin: *f64,
 	EmailAddress: *string,
 	EmailEnabled: interface{},
-	FlowdockApiToken: *string,
-	FlowName: *string,
 	IntervalMin: *f64,
 	MicrosoftTeamsWebhookUrl: *string,
 	MobileNumber: *string,
 	OpsGenieApiKey: *string,
 	OpsGenieRegion: *string,
-	OrgName: *string,
 	Roles: *[]*string,
 	ServiceKey: *string,
 	SmsEnabled: interface{},
@@ -1305,31 +1302,28 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.apiToken">ApiToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.channelName">ChannelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.datadogApiKey">DatadogApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.datadogRegion">DatadogRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.delayMin">DelayMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.emailEnabled">EmailEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.flowdockApiToken">FlowdockApiToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#flowdock_api_token AlertConfiguration#flowdock_api_token}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.flowName">FlowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#flow_name AlertConfiguration#flow_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.intervalMin">IntervalMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.microsoftTeamsWebhookUrl">MicrosoftTeamsWebhookUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.mobileNumber">MobileNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.opsGenieApiKey">OpsGenieApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.opsGenieRegion">OpsGenieRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.orgName">OrgName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#org_name AlertConfiguration#org_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.roles">Roles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.serviceKey">ServiceKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.smsEnabled">SmsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.typeName">TypeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#username AlertConfiguration#username}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.victorOpsApiKey">VictorOpsApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.victorOpsRoutingKey">VictorOpsRoutingKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.webhookSecret">WebhookSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.webhookUrl">WebhookUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.apiToken">ApiToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.channelName">ChannelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.datadogApiKey">DatadogApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.datadogRegion">DatadogRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.delayMin">DelayMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.emailEnabled">EmailEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.intervalMin">IntervalMin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.microsoftTeamsWebhookUrl">MicrosoftTeamsWebhookUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.mobileNumber">MobileNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.opsGenieApiKey">OpsGenieApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.opsGenieRegion">OpsGenieRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.roles">Roles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.serviceKey">ServiceKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.smsEnabled">SmsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.typeName">TypeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#username AlertConfiguration#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.victorOpsApiKey">VictorOpsApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.victorOpsRoutingKey">VictorOpsRoutingKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.webhookSecret">WebhookSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.webhookUrl">WebhookUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}. |
 
 ---
 
@@ -1341,7 +1335,7 @@ ApiToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}.
 
 ---
 
@@ -1353,7 +1347,7 @@ ChannelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}.
 
 ---
 
@@ -1365,7 +1359,7 @@ DatadogApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}.
 
 ---
 
@@ -1377,7 +1371,7 @@ DatadogRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}.
 
 ---
 
@@ -1389,7 +1383,7 @@ DelayMin *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}.
 
 ---
 
@@ -1401,7 +1395,7 @@ EmailAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}.
 
 ---
 
@@ -1413,31 +1407,7 @@ EmailEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}.
-
----
-
-##### `FlowdockApiToken`<sup>Optional</sup> <a name="FlowdockApiToken" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.flowdockApiToken"></a>
-
-```go
-FlowdockApiToken *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#flowdock_api_token AlertConfiguration#flowdock_api_token}.
-
----
-
-##### `FlowName`<sup>Optional</sup> <a name="FlowName" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.flowName"></a>
-
-```go
-FlowName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#flow_name AlertConfiguration#flow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}.
 
 ---
 
@@ -1449,7 +1419,7 @@ IntervalMin *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}.
 
 ---
 
@@ -1461,7 +1431,7 @@ MicrosoftTeamsWebhookUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}.
 
 ---
 
@@ -1473,7 +1443,7 @@ MobileNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}.
 
 ---
 
@@ -1485,7 +1455,7 @@ OpsGenieApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}.
 
 ---
 
@@ -1497,19 +1467,7 @@ OpsGenieRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}.
-
----
-
-##### `OrgName`<sup>Optional</sup> <a name="OrgName" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotification.property.orgName"></a>
-
-```go
-OrgName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#org_name AlertConfiguration#org_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}.
 
 ---
 
@@ -1521,7 +1479,7 @@ Roles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}.
 
 ---
 
@@ -1533,7 +1491,7 @@ ServiceKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}.
 
 ---
 
@@ -1545,7 +1503,7 @@ SmsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}.
 
 ---
 
@@ -1557,7 +1515,7 @@ TeamId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}.
 
 ---
 
@@ -1569,7 +1527,7 @@ TypeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}.
 
 ---
 
@@ -1581,7 +1539,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#username AlertConfiguration#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#username AlertConfiguration#username}.
 
 ---
 
@@ -1593,7 +1551,7 @@ VictorOpsApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}.
 
 ---
 
@@ -1605,7 +1563,7 @@ VictorOpsRoutingKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}.
 
 ---
 
@@ -1617,7 +1575,7 @@ WebhookSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}.
 
 ---
 
@@ -1629,7 +1587,7 @@ WebhookUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}.
 
 ---
 
@@ -1638,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 &alertconfiguration.AlertConfigurationThresholdConfig {
 	Operator: *string,
@@ -1651,9 +1609,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.property.threshold">Threshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.property.units">Units</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#units AlertConfiguration#units}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.property.threshold">Threshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig.property.units">Units</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#units AlertConfiguration#units}. |
 
 ---
 
@@ -1665,7 +1623,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
 
 ---
 
@@ -1677,7 +1635,7 @@ Threshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}.
 
 ---
 
@@ -1689,7 +1647,7 @@ Units *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/alert_configuration#units AlertConfiguration#units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/alert_configuration#units AlertConfiguration#units}.
 
 ---
 
@@ -1700,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationMatcherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertConfigurationMatcherList
 ```
@@ -1843,7 +1801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertConfigurationMatcherOutputReference
 ```
@@ -2197,7 +2155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationMetricThresholdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConfigurationMetricThresholdConfigOutputReference
 ```
@@ -2591,7 +2549,7 @@ func InternalValue() AlertConfigurationMetricThresholdConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertConfigurationNotificationList
 ```
@@ -2734,7 +2692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertConfigurationNotificationOutputReference
 ```
@@ -2804,14 +2762,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetDelayMin">ResetDelayMin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetEmailAddress">ResetEmailAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetEmailEnabled">ResetEmailEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetFlowdockApiToken">ResetFlowdockApiToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetFlowName">ResetFlowName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetIntervalMin">ResetIntervalMin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetMicrosoftTeamsWebhookUrl">ResetMicrosoftTeamsWebhookUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetMobileNumber">ResetMobileNumber</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetOpsGenieApiKey">ResetOpsGenieApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetOpsGenieRegion">ResetOpsGenieRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetOrgName">ResetOrgName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetRoles">ResetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetServiceKey">ResetServiceKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetSmsEnabled">ResetSmsEnabled</a></code> | *No description.* |
@@ -3017,18 +2972,6 @@ func ResetEmailAddress()
 func ResetEmailEnabled()
 ```
 
-##### `ResetFlowdockApiToken` <a name="ResetFlowdockApiToken" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetFlowdockApiToken"></a>
-
-```go
-func ResetFlowdockApiToken()
-```
-
-##### `ResetFlowName` <a name="ResetFlowName" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetFlowName"></a>
-
-```go
-func ResetFlowName()
-```
-
 ##### `ResetIntervalMin` <a name="ResetIntervalMin" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetIntervalMin"></a>
 
 ```go
@@ -3057,12 +3000,6 @@ func ResetOpsGenieApiKey()
 
 ```go
 func ResetOpsGenieRegion()
-```
-
-##### `ResetOrgName` <a name="ResetOrgName" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetOrgName"></a>
-
-```go
-func ResetOrgName()
 ```
 
 ##### `ResetRoles` <a name="ResetRoles" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.resetRoles"></a>
@@ -3140,14 +3077,11 @@ func ResetWebhookUrl()
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.delayMinInput">DelayMinInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.emailAddressInput">EmailAddressInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.emailEnabledInput">EmailEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowdockApiTokenInput">FlowdockApiTokenInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowNameInput">FlowNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.intervalMinInput">IntervalMinInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.microsoftTeamsWebhookUrlInput">MicrosoftTeamsWebhookUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.mobileNumberInput">MobileNumberInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.opsGenieApiKeyInput">OpsGenieApiKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.opsGenieRegionInput">OpsGenieRegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.orgNameInput">OrgNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.rolesInput">RolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.serviceKeyInput">ServiceKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.smsEnabledInput">SmsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -3165,14 +3099,11 @@ func ResetWebhookUrl()
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.delayMin">DelayMin</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.emailEnabled">EmailEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowdockApiToken">FlowdockApiToken</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowName">FlowName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.intervalMin">IntervalMin</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.microsoftTeamsWebhookUrl">MicrosoftTeamsWebhookUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.mobileNumber">MobileNumber</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.opsGenieApiKey">OpsGenieApiKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.opsGenieRegion">OpsGenieRegion</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.orgName">OrgName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.roles">Roles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.serviceKey">ServiceKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.smsEnabled">SmsEnabled</a></code> | <code>interface{}</code> | *No description.* |
@@ -3291,26 +3222,6 @@ func EmailEnabledInput() interface{}
 
 ---
 
-##### `FlowdockApiTokenInput`<sup>Optional</sup> <a name="FlowdockApiTokenInput" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowdockApiTokenInput"></a>
-
-```go
-func FlowdockApiTokenInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `FlowNameInput`<sup>Optional</sup> <a name="FlowNameInput" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowNameInput"></a>
-
-```go
-func FlowNameInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `IntervalMinInput`<sup>Optional</sup> <a name="IntervalMinInput" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.intervalMinInput"></a>
 
 ```go
@@ -3355,16 +3266,6 @@ func OpsGenieApiKeyInput() *string
 
 ```go
 func OpsGenieRegionInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `OrgNameInput`<sup>Optional</sup> <a name="OrgNameInput" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.orgNameInput"></a>
-
-```go
-func OrgNameInput() *string
 ```
 
 - *Type:* *string
@@ -3541,26 +3442,6 @@ func EmailEnabled() interface{}
 
 ---
 
-##### `FlowdockApiToken`<sup>Required</sup> <a name="FlowdockApiToken" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowdockApiToken"></a>
-
-```go
-func FlowdockApiToken() *string
-```
-
-- *Type:* *string
-
----
-
-##### `FlowName`<sup>Required</sup> <a name="FlowName" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.flowName"></a>
-
-```go
-func FlowName() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `IntervalMin`<sup>Required</sup> <a name="IntervalMin" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.intervalMin"></a>
 
 ```go
@@ -3605,16 +3486,6 @@ func OpsGenieApiKey() *string
 
 ```go
 func OpsGenieRegion() *string
-```
-
-- *Type:* *string
-
----
-
-##### `OrgName`<sup>Required</sup> <a name="OrgName" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationNotificationOutputReference.property.orgName"></a>
-
-```go
-func OrgName() *string
 ```
 
 - *Type:* *string
@@ -3737,7 +3608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/alertconfiguration"
 
 alertconfiguration.NewAlertConfigurationThresholdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConfigurationThresholdConfigOutputReference
 ```

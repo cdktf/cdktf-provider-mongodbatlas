@@ -1,3 +1,3 @@
 # `mongodbatlas_cloud_provider_access_authorization`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_access_authorization`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access_authorization).
+Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_access_authorization`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_provider_access_authorization).

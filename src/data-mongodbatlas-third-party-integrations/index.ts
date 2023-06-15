@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integrations
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasThirdPartyIntegrationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integrations#id DataMongodbatlasThirdPartyIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integrations#id DataMongodbatlasThirdPartyIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integrations#project_id DataMongodbatlasThirdPartyIntegrations#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integrations#project_id DataMongodbatlasThirdPartyIntegrations#project_id}
   */
   readonly projectId: string;
 }
@@ -89,11 +84,6 @@ export class DataMongodbatlasThirdPartyIntegrationsResultsOutputReference extend
     return this.getBooleanAttribute('enabled');
   }
 
-  // flow_name - computed: true, optional: false, required: false
-  public get flowName() {
-    return this.getStringAttribute('flow_name');
-  }
-
   // license_key - computed: true, optional: false, required: false
   public get licenseKey() {
     return this.getStringAttribute('license_key');
@@ -104,19 +94,9 @@ export class DataMongodbatlasThirdPartyIntegrationsResultsOutputReference extend
     return this.getStringAttribute('microsoft_teams_webhook_url');
   }
 
-  // org_name - computed: true, optional: false, required: false
-  public get orgName() {
-    return this.getStringAttribute('org_name');
-  }
-
   // project_id - computed: true, optional: false, required: false
   public get projectId() {
     return this.getStringAttribute('project_id');
-  }
-
-  // read_token - computed: true, optional: false, required: false
-  public get readToken() {
-    return this.getStringAttribute('read_token');
   }
 
   // region - computed: true, optional: false, required: false
@@ -168,11 +148,6 @@ export class DataMongodbatlasThirdPartyIntegrationsResultsOutputReference extend
   public get userName() {
     return this.getStringAttribute('user_name');
   }
-
-  // write_token - computed: true, optional: false, required: false
-  public get writeToken() {
-    return this.getStringAttribute('write_token');
-  }
 }
 
 export class DataMongodbatlasThirdPartyIntegrationsResultsList extends cdktf.ComplexList {
@@ -195,7 +170,7 @@ export class DataMongodbatlasThirdPartyIntegrationsResultsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}
 */
 export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataSource {
 
@@ -209,7 +184,7 @@ export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +195,7 @@ export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataS
       terraformResourceType: 'mongodbatlas_third_party_integrations',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.9.0',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

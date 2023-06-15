@@ -1,6 +1,6 @@
 # `data_mongodbatlas_x509_authentication_database_user`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_x509_authentication_database_user`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_x509_authentication_database_user`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user).
 
 # `dataMongodbatlasX509AuthenticationDatabaseUser` Submodule <a name="`dataMongodbatlasX509AuthenticationDatabaseUser` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_x509_authenticati
 
 ### DataMongodbatlasX509AuthenticationDatabaseUser <a name="DataMongodbatlasX509AuthenticationDatabaseUser" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 datamongodbatlasx509authenticationdatabaseuser.NewDataMongodbatlasX509AuthenticationDatabaseUser(scope Construct, id *string, config DataMongodbatlasX509AuthenticationDatabaseUserConfig) DataMongodbatlasX509AuthenticationDatabaseUser
 ```
@@ -284,7 +284,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 datamongodbatlasx509authenticationdatabaseuser.DataMongodbatlasX509AuthenticationDatabaseUser_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 datamongodbatlasx509authenticationdatabaseuser.DataMongodbatlasX509AuthenticationDatabaseUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datamongodbatlasx509authenticationdatabaseuser.DataMongodbatlasX509Authenticatio
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 datamongodbatlasx509authenticationdatabaseuser.DataMongodbatlasX509AuthenticationDatabaseUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 &datamongodbatlasx509authenticationdatabaseuser.DataMongodbatlasX509AuthenticationDatabaseUserCertificates {
 
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 &datamongodbatlasx509authenticationdatabaseuser.DataMongodbatlasX509AuthenticationDatabaseUserConfig {
 	Connection: interface{},
@@ -635,9 +635,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user#project_id DataMongodbatlasX509AuthenticationDatabaseUser#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user#id DataMongodbatlasX509AuthenticationDatabaseUser#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user#username DataMongodbatlasX509AuthenticationDatabaseUser#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user#project_id DataMongodbatlasX509AuthenticationDatabaseUser#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user#id DataMongodbatlasX509AuthenticationDatabaseUser#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user#username DataMongodbatlasX509AuthenticationDatabaseUser#username}. |
 
 ---
 
@@ -719,7 +719,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user#project_id DataMongodbatlasX509AuthenticationDatabaseUser#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user#project_id DataMongodbatlasX509AuthenticationDatabaseUser#project_id}.
 
 ---
 
@@ -731,7 +731,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user#id DataMongodbatlasX509AuthenticationDatabaseUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user#id DataMongodbatlasX509AuthenticationDatabaseUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -746,7 +746,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/x509_authentication_database_user#username DataMongodbatlasX509AuthenticationDatabaseUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/x509_authentication_database_user#username DataMongodbatlasX509AuthenticationDatabaseUser#username}.
 
 ---
 
@@ -757,7 +757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 datamongodbatlasx509authenticationdatabaseuser.NewDataMongodbatlasX509AuthenticationDatabaseUserCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasX509AuthenticationDatabaseUserCertificatesList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasX509AuthenticationDatabaseUser.DataMongodbatlasX509AuthenticationDatabaseUserCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasx509authenticationdatabaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasx509authenticationdatabaseuser"
 
 datamongodbatlasx509authenticationdatabaseuser.NewDataMongodbatlasX509AuthenticationDatabaseUserCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasX509AuthenticationDatabaseUserCertificatesOutputReference
 ```

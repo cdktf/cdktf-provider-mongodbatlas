@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,158 +8,164 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}
   */
   readonly autoScalingComputeEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}
   */
   readonly autoScalingComputeScaleDownEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}
   */
   readonly autoScalingDiskGbEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}
   */
   readonly backingProviderName?: string;
   /**
   * Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
   */
   readonly backupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#bi_connector Cluster#bi_connector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#bi_connector Cluster#bi_connector}
   */
   readonly biConnector?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#cloud_backup Cluster#cloud_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#cloud_backup Cluster#cloud_backup}
   */
   readonly cloudBackup?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#cluster_type Cluster#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#cluster_type Cluster#cluster_type}
   */
   readonly clusterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}
   */
   readonly encryptionAtRestProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#id Cluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#id Cluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}
   */
   readonly mongoDbMajorVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#name Cluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#name Cluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#num_shards Cluster#num_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#num_shards Cluster#num_shards}
   */
   readonly numShards?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#paused Cluster#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#paused Cluster#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#pit_enabled Cluster#pit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#pit_enabled Cluster#pit_enabled}
   */
   readonly pitEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#project_id Cluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#project_id Cluster#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}
   */
   readonly providerAutoScalingComputeMaxInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}
   */
   readonly providerAutoScalingComputeMinInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_backup_enabled Cluster#provider_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_backup_enabled Cluster#provider_backup_enabled}
   */
   readonly providerBackupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}
   */
   readonly providerDiskIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}
   */
   readonly providerDiskTypeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}
   */
   readonly providerEncryptEbsVolume?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}
   */
   readonly providerInstanceSizeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_name Cluster#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_name Cluster#provider_name}
   */
   readonly providerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_region_name Cluster#provider_region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_region_name Cluster#provider_region_name}
   */
   readonly providerRegionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}
   */
   readonly providerVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#replication_factor Cluster#replication_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#replication_factor Cluster#replication_factor}
   */
   readonly replicationFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}
+  * Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
+  */
+  readonly retainBackupsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}
   */
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#version_release_system Cluster#version_release_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#version_release_system Cluster#version_release_system}
   */
   readonly versionReleaseSystem?: string;
   /**
   * advanced_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
   */
   readonly advancedConfiguration?: ClusterAdvancedConfiguration;
   /**
   * bi_connector_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
   */
   readonly biConnectorConfig?: ClusterBiConnectorConfig;
   /**
   * labels block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#labels Cluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#labels Cluster#labels}
   */
   readonly labels?: ClusterLabels[] | cdktf.IResolvable;
   /**
   * replication_specs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#replication_specs Cluster#replication_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#replication_specs Cluster#replication_specs}
   */
   readonly replicationSpecs?: ClusterReplicationSpecs[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#timeouts Cluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#timeouts Cluster#timeouts}
   */
   readonly timeouts?: ClusterTimeouts;
 }
@@ -296,6 +297,11 @@ export class ClusterConnectionStringsPrivateEndpointOutputReference extends cdkt
   // srv_connection_string - computed: true, optional: false, required: false
   public get srvConnectionString() {
     return this.getStringAttribute('srv_connection_string');
+  }
+
+  // srv_shard_optimized_connection_string - computed: true, optional: false, required: false
+  public get srvShardOptimizedConnectionString() {
+    return this.getStringAttribute('srv_shard_optimized_connection_string');
   }
 
   // type - computed: true, optional: false, required: false
@@ -675,43 +681,43 @@ export class ClusterSnapshotBackupPolicyList extends cdktf.ComplexList {
 }
 export interface ClusterAdvancedConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#default_read_concern Cluster#default_read_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#default_read_concern Cluster#default_read_concern}
   */
   readonly defaultReadConcern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#default_write_concern Cluster#default_write_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#default_write_concern Cluster#default_write_concern}
   */
   readonly defaultWriteConcern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}
   */
   readonly failIndexKeyTooLong?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}
   */
   readonly javascriptEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}
   */
   readonly minimumEnabledTlsProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#no_table_scan Cluster#no_table_scan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#no_table_scan Cluster#no_table_scan}
   */
   readonly noTableScan?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}
   */
   readonly oplogMinRetentionHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}
   */
   readonly oplogSizeMb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}
   */
   readonly sampleRefreshIntervalBiConnector?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}
   */
   readonly sampleSizeBiConnector?: number;
 }
@@ -983,11 +989,11 @@ export class ClusterAdvancedConfigurationOutputReference extends cdktf.ComplexOb
 }
 export interface ClusterBiConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#enabled Cluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#enabled Cluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#read_preference Cluster#read_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#read_preference Cluster#read_preference}
   */
   readonly readPreference?: string;
 }
@@ -1075,11 +1081,11 @@ export class ClusterBiConnectorConfigOutputReference extends cdktf.ComplexObject
 }
 export interface ClusterLabels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#key Cluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#key Cluster#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#value Cluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#value Cluster#value}
   */
   readonly value?: string;
 }
@@ -1199,23 +1205,23 @@ export class ClusterLabelsList extends cdktf.ComplexList {
 }
 export interface ClusterReplicationSpecsRegionsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}
   */
   readonly analyticsNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#electable_nodes Cluster#electable_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#electable_nodes Cluster#electable_nodes}
   */
   readonly electableNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#priority Cluster#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#priority Cluster#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}
   */
   readonly readOnlyNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#region_name Cluster#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#region_name Cluster#region_name}
   */
   readonly regionName: string;
 }
@@ -1401,24 +1407,24 @@ export class ClusterReplicationSpecsRegionsConfigList extends cdktf.ComplexList 
 }
 export interface ClusterReplicationSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#id Cluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#id Cluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#num_shards Cluster#num_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#num_shards Cluster#num_shards}
   */
   readonly numShards: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#zone_name Cluster#zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#zone_name Cluster#zone_name}
   */
   readonly zoneName?: string;
   /**
   * regions_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#regions_config Cluster#regions_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#regions_config Cluster#regions_config}
   */
   readonly regionsConfig?: ClusterReplicationSpecsRegionsConfig[] | cdktf.IResolvable;
 }
@@ -1581,15 +1587,15 @@ export class ClusterReplicationSpecsList extends cdktf.ComplexList {
 }
 export interface ClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#create Cluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#create Cluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#delete Cluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#delete Cluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster#update Cluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster#update Cluster#update}
   */
   readonly update?: string;
 }
@@ -1710,7 +1716,7 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster mongodbatlas_cluster}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster mongodbatlas_cluster}
 */
 export class Cluster extends cdktf.TerraformResource {
 
@@ -1724,7 +1730,7 @@ export class Cluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cluster mongodbatlas_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cluster mongodbatlas_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1735,7 +1741,7 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cluster',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.9.0',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1774,6 +1780,7 @@ export class Cluster extends cdktf.TerraformResource {
     this._providerRegionName = config.providerRegionName;
     this._providerVolumeType = config.providerVolumeType;
     this._replicationFactor = config.replicationFactor;
+    this._retainBackupsEnabled = config.retainBackupsEnabled;
     this._terminationProtectionEnabled = config.terminationProtectionEnabled;
     this._versionReleaseSystem = config.versionReleaseSystem;
     this._advancedConfiguration.internalValue = config.advancedConfiguration;
@@ -2264,6 +2271,22 @@ export class Cluster extends cdktf.TerraformResource {
     return this._replicationFactor;
   }
 
+  // retain_backups_enabled - computed: false, optional: true, required: false
+  private _retainBackupsEnabled?: boolean | cdktf.IResolvable; 
+  public get retainBackupsEnabled() {
+    return this.getBooleanAttribute('retain_backups_enabled');
+  }
+  public set retainBackupsEnabled(value: boolean | cdktf.IResolvable) {
+    this._retainBackupsEnabled = value;
+  }
+  public resetRetainBackupsEnabled() {
+    this._retainBackupsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retainBackupsEnabledInput() {
+    return this._retainBackupsEnabled;
+  }
+
   // snapshot_backup_policy - computed: true, optional: false, required: false
   private _snapshotBackupPolicy = new ClusterSnapshotBackupPolicyList(this, "snapshot_backup_policy", false);
   public get snapshotBackupPolicy() {
@@ -2426,6 +2449,7 @@ export class Cluster extends cdktf.TerraformResource {
       provider_region_name: cdktf.stringToTerraform(this._providerRegionName),
       provider_volume_type: cdktf.stringToTerraform(this._providerVolumeType),
       replication_factor: cdktf.numberToTerraform(this._replicationFactor),
+      retain_backups_enabled: cdktf.booleanToTerraform(this._retainBackupsEnabled),
       termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
       version_release_system: cdktf.stringToTerraform(this._versionReleaseSystem),
       advanced_configuration: clusterAdvancedConfigurationToTerraform(this._advancedConfiguration.internalValue),

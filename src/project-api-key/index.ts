@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,152 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key#description ProjectApiKey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#description ProjectApiKey#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key#id ProjectApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#id ProjectApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key#project_id ProjectApiKey#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#project_id ProjectApiKey#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key#role_names ProjectApiKey#role_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#role_names ProjectApiKey#role_names}
+  */
+  readonly roleNames?: string[];
+  /**
+  * project_assignment block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#project_assignment ProjectApiKey#project_assignment}
+  */
+  readonly projectAssignment?: ProjectApiKeyProjectAssignment[] | cdktf.IResolvable;
+}
+export interface ProjectApiKeyProjectAssignment {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#project_id ProjectApiKey#project_id}
+  */
+  readonly projectId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key#role_names ProjectApiKey#role_names}
   */
   readonly roleNames: string[];
 }
 
+export function projectApiKeyProjectAssignmentToTerraform(struct?: ProjectApiKeyProjectAssignment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    project_id: cdktf.stringToTerraform(struct!.projectId),
+    role_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roleNames),
+  }
+}
+
+export class ProjectApiKeyProjectAssignmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ProjectApiKeyProjectAssignment | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    if (this._roleNames !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleNames = this._roleNames;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ProjectApiKeyProjectAssignment | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._projectId = undefined;
+      this._roleNames = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._projectId = value.projectId;
+      this._roleNames = value.roleNames;
+    }
+  }
+
+  // project_id - computed: false, optional: false, required: true
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
+  // role_names - computed: false, optional: false, required: true
+  private _roleNames?: string[]; 
+  public get roleNames() {
+    return cdktf.Fn.tolist(this.getListAttribute('role_names'));
+  }
+  public set roleNames(value: string[]) {
+    this._roleNames = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleNamesInput() {
+    return this._roleNames;
+  }
+}
+
+export class ProjectApiKeyProjectAssignmentList extends cdktf.ComplexList {
+  public internalValue? : ProjectApiKeyProjectAssignment[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ProjectApiKeyProjectAssignmentOutputReference {
+    return new ProjectApiKeyProjectAssignmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key mongodbatlas_project_api_key}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key mongodbatlas_project_api_key}
 */
 export class ProjectApiKey extends cdktf.TerraformResource {
 
@@ -48,7 +167,7 @@ export class ProjectApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +178,7 @@ export class ProjectApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_project_api_key',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.9.0',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -74,6 +193,7 @@ export class ProjectApiKey extends cdktf.TerraformResource {
     this._id = config.id;
     this._projectId = config.projectId;
     this._roleNames = config.roleNames;
+    this._projectAssignment.internalValue = config.projectAssignment;
   }
 
   // ==========
@@ -137,7 +257,7 @@ export class ProjectApiKey extends cdktf.TerraformResource {
     return this.getStringAttribute('public_key');
   }
 
-  // role_names - computed: false, optional: false, required: true
+  // role_names - computed: false, optional: true, required: false
   private _roleNames?: string[]; 
   public get roleNames() {
     return cdktf.Fn.tolist(this.getListAttribute('role_names'));
@@ -145,9 +265,28 @@ export class ProjectApiKey extends cdktf.TerraformResource {
   public set roleNames(value: string[]) {
     this._roleNames = value;
   }
+  public resetRoleNames() {
+    this._roleNames = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get roleNamesInput() {
     return this._roleNames;
+  }
+
+  // project_assignment - computed: false, optional: true, required: false
+  private _projectAssignment = new ProjectApiKeyProjectAssignmentList(this, "project_assignment", true);
+  public get projectAssignment() {
+    return this._projectAssignment;
+  }
+  public putProjectAssignment(value: ProjectApiKeyProjectAssignment[] | cdktf.IResolvable) {
+    this._projectAssignment.internalValue = value;
+  }
+  public resetProjectAssignment() {
+    this._projectAssignment.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectAssignmentInput() {
+    return this._projectAssignment.internalValue;
   }
 
   // =========
@@ -160,6 +299,7 @@ export class ProjectApiKey extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
       role_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleNames),
+      project_assignment: cdktf.listMapper(projectApiKeyProjectAssignmentToTerraform, true)(this._projectAssignment.internalValue),
     };
   }
 }

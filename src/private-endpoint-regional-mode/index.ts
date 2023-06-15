@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface PrivateEndpointRegionalModeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#enabled PrivateEndpointRegionalMode#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#enabled PrivateEndpointRegionalMode#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#id PrivateEndpointRegionalMode#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#id PrivateEndpointRegionalMode#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#project_id PrivateEndpointRegionalMode#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#project_id PrivateEndpointRegionalMode#project_id}
   */
   readonly projectId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#timeouts PrivateEndpointRegionalMode#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#timeouts PrivateEndpointRegionalMode#timeouts}
   */
   readonly timeouts?: PrivateEndpointRegionalModeTimeouts;
 }
 export interface PrivateEndpointRegionalModeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#create PrivateEndpointRegionalMode#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#create PrivateEndpointRegionalMode#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#delete PrivateEndpointRegionalMode#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#delete PrivateEndpointRegionalMode#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode#update PrivateEndpointRegionalMode#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode#update PrivateEndpointRegionalMode#update}
   */
   readonly update?: string;
 }
@@ -165,7 +160,7 @@ export class PrivateEndpointRegionalModeTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}
 */
 export class PrivateEndpointRegionalMode extends cdktf.TerraformResource {
 
@@ -179,7 +174,7 @@ export class PrivateEndpointRegionalMode extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -190,7 +185,7 @@ export class PrivateEndpointRegionalMode extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_private_endpoint_regional_mode',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.9.0',
+        providerVersion: '1.10.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

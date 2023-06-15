@@ -1,6 +1,6 @@
 # `data_mongodbatlas_federated_settings`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_settings`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/federated_settings).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_settings`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings).
 
 # `dataMongodbatlasFederatedSettings` Submodule <a name="`dataMongodbatlasFederatedSettings` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_setting
 
 ### DataMongodbatlasFederatedSettings <a name="DataMongodbatlasFederatedSettings" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/federated_settings mongodbatlas_federated_settings}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings mongodbatlas_federated_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettings"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettings"
 
 datamongodbatlasfederatedsettings.NewDataMongodbatlasFederatedSettings(scope Construct, id *string, config DataMongodbatlasFederatedSettingsConfig) DataMongodbatlasFederatedSettings
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettings"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettings"
 
 datamongodbatlasfederatedsettings.DataMongodbatlasFederatedSettings_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettings"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettings"
 
 datamongodbatlasfederatedsettings.DataMongodbatlasFederatedSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datamongodbatlasfederatedsettings.DataMongodbatlasFederatedSettings_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettings"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettings"
 
 datamongodbatlasfederatedsettings.DataMongodbatlasFederatedSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasfederatedsettings"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettings"
 
 &datamongodbatlasfederatedsettings.DataMongodbatlasFederatedSettingsConfig {
 	Connection: interface{},
@@ -595,7 +595,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}. |
 
 ---
 
@@ -677,7 +677,7 @@ OrgId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}.
 
 ---
 
