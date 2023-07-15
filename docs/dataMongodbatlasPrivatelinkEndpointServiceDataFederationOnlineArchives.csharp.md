@@ -1,6 +1,6 @@
 # `data_mongodbatlas_privatelink_endpoint_service_data_federation_online_archives`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_data_federation_online_archives`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_data_federation_online_archives`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives).
 
 # `dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives` Submodule <a name="`dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpo
 
 ### DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives <a name="DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.Initializer"></a>
 
@@ -581,8 +581,8 @@ new DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#project_id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#project_id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#project_id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#project_id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#project_id}.
 
 ---
 
@@ -676,7 +676,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#id DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
