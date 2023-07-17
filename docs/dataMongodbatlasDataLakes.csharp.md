@@ -1,6 +1,6 @@
 # `data_mongodbatlas_data_lakes`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_data_lakes`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/data_lakes).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_data_lakes`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/data_lakes).
 
 # `dataMongodbatlasDataLakes` Submodule <a name="`dataMongodbatlasDataLakes` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_data_lakes`](http
 
 ### DataMongodbatlasDataLakes <a name="DataMongodbatlasDataLakes" id="@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/data_lakes mongodbatlas_data_lakes}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/data_lakes mongodbatlas_data_lakes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakes.Initializer"></a>
 
@@ -581,8 +581,8 @@ new DataMongodbatlasDataLakesConfig {
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/data_lakes#project_id DataMongodbatlasDataLakes#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/data_lakes#id DataMongodbatlasDataLakes#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/data_lakes#project_id DataMongodbatlasDataLakes#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/data_lakes#id DataMongodbatlasDataLakes#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/data_lakes#project_id DataMongodbatlasDataLakes#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/data_lakes#project_id DataMongodbatlasDataLakes#project_id}.
 
 ---
 
@@ -676,7 +676,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/data_lakes#id DataMongodbatlasDataLakes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/data_lakes#id DataMongodbatlasDataLakes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
