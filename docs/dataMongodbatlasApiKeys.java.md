@@ -1,6 +1,6 @@
 # `data_mongodbatlas_api_keys`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_api_keys`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_api_keys`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys).
 
 # `dataMongodbatlasApiKeys` Submodule <a name="`dataMongodbatlasApiKeys` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_api_keys`](https:
 
 ### DataMongodbatlasApiKeys <a name="DataMongodbatlasApiKeys" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys mongodbatlas_api_keys}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys mongodbatlas_api_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer"></a>
 
@@ -45,10 +45,10 @@ DataMongodbatlasApiKeys.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.itemsPerPage">itemsPerPage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.pageNum">pageNum</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.itemsPerPage">itemsPerPage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer.parameter.pageNum">pageNum</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}.
 
 ---
 
@@ -742,10 +742,10 @@ DataMongodbatlasApiKeysConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.itemsPerPage">itemsPerPage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.pageNum">pageNum</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.itemsPerPage">itemsPerPage</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.property.pageNum">pageNum</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}. |
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.String getOrgId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#org_id DataMongodbatlasApiKeys#org_id}.
 
 ---
 
@@ -839,7 +839,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#id DataMongodbatlasApiKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +854,7 @@ public java.lang.Number getItemsPerPage();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#items_per_page DataMongodbatlasApiKeys#items_per_page}.
 
 ---
 
@@ -866,7 +866,7 @@ public java.lang.Number getPageNum();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/api_keys#page_num DataMongodbatlasApiKeys#page_num}.
 
 ---
 
