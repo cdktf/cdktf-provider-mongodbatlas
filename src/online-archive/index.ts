@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,78 @@ import * as cdktf from 'cdktf';
 
 export interface OnlineArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#cluster_name OnlineArchive#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#cluster_name OnlineArchive#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#coll_name OnlineArchive#coll_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#coll_name OnlineArchive#coll_name}
   */
   readonly collName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#collection_type OnlineArchive#collection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#collection_type OnlineArchive#collection_type}
   */
   readonly collectionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#db_name OnlineArchive#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#db_name OnlineArchive#db_name}
   */
   readonly dbName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#id OnlineArchive#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#id OnlineArchive#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#paused OnlineArchive#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#paused OnlineArchive#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#project_id OnlineArchive#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#project_id OnlineArchive#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#sync_creation OnlineArchive#sync_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#sync_creation OnlineArchive#sync_creation}
   */
   readonly syncCreation?: boolean | cdktf.IResolvable;
   /**
   * criteria block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#criteria OnlineArchive#criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#criteria OnlineArchive#criteria}
   */
   readonly criteria: OnlineArchiveCriteria;
   /**
   * partition_fields block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
   */
   readonly partitionFields?: OnlineArchivePartitionFields[] | cdktf.IResolvable;
+  /**
+  * schedule block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#schedule OnlineArchive#schedule}
+  */
+  readonly schedule?: OnlineArchiveSchedule;
 }
 export interface OnlineArchiveCriteria {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#date_field OnlineArchive#date_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#date_field OnlineArchive#date_field}
   */
   readonly dateField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#date_format OnlineArchive#date_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#date_format OnlineArchive#date_format}
   */
   readonly dateFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}
   */
   readonly expireAfterDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#query OnlineArchive#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#query OnlineArchive#query}
   */
   readonly query?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#type OnlineArchive#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#type OnlineArchive#type}
   */
   readonly type: string;
 }
@@ -232,11 +238,11 @@ export class OnlineArchiveCriteriaOutputReference extends cdktf.ComplexObject {
 }
 export interface OnlineArchivePartitionFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#field_name OnlineArchive#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#field_name OnlineArchive#field_name}
   */
   readonly fieldName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive#order OnlineArchive#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#order OnlineArchive#order}
   */
   readonly order: number;
 }
@@ -353,9 +359,233 @@ export class OnlineArchivePartitionFieldsList extends cdktf.ComplexList {
     return new OnlineArchivePartitionFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OnlineArchiveSchedule {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#day_of_month OnlineArchive#day_of_month}
+  */
+  readonly dayOfMonth?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#day_of_week OnlineArchive#day_of_week}
+  */
+  readonly dayOfWeek?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#end_hour OnlineArchive#end_hour}
+  */
+  readonly endHour?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#end_minute OnlineArchive#end_minute}
+  */
+  readonly endMinute?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#start_hour OnlineArchive#start_hour}
+  */
+  readonly startHour?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#start_minute OnlineArchive#start_minute}
+  */
+  readonly startMinute?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive#type OnlineArchive#type}
+  */
+  readonly type: string;
+}
+
+export function onlineArchiveScheduleToTerraform(struct?: OnlineArchiveScheduleOutputReference | OnlineArchiveSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day_of_month: cdktf.numberToTerraform(struct!.dayOfMonth),
+    day_of_week: cdktf.numberToTerraform(struct!.dayOfWeek),
+    end_hour: cdktf.numberToTerraform(struct!.endHour),
+    end_minute: cdktf.numberToTerraform(struct!.endMinute),
+    start_hour: cdktf.numberToTerraform(struct!.startHour),
+    start_minute: cdktf.numberToTerraform(struct!.startMinute),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class OnlineArchiveScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OnlineArchiveSchedule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dayOfMonth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfMonth = this._dayOfMonth;
+    }
+    if (this._dayOfWeek !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeek = this._dayOfWeek;
+    }
+    if (this._endHour !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endHour = this._endHour;
+    }
+    if (this._endMinute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endMinute = this._endMinute;
+    }
+    if (this._startHour !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startHour = this._startHour;
+    }
+    if (this._startMinute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startMinute = this._startMinute;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OnlineArchiveSchedule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dayOfMonth = undefined;
+      this._dayOfWeek = undefined;
+      this._endHour = undefined;
+      this._endMinute = undefined;
+      this._startHour = undefined;
+      this._startMinute = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dayOfMonth = value.dayOfMonth;
+      this._dayOfWeek = value.dayOfWeek;
+      this._endHour = value.endHour;
+      this._endMinute = value.endMinute;
+      this._startHour = value.startHour;
+      this._startMinute = value.startMinute;
+      this._type = value.type;
+    }
+  }
+
+  // day_of_month - computed: false, optional: true, required: false
+  private _dayOfMonth?: number; 
+  public get dayOfMonth() {
+    return this.getNumberAttribute('day_of_month');
+  }
+  public set dayOfMonth(value: number) {
+    this._dayOfMonth = value;
+  }
+  public resetDayOfMonth() {
+    this._dayOfMonth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfMonthInput() {
+    return this._dayOfMonth;
+  }
+
+  // day_of_week - computed: false, optional: true, required: false
+  private _dayOfWeek?: number; 
+  public get dayOfWeek() {
+    return this.getNumberAttribute('day_of_week');
+  }
+  public set dayOfWeek(value: number) {
+    this._dayOfWeek = value;
+  }
+  public resetDayOfWeek() {
+    this._dayOfWeek = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekInput() {
+    return this._dayOfWeek;
+  }
+
+  // end_hour - computed: true, optional: true, required: false
+  private _endHour?: number; 
+  public get endHour() {
+    return this.getNumberAttribute('end_hour');
+  }
+  public set endHour(value: number) {
+    this._endHour = value;
+  }
+  public resetEndHour() {
+    this._endHour = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endHourInput() {
+    return this._endHour;
+  }
+
+  // end_minute - computed: true, optional: true, required: false
+  private _endMinute?: number; 
+  public get endMinute() {
+    return this.getNumberAttribute('end_minute');
+  }
+  public set endMinute(value: number) {
+    this._endMinute = value;
+  }
+  public resetEndMinute() {
+    this._endMinute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endMinuteInput() {
+    return this._endMinute;
+  }
+
+  // start_hour - computed: true, optional: true, required: false
+  private _startHour?: number; 
+  public get startHour() {
+    return this.getNumberAttribute('start_hour');
+  }
+  public set startHour(value: number) {
+    this._startHour = value;
+  }
+  public resetStartHour() {
+    this._startHour = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startHourInput() {
+    return this._startHour;
+  }
+
+  // start_minute - computed: true, optional: true, required: false
+  private _startMinute?: number; 
+  public get startMinute() {
+    return this.getNumberAttribute('start_minute');
+  }
+  public set startMinute(value: number) {
+    this._startMinute = value;
+  }
+  public resetStartMinute() {
+    this._startMinute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startMinuteInput() {
+    return this._startMinute;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive mongodbatlas_online_archive}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive mongodbatlas_online_archive}
 */
 export class OnlineArchive extends cdktf.TerraformResource {
 
@@ -369,7 +599,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive mongodbatlas_online_archive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive mongodbatlas_online_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -380,7 +610,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_online_archive',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.0',
+        providerVersion: '1.10.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -401,6 +631,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
     this._syncCreation = config.syncCreation;
     this._criteria.internalValue = config.criteria;
     this._partitionFields.internalValue = config.partitionFields;
+    this._schedule.internalValue = config.schedule;
   }
 
   // ==========
@@ -562,6 +793,22 @@ export class OnlineArchive extends cdktf.TerraformResource {
     return this._partitionFields.internalValue;
   }
 
+  // schedule - computed: false, optional: true, required: false
+  private _schedule = new OnlineArchiveScheduleOutputReference(this, "schedule");
+  public get schedule() {
+    return this._schedule;
+  }
+  public putSchedule(value: OnlineArchiveSchedule) {
+    this._schedule.internalValue = value;
+  }
+  public resetSchedule() {
+    this._schedule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleInput() {
+    return this._schedule.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -578,6 +825,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
       sync_creation: cdktf.booleanToTerraform(this._syncCreation),
       criteria: onlineArchiveCriteriaToTerraform(this._criteria.internalValue),
       partition_fields: cdktf.listMapper(onlineArchivePartitionFieldsToTerraform, true)(this._partitionFields.internalValue),
+      schedule: onlineArchiveScheduleToTerraform(this._schedule.internalValue),
     };
   }
 }
