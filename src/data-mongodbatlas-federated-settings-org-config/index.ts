@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_config
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_org_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedSettingsOrgConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_config#federation_settings_id DataMongodbatlasFederatedSettingsOrgConfig#federation_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_org_config#federation_settings_id DataMongodbatlasFederatedSettingsOrgConfig#federation_settings_id}
   */
   readonly federationSettingsId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_config#id DataMongodbatlasFederatedSettingsOrgConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_org_config#id DataMongodbatlasFederatedSettingsOrgConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_config#org_id DataMongodbatlasFederatedSettingsOrgConfig#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_org_config#org_id DataMongodbatlasFederatedSettingsOrgConfig#org_id}
   */
   readonly orgId: string;
 }
@@ -263,7 +258,7 @@ export class DataMongodbatlasFederatedSettingsOrgConfigUserConflictsList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config}
 */
 export class DataMongodbatlasFederatedSettingsOrgConfig extends cdktf.TerraformDataSource {
 
@@ -277,7 +272,7 @@ export class DataMongodbatlasFederatedSettingsOrgConfig extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +283,7 @@ export class DataMongodbatlasFederatedSettingsOrgConfig extends cdktf.TerraformD
       terraformResourceType: 'mongodbatlas_federated_settings_org_config',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.1',
+        providerVersion: '1.10.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedSettingsIdentityProvidersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers#federation_settings_id DataMongodbatlasFederatedSettingsIdentityProviders#federation_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers#federation_settings_id DataMongodbatlasFederatedSettingsIdentityProviders#federation_settings_id}
   */
   readonly federationSettingsId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers#id DataMongodbatlasFederatedSettingsIdentityProviders#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers#id DataMongodbatlasFederatedSettingsIdentityProviders#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers#items_per_page DataMongodbatlasFederatedSettingsIdentityProviders#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers#items_per_page DataMongodbatlasFederatedSettingsIdentityProviders#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers#page_num DataMongodbatlasFederatedSettingsIdentityProviders#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers#page_num DataMongodbatlasFederatedSettingsIdentityProviders#page_num}
   */
   readonly pageNum?: number;
 }
@@ -628,7 +623,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProvidersResultsList exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers}
 */
 export class DataMongodbatlasFederatedSettingsIdentityProviders extends cdktf.TerraformDataSource {
 
@@ -642,7 +637,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProviders extends cdktf.Te
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -653,7 +648,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProviders extends cdktf.Te
       terraformResourceType: 'mongodbatlas_federated_settings_identity_providers',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.1',
+        providerVersion: '1.10.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

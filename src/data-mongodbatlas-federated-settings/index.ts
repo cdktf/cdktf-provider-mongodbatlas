@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}
   */
   readonly orgId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings mongodbatlas_federated_settings}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings mongodbatlas_federated_settings}
 */
 export class DataMongodbatlasFederatedSettings extends cdktf.TerraformDataSource {
 
@@ -33,7 +28,7 @@ export class DataMongodbatlasFederatedSettings extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings mongodbatlas_federated_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_settings mongodbatlas_federated_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -44,7 +39,7 @@ export class DataMongodbatlasFederatedSettings extends cdktf.TerraformDataSource
       terraformResourceType: 'mongodbatlas_federated_settings',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.1',
+        providerVersion: '1.10.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
