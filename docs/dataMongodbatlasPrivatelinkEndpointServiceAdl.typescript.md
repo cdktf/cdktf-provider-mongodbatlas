@@ -1,6 +1,6 @@
 # `data_mongodbatlas_privatelink_endpoint_service_adl`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_adl`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_adl`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl).
 
 # `dataMongodbatlasPrivatelinkEndpointServiceAdl` Submodule <a name="`dataMongodbatlasPrivatelinkEndpointServiceAdl` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpo
 
 ### DataMongodbatlasPrivatelinkEndpointServiceAdl <a name="DataMongodbatlasPrivatelinkEndpointServiceAdl" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdl.Initializer"></a>
 
@@ -615,9 +615,9 @@ const dataMongodbatlasPrivatelinkEndpointServiceAdlConfig: dataMongodbatlasPriva
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.endpointId">endpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.endpointId">endpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceAdl.DataMongodbatlasPrivatelinkEndpointServiceAdlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public readonly endpointId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceAdl#endpoint_id}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl#project_id DataMongodbatlasPrivatelinkEndpointServiceAdl#project_id}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl#id DataMongodbatlasPrivatelinkEndpointServiceAdl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
