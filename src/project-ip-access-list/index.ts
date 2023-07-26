@@ -41,7 +41,7 @@ export interface ProjectIpAccessListConfig extends cdktf.TerraformMetaArguments 
   readonly projectId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
   */
   readonly timeouts?: ProjectIpAccessListTimeouts;

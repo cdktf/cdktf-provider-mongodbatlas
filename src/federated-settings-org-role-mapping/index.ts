@@ -26,7 +26,7 @@ export interface FederatedSettingsOrgRoleMappingConfig extends cdktf.TerraformMe
   readonly orgId: string;
   /**
   * role_assignments block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_settings_org_role_mapping#role_assignments FederatedSettingsOrgRoleMapping#role_assignments}
   */
   readonly roleAssignments: FederatedSettingsOrgRoleMappingRoleAssignments[] | cdktf.IResolvable;

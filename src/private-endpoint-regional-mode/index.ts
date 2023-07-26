@@ -29,7 +29,7 @@ export interface PrivateEndpointRegionalModeConfig extends cdktf.TerraformMetaAr
   readonly projectId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/private_endpoint_regional_mode#timeouts PrivateEndpointRegionalMode#timeouts}
   */
   readonly timeouts?: PrivateEndpointRegionalModeTimeouts;

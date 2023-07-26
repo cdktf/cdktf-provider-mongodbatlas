@@ -37,7 +37,7 @@ export interface CloudBackupSnapshotRestoreJobConfig extends cdktf.TerraformMeta
   readonly snapshotId: string;
   /**
   * delivery_type_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_snapshot_restore_job#delivery_type_config CloudBackupSnapshotRestoreJob#delivery_type_config}
   */
   readonly deliveryTypeConfig?: CloudBackupSnapshotRestoreJobDeliveryTypeConfig;

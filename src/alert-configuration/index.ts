@@ -41,25 +41,25 @@ export interface AlertConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly threshold?: { [key: string]: string };
   /**
   * matcher block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
   */
   readonly matcher?: AlertConfigurationMatcher[] | cdktf.IResolvable;
   /**
   * metric_threshold_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
   */
   readonly metricThresholdConfig?: AlertConfigurationMetricThresholdConfig;
   /**
   * notification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/alert_configuration#notification AlertConfiguration#notification}
   */
   readonly notification: AlertConfigurationNotification[] | cdktf.IResolvable;
   /**
   * threshold_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
   */
   readonly thresholdConfig?: AlertConfigurationThresholdConfig;

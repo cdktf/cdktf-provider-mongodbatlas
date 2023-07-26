@@ -57,7 +57,7 @@ export interface LdapConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly projectId: string;
   /**
   * user_to_dn_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/ldap_configuration#user_to_dn_mapping LdapConfiguration#user_to_dn_mapping}
   */
   readonly userToDnMapping?: LdapConfigurationUserToDnMapping[] | cdktf.IResolvable;

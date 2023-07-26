@@ -29,7 +29,7 @@ export interface DataMongodbatlasAlertConfigurationsConfig extends cdktf.Terrafo
   readonly projectId: string;
   /**
   * list_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#list_options DataMongodbatlasAlertConfigurations#list_options}
   */
   readonly listOptions?: DataMongodbatlasAlertConfigurationsListOptions[] | cdktf.IResolvable;

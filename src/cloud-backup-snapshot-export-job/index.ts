@@ -30,7 +30,7 @@ export interface CloudBackupSnapshotExportJobConfig extends cdktf.TerraformMetaA
   readonly snapshotId: string;
   /**
   * custom_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_snapshot_export_job#custom_data CloudBackupSnapshotExportJob#custom_data}
   */
   readonly customData: CloudBackupSnapshotExportJobCustomData[] | cdktf.IResolvable;

@@ -29,7 +29,7 @@ export interface DataMongodbatlasCustomDbRoleConfig extends cdktf.TerraformMetaA
   readonly roleName: string;
   /**
   * inherited_roles block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/custom_db_role#inherited_roles DataMongodbatlasCustomDbRole#inherited_roles}
   */
   readonly inheritedRoles?: DataMongodbatlasCustomDbRoleInheritedRoles[] | cdktf.IResolvable;

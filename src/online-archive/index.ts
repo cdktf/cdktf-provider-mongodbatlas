@@ -49,19 +49,19 @@ export interface OnlineArchiveConfig extends cdktf.TerraformMetaArguments {
   readonly syncCreation?: boolean | cdktf.IResolvable;
   /**
   * criteria block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/online_archive#criteria OnlineArchive#criteria}
   */
   readonly criteria: OnlineArchiveCriteria;
   /**
   * partition_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
   */
   readonly partitionFields?: OnlineArchivePartitionFields[] | cdktf.IResolvable;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/online_archive#schedule OnlineArchive#schedule}
   */
   readonly schedule?: OnlineArchiveSchedule;

@@ -26,31 +26,31 @@ export interface MongodbatlasProviderConfig {
   readonly awsSessionToken?: string;
   /**
   * MongoDB Atlas Base URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#base_url MongodbatlasProvider#base_url}
   */
   readonly baseUrl?: string;
   /**
   * MongoDB Atlas Base URL default to gov
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
   */
   readonly isMongodbgovCloud?: boolean | cdktf.IResolvable;
   /**
   * MongoDB Atlas Programmatic Private Key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#private_key MongodbatlasProvider#private_key}
   */
   readonly privateKey?: string;
   /**
   * MongoDB Atlas Programmatic Public Key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#public_key MongodbatlasProvider#public_key}
   */
   readonly publicKey?: string;
   /**
   * MongoDB Realm Base URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#realm_base_url MongodbatlasProvider#realm_base_url}
   */
   readonly realmBaseUrl?: string;
@@ -68,13 +68,13 @@ export interface MongodbatlasProviderConfig {
   readonly stsEndpoint?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#alias MongodbatlasProvider#alias}
   */
   readonly alias?: string;
   /**
   * assume_role block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#assume_role MongodbatlasProvider#assume_role}
   */
   readonly assumeRole?: MongodbatlasProviderAssumeRole;
@@ -82,61 +82,61 @@ export interface MongodbatlasProviderConfig {
 export interface MongodbatlasProviderAssumeRole {
   /**
   * The duration, between 15 minutes and 12 hours, of the role session. Valid time units are ns, us (or µs), ms, s, h, or m.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#duration MongodbatlasProvider#duration}
   */
   readonly duration?: string;
   /**
   * The duration, in seconds, of the role session.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#duration_seconds MongodbatlasProvider#duration_seconds}
   */
   readonly durationSeconds?: number;
   /**
   * A unique identifier that might be required when you assume a role in another account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#external_id MongodbatlasProvider#external_id}
   */
   readonly externalId?: string;
   /**
   * IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#policy MongodbatlasProvider#policy}
   */
   readonly policy?: string;
   /**
   * Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#policy_arns MongodbatlasProvider#policy_arns}
   */
   readonly policyArns?: string[];
   /**
   * Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#role_arn MongodbatlasProvider#role_arn}
   */
   readonly roleArn?: string;
   /**
   * An identifier for the assumed role session.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#session_name MongodbatlasProvider#session_name}
   */
   readonly sessionName?: string;
   /**
   * Source identity specified by the principal assuming the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#source_identity MongodbatlasProvider#source_identity}
   */
   readonly sourceIdentity?: string;
   /**
   * Assume role session tags.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#tags MongodbatlasProvider#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * Assume role session tag keys to pass to any subsequent sessions.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
   */
   readonly transitiveTagKeys?: string[];

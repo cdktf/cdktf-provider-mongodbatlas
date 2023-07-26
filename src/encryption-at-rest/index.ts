@@ -37,19 +37,19 @@ export interface EncryptionAtRestConfig extends cdktf.TerraformMetaArguments {
   readonly projectId: string;
   /**
   * aws_kms_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
   */
   readonly awsKmsConfig?: EncryptionAtRestAwsKmsConfig;
   /**
   * azure_key_vault_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
   */
   readonly azureKeyVaultConfig?: EncryptionAtRestAzureKeyVaultConfig;
   /**
   * google_cloud_kms_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
   */
   readonly googleCloudKmsConfig?: EncryptionAtRestGoogleCloudKmsConfig;

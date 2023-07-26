@@ -29,13 +29,13 @@ export interface CustomDbRoleConfig extends cdktf.TerraformMetaArguments {
   readonly roleName: string;
   /**
   * actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/custom_db_role#actions CustomDbRole#actions}
   */
   readonly actions?: CustomDbRoleActions[] | cdktf.IResolvable;
   /**
   * inherited_roles block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/custom_db_role#inherited_roles CustomDbRole#inherited_roles}
   */
   readonly inheritedRoles?: CustomDbRoleInheritedRoles[] | cdktf.IResolvable;
@@ -198,7 +198,7 @@ export interface CustomDbRoleActions {
   readonly action: string;
   /**
   * resources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/custom_db_role#resources CustomDbRole#resources}
   */
   readonly resources: CustomDbRoleActionsResources[] | cdktf.IResolvable;

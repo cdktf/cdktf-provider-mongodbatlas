@@ -29,7 +29,7 @@ export interface CloudProviderAccessAuthorizationConfig extends cdktf.TerraformM
   readonly roleId: string;
   /**
   * aws block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization#aws CloudProviderAccessAuthorization#aws}
   */
   readonly aws?: CloudProviderAccessAuthorizationAws;

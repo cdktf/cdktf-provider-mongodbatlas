@@ -41,7 +41,7 @@ export interface DataMongodbatlasThirdPartyIntegrationConfig extends cdktf.Terra
   readonly serviceDiscovery?: string;
   /**
   * Third-party service integration identifier
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/third_party_integration#type DataMongodbatlasThirdPartyIntegration#type}
   */
   readonly type: string;

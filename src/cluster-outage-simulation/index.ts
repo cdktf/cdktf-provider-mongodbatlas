@@ -29,13 +29,13 @@ export interface ClusterOutageSimulationConfig extends cdktf.TerraformMetaArgume
   readonly projectId: string;
   /**
   * outage_filters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster_outage_simulation#outage_filters ClusterOutageSimulation#outage_filters}
   */
   readonly outageFilters: ClusterOutageSimulationOutageFilters[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster_outage_simulation#timeouts ClusterOutageSimulation#timeouts}
   */
   readonly timeouts?: ClusterOutageSimulationTimeouts;

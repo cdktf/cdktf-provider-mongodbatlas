@@ -29,25 +29,25 @@ export interface FederatedDatabaseInstanceConfig extends cdktf.TerraformMetaArgu
   readonly projectId: string;
   /**
   * cloud_provider_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#cloud_provider_config FederatedDatabaseInstance#cloud_provider_config}
   */
   readonly cloudProviderConfig?: FederatedDatabaseInstanceCloudProviderConfig;
   /**
   * data_process_region block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#data_process_region FederatedDatabaseInstance#data_process_region}
   */
   readonly dataProcessRegion?: FederatedDatabaseInstanceDataProcessRegion;
   /**
   * storage_databases block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#storage_databases FederatedDatabaseInstance#storage_databases}
   */
   readonly storageDatabases?: FederatedDatabaseInstanceStorageDatabases[] | cdktf.IResolvable;
   /**
   * storage_stores block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#storage_stores FederatedDatabaseInstance#storage_stores}
   */
   readonly storageStores?: FederatedDatabaseInstanceStorageStores[] | cdktf.IResolvable;
@@ -156,7 +156,7 @@ export class FederatedDatabaseInstanceCloudProviderConfigAwsOutputReference exte
 export interface FederatedDatabaseInstanceCloudProviderConfig {
   /**
   * aws block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#aws FederatedDatabaseInstance#aws}
   */
   readonly aws: FederatedDatabaseInstanceCloudProviderConfigAws;
@@ -650,7 +650,7 @@ export interface FederatedDatabaseInstanceStorageDatabasesCollections {
   readonly name?: string;
   /**
   * data_sources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#data_sources FederatedDatabaseInstance#data_sources}
   */
   readonly dataSources?: FederatedDatabaseInstanceStorageDatabasesCollectionsDataSources[] | cdktf.IResolvable;
@@ -861,13 +861,13 @@ export interface FederatedDatabaseInstanceStorageDatabases {
   readonly name?: string;
   /**
   * collections block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#collections FederatedDatabaseInstance#collections}
   */
   readonly collections?: FederatedDatabaseInstanceStorageDatabasesCollections[] | cdktf.IResolvable;
   /**
   * views block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#views FederatedDatabaseInstance#views}
   */
   readonly views?: FederatedDatabaseInstanceStorageDatabasesViews[] | cdktf.IResolvable;
@@ -1244,7 +1244,7 @@ export interface FederatedDatabaseInstanceStorageStores {
   readonly urls?: string[];
   /**
   * read_preference block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/federated_database_instance#read_preference FederatedDatabaseInstance#read_preference}
   */
   readonly readPreference?: FederatedDatabaseInstanceStorageStoresReadPreference;

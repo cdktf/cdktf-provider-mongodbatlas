@@ -45,13 +45,13 @@ export interface PrivatelinkEndpointServiceConfig extends cdktf.TerraformMetaArg
   readonly providerName: string;
   /**
   * endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service#endpoints PrivatelinkEndpointService#endpoints}
   */
   readonly endpoints?: PrivatelinkEndpointServiceEndpoints[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service#timeouts PrivatelinkEndpointService#timeouts}
   */
   readonly timeouts?: PrivatelinkEndpointServiceTimeouts;

@@ -65,13 +65,13 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   readonly withDefaultAlertsSettings?: boolean | cdktf.IResolvable;
   /**
   * api_keys block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project#api_keys Project#api_keys}
   */
   readonly apiKeys?: ProjectApiKeys[] | cdktf.IResolvable;
   /**
   * teams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project#teams Project#teams}
   */
   readonly teams?: ProjectTeams[] | cdktf.IResolvable;

@@ -53,7 +53,7 @@ export interface ServerlessInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * links block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/serverless_instance#links ServerlessInstance#links}
   */
   readonly links?: ServerlessInstanceLinks[] | cdktf.IResolvable;

@@ -33,7 +33,7 @@ export interface PrivatelinkEndpointConfig extends cdktf.TerraformMetaArguments 
   readonly region: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint#timeouts PrivatelinkEndpoint#timeouts}
   */
   readonly timeouts?: PrivatelinkEndpointTimeouts;
