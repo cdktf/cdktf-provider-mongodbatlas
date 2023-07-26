@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_serverless
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface PrivatelinkEndpointServiceServerlessConfig extends cdktf.Terraf
   readonly providerName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_serverless#timeouts PrivatelinkEndpointServiceServerless#timeouts}
   */
   readonly timeouts?: PrivatelinkEndpointServiceServerlessTimeouts;

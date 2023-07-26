@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/backup_compliance_policy
 // generated from terraform resource schema
 
@@ -25,31 +20,31 @@ export interface DataMongodbatlasBackupCompliancePolicyConfig extends cdktf.Terr
   readonly projectId: string;
   /**
   * on_demand_policy_item block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/backup_compliance_policy#on_demand_policy_item DataMongodbatlasBackupCompliancePolicy#on_demand_policy_item}
   */
   readonly onDemandPolicyItem?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem;
   /**
   * policy_item_daily block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/backup_compliance_policy#policy_item_daily DataMongodbatlasBackupCompliancePolicy#policy_item_daily}
   */
   readonly policyItemDaily?: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily;
   /**
   * policy_item_hourly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/backup_compliance_policy#policy_item_hourly DataMongodbatlasBackupCompliancePolicy#policy_item_hourly}
   */
   readonly policyItemHourly?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly;
   /**
   * policy_item_monthly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/backup_compliance_policy#policy_item_monthly DataMongodbatlasBackupCompliancePolicy#policy_item_monthly}
   */
   readonly policyItemMonthly?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly[] | cdktf.IResolvable;
   /**
   * policy_item_weekly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/backup_compliance_policy#policy_item_weekly DataMongodbatlasBackupCompliancePolicy#policy_item_weekly}
   */
   readonly policyItemWeekly?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly[] | cdktf.IResolvable;

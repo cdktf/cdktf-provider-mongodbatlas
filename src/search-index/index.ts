@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/search_index
 // generated from terraform resource schema
 
@@ -69,13 +64,13 @@ export interface SearchIndexConfig extends cdktf.TerraformMetaArguments {
   readonly waitForIndexBuildCompletion?: boolean | cdktf.IResolvable;
   /**
   * synonyms block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/search_index#synonyms SearchIndex#synonyms}
   */
   readonly synonyms?: SearchIndexSynonyms[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/search_index#timeouts SearchIndex#timeouts}
   */
   readonly timeouts?: SearchIndexTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/event_trigger
 // generated from terraform resource schema
 
@@ -93,7 +88,7 @@ export interface EventTriggerConfig extends cdktf.TerraformMetaArguments {
   readonly unordered?: boolean | cdktf.IResolvable;
   /**
   * event_processors block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/event_trigger#event_processors EventTrigger#event_processors}
   */
   readonly eventProcessors?: EventTriggerEventProcessors;
@@ -193,7 +188,7 @@ export class EventTriggerEventProcessorsAwsEventbridgeOutputReference extends cd
 export interface EventTriggerEventProcessors {
   /**
   * aws_eventbridge block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/event_trigger#aws_eventbridge EventTrigger#aws_eventbridge}
   */
   readonly awsEventbridge?: EventTriggerEventProcessorsAwsEventbridge;

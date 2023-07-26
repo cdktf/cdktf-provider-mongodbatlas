@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule
 // generated from terraform resource schema
 
@@ -53,37 +48,37 @@ export interface CloudBackupScheduleConfig extends cdktf.TerraformMetaArguments 
   readonly useOrgAndGroupNamesInExportPrefix?: boolean | cdktf.IResolvable;
   /**
   * copy_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule#copy_settings CloudBackupSchedule#copy_settings}
   */
   readonly copySettings?: CloudBackupScheduleCopySettings[] | cdktf.IResolvable;
   /**
   * export block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule#export CloudBackupSchedule#export}
   */
   readonly export?: CloudBackupScheduleExport;
   /**
   * policy_item_daily block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule#policy_item_daily CloudBackupSchedule#policy_item_daily}
   */
   readonly policyItemDaily?: CloudBackupSchedulePolicyItemDaily;
   /**
   * policy_item_hourly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule#policy_item_hourly CloudBackupSchedule#policy_item_hourly}
   */
   readonly policyItemHourly?: CloudBackupSchedulePolicyItemHourly;
   /**
   * policy_item_monthly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule#policy_item_monthly CloudBackupSchedule#policy_item_monthly}
   */
   readonly policyItemMonthly?: CloudBackupSchedulePolicyItemMonthly[] | cdktf.IResolvable;
   /**
   * policy_item_weekly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_backup_schedule#policy_item_weekly CloudBackupSchedule#policy_item_weekly}
   */
   readonly policyItemWeekly?: CloudBackupSchedulePolicyItemWeekly[] | cdktf.IResolvable;

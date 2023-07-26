@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project_api_key
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface ProjectApiKeyConfig extends cdktf.TerraformMetaArguments {
   readonly roleNames?: string[];
   /**
   * project_assignment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project_api_key#project_assignment ProjectApiKey#project_assignment}
   */
   readonly projectAssignment?: ProjectApiKeyProjectAssignment[] | cdktf.IResolvable;

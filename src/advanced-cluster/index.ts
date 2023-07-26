@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface AdvancedClusterConfig extends cdktf.TerraformMetaArguments {
   readonly projectId: string;
   /**
   * Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#retain_backups_enabled AdvancedCluster#retain_backups_enabled}
   */
   readonly retainBackupsEnabled?: boolean | cdktf.IResolvable;
@@ -75,37 +70,37 @@ export interface AdvancedClusterConfig extends cdktf.TerraformMetaArguments {
   readonly versionReleaseSystem?: string;
   /**
   * advanced_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#advanced_configuration AdvancedCluster#advanced_configuration}
   */
   readonly advancedConfiguration?: AdvancedClusterAdvancedConfiguration;
   /**
   * bi_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#bi_connector AdvancedCluster#bi_connector}
   */
   readonly biConnector?: AdvancedClusterBiConnector;
   /**
   * bi_connector_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#bi_connector_config AdvancedCluster#bi_connector_config}
   */
   readonly biConnectorConfig?: AdvancedClusterBiConnectorConfig;
   /**
   * labels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#labels AdvancedCluster#labels}
   */
   readonly labels?: AdvancedClusterLabels[] | cdktf.IResolvable;
   /**
   * replication_specs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#replication_specs AdvancedCluster#replication_specs}
   */
   readonly replicationSpecs: AdvancedClusterReplicationSpecs[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#timeouts AdvancedCluster#timeouts}
   */
   readonly timeouts?: AdvancedClusterTimeouts;
@@ -1803,31 +1798,31 @@ export interface AdvancedClusterReplicationSpecsRegionConfigs {
   readonly regionName: string;
   /**
   * analytics_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#analytics_auto_scaling AdvancedCluster#analytics_auto_scaling}
   */
   readonly analyticsAutoScaling?: AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling;
   /**
   * analytics_specs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#analytics_specs AdvancedCluster#analytics_specs}
   */
   readonly analyticsSpecs?: AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs;
   /**
   * auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#auto_scaling AdvancedCluster#auto_scaling}
   */
   readonly autoScaling?: AdvancedClusterReplicationSpecsRegionConfigsAutoScaling;
   /**
   * electable_specs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#electable_specs AdvancedCluster#electable_specs}
   */
   readonly electableSpecs?: AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs;
   /**
   * read_only_specs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#read_only_specs AdvancedCluster#read_only_specs}
   */
   readonly readOnlySpecs?: AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs;
@@ -2109,7 +2104,7 @@ export interface AdvancedClusterReplicationSpecs {
   readonly zoneName?: string;
   /**
   * region_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/advanced_cluster#region_configs AdvancedCluster#region_configs}
   */
   readonly regionConfigs: AdvancedClusterReplicationSpecsRegionConfigs[] | cdktf.IResolvable;

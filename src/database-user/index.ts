@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/database_user
 // generated from terraform resource schema
 
@@ -53,19 +48,19 @@ export interface DatabaseUserConfig extends cdktf.TerraformMetaArguments {
   readonly x509Type?: string;
   /**
   * labels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/database_user#labels DatabaseUser#labels}
   */
   readonly labels?: DatabaseUserLabels[] | cdktf.IResolvable;
   /**
   * roles block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/database_user#roles DatabaseUser#roles}
   */
   readonly roles: DatabaseUserRoles[] | cdktf.IResolvable;
   /**
   * scopes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/database_user#scopes DatabaseUser#scopes}
   */
   readonly scopes?: DatabaseUserScopes[] | cdktf.IResolvable;

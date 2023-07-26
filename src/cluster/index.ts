@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster
 // generated from terraform resource schema
 
@@ -30,7 +25,7 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   readonly backingProviderName?: string;
   /**
   * Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
   */
   readonly backupEnabled?: boolean | cdktf.IResolvable;
@@ -131,7 +126,7 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   readonly replicationFactor?: number;
   /**
   * Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
   */
   readonly retainBackupsEnabled?: boolean | cdktf.IResolvable;
@@ -145,31 +140,31 @@ export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   readonly versionReleaseSystem?: string;
   /**
   * advanced_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
   */
   readonly advancedConfiguration?: ClusterAdvancedConfiguration;
   /**
   * bi_connector_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
   */
   readonly biConnectorConfig?: ClusterBiConnectorConfig;
   /**
   * labels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#labels Cluster#labels}
   */
   readonly labels?: ClusterLabels[] | cdktf.IResolvable;
   /**
   * replication_specs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#replication_specs Cluster#replication_specs}
   */
   readonly replicationSpecs?: ClusterReplicationSpecs[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#timeouts Cluster#timeouts}
   */
   readonly timeouts?: ClusterTimeouts;
@@ -1455,7 +1450,7 @@ export interface ClusterReplicationSpecs {
   readonly zoneName?: string;
   /**
   * regions_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cluster#regions_config Cluster#regions_config}
   */
   readonly regionsConfig?: ClusterReplicationSpecsRegionsConfig[] | cdktf.IResolvable;

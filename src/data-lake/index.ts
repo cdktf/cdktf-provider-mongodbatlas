@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface DataLakeConfig extends cdktf.TerraformMetaArguments {
   readonly projectId: string;
   /**
   * aws block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake#aws DataLake#aws}
   */
   readonly aws: DataLakeAws;
   /**
   * data_process_region block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake#data_process_region DataLake#data_process_region}
   */
   readonly dataProcessRegion?: DataLakeDataProcessRegion;

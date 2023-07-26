@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/serverless_instance
 // generated from terraform resource schema
 
@@ -30,7 +25,7 @@ export interface DataMongodbatlasServerlessInstanceConfig extends cdktf.Terrafor
   readonly stateName?: string;
   /**
   * links block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/serverless_instance#links DataMongodbatlasServerlessInstance#links}
   */
   readonly links?: DataMongodbatlasServerlessInstanceLinks[] | cdktf.IResolvable;

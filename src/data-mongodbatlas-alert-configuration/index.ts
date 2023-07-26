@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configuration
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataMongodbatlasAlertConfigurationConfig extends cdktf.Terrafor
   readonly projectId: string;
   /**
   * output block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configuration#output DataMongodbatlasAlertConfiguration#output}
   */
   readonly output?: DataMongodbatlasAlertConfigurationOutput[] | cdktf.IResolvable;

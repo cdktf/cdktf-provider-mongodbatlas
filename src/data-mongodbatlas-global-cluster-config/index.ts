@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/global_cluster_config
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataMongodbatlasGlobalClusterConfigConfig extends cdktf.Terrafo
   readonly projectId: string;
   /**
   * managed_namespaces block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/global_cluster_config#managed_namespaces DataMongodbatlasGlobalClusterConfig#managed_namespaces}
   */
   readonly managedNamespaces?: DataMongodbatlasGlobalClusterConfigManagedNamespaces[] | cdktf.IResolvable;

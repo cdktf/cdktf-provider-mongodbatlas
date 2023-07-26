@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake_pipeline
 // generated from terraform resource schema
 
@@ -22,19 +17,19 @@ export interface DataLakePipelineConfig extends cdktf.TerraformMetaArguments {
   readonly projectId: string;
   /**
   * sink block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake_pipeline#sink DataLakePipeline#sink}
   */
   readonly sink?: DataLakePipelineSink;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake_pipeline#source DataLakePipeline#source}
   */
   readonly source?: DataLakePipelineSource;
   /**
   * transformations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake_pipeline#transformations DataLakePipeline#transformations}
   */
   readonly transformations?: DataLakePipelineTransformations[] | cdktf.IResolvable;
@@ -385,7 +380,7 @@ export interface DataLakePipelineSink {
   readonly type?: string;
   /**
   * partition_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/data_lake_pipeline#partition_fields DataLakePipeline#partition_fields}
   */
   readonly partitionFields?: DataLakePipelineSinkPartitionFields[] | cdktf.IResolvable;

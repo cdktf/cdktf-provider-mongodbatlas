@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_database_instance
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataMongodbatlasFederatedDatabaseInstanceConfig extends cdktf.T
   readonly projectId: string;
   /**
   * cloud_provider_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_database_instance#cloud_provider_config DataMongodbatlasFederatedDatabaseInstance#cloud_provider_config}
   */
   readonly cloudProviderConfig?: DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig;
@@ -809,7 +804,7 @@ export class DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsOutp
 export interface DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig {
   /**
   * aws block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_database_instance#aws DataMongodbatlasFederatedDatabaseInstance#aws}
   */
   readonly aws?: DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws;

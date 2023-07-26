@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/backup_compliance_policy
 // generated from terraform resource schema
 
@@ -45,31 +40,31 @@ export interface BackupCompliancePolicyConfig extends cdktf.TerraformMetaArgumen
   readonly restoreWindowDays?: number;
   /**
   * on_demand_policy_item block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/backup_compliance_policy#on_demand_policy_item BackupCompliancePolicy#on_demand_policy_item}
   */
   readonly onDemandPolicyItem: BackupCompliancePolicyOnDemandPolicyItem;
   /**
   * policy_item_daily block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/backup_compliance_policy#policy_item_daily BackupCompliancePolicy#policy_item_daily}
   */
   readonly policyItemDaily?: BackupCompliancePolicyPolicyItemDaily;
   /**
   * policy_item_hourly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/backup_compliance_policy#policy_item_hourly BackupCompliancePolicy#policy_item_hourly}
   */
   readonly policyItemHourly?: BackupCompliancePolicyPolicyItemHourly;
   /**
   * policy_item_monthly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/backup_compliance_policy#policy_item_monthly BackupCompliancePolicy#policy_item_monthly}
   */
   readonly policyItemMonthly?: BackupCompliancePolicyPolicyItemMonthly[] | cdktf.IResolvable;
   /**
   * policy_item_weekly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/backup_compliance_policy#policy_item_weekly BackupCompliancePolicy#policy_item_weekly}
   */
   readonly policyItemWeekly?: BackupCompliancePolicyPolicyItemWeekly[] | cdktf.IResolvable;
