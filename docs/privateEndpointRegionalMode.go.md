@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 privateendpointregionalmode.NewPrivateEndpointRegionalMode(scope Construct, id *string, config PrivateEndpointRegionalModeConfig) PrivateEndpointRegionalMode
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalMode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 privateendpointregionalmode.PrivateEndpointRegionalMode_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalMode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 privateendpointregionalmode.PrivateEndpointRegionalMode_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ privateendpointregionalmode.PrivateEndpointRegionalMode_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalMode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 privateendpointregionalmode.PrivateEndpointRegionalMode_IsTerraformResource(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalModeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 &privateendpointregionalmode.PrivateEndpointRegionalModeConfig {
 	Connection: interface{},
@@ -650,7 +650,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendp
 	ProjectId: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalModeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4.privateEndpointRegionalMode.PrivateEndpointRegionalModeTimeouts,
 }
 ```
 
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalModeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 &privateendpointregionalmode.PrivateEndpointRegionalModeTimeouts {
 	Create: *string,
@@ -862,7 +862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privateEndpointRegionalMode.PrivateEndpointRegionalModeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privateendpointregionalmode"
 
 privateendpointregionalmode.NewPrivateEndpointRegionalModeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateEndpointRegionalModeTimeoutsOutputReference
 ```
