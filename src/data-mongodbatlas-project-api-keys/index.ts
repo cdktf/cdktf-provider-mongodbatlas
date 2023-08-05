@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,93 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasProjectApiKeysAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys#id DataMongodbatlasProjectApiKeysA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys#id DataMongodbatlasProjectApiKeysA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys#items_per_page DataMongodbatlasProjectApiKeysA#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys#items_per_page DataMongodbatlasProjectApiKeysA#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys#page_num DataMongodbatlasProjectApiKeysA#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys#page_num DataMongodbatlasProjectApiKeysA#page_num}
   */
   readonly pageNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys#project_id DataMongodbatlasProjectApiKeysA#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys#project_id DataMongodbatlasProjectApiKeysA#project_id}
   */
   readonly projectId: string;
+}
+export interface DataMongodbatlasProjectApiKeysResultsProjectAssignment {
+}
+
+export function dataMongodbatlasProjectApiKeysResultsProjectAssignmentToTerraform(struct?: DataMongodbatlasProjectApiKeysResultsProjectAssignment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataMongodbatlasProjectApiKeysResultsProjectAssignmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasProjectApiKeysResultsProjectAssignment | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasProjectApiKeysResultsProjectAssignment | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // project_id - computed: true, optional: false, required: false
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+
+  // role_names - computed: true, optional: false, required: false
+  public get roleNames() {
+    return cdktf.Fn.tolist(this.getListAttribute('role_names'));
+  }
+}
+
+export class DataMongodbatlasProjectApiKeysResultsProjectAssignmentList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasProjectApiKeysResultsProjectAssignmentOutputReference {
+    return new DataMongodbatlasProjectApiKeysResultsProjectAssignmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataMongodbatlasProjectApiKeysResults {
 }
@@ -87,6 +156,12 @@ export class DataMongodbatlasProjectApiKeysResultsOutputReference extends cdktf.
     return this.getStringAttribute('private_key');
   }
 
+  // project_assignment - computed: true, optional: false, required: false
+  private _projectAssignment = new DataMongodbatlasProjectApiKeysResultsProjectAssignmentList(this, "project_assignment", true);
+  public get projectAssignment() {
+    return this._projectAssignment;
+  }
+
   // public_key - computed: true, optional: false, required: false
   public get publicKey() {
     return this.getStringAttribute('public_key');
@@ -118,7 +193,7 @@ export class DataMongodbatlasProjectApiKeysResultsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys mongodbatlas_project_api_keys}
 */
 export class DataMongodbatlasProjectApiKeysA extends cdktf.TerraformDataSource {
 
@@ -132,7 +207,7 @@ export class DataMongodbatlasProjectApiKeysA extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +218,7 @@ export class DataMongodbatlasProjectApiKeysA extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_project_api_keys',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.2',
+        providerVersion: '1.11.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

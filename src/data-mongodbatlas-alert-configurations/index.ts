@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAlertConfigurationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#id DataMongodbatlasAlertConfigurations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#id DataMongodbatlasAlertConfigurations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#output_type DataMongodbatlasAlertConfigurations#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#output_type DataMongodbatlasAlertConfigurations#output_type}
   */
   readonly outputType?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#project_id DataMongodbatlasAlertConfigurations#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#project_id DataMongodbatlasAlertConfigurations#project_id}
   */
   readonly projectId: string;
   /**
   * list_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#list_options DataMongodbatlasAlertConfigurations#list_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#list_options DataMongodbatlasAlertConfigurations#list_options}
   */
   readonly listOptions?: DataMongodbatlasAlertConfigurationsListOptions[] | cdktf.IResolvable;
 }
@@ -647,15 +647,15 @@ export class DataMongodbatlasAlertConfigurationsResultsList extends cdktf.Comple
 }
 export interface DataMongodbatlasAlertConfigurationsListOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#include_count DataMongodbatlasAlertConfigurations#include_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#include_count DataMongodbatlasAlertConfigurations#include_count}
   */
   readonly includeCount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#items_per_page DataMongodbatlasAlertConfigurations#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#items_per_page DataMongodbatlasAlertConfigurations#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations#page_num DataMongodbatlasAlertConfigurations#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations#page_num DataMongodbatlasAlertConfigurations#page_num}
   */
   readonly pageNum?: number;
 }
@@ -798,7 +798,7 @@ export class DataMongodbatlasAlertConfigurationsListOptionsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations mongodbatlas_alert_configurations}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations}
 */
 export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSource {
 
@@ -812,7 +812,7 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -823,7 +823,7 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_alert_configurations',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.2',
+        providerVersion: '1.11.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
