@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface CloudProviderAccessAuthorizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization#id CloudProviderAccessAuthorization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#id CloudProviderAccessAuthorization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization#project_id CloudProviderAccessAuthorization#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#project_id CloudProviderAccessAuthorization#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization#role_id CloudProviderAccessAuthorization#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#role_id CloudProviderAccessAuthorization#role_id}
   */
   readonly roleId: string;
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization#aws CloudProviderAccessAuthorization#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#aws CloudProviderAccessAuthorization#aws}
   */
   readonly aws?: CloudProviderAccessAuthorizationAws;
+  /**
+  * azure block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#azure CloudProviderAccessAuthorization#azure}
+  */
+  readonly azure?: CloudProviderAccessAuthorizationAzure;
 }
 export interface CloudProviderAccessAuthorizationFeatureUsages {
 }
@@ -106,7 +107,7 @@ export class CloudProviderAccessAuthorizationFeatureUsagesList extends cdktf.Com
 }
 export interface CloudProviderAccessAuthorizationAws {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization#iam_assumed_role_arn CloudProviderAccessAuthorization#iam_assumed_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#iam_assumed_role_arn CloudProviderAccessAuthorization#iam_assumed_role_arn}
   */
   readonly iamAssumedRoleArn: string;
 }
@@ -166,9 +167,119 @@ export class CloudProviderAccessAuthorizationAwsOutputReference extends cdktf.Co
     return this._iamAssumedRoleArn;
   }
 }
+export interface CloudProviderAccessAuthorizationAzure {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#atlas_azure_app_id CloudProviderAccessAuthorization#atlas_azure_app_id}
+  */
+  readonly atlasAzureAppId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#service_principal_id CloudProviderAccessAuthorization#service_principal_id}
+  */
+  readonly servicePrincipalId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization#tenant_id CloudProviderAccessAuthorization#tenant_id}
+  */
+  readonly tenantId: string;
+}
+
+export function cloudProviderAccessAuthorizationAzureToTerraform(struct?: CloudProviderAccessAuthorizationAzureOutputReference | CloudProviderAccessAuthorizationAzure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    atlas_azure_app_id: cdktf.stringToTerraform(struct!.atlasAzureAppId),
+    service_principal_id: cdktf.stringToTerraform(struct!.servicePrincipalId),
+    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+  }
+}
+
+export class CloudProviderAccessAuthorizationAzureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudProviderAccessAuthorizationAzure | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._atlasAzureAppId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.atlasAzureAppId = this._atlasAzureAppId;
+    }
+    if (this._servicePrincipalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servicePrincipalId = this._servicePrincipalId;
+    }
+    if (this._tenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenantId = this._tenantId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudProviderAccessAuthorizationAzure | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._atlasAzureAppId = undefined;
+      this._servicePrincipalId = undefined;
+      this._tenantId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._atlasAzureAppId = value.atlasAzureAppId;
+      this._servicePrincipalId = value.servicePrincipalId;
+      this._tenantId = value.tenantId;
+    }
+  }
+
+  // atlas_azure_app_id - computed: false, optional: false, required: true
+  private _atlasAzureAppId?: string; 
+  public get atlasAzureAppId() {
+    return this.getStringAttribute('atlas_azure_app_id');
+  }
+  public set atlasAzureAppId(value: string) {
+    this._atlasAzureAppId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get atlasAzureAppIdInput() {
+    return this._atlasAzureAppId;
+  }
+
+  // service_principal_id - computed: false, optional: false, required: true
+  private _servicePrincipalId?: string; 
+  public get servicePrincipalId() {
+    return this.getStringAttribute('service_principal_id');
+  }
+  public set servicePrincipalId(value: string) {
+    this._servicePrincipalId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicePrincipalIdInput() {
+    return this._servicePrincipalId;
+  }
+
+  // tenant_id - computed: false, optional: false, required: true
+  private _tenantId?: string; 
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+  public set tenantId(value: string) {
+    this._tenantId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenantIdInput() {
+    return this._tenantId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}
 */
 export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
 
@@ -182,7 +293,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +304,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cloud_provider_access_authorization',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.10.2',
+        providerVersion: '1.11.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -208,6 +319,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
     this._projectId = config.projectId;
     this._roleId = config.roleId;
     this._aws.internalValue = config.aws;
+    this._azure.internalValue = config.azure;
   }
 
   // ==========
@@ -283,6 +395,22 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
     return this._aws.internalValue;
   }
 
+  // azure - computed: false, optional: true, required: false
+  private _azure = new CloudProviderAccessAuthorizationAzureOutputReference(this, "azure");
+  public get azure() {
+    return this._azure;
+  }
+  public putAzure(value: CloudProviderAccessAuthorizationAzure) {
+    this._azure.internalValue = value;
+  }
+  public resetAzure() {
+    this._azure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureInput() {
+    return this._azure.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -293,6 +421,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       role_id: cdktf.stringToTerraform(this._roleId),
       aws: cloudProviderAccessAuthorizationAwsToTerraform(this._aws.internalValue),
+      azure: cloudProviderAccessAuthorizationAzureToTerraform(this._azure.internalValue),
     };
   }
 }
