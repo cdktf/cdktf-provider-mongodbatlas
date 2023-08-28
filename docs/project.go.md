@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -400,7 +400,7 @@ func ResetWithDefaultAlertsSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectApiKeys {
 	ApiKeyId: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectLimits {
 	Name: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectTeams {
 	RoleNames: *[]*string,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectApiKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectApiKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectApiKeysList
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectApiKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectApiKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectApiKeysOutputReference
 ```
@@ -1912,7 +1912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectLimitsList
 ```
@@ -2055,7 +2055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectLimitsOutputReference
 ```
@@ -2399,7 +2399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectTeamsList
 ```
@@ -2542,7 +2542,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectTeamsOutputReference
 ```
