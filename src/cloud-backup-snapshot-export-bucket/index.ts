@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_backup_snapshot_export_bucket
 // generated from terraform resource schema
 
