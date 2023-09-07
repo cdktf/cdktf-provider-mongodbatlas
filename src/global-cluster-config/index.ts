@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface GlobalClusterConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#cluster_name GlobalClusterConfig#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#cluster_name GlobalClusterConfig#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#id GlobalClusterConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#id GlobalClusterConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#project_id GlobalClusterConfig#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#project_id GlobalClusterConfig#project_id}
   */
   readonly projectId: string;
   /**
   * custom_zone_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#custom_zone_mappings GlobalClusterConfig#custom_zone_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#custom_zone_mappings GlobalClusterConfig#custom_zone_mappings}
   */
   readonly customZoneMappings?: GlobalClusterConfigCustomZoneMappings[] | cdktf.IResolvable;
   /**
   * managed_namespaces block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#managed_namespaces GlobalClusterConfig#managed_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#managed_namespaces GlobalClusterConfig#managed_namespaces}
   */
   readonly managedNamespaces?: GlobalClusterConfigManagedNamespaces[] | cdktf.IResolvable;
 }
 export interface GlobalClusterConfigCustomZoneMappings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#location GlobalClusterConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#location GlobalClusterConfig#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#zone GlobalClusterConfig#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#zone GlobalClusterConfig#zone}
   */
   readonly zone?: string;
 }
@@ -166,23 +161,23 @@ export class GlobalClusterConfigCustomZoneMappingsList extends cdktf.ComplexList
 }
 export interface GlobalClusterConfigManagedNamespaces {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#collection GlobalClusterConfig#collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#collection GlobalClusterConfig#collection}
   */
   readonly collection: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#custom_shard_key GlobalClusterConfig#custom_shard_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#custom_shard_key GlobalClusterConfig#custom_shard_key}
   */
   readonly customShardKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#db GlobalClusterConfig#db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#db GlobalClusterConfig#db}
   */
   readonly db: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#is_custom_shard_key_hashed GlobalClusterConfig#is_custom_shard_key_hashed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#is_custom_shard_key_hashed GlobalClusterConfig#is_custom_shard_key_hashed}
   */
   readonly isCustomShardKeyHashed?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config#is_shard_key_unique GlobalClusterConfig#is_shard_key_unique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config#is_shard_key_unique GlobalClusterConfig#is_shard_key_unique}
   */
   readonly isShardKeyUnique?: boolean | cdktf.IResolvable;
 }
@@ -362,7 +357,7 @@ export class GlobalClusterConfigManagedNamespacesList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config mongodbatlas_global_cluster_config}
 */
 export class GlobalClusterConfig extends cdktf.TerraformResource {
 
@@ -376,7 +371,7 @@ export class GlobalClusterConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/global_cluster_config mongodbatlas_global_cluster_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -387,7 +382,7 @@ export class GlobalClusterConfig extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_global_cluster_config',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.0',
+        providerVersion: '1.11.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
