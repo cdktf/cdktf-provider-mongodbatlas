@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/shared_tier_snapshots
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_snapshots
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasSharedTierSnapshotsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/shared_tier_snapshots#cluster_name DataMongodbatlasSharedTierSnapshots#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_snapshots#cluster_name DataMongodbatlasSharedTierSnapshots#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/shared_tier_snapshots#id DataMongodbatlasSharedTierSnapshots#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_snapshots#id DataMongodbatlasSharedTierSnapshots#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/shared_tier_snapshots#project_id DataMongodbatlasSharedTierSnapshots#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_snapshots#project_id DataMongodbatlasSharedTierSnapshots#project_id}
   */
   readonly projectId: string;
 }
@@ -124,7 +124,7 @@ export class DataMongodbatlasSharedTierSnapshotsResultsList extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/shared_tier_snapshots mongodbatlas_shared_tier_snapshots}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_snapshots mongodbatlas_shared_tier_snapshots}
 */
 export class DataMongodbatlasSharedTierSnapshots extends cdktf.TerraformDataSource {
 
@@ -138,7 +138,7 @@ export class DataMongodbatlasSharedTierSnapshots extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/shared_tier_snapshots mongodbatlas_shared_tier_snapshots} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_snapshots mongodbatlas_shared_tier_snapshots} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -149,7 +149,7 @@ export class DataMongodbatlasSharedTierSnapshots extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_shared_tier_snapshots',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.0',
+        providerVersion: '1.11.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

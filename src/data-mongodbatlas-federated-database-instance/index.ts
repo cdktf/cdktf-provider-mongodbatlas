@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance#id DataMongodbatlasFederatedDatabaseInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance#id DataMongodbatlasFederatedDatabaseInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance#name DataMongodbatlasFederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance#name DataMongodbatlasFederatedDatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance#project_id DataMongodbatlasFederatedDatabaseInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance#project_id DataMongodbatlasFederatedDatabaseInstance#project_id}
   */
   readonly projectId: string;
   /**
   * cloud_provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance#cloud_provider_config DataMongodbatlasFederatedDatabaseInstance#cloud_provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance#cloud_provider_config DataMongodbatlasFederatedDatabaseInstance#cloud_provider_config}
   */
   readonly cloudProviderConfig?: DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig;
 }
@@ -166,6 +166,11 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageDatabasesCollection
   // database_regex - computed: true, optional: false, required: false
   public get databaseRegex() {
     return this.getStringAttribute('database_regex');
+  }
+
+  // dataset_name - computed: true, optional: false, required: false
+  public get datasetName() {
+    return this.getStringAttribute('dataset_name');
   }
 
   // default_format - computed: true, optional: false, required: false
@@ -437,10 +442,10 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageDatabasesList exten
     return new DataMongodbatlasFederatedDatabaseInstanceStorageDatabasesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags {
+export interface DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags {
 }
 
-export function dataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsToTerraform(struct?: DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags): any {
+export function dataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsToTerraform(struct?: DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -449,7 +454,7 @@ export function dataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPrefer
   }
 }
 
-export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference extends cdktf.ComplexObject {
+export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -462,13 +467,13 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenc
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags | undefined {
+  public get internalValue(): DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags | undefined) {
+  public set internalValue(value: DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -488,7 +493,7 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenc
   }
 }
 
-export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsList extends cdktf.ComplexList {
+export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -502,8 +507,73 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenc
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference {
-    return new DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference {
+    return new DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets {
+}
+
+export function dataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsToTerraform(struct?: DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // tags - computed: true, optional: false, required: false
+  private _tags = new DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList(this, "tags", false);
+  public get tags() {
+    return this._tags;
+  }
+}
+
+export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference {
+    return new DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreference {
@@ -556,10 +626,10 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenc
     return this.getStringAttribute('mode');
   }
 
-  // tags - computed: true, optional: false, required: false
-  private _tags = new DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsList(this, "tags", false);
-  public get tags() {
-    return this._tags;
+  // tag_sets - computed: true, optional: false, required: false
+  private _tagSets = new DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList(this, "tag_sets", false);
+  public get tagSets() {
+    return this._tagSets;
   }
 }
 
@@ -723,7 +793,7 @@ export class DataMongodbatlasFederatedDatabaseInstanceStorageStoresList extends 
 }
 export interface DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance#test_s3_bucket DataMongodbatlasFederatedDatabaseInstance#test_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance#test_s3_bucket DataMongodbatlasFederatedDatabaseInstance#test_s3_bucket}
   */
   readonly testS3Bucket?: string;
 }
@@ -810,7 +880,7 @@ export interface DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig {
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance#aws DataMongodbatlasFederatedDatabaseInstance#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance#aws DataMongodbatlasFederatedDatabaseInstance#aws}
   */
   readonly aws?: DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws;
 }
@@ -875,7 +945,7 @@ export class DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputR
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}
 */
 export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDataSource {
 
@@ -889,7 +959,7 @@ export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -900,7 +970,7 @@ export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDa
       terraformResourceType: 'mongodbatlas_federated_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.0',
+        providerVersion: '1.11.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
