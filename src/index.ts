@@ -66,6 +66,8 @@ export * as dataMongodbatlasAlertConfiguration from './data-mongodbatlas-alert-c
 export * as dataMongodbatlasAlertConfigurations from './data-mongodbatlas-alert-configurations';
 export * as dataMongodbatlasApiKey from './data-mongodbatlas-api-key';
 export * as dataMongodbatlasApiKeys from './data-mongodbatlas-api-keys';
+export * as dataMongodbatlasAtlasUser from './data-mongodbatlas-atlas-user';
+export * as dataMongodbatlasAtlasUsers from './data-mongodbatlas-atlas-users';
 export * as dataMongodbatlasAuditing from './data-mongodbatlas-auditing';
 export * as dataMongodbatlasBackupCompliancePolicy from './data-mongodbatlas-backup-compliance-policy';
 export * as dataMongodbatlasCloudBackupSchedule from './data-mongodbatlas-cloud-backup-schedule';

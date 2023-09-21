@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,75 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface EncryptionAtRestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#aws_kms EncryptionAtRest#aws_kms}
-  */
-  readonly awsKms?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#azure_key_vault EncryptionAtRest#azure_key_vault}
-  */
-  readonly azureKeyVault?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#google_cloud_kms EncryptionAtRest#google_cloud_kms}
-  */
-  readonly googleCloudKms?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#id EncryptionAtRest#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}
   */
   readonly projectId: string;
   /**
   * aws_kms_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
   */
-  readonly awsKmsConfig?: EncryptionAtRestAwsKmsConfig;
+  readonly awsKmsConfig?: EncryptionAtRestAwsKmsConfig[] | cdktf.IResolvable;
   /**
   * azure_key_vault_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
   */
-  readonly azureKeyVaultConfig?: EncryptionAtRestAzureKeyVaultConfig;
+  readonly azureKeyVaultConfig?: EncryptionAtRestAzureKeyVaultConfig[] | cdktf.IResolvable;
   /**
   * google_cloud_kms_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
   */
-  readonly googleCloudKmsConfig?: EncryptionAtRestGoogleCloudKmsConfig;
+  readonly googleCloudKmsConfig?: EncryptionAtRestGoogleCloudKmsConfig[] | cdktf.IResolvable;
 }
 export interface EncryptionAtRestAwsKmsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#access_key_id EncryptionAtRest#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#access_key_id EncryptionAtRest#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#customer_master_key_id EncryptionAtRest#customer_master_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#customer_master_key_id EncryptionAtRest#customer_master_key_id}
   */
   readonly customerMasterKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#region EncryptionAtRest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#region EncryptionAtRest#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#role_id EncryptionAtRest#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#role_id EncryptionAtRest#role_id}
   */
   readonly roleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#secret_access_key EncryptionAtRest#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#secret_access_key EncryptionAtRest#secret_access_key}
   */
   readonly secretAccessKey?: string;
 }
 
-export function encryptionAtRestAwsKmsConfigToTerraform(struct?: EncryptionAtRestAwsKmsConfigOutputReference | EncryptionAtRestAwsKmsConfig): any {
+export function encryptionAtRestAwsKmsConfigToTerraform(struct?: EncryptionAtRestAwsKmsConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -98,16 +79,22 @@ export function encryptionAtRestAwsKmsConfigToTerraform(struct?: EncryptionAtRes
 
 export class EncryptionAtRestAwsKmsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EncryptionAtRestAwsKmsConfig | undefined {
+  public get internalValue(): EncryptionAtRestAwsKmsConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessKeyId !== undefined) {
@@ -137,9 +124,10 @@ export class EncryptionAtRestAwsKmsConfigOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EncryptionAtRestAwsKmsConfig | undefined) {
+  public set internalValue(value: EncryptionAtRestAwsKmsConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._accessKeyId = undefined;
       this._customerMasterKeyId = undefined;
       this._enabled = undefined;
@@ -147,8 +135,13 @@ export class EncryptionAtRestAwsKmsConfigOutputReference extends cdktf.ComplexOb
       this._roleId = undefined;
       this._secretAccessKey = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._accessKeyId = value.accessKeyId;
       this._customerMasterKeyId = value.customerMasterKeyId;
       this._enabled = value.enabled;
@@ -190,7 +183,7 @@ export class EncryptionAtRestAwsKmsConfigOutputReference extends cdktf.ComplexOb
     return this._customerMasterKeyId;
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -254,46 +247,66 @@ export class EncryptionAtRestAwsKmsConfigOutputReference extends cdktf.ComplexOb
     return this._secretAccessKey;
   }
 }
+
+export class EncryptionAtRestAwsKmsConfigList extends cdktf.ComplexList {
+  public internalValue? : EncryptionAtRestAwsKmsConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EncryptionAtRestAwsKmsConfigOutputReference {
+    return new EncryptionAtRestAwsKmsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EncryptionAtRestAzureKeyVaultConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#azure_environment EncryptionAtRest#azure_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#azure_environment EncryptionAtRest#azure_environment}
   */
   readonly azureEnvironment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#client_id EncryptionAtRest#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#client_id EncryptionAtRest#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#key_identifier EncryptionAtRest#key_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#key_identifier EncryptionAtRest#key_identifier}
   */
   readonly keyIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#key_vault_name EncryptionAtRest#key_vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#key_vault_name EncryptionAtRest#key_vault_name}
   */
   readonly keyVaultName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#resource_group_name EncryptionAtRest#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#resource_group_name EncryptionAtRest#resource_group_name}
   */
   readonly resourceGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#secret EncryptionAtRest#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#secret EncryptionAtRest#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#subscription_id EncryptionAtRest#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#subscription_id EncryptionAtRest#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#tenant_id EncryptionAtRest#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#tenant_id EncryptionAtRest#tenant_id}
   */
   readonly tenantId?: string;
 }
 
-export function encryptionAtRestAzureKeyVaultConfigToTerraform(struct?: EncryptionAtRestAzureKeyVaultConfigOutputReference | EncryptionAtRestAzureKeyVaultConfig): any {
+export function encryptionAtRestAzureKeyVaultConfigToTerraform(struct?: EncryptionAtRestAzureKeyVaultConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -313,16 +326,22 @@ export function encryptionAtRestAzureKeyVaultConfigToTerraform(struct?: Encrypti
 
 export class EncryptionAtRestAzureKeyVaultConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EncryptionAtRestAzureKeyVaultConfig | undefined {
+  public get internalValue(): EncryptionAtRestAzureKeyVaultConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._azureEnvironment !== undefined) {
@@ -364,9 +383,10 @@ export class EncryptionAtRestAzureKeyVaultConfigOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EncryptionAtRestAzureKeyVaultConfig | undefined) {
+  public set internalValue(value: EncryptionAtRestAzureKeyVaultConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._azureEnvironment = undefined;
       this._clientId = undefined;
       this._enabled = undefined;
@@ -377,8 +397,13 @@ export class EncryptionAtRestAzureKeyVaultConfigOutputReference extends cdktf.Co
       this._subscriptionId = undefined;
       this._tenantId = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._azureEnvironment = value.azureEnvironment;
       this._clientId = value.clientId;
       this._enabled = value.enabled;
@@ -423,13 +448,16 @@ export class EncryptionAtRestAzureKeyVaultConfigOutputReference extends cdktf.Co
     return this._clientId;
   }
 
-  // enabled - computed: false, optional: false, required: true
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
@@ -532,22 +560,42 @@ export class EncryptionAtRestAzureKeyVaultConfigOutputReference extends cdktf.Co
     return this._tenantId;
   }
 }
+
+export class EncryptionAtRestAzureKeyVaultConfigList extends cdktf.ComplexList {
+  public internalValue? : EncryptionAtRestAzureKeyVaultConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EncryptionAtRestAzureKeyVaultConfigOutputReference {
+    return new EncryptionAtRestAzureKeyVaultConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EncryptionAtRestGoogleCloudKmsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#key_version_resource_id EncryptionAtRest#key_version_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#key_version_resource_id EncryptionAtRest#key_version_resource_id}
   */
   readonly keyVersionResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest#service_account_key EncryptionAtRest#service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest#service_account_key EncryptionAtRest#service_account_key}
   */
   readonly serviceAccountKey?: string;
 }
 
-export function encryptionAtRestGoogleCloudKmsConfigToTerraform(struct?: EncryptionAtRestGoogleCloudKmsConfigOutputReference | EncryptionAtRestGoogleCloudKmsConfig): any {
+export function encryptionAtRestGoogleCloudKmsConfigToTerraform(struct?: EncryptionAtRestGoogleCloudKmsConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -561,16 +609,22 @@ export function encryptionAtRestGoogleCloudKmsConfigToTerraform(struct?: Encrypt
 
 export class EncryptionAtRestGoogleCloudKmsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EncryptionAtRestGoogleCloudKmsConfig | undefined {
+  public get internalValue(): EncryptionAtRestGoogleCloudKmsConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled !== undefined) {
@@ -588,22 +642,28 @@ export class EncryptionAtRestGoogleCloudKmsConfigOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EncryptionAtRestGoogleCloudKmsConfig | undefined) {
+  public set internalValue(value: EncryptionAtRestGoogleCloudKmsConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._enabled = undefined;
       this._keyVersionResourceId = undefined;
       this._serviceAccountKey = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._enabled = value.enabled;
       this._keyVersionResourceId = value.keyVersionResourceId;
       this._serviceAccountKey = value.serviceAccountKey;
     }
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -652,8 +712,28 @@ export class EncryptionAtRestGoogleCloudKmsConfigOutputReference extends cdktf.C
   }
 }
 
+export class EncryptionAtRestGoogleCloudKmsConfigList extends cdktf.ComplexList {
+  public internalValue? : EncryptionAtRestGoogleCloudKmsConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EncryptionAtRestGoogleCloudKmsConfigOutputReference {
+    return new EncryptionAtRestGoogleCloudKmsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}
 */
 export class EncryptionAtRest extends cdktf.TerraformResource {
 
@@ -667,7 +747,7 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -678,7 +758,7 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_encryption_at_rest',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -689,10 +769,6 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._awsKms = config.awsKms;
-    this._azureKeyVault = config.azureKeyVault;
-    this._googleCloudKms = config.googleCloudKms;
-    this._id = config.id;
     this._projectId = config.projectId;
     this._awsKmsConfig.internalValue = config.awsKmsConfig;
     this._azureKeyVaultConfig.internalValue = config.azureKeyVaultConfig;
@@ -703,68 +779,9 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // aws_kms - computed: false, optional: true, required: false
-  private _awsKms?: { [key: string]: string }; 
-  public get awsKms() {
-    return this.getStringMapAttribute('aws_kms');
-  }
-  public set awsKms(value: { [key: string]: string }) {
-    this._awsKms = value;
-  }
-  public resetAwsKms() {
-    this._awsKms = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get awsKmsInput() {
-    return this._awsKms;
-  }
-
-  // azure_key_vault - computed: false, optional: true, required: false
-  private _azureKeyVault?: { [key: string]: string }; 
-  public get azureKeyVault() {
-    return this.getStringMapAttribute('azure_key_vault');
-  }
-  public set azureKeyVault(value: { [key: string]: string }) {
-    this._azureKeyVault = value;
-  }
-  public resetAzureKeyVault() {
-    this._azureKeyVault = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get azureKeyVaultInput() {
-    return this._azureKeyVault;
-  }
-
-  // google_cloud_kms - computed: false, optional: true, required: false
-  private _googleCloudKms?: { [key: string]: string }; 
-  public get googleCloudKms() {
-    return this.getStringMapAttribute('google_cloud_kms');
-  }
-  public set googleCloudKms(value: { [key: string]: string }) {
-    this._googleCloudKms = value;
-  }
-  public resetGoogleCloudKms() {
-    this._googleCloudKms = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get googleCloudKmsInput() {
-    return this._googleCloudKms;
-  }
-
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -781,11 +798,11 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
   }
 
   // aws_kms_config - computed: false, optional: true, required: false
-  private _awsKmsConfig = new EncryptionAtRestAwsKmsConfigOutputReference(this, "aws_kms_config");
+  private _awsKmsConfig = new EncryptionAtRestAwsKmsConfigList(this, "aws_kms_config", false);
   public get awsKmsConfig() {
     return this._awsKmsConfig;
   }
-  public putAwsKmsConfig(value: EncryptionAtRestAwsKmsConfig) {
+  public putAwsKmsConfig(value: EncryptionAtRestAwsKmsConfig[] | cdktf.IResolvable) {
     this._awsKmsConfig.internalValue = value;
   }
   public resetAwsKmsConfig() {
@@ -797,11 +814,11 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
   }
 
   // azure_key_vault_config - computed: false, optional: true, required: false
-  private _azureKeyVaultConfig = new EncryptionAtRestAzureKeyVaultConfigOutputReference(this, "azure_key_vault_config");
+  private _azureKeyVaultConfig = new EncryptionAtRestAzureKeyVaultConfigList(this, "azure_key_vault_config", false);
   public get azureKeyVaultConfig() {
     return this._azureKeyVaultConfig;
   }
-  public putAzureKeyVaultConfig(value: EncryptionAtRestAzureKeyVaultConfig) {
+  public putAzureKeyVaultConfig(value: EncryptionAtRestAzureKeyVaultConfig[] | cdktf.IResolvable) {
     this._azureKeyVaultConfig.internalValue = value;
   }
   public resetAzureKeyVaultConfig() {
@@ -813,11 +830,11 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
   }
 
   // google_cloud_kms_config - computed: false, optional: true, required: false
-  private _googleCloudKmsConfig = new EncryptionAtRestGoogleCloudKmsConfigOutputReference(this, "google_cloud_kms_config");
+  private _googleCloudKmsConfig = new EncryptionAtRestGoogleCloudKmsConfigList(this, "google_cloud_kms_config", false);
   public get googleCloudKmsConfig() {
     return this._googleCloudKmsConfig;
   }
-  public putGoogleCloudKmsConfig(value: EncryptionAtRestGoogleCloudKmsConfig) {
+  public putGoogleCloudKmsConfig(value: EncryptionAtRestGoogleCloudKmsConfig[] | cdktf.IResolvable) {
     this._googleCloudKmsConfig.internalValue = value;
   }
   public resetGoogleCloudKmsConfig() {
@@ -834,14 +851,10 @@ export class EncryptionAtRest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_kms: cdktf.hashMapper(cdktf.stringToTerraform)(this._awsKms),
-      azure_key_vault: cdktf.hashMapper(cdktf.stringToTerraform)(this._azureKeyVault),
-      google_cloud_kms: cdktf.hashMapper(cdktf.stringToTerraform)(this._googleCloudKms),
-      id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
-      aws_kms_config: encryptionAtRestAwsKmsConfigToTerraform(this._awsKmsConfig.internalValue),
-      azure_key_vault_config: encryptionAtRestAzureKeyVaultConfigToTerraform(this._azureKeyVaultConfig.internalValue),
-      google_cloud_kms_config: encryptionAtRestGoogleCloudKmsConfigToTerraform(this._googleCloudKmsConfig.internalValue),
+      aws_kms_config: cdktf.listMapper(encryptionAtRestAwsKmsConfigToTerraform, true)(this._awsKmsConfig.internalValue),
+      azure_key_vault_config: cdktf.listMapper(encryptionAtRestAzureKeyVaultConfigToTerraform, true)(this._azureKeyVaultConfig.internalValue),
+      google_cloud_kms_config: cdktf.listMapper(encryptionAtRestGoogleCloudKmsConfigToTerraform, true)(this._googleCloudKmsConfig.internalValue),
     };
   }
 }

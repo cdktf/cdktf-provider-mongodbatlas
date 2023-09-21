@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,55 @@ import * as cdktf from 'cdktf';
 
 export interface AlertConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}
   */
   readonly eventType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#id AlertConfiguration#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#metric_threshold AlertConfiguration#metric_threshold}
-  */
-  readonly metricThreshold?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
-  */
-  readonly threshold?: { [key: string]: string };
-  /**
   * matcher block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
   */
   readonly matcher?: AlertConfigurationMatcher[] | cdktf.IResolvable;
   /**
   * metric_threshold_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
   */
-  readonly metricThresholdConfig?: AlertConfigurationMetricThresholdConfig;
+  readonly metricThresholdConfig?: AlertConfigurationMetricThresholdConfig[] | cdktf.IResolvable;
   /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#notification AlertConfiguration#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
   */
-  readonly notification: AlertConfigurationNotification[] | cdktf.IResolvable;
+  readonly notification?: AlertConfigurationNotification[] | cdktf.IResolvable;
   /**
   * threshold_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
   */
-  readonly thresholdConfig?: AlertConfigurationThresholdConfig;
+  readonly thresholdConfig?: AlertConfigurationThresholdConfig[] | cdktf.IResolvable;
 }
 export interface AlertConfigurationMatcher {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}
   */
-  readonly fieldName?: string;
+  readonly fieldName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#operator AlertConfiguration#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
   */
-  readonly operator?: string;
+  readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#value AlertConfiguration#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#value AlertConfiguration#value}
   */
-  readonly value?: string;
+  readonly value: string;
 }
 
 export function alertConfigurationMatcherToTerraform(struct?: AlertConfigurationMatcher | cdktf.IResolvable): any {
@@ -147,7 +132,7 @@ export class AlertConfigurationMatcherOutputReference extends cdktf.ComplexObjec
     }
   }
 
-  // field_name - computed: false, optional: true, required: false
+  // field_name - computed: false, optional: false, required: true
   private _fieldName?: string; 
   public get fieldName() {
     return this.getStringAttribute('field_name');
@@ -155,15 +140,12 @@ export class AlertConfigurationMatcherOutputReference extends cdktf.ComplexObjec
   public set fieldName(value: string) {
     this._fieldName = value;
   }
-  public resetFieldName() {
-    this._fieldName = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get fieldNameInput() {
     return this._fieldName;
   }
 
-  // operator - computed: false, optional: true, required: false
+  // operator - computed: false, optional: false, required: true
   private _operator?: string; 
   public get operator() {
     return this.getStringAttribute('operator');
@@ -171,24 +153,18 @@ export class AlertConfigurationMatcherOutputReference extends cdktf.ComplexObjec
   public set operator(value: string) {
     this._operator = value;
   }
-  public resetOperator() {
-    this._operator = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get operatorInput() {
     return this._operator;
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: false, optional: false, required: true
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
   public set value(value: string) {
     this._value = value;
-  }
-  public resetValue() {
-    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -217,28 +193,28 @@ export class AlertConfigurationMatcherList extends cdktf.ComplexList {
 }
 export interface AlertConfigurationMetricThresholdConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}
   */
-  readonly metricName?: string;
+  readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#mode AlertConfiguration#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#operator AlertConfiguration#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
   */
   readonly threshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#units AlertConfiguration#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#units AlertConfiguration#units}
   */
   readonly units?: string;
 }
 
-export function alertConfigurationMetricThresholdConfigToTerraform(struct?: AlertConfigurationMetricThresholdConfigOutputReference | AlertConfigurationMetricThresholdConfig): any {
+export function alertConfigurationMetricThresholdConfigToTerraform(struct?: AlertConfigurationMetricThresholdConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -254,16 +230,22 @@ export function alertConfigurationMetricThresholdConfigToTerraform(struct?: Aler
 
 export class AlertConfigurationMetricThresholdConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlertConfigurationMetricThresholdConfig | undefined {
+  public get internalValue(): AlertConfigurationMetricThresholdConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._metricName !== undefined) {
@@ -289,17 +271,23 @@ export class AlertConfigurationMetricThresholdConfigOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertConfigurationMetricThresholdConfig | undefined) {
+  public set internalValue(value: AlertConfigurationMetricThresholdConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._metricName = undefined;
       this._mode = undefined;
       this._operator = undefined;
       this._threshold = undefined;
       this._units = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._metricName = value.metricName;
       this._mode = value.mode;
       this._operator = value.operator;
@@ -308,16 +296,13 @@ export class AlertConfigurationMetricThresholdConfigOutputReference extends cdkt
     }
   }
 
-  // metric_name - computed: false, optional: true, required: false
+  // metric_name - computed: false, optional: false, required: true
   private _metricName?: string; 
   public get metricName() {
     return this.getStringAttribute('metric_name');
   }
   public set metricName(value: string) {
     this._metricName = value;
-  }
-  public resetMetricName() {
-    this._metricName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metricNameInput() {
@@ -356,7 +341,7 @@ export class AlertConfigurationMetricThresholdConfigOutputReference extends cdkt
     return this._operator;
   }
 
-  // threshold - computed: false, optional: true, required: false
+  // threshold - computed: true, optional: true, required: false
   private _threshold?: number; 
   public get threshold() {
     return this.getNumberAttribute('threshold');
@@ -388,93 +373,113 @@ export class AlertConfigurationMetricThresholdConfigOutputReference extends cdkt
     return this._units;
   }
 }
+
+export class AlertConfigurationMetricThresholdConfigList extends cdktf.ComplexList {
+  public internalValue? : AlertConfigurationMetricThresholdConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AlertConfigurationMetricThresholdConfigOutputReference {
+    return new AlertConfigurationMetricThresholdConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AlertConfigurationNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}
   */
   readonly apiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}
   */
   readonly channelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}
   */
   readonly datadogApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}
   */
   readonly datadogRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}
   */
   readonly delayMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}
   */
   readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}
   */
   readonly emailEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}
   */
   readonly intervalMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}
   */
   readonly microsoftTeamsWebhookUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}
   */
   readonly mobileNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}
   */
   readonly opsGenieApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}
   */
   readonly opsGenieRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#roles AlertConfiguration#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}
   */
   readonly roles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}
   */
   readonly serviceKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}
   */
   readonly smsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}
   */
   readonly teamId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}
   */
-  readonly typeName?: string;
+  readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#username AlertConfiguration#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#username AlertConfiguration#username}
   */
   readonly username?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}
   */
   readonly victorOpsApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}
   */
   readonly victorOpsRoutingKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}
   */
   readonly webhookSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}
   */
   readonly webhookUrl?: string;
 }
@@ -744,7 +749,7 @@ export class AlertConfigurationNotificationOutputReference extends cdktf.Complex
     return this._datadogRegion;
   }
 
-  // delay_min - computed: false, optional: true, required: false
+  // delay_min - computed: true, optional: true, required: false
   private _delayMin?: number; 
   public get delayMin() {
     return this.getNumberAttribute('delay_min');
@@ -776,7 +781,7 @@ export class AlertConfigurationNotificationOutputReference extends cdktf.Complex
     return this._emailAddress;
   }
 
-  // email_enabled - computed: false, optional: true, required: false
+  // email_enabled - computed: true, optional: true, required: false
   private _emailEnabled?: boolean | cdktf.IResolvable; 
   public get emailEnabled() {
     return this.getBooleanAttribute('email_enabled');
@@ -792,7 +797,7 @@ export class AlertConfigurationNotificationOutputReference extends cdktf.Complex
     return this._emailEnabled;
   }
 
-  // interval_min - computed: false, optional: true, required: false
+  // interval_min - computed: true, optional: true, required: false
   private _intervalMin?: number; 
   public get intervalMin() {
     return this.getNumberAttribute('interval_min');
@@ -904,7 +909,7 @@ export class AlertConfigurationNotificationOutputReference extends cdktf.Complex
     return this._serviceKey;
   }
 
-  // sms_enabled - computed: false, optional: true, required: false
+  // sms_enabled - computed: true, optional: true, required: false
   private _smsEnabled?: boolean | cdktf.IResolvable; 
   public get smsEnabled() {
     return this.getBooleanAttribute('sms_enabled');
@@ -941,16 +946,13 @@ export class AlertConfigurationNotificationOutputReference extends cdktf.Complex
     return this.getStringAttribute('team_name');
   }
 
-  // type_name - computed: false, optional: true, required: false
+  // type_name - computed: false, optional: false, required: true
   private _typeName?: string; 
   public get typeName() {
     return this.getStringAttribute('type_name');
   }
   public set typeName(value: string) {
     this._typeName = value;
-  }
-  public resetTypeName() {
-    this._typeName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get typeNameInput() {
@@ -1059,20 +1061,20 @@ export class AlertConfigurationNotificationList extends cdktf.ComplexList {
 }
 export interface AlertConfigurationThresholdConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#operator AlertConfiguration#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
   */
   readonly threshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#units AlertConfiguration#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#units AlertConfiguration#units}
   */
   readonly units?: string;
 }
 
-export function alertConfigurationThresholdConfigToTerraform(struct?: AlertConfigurationThresholdConfigOutputReference | AlertConfigurationThresholdConfig): any {
+export function alertConfigurationThresholdConfigToTerraform(struct?: AlertConfigurationThresholdConfig | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1086,16 +1088,22 @@ export function alertConfigurationThresholdConfigToTerraform(struct?: AlertConfi
 
 export class AlertConfigurationThresholdConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlertConfigurationThresholdConfig | undefined {
+  public get internalValue(): AlertConfigurationThresholdConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._operator !== undefined) {
@@ -1113,15 +1121,21 @@ export class AlertConfigurationThresholdConfigOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertConfigurationThresholdConfig | undefined) {
+  public set internalValue(value: AlertConfigurationThresholdConfig | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._operator = undefined;
       this._threshold = undefined;
       this._units = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._operator = value.operator;
       this._threshold = value.threshold;
       this._units = value.units;
@@ -1144,7 +1158,7 @@ export class AlertConfigurationThresholdConfigOutputReference extends cdktf.Comp
     return this._operator;
   }
 
-  // threshold - computed: false, optional: true, required: false
+  // threshold - computed: true, optional: true, required: false
   private _threshold?: number; 
   public get threshold() {
     return this.getNumberAttribute('threshold');
@@ -1177,8 +1191,28 @@ export class AlertConfigurationThresholdConfigOutputReference extends cdktf.Comp
   }
 }
 
+export class AlertConfigurationThresholdConfigList extends cdktf.ComplexList {
+  public internalValue? : AlertConfigurationThresholdConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AlertConfigurationThresholdConfigOutputReference {
+    return new AlertConfigurationThresholdConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}
 */
 export class AlertConfiguration extends cdktf.TerraformResource {
 
@@ -1192,7 +1226,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1203,7 +1237,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_alert_configuration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1216,10 +1250,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
     });
     this._enabled = config.enabled;
     this._eventType = config.eventType;
-    this._id = config.id;
-    this._metricThreshold = config.metricThreshold;
     this._projectId = config.projectId;
-    this._threshold = config.threshold;
     this._matcher.internalValue = config.matcher;
     this._metricThresholdConfig.internalValue = config.metricThresholdConfig;
     this._notification.internalValue = config.notification;
@@ -1269,36 +1300,9 @@ export class AlertConfiguration extends cdktf.TerraformResource {
     return this._eventType;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-
-  // metric_threshold - computed: false, optional: true, required: false
-  private _metricThreshold?: { [key: string]: string }; 
-  public get metricThreshold() {
-    return this.getStringMapAttribute('metric_threshold');
-  }
-  public set metricThreshold(value: { [key: string]: string }) {
-    this._metricThreshold = value;
-  }
-  public resetMetricThreshold() {
-    this._metricThreshold = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricThresholdInput() {
-    return this._metricThreshold;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -1312,22 +1316,6 @@ export class AlertConfiguration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
     return this._projectId;
-  }
-
-  // threshold - computed: false, optional: true, required: false
-  private _threshold?: { [key: string]: string }; 
-  public get threshold() {
-    return this.getStringMapAttribute('threshold');
-  }
-  public set threshold(value: { [key: string]: string }) {
-    this._threshold = value;
-  }
-  public resetThreshold() {
-    this._threshold = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thresholdInput() {
-    return this._threshold;
   }
 
   // updated - computed: true, optional: false, required: false
@@ -1352,11 +1340,11 @@ export class AlertConfiguration extends cdktf.TerraformResource {
   }
 
   // metric_threshold_config - computed: false, optional: true, required: false
-  private _metricThresholdConfig = new AlertConfigurationMetricThresholdConfigOutputReference(this, "metric_threshold_config");
+  private _metricThresholdConfig = new AlertConfigurationMetricThresholdConfigList(this, "metric_threshold_config", false);
   public get metricThresholdConfig() {
     return this._metricThresholdConfig;
   }
-  public putMetricThresholdConfig(value: AlertConfigurationMetricThresholdConfig) {
+  public putMetricThresholdConfig(value: AlertConfigurationMetricThresholdConfig[] | cdktf.IResolvable) {
     this._metricThresholdConfig.internalValue = value;
   }
   public resetMetricThresholdConfig() {
@@ -1367,7 +1355,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
     return this._metricThresholdConfig.internalValue;
   }
 
-  // notification - computed: false, optional: false, required: true
+  // notification - computed: false, optional: true, required: false
   private _notification = new AlertConfigurationNotificationList(this, "notification", false);
   public get notification() {
     return this._notification;
@@ -1375,17 +1363,20 @@ export class AlertConfiguration extends cdktf.TerraformResource {
   public putNotification(value: AlertConfigurationNotification[] | cdktf.IResolvable) {
     this._notification.internalValue = value;
   }
+  public resetNotification() {
+    this._notification.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get notificationInput() {
     return this._notification.internalValue;
   }
 
   // threshold_config - computed: false, optional: true, required: false
-  private _thresholdConfig = new AlertConfigurationThresholdConfigOutputReference(this, "threshold_config");
+  private _thresholdConfig = new AlertConfigurationThresholdConfigList(this, "threshold_config", false);
   public get thresholdConfig() {
     return this._thresholdConfig;
   }
-  public putThresholdConfig(value: AlertConfigurationThresholdConfig) {
+  public putThresholdConfig(value: AlertConfigurationThresholdConfig[] | cdktf.IResolvable) {
     this._thresholdConfig.internalValue = value;
   }
   public resetThresholdConfig() {
@@ -1404,14 +1395,11 @@ export class AlertConfiguration extends cdktf.TerraformResource {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
       event_type: cdktf.stringToTerraform(this._eventType),
-      id: cdktf.stringToTerraform(this._id),
-      metric_threshold: cdktf.hashMapper(cdktf.stringToTerraform)(this._metricThreshold),
       project_id: cdktf.stringToTerraform(this._projectId),
-      threshold: cdktf.hashMapper(cdktf.stringToTerraform)(this._threshold),
       matcher: cdktf.listMapper(alertConfigurationMatcherToTerraform, true)(this._matcher.internalValue),
-      metric_threshold_config: alertConfigurationMetricThresholdConfigToTerraform(this._metricThresholdConfig.internalValue),
+      metric_threshold_config: cdktf.listMapper(alertConfigurationMetricThresholdConfigToTerraform, true)(this._metricThresholdConfig.internalValue),
       notification: cdktf.listMapper(alertConfigurationNotificationToTerraform, true)(this._notification.internalValue),
-      threshold_config: alertConfigurationThresholdConfigToTerraform(this._thresholdConfig.internalValue),
+      threshold_config: cdktf.listMapper(alertConfigurationThresholdConfigToTerraform, true)(this._thresholdConfig.internalValue),
     };
   }
 }

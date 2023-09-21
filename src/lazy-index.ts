@@ -66,6 +66,8 @@ Object.defineProperty(exports, 'dataMongodbatlasAlertConfiguration', { get: func
 Object.defineProperty(exports, 'dataMongodbatlasAlertConfigurations', { get: function () { return require('./data-mongodbatlas-alert-configurations'); } });
 Object.defineProperty(exports, 'dataMongodbatlasApiKey', { get: function () { return require('./data-mongodbatlas-api-key'); } });
 Object.defineProperty(exports, 'dataMongodbatlasApiKeys', { get: function () { return require('./data-mongodbatlas-api-keys'); } });
+Object.defineProperty(exports, 'dataMongodbatlasAtlasUser', { get: function () { return require('./data-mongodbatlas-atlas-user'); } });
+Object.defineProperty(exports, 'dataMongodbatlasAtlasUsers', { get: function () { return require('./data-mongodbatlas-atlas-users'); } });
 Object.defineProperty(exports, 'dataMongodbatlasAuditing', { get: function () { return require('./data-mongodbatlas-auditing'); } });
 Object.defineProperty(exports, 'dataMongodbatlasBackupCompliancePolicy', { get: function () { return require('./data-mongodbatlas-backup-compliance-policy'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCloudBackupSchedule', { get: function () { return require('./data-mongodbatlas-cloud-backup-schedule'); } });

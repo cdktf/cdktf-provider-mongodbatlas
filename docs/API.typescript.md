@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataMongodbatlasAlertConfigurations](./dataMongodbatlasAlertConfigurations.typescript.md)
 - [dataMongodbatlasApiKey](./dataMongodbatlasApiKey.typescript.md)
 - [dataMongodbatlasApiKeys](./dataMongodbatlasApiKeys.typescript.md)
+- [dataMongodbatlasAtlasUser](./dataMongodbatlasAtlasUser.typescript.md)
+- [dataMongodbatlasAtlasUsers](./dataMongodbatlasAtlasUsers.typescript.md)
 - [dataMongodbatlasAuditing](./dataMongodbatlasAuditing.typescript.md)
 - [dataMongodbatlasBackupCompliancePolicy](./dataMongodbatlasBackupCompliancePolicy.typescript.md)
 - [dataMongodbatlasCloudBackupSchedule](./dataMongodbatlasCloudBackupSchedule.typescript.md)

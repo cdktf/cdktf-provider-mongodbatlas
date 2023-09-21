@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instances
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasServerlessInstancesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instances#id DataMongodbatlasServerlessInstances#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instances#id DataMongodbatlasServerlessInstances#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instances#project_id DataMongodbatlasServerlessInstances#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instances#project_id DataMongodbatlasServerlessInstances#project_id}
   */
   readonly projectId: string;
 }
@@ -91,6 +91,75 @@ export class DataMongodbatlasServerlessInstancesResultsLinksList extends cdktf.C
   */
   public get(index: number): DataMongodbatlasServerlessInstancesResultsLinksOutputReference {
     return new DataMongodbatlasServerlessInstancesResultsLinksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasServerlessInstancesResultsTags {
+}
+
+export function dataMongodbatlasServerlessInstancesResultsTagsToTerraform(struct?: DataMongodbatlasServerlessInstancesResultsTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataMongodbatlasServerlessInstancesResultsTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasServerlessInstancesResultsTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasServerlessInstancesResultsTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataMongodbatlasServerlessInstancesResultsTagsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasServerlessInstancesResultsTagsOutputReference {
+    return new DataMongodbatlasServerlessInstancesResultsTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataMongodbatlasServerlessInstancesResults {
@@ -199,6 +268,12 @@ export class DataMongodbatlasServerlessInstancesResultsOutputReference extends c
     return this.getStringAttribute('state_name');
   }
 
+  // tags - computed: true, optional: false, required: false
+  private _tags = new DataMongodbatlasServerlessInstancesResultsTagsList(this, "tags", true);
+  public get tags() {
+    return this._tags;
+  }
+
   // termination_protection_enabled - computed: true, optional: false, required: false
   public get terminationProtectionEnabled() {
     return this.getBooleanAttribute('termination_protection_enabled');
@@ -225,7 +300,7 @@ export class DataMongodbatlasServerlessInstancesResultsList extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instances mongodbatlas_serverless_instances}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instances mongodbatlas_serverless_instances}
 */
 export class DataMongodbatlasServerlessInstances extends cdktf.TerraformDataSource {
 
@@ -239,7 +314,7 @@ export class DataMongodbatlasServerlessInstances extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instances mongodbatlas_serverless_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instances mongodbatlas_serverless_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +325,7 @@ export class DataMongodbatlasServerlessInstances extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_serverless_instances',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_users
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasDatabaseUsersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_users#id DataMongodbatlasDatabaseUsers#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_users#project_id DataMongodbatlasDatabaseUsers#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_users#project_id DataMongodbatlasDatabaseUsers#project_id}
   */
   readonly projectId: string;
 }
@@ -286,6 +279,11 @@ export class DataMongodbatlasDatabaseUsersResultsOutputReference extends cdktf.C
     return this.getStringAttribute('aws_iam_type');
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // labels - computed: true, optional: false, required: false
   private _labels = new DataMongodbatlasDatabaseUsersResultsLabelsList(this, "labels", true);
   public get labels() {
@@ -302,19 +300,24 @@ export class DataMongodbatlasDatabaseUsersResultsOutputReference extends cdktf.C
     return this.getStringAttribute('oidc_auth_type');
   }
 
+  // password - computed: true, optional: false, required: false
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+
   // project_id - computed: true, optional: false, required: false
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
 
   // roles - computed: true, optional: false, required: false
-  private _roles = new DataMongodbatlasDatabaseUsersResultsRolesList(this, "roles", false);
+  private _roles = new DataMongodbatlasDatabaseUsersResultsRolesList(this, "roles", true);
   public get roles() {
     return this._roles;
   }
 
   // scopes - computed: true, optional: false, required: false
-  private _scopes = new DataMongodbatlasDatabaseUsersResultsScopesList(this, "scopes", false);
+  private _scopes = new DataMongodbatlasDatabaseUsersResultsScopesList(this, "scopes", true);
   public get scopes() {
     return this._scopes;
   }
@@ -350,7 +353,7 @@ export class DataMongodbatlasDatabaseUsersResultsList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_users mongodbatlas_database_users}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_users mongodbatlas_database_users}
 */
 export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
 
@@ -364,7 +367,7 @@ export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_users mongodbatlas_database_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -375,7 +378,7 @@ export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_database_users',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -386,7 +389,6 @@ export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._projectId = config.projectId;
   }
 
@@ -394,20 +396,9 @@ export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -435,7 +426,6 @@ export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }

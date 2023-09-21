@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataMongodbatlasAlertConfigurations](./dataMongodbatlasAlertConfigurations.go.md)
 - [dataMongodbatlasApiKey](./dataMongodbatlasApiKey.go.md)
 - [dataMongodbatlasApiKeys](./dataMongodbatlasApiKeys.go.md)
+- [dataMongodbatlasAtlasUser](./dataMongodbatlasAtlasUser.go.md)
+- [dataMongodbatlasAtlasUsers](./dataMongodbatlasAtlasUsers.go.md)
 - [dataMongodbatlasAuditing](./dataMongodbatlasAuditing.go.md)
 - [dataMongodbatlasBackupCompliancePolicy](./dataMongodbatlasBackupCompliancePolicy.go.md)
 - [dataMongodbatlasCloudBackupSchedule](./dataMongodbatlasCloudBackupSchedule.go.md)

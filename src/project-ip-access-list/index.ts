@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectIpAccessListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#aws_security_group ProjectIpAccessList#aws_security_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#aws_security_group ProjectIpAccessList#aws_security_group}
   */
   readonly awsSecurityGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#cidr_block ProjectIpAccessList#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#cidr_block ProjectIpAccessList#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#comment ProjectIpAccessList#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#comment ProjectIpAccessList#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#id ProjectIpAccessList#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#ip_address ProjectIpAccessList#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#ip_address ProjectIpAccessList#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#project_id ProjectIpAccessList#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#project_id ProjectIpAccessList#project_id}
   */
   readonly projectId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
   */
   readonly timeouts?: ProjectIpAccessListTimeouts;
 }
 export interface ProjectIpAccessListTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#delete ProjectIpAccessList#delete}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#delete ProjectIpAccessList#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list#read ProjectIpAccessList#read}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list#read ProjectIpAccessList#read}
   */
   readonly read?: string;
 }
@@ -150,7 +147,7 @@ export class ProjectIpAccessListTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}
 */
 export class ProjectIpAccessList extends cdktf.TerraformResource {
 
@@ -164,7 +161,7 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +172,7 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_project_ip_access_list',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -189,7 +186,6 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
     this._awsSecurityGroup = config.awsSecurityGroup;
     this._cidrBlock = config.cidrBlock;
     this._comment = config.comment;
-    this._id = config.id;
     this._ipAddress = config.ipAddress;
     this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
@@ -247,20 +243,9 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
     return this._comment;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // ip_address - computed: true, optional: true, required: false
@@ -317,7 +302,6 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
       aws_security_group: cdktf.stringToTerraform(this._awsSecurityGroup),
       cidr_block: cdktf.stringToTerraform(this._cidrBlock),
       comment: cdktf.stringToTerraform(this._comment),
-      id: cdktf.stringToTerraform(this._id),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: projectIpAccessListTimeoutsToTerraform(this._timeouts.internalValue),

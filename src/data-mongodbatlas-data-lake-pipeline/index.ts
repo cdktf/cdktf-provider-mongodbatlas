@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/data_lake_pipeline
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/data_lake_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasDataLakePipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/data_lake_pipeline#name DataMongodbatlasDataLakePipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/data_lake_pipeline#name DataMongodbatlasDataLakePipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/data_lake_pipeline#project_id DataMongodbatlasDataLakePipeline#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/data_lake_pipeline#project_id DataMongodbatlasDataLakePipeline#project_id}
   */
   readonly projectId: string;
 }
@@ -533,7 +533,7 @@ export class DataMongodbatlasDataLakePipelineTransformationsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline}
 */
 export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource {
 
@@ -547,7 +547,7 @@ export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -558,7 +558,7 @@ export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource 
       terraformResourceType: 'mongodbatlas_data_lake_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
