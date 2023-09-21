@@ -1,6 +1,6 @@
 # `mongodbatlas_cluster`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster).
+Refer to the Terraform Registory for docs: [`mongodbatlas_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster).
 
 # `cluster` Submodule <a name="`cluster` Submodule" id="@cdktf/provider-mongodbatlas.cluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_cluster`](https://regi
 
 ### Cluster <a name="Cluster" id="@cdktf/provider-mongodbatlas.cluster.Cluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster mongodbatlas_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer"></a>
 
@@ -41,7 +41,6 @@ Cluster.Builder.create(Construct scope, java.lang.String id)
 //  .backingProviderName(java.lang.String)
 //  .backupEnabled(java.lang.Boolean)
 //  .backupEnabled(IResolvable)
-//  .biConnector(java.util.Map<java.lang.String, java.lang.String>)
 //  .biConnectorConfig(ClusterBiConnectorConfig)
 //  .cloudBackup(java.lang.Boolean)
 //  .cloudBackup(IResolvable)
@@ -59,8 +58,6 @@ Cluster.Builder.create(Construct scope, java.lang.String id)
 //  .pitEnabled(IResolvable)
 //  .providerAutoScalingComputeMaxInstanceSize(java.lang.String)
 //  .providerAutoScalingComputeMinInstanceSize(java.lang.String)
-//  .providerBackupEnabled(java.lang.Boolean)
-//  .providerBackupEnabled(IResolvable)
 //  .providerDiskIops(java.lang.Number)
 //  .providerDiskTypeName(java.lang.String)
 //  .providerEncryptEbsVolume(java.lang.Boolean)
@@ -72,6 +69,8 @@ Cluster.Builder.create(Construct scope, java.lang.String id)
 //  .replicationSpecs(java.util.List<ClusterReplicationSpecs>)
 //  .retainBackupsEnabled(java.lang.Boolean)
 //  .retainBackupsEnabled(IResolvable)
+//  .tags(IResolvable)
+//  .tags(java.util.List<ClusterTags>)
 //  .terminationProtectionEnabled(java.lang.Boolean)
 //  .terminationProtectionEnabled(IResolvable)
 //  .timeouts(ClusterTimeouts)
@@ -90,42 +89,41 @@ Cluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#name Cluster#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#project_id Cluster#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerInstanceSizeName">providerInstanceSizeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerName">providerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_name Cluster#provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#name Cluster#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#project_id Cluster#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerInstanceSizeName">providerInstanceSizeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerName">providerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_name Cluster#provider_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.advancedConfiguration">advancedConfiguration</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration">ClusterAdvancedConfiguration</a></code> | advanced_configuration block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.autoScalingComputeEnabled">autoScalingComputeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.autoScalingComputeScaleDownEnabled">autoScalingComputeScaleDownEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.autoScalingDiskGbEnabled">autoScalingDiskGbEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.backingProviderName">backingProviderName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.autoScalingComputeEnabled">autoScalingComputeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.autoScalingComputeScaleDownEnabled">autoScalingComputeScaleDownEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.autoScalingDiskGbEnabled">autoScalingDiskGbEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.backingProviderName">backingProviderName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.backupEnabled">backupEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.biConnector">biConnector</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#bi_connector Cluster#bi_connector}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.biConnectorConfig">biConnectorConfig</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig">ClusterBiConnectorConfig</a></code> | bi_connector_config block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.cloudBackup">cloudBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cloud_backup Cluster#cloud_backup}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.clusterType">clusterType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cluster_type Cluster#cluster_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.encryptionAtRestProvider">encryptionAtRestProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#id Cluster#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.cloudBackup">cloudBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cloud_backup Cluster#cloud_backup}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.clusterType">clusterType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cluster_type Cluster#cluster_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.encryptionAtRestProvider">encryptionAtRestProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#id Cluster#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.labels">labels</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterLabels">ClusterLabels</a>></code> | labels block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.mongoDbMajorVersion">mongoDbMajorVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.numShards">numShards</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#num_shards Cluster#num_shards}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#paused Cluster#paused}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.pitEnabled">pitEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#pit_enabled Cluster#pit_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerAutoScalingComputeMaxInstanceSize">providerAutoScalingComputeMaxInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerAutoScalingComputeMinInstanceSize">providerAutoScalingComputeMinInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerBackupEnabled">providerBackupEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_backup_enabled Cluster#provider_backup_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerDiskIops">providerDiskIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerDiskTypeName">providerDiskTypeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerEncryptEbsVolume">providerEncryptEbsVolume</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerRegionName">providerRegionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_region_name Cluster#provider_region_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerVolumeType">providerVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.replicationFactor">replicationFactor</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#replication_factor Cluster#replication_factor}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.mongoDbMajorVersion">mongoDbMajorVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.numShards">numShards</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#num_shards Cluster#num_shards}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#paused Cluster#paused}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.pitEnabled">pitEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#pit_enabled Cluster#pit_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerAutoScalingComputeMaxInstanceSize">providerAutoScalingComputeMaxInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerAutoScalingComputeMinInstanceSize">providerAutoScalingComputeMinInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerDiskIops">providerDiskIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerDiskTypeName">providerDiskTypeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerEncryptEbsVolume">providerEncryptEbsVolume</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerRegionName">providerRegionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_region_name Cluster#provider_region_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerVolumeType">providerVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.replicationFactor">replicationFactor</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#replication_factor Cluster#replication_factor}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.replicationSpecs">replicationSpecs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs">ClusterReplicationSpecs</a>></code> | replication_specs block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.retainBackupsEnabled">retainBackupsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.terminationProtectionEnabled">terminationProtectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.tags">tags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>></code> | tags block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.terminationProtectionEnabled">terminationProtectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.versionReleaseSystem">versionReleaseSystem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#version_release_system Cluster#version_release_system}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.versionReleaseSystem">versionReleaseSystem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#version_release_system Cluster#version_release_system}. |
 
 ---
 
@@ -193,7 +191,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#name Cluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#name Cluster#name}.
 
 ---
 
@@ -201,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#project_id Cluster#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#project_id Cluster#project_id}.
 
 ---
 
@@ -209,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}.
 
 ---
 
@@ -217,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_name Cluster#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_name Cluster#provider_name}.
 
 ---
 
@@ -227,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 advanced_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
 
 ---
 
@@ -235,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}.
 
 ---
 
@@ -243,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}.
 
 ---
 
@@ -251,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}.
 
 ---
 
@@ -259,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}.
 
 ---
 
@@ -269,15 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
-
----
-
-##### `biConnector`<sup>Optional</sup> <a name="biConnector" id="@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.biConnector"></a>
-
-- *Type:* java.util.Map<java.lang.String, java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#bi_connector Cluster#bi_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
 
 ---
 
@@ -287,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 bi_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
 
 ---
 
@@ -295,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cloud_backup Cluster#cloud_backup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cloud_backup Cluster#cloud_backup}.
 
 ---
 
@@ -303,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cluster_type Cluster#cluster_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cluster_type Cluster#cluster_type}.
 
 ---
 
@@ -311,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}.
 
 ---
 
@@ -319,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}.
 
 ---
 
@@ -327,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#id Cluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#id Cluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -340,7 +330,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#labels Cluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#labels Cluster#labels}
 
 ---
 
@@ -348,7 +338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}.
 
 ---
 
@@ -356,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#num_shards Cluster#num_shards}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#num_shards Cluster#num_shards}.
 
 ---
 
@@ -364,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#paused Cluster#paused}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#paused Cluster#paused}.
 
 ---
 
@@ -372,7 +362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#pit_enabled Cluster#pit_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#pit_enabled Cluster#pit_enabled}.
 
 ---
 
@@ -380,7 +370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}.
 
 ---
 
@@ -388,15 +378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}.
-
----
-
-##### `providerBackupEnabled`<sup>Optional</sup> <a name="providerBackupEnabled" id="@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.providerBackupEnabled"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_backup_enabled Cluster#provider_backup_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}.
 
 ---
 
@@ -404,7 +386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}.
 
 ---
 
@@ -412,7 +394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}.
 
 ---
 
@@ -420,7 +402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}.
 
 ---
 
@@ -428,7 +410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_region_name Cluster#provider_region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_region_name Cluster#provider_region_name}.
 
 ---
 
@@ -436,7 +418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}.
 
 ---
 
@@ -444,7 +426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#replication_factor Cluster#replication_factor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#replication_factor Cluster#replication_factor}.
 
 ---
 
@@ -454,7 +436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 replication_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#replication_specs Cluster#replication_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#replication_specs Cluster#replication_specs}
 
 ---
 
@@ -464,7 +446,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer.parameter.tags"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#tags Cluster#tags}
 
 ---
 
@@ -472,7 +464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}.
 
 ---
 
@@ -482,7 +474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#timeouts Cluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#timeouts Cluster#timeouts}
 
 ---
 
@@ -490,7 +482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#version_release_system Cluster#version_release_system}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#version_release_system Cluster#version_release_system}.
 
 ---
 
@@ -518,6 +510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putBiConnectorConfig">putBiConnectorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putLabels">putLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putReplicationSpecs">putReplicationSpecs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putTags">putTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetAdvancedConfiguration">resetAdvancedConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetAutoScalingComputeEnabled">resetAutoScalingComputeEnabled</a></code> | *No description.* |
@@ -525,7 +518,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetAutoScalingDiskGbEnabled">resetAutoScalingDiskGbEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetBackingProviderName">resetBackingProviderName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetBackupEnabled">resetBackupEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetBiConnector">resetBiConnector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetBiConnectorConfig">resetBiConnectorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetCloudBackup">resetCloudBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetClusterType">resetClusterType</a></code> | *No description.* |
@@ -539,7 +531,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetPitEnabled">resetPitEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderAutoScalingComputeMaxInstanceSize">resetProviderAutoScalingComputeMaxInstanceSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderAutoScalingComputeMinInstanceSize">resetProviderAutoScalingComputeMinInstanceSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderBackupEnabled">resetProviderBackupEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderDiskIops">resetProviderDiskIops</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderDiskTypeName">resetProviderDiskTypeName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderEncryptEbsVolume">resetProviderEncryptEbsVolume</a></code> | *No description.* |
@@ -548,6 +539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetReplicationFactor">resetReplicationFactor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetReplicationSpecs">resetReplicationSpecs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetRetainBackupsEnabled">resetRetainBackupsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetTerminationProtectionEnabled">resetTerminationProtectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetVersionReleaseSystem">resetVersionReleaseSystem</a></code> | *No description.* |
@@ -786,6 +778,18 @@ public void putReplicationSpecs(IResolvable OR java.util.List<ClusterReplication
 
 ---
 
+##### `putTags` <a name="putTags" id="@cdktf/provider-mongodbatlas.cluster.Cluster.putTags"></a>
+
+```java
+public void putTags(IResolvable OR java.util.List<ClusterTags> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.cluster.Cluster.putTags.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-mongodbatlas.cluster.Cluster.putTimeouts"></a>
 
 ```java
@@ -832,12 +836,6 @@ public void resetBackingProviderName()
 
 ```java
 public void resetBackupEnabled()
-```
-
-##### `resetBiConnector` <a name="resetBiConnector" id="@cdktf/provider-mongodbatlas.cluster.Cluster.resetBiConnector"></a>
-
-```java
-public void resetBiConnector()
 ```
 
 ##### `resetBiConnectorConfig` <a name="resetBiConnectorConfig" id="@cdktf/provider-mongodbatlas.cluster.Cluster.resetBiConnectorConfig"></a>
@@ -918,12 +916,6 @@ public void resetProviderAutoScalingComputeMaxInstanceSize()
 public void resetProviderAutoScalingComputeMinInstanceSize()
 ```
 
-##### `resetProviderBackupEnabled` <a name="resetProviderBackupEnabled" id="@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderBackupEnabled"></a>
-
-```java
-public void resetProviderBackupEnabled()
-```
-
 ##### `resetProviderDiskIops` <a name="resetProviderDiskIops" id="@cdktf/provider-mongodbatlas.cluster.Cluster.resetProviderDiskIops"></a>
 
 ```java
@@ -970,6 +962,12 @@ public void resetReplicationSpecs()
 
 ```java
 public void resetRetainBackupsEnabled()
+```
+
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-mongodbatlas.cluster.Cluster.resetTags"></a>
+
+```java
+public void resetTags()
 ```
 
 ##### `resetTerminationProtectionEnabled` <a name="resetTerminationProtectionEnabled" id="@cdktf/provider-mongodbatlas.cluster.Cluster.resetTerminationProtectionEnabled"></a>
@@ -1093,6 +1091,7 @@ Cluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.snapshotBackupPolicy">snapshotBackupPolicy</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyList">ClusterSnapshotBackupPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.srvAddress">srvAddress</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.stateName">stateName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList">ClusterTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeoutsOutputReference">ClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.advancedConfigurationInput">advancedConfigurationInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration">ClusterAdvancedConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.autoScalingComputeEnabledInput">autoScalingComputeEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1101,7 +1100,6 @@ Cluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.backingProviderNameInput">backingProviderNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.backupEnabledInput">backupEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.biConnectorConfigInput">biConnectorConfigInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig">ClusterBiConnectorConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.biConnectorInput">biConnectorInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.cloudBackupInput">cloudBackupInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.clusterTypeInput">clusterTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.diskSizeGbInput">diskSizeGbInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1116,7 +1114,6 @@ Cluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerAutoScalingComputeMaxInstanceSizeInput">providerAutoScalingComputeMaxInstanceSizeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerAutoScalingComputeMinInstanceSizeInput">providerAutoScalingComputeMinInstanceSizeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerBackupEnabledInput">providerBackupEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerDiskIopsInput">providerDiskIopsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerDiskTypeNameInput">providerDiskTypeNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerEncryptEbsVolumeInput">providerEncryptEbsVolumeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1127,6 +1124,7 @@ Cluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.replicationFactorInput">replicationFactorInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.replicationSpecsInput">replicationSpecsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs">ClusterReplicationSpecs</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.retainBackupsEnabledInput">retainBackupsEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.tagsInput">tagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.terminationProtectionEnabledInput">terminationProtectionEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.versionReleaseSystemInput">versionReleaseSystemInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1135,7 +1133,6 @@ Cluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.autoScalingDiskGbEnabled">autoScalingDiskGbEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.backingProviderName">backingProviderName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.backupEnabled">backupEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.biConnector">biConnector</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.cloudBackup">cloudBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.clusterType">clusterType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1149,7 +1146,6 @@ Cluster.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerAutoScalingComputeMaxInstanceSize">providerAutoScalingComputeMaxInstanceSize</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerAutoScalingComputeMinInstanceSize">providerAutoScalingComputeMinInstanceSize</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerBackupEnabled">providerBackupEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerDiskIops">providerDiskIops</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerDiskTypeName">providerDiskTypeName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerEncryptEbsVolume">providerEncryptEbsVolume</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1456,6 +1452,16 @@ public java.lang.String getStateName();
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.tags"></a>
+
+```java
+public ClusterTagsList getTags();
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList">ClusterTagsList</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.timeouts"></a>
 
 ```java
@@ -1533,16 +1539,6 @@ public ClusterBiConnectorConfig getBiConnectorConfigInput();
 ```
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig">ClusterBiConnectorConfig</a>
-
----
-
-##### `biConnectorInput`<sup>Optional</sup> <a name="biConnectorInput" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.biConnectorInput"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getBiConnectorInput();
-```
-
-- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -1686,16 +1682,6 @@ public java.lang.String getProviderAutoScalingComputeMinInstanceSizeInput();
 
 ---
 
-##### `providerBackupEnabledInput`<sup>Optional</sup> <a name="providerBackupEnabledInput" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerBackupEnabledInput"></a>
-
-```java
-public java.lang.Object getProviderBackupEnabledInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `providerDiskIopsInput`<sup>Optional</sup> <a name="providerDiskIopsInput" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerDiskIopsInput"></a>
 
 ```java
@@ -1796,6 +1782,16 @@ public java.lang.Object getRetainBackupsEnabledInput();
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.tagsInput"></a>
+
+```java
+public java.lang.Object getTagsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>>
+
+---
+
 ##### `terminationProtectionEnabledInput`<sup>Optional</sup> <a name="terminationProtectionEnabledInput" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.terminationProtectionEnabledInput"></a>
 
 ```java
@@ -1873,16 +1869,6 @@ public java.lang.Object getBackupEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `biConnector`<sup>Required</sup> <a name="biConnector" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.biConnector"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getBiConnector();
-```
-
-- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -2013,16 +1999,6 @@ public java.lang.String getProviderAutoScalingComputeMinInstanceSize();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `providerBackupEnabled`<sup>Required</sup> <a name="providerBackupEnabled" id="@cdktf/provider-mongodbatlas.cluster.Cluster.property.providerBackupEnabled"></a>
-
-```java
-public java.lang.Object getProviderBackupEnabled();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2185,17 +2161,17 @@ ClusterAdvancedConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.defaultReadConcern">defaultReadConcern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#default_read_concern Cluster#default_read_concern}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.defaultWriteConcern">defaultWriteConcern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#default_write_concern Cluster#default_write_concern}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.failIndexKeyTooLong">failIndexKeyTooLong</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.javascriptEnabled">javascriptEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.minimumEnabledTlsProtocol">minimumEnabledTlsProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.noTableScan">noTableScan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#no_table_scan Cluster#no_table_scan}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.oplogMinRetentionHours">oplogMinRetentionHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.oplogSizeMb">oplogSizeMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.sampleRefreshIntervalBiConnector">sampleRefreshIntervalBiConnector</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.sampleSizeBiConnector">sampleSizeBiConnector</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.transactionLifetimeLimitSeconds">transactionLifetimeLimitSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#transaction_lifetime_limit_seconds Cluster#transaction_lifetime_limit_seconds}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.defaultReadConcern">defaultReadConcern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#default_read_concern Cluster#default_read_concern}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.defaultWriteConcern">defaultWriteConcern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#default_write_concern Cluster#default_write_concern}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.failIndexKeyTooLong">failIndexKeyTooLong</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.javascriptEnabled">javascriptEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.minimumEnabledTlsProtocol">minimumEnabledTlsProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.noTableScan">noTableScan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#no_table_scan Cluster#no_table_scan}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.oplogMinRetentionHours">oplogMinRetentionHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.oplogSizeMb">oplogSizeMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.sampleRefreshIntervalBiConnector">sampleRefreshIntervalBiConnector</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.sampleSizeBiConnector">sampleSizeBiConnector</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.property.transactionLifetimeLimitSeconds">transactionLifetimeLimitSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#transaction_lifetime_limit_seconds Cluster#transaction_lifetime_limit_seconds}. |
 
 ---
 
@@ -2207,7 +2183,7 @@ public java.lang.String getDefaultReadConcern();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#default_read_concern Cluster#default_read_concern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#default_read_concern Cluster#default_read_concern}.
 
 ---
 
@@ -2219,7 +2195,7 @@ public java.lang.String getDefaultWriteConcern();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#default_write_concern Cluster#default_write_concern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#default_write_concern Cluster#default_write_concern}.
 
 ---
 
@@ -2231,7 +2207,7 @@ public java.lang.Object getFailIndexKeyTooLong();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}.
 
 ---
 
@@ -2243,7 +2219,7 @@ public java.lang.Object getJavascriptEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}.
 
 ---
 
@@ -2255,7 +2231,7 @@ public java.lang.String getMinimumEnabledTlsProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}.
 
 ---
 
@@ -2267,7 +2243,7 @@ public java.lang.Object getNoTableScan();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#no_table_scan Cluster#no_table_scan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#no_table_scan Cluster#no_table_scan}.
 
 ---
 
@@ -2279,7 +2255,7 @@ public java.lang.Number getOplogMinRetentionHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}.
 
 ---
 
@@ -2291,7 +2267,7 @@ public java.lang.Number getOplogSizeMb();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}.
 
 ---
 
@@ -2303,7 +2279,7 @@ public java.lang.Number getSampleRefreshIntervalBiConnector();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}.
 
 ---
 
@@ -2315,7 +2291,7 @@ public java.lang.Number getSampleSizeBiConnector();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}.
 
 ---
 
@@ -2327,7 +2303,7 @@ public java.lang.Number getTransactionLifetimeLimitSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#transaction_lifetime_limit_seconds Cluster#transaction_lifetime_limit_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#transaction_lifetime_limit_seconds Cluster#transaction_lifetime_limit_seconds}.
 
 ---
 
@@ -2349,8 +2325,8 @@ ClusterBiConnectorConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#enabled Cluster#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig.property.readPreference">readPreference</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#read_preference Cluster#read_preference}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#enabled Cluster#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig.property.readPreference">readPreference</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#read_preference Cluster#read_preference}. |
 
 ---
 
@@ -2362,7 +2338,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#enabled Cluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#enabled Cluster#enabled}.
 
 ---
 
@@ -2374,7 +2350,7 @@ public java.lang.String getReadPreference();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#read_preference Cluster#read_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#read_preference Cluster#read_preference}.
 
 ---
 
@@ -2411,7 +2387,6 @@ ClusterConfig.builder()
 //  .backingProviderName(java.lang.String)
 //  .backupEnabled(java.lang.Boolean)
 //  .backupEnabled(IResolvable)
-//  .biConnector(java.util.Map<java.lang.String, java.lang.String>)
 //  .biConnectorConfig(ClusterBiConnectorConfig)
 //  .cloudBackup(java.lang.Boolean)
 //  .cloudBackup(IResolvable)
@@ -2429,8 +2404,6 @@ ClusterConfig.builder()
 //  .pitEnabled(IResolvable)
 //  .providerAutoScalingComputeMaxInstanceSize(java.lang.String)
 //  .providerAutoScalingComputeMinInstanceSize(java.lang.String)
-//  .providerBackupEnabled(java.lang.Boolean)
-//  .providerBackupEnabled(IResolvable)
 //  .providerDiskIops(java.lang.Number)
 //  .providerDiskTypeName(java.lang.String)
 //  .providerEncryptEbsVolume(java.lang.Boolean)
@@ -2442,6 +2415,8 @@ ClusterConfig.builder()
 //  .replicationSpecs(java.util.List<ClusterReplicationSpecs>)
 //  .retainBackupsEnabled(java.lang.Boolean)
 //  .retainBackupsEnabled(IResolvable)
+//  .tags(IResolvable)
+//  .tags(java.util.List<ClusterTags>)
 //  .terminationProtectionEnabled(java.lang.Boolean)
 //  .terminationProtectionEnabled(IResolvable)
 //  .timeouts(ClusterTimeouts)
@@ -2460,42 +2435,41 @@ ClusterConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#name Cluster#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#project_id Cluster#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerInstanceSizeName">providerInstanceSizeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerName">providerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_name Cluster#provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#name Cluster#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#project_id Cluster#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerInstanceSizeName">providerInstanceSizeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerName">providerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_name Cluster#provider_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.advancedConfiguration">advancedConfiguration</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration">ClusterAdvancedConfiguration</a></code> | advanced_configuration block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.autoScalingComputeEnabled">autoScalingComputeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.autoScalingComputeScaleDownEnabled">autoScalingComputeScaleDownEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.autoScalingDiskGbEnabled">autoScalingDiskGbEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.backingProviderName">backingProviderName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.autoScalingComputeEnabled">autoScalingComputeEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.autoScalingComputeScaleDownEnabled">autoScalingComputeScaleDownEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.autoScalingDiskGbEnabled">autoScalingDiskGbEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.backingProviderName">backingProviderName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.backupEnabled">backupEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.biConnector">biConnector</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#bi_connector Cluster#bi_connector}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.biConnectorConfig">biConnectorConfig</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig">ClusterBiConnectorConfig</a></code> | bi_connector_config block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.cloudBackup">cloudBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cloud_backup Cluster#cloud_backup}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.clusterType">clusterType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cluster_type Cluster#cluster_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.encryptionAtRestProvider">encryptionAtRestProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#id Cluster#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.cloudBackup">cloudBackup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cloud_backup Cluster#cloud_backup}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.clusterType">clusterType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cluster_type Cluster#cluster_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.encryptionAtRestProvider">encryptionAtRestProvider</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#id Cluster#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.labels">labels</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterLabels">ClusterLabels</a>></code> | labels block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.mongoDbMajorVersion">mongoDbMajorVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.numShards">numShards</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#num_shards Cluster#num_shards}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#paused Cluster#paused}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.pitEnabled">pitEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#pit_enabled Cluster#pit_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerAutoScalingComputeMaxInstanceSize">providerAutoScalingComputeMaxInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerAutoScalingComputeMinInstanceSize">providerAutoScalingComputeMinInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerBackupEnabled">providerBackupEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_backup_enabled Cluster#provider_backup_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerDiskIops">providerDiskIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerDiskTypeName">providerDiskTypeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerEncryptEbsVolume">providerEncryptEbsVolume</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerRegionName">providerRegionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_region_name Cluster#provider_region_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerVolumeType">providerVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.replicationFactor">replicationFactor</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#replication_factor Cluster#replication_factor}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.mongoDbMajorVersion">mongoDbMajorVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.numShards">numShards</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#num_shards Cluster#num_shards}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.paused">paused</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#paused Cluster#paused}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.pitEnabled">pitEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#pit_enabled Cluster#pit_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerAutoScalingComputeMaxInstanceSize">providerAutoScalingComputeMaxInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerAutoScalingComputeMinInstanceSize">providerAutoScalingComputeMinInstanceSize</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerDiskIops">providerDiskIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerDiskTypeName">providerDiskTypeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerEncryptEbsVolume">providerEncryptEbsVolume</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerRegionName">providerRegionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_region_name Cluster#provider_region_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerVolumeType">providerVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.replicationFactor">replicationFactor</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#replication_factor Cluster#replication_factor}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.replicationSpecs">replicationSpecs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs">ClusterReplicationSpecs</a>></code> | replication_specs block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.retainBackupsEnabled">retainBackupsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.terminationProtectionEnabled">terminationProtectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.tags">tags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>></code> | tags block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.terminationProtectionEnabled">terminationProtectionEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.versionReleaseSystem">versionReleaseSystem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#version_release_system Cluster#version_release_system}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.versionReleaseSystem">versionReleaseSystem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#version_release_system Cluster#version_release_system}. |
 
 ---
 
@@ -2577,7 +2551,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#name Cluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#name Cluster#name}.
 
 ---
 
@@ -2589,7 +2563,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#project_id Cluster#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#project_id Cluster#project_id}.
 
 ---
 
@@ -2601,7 +2575,7 @@ public java.lang.String getProviderInstanceSizeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}.
 
 ---
 
@@ -2613,7 +2587,7 @@ public java.lang.String getProviderName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_name Cluster#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_name Cluster#provider_name}.
 
 ---
 
@@ -2627,7 +2601,7 @@ public ClusterAdvancedConfiguration getAdvancedConfiguration();
 
 advanced_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
 
 ---
 
@@ -2639,7 +2613,7 @@ public java.lang.Object getAutoScalingComputeEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}.
 
 ---
 
@@ -2651,7 +2625,7 @@ public java.lang.Object getAutoScalingComputeScaleDownEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}.
 
 ---
 
@@ -2663,7 +2637,7 @@ public java.lang.Object getAutoScalingDiskGbEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}.
 
 ---
 
@@ -2675,7 +2649,7 @@ public java.lang.String getBackingProviderName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}.
 
 ---
 
@@ -2689,19 +2663,7 @@ public java.lang.Object getBackupEnabled();
 
 Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
-
----
-
-##### `biConnector`<sup>Optional</sup> <a name="biConnector" id="@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.biConnector"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getBiConnector();
-```
-
-- *Type:* java.util.Map<java.lang.String, java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#bi_connector Cluster#bi_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
 
 ---
 
@@ -2715,7 +2677,7 @@ public ClusterBiConnectorConfig getBiConnectorConfig();
 
 bi_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
 
 ---
 
@@ -2727,7 +2689,7 @@ public java.lang.Object getCloudBackup();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cloud_backup Cluster#cloud_backup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cloud_backup Cluster#cloud_backup}.
 
 ---
 
@@ -2739,7 +2701,7 @@ public java.lang.String getClusterType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#cluster_type Cluster#cluster_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#cluster_type Cluster#cluster_type}.
 
 ---
 
@@ -2751,7 +2713,7 @@ public java.lang.Number getDiskSizeGb();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}.
 
 ---
 
@@ -2763,7 +2725,7 @@ public java.lang.String getEncryptionAtRestProvider();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}.
 
 ---
 
@@ -2775,7 +2737,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#id Cluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#id Cluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2792,7 +2754,7 @@ public java.lang.Object getLabels();
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#labels Cluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#labels Cluster#labels}
 
 ---
 
@@ -2804,7 +2766,7 @@ public java.lang.String getMongoDbMajorVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}.
 
 ---
 
@@ -2816,7 +2778,7 @@ public java.lang.Number getNumShards();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#num_shards Cluster#num_shards}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#num_shards Cluster#num_shards}.
 
 ---
 
@@ -2828,7 +2790,7 @@ public java.lang.Object getPaused();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#paused Cluster#paused}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#paused Cluster#paused}.
 
 ---
 
@@ -2840,7 +2802,7 @@ public java.lang.Object getPitEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#pit_enabled Cluster#pit_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#pit_enabled Cluster#pit_enabled}.
 
 ---
 
@@ -2852,7 +2814,7 @@ public java.lang.String getProviderAutoScalingComputeMaxInstanceSize();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}.
 
 ---
 
@@ -2864,19 +2826,7 @@ public java.lang.String getProviderAutoScalingComputeMinInstanceSize();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}.
-
----
-
-##### `providerBackupEnabled`<sup>Optional</sup> <a name="providerBackupEnabled" id="@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.providerBackupEnabled"></a>
-
-```java
-public java.lang.Object getProviderBackupEnabled();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_backup_enabled Cluster#provider_backup_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}.
 
 ---
 
@@ -2888,7 +2838,7 @@ public java.lang.Number getProviderDiskIops();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}.
 
 ---
 
@@ -2900,7 +2850,7 @@ public java.lang.String getProviderDiskTypeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}.
 
 ---
 
@@ -2912,7 +2862,7 @@ public java.lang.Object getProviderEncryptEbsVolume();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}.
 
 ---
 
@@ -2924,7 +2874,7 @@ public java.lang.String getProviderRegionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_region_name Cluster#provider_region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_region_name Cluster#provider_region_name}.
 
 ---
 
@@ -2936,7 +2886,7 @@ public java.lang.String getProviderVolumeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}.
 
 ---
 
@@ -2948,7 +2898,7 @@ public java.lang.Number getReplicationFactor();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#replication_factor Cluster#replication_factor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#replication_factor Cluster#replication_factor}.
 
 ---
 
@@ -2962,7 +2912,7 @@ public java.lang.Object getReplicationSpecs();
 
 replication_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#replication_specs Cluster#replication_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#replication_specs Cluster#replication_specs}
 
 ---
 
@@ -2976,7 +2926,21 @@ public java.lang.Object getRetainBackupsEnabled();
 
 Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-mongodbatlas.cluster.ClusterConfig.property.tags"></a>
+
+```java
+public java.lang.Object getTags();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#tags Cluster#tags}
 
 ---
 
@@ -2988,7 +2952,7 @@ public java.lang.Object getTerminationProtectionEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}.
 
 ---
 
@@ -3002,7 +2966,7 @@ public ClusterTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#timeouts Cluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#timeouts Cluster#timeouts}
 
 ---
 
@@ -3014,7 +2978,7 @@ public java.lang.String getVersionReleaseSystem();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#version_release_system Cluster#version_release_system}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#version_release_system Cluster#version_release_system}.
 
 ---
 
@@ -3071,8 +3035,8 @@ ClusterLabels.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterLabels.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#key Cluster#key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterLabels.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#value Cluster#value}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterLabels.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#key Cluster#key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterLabels.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#value Cluster#value}. |
 
 ---
 
@@ -3084,7 +3048,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#key Cluster#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#key Cluster#key}.
 
 ---
 
@@ -3096,7 +3060,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#value Cluster#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#value Cluster#value}.
 
 ---
 
@@ -3120,10 +3084,10 @@ ClusterReplicationSpecs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.numShards">numShards</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#num_shards Cluster#num_shards}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#id Cluster#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.numShards">numShards</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#num_shards Cluster#num_shards}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#id Cluster#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.regionsConfig">regionsConfig</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig">ClusterReplicationSpecsRegionsConfig</a>></code> | regions_config block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.zoneName">zoneName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#zone_name Cluster#zone_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.property.zoneName">zoneName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#zone_name Cluster#zone_name}. |
 
 ---
 
@@ -3135,7 +3099,7 @@ public java.lang.Number getNumShards();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#num_shards Cluster#num_shards}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#num_shards Cluster#num_shards}.
 
 ---
 
@@ -3147,7 +3111,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#id Cluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#id Cluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3164,7 +3128,7 @@ public java.lang.Object getRegionsConfig();
 
 regions_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#regions_config Cluster#regions_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#regions_config Cluster#regions_config}
 
 ---
 
@@ -3176,7 +3140,7 @@ public java.lang.String getZoneName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#zone_name Cluster#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#zone_name Cluster#zone_name}.
 
 ---
 
@@ -3200,11 +3164,11 @@ ClusterReplicationSpecsRegionsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.regionName">regionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#region_name Cluster#region_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.analyticsNodes">analyticsNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.electableNodes">electableNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#electable_nodes Cluster#electable_nodes}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#priority Cluster#priority}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.readOnlyNodes">readOnlyNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.regionName">regionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#region_name Cluster#region_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.analyticsNodes">analyticsNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.electableNodes">electableNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#electable_nodes Cluster#electable_nodes}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#priority Cluster#priority}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.property.readOnlyNodes">readOnlyNodes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}. |
 
 ---
 
@@ -3216,7 +3180,7 @@ public java.lang.String getRegionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#region_name Cluster#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#region_name Cluster#region_name}.
 
 ---
 
@@ -3228,7 +3192,7 @@ public java.lang.Number getAnalyticsNodes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}.
 
 ---
 
@@ -3240,7 +3204,7 @@ public java.lang.Number getElectableNodes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#electable_nodes Cluster#electable_nodes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#electable_nodes Cluster#electable_nodes}.
 
 ---
 
@@ -3252,7 +3216,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#priority Cluster#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#priority Cluster#priority}.
 
 ---
 
@@ -3264,7 +3228,7 @@ public java.lang.Number getReadOnlyNodes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}.
 
 ---
 
@@ -3304,6 +3268,52 @@ ClusterSnapshotBackupPolicyPoliciesPolicyItem.builder()
 ```
 
 
+### ClusterTags <a name="ClusterTags" id="@cdktf/provider-mongodbatlas.cluster.ClusterTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterTags.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.mongodbatlas.cluster.ClusterTags;
+
+ClusterTags.builder()
+    .key(java.lang.String)
+    .value(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#key Cluster#key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#value Cluster#value}. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-mongodbatlas.cluster.ClusterTags.property.key"></a>
+
+```java
+public java.lang.String getKey();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#key Cluster#key}.
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.cluster.ClusterTags.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#value Cluster#value}.
+
+---
+
 ### ClusterTimeouts <a name="ClusterTimeouts" id="@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.Initializer"></a>
@@ -3322,9 +3332,9 @@ ClusterTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#create Cluster#create}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#delete Cluster#delete}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#update Cluster#update}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#create Cluster#create}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#delete Cluster#delete}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#update Cluster#update}. |
 
 ---
 
@@ -3336,7 +3346,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#create Cluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#create Cluster#create}.
 
 ---
 
@@ -3348,7 +3358,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#delete Cluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#delete Cluster#delete}.
 
 ---
 
@@ -3360,7 +3370,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster#update Cluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster#update Cluster#update}.
 
 ---
 
@@ -4601,8 +4611,6 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.awsPrivateLink">awsPrivateLink</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.awsPrivateLinkSrv">awsPrivateLinkSrv</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.private">private</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.privateEndpoint">privateEndpoint</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpointList">ClusterConnectionStringsPrivateEndpointList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.privateSrv">privateSrv</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -4633,26 +4641,6 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `awsPrivateLink`<sup>Required</sup> <a name="awsPrivateLink" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.awsPrivateLink"></a>
-
-```java
-public StringMap getAwsPrivateLink();
-```
-
-- *Type:* com.hashicorp.cdktf.StringMap
-
----
-
-##### `awsPrivateLinkSrv`<sup>Required</sup> <a name="awsPrivateLinkSrv" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.property.awsPrivateLinkSrv"></a>
-
-```java
-public StringMap getAwsPrivateLinkSrv();
-```
-
-- *Type:* com.hashicorp.cdktf.StringMap
 
 ---
 
@@ -8509,6 +8497,460 @@ public ClusterSnapshotBackupPolicyPoliciesPolicyItem getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPoliciesPolicyItem">ClusterSnapshotBackupPolicyPoliciesPolicyItem</a>
+
+---
+
+
+### ClusterTagsList <a name="ClusterTagsList" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.mongodbatlas.cluster.ClusterTagsList;
+
+new ClusterTagsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.get"></a>
+
+```java
+public ClusterTagsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>>
+
+---
+
+
+### ClusterTagsOutputReference <a name="ClusterTagsOutputReference" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.mongodbatlas.cluster.ClusterTagsOutputReference;
+
+new ClusterTagsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.keyInput"></a>
+
+```java
+public java.lang.String getKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.valueInput"></a>
+
+```java
+public java.lang.String getValueInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.key"></a>
+
+```java
+public java.lang.String getKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-mongodbatlas.cluster.ClusterTags">ClusterTags</a>
 
 ---
 

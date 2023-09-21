@@ -1,6 +1,6 @@
 # `data_mongodbatlas_organization`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_organization`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_organization`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/organization).
 
 # `dataMongodbatlasOrganization` Submodule <a name="`dataMongodbatlasOrganization` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_organization`](ht
 
 ### DataMongodbatlasOrganization <a name="DataMongodbatlasOrganization" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization mongodbatlas_organization}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/organization mongodbatlas_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 datamongodbatlasorganization.NewDataMongodbatlasOrganization(scope Construct, id *string, config DataMongodbatlasOrganizationConfig) DataMongodbatlasOrganization
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 datamongodbatlasorganization.DataMongodbatlasOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 datamongodbatlasorganization.DataMongodbatlasOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datamongodbatlasorganization.DataMongodbatlasOrganization_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 datamongodbatlasorganization.DataMongodbatlasOrganization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 &datamongodbatlasorganization.DataMongodbatlasOrganizationConfig {
 	Connection: interface{},
@@ -603,8 +603,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization#id DataMongodbatlasOrganization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/organization#id DataMongodbatlasOrganization#id}. |
 
 ---
 
@@ -686,7 +686,7 @@ OrgId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}.
 
 ---
 
@@ -698,7 +698,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization#id DataMongodbatlasOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/organization#id DataMongodbatlasOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -710,7 +710,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 &datamongodbatlasorganization.DataMongodbatlasOrganizationLinks {
 
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 datamongodbatlasorganization.NewDataMongodbatlasOrganizationLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasOrganizationLinksList
 ```
@@ -857,7 +857,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasorganization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasorganization"
 
 datamongodbatlasorganization.NewDataMongodbatlasOrganizationLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasOrganizationLinksOutputReference
 ```

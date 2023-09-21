@@ -1,6 +1,6 @@
 # `data_mongodbatlas_shared_tier_restore_job`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_shared_tier_restore_job`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_shared_tier_restore_job`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job).
 
 # `dataMongodbatlasSharedTierRestoreJob` Submodule <a name="`dataMongodbatlasSharedTierRestoreJob` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_shared_tier_resto
 
 ### DataMongodbatlasSharedTierRestoreJob <a name="DataMongodbatlasSharedTierRestoreJob" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob.Initializer"></a>
 
@@ -714,10 +714,10 @@ const dataMongodbatlasSharedTierRestoreJobConfig: dataMongodbatlasSharedTierRest
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#cluster_name DataMongodbatlasSharedTierRestoreJob#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.jobId">jobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#job_id DataMongodbatlasSharedTierRestoreJob#job_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#project_id DataMongodbatlasSharedTierRestoreJob#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#id DataMongodbatlasSharedTierRestoreJob#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#cluster_name DataMongodbatlasSharedTierRestoreJob#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.jobId">jobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#job_id DataMongodbatlasSharedTierRestoreJob#job_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#project_id DataMongodbatlasSharedTierRestoreJob#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#id DataMongodbatlasSharedTierRestoreJob#id}. |
 
 ---
 
@@ -799,7 +799,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#cluster_name DataMongodbatlasSharedTierRestoreJob#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#cluster_name DataMongodbatlasSharedTierRestoreJob#cluster_name}.
 
 ---
 
@@ -811,7 +811,7 @@ public readonly jobId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#job_id DataMongodbatlasSharedTierRestoreJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#job_id DataMongodbatlasSharedTierRestoreJob#job_id}.
 
 ---
 
@@ -823,7 +823,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#project_id DataMongodbatlasSharedTierRestoreJob#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#project_id DataMongodbatlasSharedTierRestoreJob#project_id}.
 
 ---
 
@@ -835,7 +835,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/shared_tier_restore_job#id DataMongodbatlasSharedTierRestoreJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/shared_tier_restore_job#id DataMongodbatlasSharedTierRestoreJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

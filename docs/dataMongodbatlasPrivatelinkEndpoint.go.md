@@ -1,6 +1,6 @@
 # `data_mongodbatlas_privatelink_endpoint`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint).
 
 # `dataMongodbatlasPrivatelinkEndpoint` Submodule <a name="`dataMongodbatlasPrivatelinkEndpoint` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpo
 
 ### DataMongodbatlasPrivatelinkEndpoint <a name="DataMongodbatlasPrivatelinkEndpoint" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpoint"
 
 datamongodbatlasprivatelinkendpoint.NewDataMongodbatlasPrivatelinkEndpoint(scope Construct, id *string, config DataMongodbatlasPrivatelinkEndpointConfig) DataMongodbatlasPrivatelinkEndpoint
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpoint"
 
 datamongodbatlasprivatelinkendpoint.DataMongodbatlasPrivatelinkEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpoint"
 
 datamongodbatlasprivatelinkendpoint.DataMongodbatlasPrivatelinkEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datamongodbatlasprivatelinkendpoint.DataMongodbatlasPrivatelinkEndpoint_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpoint"
 
 datamongodbatlasprivatelinkendpoint.DataMongodbatlasPrivatelinkEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpoint"
 
 &datamongodbatlasprivatelinkendpoint.DataMongodbatlasPrivatelinkEndpointConfig {
 	Connection: interface{},
@@ -726,10 +726,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.privateLinkId">PrivateLinkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#private_link_id DataMongodbatlasPrivatelinkEndpoint#private_link_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#project_id DataMongodbatlasPrivatelinkEndpoint#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#provider_name DataMongodbatlasPrivatelinkEndpoint#provider_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#id DataMongodbatlasPrivatelinkEndpoint#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.privateLinkId">PrivateLinkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#private_link_id DataMongodbatlasPrivatelinkEndpoint#private_link_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#project_id DataMongodbatlasPrivatelinkEndpoint#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#provider_name DataMongodbatlasPrivatelinkEndpoint#provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint.DataMongodbatlasPrivatelinkEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#id DataMongodbatlasPrivatelinkEndpoint#id}. |
 
 ---
 
@@ -811,7 +811,7 @@ PrivateLinkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#private_link_id DataMongodbatlasPrivatelinkEndpoint#private_link_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#private_link_id DataMongodbatlasPrivatelinkEndpoint#private_link_id}.
 
 ---
 
@@ -823,7 +823,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#project_id DataMongodbatlasPrivatelinkEndpoint#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#project_id DataMongodbatlasPrivatelinkEndpoint#project_id}.
 
 ---
 
@@ -835,7 +835,7 @@ ProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#provider_name DataMongodbatlasPrivatelinkEndpoint#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#provider_name DataMongodbatlasPrivatelinkEndpoint#provider_name}.
 
 ---
 
@@ -847,7 +847,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/privatelink_endpoint#id DataMongodbatlasPrivatelinkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoint#id DataMongodbatlasPrivatelinkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +8,63 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}
   */
-  readonly authDatabaseName?: string;
+  readonly authDatabaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}
   */
   readonly awsIamType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#database_name DatabaseUser#database_name}
-  */
-  readonly databaseName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#id DatabaseUser#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}
   */
   readonly ldapAuthType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}
   */
   readonly oidcAuthType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#password DatabaseUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#password DatabaseUser#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#project_id DatabaseUser#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#project_id DatabaseUser#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#username DatabaseUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#username DatabaseUser#username}
   */
   readonly username: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#x509_type DatabaseUser#x509_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#x509_type DatabaseUser#x509_type}
   */
   readonly x509Type?: string;
   /**
   * labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#labels DatabaseUser#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#labels DatabaseUser#labels}
   */
   readonly labels?: DatabaseUserLabels[] | cdktf.IResolvable;
   /**
   * roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#roles DatabaseUser#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#roles DatabaseUser#roles}
   */
-  readonly roles: DatabaseUserRoles[] | cdktf.IResolvable;
+  readonly roles?: DatabaseUserRoles[] | cdktf.IResolvable;
   /**
   * scopes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#scopes DatabaseUser#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#scopes DatabaseUser#scopes}
   */
   readonly scopes?: DatabaseUserScopes[] | cdktf.IResolvable;
 }
 export interface DatabaseUserLabels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#key DatabaseUser#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#key DatabaseUser#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#value DatabaseUser#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#value DatabaseUser#value}
   */
   readonly value?: string;
 }
@@ -200,17 +184,17 @@ export class DatabaseUserLabelsList extends cdktf.ComplexList {
 }
 export interface DatabaseUserRoles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#collection_name DatabaseUser#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#collection_name DatabaseUser#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#database_name DatabaseUser#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#database_name DatabaseUser#database_name}
   */
-  readonly databaseName?: string;
+  readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#role_name DatabaseUser#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#role_name DatabaseUser#role_name}
   */
-  readonly roleName?: string;
+  readonly roleName: string;
 }
 
 export function databaseUserRolesToTerraform(struct?: DatabaseUserRoles | cdktf.IResolvable): any {
@@ -281,7 +265,7 @@ export class DatabaseUserRolesOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // collection_name - computed: true, optional: true, required: false
+  // collection_name - computed: false, optional: true, required: false
   private _collectionName?: string; 
   public get collectionName() {
     return this.getStringAttribute('collection_name');
@@ -297,7 +281,7 @@ export class DatabaseUserRolesOutputReference extends cdktf.ComplexObject {
     return this._collectionName;
   }
 
-  // database_name - computed: true, optional: true, required: false
+  // database_name - computed: false, optional: false, required: true
   private _databaseName?: string; 
   public get databaseName() {
     return this.getStringAttribute('database_name');
@@ -305,24 +289,18 @@ export class DatabaseUserRolesOutputReference extends cdktf.ComplexObject {
   public set databaseName(value: string) {
     this._databaseName = value;
   }
-  public resetDatabaseName() {
-    this._databaseName = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
   }
 
-  // role_name - computed: true, optional: true, required: false
+  // role_name - computed: false, optional: false, required: true
   private _roleName?: string; 
   public get roleName() {
     return this.getStringAttribute('role_name');
   }
   public set roleName(value: string) {
     this._roleName = value;
-  }
-  public resetRoleName() {
-    this._roleName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get roleNameInput() {
@@ -351,11 +329,11 @@ export class DatabaseUserRolesList extends cdktf.ComplexList {
 }
 export interface DatabaseUserScopes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#name DatabaseUser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#name DatabaseUser#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#type DatabaseUser#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#type DatabaseUser#type}
   */
   readonly type?: string;
 }
@@ -475,7 +453,7 @@ export class DatabaseUserScopesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user mongodbatlas_database_user}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user mongodbatlas_database_user}
 */
 export class DatabaseUser extends cdktf.TerraformResource {
 
@@ -489,7 +467,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user mongodbatlas_database_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user mongodbatlas_database_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -500,7 +478,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_database_user',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -513,8 +491,6 @@ export class DatabaseUser extends cdktf.TerraformResource {
     });
     this._authDatabaseName = config.authDatabaseName;
     this._awsIamType = config.awsIamType;
-    this._databaseName = config.databaseName;
-    this._id = config.id;
     this._ldapAuthType = config.ldapAuthType;
     this._oidcAuthType = config.oidcAuthType;
     this._password = config.password;
@@ -530,7 +506,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // auth_database_name - computed: false, optional: true, required: false
+  // auth_database_name - computed: false, optional: false, required: true
   private _authDatabaseName?: string; 
   public get authDatabaseName() {
     return this.getStringAttribute('auth_database_name');
@@ -538,15 +514,12 @@ export class DatabaseUser extends cdktf.TerraformResource {
   public set authDatabaseName(value: string) {
     this._authDatabaseName = value;
   }
-  public resetAuthDatabaseName() {
-    this._authDatabaseName = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get authDatabaseNameInput() {
     return this._authDatabaseName;
   }
 
-  // aws_iam_type - computed: false, optional: true, required: false
+  // aws_iam_type - computed: true, optional: true, required: false
   private _awsIamType?: string; 
   public get awsIamType() {
     return this.getStringAttribute('aws_iam_type');
@@ -562,39 +535,12 @@ export class DatabaseUser extends cdktf.TerraformResource {
     return this._awsIamType;
   }
 
-  // database_name - computed: false, optional: true, required: false
-  private _databaseName?: string; 
-  public get databaseName() {
-    return this.getStringAttribute('database_name');
-  }
-  public set databaseName(value: string) {
-    this._databaseName = value;
-  }
-  public resetDatabaseName() {
-    this._databaseName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseNameInput() {
-    return this._databaseName;
-  }
-
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // ldap_auth_type - computed: false, optional: true, required: false
+  // ldap_auth_type - computed: true, optional: true, required: false
   private _ldapAuthType?: string; 
   public get ldapAuthType() {
     return this.getStringAttribute('ldap_auth_type');
@@ -610,7 +556,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
     return this._ldapAuthType;
   }
 
-  // oidc_auth_type - computed: false, optional: true, required: false
+  // oidc_auth_type - computed: true, optional: true, required: false
   private _oidcAuthType?: string; 
   public get oidcAuthType() {
     return this.getStringAttribute('oidc_auth_type');
@@ -668,7 +614,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
     return this._username;
   }
 
-  // x509_type - computed: false, optional: true, required: false
+  // x509_type - computed: true, optional: true, required: false
   private _x509Type?: string; 
   public get x509Type() {
     return this.getStringAttribute('x509_type');
@@ -700,13 +646,16 @@ export class DatabaseUser extends cdktf.TerraformResource {
     return this._labels.internalValue;
   }
 
-  // roles - computed: false, optional: false, required: true
+  // roles - computed: false, optional: true, required: false
   private _roles = new DatabaseUserRolesList(this, "roles", true);
   public get roles() {
     return this._roles;
   }
   public putRoles(value: DatabaseUserRoles[] | cdktf.IResolvable) {
     this._roles.internalValue = value;
+  }
+  public resetRoles() {
+    this._roles.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
@@ -737,8 +686,6 @@ export class DatabaseUser extends cdktf.TerraformResource {
     return {
       auth_database_name: cdktf.stringToTerraform(this._authDatabaseName),
       aws_iam_type: cdktf.stringToTerraform(this._awsIamType),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      id: cdktf.stringToTerraform(this._id),
       ldap_auth_type: cdktf.stringToTerraform(this._ldapAuthType),
       oidc_auth_type: cdktf.stringToTerraform(this._oidcAuthType),
       password: cdktf.stringToTerraform(this._password),

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,143 +8,148 @@ import * as cdktf from 'cdktf';
 
 export interface MongodbatlasProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}
+  * AWS API Access Key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}
+  * AWS API Access Secret Key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_session_token MongodbatlasProvider#aws_session_token}
+  * AWS Security Token Service provided session token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_session_token MongodbatlasProvider#aws_session_token}
   */
   readonly awsSessionToken?: string;
   /**
   * MongoDB Atlas Base URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#base_url MongodbatlasProvider#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#base_url MongodbatlasProvider#base_url}
   */
   readonly baseUrl?: string;
   /**
   * MongoDB Atlas Base URL default to gov
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
   */
   readonly isMongodbgovCloud?: boolean | cdktf.IResolvable;
   /**
   * MongoDB Atlas Programmatic Private Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#private_key MongodbatlasProvider#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#private_key MongodbatlasProvider#private_key}
   */
   readonly privateKey?: string;
   /**
   * MongoDB Atlas Programmatic Public Key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#public_key MongodbatlasProvider#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#public_key MongodbatlasProvider#public_key}
   */
   readonly publicKey?: string;
   /**
   * MongoDB Realm Base URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#realm_base_url MongodbatlasProvider#realm_base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#realm_base_url MongodbatlasProvider#realm_base_url}
   */
   readonly realmBaseUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#region MongodbatlasProvider#region}
+  * Region where secret is stored as part of AWS Secret Manager.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#region MongodbatlasProvider#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#secret_name MongodbatlasProvider#secret_name}
+  * Name of secret stored in AWS Secret Manager.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#secret_name MongodbatlasProvider#secret_name}
   */
   readonly secretName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}
+  * AWS Security Token Service endpoint. Required for cross-AWS region or cross-AWS account secrets.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#alias MongodbatlasProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#alias MongodbatlasProvider#alias}
   */
   readonly alias?: string;
   /**
   * assume_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#assume_role MongodbatlasProvider#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#assume_role MongodbatlasProvider#assume_role}
   */
-  readonly assumeRole?: MongodbatlasProviderAssumeRole;
+  readonly assumeRole?: MongodbatlasProviderAssumeRole[] | cdktf.IResolvable;
 }
 export interface MongodbatlasProviderAssumeRole {
   /**
   * The duration, between 15 minutes and 12 hours, of the role session. Valid time units are ns, us (or µs), ms, s, h, or m.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#duration MongodbatlasProvider#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#duration MongodbatlasProvider#duration}
   */
   readonly duration?: string;
   /**
-  * The duration, in seconds, of the role session.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#duration_seconds MongodbatlasProvider#duration_seconds}
-  */
-  readonly durationSeconds?: number;
-  /**
   * A unique identifier that might be required when you assume a role in another account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#external_id MongodbatlasProvider#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#external_id MongodbatlasProvider#external_id}
   */
   readonly externalId?: string;
   /**
   * IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#policy MongodbatlasProvider#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#policy MongodbatlasProvider#policy}
   */
   readonly policy?: string;
   /**
   * Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#policy_arns MongodbatlasProvider#policy_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#policy_arns MongodbatlasProvider#policy_arns}
   */
   readonly policyArns?: string[];
   /**
   * Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#role_arn MongodbatlasProvider#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#role_arn MongodbatlasProvider#role_arn}
   */
   readonly roleArn?: string;
   /**
   * An identifier for the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#session_name MongodbatlasProvider#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#session_name MongodbatlasProvider#session_name}
   */
   readonly sessionName?: string;
   /**
   * Source identity specified by the principal assuming the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#source_identity MongodbatlasProvider#source_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#source_identity MongodbatlasProvider#source_identity}
   */
   readonly sourceIdentity?: string;
   /**
   * Assume role session tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#tags MongodbatlasProvider#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#tags MongodbatlasProvider#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * Assume role session tag keys to pass to any subsequent sessions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
   */
   readonly transitiveTagKeys?: string[];
 }
 
-export function mongodbatlasProviderAssumeRoleToTerraform(struct?: MongodbatlasProviderAssumeRole): any {
+export function mongodbatlasProviderAssumeRoleToTerraform(struct?: MongodbatlasProviderAssumeRole | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     duration: cdktf.stringToTerraform(struct!.duration),
-    duration_seconds: cdktf.numberToTerraform(struct!.durationSeconds),
     external_id: cdktf.stringToTerraform(struct!.externalId),
     policy: cdktf.stringToTerraform(struct!.policy),
     policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policyArns),
@@ -163,7 +163,7 @@ export function mongodbatlasProviderAssumeRoleToTerraform(struct?: MongodbatlasP
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs mongodbatlas}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs mongodbatlas}
 */
 export class MongodbatlasProvider extends cdktf.TerraformProvider {
 
@@ -177,7 +177,7 @@ export class MongodbatlasProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs mongodbatlas} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs mongodbatlas} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class MongodbatlasProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'mongodbatlas',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       terraformProviderSource: 'mongodb/mongodbatlas'
@@ -405,11 +405,11 @@ export class MongodbatlasProvider extends cdktf.TerraformProvider {
   }
 
   // assume_role - computed: false, optional: true, required: false
-  private _assumeRole?: MongodbatlasProviderAssumeRole; 
+  private _assumeRole?: MongodbatlasProviderAssumeRole[] | cdktf.IResolvable; 
   public get assumeRole() {
     return this._assumeRole;
   }
-  public set assumeRole(value: MongodbatlasProviderAssumeRole | undefined) {
+  public set assumeRole(value: MongodbatlasProviderAssumeRole[] | cdktf.IResolvable | undefined) {
     this._assumeRole = value;
   }
   public resetAssumeRole() {
@@ -438,7 +438,7 @@ export class MongodbatlasProvider extends cdktf.TerraformProvider {
       secret_name: cdktf.stringToTerraform(this._secretName),
       sts_endpoint: cdktf.stringToTerraform(this._stsEndpoint),
       alias: cdktf.stringToTerraform(this._alias),
-      assume_role: mongodbatlasProviderAssumeRoleToTerraform(this._assumeRole),
+      assume_role: cdktf.listMapper(mongodbatlasProviderAssumeRoleToTerraform, true)(this._assumeRole),
     };
   }
 }

@@ -1,6 +1,6 @@
 # `mongodbatlas_advanced_cluster`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_advanced_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster).
+Refer to the Terraform Registory for docs: [`mongodbatlas_advanced_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster).
 
 # `advancedCluster` Submodule <a name="`advancedCluster` Submodule" id="@cdktf/provider-mongodbatlas.advancedCluster"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_advanced_cluster`](htt
 
 ### AdvancedCluster <a name="AdvancedCluster" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedCluster(scope Construct, id *string, config AdvancedClusterConfig) AdvancedCluster
 ```
@@ -71,14 +71,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putAdvancedConfiguration">PutAdvancedConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putBiConnector">PutBiConnector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putBiConnectorConfig">PutBiConnectorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putLabels">PutLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putReplicationSpecs">PutReplicationSpecs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putTags">PutTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetAdvancedConfiguration">ResetAdvancedConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetBackupEnabled">ResetBackupEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetBiConnector">ResetBiConnector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetBiConnectorConfig">ResetBiConnectorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetDiskSizeGb">ResetDiskSizeGb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetEncryptionAtRestProvider">ResetEncryptionAtRestProvider</a></code> | *No description.* |
@@ -89,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetPitEnabled">ResetPitEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetRetainBackupsEnabled">ResetRetainBackupsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetRootCertType">ResetRootCertType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetTerminationProtectionEnabled">ResetTerminationProtectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetVersionReleaseSystem">ResetVersionReleaseSystem</a></code> | *No description.* |
@@ -291,18 +291,6 @@ func PutAdvancedConfiguration(value AdvancedClusterAdvancedConfiguration)
 
 ---
 
-##### `PutBiConnector` <a name="PutBiConnector" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putBiConnector"></a>
-
-```go
-func PutBiConnector(value AdvancedClusterBiConnector)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putBiConnector.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a>
-
----
-
 ##### `PutBiConnectorConfig` <a name="PutBiConnectorConfig" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putBiConnectorConfig"></a>
 
 ```go
@@ -339,6 +327,18 @@ func PutReplicationSpecs(value interface{})
 
 ---
 
+##### `PutTags` <a name="PutTags" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putTags"></a>
+
+```go
+func PutTags(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putTags.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putTimeouts"></a>
 
 ```go
@@ -361,12 +361,6 @@ func ResetAdvancedConfiguration()
 
 ```go
 func ResetBackupEnabled()
-```
-
-##### `ResetBiConnector` <a name="ResetBiConnector" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetBiConnector"></a>
-
-```go
-func ResetBiConnector()
 ```
 
 ##### `ResetBiConnectorConfig` <a name="ResetBiConnectorConfig" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetBiConnectorConfig"></a>
@@ -429,6 +423,12 @@ func ResetRetainBackupsEnabled()
 func ResetRootCertType()
 ```
 
+##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetTags"></a>
+
+```go
+func ResetTags()
+```
+
 ##### `ResetTerminationProtectionEnabled` <a name="ResetTerminationProtectionEnabled" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetTerminationProtectionEnabled"></a>
 
 ```go
@@ -460,7 +460,7 @@ func ResetVersionReleaseSystem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.AdvancedCluster_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.AdvancedCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ advancedcluster.AdvancedCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.AdvancedCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,6 @@ advancedcluster.AdvancedCluster_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.advancedConfiguration">AdvancedConfiguration</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfigurationOutputReference">AdvancedClusterAdvancedConfigurationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnector">BiConnector</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference">AdvancedClusterBiConnectorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnectorConfig">BiConnectorConfig</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfigOutputReference">AdvancedClusterBiConnectorConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.connectionStrings">ConnectionStrings</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsList">AdvancedClusterConnectionStringsList</a></code> | *No description.* |
@@ -545,11 +544,11 @@ advancedcluster.AdvancedCluster_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.mongoDbVersion">MongoDbVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.replicationSpecs">ReplicationSpecs</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsList">AdvancedClusterReplicationSpecsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.stateName">StateName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.tags">Tags</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList">AdvancedClusterTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeoutsOutputReference">AdvancedClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.advancedConfigurationInput">AdvancedConfigurationInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration">AdvancedClusterAdvancedConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.backupEnabledInput">BackupEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnectorConfigInput">BiConnectorConfigInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig">AdvancedClusterBiConnectorConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnectorInput">BiConnectorInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.clusterTypeInput">ClusterTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.diskSizeGbInput">DiskSizeGbInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.encryptionAtRestProviderInput">EncryptionAtRestProviderInput</a></code> | <code>*string</code> | *No description.* |
@@ -563,6 +562,7 @@ advancedcluster.AdvancedCluster_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.replicationSpecsInput">ReplicationSpecsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.retainBackupsEnabledInput">RetainBackupsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.rootCertTypeInput">RootCertTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.tagsInput">TagsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.terminationProtectionEnabledInput">TerminationProtectionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.versionReleaseSystemInput">VersionReleaseSystemInput</a></code> | <code>*string</code> | *No description.* |
@@ -735,16 +735,6 @@ func AdvancedConfiguration() AdvancedClusterAdvancedConfigurationOutputReference
 
 ---
 
-##### `BiConnector`<sup>Required</sup> <a name="BiConnector" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnector"></a>
-
-```go
-func BiConnector() AdvancedClusterBiConnectorOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference">AdvancedClusterBiConnectorOutputReference</a>
-
----
-
 ##### `BiConnectorConfig`<sup>Required</sup> <a name="BiConnectorConfig" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnectorConfig"></a>
 
 ```go
@@ -825,6 +815,16 @@ func StateName() *string
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.tags"></a>
+
+```go
+func Tags() AdvancedClusterTagsList
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList">AdvancedClusterTagsList</a>
+
+---
+
 ##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.timeouts"></a>
 
 ```go
@@ -862,16 +862,6 @@ func BiConnectorConfigInput() AdvancedClusterBiConnectorConfig
 ```
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig">AdvancedClusterBiConnectorConfig</a>
-
----
-
-##### `BiConnectorInput`<sup>Optional</sup> <a name="BiConnectorInput" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.biConnectorInput"></a>
-
-```go
-func BiConnectorInput() AdvancedClusterBiConnector
-```
-
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a>
 
 ---
 
@@ -1002,6 +992,16 @@ func RootCertTypeInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.property.tagsInput"></a>
+
+```go
+func TagsInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1200,7 +1200,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterAdvancedConfiguration {
 	DefaultReadConcern: *string,
@@ -1221,17 +1221,17 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.defaultReadConcern">DefaultReadConcern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#default_read_concern AdvancedCluster#default_read_concern}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.defaultWriteConcern">DefaultWriteConcern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#default_write_concern AdvancedCluster#default_write_concern}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.failIndexKeyTooLong">FailIndexKeyTooLong</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#fail_index_key_too_long AdvancedCluster#fail_index_key_too_long}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.javascriptEnabled">JavascriptEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#javascript_enabled AdvancedCluster#javascript_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.minimumEnabledTlsProtocol">MinimumEnabledTlsProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#minimum_enabled_tls_protocol AdvancedCluster#minimum_enabled_tls_protocol}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.noTableScan">NoTableScan</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#no_table_scan AdvancedCluster#no_table_scan}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.oplogMinRetentionHours">OplogMinRetentionHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#oplog_min_retention_hours AdvancedCluster#oplog_min_retention_hours}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.oplogSizeMb">OplogSizeMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#oplog_size_mb AdvancedCluster#oplog_size_mb}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.sampleRefreshIntervalBiConnector">SampleRefreshIntervalBiConnector</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#sample_refresh_interval_bi_connector AdvancedCluster#sample_refresh_interval_bi_connector}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.sampleSizeBiConnector">SampleSizeBiConnector</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#sample_size_bi_connector AdvancedCluster#sample_size_bi_connector}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.transactionLifetimeLimitSeconds">TransactionLifetimeLimitSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#transaction_lifetime_limit_seconds AdvancedCluster#transaction_lifetime_limit_seconds}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.defaultReadConcern">DefaultReadConcern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#default_read_concern AdvancedCluster#default_read_concern}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.defaultWriteConcern">DefaultWriteConcern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#default_write_concern AdvancedCluster#default_write_concern}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.failIndexKeyTooLong">FailIndexKeyTooLong</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#fail_index_key_too_long AdvancedCluster#fail_index_key_too_long}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.javascriptEnabled">JavascriptEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#javascript_enabled AdvancedCluster#javascript_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.minimumEnabledTlsProtocol">MinimumEnabledTlsProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#minimum_enabled_tls_protocol AdvancedCluster#minimum_enabled_tls_protocol}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.noTableScan">NoTableScan</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#no_table_scan AdvancedCluster#no_table_scan}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.oplogMinRetentionHours">OplogMinRetentionHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#oplog_min_retention_hours AdvancedCluster#oplog_min_retention_hours}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.oplogSizeMb">OplogSizeMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#oplog_size_mb AdvancedCluster#oplog_size_mb}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.sampleRefreshIntervalBiConnector">SampleRefreshIntervalBiConnector</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#sample_refresh_interval_bi_connector AdvancedCluster#sample_refresh_interval_bi_connector}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.sampleSizeBiConnector">SampleSizeBiConnector</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#sample_size_bi_connector AdvancedCluster#sample_size_bi_connector}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.property.transactionLifetimeLimitSeconds">TransactionLifetimeLimitSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#transaction_lifetime_limit_seconds AdvancedCluster#transaction_lifetime_limit_seconds}. |
 
 ---
 
@@ -1243,7 +1243,7 @@ DefaultReadConcern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#default_read_concern AdvancedCluster#default_read_concern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#default_read_concern AdvancedCluster#default_read_concern}.
 
 ---
 
@@ -1255,7 +1255,7 @@ DefaultWriteConcern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#default_write_concern AdvancedCluster#default_write_concern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#default_write_concern AdvancedCluster#default_write_concern}.
 
 ---
 
@@ -1267,7 +1267,7 @@ FailIndexKeyTooLong interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#fail_index_key_too_long AdvancedCluster#fail_index_key_too_long}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#fail_index_key_too_long AdvancedCluster#fail_index_key_too_long}.
 
 ---
 
@@ -1279,7 +1279,7 @@ JavascriptEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#javascript_enabled AdvancedCluster#javascript_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#javascript_enabled AdvancedCluster#javascript_enabled}.
 
 ---
 
@@ -1291,7 +1291,7 @@ MinimumEnabledTlsProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#minimum_enabled_tls_protocol AdvancedCluster#minimum_enabled_tls_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#minimum_enabled_tls_protocol AdvancedCluster#minimum_enabled_tls_protocol}.
 
 ---
 
@@ -1303,7 +1303,7 @@ NoTableScan interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#no_table_scan AdvancedCluster#no_table_scan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#no_table_scan AdvancedCluster#no_table_scan}.
 
 ---
 
@@ -1315,7 +1315,7 @@ OplogMinRetentionHours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#oplog_min_retention_hours AdvancedCluster#oplog_min_retention_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#oplog_min_retention_hours AdvancedCluster#oplog_min_retention_hours}.
 
 ---
 
@@ -1327,7 +1327,7 @@ OplogSizeMb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#oplog_size_mb AdvancedCluster#oplog_size_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#oplog_size_mb AdvancedCluster#oplog_size_mb}.
 
 ---
 
@@ -1339,7 +1339,7 @@ SampleRefreshIntervalBiConnector *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#sample_refresh_interval_bi_connector AdvancedCluster#sample_refresh_interval_bi_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#sample_refresh_interval_bi_connector AdvancedCluster#sample_refresh_interval_bi_connector}.
 
 ---
 
@@ -1351,7 +1351,7 @@ SampleSizeBiConnector *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#sample_size_bi_connector AdvancedCluster#sample_size_bi_connector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#sample_size_bi_connector AdvancedCluster#sample_size_bi_connector}.
 
 ---
 
@@ -1363,53 +1363,7 @@ TransactionLifetimeLimitSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#transaction_lifetime_limit_seconds AdvancedCluster#transaction_lifetime_limit_seconds}.
-
----
-
-### AdvancedClusterBiConnector <a name="AdvancedClusterBiConnector" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
-
-&advancedcluster.AdvancedClusterBiConnector {
-	Enabled: interface{},
-	ReadPreference: *string,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector.property.readPreference">ReadPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}. |
-
----
-
-##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector.property.enabled"></a>
-
-```go
-Enabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}.
-
----
-
-##### `ReadPreference`<sup>Optional</sup> <a name="ReadPreference" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector.property.readPreference"></a>
-
-```go
-ReadPreference *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#transaction_lifetime_limit_seconds AdvancedCluster#transaction_lifetime_limit_seconds}.
 
 ---
 
@@ -1418,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterBiConnectorConfig {
 	Enabled: interface{},
@@ -1430,8 +1384,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig.property.readPreference">ReadPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig.property.readPreference">ReadPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}. |
 
 ---
 
@@ -1443,7 +1397,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}.
 
 ---
 
@@ -1455,7 +1409,7 @@ ReadPreference *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}.
 
 ---
 
@@ -1464,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConfig {
 	Connection: interface{},
@@ -1478,10 +1432,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 	Name: *string,
 	ProjectId: *string,
 	ReplicationSpecs: interface{},
-	AdvancedConfiguration: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterAdvancedConfiguration,
+	AdvancedConfiguration: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration,
 	BackupEnabled: interface{},
-	BiConnector: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterBiConnector,
-	BiConnectorConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterBiConnectorConfig,
+	BiConnectorConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig,
 	DiskSizeGb: *f64,
 	EncryptionAtRestProvider: *string,
 	Id: *string,
@@ -1491,8 +1444,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 	PitEnabled: interface{},
 	RetainBackupsEnabled: interface{},
 	RootCertType: *string,
+	Tags: interface{},
 	TerminationProtectionEnabled: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterTimeouts,
 	VersionReleaseSystem: *string,
 }
 ```
@@ -1508,26 +1462,26 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.clusterType">ClusterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#cluster_type AdvancedCluster#cluster_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#name AdvancedCluster#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#project_id AdvancedCluster#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.clusterType">ClusterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#cluster_type AdvancedCluster#cluster_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#name AdvancedCluster#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#project_id AdvancedCluster#project_id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.replicationSpecs">ReplicationSpecs</a></code> | <code>interface{}</code> | replication_specs block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.advancedConfiguration">AdvancedConfiguration</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration">AdvancedClusterAdvancedConfiguration</a></code> | advanced_configuration block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.backupEnabled">BackupEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#backup_enabled AdvancedCluster#backup_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.biConnector">BiConnector</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a></code> | bi_connector block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.backupEnabled">BackupEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#backup_enabled AdvancedCluster#backup_enabled}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.biConnectorConfig">BiConnectorConfig</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig">AdvancedClusterBiConnectorConfig</a></code> | bi_connector_config block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_size_gb AdvancedCluster#disk_size_gb}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.encryptionAtRestProvider">EncryptionAtRestProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#encryption_at_rest_provider AdvancedCluster#encryption_at_rest_provider}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#id AdvancedCluster#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_size_gb AdvancedCluster#disk_size_gb}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.encryptionAtRestProvider">EncryptionAtRestProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#encryption_at_rest_provider AdvancedCluster#encryption_at_rest_provider}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#id AdvancedCluster#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.labels">Labels</a></code> | <code>interface{}</code> | labels block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.mongoDbMajorVersion">MongoDbMajorVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#mongo_db_major_version AdvancedCluster#mongo_db_major_version}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.paused">Paused</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#paused AdvancedCluster#paused}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.pitEnabled">PitEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#pit_enabled AdvancedCluster#pit_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.mongoDbMajorVersion">MongoDbMajorVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#mongo_db_major_version AdvancedCluster#mongo_db_major_version}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.paused">Paused</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#paused AdvancedCluster#paused}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.pitEnabled">PitEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#pit_enabled AdvancedCluster#pit_enabled}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.retainBackupsEnabled">RetainBackupsEnabled</a></code> | <code>interface{}</code> | Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.rootCertType">RootCertType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#root_cert_type AdvancedCluster#root_cert_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.terminationProtectionEnabled">TerminationProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#termination_protection_enabled AdvancedCluster#termination_protection_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.rootCertType">RootCertType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#root_cert_type AdvancedCluster#root_cert_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.tags">Tags</a></code> | <code>interface{}</code> | tags block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.terminationProtectionEnabled">TerminationProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#termination_protection_enabled AdvancedCluster#termination_protection_enabled}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts">AdvancedClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.versionReleaseSystem">VersionReleaseSystem</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#version_release_system AdvancedCluster#version_release_system}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.versionReleaseSystem">VersionReleaseSystem</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#version_release_system AdvancedCluster#version_release_system}. |
 
 ---
 
@@ -1609,7 +1563,7 @@ ClusterType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#cluster_type AdvancedCluster#cluster_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#cluster_type AdvancedCluster#cluster_type}.
 
 ---
 
@@ -1621,7 +1575,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#name AdvancedCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#name AdvancedCluster#name}.
 
 ---
 
@@ -1633,7 +1587,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#project_id AdvancedCluster#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#project_id AdvancedCluster#project_id}.
 
 ---
 
@@ -1647,7 +1601,7 @@ ReplicationSpecs interface{}
 
 replication_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#replication_specs AdvancedCluster#replication_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#replication_specs AdvancedCluster#replication_specs}
 
 ---
 
@@ -1661,7 +1615,7 @@ AdvancedConfiguration AdvancedClusterAdvancedConfiguration
 
 advanced_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#advanced_configuration AdvancedCluster#advanced_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#advanced_configuration AdvancedCluster#advanced_configuration}
 
 ---
 
@@ -1673,21 +1627,7 @@ BackupEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#backup_enabled AdvancedCluster#backup_enabled}.
-
----
-
-##### `BiConnector`<sup>Optional</sup> <a name="BiConnector" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.biConnector"></a>
-
-```go
-BiConnector AdvancedClusterBiConnector
-```
-
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a>
-
-bi_connector block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#bi_connector AdvancedCluster#bi_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#backup_enabled AdvancedCluster#backup_enabled}.
 
 ---
 
@@ -1701,7 +1641,7 @@ BiConnectorConfig AdvancedClusterBiConnectorConfig
 
 bi_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#bi_connector_config AdvancedCluster#bi_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#bi_connector_config AdvancedCluster#bi_connector_config}
 
 ---
 
@@ -1713,7 +1653,7 @@ DiskSizeGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_size_gb AdvancedCluster#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_size_gb AdvancedCluster#disk_size_gb}.
 
 ---
 
@@ -1725,7 +1665,7 @@ EncryptionAtRestProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#encryption_at_rest_provider AdvancedCluster#encryption_at_rest_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#encryption_at_rest_provider AdvancedCluster#encryption_at_rest_provider}.
 
 ---
 
@@ -1737,7 +1677,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#id AdvancedCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#id AdvancedCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1754,7 +1694,7 @@ Labels interface{}
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#labels AdvancedCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#labels AdvancedCluster#labels}
 
 ---
 
@@ -1766,7 +1706,7 @@ MongoDbMajorVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#mongo_db_major_version AdvancedCluster#mongo_db_major_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#mongo_db_major_version AdvancedCluster#mongo_db_major_version}.
 
 ---
 
@@ -1778,7 +1718,7 @@ Paused interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#paused AdvancedCluster#paused}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#paused AdvancedCluster#paused}.
 
 ---
 
@@ -1790,7 +1730,7 @@ PitEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#pit_enabled AdvancedCluster#pit_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#pit_enabled AdvancedCluster#pit_enabled}.
 
 ---
 
@@ -1804,7 +1744,7 @@ RetainBackupsEnabled interface{}
 
 Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#retain_backups_enabled AdvancedCluster#retain_backups_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#retain_backups_enabled AdvancedCluster#retain_backups_enabled}
 
 ---
 
@@ -1816,7 +1756,21 @@ RootCertType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#root_cert_type AdvancedCluster#root_cert_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#root_cert_type AdvancedCluster#root_cert_type}.
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.property.tags"></a>
+
+```go
+Tags interface{}
+```
+
+- *Type:* interface{}
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#tags AdvancedCluster#tags}
 
 ---
 
@@ -1828,7 +1782,7 @@ TerminationProtectionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#termination_protection_enabled AdvancedCluster#termination_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#termination_protection_enabled AdvancedCluster#termination_protection_enabled}.
 
 ---
 
@@ -1842,7 +1796,7 @@ Timeouts AdvancedClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#timeouts AdvancedCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#timeouts AdvancedCluster#timeouts}
 
 ---
 
@@ -1854,7 +1808,7 @@ VersionReleaseSystem *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#version_release_system AdvancedCluster#version_release_system}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#version_release_system AdvancedCluster#version_release_system}.
 
 ---
 
@@ -1863,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConnectionStrings {
 
@@ -1876,7 +1830,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConnectionStringsPrivateEndpoint {
 
@@ -1889,7 +1843,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConnectionStringsPrivateEndpointEndpoints {
 
@@ -1902,7 +1856,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterLabels {
 	Key: *string,
@@ -1914,8 +1868,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabels.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#key AdvancedCluster#key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabels.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#value AdvancedCluster#value}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabels.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#key AdvancedCluster#key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabels.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#value AdvancedCluster#value}. |
 
 ---
 
@@ -1927,7 +1881,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#key AdvancedCluster#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#key AdvancedCluster#key}.
 
 ---
 
@@ -1939,7 +1893,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#value AdvancedCluster#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#value AdvancedCluster#value}.
 
 ---
 
@@ -1948,7 +1902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecs {
 	RegionConfigs: interface{},
@@ -1962,8 +1916,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.property.regionConfigs">RegionConfigs</a></code> | <code>interface{}</code> | region_configs block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.property.numShards">NumShards</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#num_shards AdvancedCluster#num_shards}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.property.zoneName">ZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#zone_name AdvancedCluster#zone_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.property.numShards">NumShards</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#num_shards AdvancedCluster#num_shards}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.property.zoneName">ZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#zone_name AdvancedCluster#zone_name}. |
 
 ---
 
@@ -1977,7 +1931,7 @@ RegionConfigs interface{}
 
 region_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#region_configs AdvancedCluster#region_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#region_configs AdvancedCluster#region_configs}
 
 ---
 
@@ -1989,7 +1943,7 @@ NumShards *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#num_shards AdvancedCluster#num_shards}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#num_shards AdvancedCluster#num_shards}.
 
 ---
 
@@ -2001,7 +1955,7 @@ ZoneName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#zone_name AdvancedCluster#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#zone_name AdvancedCluster#zone_name}.
 
 ---
 
@@ -2010,18 +1964,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigs {
 	Priority: *f64,
 	ProviderName: *string,
 	RegionName: *string,
-	AnalyticsAutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling,
-	AnalyticsSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs,
-	AutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling,
+	AnalyticsAutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling,
+	AnalyticsSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs,
+	AutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling,
 	BackingProviderName: *string,
-	ElectableSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs,
-	ReadOnlySpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs,
+	ElectableSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs,
+	ReadOnlySpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs,
 }
 ```
 
@@ -2029,13 +1983,13 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#priority AdvancedCluster#priority}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#provider_name AdvancedCluster#provider_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#region_name AdvancedCluster#region_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#priority AdvancedCluster#priority}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#provider_name AdvancedCluster#provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#region_name AdvancedCluster#region_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.analyticsAutoScaling">AnalyticsAutoScaling</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling">AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling</a></code> | analytics_auto_scaling block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.analyticsSpecs">AnalyticsSpecs</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs">AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs</a></code> | analytics_specs block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.autoScaling">AutoScaling</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling">AdvancedClusterReplicationSpecsRegionConfigsAutoScaling</a></code> | auto_scaling block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.backingProviderName">BackingProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#backing_provider_name AdvancedCluster#backing_provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.backingProviderName">BackingProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#backing_provider_name AdvancedCluster#backing_provider_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.electableSpecs">ElectableSpecs</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs">AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs</a></code> | electable_specs block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.property.readOnlySpecs">ReadOnlySpecs</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs">AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs</a></code> | read_only_specs block. |
 
@@ -2049,7 +2003,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#priority AdvancedCluster#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#priority AdvancedCluster#priority}.
 
 ---
 
@@ -2061,7 +2015,7 @@ ProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#provider_name AdvancedCluster#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#provider_name AdvancedCluster#provider_name}.
 
 ---
 
@@ -2073,7 +2027,7 @@ RegionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#region_name AdvancedCluster#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#region_name AdvancedCluster#region_name}.
 
 ---
 
@@ -2087,7 +2041,7 @@ AnalyticsAutoScaling AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoSc
 
 analytics_auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#analytics_auto_scaling AdvancedCluster#analytics_auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#analytics_auto_scaling AdvancedCluster#analytics_auto_scaling}
 
 ---
 
@@ -2101,7 +2055,7 @@ AnalyticsSpecs AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs
 
 analytics_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#analytics_specs AdvancedCluster#analytics_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#analytics_specs AdvancedCluster#analytics_specs}
 
 ---
 
@@ -2115,7 +2069,7 @@ AutoScaling AdvancedClusterReplicationSpecsRegionConfigsAutoScaling
 
 auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#auto_scaling AdvancedCluster#auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#auto_scaling AdvancedCluster#auto_scaling}
 
 ---
 
@@ -2127,7 +2081,7 @@ BackingProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#backing_provider_name AdvancedCluster#backing_provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#backing_provider_name AdvancedCluster#backing_provider_name}.
 
 ---
 
@@ -2141,7 +2095,7 @@ ElectableSpecs AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs
 
 electable_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#electable_specs AdvancedCluster#electable_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#electable_specs AdvancedCluster#electable_specs}
 
 ---
 
@@ -2155,7 +2109,7 @@ ReadOnlySpecs AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs
 
 read_only_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_only_specs AdvancedCluster#read_only_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#read_only_specs AdvancedCluster#read_only_specs}
 
 ---
 
@@ -2164,7 +2118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling {
 	ComputeEnabled: interface{},
@@ -2179,11 +2133,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeEnabled">ComputeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeMaxInstanceSize">ComputeMaxInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeMinInstanceSize">ComputeMinInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeScaleDownEnabled">ComputeScaleDownEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.diskGbEnabled">DiskGbEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeEnabled">ComputeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeMaxInstanceSize">ComputeMaxInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeMinInstanceSize">ComputeMinInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.computeScaleDownEnabled">ComputeScaleDownEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.property.diskGbEnabled">DiskGbEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}. |
 
 ---
 
@@ -2195,7 +2149,7 @@ ComputeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}.
 
 ---
 
@@ -2207,7 +2161,7 @@ ComputeMaxInstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}.
 
 ---
 
@@ -2219,7 +2173,7 @@ ComputeMinInstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}.
 
 ---
 
@@ -2231,7 +2185,7 @@ ComputeScaleDownEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}.
 
 ---
 
@@ -2243,7 +2197,7 @@ DiskGbEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}.
 
 ---
 
@@ -2252,7 +2206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs {
 	InstanceSize: *string,
@@ -2266,10 +2220,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.instanceSize">InstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.diskIops">DiskIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.instanceSize">InstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.diskIops">DiskIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}. |
 
 ---
 
@@ -2281,7 +2235,7 @@ InstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}.
 
 ---
 
@@ -2293,7 +2247,7 @@ DiskIops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}.
 
 ---
 
@@ -2305,7 +2259,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}.
 
 ---
 
@@ -2317,7 +2271,7 @@ NodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}.
 
 ---
 
@@ -2326,7 +2280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling {
 	ComputeEnabled: interface{},
@@ -2341,11 +2295,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeEnabled">ComputeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeMaxInstanceSize">ComputeMaxInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeMinInstanceSize">ComputeMinInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeScaleDownEnabled">ComputeScaleDownEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.diskGbEnabled">DiskGbEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeEnabled">ComputeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeMaxInstanceSize">ComputeMaxInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeMinInstanceSize">ComputeMinInstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.computeScaleDownEnabled">ComputeScaleDownEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.property.diskGbEnabled">DiskGbEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}. |
 
 ---
 
@@ -2357,7 +2311,7 @@ ComputeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}.
 
 ---
 
@@ -2369,7 +2323,7 @@ ComputeMaxInstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}.
 
 ---
 
@@ -2381,7 +2335,7 @@ ComputeMinInstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}.
 
 ---
 
@@ -2393,7 +2347,7 @@ ComputeScaleDownEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}.
 
 ---
 
@@ -2405,7 +2359,7 @@ DiskGbEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}.
 
 ---
 
@@ -2414,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs {
 	InstanceSize: *string,
@@ -2428,10 +2382,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.instanceSize">InstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.diskIops">DiskIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.instanceSize">InstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.diskIops">DiskIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}. |
 
 ---
 
@@ -2443,7 +2397,7 @@ InstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}.
 
 ---
 
@@ -2455,7 +2409,7 @@ DiskIops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}.
 
 ---
 
@@ -2467,7 +2421,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}.
 
 ---
 
@@ -2479,7 +2433,7 @@ NodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}.
 
 ---
 
@@ -2488,7 +2442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs {
 	InstanceSize: *string,
@@ -2502,10 +2456,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.instanceSize">InstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.diskIops">DiskIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.instanceSize">InstanceSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.diskIops">DiskIops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}. |
 
 ---
 
@@ -2517,7 +2471,7 @@ InstanceSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}.
 
 ---
 
@@ -2529,7 +2483,7 @@ DiskIops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}.
 
 ---
 
@@ -2541,7 +2495,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}.
 
 ---
 
@@ -2553,7 +2507,53 @@ NodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}.
+
+---
+
+### AdvancedClusterTags <a name="AdvancedClusterTags" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
+
+&advancedcluster.AdvancedClusterTags {
+	Key: *string,
+	Value: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#key AdvancedCluster#key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#value AdvancedCluster#value}. |
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags.property.key"></a>
+
+```go
+Key *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#key AdvancedCluster#key}.
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags.property.value"></a>
+
+```go
+Value *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#value AdvancedCluster#value}.
 
 ---
 
@@ -2562,7 +2562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterTimeouts {
 	Create: *string,
@@ -2575,9 +2575,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advanced
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#create AdvancedCluster#create}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#delete AdvancedCluster#delete}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#update AdvancedCluster#update}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#create AdvancedCluster#create}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#delete AdvancedCluster#delete}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#update AdvancedCluster#update}. |
 
 ---
 
@@ -2589,7 +2589,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#create AdvancedCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#create AdvancedCluster#create}.
 
 ---
 
@@ -2601,7 +2601,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#delete AdvancedCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#delete AdvancedCluster#delete}.
 
 ---
 
@@ -2613,7 +2613,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#update AdvancedCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#update AdvancedCluster#update}.
 
 ---
 
@@ -2624,7 +2624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterAdvancedConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterAdvancedConfigurationOutputReference
 ```
@@ -3192,7 +3192,7 @@ func InternalValue() AdvancedClusterAdvancedConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterBiConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterBiConnectorConfigOutputReference
 ```
@@ -3494,319 +3494,12 @@ func InternalValue() AdvancedClusterBiConnectorConfig
 ---
 
 
-### AdvancedClusterBiConnectorOutputReference <a name="AdvancedClusterBiConnectorOutputReference" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
-
-advancedcluster.NewAdvancedClusterBiConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterBiConnectorOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resetReadPreference">ResetReadPreference</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resetEnabled"></a>
-
-```go
-func ResetEnabled()
-```
-
-##### `ResetReadPreference` <a name="ResetReadPreference" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.resetReadPreference"></a>
-
-```go
-func ResetReadPreference()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.readPreferenceInput">ReadPreferenceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.readPreference">ReadPreference</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.enabledInput"></a>
-
-```go
-func EnabledInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `ReadPreferenceInput`<sup>Optional</sup> <a name="ReadPreferenceInput" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.readPreferenceInput"></a>
-
-```go
-func ReadPreferenceInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.enabled"></a>
-
-```go
-func Enabled() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `ReadPreference`<sup>Required</sup> <a name="ReadPreference" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.readPreference"></a>
-
-```go
-func ReadPreference() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() AdvancedClusterBiConnector
-```
-
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnector">AdvancedClusterBiConnector</a>
-
----
-
-
 ### AdvancedClusterConnectionStringsList <a name="AdvancedClusterConnectionStringsList" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterConnectionStringsList
 ```
@@ -3938,7 +3631,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterConnectionStringsOutputReference
 ```
@@ -4161,8 +3854,6 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.awsPrivateLink">AwsPrivateLink</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.awsPrivateLinkSrv">AwsPrivateLinkSrv</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.private">Private</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.privateEndpoint">PrivateEndpoint</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointList">AdvancedClusterConnectionStringsPrivateEndpointList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.privateSrv">PrivateSrv</a></code> | <code>*string</code> | *No description.* |
@@ -4193,26 +3884,6 @@ func Fqn() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `AwsPrivateLink`<sup>Required</sup> <a name="AwsPrivateLink" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.awsPrivateLink"></a>
-
-```go
-func AwsPrivateLink() StringMap
-```
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
-
----
-
-##### `AwsPrivateLinkSrv`<sup>Required</sup> <a name="AwsPrivateLinkSrv" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.property.awsPrivateLinkSrv"></a>
-
-```go
-func AwsPrivateLinkSrv() StringMap
-```
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
 
 ---
 
@@ -4282,7 +3953,7 @@ func InternalValue() AdvancedClusterConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterConnectionStringsPrivateEndpointEndpointsList
 ```
@@ -4414,7 +4085,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterConnectionStringsPrivateEndpointEndpointsOutputReference
 ```
@@ -4714,7 +4385,7 @@ func InternalValue() AdvancedClusterConnectionStringsPrivateEndpointEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterConnectionStringsPrivateEndpointList
 ```
@@ -4846,7 +4517,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterConnectionStringsPrivateEndpointOutputReference
 ```
@@ -5168,7 +4839,7 @@ func InternalValue() AdvancedClusterConnectionStringsPrivateEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterLabelsList
 ```
@@ -5311,7 +4982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterLabelsOutputReference
 ```
@@ -5636,7 +5307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterReplicationSpecsList
 ```
@@ -5779,7 +5450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterReplicationSpecsOutputReference
 ```
@@ -6161,7 +5832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOutputReference
 ```
@@ -6555,7 +6226,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoSc
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference
 ```
@@ -6913,7 +6584,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputReference
 ```
@@ -7307,7 +6978,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference
 ```
@@ -7665,7 +7336,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterReplicationSpecsRegionConfigsList
 ```
@@ -7808,7 +7479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterReplicationSpecsRegionConfigsOutputReference
 ```
@@ -8380,7 +8051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference
 ```
@@ -8733,12 +8404,466 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs
 ---
 
 
+### AdvancedClusterTagsList <a name="AdvancedClusterTagsList" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
+
+advancedcluster.NewAdvancedClusterTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterTagsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.get"></a>
+
+```go
+func Get(index *f64) AdvancedClusterTagsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AdvancedClusterTagsOutputReference <a name="AdvancedClusterTagsOutputReference" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
+
+advancedcluster.NewAdvancedClusterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterTagsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.keyInput"></a>
+
+```go
+func KeyInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.valueInput"></a>
+
+```go
+func ValueInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.key"></a>
+
+```go
+func Key() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.value"></a>
+
+```go
+func Value() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### AdvancedClusterTimeoutsOutputReference <a name="AdvancedClusterTimeoutsOutputReference" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterTimeoutsOutputReference
 ```

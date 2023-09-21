@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAlertConfigurationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#id DataMongodbatlasAlertConfigurations#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#output_type DataMongodbatlasAlertConfigurations#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#output_type DataMongodbatlasAlertConfigurations#output_type}
   */
   readonly outputType?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#project_id DataMongodbatlasAlertConfigurations#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#project_id DataMongodbatlasAlertConfigurations#project_id}
   */
   readonly projectId: string;
   /**
   * list_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#list_options DataMongodbatlasAlertConfigurations#list_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#list_options DataMongodbatlasAlertConfigurations#list_options}
   */
   readonly listOptions?: DataMongodbatlasAlertConfigurationsListOptions[] | cdktf.IResolvable;
 }
@@ -515,6 +503,14 @@ export class DataMongodbatlasAlertConfigurationsResultsThresholdConfigList exten
   }
 }
 export interface DataMongodbatlasAlertConfigurationsResults {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#alert_configuration_id DataMongodbatlasAlertConfigurations#alert_configuration_id}
+  */
+  readonly alertConfigurationId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#project_id DataMongodbatlasAlertConfigurations#project_id}
+  */
+  readonly projectId: string;
 }
 
 export function dataMongodbatlasAlertConfigurationsResultsToTerraform(struct?: DataMongodbatlasAlertConfigurationsResults): any {
@@ -523,6 +519,8 @@ export function dataMongodbatlasAlertConfigurationsResultsToTerraform(struct?: D
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    alert_configuration_id: cdktf.stringToTerraform(struct!.alertConfigurationId),
+    project_id: cdktf.stringToTerraform(struct!.projectId),
   }
 }
 
@@ -542,21 +540,41 @@ export class DataMongodbatlasAlertConfigurationsResultsOutputReference extends c
   public get internalValue(): DataMongodbatlasAlertConfigurationsResults | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._alertConfigurationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alertConfigurationId = this._alertConfigurationId;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataMongodbatlasAlertConfigurationsResults | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._alertConfigurationId = undefined;
+      this._projectId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._alertConfigurationId = value.alertConfigurationId;
+      this._projectId = value.projectId;
     }
   }
 
-  // alert_configuration_id - computed: true, optional: false, required: false
+  // alert_configuration_id - computed: true, optional: false, required: true
+  private _alertConfigurationId?: string; 
   public get alertConfigurationId() {
     return this.getStringAttribute('alert_configuration_id');
+  }
+  public set alertConfigurationId(value: string) {
+    this._alertConfigurationId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertConfigurationIdInput() {
+    return this._alertConfigurationId;
   }
 
   // created - computed: true, optional: false, required: false
@@ -574,16 +592,15 @@ export class DataMongodbatlasAlertConfigurationsResultsOutputReference extends c
     return this.getStringAttribute('event_type');
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // matcher - computed: true, optional: false, required: false
   private _matcher = new DataMongodbatlasAlertConfigurationsResultsMatcherList(this, "matcher", false);
   public get matcher() {
     return this._matcher;
-  }
-
-  // metric_threshold - computed: true, optional: false, required: false
-  private _metricThreshold = new cdktf.StringMap(this, "metric_threshold");
-  public get metricThreshold() {
-    return this._metricThreshold;
   }
 
   // metric_threshold_config - computed: true, optional: false, required: false
@@ -604,15 +621,17 @@ export class DataMongodbatlasAlertConfigurationsResultsOutputReference extends c
     return this._output;
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: false, required: true
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-
-  // threshold - computed: true, optional: false, required: false
-  private _threshold = new cdktf.StringMap(this, "threshold");
-  public get threshold() {
-    return this._threshold;
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // threshold_config - computed: true, optional: false, required: false
@@ -628,6 +647,7 @@ export class DataMongodbatlasAlertConfigurationsResultsOutputReference extends c
 }
 
 export class DataMongodbatlasAlertConfigurationsResultsList extends cdktf.ComplexList {
+  public internalValue? : DataMongodbatlasAlertConfigurationsResults[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -647,15 +667,15 @@ export class DataMongodbatlasAlertConfigurationsResultsList extends cdktf.Comple
 }
 export interface DataMongodbatlasAlertConfigurationsListOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#include_count DataMongodbatlasAlertConfigurations#include_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#include_count DataMongodbatlasAlertConfigurations#include_count}
   */
   readonly includeCount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#items_per_page DataMongodbatlasAlertConfigurations#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#items_per_page DataMongodbatlasAlertConfigurations#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations#page_num DataMongodbatlasAlertConfigurations#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations#page_num DataMongodbatlasAlertConfigurations#page_num}
   */
   readonly pageNum?: number;
 }
@@ -798,7 +818,7 @@ export class DataMongodbatlasAlertConfigurationsListOptionsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations mongodbatlas_alert_configurations}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations}
 */
 export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSource {
 
@@ -812,7 +832,7 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -823,7 +843,7 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_alert_configurations',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -834,7 +854,6 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._outputType = config.outputType;
     this._projectId = config.projectId;
     this._listOptions.internalValue = config.listOptions;
@@ -844,20 +863,9 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // output_type - computed: false, optional: true, required: false
@@ -922,7 +930,6 @@ export class DataMongodbatlasAlertConfigurations extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       output_type: cdktf.listMapper(cdktf.stringToTerraform, false)(this._outputType),
       project_id: cdktf.stringToTerraform(this._projectId),
       list_options: cdktf.listMapper(dataMongodbatlasAlertConfigurationsListOptionsToTerraform, true)(this._listOptions.internalValue),

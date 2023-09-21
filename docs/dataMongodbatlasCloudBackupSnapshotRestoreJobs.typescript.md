@@ -1,6 +1,6 @@
 # `data_mongodbatlas_cloud_backup_snapshot_restore_jobs`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_backup_snapshot_restore_jobs`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_backup_snapshot_restore_jobs`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs).
 
 # `dataMongodbatlasCloudBackupSnapshotRestoreJobs` Submodule <a name="`dataMongodbatlasCloudBackupSnapshotRestoreJobs` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_backup_snap
 
 ### DataMongodbatlasCloudBackupSnapshotRestoreJobs <a name="DataMongodbatlasCloudBackupSnapshotRestoreJobs" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobs.Initializer"></a>
 
@@ -662,11 +662,11 @@ const dataMongodbatlasCloudBackupSnapshotRestoreJobsConfig: dataMongodbatlasClou
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#cluster_name DataMongodbatlasCloudBackupSnapshotRestoreJobs#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#project_id DataMongodbatlasCloudBackupSnapshotRestoreJobs#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#id DataMongodbatlasCloudBackupSnapshotRestoreJobs#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.itemsPerPage">itemsPerPage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#items_per_page DataMongodbatlasCloudBackupSnapshotRestoreJobs#items_per_page}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.pageNum">pageNum</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#page_num DataMongodbatlasCloudBackupSnapshotRestoreJobs#page_num}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#cluster_name DataMongodbatlasCloudBackupSnapshotRestoreJobs#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#project_id DataMongodbatlasCloudBackupSnapshotRestoreJobs#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#id DataMongodbatlasCloudBackupSnapshotRestoreJobs#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.itemsPerPage">itemsPerPage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#items_per_page DataMongodbatlasCloudBackupSnapshotRestoreJobs#items_per_page}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotRestoreJobs.DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig.property.pageNum">pageNum</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#page_num DataMongodbatlasCloudBackupSnapshotRestoreJobs#page_num}. |
 
 ---
 
@@ -748,7 +748,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#cluster_name DataMongodbatlasCloudBackupSnapshotRestoreJobs#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#cluster_name DataMongodbatlasCloudBackupSnapshotRestoreJobs#cluster_name}.
 
 ---
 
@@ -760,7 +760,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#project_id DataMongodbatlasCloudBackupSnapshotRestoreJobs#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#project_id DataMongodbatlasCloudBackupSnapshotRestoreJobs#project_id}.
 
 ---
 
@@ -772,7 +772,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#id DataMongodbatlasCloudBackupSnapshotRestoreJobs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#id DataMongodbatlasCloudBackupSnapshotRestoreJobs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -787,7 +787,7 @@ public readonly itemsPerPage: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#items_per_page DataMongodbatlasCloudBackupSnapshotRestoreJobs#items_per_page}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#items_per_page DataMongodbatlasCloudBackupSnapshotRestoreJobs#items_per_page}.
 
 ---
 
@@ -799,7 +799,7 @@ public readonly pageNum: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cloud_backup_snapshot_restore_jobs#page_num DataMongodbatlasCloudBackupSnapshotRestoreJobs#page_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_jobs#page_num DataMongodbatlasCloudBackupSnapshotRestoreJobs#page_num}.
 
 ---
 

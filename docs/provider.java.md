@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs).
+Refer to the Terraform Registory for docs: [`mongodbatlas`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-mongodbatlas.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas`](https://registry.ter
 
 ### MongodbatlasProvider <a name="MongodbatlasProvider" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs mongodbatlas}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs mongodbatlas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer"></a>
 
@@ -17,7 +17,8 @@ import com.hashicorp.cdktf.providers.mongodbatlas.provider.MongodbatlasProvider;
 
 MongodbatlasProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
-//  .assumeRole(MongodbatlasProviderAssumeRole)
+//  .assumeRole(IResolvable)
+//  .assumeRole(java.util.List<MongodbatlasProviderAssumeRole>)
 //  .awsAccessKeyId(java.lang.String)
 //  .awsSecretAccessKey(java.lang.String)
 //  .awsSessionToken(java.lang.String)
@@ -38,18 +39,18 @@ MongodbatlasProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole">assumeRole</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a></code> | assume_role block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_session_token MongodbatlasProvider#aws_session_token}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | assume_role block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | AWS API Access Key. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | AWS API Access Secret Key. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | AWS Security Token Service provided session token. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | MongoDB Atlas Base URL. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | MongoDB Atlas Base URL default to gov. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.privateKey">privateKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Private Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.publicKey">publicKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Public Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.realmBaseUrl">realmBaseUrl</a></code> | <code>java.lang.String</code> | MongoDB Realm Base URL. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#region MongodbatlasProvider#region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.secretName">secretName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#secret_name MongodbatlasProvider#secret_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.stsEndpoint">stsEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where secret is stored as part of AWS Secret Manager. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.secretName">secretName</a></code> | <code>java.lang.String</code> | Name of secret stored in AWS Secret Manager. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.stsEndpoint">stsEndpoint</a></code> | <code>java.lang.String</code> | AWS Security Token Service endpoint. Required for cross-AWS region or cross-AWS account secrets. |
 
 ---
 
@@ -77,17 +78,17 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#alias MongodbatlasProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#alias MongodbatlasProvider#alias}
 
 ---
 
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole"></a>
 
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#assume_role MongodbatlasProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#assume_role MongodbatlasProvider#assume_role}
 
 ---
 
@@ -95,7 +96,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}.
+AWS API Access Key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}
 
 ---
 
@@ -103,7 +106,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}.
+AWS API Access Secret Key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}
 
 ---
 
@@ -111,7 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_session_token MongodbatlasProvider#aws_session_token}.
+AWS Security Token Service provided session token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_session_token MongodbatlasProvider#aws_session_token}
 
 ---
 
@@ -121,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 MongoDB Atlas Base URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#base_url MongodbatlasProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#base_url MongodbatlasProvider#base_url}
 
 ---
 
@@ -131,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 MongoDB Atlas Base URL default to gov.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
 
 ---
 
@@ -141,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 MongoDB Atlas Programmatic Private Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#private_key MongodbatlasProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#private_key MongodbatlasProvider#private_key}
 
 ---
 
@@ -151,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 MongoDB Atlas Programmatic Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#public_key MongodbatlasProvider#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#public_key MongodbatlasProvider#public_key}
 
 ---
 
@@ -161,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 MongoDB Realm Base URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#realm_base_url MongodbatlasProvider#realm_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#realm_base_url MongodbatlasProvider#realm_base_url}
 
 ---
 
@@ -169,7 +176,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#region MongodbatlasProvider#region}.
+Region where secret is stored as part of AWS Secret Manager.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#region MongodbatlasProvider#region}
 
 ---
 
@@ -177,7 +186,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#secret_name MongodbatlasProvider#secret_name}.
+Name of secret stored in AWS Secret Manager.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#secret_name MongodbatlasProvider#secret_name}
 
 ---
 
@@ -185,7 +196,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}.
+AWS Security Token Service endpoint. Required for cross-AWS region or cross-AWS account secrets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}
 
 ---
 
@@ -441,7 +454,7 @@ MongodbatlasProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsAccessKeyIdInput">awsAccessKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSecretAccessKeyInput">awsSecretAccessKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSessionTokenInput">awsSessionTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -453,7 +466,7 @@ MongodbatlasProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.secretNameInput">secretNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.stsEndpointInput">stsEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRole">assumeRole</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -573,10 +586,10 @@ public java.lang.String getAliasInput();
 ##### `assumeRoleInput`<sup>Optional</sup> <a name="assumeRoleInput" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRoleInput"></a>
 
 ```java
-public MongodbatlasProviderAssumeRole getAssumeRoleInput();
+public java.lang.Object getAssumeRoleInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 ---
 
@@ -693,10 +706,10 @@ public java.lang.String getStsEndpointInput();
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRole"></a>
 
 ```java
-public MongodbatlasProviderAssumeRole getAssumeRole();
+public java.lang.Object getAssumeRole();
 ```
 
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 ---
 
@@ -839,7 +852,6 @@ import com.hashicorp.cdktf.providers.mongodbatlas.provider.MongodbatlasProviderA
 
 MongodbatlasProviderAssumeRole.builder()
 //  .duration(java.lang.String)
-//  .durationSeconds(java.lang.Number)
 //  .externalId(java.lang.String)
 //  .policy(java.lang.String)
 //  .policyArns(java.util.List<java.lang.String>)
@@ -856,7 +868,6 @@ MongodbatlasProviderAssumeRole.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.property.duration">duration</a></code> | <code>java.lang.String</code> | The duration, between 15 minutes and 12 hours, of the role session. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.property.durationSeconds">durationSeconds</a></code> | <code>java.lang.Number</code> | The duration, in seconds, of the role session. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.property.externalId">externalId</a></code> | <code>java.lang.String</code> | A unique identifier that might be required when you assume a role in another account. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.property.policy">policy</a></code> | <code>java.lang.String</code> | IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.property.policyArns">policyArns</a></code> | <code>java.util.List<java.lang.String></code> | Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. |
@@ -880,21 +891,7 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#duration MongodbatlasProvider#duration}
-
----
-
-##### `durationSeconds`<sup>Optional</sup> <a name="durationSeconds" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.property.durationSeconds"></a>
-
-```java
-public java.lang.Number getDurationSeconds();
-```
-
-- *Type:* java.lang.Number
-
-The duration, in seconds, of the role session.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#duration_seconds MongodbatlasProvider#duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#duration MongodbatlasProvider#duration}
 
 ---
 
@@ -908,7 +905,7 @@ public java.lang.String getExternalId();
 
 A unique identifier that might be required when you assume a role in another account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#external_id MongodbatlasProvider#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#external_id MongodbatlasProvider#external_id}
 
 ---
 
@@ -922,7 +919,7 @@ public java.lang.String getPolicy();
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#policy MongodbatlasProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#policy MongodbatlasProvider#policy}
 
 ---
 
@@ -936,7 +933,7 @@ public java.util.List<java.lang.String> getPolicyArns();
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#policy_arns MongodbatlasProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#policy_arns MongodbatlasProvider#policy_arns}
 
 ---
 
@@ -950,7 +947,7 @@ public java.lang.String getRoleArn();
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#role_arn MongodbatlasProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#role_arn MongodbatlasProvider#role_arn}
 
 ---
 
@@ -964,7 +961,7 @@ public java.lang.String getSessionName();
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#session_name MongodbatlasProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#session_name MongodbatlasProvider#session_name}
 
 ---
 
@@ -978,7 +975,7 @@ public java.lang.String getSourceIdentity();
 
 Source identity specified by the principal assuming the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#source_identity MongodbatlasProvider#source_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#source_identity MongodbatlasProvider#source_identity}
 
 ---
 
@@ -992,7 +989,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 Assume role session tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#tags MongodbatlasProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#tags MongodbatlasProvider#tags}
 
 ---
 
@@ -1006,7 +1003,7 @@ public java.util.List<java.lang.String> getTransitiveTagKeys();
 
 Assume role session tag keys to pass to any subsequent sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
 
 ---
 
@@ -1019,7 +1016,8 @@ import com.hashicorp.cdktf.providers.mongodbatlas.provider.MongodbatlasProviderC
 
 MongodbatlasProviderConfig.builder()
 //  .alias(java.lang.String)
-//  .assumeRole(MongodbatlasProviderAssumeRole)
+//  .assumeRole(IResolvable)
+//  .assumeRole(java.util.List<MongodbatlasProviderAssumeRole>)
 //  .awsAccessKeyId(java.lang.String)
 //  .awsSecretAccessKey(java.lang.String)
 //  .awsSessionToken(java.lang.String)
@@ -1040,18 +1038,18 @@ MongodbatlasProviderConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole">assumeRole</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a></code> | assume_role block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_session_token MongodbatlasProvider#aws_session_token}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | assume_role block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | AWS API Access Key. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | AWS API Access Secret Key. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | AWS Security Token Service provided session token. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | MongoDB Atlas Base URL. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | MongoDB Atlas Base URL default to gov. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Private Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Public Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.realmBaseUrl">realmBaseUrl</a></code> | <code>java.lang.String</code> | MongoDB Realm Base URL. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#region MongodbatlasProvider#region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.secretName">secretName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#secret_name MongodbatlasProvider#secret_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.stsEndpoint">stsEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where secret is stored as part of AWS Secret Manager. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.secretName">secretName</a></code> | <code>java.lang.String</code> | Name of secret stored in AWS Secret Manager. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.stsEndpoint">stsEndpoint</a></code> | <code>java.lang.String</code> | AWS Security Token Service endpoint. Required for cross-AWS region or cross-AWS account secrets. |
 
 ---
 
@@ -1065,21 +1063,21 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#alias MongodbatlasProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#alias MongodbatlasProvider#alias}
 
 ---
 
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole"></a>
 
 ```java
-public MongodbatlasProviderAssumeRole getAssumeRole();
+public java.lang.Object getAssumeRole();
 ```
 
-- *Type:* <a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#assume_role MongodbatlasProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#assume_role MongodbatlasProvider#assume_role}
 
 ---
 
@@ -1091,7 +1089,9 @@ public java.lang.String getAwsAccessKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}.
+AWS API Access Key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}
 
 ---
 
@@ -1103,7 +1103,9 @@ public java.lang.String getAwsSecretAccessKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}.
+AWS API Access Secret Key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}
 
 ---
 
@@ -1115,7 +1117,9 @@ public java.lang.String getAwsSessionToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#aws_session_token MongodbatlasProvider#aws_session_token}.
+AWS Security Token Service provided session token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#aws_session_token MongodbatlasProvider#aws_session_token}
 
 ---
 
@@ -1129,7 +1133,7 @@ public java.lang.String getBaseUrl();
 
 MongoDB Atlas Base URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#base_url MongodbatlasProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#base_url MongodbatlasProvider#base_url}
 
 ---
 
@@ -1143,7 +1147,7 @@ public java.lang.Object getIsMongodbgovCloud();
 
 MongoDB Atlas Base URL default to gov.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
 
 ---
 
@@ -1157,7 +1161,7 @@ public java.lang.String getPrivateKey();
 
 MongoDB Atlas Programmatic Private Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#private_key MongodbatlasProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#private_key MongodbatlasProvider#private_key}
 
 ---
 
@@ -1171,7 +1175,7 @@ public java.lang.String getPublicKey();
 
 MongoDB Atlas Programmatic Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#public_key MongodbatlasProvider#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#public_key MongodbatlasProvider#public_key}
 
 ---
 
@@ -1185,7 +1189,7 @@ public java.lang.String getRealmBaseUrl();
 
 MongoDB Realm Base URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#realm_base_url MongodbatlasProvider#realm_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#realm_base_url MongodbatlasProvider#realm_base_url}
 
 ---
 
@@ -1197,7 +1201,9 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#region MongodbatlasProvider#region}.
+Region where secret is stored as part of AWS Secret Manager.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#region MongodbatlasProvider#region}
 
 ---
 
@@ -1209,7 +1215,9 @@ public java.lang.String getSecretName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#secret_name MongodbatlasProvider#secret_name}.
+Name of secret stored in AWS Secret Manager.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#secret_name MongodbatlasProvider#secret_name}
 
 ---
 
@@ -1221,7 +1229,9 @@ public java.lang.String getStsEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}.
+AWS Security Token Service endpoint. Required for cross-AWS region or cross-AWS account secrets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}
 
 ---
 

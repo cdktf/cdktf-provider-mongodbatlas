@@ -1,6 +1,6 @@
 # `mongodbatlas_database_user`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_database_user`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user).
+Refer to the Terraform Registory for docs: [`mongodbatlas_database_user`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user).
 
 # `databaseUser` Submodule <a name="`databaseUser` Submodule" id="@cdktf/provider-mongodbatlas.databaseUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_database_user`](https:
 
 ### DatabaseUser <a name="DatabaseUser" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user mongodbatlas_database_user}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user mongodbatlas_database_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.Initializer"></a>
 
@@ -73,14 +73,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.putLabels">putLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.putRoles">putRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.putScopes">putScopes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetAuthDatabaseName">resetAuthDatabaseName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetAwsIamType">resetAwsIamType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetDatabaseName">resetDatabaseName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetLdapAuthType">resetLdapAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetOidcAuthType">resetOidcAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetScopes">resetScopes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetX509Type">resetX509Type</a></code> | *No description.* |
 
@@ -306,28 +304,10 @@ public putScopes(value: IResolvable | DatabaseUserScopes[]): void
 
 ---
 
-##### `resetAuthDatabaseName` <a name="resetAuthDatabaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetAuthDatabaseName"></a>
-
-```typescript
-public resetAuthDatabaseName(): void
-```
-
 ##### `resetAwsIamType` <a name="resetAwsIamType" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetAwsIamType"></a>
 
 ```typescript
 public resetAwsIamType(): void
-```
-
-##### `resetDatabaseName` <a name="resetDatabaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetDatabaseName"></a>
-
-```typescript
-public resetDatabaseName(): void
-```
-
-##### `resetId` <a name="resetId" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetId"></a>
-
-```typescript
-public resetId(): void
 ```
 
 ##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetLabels"></a>
@@ -352,6 +332,12 @@ public resetOidcAuthType(): void
 
 ```typescript
 public resetPassword(): void
+```
+
+##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetRoles"></a>
+
+```typescript
+public resetRoles(): void
 ```
 
 ##### `resetScopes` <a name="resetScopes" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.resetScopes"></a>
@@ -454,13 +440,12 @@ databaseUser.DatabaseUser.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.labels">labels</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabelsList">DatabaseUserLabelsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.roles">roles</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesList">DatabaseUserRolesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.scopes">scopes</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopesList">DatabaseUserScopesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.authDatabaseNameInput">authDatabaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.awsIamTypeInput">awsIamTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.labelsInput">labelsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels">DatabaseUserLabels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.ldapAuthTypeInput">ldapAuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.oidcAuthTypeInput">oidcAuthTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -472,8 +457,6 @@ databaseUser.DatabaseUser.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.x509TypeInput">x509TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.authDatabaseName">authDatabaseName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.awsIamType">awsIamType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.ldapAuthType">ldapAuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.oidcAuthType">oidcAuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.password">password</a></code> | <code>string</code> | *No description.* |
@@ -625,6 +608,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.labels"></a>
 
 ```typescript
@@ -669,26 +662,6 @@ public readonly authDatabaseNameInput: string;
 
 ```typescript
 public readonly awsIamTypeInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `databaseNameInput`<sup>Optional</sup> <a name="databaseNameInput" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.databaseNameInput"></a>
-
-```typescript
-public readonly databaseNameInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -805,26 +778,6 @@ public readonly awsIamType: string;
 
 ---
 
-##### `databaseName`<sup>Required</sup> <a name="databaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.databaseName"></a>
-
-```typescript
-public readonly databaseName: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
----
-
 ##### `ldapAuthType`<sup>Required</sup> <a name="ldapAuthType" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.property.ldapAuthType"></a>
 
 ```typescript
@@ -926,19 +879,17 @@ const databaseUserConfig: databaseUser.DatabaseUserConfig = { ... }
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#project_id DatabaseUser#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.roles">roles</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles">DatabaseUserRoles</a>[]</code> | roles block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#username DatabaseUser#username}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.authDatabaseName">authDatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.awsIamType">awsIamType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#database_name DatabaseUser#database_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#id DatabaseUser#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.authDatabaseName">authDatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#project_id DatabaseUser#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#username DatabaseUser#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.awsIamType">awsIamType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.labels">labels</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels">DatabaseUserLabels</a>[]</code> | labels block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.ldapAuthType">ldapAuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.oidcAuthType">oidcAuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#password DatabaseUser#password}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.ldapAuthType">ldapAuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.oidcAuthType">oidcAuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#password DatabaseUser#password}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.roles">roles</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles">DatabaseUserRoles</a>[]</code> | roles block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.scopes">scopes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopes">DatabaseUserScopes</a>[]</code> | scopes block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.x509Type">x509Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#x509_type DatabaseUser#x509_type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.x509Type">x509Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#x509_type DatabaseUser#x509_type}. |
 
 ---
 
@@ -1012,6 +963,18 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `authDatabaseName`<sup>Required</sup> <a name="authDatabaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.authDatabaseName"></a>
+
+```typescript
+public readonly authDatabaseName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}.
+
+---
+
 ##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.projectId"></a>
 
 ```typescript
@@ -1020,21 +983,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#project_id DatabaseUser#project_id}.
-
----
-
-##### `roles`<sup>Required</sup> <a name="roles" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.roles"></a>
-
-```typescript
-public readonly roles: IResolvable | DatabaseUserRoles[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles">DatabaseUserRoles</a>[]
-
-roles block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#roles DatabaseUser#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#project_id DatabaseUser#project_id}.
 
 ---
 
@@ -1046,19 +995,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#username DatabaseUser#username}.
-
----
-
-##### `authDatabaseName`<sup>Optional</sup> <a name="authDatabaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.authDatabaseName"></a>
-
-```typescript
-public readonly authDatabaseName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#username DatabaseUser#username}.
 
 ---
 
@@ -1070,34 +1007,7 @@ public readonly awsIamType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}.
-
----
-
-##### `databaseName`<sup>Optional</sup> <a name="databaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.databaseName"></a>
-
-```typescript
-public readonly databaseName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#database_name DatabaseUser#database_name}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#id DatabaseUser#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}.
 
 ---
 
@@ -1111,7 +1021,7 @@ public readonly labels: IResolvable | DatabaseUserLabels[];
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#labels DatabaseUser#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#labels DatabaseUser#labels}
 
 ---
 
@@ -1123,7 +1033,7 @@ public readonly ldapAuthType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}.
 
 ---
 
@@ -1135,7 +1045,7 @@ public readonly oidcAuthType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}.
 
 ---
 
@@ -1147,7 +1057,21 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#password DatabaseUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#password DatabaseUser#password}.
+
+---
+
+##### `roles`<sup>Optional</sup> <a name="roles" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.property.roles"></a>
+
+```typescript
+public readonly roles: IResolvable | DatabaseUserRoles[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles">DatabaseUserRoles</a>[]
+
+roles block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#roles DatabaseUser#roles}
 
 ---
 
@@ -1161,7 +1085,7 @@ public readonly scopes: IResolvable | DatabaseUserScopes[];
 
 scopes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#scopes DatabaseUser#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#scopes DatabaseUser#scopes}
 
 ---
 
@@ -1173,7 +1097,7 @@ public readonly x509Type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#x509_type DatabaseUser#x509_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#x509_type DatabaseUser#x509_type}.
 
 ---
 
@@ -1191,8 +1115,8 @@ const databaseUserLabels: databaseUser.DatabaseUserLabels = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#key DatabaseUser#key}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#value DatabaseUser#value}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#key DatabaseUser#key}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#value DatabaseUser#value}. |
 
 ---
 
@@ -1204,7 +1128,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#key DatabaseUser#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#key DatabaseUser#key}.
 
 ---
 
@@ -1216,7 +1140,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#value DatabaseUser#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#value DatabaseUser#value}.
 
 ---
 
@@ -1234,9 +1158,33 @@ const databaseUserRoles: databaseUser.DatabaseUserRoles = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.collectionName">collectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#collection_name DatabaseUser#collection_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#database_name DatabaseUser#database_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.roleName">roleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#role_name DatabaseUser#role_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#database_name DatabaseUser#database_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.roleName">roleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#role_name DatabaseUser#role_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.collectionName">collectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#collection_name DatabaseUser#collection_name}. |
+
+---
+
+##### `databaseName`<sup>Required</sup> <a name="databaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.databaseName"></a>
+
+```typescript
+public readonly databaseName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#database_name DatabaseUser#database_name}.
+
+---
+
+##### `roleName`<sup>Required</sup> <a name="roleName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.roleName"></a>
+
+```typescript
+public readonly roleName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#role_name DatabaseUser#role_name}.
 
 ---
 
@@ -1248,31 +1196,7 @@ public readonly collectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#collection_name DatabaseUser#collection_name}.
-
----
-
-##### `databaseName`<sup>Optional</sup> <a name="databaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.databaseName"></a>
-
-```typescript
-public readonly databaseName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#database_name DatabaseUser#database_name}.
-
----
-
-##### `roleName`<sup>Optional</sup> <a name="roleName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.property.roleName"></a>
-
-```typescript
-public readonly roleName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#role_name DatabaseUser#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#collection_name DatabaseUser#collection_name}.
 
 ---
 
@@ -1290,8 +1214,8 @@ const databaseUserScopes: databaseUser.DatabaseUserScopes = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopes.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#name DatabaseUser#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopes.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#type DatabaseUser#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopes.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#name DatabaseUser#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopes.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#type DatabaseUser#type}. |
 
 ---
 
@@ -1303,7 +1227,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#name DatabaseUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#name DatabaseUser#name}.
 
 ---
 
@@ -1315,7 +1239,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user#type DatabaseUser#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user#type DatabaseUser#type}.
 
 ---
 
@@ -2001,8 +1925,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.resetCollectionName">resetCollectionName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.resetDatabaseName">resetDatabaseName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.resetRoleName">resetRoleName</a></code> | *No description.* |
 
 ---
 
@@ -2160,18 +2082,6 @@ Returns a reversible string representation.
 
 ```typescript
 public resetCollectionName(): void
-```
-
-##### `resetDatabaseName` <a name="resetDatabaseName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.resetDatabaseName"></a>
-
-```typescript
-public resetDatabaseName(): void
-```
-
-##### `resetRoleName` <a name="resetRoleName" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.resetRoleName"></a>
-
-```typescript
-public resetRoleName(): void
 ```
 
 

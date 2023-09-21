@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,100 +8,100 @@ import * as cdktf from 'cdktf';
 
 export interface AdvancedClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#backup_enabled AdvancedCluster#backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#backup_enabled AdvancedCluster#backup_enabled}
   */
   readonly backupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#cluster_type AdvancedCluster#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#cluster_type AdvancedCluster#cluster_type}
   */
   readonly clusterType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_size_gb AdvancedCluster#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_size_gb AdvancedCluster#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#encryption_at_rest_provider AdvancedCluster#encryption_at_rest_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#encryption_at_rest_provider AdvancedCluster#encryption_at_rest_provider}
   */
   readonly encryptionAtRestProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#id AdvancedCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#id AdvancedCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#mongo_db_major_version AdvancedCluster#mongo_db_major_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#mongo_db_major_version AdvancedCluster#mongo_db_major_version}
   */
   readonly mongoDbMajorVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#name AdvancedCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#name AdvancedCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#paused AdvancedCluster#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#paused AdvancedCluster#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#pit_enabled AdvancedCluster#pit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#pit_enabled AdvancedCluster#pit_enabled}
   */
   readonly pitEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#project_id AdvancedCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#project_id AdvancedCluster#project_id}
   */
   readonly projectId: string;
   /**
   * Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#retain_backups_enabled AdvancedCluster#retain_backups_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#retain_backups_enabled AdvancedCluster#retain_backups_enabled}
   */
   readonly retainBackupsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#root_cert_type AdvancedCluster#root_cert_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#root_cert_type AdvancedCluster#root_cert_type}
   */
   readonly rootCertType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#termination_protection_enabled AdvancedCluster#termination_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#termination_protection_enabled AdvancedCluster#termination_protection_enabled}
   */
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#version_release_system AdvancedCluster#version_release_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#version_release_system AdvancedCluster#version_release_system}
   */
   readonly versionReleaseSystem?: string;
   /**
   * advanced_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#advanced_configuration AdvancedCluster#advanced_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#advanced_configuration AdvancedCluster#advanced_configuration}
   */
   readonly advancedConfiguration?: AdvancedClusterAdvancedConfiguration;
   /**
-  * bi_connector block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#bi_connector AdvancedCluster#bi_connector}
-  */
-  readonly biConnector?: AdvancedClusterBiConnector;
-  /**
   * bi_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#bi_connector_config AdvancedCluster#bi_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#bi_connector_config AdvancedCluster#bi_connector_config}
   */
   readonly biConnectorConfig?: AdvancedClusterBiConnectorConfig;
   /**
   * labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#labels AdvancedCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#labels AdvancedCluster#labels}
   */
   readonly labels?: AdvancedClusterLabels[] | cdktf.IResolvable;
   /**
   * replication_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#replication_specs AdvancedCluster#replication_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#replication_specs AdvancedCluster#replication_specs}
   */
   readonly replicationSpecs: AdvancedClusterReplicationSpecs[] | cdktf.IResolvable;
   /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#tags AdvancedCluster#tags}
+  */
+  readonly tags?: AdvancedClusterTags[] | cdktf.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#timeouts AdvancedCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#timeouts AdvancedCluster#timeouts}
   */
   readonly timeouts?: AdvancedClusterTimeouts;
 }
@@ -309,18 +304,6 @@ export class AdvancedClusterConnectionStringsOutputReference extends cdktf.Compl
     }
   }
 
-  // aws_private_link - computed: true, optional: false, required: false
-  private _awsPrivateLink = new cdktf.StringMap(this, "aws_private_link");
-  public get awsPrivateLink() {
-    return this._awsPrivateLink;
-  }
-
-  // aws_private_link_srv - computed: true, optional: false, required: false
-  private _awsPrivateLinkSrv = new cdktf.StringMap(this, "aws_private_link_srv");
-  public get awsPrivateLinkSrv() {
-    return this._awsPrivateLinkSrv;
-  }
-
   // private - computed: true, optional: false, required: false
   public get private() {
     return this.getStringAttribute('private');
@@ -368,47 +351,47 @@ export class AdvancedClusterConnectionStringsList extends cdktf.ComplexList {
 }
 export interface AdvancedClusterAdvancedConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#default_read_concern AdvancedCluster#default_read_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#default_read_concern AdvancedCluster#default_read_concern}
   */
   readonly defaultReadConcern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#default_write_concern AdvancedCluster#default_write_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#default_write_concern AdvancedCluster#default_write_concern}
   */
   readonly defaultWriteConcern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#fail_index_key_too_long AdvancedCluster#fail_index_key_too_long}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#fail_index_key_too_long AdvancedCluster#fail_index_key_too_long}
   */
   readonly failIndexKeyTooLong?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#javascript_enabled AdvancedCluster#javascript_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#javascript_enabled AdvancedCluster#javascript_enabled}
   */
   readonly javascriptEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#minimum_enabled_tls_protocol AdvancedCluster#minimum_enabled_tls_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#minimum_enabled_tls_protocol AdvancedCluster#minimum_enabled_tls_protocol}
   */
   readonly minimumEnabledTlsProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#no_table_scan AdvancedCluster#no_table_scan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#no_table_scan AdvancedCluster#no_table_scan}
   */
   readonly noTableScan?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#oplog_min_retention_hours AdvancedCluster#oplog_min_retention_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#oplog_min_retention_hours AdvancedCluster#oplog_min_retention_hours}
   */
   readonly oplogMinRetentionHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#oplog_size_mb AdvancedCluster#oplog_size_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#oplog_size_mb AdvancedCluster#oplog_size_mb}
   */
   readonly oplogSizeMb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#sample_refresh_interval_bi_connector AdvancedCluster#sample_refresh_interval_bi_connector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#sample_refresh_interval_bi_connector AdvancedCluster#sample_refresh_interval_bi_connector}
   */
   readonly sampleRefreshIntervalBiConnector?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#sample_size_bi_connector AdvancedCluster#sample_size_bi_connector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#sample_size_bi_connector AdvancedCluster#sample_size_bi_connector}
   */
   readonly sampleSizeBiConnector?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#transaction_lifetime_limit_seconds AdvancedCluster#transaction_lifetime_limit_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#transaction_lifetime_limit_seconds AdvancedCluster#transaction_lifetime_limit_seconds}
   */
   readonly transactionLifetimeLimitSeconds?: number;
 }
@@ -701,105 +684,13 @@ export class AdvancedClusterAdvancedConfigurationOutputReference extends cdktf.C
     return this._transactionLifetimeLimitSeconds;
   }
 }
-export interface AdvancedClusterBiConnector {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}
-  */
-  readonly enabled?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}
-  */
-  readonly readPreference?: string;
-}
-
-export function advancedClusterBiConnectorToTerraform(struct?: AdvancedClusterBiConnectorOutputReference | AdvancedClusterBiConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    read_preference: cdktf.stringToTerraform(struct!.readPreference),
-  }
-}
-
-export class AdvancedClusterBiConnectorOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): AdvancedClusterBiConnector | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
-    if (this._readPreference !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.readPreference = this._readPreference;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AdvancedClusterBiConnector | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._enabled = undefined;
-      this._readPreference = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._enabled = value.enabled;
-      this._readPreference = value.readPreference;
-    }
-  }
-
-  // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktf.IResolvable) {
-    this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
-  // read_preference - computed: true, optional: true, required: false
-  private _readPreference?: string; 
-  public get readPreference() {
-    return this.getStringAttribute('read_preference');
-  }
-  public set readPreference(value: string) {
-    this._readPreference = value;
-  }
-  public resetReadPreference() {
-    this._readPreference = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readPreferenceInput() {
-    return this._readPreference;
-  }
-}
 export interface AdvancedClusterBiConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#enabled AdvancedCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#read_preference AdvancedCluster#read_preference}
   */
   readonly readPreference?: string;
 }
@@ -887,11 +778,11 @@ export class AdvancedClusterBiConnectorConfigOutputReference extends cdktf.Compl
 }
 export interface AdvancedClusterLabels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#key AdvancedCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#key AdvancedCluster#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#value AdvancedCluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#value AdvancedCluster#value}
   */
   readonly value?: string;
 }
@@ -1011,23 +902,23 @@ export class AdvancedClusterLabelsList extends cdktf.ComplexList {
 }
 export interface AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}
   */
   readonly computeEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}
   */
   readonly computeMaxInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}
   */
   readonly computeMinInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}
   */
   readonly computeScaleDownEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}
   */
   readonly diskGbEnabled?: boolean | cdktf.IResolvable;
 }
@@ -1184,19 +1075,19 @@ export class AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOut
 }
 export interface AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}
   */
   readonly diskIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}
   */
   readonly instanceSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}
   */
   readonly nodeCount?: number;
 }
@@ -1327,23 +1218,23 @@ export class AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputRef
 }
 export interface AdvancedClusterReplicationSpecsRegionConfigsAutoScaling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_enabled AdvancedCluster#compute_enabled}
   */
   readonly computeEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_max_instance_size AdvancedCluster#compute_max_instance_size}
   */
   readonly computeMaxInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_min_instance_size AdvancedCluster#compute_min_instance_size}
   */
   readonly computeMinInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#compute_scale_down_enabled AdvancedCluster#compute_scale_down_enabled}
   */
   readonly computeScaleDownEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_gb_enabled AdvancedCluster#disk_gb_enabled}
   */
   readonly diskGbEnabled?: boolean | cdktf.IResolvable;
 }
@@ -1500,19 +1391,19 @@ export class AdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputRefere
 }
 export interface AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}
   */
   readonly diskIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}
   */
   readonly instanceSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}
   */
   readonly nodeCount?: number;
 }
@@ -1643,19 +1534,19 @@ export class AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputRef
 }
 export interface AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#disk_iops AdvancedCluster#disk_iops}
   */
   readonly diskIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#ebs_volume_type AdvancedCluster#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#instance_size AdvancedCluster#instance_size}
   */
   readonly instanceSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#node_count AdvancedCluster#node_count}
   */
   readonly nodeCount?: number;
 }
@@ -1786,49 +1677,49 @@ export class AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputRefe
 }
 export interface AdvancedClusterReplicationSpecsRegionConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#backing_provider_name AdvancedCluster#backing_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#backing_provider_name AdvancedCluster#backing_provider_name}
   */
   readonly backingProviderName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#priority AdvancedCluster#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#priority AdvancedCluster#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#provider_name AdvancedCluster#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#provider_name AdvancedCluster#provider_name}
   */
   readonly providerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#region_name AdvancedCluster#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#region_name AdvancedCluster#region_name}
   */
   readonly regionName: string;
   /**
   * analytics_auto_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#analytics_auto_scaling AdvancedCluster#analytics_auto_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#analytics_auto_scaling AdvancedCluster#analytics_auto_scaling}
   */
   readonly analyticsAutoScaling?: AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling;
   /**
   * analytics_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#analytics_specs AdvancedCluster#analytics_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#analytics_specs AdvancedCluster#analytics_specs}
   */
   readonly analyticsSpecs?: AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs;
   /**
   * auto_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#auto_scaling AdvancedCluster#auto_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#auto_scaling AdvancedCluster#auto_scaling}
   */
   readonly autoScaling?: AdvancedClusterReplicationSpecsRegionConfigsAutoScaling;
   /**
   * electable_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#electable_specs AdvancedCluster#electable_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#electable_specs AdvancedCluster#electable_specs}
   */
   readonly electableSpecs?: AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs;
   /**
   * read_only_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#read_only_specs AdvancedCluster#read_only_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#read_only_specs AdvancedCluster#read_only_specs}
   */
   readonly readOnlySpecs?: AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs;
 }
@@ -2100,17 +1991,17 @@ export class AdvancedClusterReplicationSpecsRegionConfigsList extends cdktf.Comp
 }
 export interface AdvancedClusterReplicationSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#num_shards AdvancedCluster#num_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#num_shards AdvancedCluster#num_shards}
   */
   readonly numShards?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#zone_name AdvancedCluster#zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#zone_name AdvancedCluster#zone_name}
   */
   readonly zoneName?: string;
   /**
   * region_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#region_configs AdvancedCluster#region_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#region_configs AdvancedCluster#region_configs}
   */
   readonly regionConfigs: AdvancedClusterReplicationSpecsRegionConfigs[] | cdktf.IResolvable;
 }
@@ -2259,17 +2150,135 @@ export class AdvancedClusterReplicationSpecsList extends cdktf.ComplexList {
     return new AdvancedClusterReplicationSpecsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AdvancedClusterTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#key AdvancedCluster#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#value AdvancedCluster#value}
+  */
+  readonly value: string;
+}
+
+export function advancedClusterTagsToTerraform(struct?: AdvancedClusterTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class AdvancedClusterTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AdvancedClusterTags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AdvancedClusterTags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AdvancedClusterTagsList extends cdktf.ComplexList {
+  public internalValue? : AdvancedClusterTags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AdvancedClusterTagsOutputReference {
+    return new AdvancedClusterTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AdvancedClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#create AdvancedCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#create AdvancedCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#delete AdvancedCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#delete AdvancedCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster#update AdvancedCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster#update AdvancedCluster#update}
   */
   readonly update?: string;
 }
@@ -2390,7 +2399,7 @@ export class AdvancedClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}
 */
 export class AdvancedCluster extends cdktf.TerraformResource {
 
@@ -2404,7 +2413,7 @@ export class AdvancedCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2415,7 +2424,7 @@ export class AdvancedCluster extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_advanced_cluster',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.11.1',
+        providerVersion: '1.12.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -2441,10 +2450,10 @@ export class AdvancedCluster extends cdktf.TerraformResource {
     this._terminationProtectionEnabled = config.terminationProtectionEnabled;
     this._versionReleaseSystem = config.versionReleaseSystem;
     this._advancedConfiguration.internalValue = config.advancedConfiguration;
-    this._biConnector.internalValue = config.biConnector;
     this._biConnectorConfig.internalValue = config.biConnectorConfig;
     this._labels.internalValue = config.labels;
     this._replicationSpecs.internalValue = config.replicationSpecs;
+    this._tags.internalValue = config.tags;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -2709,22 +2718,6 @@ export class AdvancedCluster extends cdktf.TerraformResource {
     return this._advancedConfiguration.internalValue;
   }
 
-  // bi_connector - computed: false, optional: true, required: false
-  private _biConnector = new AdvancedClusterBiConnectorOutputReference(this, "bi_connector");
-  public get biConnector() {
-    return this._biConnector;
-  }
-  public putBiConnector(value: AdvancedClusterBiConnector) {
-    this._biConnector.internalValue = value;
-  }
-  public resetBiConnector() {
-    this._biConnector.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get biConnectorInput() {
-    return this._biConnector.internalValue;
-  }
-
   // bi_connector_config - computed: false, optional: true, required: false
   private _biConnectorConfig = new AdvancedClusterBiConnectorConfigOutputReference(this, "bi_connector_config");
   public get biConnectorConfig() {
@@ -2770,6 +2763,22 @@ export class AdvancedCluster extends cdktf.TerraformResource {
     return this._replicationSpecs.internalValue;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags = new AdvancedClusterTagsList(this, "tags", true);
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: AdvancedClusterTags[] | cdktf.IResolvable) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new AdvancedClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -2807,10 +2816,10 @@ export class AdvancedCluster extends cdktf.TerraformResource {
       termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
       version_release_system: cdktf.stringToTerraform(this._versionReleaseSystem),
       advanced_configuration: advancedClusterAdvancedConfigurationToTerraform(this._advancedConfiguration.internalValue),
-      bi_connector: advancedClusterBiConnectorToTerraform(this._biConnector.internalValue),
       bi_connector_config: advancedClusterBiConnectorConfigToTerraform(this._biConnectorConfig.internalValue),
       labels: cdktf.listMapper(advancedClusterLabelsToTerraform, true)(this._labels.internalValue),
       replication_specs: cdktf.listMapper(advancedClusterReplicationSpecsToTerraform, true)(this._replicationSpecs.internalValue),
+      tags: cdktf.listMapper(advancedClusterTagsToTerraform, true)(this._tags.internalValue),
       timeouts: advancedClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

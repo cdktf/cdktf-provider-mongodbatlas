@@ -29,6 +29,8 @@ The following submodules are available:
 - [dataMongodbatlasAlertConfigurations](./dataMongodbatlasAlertConfigurations.csharp.md)
 - [dataMongodbatlasApiKey](./dataMongodbatlasApiKey.csharp.md)
 - [dataMongodbatlasApiKeys](./dataMongodbatlasApiKeys.csharp.md)
+- [dataMongodbatlasAtlasUser](./dataMongodbatlasAtlasUser.csharp.md)
+- [dataMongodbatlasAtlasUsers](./dataMongodbatlasAtlasUsers.csharp.md)
 - [dataMongodbatlasAuditing](./dataMongodbatlasAuditing.csharp.md)
 - [dataMongodbatlasBackupCompliancePolicy](./dataMongodbatlasBackupCompliancePolicy.csharp.md)
 - [dataMongodbatlasCloudBackupSchedule](./dataMongodbatlasCloudBackupSchedule.csharp.md)
