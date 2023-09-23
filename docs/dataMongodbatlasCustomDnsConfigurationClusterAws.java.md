@@ -1,6 +1,6 @@
 # `data_mongodbatlas_custom_dns_configuration_cluster_aws`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_dns_configuration_cluster_aws`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_dns_configuration_cluster_aws`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws).
 
 # `dataMongodbatlasCustomDnsConfigurationClusterAws` Submodule <a name="`dataMongodbatlasCustomDnsConfigurationClusterAws` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_dns_config
 
 ### DataMongodbatlasCustomDnsConfigurationClusterAws <a name="DataMongodbatlasCustomDnsConfigurationClusterAws" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataMongodbatlasCustomDnsConfigurationClusterAws.Builder.create(Construct scope,
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -662,8 +662,8 @@ DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}. |
 
 ---
 
@@ -745,7 +745,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}.
 
 ---
 
@@ -757,7 +757,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

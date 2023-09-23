@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasDatabaseUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user#auth_database_name DataMongodbatlasDatabaseUser#auth_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/database_user#auth_database_name DataMongodbatlasDatabaseUser#auth_database_name}
   */
   readonly authDatabaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user#project_id DataMongodbatlasDatabaseUser#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/database_user#project_id DataMongodbatlasDatabaseUser#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user#username DataMongodbatlasDatabaseUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/database_user#username DataMongodbatlasDatabaseUser#username}
   */
   readonly username: string;
 }
@@ -239,7 +239,7 @@ export class DataMongodbatlasDatabaseUserScopesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user mongodbatlas_database_user}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/database_user mongodbatlas_database_user}
 */
 export class DataMongodbatlasDatabaseUser extends cdktf.TerraformDataSource {
 
@@ -253,7 +253,7 @@ export class DataMongodbatlasDatabaseUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user mongodbatlas_database_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/database_user mongodbatlas_database_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -264,7 +264,7 @@ export class DataMongodbatlasDatabaseUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_database_user',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.0',
+        providerVersion: '1.12.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

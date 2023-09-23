@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAccessListApiKeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys#api_key_id DataMongodbatlasAccessListApiKeys#api_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys#api_key_id DataMongodbatlasAccessListApiKeys#api_key_id}
   */
   readonly apiKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys#id DataMongodbatlasAccessListApiKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys#id DataMongodbatlasAccessListApiKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys#items_per_page DataMongodbatlasAccessListApiKeys#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys#items_per_page DataMongodbatlasAccessListApiKeys#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys#org_id DataMongodbatlasAccessListApiKeys#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys#org_id DataMongodbatlasAccessListApiKeys#org_id}
   */
   readonly orgId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys#page_num DataMongodbatlasAccessListApiKeys#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys#page_num DataMongodbatlasAccessListApiKeys#page_num}
   */
   readonly pageNum?: number;
 }
@@ -127,7 +127,7 @@ export class DataMongodbatlasAccessListApiKeysResultsList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys mongodbatlas_access_list_api_keys}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys mongodbatlas_access_list_api_keys}
 */
 export class DataMongodbatlasAccessListApiKeys extends cdktf.TerraformDataSource {
 
@@ -141,7 +141,7 @@ export class DataMongodbatlasAccessListApiKeys extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/access_list_api_keys mongodbatlas_access_list_api_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/access_list_api_keys mongodbatlas_access_list_api_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,7 +152,7 @@ export class DataMongodbatlasAccessListApiKeys extends cdktf.TerraformDataSource
       terraformResourceType: 'mongodbatlas_access_list_api_keys',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.0',
+        providerVersion: '1.12.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
