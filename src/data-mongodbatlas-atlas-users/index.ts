@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAtlasUsersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users#items_per_page DataMongodbatlasAtlasUsers#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users#items_per_page DataMongodbatlasAtlasUsers#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users#org_id DataMongodbatlasAtlasUsers#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users#org_id DataMongodbatlasAtlasUsers#org_id}
   */
   readonly orgId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users#page_num DataMongodbatlasAtlasUsers#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users#page_num DataMongodbatlasAtlasUsers#page_num}
   */
   readonly pageNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users#project_id DataMongodbatlasAtlasUsers#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users#project_id DataMongodbatlasAtlasUsers#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users#team_id DataMongodbatlasAtlasUsers#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users#team_id DataMongodbatlasAtlasUsers#team_id}
   */
   readonly teamId?: string;
 }
@@ -304,7 +299,7 @@ export class DataMongodbatlasAtlasUsersResultsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users mongodbatlas_atlas_users}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users mongodbatlas_atlas_users}
 */
 export class DataMongodbatlasAtlasUsers extends cdktf.TerraformDataSource {
 
@@ -318,7 +313,7 @@ export class DataMongodbatlasAtlasUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/atlas_users mongodbatlas_atlas_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/atlas_users mongodbatlas_atlas_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -329,7 +324,7 @@ export class DataMongodbatlasAtlasUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_atlas_users',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.0',
+        providerVersion: '1.12.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
