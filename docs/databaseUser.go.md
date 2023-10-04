@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUser(scope Construct, id *string, config DatabaseUserConfig) DatabaseUser
 ```
@@ -365,7 +365,7 @@ func ResetX509Type()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.DatabaseUser_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.DatabaseUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ databaseuser.DatabaseUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.DatabaseUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 &databaseuser.DatabaseUserConfig {
 	Connection: interface{},
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 &databaseuser.DatabaseUserLabels {
 	Key: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 &databaseuser.DatabaseUserRoles {
 	DatabaseName: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 &databaseuser.DatabaseUserScopes {
 	Name: *string,
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUserLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseUserLabelsList
 ```
@@ -1422,7 +1422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUserLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseUserLabelsOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUserRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseUserRolesList
 ```
@@ -1890,7 +1890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUserRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseUserRolesOutputReference
 ```
@@ -2230,7 +2230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUserScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseUserScopesList
 ```
@@ -2373,7 +2373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.databaseUser.DatabaseUserScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/databaseuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/databaseuser"
 
 databaseuser.NewDatabaseUserScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseUserScopesOutputReference
 ```
