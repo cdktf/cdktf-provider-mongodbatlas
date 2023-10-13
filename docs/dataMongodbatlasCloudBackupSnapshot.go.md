@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 datamongodbatlascloudbackupsnapshot.NewDataMongodbatlasCloudBackupSnapshot(scope Construct, id *string, config DataMongodbatlasCloudBackupSnapshotConfig) DataMongodbatlasCloudBackupSnapshot
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 datamongodbatlascloudbackupsnapshot.DataMongodbatlasCloudBackupSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 datamongodbatlascloudbackupsnapshot.DataMongodbatlasCloudBackupSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datamongodbatlascloudbackupsnapshot.DataMongodbatlasCloudBackupSnapshot_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 datamongodbatlascloudbackupsnapshot.DataMongodbatlasCloudBackupSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 &datamongodbatlascloudbackupsnapshot.DataMongodbatlasCloudBackupSnapshotConfig {
 	Connection: interface{},
@@ -892,7 +892,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshotMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 &datamongodbatlascloudbackupsnapshot.DataMongodbatlasCloudBackupSnapshotMembers {
 
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshotMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 datamongodbatlascloudbackupsnapshot.NewDataMongodbatlasCloudBackupSnapshotMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasCloudBackupSnapshotMembersList
 ```
@@ -1039,7 +1039,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshot.DataMongodbatlasCloudBackupSnapshotMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlascloudbackupsnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshot"
 
 datamongodbatlascloudbackupsnapshot.NewDataMongodbatlasCloudBackupSnapshotMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasCloudBackupSnapshotMembersOutputReference
 ```
