@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRole(scope Construct, id *string, config CustomDbRoleConfig) CustomDbRole
 ```
@@ -379,7 +379,7 @@ func ResetInheritedRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ customdbrole.CustomDbRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ customdbrole.CustomDbRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -778,7 +778,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleActions {
 	Action: *string,
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleActionsResources {
 	Cluster: interface{},
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleConfig {
 	Connection: interface{},
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleInheritedRoles {
 	DatabaseName: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDbRoleActionsList
 ```
@@ -1256,7 +1256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDbRoleActionsOutputReference
 ```
@@ -1580,7 +1580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDbRoleActionsResourcesList
 ```
@@ -1723,7 +1723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDbRoleActionsResourcesOutputReference
 ```
@@ -2077,7 +2077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleInheritedRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDbRoleInheritedRolesList
 ```
@@ -2220,7 +2220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleInheritedRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDbRoleInheritedRolesOutputReference
 ```
