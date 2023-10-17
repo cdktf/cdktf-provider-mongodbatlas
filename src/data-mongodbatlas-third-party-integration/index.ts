@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/third_party_integration
 // generated from terraform resource schema
 
@@ -60,6 +55,20 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "mongodbatlas_third_party_integration";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataMongodbatlasThirdPartyIntegration resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataMongodbatlasThirdPartyIntegration to import
+  * @param importFromId The id of the existing DataMongodbatlasThirdPartyIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/third_party_integration#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataMongodbatlasThirdPartyIntegration to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_third_party_integration", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

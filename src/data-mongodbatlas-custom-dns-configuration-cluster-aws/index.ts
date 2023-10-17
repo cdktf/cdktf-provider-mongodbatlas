@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws
 // generated from terraform resource schema
 
@@ -34,6 +29,20 @@ export class DataMongodbatlasCustomDnsConfigurationClusterAws extends cdktf.Terr
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "mongodbatlas_custom_dns_configuration_cluster_aws";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataMongodbatlasCustomDnsConfigurationClusterAws resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataMongodbatlasCustomDnsConfigurationClusterAws to import
+  * @param importFromId The id of the existing DataMongodbatlasCustomDnsConfigurationClusterAws that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataMongodbatlasCustomDnsConfigurationClusterAws to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_custom_dns_configuration_cluster_aws", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

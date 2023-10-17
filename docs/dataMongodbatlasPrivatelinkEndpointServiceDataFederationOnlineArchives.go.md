@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives(scope Construct, id *string, config DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig) DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongo
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+
+datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives to import is found.
 
 ---
 
@@ -555,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 &datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig {
 	Connection: interface{},
@@ -688,7 +733,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 &datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResults {
 
@@ -703,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsList
 ```
@@ -835,7 +880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives.DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives"
 
 datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives.NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsOutputReference
 ```

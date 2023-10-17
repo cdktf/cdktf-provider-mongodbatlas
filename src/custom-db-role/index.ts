@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/custom_db_role
 // generated from terraform resource schema
 
@@ -439,6 +434,20 @@ export class CustomDbRole extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "mongodbatlas_custom_db_role";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CustomDbRole resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CustomDbRole to import
+  * @param importFromId The id of the existing CustomDbRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/custom_db_role#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CustomDbRole to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_custom_db_role", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
