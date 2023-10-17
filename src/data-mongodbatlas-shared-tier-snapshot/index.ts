@@ -43,6 +43,20 @@ export class DataMongodbatlasSharedTierSnapshot extends cdktf.TerraformDataSourc
   // =================
   public static readonly tfResourceType = "mongodbatlas_shared_tier_snapshot";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataMongodbatlasSharedTierSnapshot resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataMongodbatlasSharedTierSnapshot to import
+  * @param importFromId The id of the existing DataMongodbatlasSharedTierSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/shared_tier_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataMongodbatlasSharedTierSnapshot to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_shared_tier_snapshot", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

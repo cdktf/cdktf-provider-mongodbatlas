@@ -324,6 +324,20 @@ export class DataMongodbatlasCustomDbRoles extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "mongodbatlas_custom_db_roles";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataMongodbatlasCustomDbRoles resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataMongodbatlasCustomDbRoles to import
+  * @param importFromId The id of the existing DataMongodbatlasCustomDbRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/custom_db_roles#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataMongodbatlasCustomDbRoles to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_custom_db_roles", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

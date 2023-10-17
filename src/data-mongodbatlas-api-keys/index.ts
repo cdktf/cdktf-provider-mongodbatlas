@@ -122,6 +122,20 @@ export class DataMongodbatlasApiKeys extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "mongodbatlas_api_keys";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataMongodbatlasApiKeys resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataMongodbatlasApiKeys to import
+  * @param importFromId The id of the existing DataMongodbatlasApiKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/api_keys#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataMongodbatlasApiKeys to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_api_keys", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

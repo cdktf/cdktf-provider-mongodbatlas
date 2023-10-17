@@ -205,6 +205,20 @@ export class DataMongodbatlasCloudProviderAccess extends cdktf.TerraformDataSour
   // =================
   public static readonly tfResourceType = "mongodbatlas_cloud_provider_access";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataMongodbatlasCloudProviderAccess resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataMongodbatlasCloudProviderAccess to import
+  * @param importFromId The id of the existing DataMongodbatlasCloudProviderAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cloud_provider_access#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataMongodbatlasCloudProviderAccess to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "mongodbatlas_cloud_provider_access", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
