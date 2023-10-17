@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.Cluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewCluster(scope Construct, id *string, config ClusterConfig) Cluster
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putAdvancedConfiguration">PutAdvancedConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putBiConnectorConfig">PutBiConnectorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.putLabels">PutLabels</a></code> | *No description.* |
@@ -173,6 +176,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-mongodbatlas.cluster.Cluster.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-mongodbatlas.cluster.Cluster.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-mongodbatlas.cluster.Cluster.getAnyMapAttribute"></a>
 
@@ -282,6 +301,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-mongodbatlas.cluster.Cluster.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-mongodbatlas.cluster.Cluster.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-mongodbatlas.cluster.Cluster.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-mongodbatlas.cluster.Cluster.interpolationForAttribute"></a>
 
 ```go
@@ -291,6 +328,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.cluster.Cluster.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-mongodbatlas.cluster.Cluster.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-mongodbatlas.cluster.Cluster.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-mongodbatlas.cluster.Cluster.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -559,13 +620,14 @@ func ResetVersionReleaseSystem()
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.cluster.Cluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Cluster resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cluster.Cluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.Cluster_IsConstruct(x interface{}) *bool
 ```
@@ -597,7 +659,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cluster.Cluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.Cluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -611,7 +673,7 @@ cluster.Cluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cluster.Cluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.Cluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -619,6 +681,50 @@ cluster.Cluster_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-mongodbatlas.cluster.Cluster.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.cluster.Cluster.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
+
+cluster.Cluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a Cluster resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-mongodbatlas.cluster.Cluster.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-mongodbatlas.cluster.Cluster.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the Cluster to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-mongodbatlas.cluster.Cluster.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing Cluster that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-mongodbatlas.cluster.Cluster.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the Cluster to import is found.
 
 ---
 
@@ -1701,7 +1807,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterAdvancedConfiguration {
 	DefaultReadConcern: *string,
@@ -1873,7 +1979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterBiConnectorConfig {
 	Enabled: interface{},
@@ -1919,7 +2025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterConfig {
 	Connection: interface{},
@@ -1933,13 +2039,13 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 	ProjectId: *string,
 	ProviderInstanceSizeName: *string,
 	ProviderName: *string,
-	AdvancedConfiguration: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.cluster.ClusterAdvancedConfiguration,
+	AdvancedConfiguration: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.cluster.ClusterAdvancedConfiguration,
 	AutoScalingComputeEnabled: interface{},
 	AutoScalingComputeScaleDownEnabled: interface{},
 	AutoScalingDiskGbEnabled: interface{},
 	BackingProviderName: *string,
 	BackupEnabled: interface{},
-	BiConnectorConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.cluster.ClusterBiConnectorConfig,
+	BiConnectorConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.cluster.ClusterBiConnectorConfig,
 	CloudBackup: interface{},
 	ClusterType: *string,
 	DiskSizeGb: *f64,
@@ -1962,7 +2068,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 	RetainBackupsEnabled: interface{},
 	Tags: interface{},
 	TerminationProtectionEnabled: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.cluster.ClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.cluster.ClusterTimeouts,
 	VersionReleaseSystem: *string,
 }
 ```
@@ -2530,7 +2636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterConnectionStrings {
 
@@ -2543,7 +2649,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterConnectionStringsPrivateEndpoint {
 
@@ -2556,7 +2662,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpointEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterConnectionStringsPrivateEndpointEndpoints {
 
@@ -2569,7 +2675,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterLabels {
 	Key: *string,
@@ -2615,7 +2721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterReplicationSpecs {
 	NumShards: *f64,
@@ -2694,7 +2800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterReplicationSpecsRegionsConfig {
 	RegionName: *string,
@@ -2782,7 +2888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterSnapshotBackupPolicy {
 
@@ -2795,7 +2901,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterSnapshotBackupPolicyPolicies {
 
@@ -2808,7 +2914,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPoliciesPolicyItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterSnapshotBackupPolicyPoliciesPolicyItem {
 
@@ -2821,7 +2927,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterTags {
 	Key: *string,
@@ -2867,7 +2973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cluster.ClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 &cluster.ClusterTimeouts {
 	Create: *string,
@@ -2929,7 +3035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterAdvancedConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterAdvancedConfigurationOutputReference
 ```
@@ -3497,7 +3603,7 @@ func InternalValue() ClusterAdvancedConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterBiConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterBiConnectorConfigOutputReference
 ```
@@ -3804,7 +3910,7 @@ func InternalValue() ClusterBiConnectorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterConnectionStringsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterConnectionStringsList
 ```
@@ -3936,7 +4042,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterConnectionStringsOutputReference
 ```
@@ -4258,7 +4364,7 @@ func InternalValue() ClusterConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpointEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterConnectionStringsPrivateEndpointEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterConnectionStringsPrivateEndpointEndpointsList
 ```
@@ -4390,7 +4496,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpointEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterConnectionStringsPrivateEndpointEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterConnectionStringsPrivateEndpointEndpointsOutputReference
 ```
@@ -4690,7 +4796,7 @@ func InternalValue() ClusterConnectionStringsPrivateEndpointEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterConnectionStringsPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterConnectionStringsPrivateEndpointList
 ```
@@ -4822,7 +4928,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterConnectionStringsPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterConnectionStringsPrivateEndpointOutputReference
 ```
@@ -5144,7 +5250,7 @@ func InternalValue() ClusterConnectionStringsPrivateEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterLabelsList
 ```
@@ -5287,7 +5393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterLabelsOutputReference
 ```
@@ -5612,7 +5718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterReplicationSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterReplicationSpecsList
 ```
@@ -5755,7 +5861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterReplicationSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterReplicationSpecsOutputReference
 ```
@@ -6144,7 +6250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterReplicationSpecsRegionsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterReplicationSpecsRegionsConfigList
 ```
@@ -6287,7 +6393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterReplicationSpecsRegionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterReplicationSpecsRegionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterReplicationSpecsRegionsConfigOutputReference
 ```
@@ -6692,7 +6798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterSnapshotBackupPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterSnapshotBackupPolicyList
 ```
@@ -6824,7 +6930,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterSnapshotBackupPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterSnapshotBackupPolicyOutputReference
 ```
@@ -7179,7 +7285,7 @@ func InternalValue() ClusterSnapshotBackupPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterSnapshotBackupPolicyPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterSnapshotBackupPolicyPoliciesList
 ```
@@ -7311,7 +7417,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterSnapshotBackupPolicyPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterSnapshotBackupPolicyPoliciesOutputReference
 ```
@@ -7600,7 +7706,7 @@ func InternalValue() ClusterSnapshotBackupPolicyPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPoliciesPolicyItemList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterSnapshotBackupPolicyPoliciesPolicyItemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterSnapshotBackupPolicyPoliciesPolicyItemList
 ```
@@ -7732,7 +7838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterSnapshotBackupPolicyPoliciesPolicyItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterSnapshotBackupPolicyPoliciesPolicyItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterSnapshotBackupPolicyPoliciesPolicyItemOutputReference
 ```
@@ -8054,7 +8160,7 @@ func InternalValue() ClusterSnapshotBackupPolicyPoliciesPolicyItem
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterTagsList
 ```
@@ -8197,7 +8303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterTagsOutputReference
 ```
@@ -8508,7 +8614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cluster.ClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cluster"
 
 cluster.NewClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterTimeoutsOutputReference
 ```

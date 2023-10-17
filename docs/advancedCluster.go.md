@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedCluster(scope Construct, id *string, config AdvancedClusterConfig) AdvancedCluster
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putAdvancedConfiguration">PutAdvancedConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putBiConnectorConfig">PutBiConnectorConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.putLabels">PutLabels</a></code> | *No description.* |
@@ -158,6 +161,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.getAnyMapAttribute"></a>
 
@@ -267,6 +286,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.interpolationForAttribute"></a>
 
 ```go
@@ -276,6 +313,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -454,13 +515,14 @@ func ResetVersionReleaseSystem()
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AdvancedCluster resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.AdvancedCluster_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.AdvancedCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +568,7 @@ advancedcluster.AdvancedCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.AdvancedCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,6 +576,50 @@ advancedcluster.AdvancedCluster_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
+
+advancedcluster.AdvancedCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a AdvancedCluster resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the AdvancedCluster to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing AdvancedCluster that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/advanced_cluster#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the AdvancedCluster to import is found.
 
 ---
 
@@ -1200,7 +1306,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterAdvancedConfiguration {
 	DefaultReadConcern: *string,
@@ -1372,7 +1478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterBiConnectorConfig {
 	Enabled: interface{},
@@ -1418,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConfig {
 	Connection: interface{},
@@ -1432,9 +1538,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advanced
 	Name: *string,
 	ProjectId: *string,
 	ReplicationSpecs: interface{},
-	AdvancedConfiguration: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterAdvancedConfiguration,
+	AdvancedConfiguration: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfiguration,
 	BackupEnabled: interface{},
-	BiConnectorConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterBiConnectorConfig,
+	BiConnectorConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfig,
 	DiskSizeGb: *f64,
 	EncryptionAtRestProvider: *string,
 	Id: *string,
@@ -1446,7 +1552,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advanced
 	RootCertType: *string,
 	Tags: interface{},
 	TerminationProtectionEnabled: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterTimeouts,
 	VersionReleaseSystem: *string,
 }
 ```
@@ -1817,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConnectionStrings {
 
@@ -1830,7 +1936,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConnectionStringsPrivateEndpoint {
 
@@ -1843,7 +1949,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterConnectionStringsPrivateEndpointEndpoints {
 
@@ -1856,7 +1962,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterLabels {
 	Key: *string,
@@ -1902,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecs {
 	RegionConfigs: interface{},
@@ -1964,18 +2070,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigs {
 	Priority: *f64,
 	ProviderName: *string,
 	RegionName: *string,
-	AnalyticsAutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling,
-	AnalyticsSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs,
-	AutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling,
+	AnalyticsAutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling,
+	AnalyticsSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs,
+	AutoScaling: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling,
 	BackingProviderName: *string,
-	ElectableSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs,
-	ReadOnlySpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs,
+	ElectableSpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs,
+	ReadOnlySpecs: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs,
 }
 ```
 
@@ -2118,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling {
 	ComputeEnabled: interface{},
@@ -2206,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs {
 	InstanceSize: *string,
@@ -2280,7 +2386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScaling {
 	ComputeEnabled: interface{},
@@ -2368,7 +2474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs {
 	InstanceSize: *string,
@@ -2442,7 +2548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs {
 	InstanceSize: *string,
@@ -2516,7 +2622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterTags {
 	Key: *string,
@@ -2562,7 +2668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 &advancedcluster.AdvancedClusterTimeouts {
 	Create: *string,
@@ -2624,7 +2730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterAdvancedConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterAdvancedConfigurationOutputReference
 ```
@@ -3192,7 +3298,7 @@ func InternalValue() AdvancedClusterAdvancedConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterBiConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterBiConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterBiConnectorConfigOutputReference
 ```
@@ -3499,7 +3605,7 @@ func InternalValue() AdvancedClusterBiConnectorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterConnectionStringsList
 ```
@@ -3631,7 +3737,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterConnectionStringsOutputReference
 ```
@@ -3953,7 +4059,7 @@ func InternalValue() AdvancedClusterConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterConnectionStringsPrivateEndpointEndpointsList
 ```
@@ -4085,7 +4191,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterConnectionStringsPrivateEndpointEndpointsOutputReference
 ```
@@ -4385,7 +4491,7 @@ func InternalValue() AdvancedClusterConnectionStringsPrivateEndpointEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterConnectionStringsPrivateEndpointList
 ```
@@ -4517,7 +4623,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterConnectionStringsPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterConnectionStringsPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterConnectionStringsPrivateEndpointOutputReference
 ```
@@ -4839,7 +4945,7 @@ func InternalValue() AdvancedClusterConnectionStringsPrivateEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterLabelsList
 ```
@@ -4982,7 +5088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterLabelsOutputReference
 ```
@@ -5307,7 +5413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterReplicationSpecsList
 ```
@@ -5450,7 +5556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterReplicationSpecsOutputReference
 ```
@@ -5832,7 +5938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScalingOutputReference
 ```
@@ -6226,7 +6332,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoSc
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference
 ```
@@ -6584,7 +6690,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsAutoScalingOutputReference
 ```
@@ -6978,7 +7084,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference
 ```
@@ -7336,7 +7442,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsElectableSpecs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterReplicationSpecsRegionConfigsList
 ```
@@ -7479,7 +7585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterReplicationSpecsRegionConfigsOutputReference
 ```
@@ -8051,7 +8157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference
 ```
@@ -8409,7 +8515,7 @@ func InternalValue() AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecs
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AdvancedClusterTagsList
 ```
@@ -8552,7 +8658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AdvancedClusterTagsOutputReference
 ```
@@ -8863,7 +8969,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/advancedcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/advancedcluster"
 
 advancedcluster.NewAdvancedClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedClusterTimeoutsOutputReference
 ```
