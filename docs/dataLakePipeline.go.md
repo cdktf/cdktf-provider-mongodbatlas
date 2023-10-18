@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipeline(scope Construct, id *string, config DataLakePipelineConfig) DataLakePipeline
 ```
@@ -392,7 +392,7 @@ func ResetTransformations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.DataLakePipeline_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.DataLakePipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ datalakepipeline.DataLakePipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.DataLakePipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ datalakepipeline.DataLakePipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.DataLakePipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineConfig {
 	Connection: interface{},
@@ -869,8 +869,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 	Provisioners: *[]interface{},
 	Name: *string,
 	ProjectId: *string,
-	Sink: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataLakePipeline.DataLakePipelineSink,
-	Source: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataLakePipeline.DataLakePipelineSource,
+	Sink: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataLakePipeline.DataLakePipelineSink,
+	Source: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataLakePipeline.DataLakePipelineSource,
 	Transformations: interface{},
 }
 ```
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineIngestionSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineIngestionSchedules {
 
@@ -1048,7 +1048,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineSink {
 	PartitionFields: interface{},
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSinkPartitionFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineSinkPartitionFields {
 	FieldName: *string,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSnapshots.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineSnapshots {
 
@@ -1183,7 +1183,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineSource {
 	ClusterName: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineTransformations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 &datalakepipeline.DataLakePipelineTransformations {
 	Field: *string,
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineIngestionSchedulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineIngestionSchedulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakePipelineIngestionSchedulesList
 ```
@@ -1465,7 +1465,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineIngestionSchedulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineIngestionSchedulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakePipelineIngestionSchedulesOutputReference
 ```
@@ -1787,7 +1787,7 @@ func InternalValue() DataLakePipelineIngestionSchedules
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineSinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLakePipelineSinkOutputReference
 ```
@@ -2165,7 +2165,7 @@ func InternalValue() DataLakePipelineSink
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSinkPartitionFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineSinkPartitionFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakePipelineSinkPartitionFieldsList
 ```
@@ -2308,7 +2308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSinkPartitionFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineSinkPartitionFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakePipelineSinkPartitionFieldsOutputReference
 ```
@@ -2619,7 +2619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSnapshotsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineSnapshotsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakePipelineSnapshotsList
 ```
@@ -2751,7 +2751,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSnapshotsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineSnapshotsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakePipelineSnapshotsOutputReference
 ```
@@ -3172,7 +3172,7 @@ func InternalValue() DataLakePipelineSnapshots
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLakePipelineSourceOutputReference
 ```
@@ -3595,7 +3595,7 @@ func InternalValue() DataLakePipelineSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineTransformationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineTransformationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakePipelineTransformationsList
 ```
@@ -3738,7 +3738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLakePipeline.DataLakePipelineTransformationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalakepipeline"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalakepipeline"
 
 datalakepipeline.NewDataLakePipelineTransformationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakePipelineTransformationsOutputReference
 ```

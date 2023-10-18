@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLake(scope Construct, id *string, config DataLakeConfig) DataLake
 ```
@@ -372,7 +372,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataLake.DataLake.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.DataLake_IsConstruct(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataLake.DataLake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.DataLake_IsTerraformElement(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ datalake.DataLake_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.dataLake.DataLake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.DataLake_IsTerraformResource(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ datalake.DataLake_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataLake.DataLake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.DataLake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeAws {
 	RoleId: *string,
@@ -861,7 +861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeConfig {
 	Connection: interface{},
@@ -871,10 +871,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Aws: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataLake.DataLakeAws,
+	Aws: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataLake.DataLakeAws,
 	Name: *string,
 	ProjectId: *string,
-	DataProcessRegion: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataLake.DataLakeDataProcessRegion,
+	DataProcessRegion: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataLake.DataLakeDataProcessRegion,
 	Id: *string,
 }
 ```
@@ -1040,7 +1040,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeDataProcessRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeDataProcessRegion {
 	CloudProvider: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeStorageDatabases {
 
@@ -1099,7 +1099,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesCollections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeStorageDatabasesCollections {
 
@@ -1112,7 +1112,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesCollectionsDataSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeStorageDatabasesCollectionsDataSources {
 
@@ -1125,7 +1125,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesViews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeStorageDatabasesViews {
 
@@ -1138,7 +1138,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageStores.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 &datalake.DataLakeStorageStores {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLakeAwsOutputReference
 ```
@@ -1479,7 +1479,7 @@ func InternalValue() DataLakeAws
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeDataProcessRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeDataProcessRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLakeDataProcessRegionOutputReference
 ```
@@ -1772,7 +1772,7 @@ func InternalValue() DataLakeDataProcessRegion
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesCollectionsDataSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesCollectionsDataSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakeStorageDatabasesCollectionsDataSourcesList
 ```
@@ -1904,7 +1904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesCollectionsDataSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesCollectionsDataSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakeStorageDatabasesCollectionsDataSourcesOutputReference
 ```
@@ -2204,7 +2204,7 @@ func InternalValue() DataLakeStorageDatabasesCollectionsDataSources
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesCollectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesCollectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakeStorageDatabasesCollectionsList
 ```
@@ -2336,7 +2336,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesCollectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesCollectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakeStorageDatabasesCollectionsOutputReference
 ```
@@ -2625,7 +2625,7 @@ func InternalValue() DataLakeStorageDatabasesCollections
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakeStorageDatabasesList
 ```
@@ -2757,7 +2757,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakeStorageDatabasesOutputReference
 ```
@@ -3068,7 +3068,7 @@ func InternalValue() DataLakeStorageDatabases
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesViewsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesViewsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakeStorageDatabasesViewsList
 ```
@@ -3200,7 +3200,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageDatabasesViewsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageDatabasesViewsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakeStorageDatabasesViewsOutputReference
 ```
@@ -3500,7 +3500,7 @@ func InternalValue() DataLakeStorageDatabasesViews
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageStoresList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageStoresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLakeStorageStoresList
 ```
@@ -3632,7 +3632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataLake.DataLakeStorageStoresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datalake"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake"
 
 datalake.NewDataLakeStorageStoresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLakeStorageStoresOutputReference
 ```
