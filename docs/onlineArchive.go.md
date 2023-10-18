@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.NewOnlineArchive(scope Construct, id *string, config OnlineArchiveConfig) OnlineArchive
 ```
@@ -413,7 +413,7 @@ func ResetSyncCreation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.OnlineArchive_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.OnlineArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ onlinearchive.OnlineArchive_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.OnlineArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ onlinearchive.OnlineArchive_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.OnlineArchive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 &onlinearchive.OnlineArchiveConfig {
 	Connection: interface{},
@@ -978,14 +978,14 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinear
 	Provisioners: *[]interface{},
 	ClusterName: *string,
 	CollName: *string,
-	Criteria: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.onlineArchive.OnlineArchiveCriteria,
+	Criteria: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.onlineArchive.OnlineArchiveCriteria,
 	DbName: *string,
 	ProjectId: *string,
 	CollectionType: *string,
 	Id: *string,
 	PartitionFields: interface{},
 	Paused: interface{},
-	Schedule: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.onlineArchive.OnlineArchiveSchedule,
+	Schedule: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.onlineArchive.OnlineArchiveSchedule,
 	SyncCreation: interface{},
 }
 ```
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 &onlinearchive.OnlineArchiveCriteria {
 	Type: *string,
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchivePartitionFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 &onlinearchive.OnlineArchivePartitionFields {
 	FieldName: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 &onlinearchive.OnlineArchiveSchedule {
 	Type: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.NewOnlineArchiveCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnlineArchiveCriteriaOutputReference
 ```
@@ -1870,7 +1870,7 @@ func InternalValue() OnlineArchiveCriteria
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchivePartitionFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.NewOnlineArchivePartitionFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OnlineArchivePartitionFieldsList
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchivePartitionFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.NewOnlineArchivePartitionFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OnlineArchivePartitionFieldsOutputReference
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/onlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/onlinearchive"
 
 onlinearchive.NewOnlineArchiveScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnlineArchiveScheduleOutputReference
 ```
