@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedSettingsOrgRoleMappingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping#federation_settings_id DataMongodbatlasFederatedSettingsOrgRoleMapping#federation_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping#federation_settings_id DataMongodbatlasFederatedSettingsOrgRoleMapping#federation_settings_id}
   */
   readonly federationSettingsId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping#org_id DataMongodbatlasFederatedSettingsOrgRoleMapping#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping#org_id DataMongodbatlasFederatedSettingsOrgRoleMapping#org_id}
   */
   readonly orgId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping#role_mapping_id DataMongodbatlasFederatedSettingsOrgRoleMapping#role_mapping_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping#role_mapping_id DataMongodbatlasFederatedSettingsOrgRoleMapping#role_mapping_id}
   */
   readonly roleMappingId: string;
 }
@@ -101,7 +96,7 @@ export class DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping}
 */
 export class DataMongodbatlasFederatedSettingsOrgRoleMapping extends cdktf.TerraformDataSource {
 
@@ -117,7 +112,7 @@ export class DataMongodbatlasFederatedSettingsOrgRoleMapping extends cdktf.Terra
   * Generates CDKTF code for importing a DataMongodbatlasFederatedSettingsOrgRoleMapping resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasFederatedSettingsOrgRoleMapping to import
-  * @param importFromId The id of the existing DataMongodbatlasFederatedSettingsOrgRoleMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasFederatedSettingsOrgRoleMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasFederatedSettingsOrgRoleMapping to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -129,7 +124,7 @@ export class DataMongodbatlasFederatedSettingsOrgRoleMapping extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,7 +135,7 @@ export class DataMongodbatlasFederatedSettingsOrgRoleMapping extends cdktf.Terra
       terraformResourceType: 'mongodbatlas_federated_settings_org_role_mapping',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.1',
+        providerVersion: '1.12.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

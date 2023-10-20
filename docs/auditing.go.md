@@ -1,6 +1,6 @@
 # `mongodbatlas_auditing`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing).
+Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing).
 
 # `auditing` Submodule <a name="`auditing` Submodule" id="@cdktf/provider-mongodbatlas.auditing"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://reg
 
 ### Auditing <a name="Auditing" id="@cdktf/provider-mongodbatlas.auditing.Auditing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing mongodbatlas_auditing}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing mongodbatlas_auditing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.auditing.Auditing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing"
 
 auditing.NewAuditing(scope Construct, id *string, config AuditingConfig) Auditing
 ```
@@ -360,7 +360,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.auditing.Auditing.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing"
 
 auditing.Auditing_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.auditing.Auditing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing"
 
 auditing.Auditing_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ auditing.Auditing_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.auditing.Auditing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing"
 
 auditing.Auditing_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ auditing.Auditing_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.auditing.Auditing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing"
 
 auditing.Auditing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the Auditing to import.
 
 The id of the existing Auditing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.auditing.AuditingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing"
 
 &auditing.AuditingConfig {
 	Connection: interface{},
@@ -799,11 +799,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/auditing
 | <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#project_id Auditing#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditAuthorizationSuccess">AuditAuthorizationSuccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditFilter">AuditFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#audit_filter Auditing#audit_filter}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#enabled Auditing#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#id Auditing#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#project_id Auditing#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditAuthorizationSuccess">AuditAuthorizationSuccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditFilter">AuditFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#audit_filter Auditing#audit_filter}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#enabled Auditing#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#id Auditing#id}. |
 
 ---
 
@@ -885,7 +885,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#project_id Auditing#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#project_id Auditing#project_id}.
 
 ---
 
@@ -897,7 +897,7 @@ AuditAuthorizationSuccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}.
 
 ---
 
@@ -909,7 +909,7 @@ AuditFilter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#audit_filter Auditing#audit_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#audit_filter Auditing#audit_filter}.
 
 ---
 
@@ -921,7 +921,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#enabled Auditing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#enabled Auditing#enabled}.
 
 ---
 
@@ -933,7 +933,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing#id Auditing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing#id Auditing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
