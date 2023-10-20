@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasOnlineArchivesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives#cluster_name DataMongodbatlasOnlineArchives#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives#cluster_name DataMongodbatlasOnlineArchives#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives#id DataMongodbatlasOnlineArchives#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives#id DataMongodbatlasOnlineArchives#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives#project_id DataMongodbatlasOnlineArchives#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives#project_id DataMongodbatlasOnlineArchives#project_id}
   */
   readonly projectId: string;
 }
@@ -110,6 +110,70 @@ export class DataMongodbatlasOnlineArchivesResultsCriteriaList extends cdktf.Com
   */
   public get(index: number): DataMongodbatlasOnlineArchivesResultsCriteriaOutputReference {
     return new DataMongodbatlasOnlineArchivesResultsCriteriaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasOnlineArchivesResultsDataExpirationRule {
+}
+
+export function dataMongodbatlasOnlineArchivesResultsDataExpirationRuleToTerraform(struct?: DataMongodbatlasOnlineArchivesResultsDataExpirationRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataMongodbatlasOnlineArchivesResultsDataExpirationRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasOnlineArchivesResultsDataExpirationRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasOnlineArchivesResultsDataExpirationRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expire_after_days - computed: true, optional: false, required: false
+  public get expireAfterDays() {
+    return this.getNumberAttribute('expire_after_days');
+  }
+}
+
+export class DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasOnlineArchivesResultsDataExpirationRuleOutputReference {
+    return new DataMongodbatlasOnlineArchivesResultsDataExpirationRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataMongodbatlasOnlineArchivesResultsPartitionFields {
@@ -346,6 +410,12 @@ export class DataMongodbatlasOnlineArchivesResultsOutputReference extends cdktf.
     return this._criteria;
   }
 
+  // data_expiration_rule - computed: true, optional: false, required: false
+  private _dataExpirationRule = new DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList(this, "data_expiration_rule", false);
+  public get dataExpirationRule() {
+    return this._dataExpirationRule;
+  }
+
   // db_name - computed: true, optional: false, required: false
   public get dbName() {
     return this.getStringAttribute('db_name');
@@ -399,7 +469,7 @@ export class DataMongodbatlasOnlineArchivesResultsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives mongodbatlas_online_archives}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives mongodbatlas_online_archives}
 */
 export class DataMongodbatlasOnlineArchives extends cdktf.TerraformDataSource {
 
@@ -415,7 +485,7 @@ export class DataMongodbatlasOnlineArchives extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasOnlineArchives resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasOnlineArchives to import
-  * @param importFromId The id of the existing DataMongodbatlasOnlineArchives that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasOnlineArchives that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasOnlineArchives to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -427,7 +497,7 @@ export class DataMongodbatlasOnlineArchives extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archives mongodbatlas_online_archives} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archives mongodbatlas_online_archives} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -438,7 +508,7 @@ export class DataMongodbatlasOnlineArchives extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_online_archives',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.1',
+        providerVersion: '1.12.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

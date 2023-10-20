@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,84 @@ import * as cdktf from 'cdktf';
 
 export interface OnlineArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#cluster_name OnlineArchive#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#cluster_name OnlineArchive#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#coll_name OnlineArchive#coll_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#coll_name OnlineArchive#coll_name}
   */
   readonly collName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#collection_type OnlineArchive#collection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#collection_type OnlineArchive#collection_type}
   */
   readonly collectionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#db_name OnlineArchive#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#db_name OnlineArchive#db_name}
   */
   readonly dbName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#id OnlineArchive#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#id OnlineArchive#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#paused OnlineArchive#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#paused OnlineArchive#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#project_id OnlineArchive#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#project_id OnlineArchive#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#sync_creation OnlineArchive#sync_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#sync_creation OnlineArchive#sync_creation}
   */
   readonly syncCreation?: boolean | cdktf.IResolvable;
   /**
   * criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#criteria OnlineArchive#criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#criteria OnlineArchive#criteria}
   */
   readonly criteria: OnlineArchiveCriteria;
   /**
+  * data_expiration_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#data_expiration_rule OnlineArchive#data_expiration_rule}
+  */
+  readonly dataExpirationRule?: OnlineArchiveDataExpirationRule;
+  /**
   * partition_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
   */
   readonly partitionFields?: OnlineArchivePartitionFields[] | cdktf.IResolvable;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#schedule OnlineArchive#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#schedule OnlineArchive#schedule}
   */
   readonly schedule?: OnlineArchiveSchedule;
 }
 export interface OnlineArchiveCriteria {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#date_field OnlineArchive#date_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#date_field OnlineArchive#date_field}
   */
   readonly dateField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#date_format OnlineArchive#date_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#date_format OnlineArchive#date_format}
   */
   readonly dateFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}
   */
   readonly expireAfterDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#query OnlineArchive#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#query OnlineArchive#query}
   */
   readonly query?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#type OnlineArchive#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#type OnlineArchive#type}
   */
   readonly type: string;
 }
@@ -236,13 +242,75 @@ export class OnlineArchiveCriteriaOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 }
+export interface OnlineArchiveDataExpirationRule {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}
+  */
+  readonly expireAfterDays: number;
+}
+
+export function onlineArchiveDataExpirationRuleToTerraform(struct?: OnlineArchiveDataExpirationRuleOutputReference | OnlineArchiveDataExpirationRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    expire_after_days: cdktf.numberToTerraform(struct!.expireAfterDays),
+  }
+}
+
+export class OnlineArchiveDataExpirationRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OnlineArchiveDataExpirationRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expireAfterDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expireAfterDays = this._expireAfterDays;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OnlineArchiveDataExpirationRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._expireAfterDays = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._expireAfterDays = value.expireAfterDays;
+    }
+  }
+
+  // expire_after_days - computed: false, optional: false, required: true
+  private _expireAfterDays?: number; 
+  public get expireAfterDays() {
+    return this.getNumberAttribute('expire_after_days');
+  }
+  public set expireAfterDays(value: number) {
+    this._expireAfterDays = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expireAfterDaysInput() {
+    return this._expireAfterDays;
+  }
+}
 export interface OnlineArchivePartitionFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#field_name OnlineArchive#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#field_name OnlineArchive#field_name}
   */
   readonly fieldName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#order OnlineArchive#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#order OnlineArchive#order}
   */
   readonly order: number;
 }
@@ -361,31 +429,31 @@ export class OnlineArchivePartitionFieldsList extends cdktf.ComplexList {
 }
 export interface OnlineArchiveSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#day_of_month OnlineArchive#day_of_month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#day_of_month OnlineArchive#day_of_month}
   */
   readonly dayOfMonth?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#day_of_week OnlineArchive#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#day_of_week OnlineArchive#day_of_week}
   */
   readonly dayOfWeek?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#end_hour OnlineArchive#end_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#end_hour OnlineArchive#end_hour}
   */
   readonly endHour?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#end_minute OnlineArchive#end_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#end_minute OnlineArchive#end_minute}
   */
   readonly endMinute?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#start_hour OnlineArchive#start_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#start_hour OnlineArchive#start_hour}
   */
   readonly startHour?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#start_minute OnlineArchive#start_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#start_minute OnlineArchive#start_minute}
   */
   readonly startMinute?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#type OnlineArchive#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#type OnlineArchive#type}
   */
   readonly type: string;
 }
@@ -585,7 +653,7 @@ export class OnlineArchiveScheduleOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive mongodbatlas_online_archive}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive mongodbatlas_online_archive}
 */
 export class OnlineArchive extends cdktf.TerraformResource {
 
@@ -601,7 +669,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OnlineArchive resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnlineArchive to import
-  * @param importFromId The id of the existing OnlineArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnlineArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnlineArchive to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -613,7 +681,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive mongodbatlas_online_archive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive mongodbatlas_online_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -624,7 +692,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_online_archive',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.1',
+        providerVersion: '1.12.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -644,6 +712,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
     this._projectId = config.projectId;
     this._syncCreation = config.syncCreation;
     this._criteria.internalValue = config.criteria;
+    this._dataExpirationRule.internalValue = config.dataExpirationRule;
     this._partitionFields.internalValue = config.partitionFields;
     this._schedule.internalValue = config.schedule;
   }
@@ -791,6 +860,22 @@ export class OnlineArchive extends cdktf.TerraformResource {
     return this._criteria.internalValue;
   }
 
+  // data_expiration_rule - computed: false, optional: true, required: false
+  private _dataExpirationRule = new OnlineArchiveDataExpirationRuleOutputReference(this, "data_expiration_rule");
+  public get dataExpirationRule() {
+    return this._dataExpirationRule;
+  }
+  public putDataExpirationRule(value: OnlineArchiveDataExpirationRule) {
+    this._dataExpirationRule.internalValue = value;
+  }
+  public resetDataExpirationRule() {
+    this._dataExpirationRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataExpirationRuleInput() {
+    return this._dataExpirationRule.internalValue;
+  }
+
   // partition_fields - computed: false, optional: true, required: false
   private _partitionFields = new OnlineArchivePartitionFieldsList(this, "partition_fields", false);
   public get partitionFields() {
@@ -838,6 +923,7 @@ export class OnlineArchive extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       sync_creation: cdktf.booleanToTerraform(this._syncCreation),
       criteria: onlineArchiveCriteriaToTerraform(this._criteria.internalValue),
+      data_expiration_rule: onlineArchiveDataExpirationRuleToTerraform(this._dataExpirationRule.internalValue),
       partition_fields: cdktf.listMapper(onlineArchivePartitionFieldsToTerraform, true)(this._partitionFields.internalValue),
       schedule: onlineArchiveScheduleToTerraform(this._schedule.internalValue),
     };
