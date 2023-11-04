@@ -1,6 +1,6 @@
 # `data_mongodbatlas_roles_org_id`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_roles_org_id`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/roles_org_id).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_roles_org_id`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/roles_org_id).
 
 # `dataMongodbatlasRolesOrgId` Submodule <a name="`dataMongodbatlasRolesOrgId` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_roles_org_id`](ht
 
 ### DataMongodbatlasRolesOrgId <a name="DataMongodbatlasRolesOrgId" id="@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/roles_org_id mongodbatlas_roles_org_id}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/roles_org_id mongodbatlas_roles_org_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgId.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataMongodbatlasRolesOrgId
 
 The id of the existing DataMongodbatlasRolesOrgId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/roles_org_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/roles_org_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,7 +594,7 @@ const dataMongodbatlasRolesOrgIdConfig: dataMongodbatlasRolesOrgId.DataMongodbat
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgIdConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgIdConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgIdConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgIdConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/roles_org_id#id DataMongodbatlasRolesOrgId#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasRolesOrgId.DataMongodbatlasRolesOrgIdConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/roles_org_id#id DataMongodbatlasRolesOrgId#id}. |
 
 ---
 
@@ -676,7 +676,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/roles_org_id#id DataMongodbatlasRolesOrgId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/roles_org_id#id DataMongodbatlasRolesOrgId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

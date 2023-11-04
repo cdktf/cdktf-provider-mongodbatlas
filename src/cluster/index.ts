@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,164 +8,657 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}
+  * Submit this field alongside your topology reconfiguration to request a new regional outage resistant topology
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#accept_data_risks_and_force_replica_set_reconfig Cluster#accept_data_risks_and_force_replica_set_reconfig}
+  */
+  readonly acceptDataRisksAndForceReplicaSetReconfig?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
+  */
+  readonly advancedConfiguration?: ClusterAdvancedConfiguration[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#auto_scaling_compute_enabled Cluster#auto_scaling_compute_enabled}
   */
   readonly autoScalingComputeEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#auto_scaling_compute_scale_down_enabled Cluster#auto_scaling_compute_scale_down_enabled}
   */
   readonly autoScalingComputeScaleDownEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#auto_scaling_disk_gb_enabled Cluster#auto_scaling_disk_gb_enabled}
   */
   readonly autoScalingDiskGbEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#backing_provider_name Cluster#backing_provider_name}
   */
   readonly backingProviderName?: string;
   /**
   * Clusters running MongoDB FCV 4.2 or later and any new Atlas clusters of any type do not support this parameter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#backup_enabled Cluster#backup_enabled}
   */
   readonly backupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#cloud_backup Cluster#cloud_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
+  */
+  readonly biConnectorConfig?: ClusterBiConnectorConfig[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#cloud_backup Cluster#cloud_backup}
   */
   readonly cloudBackup?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#cluster_type Cluster#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#cluster_type Cluster#cluster_type}
   */
   readonly clusterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#disk_size_gb Cluster#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#encryption_at_rest_provider Cluster#encryption_at_rest_provider}
   */
   readonly encryptionAtRestProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#id Cluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#id Cluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#mongo_db_major_version Cluster#mongo_db_major_version}
   */
   readonly mongoDbMajorVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#name Cluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#name Cluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#num_shards Cluster#num_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#num_shards Cluster#num_shards}
   */
   readonly numShards?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#paused Cluster#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#paused Cluster#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#pit_enabled Cluster#pit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#pit_enabled Cluster#pit_enabled}
   */
   readonly pitEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#project_id Cluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#project_id Cluster#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_auto_scaling_compute_max_instance_size Cluster#provider_auto_scaling_compute_max_instance_size}
   */
   readonly providerAutoScalingComputeMaxInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_auto_scaling_compute_min_instance_size Cluster#provider_auto_scaling_compute_min_instance_size}
   */
   readonly providerAutoScalingComputeMinInstanceSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_disk_iops Cluster#provider_disk_iops}
   */
   readonly providerDiskIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_disk_type_name Cluster#provider_disk_type_name}
   */
   readonly providerDiskTypeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_encrypt_ebs_volume Cluster#provider_encrypt_ebs_volume}
   */
   readonly providerEncryptEbsVolume?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_instance_size_name Cluster#provider_instance_size_name}
   */
   readonly providerInstanceSizeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_name Cluster#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_name Cluster#provider_name}
   */
   readonly providerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_region_name Cluster#provider_region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_region_name Cluster#provider_region_name}
   */
   readonly providerRegionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#provider_volume_type Cluster#provider_volume_type}
   */
   readonly providerVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#replication_factor Cluster#replication_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#replication_factor Cluster#replication_factor}
   */
   readonly replicationFactor?: number;
   /**
   * Flag that indicates whether to retain backup snapshots for the deleted dedicated cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#retain_backups_enabled Cluster#retain_backups_enabled}
   */
   readonly retainBackupsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#termination_protection_enabled Cluster#termination_protection_enabled}
   */
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#version_release_system Cluster#version_release_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#version_release_system Cluster#version_release_system}
   */
   readonly versionReleaseSystem?: string;
   /**
-  * advanced_configuration block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#advanced_configuration Cluster#advanced_configuration}
-  */
-  readonly advancedConfiguration?: ClusterAdvancedConfiguration;
-  /**
-  * bi_connector_config block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#bi_connector_config Cluster#bi_connector_config}
-  */
-  readonly biConnectorConfig?: ClusterBiConnectorConfig;
-  /**
   * labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#labels Cluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#labels Cluster#labels}
   */
   readonly labels?: ClusterLabels[] | cdktf.IResolvable;
   /**
   * replication_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#replication_specs Cluster#replication_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#replication_specs Cluster#replication_specs}
   */
   readonly replicationSpecs?: ClusterReplicationSpecs[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#tags Cluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#tags Cluster#tags}
   */
   readonly tags?: ClusterTags[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#timeouts Cluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#timeouts Cluster#timeouts}
   */
   readonly timeouts?: ClusterTimeouts;
+}
+export interface ClusterAdvancedConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#default_read_concern Cluster#default_read_concern}
+  */
+  readonly defaultReadConcern?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#default_write_concern Cluster#default_write_concern}
+  */
+  readonly defaultWriteConcern?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}
+  */
+  readonly failIndexKeyTooLong?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}
+  */
+  readonly javascriptEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}
+  */
+  readonly minimumEnabledTlsProtocol?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#no_table_scan Cluster#no_table_scan}
+  */
+  readonly noTableScan?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}
+  */
+  readonly oplogMinRetentionHours?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}
+  */
+  readonly oplogSizeMb?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}
+  */
+  readonly sampleRefreshIntervalBiConnector?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}
+  */
+  readonly sampleSizeBiConnector?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#transaction_lifetime_limit_seconds Cluster#transaction_lifetime_limit_seconds}
+  */
+  readonly transactionLifetimeLimitSeconds?: number;
+}
+
+export function clusterAdvancedConfigurationToTerraform(struct?: ClusterAdvancedConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_read_concern: cdktf.stringToTerraform(struct!.defaultReadConcern),
+    default_write_concern: cdktf.stringToTerraform(struct!.defaultWriteConcern),
+    fail_index_key_too_long: cdktf.booleanToTerraform(struct!.failIndexKeyTooLong),
+    javascript_enabled: cdktf.booleanToTerraform(struct!.javascriptEnabled),
+    minimum_enabled_tls_protocol: cdktf.stringToTerraform(struct!.minimumEnabledTlsProtocol),
+    no_table_scan: cdktf.booleanToTerraform(struct!.noTableScan),
+    oplog_min_retention_hours: cdktf.numberToTerraform(struct!.oplogMinRetentionHours),
+    oplog_size_mb: cdktf.numberToTerraform(struct!.oplogSizeMb),
+    sample_refresh_interval_bi_connector: cdktf.numberToTerraform(struct!.sampleRefreshIntervalBiConnector),
+    sample_size_bi_connector: cdktf.numberToTerraform(struct!.sampleSizeBiConnector),
+    transaction_lifetime_limit_seconds: cdktf.numberToTerraform(struct!.transactionLifetimeLimitSeconds),
+  }
+}
+
+export class ClusterAdvancedConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ClusterAdvancedConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultReadConcern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultReadConcern = this._defaultReadConcern;
+    }
+    if (this._defaultWriteConcern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultWriteConcern = this._defaultWriteConcern;
+    }
+    if (this._failIndexKeyTooLong !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failIndexKeyTooLong = this._failIndexKeyTooLong;
+    }
+    if (this._javascriptEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.javascriptEnabled = this._javascriptEnabled;
+    }
+    if (this._minimumEnabledTlsProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimumEnabledTlsProtocol = this._minimumEnabledTlsProtocol;
+    }
+    if (this._noTableScan !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noTableScan = this._noTableScan;
+    }
+    if (this._oplogMinRetentionHours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oplogMinRetentionHours = this._oplogMinRetentionHours;
+    }
+    if (this._oplogSizeMb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oplogSizeMb = this._oplogSizeMb;
+    }
+    if (this._sampleRefreshIntervalBiConnector !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sampleRefreshIntervalBiConnector = this._sampleRefreshIntervalBiConnector;
+    }
+    if (this._sampleSizeBiConnector !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sampleSizeBiConnector = this._sampleSizeBiConnector;
+    }
+    if (this._transactionLifetimeLimitSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transactionLifetimeLimitSeconds = this._transactionLifetimeLimitSeconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterAdvancedConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultReadConcern = undefined;
+      this._defaultWriteConcern = undefined;
+      this._failIndexKeyTooLong = undefined;
+      this._javascriptEnabled = undefined;
+      this._minimumEnabledTlsProtocol = undefined;
+      this._noTableScan = undefined;
+      this._oplogMinRetentionHours = undefined;
+      this._oplogSizeMb = undefined;
+      this._sampleRefreshIntervalBiConnector = undefined;
+      this._sampleSizeBiConnector = undefined;
+      this._transactionLifetimeLimitSeconds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultReadConcern = value.defaultReadConcern;
+      this._defaultWriteConcern = value.defaultWriteConcern;
+      this._failIndexKeyTooLong = value.failIndexKeyTooLong;
+      this._javascriptEnabled = value.javascriptEnabled;
+      this._minimumEnabledTlsProtocol = value.minimumEnabledTlsProtocol;
+      this._noTableScan = value.noTableScan;
+      this._oplogMinRetentionHours = value.oplogMinRetentionHours;
+      this._oplogSizeMb = value.oplogSizeMb;
+      this._sampleRefreshIntervalBiConnector = value.sampleRefreshIntervalBiConnector;
+      this._sampleSizeBiConnector = value.sampleSizeBiConnector;
+      this._transactionLifetimeLimitSeconds = value.transactionLifetimeLimitSeconds;
+    }
+  }
+
+  // default_read_concern - computed: true, optional: true, required: false
+  private _defaultReadConcern?: string; 
+  public get defaultReadConcern() {
+    return this.getStringAttribute('default_read_concern');
+  }
+  public set defaultReadConcern(value: string) {
+    this._defaultReadConcern = value;
+  }
+  public resetDefaultReadConcern() {
+    this._defaultReadConcern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultReadConcernInput() {
+    return this._defaultReadConcern;
+  }
+
+  // default_write_concern - computed: true, optional: true, required: false
+  private _defaultWriteConcern?: string; 
+  public get defaultWriteConcern() {
+    return this.getStringAttribute('default_write_concern');
+  }
+  public set defaultWriteConcern(value: string) {
+    this._defaultWriteConcern = value;
+  }
+  public resetDefaultWriteConcern() {
+    this._defaultWriteConcern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultWriteConcernInput() {
+    return this._defaultWriteConcern;
+  }
+
+  // fail_index_key_too_long - computed: true, optional: true, required: false
+  private _failIndexKeyTooLong?: boolean | cdktf.IResolvable; 
+  public get failIndexKeyTooLong() {
+    return this.getBooleanAttribute('fail_index_key_too_long');
+  }
+  public set failIndexKeyTooLong(value: boolean | cdktf.IResolvable) {
+    this._failIndexKeyTooLong = value;
+  }
+  public resetFailIndexKeyTooLong() {
+    this._failIndexKeyTooLong = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failIndexKeyTooLongInput() {
+    return this._failIndexKeyTooLong;
+  }
+
+  // javascript_enabled - computed: true, optional: true, required: false
+  private _javascriptEnabled?: boolean | cdktf.IResolvable; 
+  public get javascriptEnabled() {
+    return this.getBooleanAttribute('javascript_enabled');
+  }
+  public set javascriptEnabled(value: boolean | cdktf.IResolvable) {
+    this._javascriptEnabled = value;
+  }
+  public resetJavascriptEnabled() {
+    this._javascriptEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get javascriptEnabledInput() {
+    return this._javascriptEnabled;
+  }
+
+  // minimum_enabled_tls_protocol - computed: true, optional: true, required: false
+  private _minimumEnabledTlsProtocol?: string; 
+  public get minimumEnabledTlsProtocol() {
+    return this.getStringAttribute('minimum_enabled_tls_protocol');
+  }
+  public set minimumEnabledTlsProtocol(value: string) {
+    this._minimumEnabledTlsProtocol = value;
+  }
+  public resetMinimumEnabledTlsProtocol() {
+    this._minimumEnabledTlsProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumEnabledTlsProtocolInput() {
+    return this._minimumEnabledTlsProtocol;
+  }
+
+  // no_table_scan - computed: true, optional: true, required: false
+  private _noTableScan?: boolean | cdktf.IResolvable; 
+  public get noTableScan() {
+    return this.getBooleanAttribute('no_table_scan');
+  }
+  public set noTableScan(value: boolean | cdktf.IResolvable) {
+    this._noTableScan = value;
+  }
+  public resetNoTableScan() {
+    this._noTableScan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noTableScanInput() {
+    return this._noTableScan;
+  }
+
+  // oplog_min_retention_hours - computed: true, optional: true, required: false
+  private _oplogMinRetentionHours?: number; 
+  public get oplogMinRetentionHours() {
+    return this.getNumberAttribute('oplog_min_retention_hours');
+  }
+  public set oplogMinRetentionHours(value: number) {
+    this._oplogMinRetentionHours = value;
+  }
+  public resetOplogMinRetentionHours() {
+    this._oplogMinRetentionHours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oplogMinRetentionHoursInput() {
+    return this._oplogMinRetentionHours;
+  }
+
+  // oplog_size_mb - computed: true, optional: true, required: false
+  private _oplogSizeMb?: number; 
+  public get oplogSizeMb() {
+    return this.getNumberAttribute('oplog_size_mb');
+  }
+  public set oplogSizeMb(value: number) {
+    this._oplogSizeMb = value;
+  }
+  public resetOplogSizeMb() {
+    this._oplogSizeMb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oplogSizeMbInput() {
+    return this._oplogSizeMb;
+  }
+
+  // sample_refresh_interval_bi_connector - computed: true, optional: true, required: false
+  private _sampleRefreshIntervalBiConnector?: number; 
+  public get sampleRefreshIntervalBiConnector() {
+    return this.getNumberAttribute('sample_refresh_interval_bi_connector');
+  }
+  public set sampleRefreshIntervalBiConnector(value: number) {
+    this._sampleRefreshIntervalBiConnector = value;
+  }
+  public resetSampleRefreshIntervalBiConnector() {
+    this._sampleRefreshIntervalBiConnector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sampleRefreshIntervalBiConnectorInput() {
+    return this._sampleRefreshIntervalBiConnector;
+  }
+
+  // sample_size_bi_connector - computed: true, optional: true, required: false
+  private _sampleSizeBiConnector?: number; 
+  public get sampleSizeBiConnector() {
+    return this.getNumberAttribute('sample_size_bi_connector');
+  }
+  public set sampleSizeBiConnector(value: number) {
+    this._sampleSizeBiConnector = value;
+  }
+  public resetSampleSizeBiConnector() {
+    this._sampleSizeBiConnector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sampleSizeBiConnectorInput() {
+    return this._sampleSizeBiConnector;
+  }
+
+  // transaction_lifetime_limit_seconds - computed: true, optional: true, required: false
+  private _transactionLifetimeLimitSeconds?: number; 
+  public get transactionLifetimeLimitSeconds() {
+    return this.getNumberAttribute('transaction_lifetime_limit_seconds');
+  }
+  public set transactionLifetimeLimitSeconds(value: number) {
+    this._transactionLifetimeLimitSeconds = value;
+  }
+  public resetTransactionLifetimeLimitSeconds() {
+    this._transactionLifetimeLimitSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transactionLifetimeLimitSecondsInput() {
+    return this._transactionLifetimeLimitSeconds;
+  }
+}
+
+export class ClusterAdvancedConfigurationList extends cdktf.ComplexList {
+  public internalValue? : ClusterAdvancedConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ClusterAdvancedConfigurationOutputReference {
+    return new ClusterAdvancedConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ClusterBiConnectorConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#enabled Cluster#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#read_preference Cluster#read_preference}
+  */
+  readonly readPreference?: string;
+}
+
+export function clusterBiConnectorConfigToTerraform(struct?: ClusterBiConnectorConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    read_preference: cdktf.stringToTerraform(struct!.readPreference),
+  }
+}
+
+export class ClusterBiConnectorConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ClusterBiConnectorConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._readPreference !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readPreference = this._readPreference;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterBiConnectorConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._readPreference = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._readPreference = value.readPreference;
+    }
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // read_preference - computed: true, optional: true, required: false
+  private _readPreference?: string; 
+  public get readPreference() {
+    return this.getStringAttribute('read_preference');
+  }
+  public set readPreference(value: string) {
+    this._readPreference = value;
+  }
+  public resetReadPreference() {
+    this._readPreference = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readPreferenceInput() {
+    return this._readPreference;
+  }
+}
+
+export class ClusterBiConnectorConfigList extends cdktf.ComplexList {
+  public internalValue? : ClusterBiConnectorConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ClusterBiConnectorConfigOutputReference {
+    return new ClusterBiConnectorConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ClusterConnectionStringsPrivateEndpointEndpoints {
 }
@@ -670,440 +1158,13 @@ export class ClusterSnapshotBackupPolicyList extends cdktf.ComplexList {
     return new ClusterSnapshotBackupPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface ClusterAdvancedConfiguration {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#default_read_concern Cluster#default_read_concern}
-  */
-  readonly defaultReadConcern?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#default_write_concern Cluster#default_write_concern}
-  */
-  readonly defaultWriteConcern?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#fail_index_key_too_long Cluster#fail_index_key_too_long}
-  */
-  readonly failIndexKeyTooLong?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#javascript_enabled Cluster#javascript_enabled}
-  */
-  readonly javascriptEnabled?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#minimum_enabled_tls_protocol Cluster#minimum_enabled_tls_protocol}
-  */
-  readonly minimumEnabledTlsProtocol?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#no_table_scan Cluster#no_table_scan}
-  */
-  readonly noTableScan?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#oplog_min_retention_hours Cluster#oplog_min_retention_hours}
-  */
-  readonly oplogMinRetentionHours?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#oplog_size_mb Cluster#oplog_size_mb}
-  */
-  readonly oplogSizeMb?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#sample_refresh_interval_bi_connector Cluster#sample_refresh_interval_bi_connector}
-  */
-  readonly sampleRefreshIntervalBiConnector?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#sample_size_bi_connector Cluster#sample_size_bi_connector}
-  */
-  readonly sampleSizeBiConnector?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#transaction_lifetime_limit_seconds Cluster#transaction_lifetime_limit_seconds}
-  */
-  readonly transactionLifetimeLimitSeconds?: number;
-}
-
-export function clusterAdvancedConfigurationToTerraform(struct?: ClusterAdvancedConfigurationOutputReference | ClusterAdvancedConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    default_read_concern: cdktf.stringToTerraform(struct!.defaultReadConcern),
-    default_write_concern: cdktf.stringToTerraform(struct!.defaultWriteConcern),
-    fail_index_key_too_long: cdktf.booleanToTerraform(struct!.failIndexKeyTooLong),
-    javascript_enabled: cdktf.booleanToTerraform(struct!.javascriptEnabled),
-    minimum_enabled_tls_protocol: cdktf.stringToTerraform(struct!.minimumEnabledTlsProtocol),
-    no_table_scan: cdktf.booleanToTerraform(struct!.noTableScan),
-    oplog_min_retention_hours: cdktf.numberToTerraform(struct!.oplogMinRetentionHours),
-    oplog_size_mb: cdktf.numberToTerraform(struct!.oplogSizeMb),
-    sample_refresh_interval_bi_connector: cdktf.numberToTerraform(struct!.sampleRefreshIntervalBiConnector),
-    sample_size_bi_connector: cdktf.numberToTerraform(struct!.sampleSizeBiConnector),
-    transaction_lifetime_limit_seconds: cdktf.numberToTerraform(struct!.transactionLifetimeLimitSeconds),
-  }
-}
-
-export class ClusterAdvancedConfigurationOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ClusterAdvancedConfiguration | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._defaultReadConcern !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.defaultReadConcern = this._defaultReadConcern;
-    }
-    if (this._defaultWriteConcern !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.defaultWriteConcern = this._defaultWriteConcern;
-    }
-    if (this._failIndexKeyTooLong !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.failIndexKeyTooLong = this._failIndexKeyTooLong;
-    }
-    if (this._javascriptEnabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.javascriptEnabled = this._javascriptEnabled;
-    }
-    if (this._minimumEnabledTlsProtocol !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.minimumEnabledTlsProtocol = this._minimumEnabledTlsProtocol;
-    }
-    if (this._noTableScan !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.noTableScan = this._noTableScan;
-    }
-    if (this._oplogMinRetentionHours !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.oplogMinRetentionHours = this._oplogMinRetentionHours;
-    }
-    if (this._oplogSizeMb !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.oplogSizeMb = this._oplogSizeMb;
-    }
-    if (this._sampleRefreshIntervalBiConnector !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sampleRefreshIntervalBiConnector = this._sampleRefreshIntervalBiConnector;
-    }
-    if (this._sampleSizeBiConnector !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sampleSizeBiConnector = this._sampleSizeBiConnector;
-    }
-    if (this._transactionLifetimeLimitSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.transactionLifetimeLimitSeconds = this._transactionLifetimeLimitSeconds;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ClusterAdvancedConfiguration | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._defaultReadConcern = undefined;
-      this._defaultWriteConcern = undefined;
-      this._failIndexKeyTooLong = undefined;
-      this._javascriptEnabled = undefined;
-      this._minimumEnabledTlsProtocol = undefined;
-      this._noTableScan = undefined;
-      this._oplogMinRetentionHours = undefined;
-      this._oplogSizeMb = undefined;
-      this._sampleRefreshIntervalBiConnector = undefined;
-      this._sampleSizeBiConnector = undefined;
-      this._transactionLifetimeLimitSeconds = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._defaultReadConcern = value.defaultReadConcern;
-      this._defaultWriteConcern = value.defaultWriteConcern;
-      this._failIndexKeyTooLong = value.failIndexKeyTooLong;
-      this._javascriptEnabled = value.javascriptEnabled;
-      this._minimumEnabledTlsProtocol = value.minimumEnabledTlsProtocol;
-      this._noTableScan = value.noTableScan;
-      this._oplogMinRetentionHours = value.oplogMinRetentionHours;
-      this._oplogSizeMb = value.oplogSizeMb;
-      this._sampleRefreshIntervalBiConnector = value.sampleRefreshIntervalBiConnector;
-      this._sampleSizeBiConnector = value.sampleSizeBiConnector;
-      this._transactionLifetimeLimitSeconds = value.transactionLifetimeLimitSeconds;
-    }
-  }
-
-  // default_read_concern - computed: true, optional: true, required: false
-  private _defaultReadConcern?: string; 
-  public get defaultReadConcern() {
-    return this.getStringAttribute('default_read_concern');
-  }
-  public set defaultReadConcern(value: string) {
-    this._defaultReadConcern = value;
-  }
-  public resetDefaultReadConcern() {
-    this._defaultReadConcern = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultReadConcernInput() {
-    return this._defaultReadConcern;
-  }
-
-  // default_write_concern - computed: true, optional: true, required: false
-  private _defaultWriteConcern?: string; 
-  public get defaultWriteConcern() {
-    return this.getStringAttribute('default_write_concern');
-  }
-  public set defaultWriteConcern(value: string) {
-    this._defaultWriteConcern = value;
-  }
-  public resetDefaultWriteConcern() {
-    this._defaultWriteConcern = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultWriteConcernInput() {
-    return this._defaultWriteConcern;
-  }
-
-  // fail_index_key_too_long - computed: true, optional: true, required: false
-  private _failIndexKeyTooLong?: boolean | cdktf.IResolvable; 
-  public get failIndexKeyTooLong() {
-    return this.getBooleanAttribute('fail_index_key_too_long');
-  }
-  public set failIndexKeyTooLong(value: boolean | cdktf.IResolvable) {
-    this._failIndexKeyTooLong = value;
-  }
-  public resetFailIndexKeyTooLong() {
-    this._failIndexKeyTooLong = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get failIndexKeyTooLongInput() {
-    return this._failIndexKeyTooLong;
-  }
-
-  // javascript_enabled - computed: true, optional: true, required: false
-  private _javascriptEnabled?: boolean | cdktf.IResolvable; 
-  public get javascriptEnabled() {
-    return this.getBooleanAttribute('javascript_enabled');
-  }
-  public set javascriptEnabled(value: boolean | cdktf.IResolvable) {
-    this._javascriptEnabled = value;
-  }
-  public resetJavascriptEnabled() {
-    this._javascriptEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get javascriptEnabledInput() {
-    return this._javascriptEnabled;
-  }
-
-  // minimum_enabled_tls_protocol - computed: true, optional: true, required: false
-  private _minimumEnabledTlsProtocol?: string; 
-  public get minimumEnabledTlsProtocol() {
-    return this.getStringAttribute('minimum_enabled_tls_protocol');
-  }
-  public set minimumEnabledTlsProtocol(value: string) {
-    this._minimumEnabledTlsProtocol = value;
-  }
-  public resetMinimumEnabledTlsProtocol() {
-    this._minimumEnabledTlsProtocol = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minimumEnabledTlsProtocolInput() {
-    return this._minimumEnabledTlsProtocol;
-  }
-
-  // no_table_scan - computed: true, optional: true, required: false
-  private _noTableScan?: boolean | cdktf.IResolvable; 
-  public get noTableScan() {
-    return this.getBooleanAttribute('no_table_scan');
-  }
-  public set noTableScan(value: boolean | cdktf.IResolvable) {
-    this._noTableScan = value;
-  }
-  public resetNoTableScan() {
-    this._noTableScan = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get noTableScanInput() {
-    return this._noTableScan;
-  }
-
-  // oplog_min_retention_hours - computed: false, optional: true, required: false
-  private _oplogMinRetentionHours?: number; 
-  public get oplogMinRetentionHours() {
-    return this.getNumberAttribute('oplog_min_retention_hours');
-  }
-  public set oplogMinRetentionHours(value: number) {
-    this._oplogMinRetentionHours = value;
-  }
-  public resetOplogMinRetentionHours() {
-    this._oplogMinRetentionHours = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get oplogMinRetentionHoursInput() {
-    return this._oplogMinRetentionHours;
-  }
-
-  // oplog_size_mb - computed: true, optional: true, required: false
-  private _oplogSizeMb?: number; 
-  public get oplogSizeMb() {
-    return this.getNumberAttribute('oplog_size_mb');
-  }
-  public set oplogSizeMb(value: number) {
-    this._oplogSizeMb = value;
-  }
-  public resetOplogSizeMb() {
-    this._oplogSizeMb = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get oplogSizeMbInput() {
-    return this._oplogSizeMb;
-  }
-
-  // sample_refresh_interval_bi_connector - computed: true, optional: true, required: false
-  private _sampleRefreshIntervalBiConnector?: number; 
-  public get sampleRefreshIntervalBiConnector() {
-    return this.getNumberAttribute('sample_refresh_interval_bi_connector');
-  }
-  public set sampleRefreshIntervalBiConnector(value: number) {
-    this._sampleRefreshIntervalBiConnector = value;
-  }
-  public resetSampleRefreshIntervalBiConnector() {
-    this._sampleRefreshIntervalBiConnector = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sampleRefreshIntervalBiConnectorInput() {
-    return this._sampleRefreshIntervalBiConnector;
-  }
-
-  // sample_size_bi_connector - computed: true, optional: true, required: false
-  private _sampleSizeBiConnector?: number; 
-  public get sampleSizeBiConnector() {
-    return this.getNumberAttribute('sample_size_bi_connector');
-  }
-  public set sampleSizeBiConnector(value: number) {
-    this._sampleSizeBiConnector = value;
-  }
-  public resetSampleSizeBiConnector() {
-    this._sampleSizeBiConnector = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sampleSizeBiConnectorInput() {
-    return this._sampleSizeBiConnector;
-  }
-
-  // transaction_lifetime_limit_seconds - computed: true, optional: true, required: false
-  private _transactionLifetimeLimitSeconds?: number; 
-  public get transactionLifetimeLimitSeconds() {
-    return this.getNumberAttribute('transaction_lifetime_limit_seconds');
-  }
-  public set transactionLifetimeLimitSeconds(value: number) {
-    this._transactionLifetimeLimitSeconds = value;
-  }
-  public resetTransactionLifetimeLimitSeconds() {
-    this._transactionLifetimeLimitSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transactionLifetimeLimitSecondsInput() {
-    return this._transactionLifetimeLimitSeconds;
-  }
-}
-export interface ClusterBiConnectorConfig {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#enabled Cluster#enabled}
-  */
-  readonly enabled?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#read_preference Cluster#read_preference}
-  */
-  readonly readPreference?: string;
-}
-
-export function clusterBiConnectorConfigToTerraform(struct?: ClusterBiConnectorConfigOutputReference | ClusterBiConnectorConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    read_preference: cdktf.stringToTerraform(struct!.readPreference),
-  }
-}
-
-export class ClusterBiConnectorConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ClusterBiConnectorConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
-    if (this._readPreference !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.readPreference = this._readPreference;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ClusterBiConnectorConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._enabled = undefined;
-      this._readPreference = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._enabled = value.enabled;
-      this._readPreference = value.readPreference;
-    }
-  }
-
-  // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktf.IResolvable) {
-    this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
-  // read_preference - computed: true, optional: true, required: false
-  private _readPreference?: string; 
-  public get readPreference() {
-    return this.getStringAttribute('read_preference');
-  }
-  public set readPreference(value: string) {
-    this._readPreference = value;
-  }
-  public resetReadPreference() {
-    this._readPreference = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readPreferenceInput() {
-    return this._readPreference;
-  }
-}
 export interface ClusterLabels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#key Cluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#key Cluster#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#value Cluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#value Cluster#value}
   */
   readonly value?: string;
 }
@@ -1169,7 +1230,7 @@ export class ClusterLabelsOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // key - computed: true, optional: true, required: false
+  // key - computed: false, optional: true, required: false
   private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
@@ -1185,7 +1246,7 @@ export class ClusterLabelsOutputReference extends cdktf.ComplexObject {
     return this._key;
   }
 
-  // value - computed: true, optional: true, required: false
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -1223,23 +1284,23 @@ export class ClusterLabelsList extends cdktf.ComplexList {
 }
 export interface ClusterReplicationSpecsRegionsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#analytics_nodes Cluster#analytics_nodes}
   */
   readonly analyticsNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#electable_nodes Cluster#electable_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#electable_nodes Cluster#electable_nodes}
   */
   readonly electableNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#priority Cluster#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#priority Cluster#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#read_only_nodes Cluster#read_only_nodes}
   */
   readonly readOnlyNodes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#region_name Cluster#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#region_name Cluster#region_name}
   */
   readonly regionName: string;
 }
@@ -1425,24 +1486,24 @@ export class ClusterReplicationSpecsRegionsConfigList extends cdktf.ComplexList 
 }
 export interface ClusterReplicationSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#id Cluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#id Cluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#num_shards Cluster#num_shards}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#num_shards Cluster#num_shards}
   */
   readonly numShards: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#zone_name Cluster#zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#zone_name Cluster#zone_name}
   */
   readonly zoneName?: string;
   /**
   * regions_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#regions_config Cluster#regions_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#regions_config Cluster#regions_config}
   */
   readonly regionsConfig?: ClusterReplicationSpecsRegionsConfig[] | cdktf.IResolvable;
 }
@@ -1605,11 +1666,11 @@ export class ClusterReplicationSpecsList extends cdktf.ComplexList {
 }
 export interface ClusterTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#key Cluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#key Cluster#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#value Cluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#value Cluster#value}
   */
   readonly value: string;
 }
@@ -1723,15 +1784,15 @@ export class ClusterTagsList extends cdktf.ComplexList {
 }
 export interface ClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#create Cluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#create Cluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#delete Cluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#delete Cluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#update Cluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#update Cluster#update}
   */
   readonly update?: string;
 }
@@ -1852,7 +1913,7 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster mongodbatlas_cluster}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster mongodbatlas_cluster}
 */
 export class Cluster extends cdktf.TerraformResource {
 
@@ -1868,7 +1929,7 @@ export class Cluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Cluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cluster to import
-  * @param importFromId The id of the existing Cluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Cluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1880,7 +1941,7 @@ export class Cluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster mongodbatlas_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster mongodbatlas_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1891,7 +1952,7 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cluster',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.2',
+        providerVersion: '1.12.3',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1902,11 +1963,14 @@ export class Cluster extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._acceptDataRisksAndForceReplicaSetReconfig = config.acceptDataRisksAndForceReplicaSetReconfig;
+    this._advancedConfiguration.internalValue = config.advancedConfiguration;
     this._autoScalingComputeEnabled = config.autoScalingComputeEnabled;
     this._autoScalingComputeScaleDownEnabled = config.autoScalingComputeScaleDownEnabled;
     this._autoScalingDiskGbEnabled = config.autoScalingDiskGbEnabled;
     this._backingProviderName = config.backingProviderName;
     this._backupEnabled = config.backupEnabled;
+    this._biConnectorConfig.internalValue = config.biConnectorConfig;
     this._cloudBackup = config.cloudBackup;
     this._clusterType = config.clusterType;
     this._diskSizeGb = config.diskSizeGb;
@@ -1931,8 +1995,6 @@ export class Cluster extends cdktf.TerraformResource {
     this._retainBackupsEnabled = config.retainBackupsEnabled;
     this._terminationProtectionEnabled = config.terminationProtectionEnabled;
     this._versionReleaseSystem = config.versionReleaseSystem;
-    this._advancedConfiguration.internalValue = config.advancedConfiguration;
-    this._biConnectorConfig.internalValue = config.biConnectorConfig;
     this._labels.internalValue = config.labels;
     this._replicationSpecs.internalValue = config.replicationSpecs;
     this._tags.internalValue = config.tags;
@@ -1942,6 +2004,38 @@ export class Cluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // accept_data_risks_and_force_replica_set_reconfig - computed: false, optional: true, required: false
+  private _acceptDataRisksAndForceReplicaSetReconfig?: string; 
+  public get acceptDataRisksAndForceReplicaSetReconfig() {
+    return this.getStringAttribute('accept_data_risks_and_force_replica_set_reconfig');
+  }
+  public set acceptDataRisksAndForceReplicaSetReconfig(value: string) {
+    this._acceptDataRisksAndForceReplicaSetReconfig = value;
+  }
+  public resetAcceptDataRisksAndForceReplicaSetReconfig() {
+    this._acceptDataRisksAndForceReplicaSetReconfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptDataRisksAndForceReplicaSetReconfigInput() {
+    return this._acceptDataRisksAndForceReplicaSetReconfig;
+  }
+
+  // advanced_configuration - computed: true, optional: true, required: false
+  private _advancedConfiguration = new ClusterAdvancedConfigurationList(this, "advanced_configuration", false);
+  public get advancedConfiguration() {
+    return this._advancedConfiguration;
+  }
+  public putAdvancedConfiguration(value: ClusterAdvancedConfiguration[] | cdktf.IResolvable) {
+    this._advancedConfiguration.internalValue = value;
+  }
+  public resetAdvancedConfiguration() {
+    this._advancedConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedConfigurationInput() {
+    return this._advancedConfiguration.internalValue;
+  }
 
   // auto_scaling_compute_enabled - computed: true, optional: true, required: false
   private _autoScalingComputeEnabled?: boolean | cdktf.IResolvable; 
@@ -2007,7 +2101,7 @@ export class Cluster extends cdktf.TerraformResource {
     return this._backingProviderName;
   }
 
-  // backup_enabled - computed: false, optional: true, required: false
+  // backup_enabled - computed: true, optional: true, required: false
   private _backupEnabled?: boolean | cdktf.IResolvable; 
   public get backupEnabled() {
     return this.getBooleanAttribute('backup_enabled');
@@ -2021,6 +2115,22 @@ export class Cluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get backupEnabledInput() {
     return this._backupEnabled;
+  }
+
+  // bi_connector_config - computed: true, optional: true, required: false
+  private _biConnectorConfig = new ClusterBiConnectorConfigList(this, "bi_connector_config", false);
+  public get biConnectorConfig() {
+    return this._biConnectorConfig;
+  }
+  public putBiConnectorConfig(value: ClusterBiConnectorConfig[] | cdktf.IResolvable) {
+    this._biConnectorConfig.internalValue = value;
+  }
+  public resetBiConnectorConfig() {
+    this._biConnectorConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get biConnectorConfigInput() {
+    return this._biConnectorConfig.internalValue;
   }
 
   // cloud_backup - computed: false, optional: true, required: false
@@ -2168,7 +2278,7 @@ export class Cluster extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // num_shards - computed: false, optional: true, required: false
+  // num_shards - computed: true, optional: true, required: false
   private _numShards?: number; 
   public get numShards() {
     return this.getNumberAttribute('num_shards');
@@ -2184,7 +2294,7 @@ export class Cluster extends cdktf.TerraformResource {
     return this._numShards;
   }
 
-  // paused - computed: false, optional: true, required: false
+  // paused - computed: true, optional: true, required: false
   private _paused?: boolean | cdktf.IResolvable; 
   public get paused() {
     return this.getBooleanAttribute('paused');
@@ -2436,7 +2546,7 @@ export class Cluster extends cdktf.TerraformResource {
     return this._terminationProtectionEnabled;
   }
 
-  // version_release_system - computed: false, optional: true, required: false
+  // version_release_system - computed: true, optional: true, required: false
   private _versionReleaseSystem?: string; 
   public get versionReleaseSystem() {
     return this.getStringAttribute('version_release_system');
@@ -2450,38 +2560,6 @@ export class Cluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get versionReleaseSystemInput() {
     return this._versionReleaseSystem;
-  }
-
-  // advanced_configuration - computed: false, optional: true, required: false
-  private _advancedConfiguration = new ClusterAdvancedConfigurationOutputReference(this, "advanced_configuration");
-  public get advancedConfiguration() {
-    return this._advancedConfiguration;
-  }
-  public putAdvancedConfiguration(value: ClusterAdvancedConfiguration) {
-    this._advancedConfiguration.internalValue = value;
-  }
-  public resetAdvancedConfiguration() {
-    this._advancedConfiguration.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get advancedConfigurationInput() {
-    return this._advancedConfiguration.internalValue;
-  }
-
-  // bi_connector_config - computed: false, optional: true, required: false
-  private _biConnectorConfig = new ClusterBiConnectorConfigOutputReference(this, "bi_connector_config");
-  public get biConnectorConfig() {
-    return this._biConnectorConfig;
-  }
-  public putBiConnectorConfig(value: ClusterBiConnectorConfig) {
-    this._biConnectorConfig.internalValue = value;
-  }
-  public resetBiConnectorConfig() {
-    this._biConnectorConfig.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get biConnectorConfigInput() {
-    return this._biConnectorConfig.internalValue;
   }
 
   // labels - computed: false, optional: true, required: false
@@ -2554,11 +2632,14 @@ export class Cluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      accept_data_risks_and_force_replica_set_reconfig: cdktf.stringToTerraform(this._acceptDataRisksAndForceReplicaSetReconfig),
+      advanced_configuration: cdktf.listMapper(clusterAdvancedConfigurationToTerraform, false)(this._advancedConfiguration.internalValue),
       auto_scaling_compute_enabled: cdktf.booleanToTerraform(this._autoScalingComputeEnabled),
       auto_scaling_compute_scale_down_enabled: cdktf.booleanToTerraform(this._autoScalingComputeScaleDownEnabled),
       auto_scaling_disk_gb_enabled: cdktf.booleanToTerraform(this._autoScalingDiskGbEnabled),
       backing_provider_name: cdktf.stringToTerraform(this._backingProviderName),
       backup_enabled: cdktf.booleanToTerraform(this._backupEnabled),
+      bi_connector_config: cdktf.listMapper(clusterBiConnectorConfigToTerraform, false)(this._biConnectorConfig.internalValue),
       cloud_backup: cdktf.booleanToTerraform(this._cloudBackup),
       cluster_type: cdktf.stringToTerraform(this._clusterType),
       disk_size_gb: cdktf.numberToTerraform(this._diskSizeGb),
@@ -2583,8 +2664,6 @@ export class Cluster extends cdktf.TerraformResource {
       retain_backups_enabled: cdktf.booleanToTerraform(this._retainBackupsEnabled),
       termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
       version_release_system: cdktf.stringToTerraform(this._versionReleaseSystem),
-      advanced_configuration: clusterAdvancedConfigurationToTerraform(this._advancedConfiguration.internalValue),
-      bi_connector_config: clusterBiConnectorConfigToTerraform(this._biConnectorConfig.internalValue),
       labels: cdktf.listMapper(clusterLabelsToTerraform, true)(this._labels.internalValue),
       replication_specs: cdktf.listMapper(clusterReplicationSpecsToTerraform, true)(this._replicationSpecs.internalValue),
       tags: cdktf.listMapper(clusterTagsToTerraform, true)(this._tags.internalValue),

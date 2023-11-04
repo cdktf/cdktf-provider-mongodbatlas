@@ -1,6 +1,6 @@
 # `data_mongodbatlas_custom_dns_configuration_cluster_aws`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_dns_configuration_cluster_aws`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_dns_configuration_cluster_aws`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws).
 
 # `dataMongodbatlasCustomDnsConfigurationClusterAws` Submodule <a name="`dataMongodbatlasCustomDnsConfigurationClusterAws` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_custom_dns_config
 
 ### DataMongodbatlasCustomDnsConfigurationClusterAws <a name="DataMongodbatlasCustomDnsConfigurationClusterAws" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope Construct, id *string, config DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) DataMongodbatlasCustomDnsConfigurationClusterAws
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfig
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfig
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataMongodbatlasCustomDnsC
 
 The id of the existing DataMongodbatlasCustomDnsConfigurationClusterAws that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
 
 &datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig {
 	Connection: interface{},
@@ -626,8 +626,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}. |
 
 ---
 
@@ -709,7 +709,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws#project_id DataMongodbatlasCustomDnsConfigurationClusterAws#project_id}.
 
 ---
 
@@ -721,7 +721,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/custom_dns_configuration_cluster_aws#id DataMongodbatlasCustomDnsConfigurationClusterAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

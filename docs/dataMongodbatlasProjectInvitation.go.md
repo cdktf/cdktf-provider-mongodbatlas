@@ -1,6 +1,6 @@
 # `data_mongodbatlas_project_invitation`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_project_invitation`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_project_invitation`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation).
 
 # `dataMongodbatlasProjectInvitation` Submodule <a name="`dataMongodbatlasProjectInvitation` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_project_invitatio
 
 ### DataMongodbatlasProjectInvitation <a name="DataMongodbatlasProjectInvitation" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation mongodbatlas_project_invitation}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation mongodbatlas_project_invitation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation"
 
 datamongodbatlasprojectinvitation.NewDataMongodbatlasProjectInvitation(scope Construct, id *string, config DataMongodbatlasProjectInvitationConfig) DataMongodbatlasProjectInvitation
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation"
 
 datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitation_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation"
 
 datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitation_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitation_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation"
 
 datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitation_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation"
 
 datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataMongodbatlasProjectInv
 
 The id of the existing DataMongodbatlasProjectInvitation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -677,7 +677,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation"
 
 &datamongodbatlasprojectinvitation.DataMongodbatlasProjectInvitationConfig {
 	Connection: interface{},
@@ -705,10 +705,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.invitationId">InvitationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#invitation_id DataMongodbatlasProjectInvitation#invitation_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#project_id DataMongodbatlasProjectInvitation#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#username DataMongodbatlasProjectInvitation#username}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#id DataMongodbatlasProjectInvitation#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.invitationId">InvitationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#invitation_id DataMongodbatlasProjectInvitation#invitation_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#project_id DataMongodbatlasProjectInvitation#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#username DataMongodbatlasProjectInvitation#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasProjectInvitation.DataMongodbatlasProjectInvitationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#id DataMongodbatlasProjectInvitation#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ InvitationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#invitation_id DataMongodbatlasProjectInvitation#invitation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#invitation_id DataMongodbatlasProjectInvitation#invitation_id}.
 
 ---
 
@@ -802,7 +802,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#project_id DataMongodbatlasProjectInvitation#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#project_id DataMongodbatlasProjectInvitation#project_id}.
 
 ---
 
@@ -814,7 +814,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#username DataMongodbatlasProjectInvitation#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#username DataMongodbatlasProjectInvitation#username}.
 
 ---
 
@@ -826,7 +826,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/project_invitation#id DataMongodbatlasProjectInvitation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/project_invitation#id DataMongodbatlasProjectInvitation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
