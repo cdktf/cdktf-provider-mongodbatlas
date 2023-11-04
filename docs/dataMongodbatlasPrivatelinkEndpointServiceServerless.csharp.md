@@ -1,6 +1,6 @@
 # `data_mongodbatlas_privatelink_endpoint_service_serverless`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_serverless`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_serverless`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless).
 
 # `dataMongodbatlasPrivatelinkEndpointServiceServerless` Submodule <a name="`dataMongodbatlasPrivatelinkEndpointServiceServerless` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpo
 
 ### DataMongodbatlasPrivatelinkEndpointServiceServerless <a name="DataMongodbatlasPrivatelinkEndpointServiceServerless" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataMongodbatlasPrivatelin
 
 The id of the existing DataMongodbatlasPrivatelinkEndpointServiceServerless that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,10 +738,10 @@ new DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig {
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.endpointId">EndpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceServerless#endpoint_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#instance_name DataMongodbatlasPrivatelinkEndpointServiceServerless#instance_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#project_id DataMongodbatlasPrivatelinkEndpointServiceServerless#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#id DataMongodbatlasPrivatelinkEndpointServiceServerless#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.endpointId">EndpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceServerless#endpoint_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#instance_name DataMongodbatlasPrivatelinkEndpointServiceServerless#instance_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#project_id DataMongodbatlasPrivatelinkEndpointServiceServerless#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#id DataMongodbatlasPrivatelinkEndpointServiceServerless#id}. |
 
 ---
 
@@ -823,7 +823,7 @@ public string EndpointId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceServerless#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#endpoint_id DataMongodbatlasPrivatelinkEndpointServiceServerless#endpoint_id}.
 
 ---
 
@@ -835,7 +835,7 @@ public string InstanceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#instance_name DataMongodbatlasPrivatelinkEndpointServiceServerless#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#instance_name DataMongodbatlasPrivatelinkEndpointServiceServerless#instance_name}.
 
 ---
 
@@ -847,7 +847,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#project_id DataMongodbatlasPrivatelinkEndpointServiceServerless#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#project_id DataMongodbatlasPrivatelinkEndpointServiceServerless#project_id}.
 
 ---
 
@@ -859,7 +859,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_serverless#id DataMongodbatlasPrivatelinkEndpointServiceServerless#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_serverless#id DataMongodbatlasPrivatelinkEndpointServiceServerless#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
