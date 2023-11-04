@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 projectipaccesslist.NewProjectIpAccessList(scope Construct, id *string, config ProjectIpAccessListConfig) ProjectIpAccessList
 ```
@@ -380,7 +380,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 projectipaccesslist.ProjectIpAccessList_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 projectipaccesslist.ProjectIpAccessList_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ projectipaccesslist.ProjectIpAccessList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 projectipaccesslist.ProjectIpAccessList_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ projectipaccesslist.ProjectIpAccessList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 projectipaccesslist.ProjectIpAccessList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 &projectipaccesslist.ProjectIpAccessListConfig {
 	Connection: interface{},
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipac
 	CidrBlock: *string,
 	Comment: *string,
 	IpAddress: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.projectIpAccessList.ProjectIpAccessListTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.projectIpAccessList.ProjectIpAccessListTimeouts,
 }
 ```
 
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessListTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 &projectipaccesslist.ProjectIpAccessListTimeouts {
 	Delete: *string,
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectIpAccessList.ProjectIpAccessListTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectipaccesslist"
 
 projectipaccesslist.NewProjectIpAccessListTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectIpAccessListTimeoutsOutputReference
 ```
