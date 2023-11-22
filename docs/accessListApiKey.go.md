@@ -1,6 +1,6 @@
 # `mongodbatlas_access_list_api_key`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_access_list_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key).
+Refer to the Terraform Registory for docs: [`mongodbatlas_access_list_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key).
 
 # `accessListApiKey` Submodule <a name="`accessListApiKey` Submodule" id="@cdktf/provider-mongodbatlas.accessListApiKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_access_list_api_key`](
 
 ### AccessListApiKey <a name="AccessListApiKey" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key mongodbatlas_access_list_api_key}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key mongodbatlas_access_list_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/accesslistapikey"
 
 accesslistapikey.NewAccessListApiKey(scope Construct, id *string, config AccessListApiKeyConfig) AccessListApiKey
 ```
@@ -353,7 +353,7 @@ func ResetIpAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/accesslistapikey"
 
 accesslistapikey.AccessListApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/accesslistapikey"
 
 accesslistapikey.AccessListApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ accesslistapikey.AccessListApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/accesslistapikey"
 
 accesslistapikey.AccessListApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ accesslistapikey.AccessListApiKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/accesslistapikey"
 
 accesslistapikey.AccessListApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the AccessListApiKey to import
 
 The id of the existing AccessListApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -752,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/accesslistapikey"
 
 &accesslistapikey.AccessListApiKeyConfig {
 	Connection: interface{},
@@ -781,11 +781,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/accessli
 | <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.apiKeyId">ApiKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#api_key_id AccessListApiKey#api_key_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#org_id AccessListApiKey#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#cidr_block AccessListApiKey#cidr_block}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#id AccessListApiKey#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#ip_address AccessListApiKey#ip_address}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.apiKeyId">ApiKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#api_key_id AccessListApiKey#api_key_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#org_id AccessListApiKey#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#cidr_block AccessListApiKey#cidr_block}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#id AccessListApiKey#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.accessListApiKey.AccessListApiKeyConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#ip_address AccessListApiKey#ip_address}. |
 
 ---
 
@@ -867,7 +867,7 @@ ApiKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#api_key_id AccessListApiKey#api_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#api_key_id AccessListApiKey#api_key_id}.
 
 ---
 
@@ -879,7 +879,7 @@ OrgId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#org_id AccessListApiKey#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#org_id AccessListApiKey#org_id}.
 
 ---
 
@@ -891,7 +891,7 @@ CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#cidr_block AccessListApiKey#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#cidr_block AccessListApiKey#cidr_block}.
 
 ---
 
@@ -903,7 +903,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#id AccessListApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#id AccessListApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,7 +918,7 @@ IpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/access_list_api_key#ip_address AccessListApiKey#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key#ip_address AccessListApiKey#ip_address}.
 
 ---
 

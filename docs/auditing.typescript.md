@@ -1,6 +1,6 @@
 # `mongodbatlas_auditing`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing).
+Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing).
 
 # `auditing` Submodule <a name="`auditing` Submodule" id="@cdktf/provider-mongodbatlas.auditing"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://reg
 
 ### Auditing <a name="Auditing" id="@cdktf/provider-mongodbatlas.auditing.Auditing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing mongodbatlas_auditing}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing mongodbatlas_auditing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.auditing.Auditing.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the Auditing to import.
 
 The id of the existing Auditing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,11 +786,11 @@ const auditingConfig: auditing.AuditingConfig = { ... }
 | <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#project_id Auditing#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditAuthorizationSuccess">auditAuthorizationSuccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditFilter">auditFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#audit_filter Auditing#audit_filter}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#enabled Auditing#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#id Auditing#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#project_id Auditing#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditAuthorizationSuccess">auditAuthorizationSuccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.auditFilter">auditFilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#audit_filter Auditing#audit_filter}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#enabled Auditing#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.auditing.AuditingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#id Auditing#id}. |
 
 ---
 
@@ -872,7 +872,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#project_id Auditing#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#project_id Auditing#project_id}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly auditAuthorizationSuccess: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#audit_authorization_success Auditing#audit_authorization_success}.
 
 ---
 
@@ -896,7 +896,7 @@ public readonly auditFilter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#audit_filter Auditing#audit_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#audit_filter Auditing#audit_filter}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#enabled Auditing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#enabled Auditing#enabled}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/auditing#id Auditing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/auditing#id Auditing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
