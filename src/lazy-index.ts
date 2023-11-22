@@ -50,6 +50,7 @@ Object.defineProperty(exports, 'project', { get: function () { return require('.
 Object.defineProperty(exports, 'projectApiKey', { get: function () { return require('./project-api-key'); } });
 Object.defineProperty(exports, 'projectInvitation', { get: function () { return require('./project-invitation'); } });
 Object.defineProperty(exports, 'projectIpAccessList', { get: function () { return require('./project-ip-access-list'); } });
+Object.defineProperty(exports, 'searchDeployment', { get: function () { return require('./search-deployment'); } });
 Object.defineProperty(exports, 'searchIndex', { get: function () { return require('./search-index'); } });
 Object.defineProperty(exports, 'serverlessInstance', { get: function () { return require('./serverless-instance'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
@@ -131,6 +132,7 @@ Object.defineProperty(exports, 'dataMongodbatlasProjectInvitation', { get: funct
 Object.defineProperty(exports, 'dataMongodbatlasProjectIpAccessList', { get: function () { return require('./data-mongodbatlas-project-ip-access-list'); } });
 Object.defineProperty(exports, 'dataMongodbatlasProjects', { get: function () { return require('./data-mongodbatlas-projects'); } });
 Object.defineProperty(exports, 'dataMongodbatlasRolesOrgId', { get: function () { return require('./data-mongodbatlas-roles-org-id'); } });
+Object.defineProperty(exports, 'dataMongodbatlasSearchDeployment', { get: function () { return require('./data-mongodbatlas-search-deployment'); } });
 Object.defineProperty(exports, 'dataMongodbatlasSearchIndex', { get: function () { return require('./data-mongodbatlas-search-index'); } });
 Object.defineProperty(exports, 'dataMongodbatlasSearchIndexes', { get: function () { return require('./data-mongodbatlas-search-indexes'); } });
 Object.defineProperty(exports, 'dataMongodbatlasServerlessInstance', { get: function () { return require('./data-mongodbatlas-serverless-instance'); } });

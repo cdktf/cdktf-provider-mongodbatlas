@@ -50,6 +50,7 @@ export * as project from './project';
 export * as projectApiKey from './project-api-key';
 export * as projectInvitation from './project-invitation';
 export * as projectIpAccessList from './project-ip-access-list';
+export * as searchDeployment from './search-deployment';
 export * as searchIndex from './search-index';
 export * as serverlessInstance from './serverless-instance';
 export * as team from './team';
@@ -131,6 +132,7 @@ export * as dataMongodbatlasProjectInvitation from './data-mongodbatlas-project-
 export * as dataMongodbatlasProjectIpAccessList from './data-mongodbatlas-project-ip-access-list';
 export * as dataMongodbatlasProjects from './data-mongodbatlas-projects';
 export * as dataMongodbatlasRolesOrgId from './data-mongodbatlas-roles-org-id';
+export * as dataMongodbatlasSearchDeployment from './data-mongodbatlas-search-deployment';
 export * as dataMongodbatlasSearchIndex from './data-mongodbatlas-search-index';
 export * as dataMongodbatlasSearchIndexes from './data-mongodbatlas-search-indexes';
 export * as dataMongodbatlasServerlessInstance from './data-mongodbatlas-serverless-instance';

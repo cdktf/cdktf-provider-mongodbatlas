@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface PrivatelinkEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#endpoint_service_id PrivatelinkEndpointService#endpoint_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#endpoint_service_id PrivatelinkEndpointService#endpoint_service_id}
   */
   readonly endpointServiceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#gcp_project_id PrivatelinkEndpointService#gcp_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#endpoints PrivatelinkEndpointService#endpoints}
+  */
+  readonly endpoints?: PrivatelinkEndpointServiceEndpoints[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#gcp_project_id PrivatelinkEndpointService#gcp_project_id}
   */
   readonly gcpProjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#id PrivatelinkEndpointService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#id PrivatelinkEndpointService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#private_endpoint_ip_address PrivatelinkEndpointService#private_endpoint_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#private_endpoint_ip_address PrivatelinkEndpointService#private_endpoint_ip_address}
   */
   readonly privateEndpointIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#private_link_id PrivatelinkEndpointService#private_link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#private_link_id PrivatelinkEndpointService#private_link_id}
   */
   readonly privateLinkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#project_id PrivatelinkEndpointService#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#project_id PrivatelinkEndpointService#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#provider_name PrivatelinkEndpointService#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#provider_name PrivatelinkEndpointService#provider_name}
   */
   readonly providerName: string;
   /**
-  * endpoints block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#endpoints PrivatelinkEndpointService#endpoints}
-  */
-  readonly endpoints?: PrivatelinkEndpointServiceEndpoints[] | cdktf.IResolvable;
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#timeouts PrivatelinkEndpointService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#timeouts PrivatelinkEndpointService#timeouts}
   */
   readonly timeouts?: PrivatelinkEndpointServiceTimeouts;
 }
 export interface PrivatelinkEndpointServiceEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#endpoint_name PrivatelinkEndpointService#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#endpoint_name PrivatelinkEndpointService#endpoint_name}
   */
   readonly endpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#ip_address PrivatelinkEndpointService#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#ip_address PrivatelinkEndpointService#ip_address}
   */
   readonly ipAddress?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#service_attachment_name PrivatelinkEndpointService#service_attachment_name}
+  */
+  readonly serviceAttachmentName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#status PrivatelinkEndpointService#status}
+  */
+  readonly status?: string;
 }
 
 export function privatelinkEndpointServiceEndpointsToTerraform(struct?: PrivatelinkEndpointServiceEndpoints | cdktf.IResolvable): any {
@@ -75,6 +81,8 @@ export function privatelinkEndpointServiceEndpointsToTerraform(struct?: Privatel
   return {
     endpoint_name: cdktf.stringToTerraform(struct!.endpointName),
     ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    service_attachment_name: cdktf.stringToTerraform(struct!.serviceAttachmentName),
+    status: cdktf.stringToTerraform(struct!.status),
   }
 }
 
@@ -106,6 +114,14 @@ export class PrivatelinkEndpointServiceEndpointsOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.ipAddress = this._ipAddress;
     }
+    if (this._serviceAttachmentName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAttachmentName = this._serviceAttachmentName;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -115,6 +131,8 @@ export class PrivatelinkEndpointServiceEndpointsOutputReference extends cdktf.Co
       this.resolvableValue = undefined;
       this._endpointName = undefined;
       this._ipAddress = undefined;
+      this._serviceAttachmentName = undefined;
+      this._status = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -125,10 +143,12 @@ export class PrivatelinkEndpointServiceEndpointsOutputReference extends cdktf.Co
       this.resolvableValue = undefined;
       this._endpointName = value.endpointName;
       this._ipAddress = value.ipAddress;
+      this._serviceAttachmentName = value.serviceAttachmentName;
+      this._status = value.status;
     }
   }
 
-  // endpoint_name - computed: false, optional: true, required: false
+  // endpoint_name - computed: true, optional: true, required: false
   private _endpointName?: string; 
   public get endpointName() {
     return this.getStringAttribute('endpoint_name');
@@ -144,7 +164,7 @@ export class PrivatelinkEndpointServiceEndpointsOutputReference extends cdktf.Co
     return this._endpointName;
   }
 
-  // ip_address - computed: false, optional: true, required: false
+  // ip_address - computed: true, optional: true, required: false
   private _ipAddress?: string; 
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
@@ -160,14 +180,36 @@ export class PrivatelinkEndpointServiceEndpointsOutputReference extends cdktf.Co
     return this._ipAddress;
   }
 
-  // service_attachment_name - computed: true, optional: false, required: false
+  // service_attachment_name - computed: true, optional: true, required: false
+  private _serviceAttachmentName?: string; 
   public get serviceAttachmentName() {
     return this.getStringAttribute('service_attachment_name');
   }
+  public set serviceAttachmentName(value: string) {
+    this._serviceAttachmentName = value;
+  }
+  public resetServiceAttachmentName() {
+    this._serviceAttachmentName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAttachmentNameInput() {
+    return this._serviceAttachmentName;
+  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: true, required: false
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
   }
 }
 
@@ -192,11 +234,11 @@ export class PrivatelinkEndpointServiceEndpointsList extends cdktf.ComplexList {
 }
 export interface PrivatelinkEndpointServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#create PrivatelinkEndpointService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#create PrivatelinkEndpointService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#delete PrivatelinkEndpointService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#delete PrivatelinkEndpointService#delete}
   */
   readonly delete?: string;
 }
@@ -294,7 +336,7 @@ export class PrivatelinkEndpointServiceTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service}
 */
 export class PrivatelinkEndpointService extends cdktf.TerraformResource {
 
@@ -310,7 +352,7 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PrivatelinkEndpointService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivatelinkEndpointService to import
-  * @param importFromId The id of the existing PrivatelinkEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrivatelinkEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivatelinkEndpointService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -322,7 +364,7 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -333,7 +375,7 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_privatelink_endpoint_service',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.12.3',
+        providerVersion: '1.13.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -345,13 +387,13 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._endpointServiceId = config.endpointServiceId;
+    this._endpoints.internalValue = config.endpoints;
     this._gcpProjectId = config.gcpProjectId;
     this._id = config.id;
     this._privateEndpointIpAddress = config.privateEndpointIpAddress;
     this._privateLinkId = config.privateLinkId;
     this._projectId = config.projectId;
     this._providerName = config.providerName;
-    this._endpoints.internalValue = config.endpoints;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -390,6 +432,22 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get endpointServiceIdInput() {
     return this._endpointServiceId;
+  }
+
+  // endpoints - computed: true, optional: true, required: false
+  private _endpoints = new PrivatelinkEndpointServiceEndpointsList(this, "endpoints", false);
+  public get endpoints() {
+    return this._endpoints;
+  }
+  public putEndpoints(value: PrivatelinkEndpointServiceEndpoints[] | cdktf.IResolvable) {
+    this._endpoints.internalValue = value;
+  }
+  public resetEndpoints() {
+    this._endpoints.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsInput() {
+    return this._endpoints.internalValue;
   }
 
   // error_message - computed: true, optional: false, required: false
@@ -504,22 +562,6 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
     return this._providerName;
   }
 
-  // endpoints - computed: false, optional: true, required: false
-  private _endpoints = new PrivatelinkEndpointServiceEndpointsList(this, "endpoints", false);
-  public get endpoints() {
-    return this._endpoints;
-  }
-  public putEndpoints(value: PrivatelinkEndpointServiceEndpoints[] | cdktf.IResolvable) {
-    this._endpoints.internalValue = value;
-  }
-  public resetEndpoints() {
-    this._endpoints.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endpointsInput() {
-    return this._endpoints.internalValue;
-  }
-
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new PrivatelinkEndpointServiceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -543,13 +585,13 @@ export class PrivatelinkEndpointService extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_service_id: cdktf.stringToTerraform(this._endpointServiceId),
+      endpoints: cdktf.listMapper(privatelinkEndpointServiceEndpointsToTerraform, false)(this._endpoints.internalValue),
       gcp_project_id: cdktf.stringToTerraform(this._gcpProjectId),
       id: cdktf.stringToTerraform(this._id),
       private_endpoint_ip_address: cdktf.stringToTerraform(this._privateEndpointIpAddress),
       private_link_id: cdktf.stringToTerraform(this._privateLinkId),
       project_id: cdktf.stringToTerraform(this._projectId),
       provider_name: cdktf.stringToTerraform(this._providerName),
-      endpoints: cdktf.listMapper(privatelinkEndpointServiceEndpointsToTerraform, true)(this._endpoints.internalValue),
       timeouts: privatelinkEndpointServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
