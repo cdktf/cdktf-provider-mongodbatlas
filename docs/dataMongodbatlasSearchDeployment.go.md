@@ -1,6 +1,6 @@
 # `data_mongodbatlas_search_deployment`
 
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_search_deployment`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment).
+Refer to the Terraform Registory for docs: [`data_mongodbatlas_search_deployment`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment).
 
 # `dataMongodbatlasSearchDeployment` Submodule <a name="`dataMongodbatlasSearchDeployment` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_mongodbatlas_search_deployment
 
 ### DataMongodbatlasSearchDeployment <a name="DataMongodbatlasSearchDeployment" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment mongodbatlas_search_deployment}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment mongodbatlas_search_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeployment.Initializer"></a>
 
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataMongodbatlasSearchDepl
 
 The id of the existing DataMongodbatlasSearchDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,8 +641,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeploymentConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}. |
 
 ---
 
@@ -724,7 +724,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}.
 
 ---
 
@@ -736,7 +736,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}.
 
 ---
 

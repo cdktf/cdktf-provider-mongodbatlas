@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform mongodbatlas Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on mongodbatlas 1.13.0
+Is based directly on mongodbatlas 1.13.1
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform mongodbatlas Provider vers
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform mongodbatlas Provider](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0)
+- [Terraform mongodbatlas Provider](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-mongodbatlas/releases)
 - [Terraform Engine](https://terraform.io)
 

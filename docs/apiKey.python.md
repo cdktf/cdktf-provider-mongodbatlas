@@ -1,6 +1,6 @@
 # `mongodbatlas_api_key`
 
-Refer to the Terraform Registory for docs: [`mongodbatlas_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key).
+Refer to the Terraform Registory for docs: [`mongodbatlas_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key).
 
 # `apiKey` Submodule <a name="`apiKey` Submodule" id="@cdktf/provider-mongodbatlas.apiKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`mongodbatlas_api_key`](https://regi
 
 ### ApiKey <a name="ApiKey" id="@cdktf/provider-mongodbatlas.apiKey.ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key mongodbatlas_api_key}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key mongodbatlas_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer"></a>
 
@@ -43,10 +43,10 @@ apiKey.ApiKey(
 | <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#description ApiKey#description}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#org_id ApiKey#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#role_names ApiKey#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#id ApiKey#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#description ApiKey#description}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#org_id ApiKey#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#role_names ApiKey#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#id ApiKey#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#description ApiKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#description ApiKey#description}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#org_id ApiKey#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#org_id ApiKey#org_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#role_names ApiKey#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#role_names ApiKey#role_names}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#id ApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#id ApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -567,7 +567,7 @@ The construct id used in the generated config for the ApiKey to import.
 
 The id of the existing ApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,10 +916,10 @@ apiKey.ApiKeyConfig(
 | <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#description ApiKey#description}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.orgId">org_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#org_id ApiKey#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#role_names ApiKey#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#id ApiKey#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#description ApiKey#description}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.orgId">org_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#org_id ApiKey#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#role_names ApiKey#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.apiKey.ApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#id ApiKey#id}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#description ApiKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#description ApiKey#description}.
 
 ---
 
@@ -1013,7 +1013,7 @@ org_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#org_id ApiKey#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#org_id ApiKey#org_id}.
 
 ---
 
@@ -1025,7 +1025,7 @@ role_names: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#role_names ApiKey#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#role_names ApiKey#role_names}.
 
 ---
 
@@ -1037,7 +1037,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/api_key#id ApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/api_key#id ApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
