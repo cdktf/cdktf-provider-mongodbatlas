@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedQueryLimitsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits#id DataMongodbatlasFederatedQueryLimits#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits#id DataMongodbatlasFederatedQueryLimits#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits#project_id DataMongodbatlasFederatedQueryLimits#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits#project_id DataMongodbatlasFederatedQueryLimits#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits#tenant_name DataMongodbatlasFederatedQueryLimits#tenant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits#tenant_name DataMongodbatlasFederatedQueryLimits#tenant_name}
   */
   readonly tenantName: string;
 }
@@ -134,7 +129,7 @@ export class DataMongodbatlasFederatedQueryLimitsResultsList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits}
 */
 export class DataMongodbatlasFederatedQueryLimits extends cdktf.TerraformDataSource {
 
@@ -150,7 +145,7 @@ export class DataMongodbatlasFederatedQueryLimits extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataMongodbatlasFederatedQueryLimits resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasFederatedQueryLimits to import
-  * @param importFromId The id of the existing DataMongodbatlasFederatedQueryLimits that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasFederatedQueryLimits that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasFederatedQueryLimits to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +157,7 @@ export class DataMongodbatlasFederatedQueryLimits extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +168,7 @@ export class DataMongodbatlasFederatedQueryLimits extends cdktf.TerraformDataSou
       terraformResourceType: 'mongodbatlas_federated_query_limits',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.13.0',
+        providerVersion: '1.13.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

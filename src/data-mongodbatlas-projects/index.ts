@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/projects
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasProjectsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/projects#items_per_page DataMongodbatlasProjects#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects#items_per_page DataMongodbatlasProjects#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/projects#page_num DataMongodbatlasProjects#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects#page_num DataMongodbatlasProjects#page_num}
   */
   readonly pageNum?: number;
 }
@@ -312,7 +307,7 @@ export class DataMongodbatlasProjectsResultsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/projects mongodbatlas_projects}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects mongodbatlas_projects}
 */
 export class DataMongodbatlasProjects extends cdktf.TerraformDataSource {
 
@@ -328,7 +323,7 @@ export class DataMongodbatlasProjects extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasProjects resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasProjects to import
-  * @param importFromId The id of the existing DataMongodbatlasProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasProjects to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -340,7 +335,7 @@ export class DataMongodbatlasProjects extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/projects mongodbatlas_projects} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects mongodbatlas_projects} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -351,7 +346,7 @@ export class DataMongodbatlasProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_projects',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.13.0',
+        providerVersion: '1.13.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
