@@ -1,7 +1,3 @@
-# `data_mongodbatlas_data_lake_pipeline`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_data_lake_pipeline`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/data_lake_pipeline).
-
 # `dataMongodbatlasDataLakePipeline` Submodule <a name="`dataMongodbatlasDataLakePipeline` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakePipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

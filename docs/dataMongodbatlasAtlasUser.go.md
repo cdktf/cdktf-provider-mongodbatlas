@@ -1,7 +1,3 @@
-# `data_mongodbatlas_atlas_user`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_atlas_user`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/atlas_user).
-
 # `dataMongodbatlasAtlasUser` Submodule <a name="`dataMongodbatlasAtlasUser` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.NewDataMongodbatlasAtlasUser(scope Construct, id *string, config DataMongodbatlasAtlasUserConfig) DataMongodbatlasAtlasUser
 ```
@@ -285,7 +281,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.DataMongodbatlasAtlasUser_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.DataMongodbatlasAtlasUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datamongodbatlasatlasuser.DataMongodbatlasAtlasUser_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.DataMongodbatlasAtlasUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datamongodbatlasatlasuser.DataMongodbatlasAtlasUser_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.DataMongodbatlasAtlasUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -717,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 &datamongodbatlasatlasuser.DataMongodbatlasAtlasUserConfig {
 	Connection: interface{},
@@ -847,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 &datamongodbatlasatlasuser.DataMongodbatlasAtlasUserLinks {
 
@@ -860,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 &datamongodbatlasatlasuser.DataMongodbatlasAtlasUserRoles {
 
@@ -875,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.NewDataMongodbatlasAtlasUserLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasAtlasUserLinksList
 ```
@@ -1007,7 +1003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.NewDataMongodbatlasAtlasUserLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasAtlasUserLinksOutputReference
 ```
@@ -1296,7 +1292,7 @@ func InternalValue() DataMongodbatlasAtlasUserLinks
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.NewDataMongodbatlasAtlasUserRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasAtlasUserRolesList
 ```
@@ -1428,7 +1424,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAtlasUser.DataMongodbatlasAtlasUserRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasatlasuser"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasatlasuser"
 
 datamongodbatlasatlasuser.NewDataMongodbatlasAtlasUserRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasAtlasUserRolesOutputReference
 ```

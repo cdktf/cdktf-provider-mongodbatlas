@@ -1,7 +1,3 @@
-# `mongodbatlas_privatelink_endpoint_service_data_federation_online_archive`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_privatelink_endpoint_service_data_federation_online_archive`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive).
-
 # `privatelinkEndpointServiceDataFederationOnlineArchive` Submodule <a name="`privatelinkEndpointServiceDataFederationOnlineArchive` Submodule" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 privatelinkendpointservicedatafederationonlinearchive.NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope Construct, id *string, config PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) PrivatelinkEndpointServiceDataFederationOnlineArchive
 ```
@@ -366,7 +362,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointServiceDataFederationOnlineArchive_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointServiceDataFederationOnlineArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointService
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointServiceDataFederationOnlineArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointService
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointServiceDataFederationOnlineArchive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 &privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig {
 	Connection: interface{},
@@ -813,7 +809,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatel
 	ProviderName: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts,
 }
 ```
 
@@ -989,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 &privatelinkendpointservicedatafederationonlinearchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts {
 	Create: *string,
@@ -1037,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServiceDataFederationOnlineArchive.PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointservicedatafederationonlinearchive"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpointservicedatafederationonlinearchive"
 
 privatelinkendpointservicedatafederationonlinearchive.NewPrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference
 ```

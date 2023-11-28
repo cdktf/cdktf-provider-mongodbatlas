@@ -1,7 +1,3 @@
-# `data_mongodbatlas_api_keys`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_api_keys`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/api_keys).
-
 # `dataMongodbatlasApiKeys` Submodule <a name="`dataMongodbatlasApiKeys` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.NewDataMongodbatlasApiKeys(scope Construct, id *string, config DataMongodbatlasApiKeysConfig) DataMongodbatlasApiKeys
 ```
@@ -292,7 +288,7 @@ func ResetPageNum()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.DataMongodbatlasApiKeys_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.DataMongodbatlasApiKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlasapikeys.DataMongodbatlasApiKeys_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.DataMongodbatlasApiKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datamongodbatlasapikeys.DataMongodbatlasApiKeys_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.DataMongodbatlasApiKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 &datamongodbatlasapikeys.DataMongodbatlasApiKeysConfig {
 	Connection: interface{},
@@ -819,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 &datamongodbatlasapikeys.DataMongodbatlasApiKeysResults {
 
@@ -834,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.NewDataMongodbatlasApiKeysResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasApiKeysResultsList
 ```
@@ -966,7 +962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeys.DataMongodbatlasApiKeysResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasapikeys"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeys"
 
 datamongodbatlasapikeys.NewDataMongodbatlasApiKeysResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasApiKeysResultsOutputReference
 ```

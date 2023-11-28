@@ -1,7 +1,3 @@
-# `data_mongodbatlas_projects`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_projects`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/projects).
-
 # `dataMongodbatlasProjects` Submodule <a name="`dataMongodbatlasProjects` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjects(scope Construct, id *string, config DataMongodbatlasProjectsConfig) DataMongodbatlasProjects
 ```
@@ -285,7 +281,7 @@ func ResetPageNum()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjects.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.DataMongodbatlasProjects_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjects.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.DataMongodbatlasProjects_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datamongodbatlasprojects.DataMongodbatlasProjects_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjects.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.DataMongodbatlasProjects_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datamongodbatlasprojects.DataMongodbatlasProjects_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjects.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.DataMongodbatlasProjects_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 &datamongodbatlasprojects.DataMongodbatlasProjectsConfig {
 	Connection: interface{},
@@ -759,7 +755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 &datamongodbatlasprojects.DataMongodbatlasProjectsResults {
 
@@ -772,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 &datamongodbatlasprojects.DataMongodbatlasProjectsResultsLimits {
 
@@ -785,7 +781,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 &datamongodbatlasprojects.DataMongodbatlasProjectsResultsTeams {
 
@@ -800,7 +796,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjectsResultsLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasProjectsResultsLimitsList
 ```
@@ -932,7 +928,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjectsResultsLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasProjectsResultsLimitsOutputReference
 ```
@@ -1254,7 +1250,7 @@ func InternalValue() DataMongodbatlasProjectsResultsLimits
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjectsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasProjectsResultsList
 ```
@@ -1386,7 +1382,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjectsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasProjectsResultsOutputReference
 ```
@@ -1818,7 +1814,7 @@ func InternalValue() DataMongodbatlasProjectsResults
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjectsResultsTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasProjectsResultsTeamsList
 ```
@@ -1950,7 +1946,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjects.DataMongodbatlasProjectsResultsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprojects"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojects"
 
 datamongodbatlasprojects.NewDataMongodbatlasProjectsResultsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasProjectsResultsTeamsOutputReference
 ```

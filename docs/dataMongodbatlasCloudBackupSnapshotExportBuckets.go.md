@@ -1,7 +1,3 @@
-# `data_mongodbatlas_cloud_backup_snapshot_export_buckets`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_backup_snapshot_export_buckets`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/cloud_backup_snapshot_export_buckets).
-
 # `dataMongodbatlasCloudBackupSnapshotExportBuckets` Submodule <a name="`dataMongodbatlasCloudBackupSnapshotExportBuckets` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.NewDataMongodbatlasCloudBackupSnapshotExportBuckets(scope Construct, id *string, config DataMongodbatlasCloudBackupSnapshotExportBucketsConfig) DataMongodbatlasCloudBackupSnapshotExportBuckets
 ```
@@ -292,7 +288,7 @@ func ResetPageNum()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnap
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnap
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnapshotExportBuckets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBucketsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 &datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnapshotExportBucketsConfig {
 	Connection: interface{},
@@ -830,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBucketsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 &datamongodbatlascloudbackupsnapshotexportbuckets.DataMongodbatlasCloudBackupSnapshotExportBucketsResults {
 
@@ -845,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBucketsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.NewDataMongodbatlasCloudBackupSnapshotExportBucketsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasCloudBackupSnapshotExportBucketsResultsList
 ```
@@ -977,7 +973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBuckets.DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascloudbackupsnapshotexportbuckets"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbuckets"
 
 datamongodbatlascloudbackupsnapshotexportbuckets.NewDataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference
 ```

@@ -1,7 +1,3 @@
-# `data_mongodbatlas_ldap_verify`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_ldap_verify`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/ldap_verify).
-
 # `dataMongodbatlasLdapVerify` Submodule <a name="`dataMongodbatlasLdapVerify` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasLdapVerify"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

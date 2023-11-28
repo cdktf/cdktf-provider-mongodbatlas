@@ -1,7 +1,3 @@
-# `mongodbatlas_cloud_provider_access_setup`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_access_setup`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_provider_access_setup).
-
 # `cloudProviderAccessSetup` Submodule <a name="`cloudProviderAccessSetup` Submodule" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.NewCloudProviderAccessSetup(scope Construct, id *string, config CloudProviderAccessSetupConfig) CloudProviderAccessSetup
 ```
@@ -359,7 +355,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.CloudProviderAccessSetup_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.CloudProviderAccessSetup_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ cloudprovideraccesssetup.CloudProviderAccessSetup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.CloudProviderAccessSetup_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ cloudprovideraccesssetup.CloudProviderAccessSetup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.CloudProviderAccessSetup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 &cloudprovideraccesssetup.CloudProviderAccessSetupAwsConfig {
 
@@ -793,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudpro
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 &cloudprovideraccesssetup.CloudProviderAccessSetupAzureConfig {
 	AtlasAzureAppId: *string,
@@ -853,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 &cloudprovideraccesssetup.CloudProviderAccessSetupConfig {
 	Connection: interface{},
@@ -1018,7 +1014,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupAwsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.NewCloudProviderAccessSetupAwsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudProviderAccessSetupAwsConfigList
 ```
@@ -1150,7 +1146,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupAwsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.NewCloudProviderAccessSetupAwsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudProviderAccessSetupAwsConfigOutputReference
 ```
@@ -1439,7 +1435,7 @@ func InternalValue() CloudProviderAccessSetupAwsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupAzureConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.NewCloudProviderAccessSetupAzureConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudProviderAccessSetupAzureConfigList
 ```
@@ -1582,7 +1578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup.CloudProviderAccessSetupAzureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudprovideraccesssetup"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccesssetup"
 
 cloudprovideraccesssetup.NewCloudProviderAccessSetupAzureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudProviderAccessSetupAzureConfigOutputReference
 ```

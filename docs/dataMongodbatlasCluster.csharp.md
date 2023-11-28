@@ -1,7 +1,3 @@
-# `data_mongodbatlas_cluster`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/cluster).
-
 # `dataMongodbatlasCluster` Submodule <a name="`dataMongodbatlasCluster` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

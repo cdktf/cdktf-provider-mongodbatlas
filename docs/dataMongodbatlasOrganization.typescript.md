@@ -1,7 +1,3 @@
-# `data_mongodbatlas_organization`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_organization`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/organization).
-
 # `dataMongodbatlasOrganization` Submodule <a name="`dataMongodbatlasOrganization` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

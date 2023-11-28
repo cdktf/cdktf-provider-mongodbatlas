@@ -1,7 +1,3 @@
-# `mongodbatlas_cloud_backup_snapshot`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_backup_snapshot`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_backup_snapshot).
-
 # `cloudBackupSnapshot` Submodule <a name="`cloudBackupSnapshot` Submodule" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

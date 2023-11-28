@@ -1,7 +1,3 @@
-# `data_mongodbatlas_maintenance_window`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_maintenance_window`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/maintenance_window).
-
 # `dataMongodbatlasMaintenanceWindow` Submodule <a name="`dataMongodbatlasMaintenanceWindow` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMaintenanceWindow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `mongodbatlas_network_peering`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_network_peering`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/network_peering).
-
 # `networkPeering` Submodule <a name="`networkPeering` Submodule" id="@cdktf/provider-mongodbatlas.networkPeering"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.networkPeering.NetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/networkpeering"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering"
 
 networkpeering.NewNetworkPeering(scope Construct, id *string, config NetworkPeeringConfig) NetworkPeering
 ```
@@ -430,7 +426,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.networkPeering.NetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/networkpeering"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering"
 
 networkpeering.NetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.networkPeering.NetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/networkpeering"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering"
 
 networkpeering.NetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -476,7 +472,7 @@ networkpeering.NetworkPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.networkPeering.NetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/networkpeering"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering"
 
 networkpeering.NetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -490,7 +486,7 @@ networkpeering.NetworkPeering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.networkPeering.NetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/networkpeering"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering"
 
 networkpeering.NetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1181,7 +1177,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.networkPeering.NetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/networkpeering"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering"
 
 &networkpeering.NetworkPeeringConfig {
 	Connection: interface{},

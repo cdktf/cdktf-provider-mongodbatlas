@@ -1,7 +1,3 @@
-# `data_mongodbatlas_online_archive`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_online_archive`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/online_archive).
-
 # `dataMongodbatlasOnlineArchive` Submodule <a name="`dataMongodbatlasOnlineArchive` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOnlineArchive"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

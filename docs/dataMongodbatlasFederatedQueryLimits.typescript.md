@@ -1,7 +1,3 @@
-# `data_mongodbatlas_federated_query_limits`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_query_limits`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limits).
-
 # `dataMongodbatlasFederatedQueryLimits` Submodule <a name="`dataMongodbatlasFederatedQueryLimits` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

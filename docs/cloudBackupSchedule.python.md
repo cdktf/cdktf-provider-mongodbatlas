@@ -1,7 +1,3 @@
-# `mongodbatlas_cloud_backup_schedule`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_backup_schedule`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_backup_schedule).
-
 # `cloudBackupSchedule` Submodule <a name="`cloudBackupSchedule` Submodule" id="@cdktf/provider-mongodbatlas.cloudBackupSchedule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_mongodbatlas_shared_tier_snapshots`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_shared_tier_snapshots`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/shared_tier_snapshots).
-
 # `dataMongodbatlasSharedTierSnapshots` Submodule <a name="`dataMongodbatlasSharedTierSnapshots` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshots.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.NewDataMongodbatlasSharedTierSnapshots(scope Construct, id *string, config DataMongodbatlasSharedTierSnapshotsConfig) DataMongodbatlasSharedTierSnapshots
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshots.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshots_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshots.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshots_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshots_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshots.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshots_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshots_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshots.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshots_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshotsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 &datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshotsConfig {
 	Connection: interface{},
@@ -780,7 +776,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshotsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 &datamongodbatlassharedtiersnapshots.DataMongodbatlasSharedTierSnapshotsResults {
 
@@ -795,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshotsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.NewDataMongodbatlasSharedTierSnapshotsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasSharedTierSnapshotsResultsList
 ```
@@ -927,7 +923,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshots.DataMongodbatlasSharedTierSnapshotsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtiersnapshots"
 
 datamongodbatlassharedtiersnapshots.NewDataMongodbatlasSharedTierSnapshotsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasSharedTierSnapshotsResultsOutputReference
 ```

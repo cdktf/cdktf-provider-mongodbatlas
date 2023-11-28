@@ -1,7 +1,3 @@
-# `data_mongodbatlas_privatelink_endpoint_service_serverless`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_serverless`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/privatelink_endpoint_service_serverless).
-
 # `dataMongodbatlasPrivatelinkEndpointServiceServerless` Submodule <a name="`dataMongodbatlasPrivatelinkEndpointServiceServerless` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointserviceserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless"
 
 datamongodbatlasprivatelinkendpointserviceserverless.NewDataMongodbatlasPrivatelinkEndpointServiceServerless(scope Construct, id *string, config DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig) DataMongodbatlasPrivatelinkEndpointServiceServerless
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointserviceserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless"
 
 datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelinkEndpointServiceServerless_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointserviceserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless"
 
 datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelinkEndpointServiceServerless_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelink
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointserviceserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless"
 
 datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelinkEndpointServiceServerless_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelink
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerless.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointserviceserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless"
 
 datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelinkEndpointServiceServerless_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -710,7 +706,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasprivatelinkendpointserviceserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless"
 
 &datamongodbatlasprivatelinkendpointserviceserverless.DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `mongodbatlas_cloud_provider_access_setup`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_access_setup`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_provider_access_setup).
-
 # `cloudProviderAccessSetup` Submodule <a name="`cloudProviderAccessSetup` Submodule" id="@cdktf/provider-mongodbatlas.cloudProviderAccessSetup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

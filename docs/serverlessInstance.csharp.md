@@ -1,7 +1,3 @@
-# `mongodbatlas_serverless_instance`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_serverless_instance`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance).
-
 # `serverlessInstance` Submodule <a name="`serverlessInstance` Submodule" id="@cdktf/provider-mongodbatlas.serverlessInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

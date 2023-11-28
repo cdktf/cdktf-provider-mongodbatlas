@@ -1,7 +1,3 @@
-# `data_mongodbatlas_project_ip_access_list`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_project_ip_access_list`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/project_ip_access_list).
-
 # `dataMongodbatlasProjectIpAccessList` Submodule <a name="`dataMongodbatlasProjectIpAccessList` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectIpAccessList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

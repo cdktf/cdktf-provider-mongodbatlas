@@ -1,7 +1,3 @@
-# `data_mongodbatlas_federated_settings_org_role_mappings`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_settings_org_role_mappings`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_settings_org_role_mappings).
-
 # `dataMongodbatlasFederatedSettingsOrgRoleMappings` Submodule <a name="`dataMongodbatlasFederatedSettingsOrgRoleMappings` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMappings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

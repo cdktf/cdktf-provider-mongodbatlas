@@ -1,7 +1,3 @@
-# `data_mongodbatlas_project_api_key`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_project_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/project_api_key).
-
 # `dataMongodbatlasProjectApiKey` Submodule <a name="`dataMongodbatlasProjectApiKey` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasProjectApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

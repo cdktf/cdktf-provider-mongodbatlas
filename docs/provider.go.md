@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-mongodbatlas.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 provider.NewMongodbatlasProvider(scope Construct, id *string, config MongodbatlasProviderConfig) MongodbatlasProvider
 ```
@@ -232,7 +228,7 @@ func ResetStsEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 provider.MongodbatlasProvider_IsConstruct(x interface{}) *bool
 ```
@@ -264,7 +260,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 provider.MongodbatlasProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -278,7 +274,7 @@ provider.MongodbatlasProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 provider.MongodbatlasProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -292,7 +288,7 @@ provider.MongodbatlasProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 provider.MongodbatlasProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -741,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 &provider.MongodbatlasProviderAssumeRole {
 	Duration: *string,
@@ -905,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/provider"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/provider"
 
 &provider.MongodbatlasProviderConfig {
 	Alias: *string,

@@ -1,7 +1,3 @@
-# `mongodbatlas_project_invitation`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_project_invitation`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_invitation).
-
 # `projectInvitation` Submodule <a name="`projectInvitation` Submodule" id="@cdktf/provider-mongodbatlas.projectInvitation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

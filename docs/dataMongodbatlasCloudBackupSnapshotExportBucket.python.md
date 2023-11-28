@@ -1,7 +1,3 @@
-# `data_mongodbatlas_cloud_backup_snapshot_export_bucket`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_cloud_backup_snapshot_export_bucket`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/cloud_backup_snapshot_export_bucket).
-
 # `dataMongodbatlasCloudBackupSnapshotExportBucket` Submodule <a name="`dataMongodbatlasCloudBackupSnapshotExportBucket` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

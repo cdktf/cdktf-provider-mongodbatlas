@@ -1,7 +1,3 @@
-# `mongodbatlas_project_api_key`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_project_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_api_key).
-
 # `projectApiKey` Submodule <a name="`projectApiKey` Submodule" id="@cdktf/provider-mongodbatlas.projectApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.NewProjectApiKey(scope Construct, id *string, config ProjectApiKeyConfig) ProjectApiKey
 ```
@@ -359,7 +355,7 @@ func ResetProjectAssignment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.ProjectApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.ProjectApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ projectapikey.ProjectApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.ProjectApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ projectapikey.ProjectApiKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.ProjectApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 &projectapikey.ProjectApiKeyConfig {
 	Connection: interface{},
@@ -932,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKeyProjectAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 &projectapikey.ProjectApiKeyProjectAssignment {
 	ProjectId: *string,
@@ -980,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKeyProjectAssignmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.NewProjectApiKeyProjectAssignmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectApiKeyProjectAssignmentList
 ```
@@ -1123,7 +1119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectApiKey.ProjectApiKeyProjectAssignmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectapikey"
 
 projectapikey.NewProjectApiKeyProjectAssignmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectApiKeyProjectAssignmentOutputReference
 ```

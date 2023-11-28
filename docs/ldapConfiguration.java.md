@@ -1,7 +1,3 @@
-# `mongodbatlas_ldap_configuration`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_ldap_configuration`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/ldap_configuration).
-
 # `ldapConfiguration` Submodule <a name="`ldapConfiguration` Submodule" id="@cdktf/provider-mongodbatlas.ldapConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

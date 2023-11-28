@@ -1,7 +1,3 @@
-# `data_mongodbatlas_privatelink_endpoint`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/privatelink_endpoint).
-
 # `dataMongodbatlasPrivatelinkEndpoint` Submodule <a name="`dataMongodbatlasPrivatelinkEndpoint` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

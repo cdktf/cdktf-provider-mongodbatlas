@@ -1,7 +1,3 @@
-# `data_mongodbatlas_network_container`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_network_container`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/network_container).
-
 # `dataMongodbatlasNetworkContainer` Submodule <a name="`dataMongodbatlasNetworkContainer` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.NewDataMongodbatlasNetworkContainer(scope Construct, id *string, config DataMongodbatlasNetworkContainerConfig) DataMongodbatlasNetworkContainer
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -732,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 &datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainerConfig {
 	Connection: interface{},

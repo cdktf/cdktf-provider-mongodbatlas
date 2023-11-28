@@ -1,7 +1,3 @@
-# `mongodbatlas_global_cluster_config`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_global_cluster_config`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/global_cluster_config).
-
 # `globalClusterConfig` Submodule <a name="`globalClusterConfig` Submodule" id="@cdktf/provider-mongodbatlas.globalClusterConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.NewGlobalClusterConfig(scope Construct, id *string, config GlobalClusterConfigConfig) GlobalClusterConfig
 ```
@@ -379,7 +375,7 @@ func ResetManagedNamespaces()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.GlobalClusterConfig_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.GlobalClusterConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +421,7 @@ globalclusterconfig.GlobalClusterConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.GlobalClusterConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -439,7 +435,7 @@ globalclusterconfig.GlobalClusterConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.GlobalClusterConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +785,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 &globalclusterconfig.GlobalClusterConfigConfig {
 	Connection: interface{},
@@ -968,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigCustomZoneMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 &globalclusterconfig.GlobalClusterConfigCustomZoneMappings {
 	Location: *string,
@@ -1014,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigManagedNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 &globalclusterconfig.GlobalClusterConfigManagedNamespaces {
 	Collection: *string,
@@ -1104,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigCustomZoneMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.NewGlobalClusterConfigCustomZoneMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalClusterConfigCustomZoneMappingsList
 ```
@@ -1247,7 +1243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigCustomZoneMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.NewGlobalClusterConfigCustomZoneMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalClusterConfigCustomZoneMappingsOutputReference
 ```
@@ -1572,7 +1568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigManagedNamespacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.NewGlobalClusterConfigManagedNamespacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalClusterConfigManagedNamespacesList
 ```
@@ -1715,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.globalClusterConfig.GlobalClusterConfigManagedNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/globalclusterconfig"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/globalclusterconfig"
 
 globalclusterconfig.NewGlobalClusterConfigManagedNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalClusterConfigManagedNamespacesOutputReference
 ```

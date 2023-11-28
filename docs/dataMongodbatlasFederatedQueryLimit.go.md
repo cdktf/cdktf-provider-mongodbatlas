@@ -1,7 +1,3 @@
-# `data_mongodbatlas_federated_query_limit`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_query_limit`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_query_limit).
-
 # `dataMongodbatlasFederatedQueryLimit` Submodule <a name="`dataMongodbatlasFederatedQueryLimit` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit.DataMongodbatlasFederatedQueryLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedquerylimit"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimit"
 
 datamongodbatlasfederatedquerylimit.NewDataMongodbatlasFederatedQueryLimit(scope Construct, id *string, config DataMongodbatlasFederatedQueryLimitConfig) DataMongodbatlasFederatedQueryLimit
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit.DataMongodbatlasFederatedQueryLimit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedquerylimit"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimit"
 
 datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimit_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit.DataMongodbatlasFederatedQueryLimit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedquerylimit"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimit"
 
 datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimit_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimit_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit.DataMongodbatlasFederatedQueryLimit.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedquerylimit"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimit"
 
 datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimit_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimit_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit.DataMongodbatlasFederatedQueryLimit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedquerylimit"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimit"
 
 datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -699,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimit.DataMongodbatlasFederatedQueryLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedquerylimit"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimit"
 
 &datamongodbatlasfederatedquerylimit.DataMongodbatlasFederatedQueryLimitConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `data_mongodbatlas_access_list_api_key`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_access_list_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/access_list_api_key).
-
 # `dataMongodbatlasAccessListApiKey` Submodule <a name="`dataMongodbatlasAccessListApiKey` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey.DataMongodbatlasAccessListApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasaccesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasaccesslistapikey"
 
 datamongodbatlasaccesslistapikey.NewDataMongodbatlasAccessListApiKey(scope Construct, id *string, config DataMongodbatlasAccessListApiKeyConfig) DataMongodbatlasAccessListApiKey
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey.DataMongodbatlasAccessListApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasaccesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasaccesslistapikey"
 
 datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey.DataMongodbatlasAccessListApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasaccesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasaccesslistapikey"
 
 datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKey_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey.DataMongodbatlasAccessListApiKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasaccesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasaccesslistapikey"
 
 datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKey_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey.DataMongodbatlasAccessListApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasaccesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasaccesslistapikey"
 
 datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -688,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey.DataMongodbatlasAccessListApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasaccesslistapikey"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasaccesslistapikey"
 
 &datamongodbatlasaccesslistapikey.DataMongodbatlasAccessListApiKeyConfig {
 	Connection: interface{},
