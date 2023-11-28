@@ -1,7 +1,3 @@
-# `mongodbatlas_federated_database_instance`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_federated_database_instance`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_database_instance).
-
 # `federatedDatabaseInstance` Submodule <a name="`federatedDatabaseInstance` Submodule" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_mongodbatlas_access_list_api_key`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_access_list_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/access_list_api_key).
-
 # `dataMongodbatlasAccessListApiKey` Submodule <a name="`dataMongodbatlasAccessListApiKey` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAccessListApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

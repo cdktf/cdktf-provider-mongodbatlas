@@ -1,7 +1,3 @@
-# `data_mongodbatlas_federated_settings_identity_provider`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_settings_identity_provider`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_settings_identity_provider).
-
 # `dataMongodbatlasFederatedSettingsIdentityProvider` Submodule <a name="`dataMongodbatlasFederatedSettingsIdentityProvider` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

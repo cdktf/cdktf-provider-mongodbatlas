@@ -1,7 +1,3 @@
-# `mongodbatlas_third_party_integration`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_third_party_integration`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration).
-
 # `thirdPartyIntegration` Submodule <a name="`thirdPartyIntegration` Submodule" id="@cdktf/provider-mongodbatlas.thirdPartyIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

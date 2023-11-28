@@ -1,7 +1,3 @@
-# `data_mongodbatlas_federated_settings`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_federated_settings`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_settings).
-
 # `dataMongodbatlasFederatedSettings` Submodule <a name="`dataMongodbatlasFederatedSettings` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `mongodbatlas_team`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_team`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/team).
-
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-mongodbatlas.team"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

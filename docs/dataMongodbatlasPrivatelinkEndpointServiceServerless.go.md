@@ -1,7 +1,3 @@
-# `data_mongodbatlas_privatelink_endpoint_service_serverless`
-
-Refer to the Terraform Registory for docs: [`data_mongodbatlas_privatelink_endpoint_service_serverless`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/privatelink_endpoint_service_serverless).
-
 # `dataMongodbatlasPrivatelinkEndpointServiceServerless` Submodule <a name="`dataMongodbatlasPrivatelinkEndpointServiceServerless` Submodule" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivatelinkEndpointServiceServerless"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

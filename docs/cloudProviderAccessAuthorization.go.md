@@ -1,7 +1,3 @@
-# `mongodbatlas_cloud_provider_access_authorization`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_cloud_provider_access_authorization`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_provider_access_authorization).
-
 # `cloudProviderAccessAuthorization` Submodule <a name="`cloudProviderAccessAuthorization` Submodule" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

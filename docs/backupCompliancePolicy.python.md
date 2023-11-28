@@ -1,7 +1,3 @@
-# `mongodbatlas_backup_compliance_policy`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_backup_compliance_policy`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/backup_compliance_policy).
-
 # `backupCompliancePolicy` Submodule <a name="`backupCompliancePolicy` Submodule" id="@cdktf/provider-mongodbatlas.backupCompliancePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

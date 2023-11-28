@@ -1,7 +1,3 @@
-# `mongodbatlas_auditing`
-
-Refer to the Terraform Registory for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/auditing).
-
 # `auditing` Submodule <a name="`auditing` Submodule" id="@cdktf/provider-mongodbatlas.auditing"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
