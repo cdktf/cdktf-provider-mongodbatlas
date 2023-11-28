@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstance(scope Construct, id *string, config FederatedDatabaseInstanceConfig) FederatedDatabaseInstance
 ```
@@ -415,7 +415,7 @@ func ResetStorageStores()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.FederatedDatabaseInstance_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.FederatedDatabaseInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ federateddatabaseinstance.FederatedDatabaseInstance_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.FederatedDatabaseInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -475,7 +475,7 @@ federateddatabaseinstance.FederatedDatabaseInstance_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.FederatedDatabaseInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -880,10 +880,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceCloudProviderConfig {
-	Aws: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfigAws,
+	Aws: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfigAws,
 }
 ```
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfigAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceCloudProviderConfigAws {
 	RoleId: *string,
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceConfig {
 	Connection: interface{},
@@ -972,8 +972,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federatedda
 	Provisioners: *[]interface{},
 	Name: *string,
 	ProjectId: *string,
-	CloudProviderConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfig,
-	DataProcessRegion: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceDataProcessRegion,
+	CloudProviderConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfig,
+	DataProcessRegion: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.federatedDatabaseInstance.FederatedDatabaseInstanceDataProcessRegion,
 	Id: *string,
 	StorageDatabases: interface{},
 	StorageStores: interface{},
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceDataProcessRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceDataProcessRegion {
 	CloudProvider: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageDatabases {
 	Collections: interface{},
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesCollections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageDatabasesCollections {
 	DataSources: interface{},
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesCollectionsDataSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageDatabasesCollectionsDataSources {
 	AllowInsecure: interface{},
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesViews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageDatabasesViews {
 
@@ -1514,7 +1514,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federatedda
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStores.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageStores {
 	AdditionalStorageClasses: *[]*string,
@@ -1530,7 +1530,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federatedda
 	ProjectId: *string,
 	Provider: *string,
 	Public: *string,
-	ReadPreference: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreference,
+	ReadPreference: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreference,
 	Region: *string,
 	Urls: *[]*string,
 }
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageStoresReadPreference {
 	MaxStalenessSeconds: *f64,
@@ -1820,7 +1820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets {
 	Tags: interface{},
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 &federateddatabaseinstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags {
 	Name: *string,
@@ -1902,7 +1902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfigAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceCloudProviderConfigAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedDatabaseInstanceCloudProviderConfigAwsOutputReference
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() FederatedDatabaseInstanceCloudProviderConfigAws
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceCloudProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceCloudProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedDatabaseInstanceCloudProviderConfigOutputReference
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() FederatedDatabaseInstanceCloudProviderConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceDataProcessRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceDataProcessRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedDatabaseInstanceDataProcessRegionOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() FederatedDatabaseInstanceDataProcessRegion
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesList
 ```
@@ -2948,7 +2948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference
 ```
@@ -3534,7 +3534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesCollectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesCollectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageDatabasesCollectionsList
 ```
@@ -3677,7 +3677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesCollectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesCollectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageDatabasesCollectionsOutputReference
 ```
@@ -4015,7 +4015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageDatabasesList
 ```
@@ -4158,7 +4158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageDatabasesOutputReference
 ```
@@ -4549,7 +4549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesViewsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesViewsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageDatabasesViewsList
 ```
@@ -4692,7 +4692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageDatabasesViewsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageDatabasesViewsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageDatabasesViewsOutputReference
 ```
@@ -4992,7 +4992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageStoresList
 ```
@@ -5135,7 +5135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageStoresOutputReference
 ```
@@ -5879,7 +5879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference
 ```
@@ -6228,7 +6228,7 @@ func InternalValue() FederatedDatabaseInstanceStorageStoresReadPreference
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList
 ```
@@ -6371,7 +6371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference
 ```
@@ -6673,7 +6673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList
 ```
@@ -6816,7 +6816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federateddatabaseinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/federateddatabaseinstance"
 
 federateddatabaseinstance.NewFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerify.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.NewLdapVerify(scope Construct, id *string, config LdapVerifyConfig) LdapVerify
 ```
@@ -349,7 +349,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerify.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.LdapVerify_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerify.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.LdapVerify_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ ldapverify.LdapVerify_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerify.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.LdapVerify_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ ldapverify.LdapVerify_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerify.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.LdapVerify_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -858,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 &ldapverify.LdapVerifyConfig {
 	Connection: interface{},
@@ -1075,7 +1075,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 &ldapverify.LdapVerifyLinks {
 
@@ -1088,7 +1088,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyValidations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 &ldapverify.LdapVerifyValidations {
 
@@ -1103,7 +1103,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.NewLdapVerifyLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LdapVerifyLinksList
 ```
@@ -1235,7 +1235,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.NewLdapVerifyLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LdapVerifyLinksOutputReference
 ```
@@ -1524,7 +1524,7 @@ func InternalValue() LdapVerifyLinks
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyValidationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.NewLdapVerifyValidationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LdapVerifyValidationsList
 ```
@@ -1656,7 +1656,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.ldapVerify.LdapVerifyValidationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/ldapverify"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/ldapverify"
 
 ldapverify.NewLdapVerifyValidationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LdapVerifyValidationsOutputReference
 ```

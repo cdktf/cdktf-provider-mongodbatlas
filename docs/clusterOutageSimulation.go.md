@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.NewClusterOutageSimulation(scope Construct, id *string, config ClusterOutageSimulationConfig) ClusterOutageSimulation
 ```
@@ -368,7 +368,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.ClusterOutageSimulation_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.ClusterOutageSimulation_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ clusteroutagesimulation.ClusterOutageSimulation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.ClusterOutageSimulation_IsTerraformResource(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ clusteroutagesimulation.ClusterOutageSimulation_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.ClusterOutageSimulation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 &clusteroutagesimulation.ClusterOutageSimulationConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusterouta
 	OutageFilters: interface{},
 	ProjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.clusterOutageSimulation.ClusterOutageSimulationTimeouts,
 }
 ```
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationOutageFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 &clusteroutagesimulation.ClusterOutageSimulationOutageFilters {
 	CloudProvider: *string,
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 &clusteroutagesimulation.ClusterOutageSimulationTimeouts {
 	Delete: *string,
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationOutageFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.NewClusterOutageSimulationOutageFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterOutageSimulationOutageFiltersList
 ```
@@ -1202,7 +1202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationOutageFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.NewClusterOutageSimulationOutageFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterOutageSimulationOutageFiltersOutputReference
 ```
@@ -1524,7 +1524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.clusterOutageSimulation.ClusterOutageSimulationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/clusteroutagesimulation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/clusteroutagesimulation"
 
 clusteroutagesimulation.NewClusterOutageSimulationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterOutageSimulationTimeoutsOutputReference
 ```
