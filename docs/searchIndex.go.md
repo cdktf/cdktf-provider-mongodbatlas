@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.NewSearchIndex(scope Construct, id *string, config SearchIndexConfig) SearchIndex
 ```
@@ -481,7 +481,7 @@ func ResetWaitForIndexBuildCompletion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.SearchIndex_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.SearchIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ searchindex.SearchIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.SearchIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ searchindex.SearchIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.SearchIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1155,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 &searchindex.SearchIndexConfig {
 	Connection: interface{},
@@ -1179,7 +1179,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex
 	SearchAnalyzer: *string,
 	Status: *string,
 	Synonyms: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.searchIndex.SearchIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.searchIndex.SearchIndexTimeouts,
 	Type: *string,
 	WaitForIndexBuildCompletion: interface{},
 }
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndexSynonyms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 &searchindex.SearchIndexSynonyms {
 	Analyzer: *string,
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 &searchindex.SearchIndexTimeouts {
 	Create: *string,
@@ -1624,7 +1624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndexSynonymsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.NewSearchIndexSynonymsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SearchIndexSynonymsList
 ```
@@ -1767,7 +1767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndexSynonymsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.NewSearchIndexSynonymsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SearchIndexSynonymsOutputReference
 ```
@@ -2100,7 +2100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.searchIndex.SearchIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/searchindex"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/searchindex"
 
 searchindex.NewSearchIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SearchIndexTimeoutsOutputReference
 ```
