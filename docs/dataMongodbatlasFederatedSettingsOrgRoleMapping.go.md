@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.NewDataMongodbatlasFederatedSettingsOrgRoleMapping(scope Construct, id *string, config DataMongodbatlasFederatedSettingsOrgRoleMappingConfig) DataMongodbatlasFederatedSettingsOrgRoleMapping
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSettingsOrgRoleMapping_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSettingsOrgRoleMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSetting
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMapping.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSettingsOrgRoleMapping_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSetting
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSettingsOrgRoleMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 &datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSettingsOrgRoleMappingConfig {
 	Connection: interface{},
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 &datamongodbatlasfederatedsettingsorgrolemapping.DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignments {
 
@@ -792,7 +792,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.NewDataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsList
 ```
@@ -924,7 +924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsOrgRoleMapping.DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsorgrolemapping"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgrolemapping"
 
 datamongodbatlasfederatedsettingsorgrolemapping.NewDataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference
 ```
