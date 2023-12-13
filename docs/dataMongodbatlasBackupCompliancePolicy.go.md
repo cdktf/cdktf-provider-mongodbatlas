@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicy(scope Construct, id *string, config DataMongodbatlasBackupCompliancePolicyConfig) DataMongodbatlasBackupCompliancePolicy
 ```
@@ -374,7 +374,7 @@ func ResetPolicyItemWeekly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -883,7 +883,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 &datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicyConfig {
 	Connection: interface{},
@@ -895,9 +895,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodb
 	Provisioners: *[]interface{},
 	ProjectId: *string,
 	Id: *string,
-	OnDemandPolicyItem: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem,
-	PolicyItemDaily: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDaily,
-	PolicyItemHourly: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemHourly,
+	OnDemandPolicyItem: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem,
+	PolicyItemDaily: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDaily,
+	PolicyItemHourly: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemHourly,
 	PolicyItemMonthly: interface{},
 	PolicyItemWeekly: interface{},
 }
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 &datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem {
 
@@ -1109,7 +1109,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodb
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDaily.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 &datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDaily {
 	FrequencyInterval: *f64,
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemHourly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 &datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemHourly {
 	FrequencyInterval: *f64,
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 &datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly {
 	FrequencyInterval: *f64,
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 &datamongodbatlasbackupcompliancepolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly {
 	FrequencyInterval: *f64,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference
 ```
@@ -1655,7 +1655,7 @@ func InternalValue() DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference
 ```
@@ -1992,7 +1992,7 @@ func InternalValue() DataMongodbatlasBackupCompliancePolicyPolicyItemDaily
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference
 ```
@@ -2329,7 +2329,7 @@ func InternalValue() DataMongodbatlasBackupCompliancePolicyPolicyItemHourly
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList
 ```
@@ -2472,7 +2472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference
 ```
@@ -2827,7 +2827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList
 ```
@@ -2970,7 +2970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasbackupcompliancepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasbackupcompliancepolicy"
 
 datamongodbatlasbackupcompliancepolicy.NewDataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference
 ```
