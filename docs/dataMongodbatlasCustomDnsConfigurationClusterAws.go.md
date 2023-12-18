@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope Construct, id *string, config DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) DataMongodbatlasCustomDnsConfigurationClusterAws
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfig
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfig
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
 
 datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCustomDnsConfigurationClusterAws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlascustomdnsconfigurationclusteraws"
 
 &datamongodbatlascustomdnsconfigurationclusteraws.DataMongodbatlasCustomDnsConfigurationClusterAwsConfig {
 	Connection: interface{},
