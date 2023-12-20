@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface ServerlessInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#continuous_backup_enabled ServerlessInstance#continuous_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#continuous_backup_enabled ServerlessInstance#continuous_backup_enabled}
   */
   readonly continuousBackupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#id ServerlessInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#id ServerlessInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#name ServerlessInstance#name}
-  */
-  readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#project_id ServerlessInstance#project_id}
-  */
-  readonly projectId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#provider_settings_backing_provider_name ServerlessInstance#provider_settings_backing_provider_name}
-  */
-  readonly providerSettingsBackingProviderName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#provider_settings_provider_name ServerlessInstance#provider_settings_provider_name}
-  */
-  readonly providerSettingsProviderName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#provider_settings_region_name ServerlessInstance#provider_settings_region_name}
-  */
-  readonly providerSettingsRegionName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#state_name ServerlessInstance#state_name}
-  */
-  readonly stateName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#termination_protection_enabled ServerlessInstance#termination_protection_enabled}
-  */
-  readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
-  /**
-  * links block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#links ServerlessInstance#links}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#links ServerlessInstance#links}
   */
   readonly links?: ServerlessInstanceLinks[] | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#name ServerlessInstance#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#project_id ServerlessInstance#project_id}
+  */
+  readonly projectId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#provider_settings_backing_provider_name ServerlessInstance#provider_settings_backing_provider_name}
+  */
+  readonly providerSettingsBackingProviderName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#provider_settings_provider_name ServerlessInstance#provider_settings_provider_name}
+  */
+  readonly providerSettingsProviderName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#provider_settings_region_name ServerlessInstance#provider_settings_region_name}
+  */
+  readonly providerSettingsRegionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#state_name ServerlessInstance#state_name}
+  */
+  readonly stateName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#termination_protection_enabled ServerlessInstance#termination_protection_enabled}
+  */
+  readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
+  /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#tags ServerlessInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#tags ServerlessInstance#tags}
   */
   readonly tags?: ServerlessInstanceTags[] | cdktf.IResolvable;
 }
 export interface ServerlessInstanceLinks {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#href ServerlessInstance#href}
+  */
+  readonly href?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#rel ServerlessInstance#rel}
+  */
+  readonly rel?: string;
 }
 
 export function serverlessInstanceLinksToTerraform(struct?: ServerlessInstanceLinks | cdktf.IResolvable): any {
@@ -73,6 +79,8 @@ export function serverlessInstanceLinksToTerraform(struct?: ServerlessInstanceLi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    href: cdktf.stringToTerraform(struct!.href),
+    rel: cdktf.stringToTerraform(struct!.rel),
   }
 }
 
@@ -96,6 +104,14 @@ export class ServerlessInstanceLinksOutputReference extends cdktf.ComplexObject 
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._href !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.href = this._href;
+    }
+    if (this._rel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rel = this._rel;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -103,6 +119,8 @@ export class ServerlessInstanceLinksOutputReference extends cdktf.ComplexObject 
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._href = undefined;
+      this._rel = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -111,17 +129,41 @@ export class ServerlessInstanceLinksOutputReference extends cdktf.ComplexObject 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._href = value.href;
+      this._rel = value.rel;
     }
   }
 
-  // href - computed: true, optional: false, required: false
+  // href - computed: true, optional: true, required: false
+  private _href?: string; 
   public get href() {
     return this.getStringAttribute('href');
   }
+  public set href(value: string) {
+    this._href = value;
+  }
+  public resetHref() {
+    this._href = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hrefInput() {
+    return this._href;
+  }
 
-  // rel - computed: true, optional: false, required: false
+  // rel - computed: true, optional: true, required: false
+  private _rel?: string; 
   public get rel() {
     return this.getStringAttribute('rel');
+  }
+  public set rel(value: string) {
+    this._rel = value;
+  }
+  public resetRel() {
+    this._rel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get relInput() {
+    return this._rel;
   }
 }
 
@@ -146,11 +188,11 @@ export class ServerlessInstanceLinksList extends cdktf.ComplexList {
 }
 export interface ServerlessInstanceTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#key ServerlessInstance#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#key ServerlessInstance#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#value ServerlessInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#value ServerlessInstance#value}
   */
   readonly value: string;
 }
@@ -264,7 +306,7 @@ export class ServerlessInstanceTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance mongodbatlas_serverless_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance mongodbatlas_serverless_instance}
 */
 export class ServerlessInstance extends cdktf.TerraformResource {
 
@@ -280,7 +322,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServerlessInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServerlessInstance to import
-  * @param importFromId The id of the existing ServerlessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServerlessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServerlessInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -292,7 +334,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -303,7 +345,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_serverless_instance',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.13.1',
+        providerVersion: '1.14.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -316,6 +358,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
     });
     this._continuousBackupEnabled = config.continuousBackupEnabled;
     this._id = config.id;
+    this._links.internalValue = config.links;
     this._name = config.name;
     this._projectId = config.projectId;
     this._providerSettingsBackingProviderName = config.providerSettingsBackingProviderName;
@@ -323,7 +366,6 @@ export class ServerlessInstance extends cdktf.TerraformResource {
     this._providerSettingsRegionName = config.providerSettingsRegionName;
     this._stateName = config.stateName;
     this._terminationProtectionEnabled = config.terminationProtectionEnabled;
-    this._links.internalValue = config.links;
     this._tags.internalValue = config.tags;
   }
 
@@ -376,6 +418,22 @@ export class ServerlessInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // links - computed: true, optional: true, required: false
+  private _links = new ServerlessInstanceLinksList(this, "links", true);
+  public get links() {
+    return this._links;
+  }
+  public putLinks(value: ServerlessInstanceLinks[] | cdktf.IResolvable) {
+    this._links.internalValue = value;
+  }
+  public resetLinks() {
+    this._links.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get linksInput() {
+    return this._links.internalValue;
   }
 
   // mongo_db_version - computed: true, optional: false, required: false
@@ -480,22 +538,6 @@ export class ServerlessInstance extends cdktf.TerraformResource {
     return this._terminationProtectionEnabled;
   }
 
-  // links - computed: false, optional: true, required: false
-  private _links = new ServerlessInstanceLinksList(this, "links", true);
-  public get links() {
-    return this._links;
-  }
-  public putLinks(value: ServerlessInstanceLinks[] | cdktf.IResolvable) {
-    this._links.internalValue = value;
-  }
-  public resetLinks() {
-    this._links.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get linksInput() {
-    return this._links.internalValue;
-  }
-
   // tags - computed: false, optional: true, required: false
   private _tags = new ServerlessInstanceTagsList(this, "tags", true);
   public get tags() {
@@ -520,6 +562,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
     return {
       continuous_backup_enabled: cdktf.booleanToTerraform(this._continuousBackupEnabled),
       id: cdktf.stringToTerraform(this._id),
+      links: cdktf.listMapper(serverlessInstanceLinksToTerraform, false)(this._links.internalValue),
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
       provider_settings_backing_provider_name: cdktf.stringToTerraform(this._providerSettingsBackingProviderName),
@@ -527,7 +570,6 @@ export class ServerlessInstance extends cdktf.TerraformResource {
       provider_settings_region_name: cdktf.stringToTerraform(this._providerSettingsRegionName),
       state_name: cdktf.stringToTerraform(this._stateName),
       termination_protection_enabled: cdktf.booleanToTerraform(this._terminationProtectionEnabled),
-      links: cdktf.listMapper(serverlessInstanceLinksToTerraform, true)(this._links.internalValue),
       tags: cdktf.listMapper(serverlessInstanceTagsToTerraform, true)(this._tags.internalValue),
     };
   }
