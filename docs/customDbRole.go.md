@@ -4,12 +4,12 @@
 
 ### CustomDbRole <a name="CustomDbRole" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRole(scope Construct, id *string, config CustomDbRoleConfig) CustomDbRole
 ```
@@ -418,7 +418,7 @@ func ResetInheritedRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ customdbrole.CustomDbRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ customdbrole.CustomDbRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.CustomDbRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +507,7 @@ The construct id used in the generated config for the CustomDbRole to import.
 
 The id of the existing CustomDbRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleActions {
 	Action: *string,
@@ -829,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActions.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#action CustomDbRole#action}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActions.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#action CustomDbRole#action}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActions.property.resources">Resources</a></code> | <code>interface{}</code> | resources block. |
 
 ---
@@ -842,7 +842,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#action CustomDbRole#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#action CustomDbRole#action}.
 
 ---
 
@@ -856,7 +856,7 @@ Resources interface{}
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#resources CustomDbRole#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#resources CustomDbRole#resources}
 
 ---
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleActionsResources {
 	Cluster: interface{},
@@ -878,9 +878,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.property.cluster">Cluster</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#cluster CustomDbRole#cluster}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.property.collectionName">CollectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#collection_name CustomDbRole#collection_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#database_name CustomDbRole#database_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.property.cluster">Cluster</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#cluster CustomDbRole#cluster}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.property.collectionName">CollectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#collection_name CustomDbRole#collection_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResources.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#database_name CustomDbRole#database_name}. |
 
 ---
 
@@ -892,7 +892,7 @@ Cluster interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#cluster CustomDbRole#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#cluster CustomDbRole#cluster}.
 
 ---
 
@@ -904,7 +904,7 @@ CollectionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#collection_name CustomDbRole#collection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#collection_name CustomDbRole#collection_name}.
 
 ---
 
@@ -916,7 +916,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#database_name CustomDbRole#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#database_name CustomDbRole#database_name}.
 
 ---
 
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleConfig {
 	Connection: interface{},
@@ -954,10 +954,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdb
 | <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#project_id CustomDbRole#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#role_name CustomDbRole#role_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#project_id CustomDbRole#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#role_name CustomDbRole#role_name}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.actions">Actions</a></code> | <code>interface{}</code> | actions block. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#id CustomDbRole#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#id CustomDbRole#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleConfig.property.inheritedRoles">InheritedRoles</a></code> | <code>interface{}</code> | inherited_roles block. |
 
 ---
@@ -1040,7 +1040,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#project_id CustomDbRole#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#project_id CustomDbRole#project_id}.
 
 ---
 
@@ -1052,7 +1052,7 @@ RoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#role_name CustomDbRole#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#role_name CustomDbRole#role_name}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#actions CustomDbRole#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#actions CustomDbRole#actions}
 
 ---
 
@@ -1078,7 +1078,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#id CustomDbRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#id CustomDbRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ InheritedRoles interface{}
 
 inherited_roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#inherited_roles CustomDbRole#inherited_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#inherited_roles CustomDbRole#inherited_roles}
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 &customdbrole.CustomDbRoleInheritedRoles {
 	DatabaseName: *string,
@@ -1116,8 +1116,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRoles.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#database_name CustomDbRole#database_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRoles.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#role_name CustomDbRole#role_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRoles.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#database_name CustomDbRole#database_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRoles.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#role_name CustomDbRole#role_name}. |
 
 ---
 
@@ -1129,7 +1129,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#database_name CustomDbRole#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#database_name CustomDbRole#database_name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ RoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/custom_db_role#role_name CustomDbRole#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role#role_name CustomDbRole#role_name}.
 
 ---
 
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDbRoleActionsList
 ```
@@ -1295,7 +1295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDbRoleActionsOutputReference
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDbRoleActionsResourcesList
 ```
@@ -1762,7 +1762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleActionsResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleActionsResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDbRoleActionsResourcesOutputReference
 ```
@@ -2116,7 +2116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleInheritedRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDbRoleInheritedRolesList
 ```
@@ -2259,7 +2259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDbRole.CustomDbRoleInheritedRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/customdbrole"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole"
 
 customdbrole.NewCustomDbRoleInheritedRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDbRoleInheritedRolesOutputReference
 ```

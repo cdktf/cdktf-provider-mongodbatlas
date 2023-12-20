@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +8,80 @@ import * as cdktf from 'cdktf';
 
 export interface ThirdPartyIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#api_key ThirdPartyIntegration#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#api_key ThirdPartyIntegration#api_key}
   */
   readonly apiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#channel_name ThirdPartyIntegration#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#channel_name ThirdPartyIntegration#channel_name}
   */
   readonly channelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#enabled ThirdPartyIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#enabled ThirdPartyIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#id ThirdPartyIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#id ThirdPartyIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#microsoft_teams_webhook_url ThirdPartyIntegration#microsoft_teams_webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#microsoft_teams_webhook_url ThirdPartyIntegration#microsoft_teams_webhook_url}
   */
   readonly microsoftTeamsWebhookUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#password ThirdPartyIntegration#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#password ThirdPartyIntegration#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#project_id ThirdPartyIntegration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#project_id ThirdPartyIntegration#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#region ThirdPartyIntegration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#region ThirdPartyIntegration#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#routing_key ThirdPartyIntegration#routing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#routing_key ThirdPartyIntegration#routing_key}
   */
   readonly routingKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#scheme ThirdPartyIntegration#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#scheme ThirdPartyIntegration#scheme}
   */
   readonly scheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#secret ThirdPartyIntegration#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#secret ThirdPartyIntegration#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#service_discovery ThirdPartyIntegration#service_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#service_discovery ThirdPartyIntegration#service_discovery}
   */
   readonly serviceDiscovery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#service_key ThirdPartyIntegration#service_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#service_key ThirdPartyIntegration#service_key}
   */
   readonly serviceKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#team_name ThirdPartyIntegration#team_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#team_name ThirdPartyIntegration#team_name}
   */
   readonly teamName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#type ThirdPartyIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#type ThirdPartyIntegration#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#url ThirdPartyIntegration#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#url ThirdPartyIntegration#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#user_name ThirdPartyIntegration#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#user_name ThirdPartyIntegration#user_name}
   */
   readonly userName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration mongodbatlas_third_party_integration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}
 */
 export class ThirdPartyIntegration extends cdktf.TerraformResource {
 
@@ -102,7 +97,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ThirdPartyIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ThirdPartyIntegration to import
-  * @param importFromId The id of the existing ThirdPartyIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ThirdPartyIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ThirdPartyIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -114,7 +109,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +120,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_third_party_integration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.13.1',
+        providerVersion: '1.14.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -159,7 +154,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // api_key - computed: false, optional: true, required: false
+  // api_key - computed: true, optional: true, required: false
   private _apiKey?: string; 
   public get apiKey() {
     return this.getStringAttribute('api_key');
@@ -175,7 +170,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._apiKey;
   }
 
-  // channel_name - computed: false, optional: true, required: false
+  // channel_name - computed: true, optional: true, required: false
   private _channelName?: string; 
   public get channelName() {
     return this.getStringAttribute('channel_name');
@@ -191,7 +186,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._channelName;
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -223,7 +218,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // microsoft_teams_webhook_url - computed: false, optional: true, required: false
+  // microsoft_teams_webhook_url - computed: true, optional: true, required: false
   private _microsoftTeamsWebhookUrl?: string; 
   public get microsoftTeamsWebhookUrl() {
     return this.getStringAttribute('microsoft_teams_webhook_url');
@@ -239,7 +234,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._microsoftTeamsWebhookUrl;
   }
 
-  // password - computed: false, optional: true, required: false
+  // password - computed: true, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
@@ -284,7 +279,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._region;
   }
 
-  // routing_key - computed: false, optional: true, required: false
+  // routing_key - computed: true, optional: true, required: false
   private _routingKey?: string; 
   public get routingKey() {
     return this.getStringAttribute('routing_key');
@@ -300,7 +295,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._routingKey;
   }
 
-  // scheme - computed: false, optional: true, required: false
+  // scheme - computed: true, optional: true, required: false
   private _scheme?: string; 
   public get scheme() {
     return this.getStringAttribute('scheme');
@@ -332,7 +327,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._secret;
   }
 
-  // service_discovery - computed: false, optional: true, required: false
+  // service_discovery - computed: true, optional: true, required: false
   private _serviceDiscovery?: string; 
   public get serviceDiscovery() {
     return this.getStringAttribute('service_discovery');
@@ -348,7 +343,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._serviceDiscovery;
   }
 
-  // service_key - computed: false, optional: true, required: false
+  // service_key - computed: true, optional: true, required: false
   private _serviceKey?: string; 
   public get serviceKey() {
     return this.getStringAttribute('service_key');
@@ -364,7 +359,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._serviceKey;
   }
 
-  // team_name - computed: false, optional: true, required: false
+  // team_name - computed: true, optional: true, required: false
   private _teamName?: string; 
   public get teamName() {
     return this.getStringAttribute('team_name');
@@ -393,7 +388,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // url - computed: false, optional: true, required: false
+  // url - computed: true, optional: true, required: false
   private _url?: string; 
   public get url() {
     return this.getStringAttribute('url');
@@ -409,7 +404,7 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
     return this._url;
   }
 
-  // user_name - computed: false, optional: true, required: false
+  // user_name - computed: true, optional: true, required: false
   private _userName?: string; 
   public get userName() {
     return this.getStringAttribute('user_name');
