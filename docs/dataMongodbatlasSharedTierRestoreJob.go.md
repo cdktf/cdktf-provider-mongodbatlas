@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtierrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtierrestorejob"
 
 datamongodbatlassharedtierrestorejob.NewDataMongodbatlasSharedTierRestoreJob(scope Construct, id *string, config DataMongodbatlasSharedTierRestoreJobConfig) DataMongodbatlasSharedTierRestoreJob
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtierrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtierrestorejob"
 
 datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJob_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtierrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtierrestorejob"
 
 datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJob_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtierrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtierrestorejob"
 
 datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJob_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtierrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtierrestorejob"
 
 datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierRestoreJob.DataMongodbatlasSharedTierRestoreJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtierrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlassharedtierrestorejob"
 
 &datamongodbatlassharedtierrestorejob.DataMongodbatlasSharedTierRestoreJobConfig {
 	Connection: interface{},
