@@ -450,4 +450,114 @@ export class ThirdPartyIntegration extends cdktf.TerraformResource {
       user_name: cdktf.stringToTerraform(this._userName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_key: {
+        value: cdktf.stringToHclTerraform(this._apiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      channel_name: {
+        value: cdktf.stringToHclTerraform(this._channelName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      microsoft_teams_webhook_url: {
+        value: cdktf.stringToHclTerraform(this._microsoftTeamsWebhookUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routing_key: {
+        value: cdktf.stringToHclTerraform(this._routingKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scheme: {
+        value: cdktf.stringToHclTerraform(this._scheme),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret: {
+        value: cdktf.stringToHclTerraform(this._secret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_discovery: {
+        value: cdktf.stringToHclTerraform(this._serviceDiscovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_key: {
+        value: cdktf.stringToHclTerraform(this._serviceKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_name: {
+        value: cdktf.stringToHclTerraform(this._teamName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_name: {
+        value: cdktf.stringToHclTerraform(this._userName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

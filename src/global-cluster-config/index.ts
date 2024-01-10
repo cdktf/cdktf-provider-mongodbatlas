@@ -62,6 +62,31 @@ export function globalClusterConfigCustomZoneMappingsToTerraform(struct?: Global
   }
 }
 
+
+export function globalClusterConfigCustomZoneMappingsToHclTerraform(struct?: GlobalClusterConfigCustomZoneMappings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone: {
+      value: cdktf.stringToHclTerraform(struct!.zone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlobalClusterConfigCustomZoneMappingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -199,6 +224,49 @@ export function globalClusterConfigManagedNamespacesToTerraform(struct?: GlobalC
     is_custom_shard_key_hashed: cdktf.booleanToTerraform(struct!.isCustomShardKeyHashed),
     is_shard_key_unique: cdktf.booleanToTerraform(struct!.isShardKeyUnique),
   }
+}
+
+
+export function globalClusterConfigManagedNamespacesToHclTerraform(struct?: GlobalClusterConfigManagedNamespaces | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    collection: {
+      value: cdktf.stringToHclTerraform(struct!.collection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_shard_key: {
+      value: cdktf.stringToHclTerraform(struct!.customShardKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    db: {
+      value: cdktf.stringToHclTerraform(struct!.db),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_custom_shard_key_hashed: {
+      value: cdktf.booleanToHclTerraform(struct!.isCustomShardKeyHashed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_shard_key_unique: {
+      value: cdktf.booleanToHclTerraform(struct!.isShardKeyUnique),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlobalClusterConfigManagedNamespacesOutputReference extends cdktf.ComplexObject {
@@ -515,5 +583,43 @@ export class GlobalClusterConfig extends cdktf.TerraformResource {
       custom_zone_mappings: cdktf.listMapper(globalClusterConfigCustomZoneMappingsToTerraform, true)(this._customZoneMappings.internalValue),
       managed_namespaces: cdktf.listMapper(globalClusterConfigManagedNamespacesToTerraform, true)(this._managedNamespaces.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_zone_mappings: {
+        value: cdktf.listMapperHcl(globalClusterConfigCustomZoneMappingsToHclTerraform, true)(this._customZoneMappings.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GlobalClusterConfigCustomZoneMappingsList",
+      },
+      managed_namespaces: {
+        value: cdktf.listMapperHcl(globalClusterConfigManagedNamespacesToHclTerraform, true)(this._managedNamespaces.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GlobalClusterConfigManagedNamespacesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

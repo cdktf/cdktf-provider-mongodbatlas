@@ -265,4 +265,54 @@ export class NetworkContainer extends cdktf.TerraformResource {
       regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regions),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      atlas_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._atlasCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region_name: {
+        value: cdktf.stringToHclTerraform(this._regionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

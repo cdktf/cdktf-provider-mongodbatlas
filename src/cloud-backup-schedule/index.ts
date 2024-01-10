@@ -125,6 +125,49 @@ export function cloudBackupScheduleCopySettingsToTerraform(struct?: CloudBackupS
   }
 }
 
+
+export function cloudBackupScheduleCopySettingsToHclTerraform(struct?: CloudBackupScheduleCopySettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloud_provider: {
+      value: cdktf.stringToHclTerraform(struct!.cloudProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    frequencies: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.frequencies),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    region_name: {
+      value: cdktf.stringToHclTerraform(struct!.regionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replication_spec_id: {
+      value: cdktf.stringToHclTerraform(struct!.replicationSpecId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    should_copy_oplogs: {
+      value: cdktf.booleanToHclTerraform(struct!.shouldCopyOplogs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudBackupScheduleCopySettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -315,6 +358,31 @@ export function cloudBackupScheduleExportToTerraform(struct?: CloudBackupSchedul
   }
 }
 
+
+export function cloudBackupScheduleExportToHclTerraform(struct?: CloudBackupScheduleExportOutputReference | CloudBackupScheduleExport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    export_bucket_id: {
+      value: cdktf.stringToHclTerraform(struct!.exportBucketId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    frequency_type: {
+      value: cdktf.stringToHclTerraform(struct!.frequencyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudBackupScheduleExportOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -410,6 +478,37 @@ export function cloudBackupSchedulePolicyItemDailyToTerraform(struct?: CloudBack
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
     retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
+}
+
+
+export function cloudBackupSchedulePolicyItemDailyToHclTerraform(struct?: CloudBackupSchedulePolicyItemDailyOutputReference | CloudBackupSchedulePolicyItemDaily): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudBackupSchedulePolicyItemDailyOutputReference extends cdktf.ComplexObject {
@@ -532,6 +631,37 @@ export function cloudBackupSchedulePolicyItemHourlyToTerraform(struct?: CloudBac
   }
 }
 
+
+export function cloudBackupSchedulePolicyItemHourlyToHclTerraform(struct?: CloudBackupSchedulePolicyItemHourlyOutputReference | CloudBackupSchedulePolicyItemHourly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudBackupSchedulePolicyItemHourlyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -650,6 +780,37 @@ export function cloudBackupSchedulePolicyItemMonthlyToTerraform(struct?: CloudBa
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
     retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
+}
+
+
+export function cloudBackupSchedulePolicyItemMonthlyToHclTerraform(struct?: CloudBackupSchedulePolicyItemMonthly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudBackupSchedulePolicyItemMonthlyOutputReference extends cdktf.ComplexObject {
@@ -802,6 +963,37 @@ export function cloudBackupSchedulePolicyItemWeeklyToTerraform(struct?: CloudBac
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
     retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
+}
+
+
+export function cloudBackupSchedulePolicyItemWeeklyToHclTerraform(struct?: CloudBackupSchedulePolicyItemWeekly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudBackupSchedulePolicyItemWeeklyOutputReference extends cdktf.ComplexObject {
@@ -1273,5 +1465,103 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
       policy_item_monthly: cdktf.listMapper(cloudBackupSchedulePolicyItemMonthlyToTerraform, true)(this._policyItemMonthly.internalValue),
       policy_item_weekly: cdktf.listMapper(cloudBackupSchedulePolicyItemWeeklyToTerraform, true)(this._policyItemWeekly.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_export_enabled: {
+        value: cdktf.booleanToHclTerraform(this._autoExportEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reference_hour_of_day: {
+        value: cdktf.numberToHclTerraform(this._referenceHourOfDay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      reference_minute_of_hour: {
+        value: cdktf.numberToHclTerraform(this._referenceMinuteOfHour),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      restore_window_days: {
+        value: cdktf.numberToHclTerraform(this._restoreWindowDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      update_snapshots: {
+        value: cdktf.booleanToHclTerraform(this._updateSnapshots),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      use_org_and_group_names_in_export_prefix: {
+        value: cdktf.booleanToHclTerraform(this._useOrgAndGroupNamesInExportPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      copy_settings: {
+        value: cdktf.listMapperHcl(cloudBackupScheduleCopySettingsToHclTerraform, true)(this._copySettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupScheduleCopySettingsList",
+      },
+      export: {
+        value: cloudBackupScheduleExportToHclTerraform(this._export.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupScheduleExportList",
+      },
+      policy_item_daily: {
+        value: cloudBackupSchedulePolicyItemDailyToHclTerraform(this._policyItemDaily.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupSchedulePolicyItemDailyList",
+      },
+      policy_item_hourly: {
+        value: cloudBackupSchedulePolicyItemHourlyToHclTerraform(this._policyItemHourly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupSchedulePolicyItemHourlyList",
+      },
+      policy_item_monthly: {
+        value: cdktf.listMapperHcl(cloudBackupSchedulePolicyItemMonthlyToHclTerraform, true)(this._policyItemMonthly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupSchedulePolicyItemMonthlyList",
+      },
+      policy_item_weekly: {
+        value: cdktf.listMapperHcl(cloudBackupSchedulePolicyItemWeeklyToHclTerraform, true)(this._policyItemWeekly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupSchedulePolicyItemWeeklyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

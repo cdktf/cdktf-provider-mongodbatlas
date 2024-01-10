@@ -253,4 +253,60 @@ export class FederatedQueryLimit extends cdktf.TerraformResource {
       value: cdktf.numberToTerraform(this._value),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_limit: {
+        value: cdktf.numberToHclTerraform(this._defaultLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit_name: {
+        value: cdktf.stringToHclTerraform(this._limitName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maximum_limit: {
+        value: cdktf.numberToHclTerraform(this._maximumLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      overrun_policy: {
+        value: cdktf.stringToHclTerraform(this._overrunPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_name: {
+        value: cdktf.stringToHclTerraform(this._tenantName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.numberToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

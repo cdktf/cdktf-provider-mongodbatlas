@@ -224,4 +224,54 @@ export class FederatedSettingsOrgConfig extends cdktf.TerraformResource {
       post_auth_role_grants: cdktf.listMapper(cdktf.stringToTerraform, false)(this._postAuthRoleGrants),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_allow_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domainAllowList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      domain_restriction_enabled: {
+        value: cdktf.booleanToHclTerraform(this._domainRestrictionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      federation_settings_id: {
+        value: cdktf.stringToHclTerraform(this._federationSettingsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_provider_id: {
+        value: cdktf.stringToHclTerraform(this._identityProviderId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      post_auth_role_grants: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._postAuthRoleGrants),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

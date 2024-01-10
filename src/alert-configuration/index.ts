@@ -76,6 +76,37 @@ export function alertConfigurationMatcherToTerraform(struct?: AlertConfiguration
   }
 }
 
+
+export function alertConfigurationMatcherToHclTerraform(struct?: AlertConfigurationMatcher | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_name: {
+      value: cdktf.stringToHclTerraform(struct!.fieldName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AlertConfigurationMatcherOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -226,6 +257,49 @@ export function alertConfigurationMetricThresholdConfigToTerraform(struct?: Aler
     threshold: cdktf.numberToTerraform(struct!.threshold),
     units: cdktf.stringToTerraform(struct!.units),
   }
+}
+
+
+export function alertConfigurationMetricThresholdConfigToHclTerraform(struct?: AlertConfigurationMetricThresholdConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    metric_name: {
+      value: cdktf.stringToHclTerraform(struct!.metricName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    units: {
+      value: cdktf.stringToHclTerraform(struct!.units),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AlertConfigurationMetricThresholdConfigOutputReference extends cdktf.ComplexObject {
@@ -518,6 +592,157 @@ export function alertConfigurationNotificationToTerraform(struct?: AlertConfigur
     webhook_secret: cdktf.stringToTerraform(struct!.webhookSecret),
     webhook_url: cdktf.stringToTerraform(struct!.webhookUrl),
   }
+}
+
+
+export function alertConfigurationNotificationToHclTerraform(struct?: AlertConfigurationNotification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_token: {
+      value: cdktf.stringToHclTerraform(struct!.apiToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    channel_name: {
+      value: cdktf.stringToHclTerraform(struct!.channelName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datadog_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.datadogApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datadog_region: {
+      value: cdktf.stringToHclTerraform(struct!.datadogRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delay_min: {
+      value: cdktf.numberToHclTerraform(struct!.delayMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    email_address: {
+      value: cdktf.stringToHclTerraform(struct!.emailAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.emailEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    interval_min: {
+      value: cdktf.numberToHclTerraform(struct!.intervalMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    microsoft_teams_webhook_url: {
+      value: cdktf.stringToHclTerraform(struct!.microsoftTeamsWebhookUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mobile_number: {
+      value: cdktf.stringToHclTerraform(struct!.mobileNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notifier_id: {
+      value: cdktf.stringToHclTerraform(struct!.notifierId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ops_genie_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.opsGenieApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ops_genie_region: {
+      value: cdktf.stringToHclTerraform(struct!.opsGenieRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    service_key: {
+      value: cdktf.stringToHclTerraform(struct!.serviceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sms_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.smsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    team_id: {
+      value: cdktf.stringToHclTerraform(struct!.teamId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type_name: {
+      value: cdktf.stringToHclTerraform(struct!.typeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    victor_ops_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.victorOpsApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    victor_ops_routing_key: {
+      value: cdktf.stringToHclTerraform(struct!.victorOpsRoutingKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    webhook_secret: {
+      value: cdktf.stringToHclTerraform(struct!.webhookSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    webhook_url: {
+      value: cdktf.stringToHclTerraform(struct!.webhookUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AlertConfigurationNotificationOutputReference extends cdktf.ComplexObject {
@@ -1113,6 +1338,37 @@ export function alertConfigurationThresholdConfigToTerraform(struct?: AlertConfi
   }
 }
 
+
+export function alertConfigurationThresholdConfigToHclTerraform(struct?: AlertConfigurationThresholdConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    units: {
+      value: cdktf.stringToHclTerraform(struct!.units),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AlertConfigurationThresholdConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1442,5 +1698,55 @@ export class AlertConfiguration extends cdktf.TerraformResource {
       notification: cdktf.listMapper(alertConfigurationNotificationToTerraform, true)(this._notification.internalValue),
       threshold_config: cdktf.listMapper(alertConfigurationThresholdConfigToTerraform, true)(this._thresholdConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      event_type: {
+        value: cdktf.stringToHclTerraform(this._eventType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      matcher: {
+        value: cdktf.listMapperHcl(alertConfigurationMatcherToHclTerraform, true)(this._matcher.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertConfigurationMatcherList",
+      },
+      metric_threshold_config: {
+        value: cdktf.listMapperHcl(alertConfigurationMetricThresholdConfigToHclTerraform, true)(this._metricThresholdConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertConfigurationMetricThresholdConfigList",
+      },
+      notification: {
+        value: cdktf.listMapperHcl(alertConfigurationNotificationToHclTerraform, true)(this._notification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertConfigurationNotificationList",
+      },
+      threshold_config: {
+        value: cdktf.listMapperHcl(alertConfigurationThresholdConfigToHclTerraform, true)(this._thresholdConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertConfigurationThresholdConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

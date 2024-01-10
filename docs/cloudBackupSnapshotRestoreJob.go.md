@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 cloudbackupsnapshotrestorejob.NewCloudBackupSnapshotRestoreJob(scope Construct, id *string, config CloudBackupSnapshotRestoreJobConfig) CloudBackupSnapshotRestoreJob
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJob_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJob_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJob_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -885,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 &cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJobConfig {
 	Connection: interface{},
@@ -898,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbac
 	ClusterName: *string,
 	ProjectId: *string,
 	SnapshotId: *string,
-	DeliveryTypeConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJobDeliveryTypeConfig,
+	DeliveryTypeConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJobDeliveryTypeConfig,
 	Id: *string,
 }
 ```
@@ -1062,7 +1069,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJobDeliveryTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 &cloudbackupsnapshotrestorejob.CloudBackupSnapshotRestoreJobDeliveryTypeConfig {
 	Automated: interface{},
@@ -1194,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotRestoreJob.CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/cloudbackupsnapshotrestorejob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotrestorejob"
 
 cloudbackupsnapshotrestorejob.NewCloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference
 ```

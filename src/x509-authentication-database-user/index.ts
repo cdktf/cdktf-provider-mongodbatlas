@@ -48,6 +48,17 @@ export function x509AuthenticationDatabaseUserCertificatesToTerraform(struct?: X
   }
 }
 
+
+export function x509AuthenticationDatabaseUserCertificatesToHclTerraform(struct?: X509AuthenticationDatabaseUserCertificates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class X509AuthenticationDatabaseUserCertificatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -283,5 +294,43 @@ export class X509AuthenticationDatabaseUser extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       username: cdktf.stringToTerraform(this._username),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      customer_x509_cas: {
+        value: cdktf.stringToHclTerraform(this._customerX509Cas),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      months_until_expiration: {
+        value: cdktf.numberToHclTerraform(this._monthsUntilExpiration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

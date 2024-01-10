@@ -203,4 +203,42 @@ export class OrgInvitation extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      teams_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teamsIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -74,6 +74,31 @@ export function federatedDatabaseInstanceCloudProviderConfigAwsToTerraform(struc
   }
 }
 
+
+export function federatedDatabaseInstanceCloudProviderConfigAwsToHclTerraform(struct?: FederatedDatabaseInstanceCloudProviderConfigAwsOutputReference | FederatedDatabaseInstanceCloudProviderConfigAws): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_id: {
+      value: cdktf.stringToHclTerraform(struct!.roleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    test_s3_bucket: {
+      value: cdktf.stringToHclTerraform(struct!.testS3Bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FederatedDatabaseInstanceCloudProviderConfigAwsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -172,6 +197,25 @@ export function federatedDatabaseInstanceCloudProviderConfigToTerraform(struct?:
   }
 }
 
+
+export function federatedDatabaseInstanceCloudProviderConfigToHclTerraform(struct?: FederatedDatabaseInstanceCloudProviderConfigOutputReference | FederatedDatabaseInstanceCloudProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws: {
+      value: federatedDatabaseInstanceCloudProviderConfigAwsToHclTerraform(struct!.aws),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FederatedDatabaseInstanceCloudProviderConfigAwsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FederatedDatabaseInstanceCloudProviderConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -237,6 +281,31 @@ export function federatedDatabaseInstanceDataProcessRegionToTerraform(struct?: F
     cloud_provider: cdktf.stringToTerraform(struct!.cloudProvider),
     region: cdktf.stringToTerraform(struct!.region),
   }
+}
+
+
+export function federatedDatabaseInstanceDataProcessRegionToHclTerraform(struct?: FederatedDatabaseInstanceDataProcessRegionOutputReference | FederatedDatabaseInstanceDataProcessRegion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloud_provider: {
+      value: cdktf.stringToHclTerraform(struct!.cloudProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FederatedDatabaseInstanceDataProcessRegionOutputReference extends cdktf.ComplexObject {
@@ -368,6 +437,85 @@ export function federatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesT
     store_name: cdktf.stringToTerraform(struct!.storeName),
     urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.urls),
   }
+}
+
+
+export function federatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesToHclTerraform(struct?: FederatedDatabaseInstanceStorageDatabasesCollectionsDataSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_insecure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowInsecure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    collection: {
+      value: cdktf.stringToHclTerraform(struct!.collection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    collection_regex: {
+      value: cdktf.stringToHclTerraform(struct!.collectionRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_regex: {
+      value: cdktf.stringToHclTerraform(struct!.databaseRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dataset_name: {
+      value: cdktf.stringToHclTerraform(struct!.datasetName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_format: {
+      value: cdktf.stringToHclTerraform(struct!.defaultFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provenance_field_name: {
+      value: cdktf.stringToHclTerraform(struct!.provenanceFieldName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    store_name: {
+      value: cdktf.stringToHclTerraform(struct!.storeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    urls: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.urls),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference extends cdktf.ComplexObject {
@@ -694,6 +842,31 @@ export function federatedDatabaseInstanceStorageDatabasesCollectionsToTerraform(
   }
 }
 
+
+export function federatedDatabaseInstanceStorageDatabasesCollectionsToHclTerraform(struct?: FederatedDatabaseInstanceStorageDatabasesCollections | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_sources: {
+      value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesToHclTerraform, true)(struct!.dataSources),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FederatedDatabaseInstanceStorageDatabasesCollectionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -808,6 +981,17 @@ export function federatedDatabaseInstanceStorageDatabasesViewsToTerraform(struct
   }
 }
 
+
+export function federatedDatabaseInstanceStorageDatabasesViewsToHclTerraform(struct?: FederatedDatabaseInstanceStorageDatabasesViews | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class FederatedDatabaseInstanceStorageDatabasesViewsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -910,6 +1094,37 @@ export function federatedDatabaseInstanceStorageDatabasesToTerraform(struct?: Fe
     collections: cdktf.listMapper(federatedDatabaseInstanceStorageDatabasesCollectionsToTerraform, true)(struct!.collections),
     views: cdktf.listMapper(federatedDatabaseInstanceStorageDatabasesViewsToTerraform, true)(struct!.views),
   }
+}
+
+
+export function federatedDatabaseInstanceStorageDatabasesToHclTerraform(struct?: FederatedDatabaseInstanceStorageDatabases | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    collections: {
+      value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageDatabasesCollectionsToHclTerraform, true)(struct!.collections),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FederatedDatabaseInstanceStorageDatabasesCollectionsList",
+    },
+    views: {
+      value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageDatabasesViewsToHclTerraform, true)(struct!.views),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FederatedDatabaseInstanceStorageDatabasesViewsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FederatedDatabaseInstanceStorageDatabasesOutputReference extends cdktf.ComplexObject {
@@ -1063,6 +1278,31 @@ export function federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsT
   }
 }
 
+
+export function federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsToHclTerraform(struct?: FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1184,6 +1424,25 @@ export function federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsToTer
   }
 }
 
+
+export function federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsToHclTerraform(struct?: FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tags: {
+      value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsToHclTerraform, true)(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1288,6 +1547,37 @@ export function federatedDatabaseInstanceStorageStoresReadPreferenceToTerraform(
     mode: cdktf.stringToTerraform(struct!.mode),
     tag_sets: cdktf.listMapper(federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsToTerraform, true)(struct!.tagSets),
   }
+}
+
+
+export function federatedDatabaseInstanceStorageStoresReadPreferenceToHclTerraform(struct?: FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference | FederatedDatabaseInstanceStorageStoresReadPreference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_staleness_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.maxStalenessSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_sets: {
+      value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageStoresReadPreferenceTagSetsToHclTerraform, true)(struct!.tagSets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference extends cdktf.ComplexObject {
@@ -1474,6 +1764,115 @@ export function federatedDatabaseInstanceStorageStoresToTerraform(struct?: Feder
     urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.urls),
     read_preference: federatedDatabaseInstanceStorageStoresReadPreferenceToTerraform(struct!.readPreference),
   }
+}
+
+
+export function federatedDatabaseInstanceStorageStoresToHclTerraform(struct?: FederatedDatabaseInstanceStorageStores | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_storage_classes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalStorageClasses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allow_insecure: {
+      value: cdktf.booleanToHclTerraform(struct!.allowInsecure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cluster_id: {
+      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cluster_name: {
+      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_format: {
+      value: cdktf.stringToHclTerraform(struct!.defaultFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    include_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.includeTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public: {
+      value: cdktf.stringToHclTerraform(struct!.public),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    urls: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.urls),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    read_preference: {
+      value: federatedDatabaseInstanceStorageStoresReadPreferenceToHclTerraform(struct!.readPreference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FederatedDatabaseInstanceStorageStoresReadPreferenceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf.ComplexObject {
@@ -2081,5 +2480,55 @@ export class FederatedDatabaseInstance extends cdktf.TerraformResource {
       storage_databases: cdktf.listMapper(federatedDatabaseInstanceStorageDatabasesToTerraform, true)(this._storageDatabases.internalValue),
       storage_stores: cdktf.listMapper(federatedDatabaseInstanceStorageStoresToTerraform, true)(this._storageStores.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloud_provider_config: {
+        value: federatedDatabaseInstanceCloudProviderConfigToHclTerraform(this._cloudProviderConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FederatedDatabaseInstanceCloudProviderConfigList",
+      },
+      data_process_region: {
+        value: federatedDatabaseInstanceDataProcessRegionToHclTerraform(this._dataProcessRegion.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FederatedDatabaseInstanceDataProcessRegionList",
+      },
+      storage_databases: {
+        value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageDatabasesToHclTerraform, true)(this._storageDatabases.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FederatedDatabaseInstanceStorageDatabasesList",
+      },
+      storage_stores: {
+        value: cdktf.listMapperHcl(federatedDatabaseInstanceStorageStoresToHclTerraform, true)(this._storageStores.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FederatedDatabaseInstanceStorageStoresList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -40,6 +40,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigRoleMappingsRoleAssign
   }
 }
 
+
+export function dataMongodbatlasFederatedSettingsOrgConfigRoleMappingsRoleAssignmentsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigRoleMappingsRoleAssignments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedSettingsOrgConfigRoleMappingsRoleAssignmentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -112,6 +123,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigRoleMappingsToTerrafor
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedSettingsOrgConfigRoleMappingsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigRoleMappings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedSettingsOrgConfigRoleMappingsOutputReference extends cdktf.ComplexObject {
@@ -187,6 +209,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigUserConflictsToTerrafo
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedSettingsOrgConfigUserConflictsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigUserConflicts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedSettingsOrgConfigUserConflictsOutputReference extends cdktf.ComplexObject {
@@ -406,5 +439,31 @@ export class DataMongodbatlasFederatedSettingsOrgConfig extends cdktf.TerraformD
       id: cdktf.stringToTerraform(this._id),
       org_id: cdktf.stringToTerraform(this._orgId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      federation_settings_id: {
+        value: cdktf.stringToHclTerraform(this._federationSettingsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

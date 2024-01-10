@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlassharedtiersnapshot"
 
 datamongodbatlassharedtiersnapshot.NewDataMongodbatlasSharedTierSnapshot(scope Construct, id *string, config DataMongodbatlasSharedTierSnapshotConfig) DataMongodbatlasSharedTierSnapshot
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlassharedtiersnapshot"
 
 datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlassharedtiersnapshot"
 
 datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshot_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlassharedtiersnapshot"
 
 datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshot_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlassharedtiersnapshot"
 
 datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSharedTierSnapshot.DataMongodbatlasSharedTierSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlassharedtiersnapshot"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlassharedtiersnapshot"
 
 &datamongodbatlassharedtiersnapshot.DataMongodbatlasSharedTierSnapshotConfig {
 	Connection: interface{},

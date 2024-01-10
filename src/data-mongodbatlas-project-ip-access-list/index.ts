@@ -174,4 +174,36 @@ export class DataMongodbatlasProjectIpAccessList extends cdktf.TerraformDataSour
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_security_group: {
+        value: cdktf.stringToHclTerraform(this._awsSecurityGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cidr_block: {
+        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_address: {
+        value: cdktf.stringToHclTerraform(this._ipAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

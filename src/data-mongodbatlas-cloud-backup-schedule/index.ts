@@ -40,6 +40,17 @@ export function dataMongodbatlasCloudBackupScheduleCopySettingsToTerraform(struc
   }
 }
 
+
+export function dataMongodbatlasCloudBackupScheduleCopySettingsToHclTerraform(struct?: DataMongodbatlasCloudBackupScheduleCopySettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasCloudBackupScheduleCopySettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -124,6 +135,17 @@ export function dataMongodbatlasCloudBackupScheduleExportToTerraform(struct?: Da
   }
 }
 
+
+export function dataMongodbatlasCloudBackupScheduleExportToHclTerraform(struct?: DataMongodbatlasCloudBackupScheduleExport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasCloudBackupScheduleExportOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -191,6 +213,17 @@ export function dataMongodbatlasCloudBackupSchedulePolicyItemDailyToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasCloudBackupSchedulePolicyItemDailyToHclTerraform(struct?: DataMongodbatlasCloudBackupSchedulePolicyItemDaily): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasCloudBackupSchedulePolicyItemDailyOutputReference extends cdktf.ComplexObject {
@@ -277,6 +310,17 @@ export function dataMongodbatlasCloudBackupSchedulePolicyItemHourlyToTerraform(s
   }
 }
 
+
+export function dataMongodbatlasCloudBackupSchedulePolicyItemHourlyToHclTerraform(struct?: DataMongodbatlasCloudBackupSchedulePolicyItemHourly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasCloudBackupSchedulePolicyItemHourlyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -361,6 +405,17 @@ export function dataMongodbatlasCloudBackupSchedulePolicyItemMonthlyToTerraform(
   }
 }
 
+
+export function dataMongodbatlasCloudBackupSchedulePolicyItemMonthlyToHclTerraform(struct?: DataMongodbatlasCloudBackupSchedulePolicyItemMonthly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasCloudBackupSchedulePolicyItemMonthlyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -443,6 +498,17 @@ export function dataMongodbatlasCloudBackupSchedulePolicyItemWeeklyToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasCloudBackupSchedulePolicyItemWeeklyToHclTerraform(struct?: DataMongodbatlasCloudBackupSchedulePolicyItemWeekly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyOutputReference extends cdktf.ComplexObject {
@@ -706,5 +772,31 @@ export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSour
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

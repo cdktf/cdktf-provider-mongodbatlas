@@ -90,6 +90,67 @@ export function cloudBackupSnapshotRestoreJobDeliveryTypeConfigToTerraform(struc
   }
 }
 
+
+export function cloudBackupSnapshotRestoreJobDeliveryTypeConfigToHclTerraform(struct?: CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference | CloudBackupSnapshotRestoreJobDeliveryTypeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    automated: {
+      value: cdktf.booleanToHclTerraform(struct!.automated),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    download: {
+      value: cdktf.booleanToHclTerraform(struct!.download),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    oplog_inc: {
+      value: cdktf.numberToHclTerraform(struct!.oplogInc),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    oplog_ts: {
+      value: cdktf.numberToHclTerraform(struct!.oplogTs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    point_in_time: {
+      value: cdktf.booleanToHclTerraform(struct!.pointInTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    point_in_time_utc_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.pointInTimeUtcSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target_cluster_name: {
+      value: cdktf.stringToHclTerraform(struct!.targetClusterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_project_id: {
+      value: cdktf.stringToHclTerraform(struct!.targetProjectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -478,5 +539,43 @@ export class CloudBackupSnapshotRestoreJob extends cdktf.TerraformResource {
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
       delivery_type_config: cloudBackupSnapshotRestoreJobDeliveryTypeConfigToTerraform(this._deliveryTypeConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snapshot_id: {
+        value: cdktf.stringToHclTerraform(this._snapshotId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_type_config: {
+        value: cloudBackupSnapshotRestoreJobDeliveryTypeConfigToHclTerraform(this._deliveryTypeConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupSnapshotRestoreJobDeliveryTypeConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

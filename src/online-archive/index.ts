@@ -98,6 +98,31 @@ export function onlineArchiveDataProcessRegionToTerraform(struct?: OnlineArchive
   }
 }
 
+
+export function onlineArchiveDataProcessRegionToHclTerraform(struct?: OnlineArchiveDataProcessRegion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloud_provider: {
+      value: cdktf.stringToHclTerraform(struct!.cloudProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OnlineArchiveDataProcessRegionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -235,6 +260,49 @@ export function onlineArchiveCriteriaToTerraform(struct?: OnlineArchiveCriteriaO
     query: cdktf.stringToTerraform(struct!.query),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function onlineArchiveCriteriaToHclTerraform(struct?: OnlineArchiveCriteriaOutputReference | OnlineArchiveCriteria): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    date_field: {
+      value: cdktf.stringToHclTerraform(struct!.dateField),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_format: {
+      value: cdktf.stringToHclTerraform(struct!.dateFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expire_after_days: {
+      value: cdktf.numberToHclTerraform(struct!.expireAfterDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OnlineArchiveCriteriaOutputReference extends cdktf.ComplexObject {
@@ -387,6 +455,25 @@ export function onlineArchiveDataExpirationRuleToTerraform(struct?: OnlineArchiv
   }
 }
 
+
+export function onlineArchiveDataExpirationRuleToHclTerraform(struct?: OnlineArchiveDataExpirationRuleOutputReference | OnlineArchiveDataExpirationRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expire_after_days: {
+      value: cdktf.numberToHclTerraform(struct!.expireAfterDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OnlineArchiveDataExpirationRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -452,6 +539,31 @@ export function onlineArchivePartitionFieldsToTerraform(struct?: OnlineArchivePa
     field_name: cdktf.stringToTerraform(struct!.fieldName),
     order: cdktf.numberToTerraform(struct!.order),
   }
+}
+
+
+export function onlineArchivePartitionFieldsToHclTerraform(struct?: OnlineArchivePartitionFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_name: {
+      value: cdktf.stringToHclTerraform(struct!.fieldName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.numberToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OnlineArchivePartitionFieldsOutputReference extends cdktf.ComplexObject {
@@ -600,6 +712,61 @@ export function onlineArchiveScheduleToTerraform(struct?: OnlineArchiveScheduleO
     start_minute: cdktf.numberToTerraform(struct!.startMinute),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function onlineArchiveScheduleToHclTerraform(struct?: OnlineArchiveScheduleOutputReference | OnlineArchiveSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_month: {
+      value: cdktf.numberToHclTerraform(struct!.dayOfMonth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    day_of_week: {
+      value: cdktf.numberToHclTerraform(struct!.dayOfWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    end_hour: {
+      value: cdktf.numberToHclTerraform(struct!.endHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    end_minute: {
+      value: cdktf.numberToHclTerraform(struct!.endMinute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start_hour: {
+      value: cdktf.numberToHclTerraform(struct!.startHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start_minute: {
+      value: cdktf.numberToHclTerraform(struct!.startMinute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OnlineArchiveScheduleOutputReference extends cdktf.ComplexObject {
@@ -1073,5 +1240,91 @@ export class OnlineArchive extends cdktf.TerraformResource {
       partition_fields: cdktf.listMapper(onlineArchivePartitionFieldsToTerraform, true)(this._partitionFields.internalValue),
       schedule: onlineArchiveScheduleToTerraform(this._schedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      coll_name: {
+        value: cdktf.stringToHclTerraform(this._collName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      collection_type: {
+        value: cdktf.stringToHclTerraform(this._collectionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_process_region: {
+        value: cdktf.listMapperHcl(onlineArchiveDataProcessRegionToHclTerraform, false)(this._dataProcessRegion.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OnlineArchiveDataProcessRegionList",
+      },
+      db_name: {
+        value: cdktf.stringToHclTerraform(this._dbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      paused: {
+        value: cdktf.booleanToHclTerraform(this._paused),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sync_creation: {
+        value: cdktf.booleanToHclTerraform(this._syncCreation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      criteria: {
+        value: onlineArchiveCriteriaToHclTerraform(this._criteria.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OnlineArchiveCriteriaList",
+      },
+      data_expiration_rule: {
+        value: onlineArchiveDataExpirationRuleToHclTerraform(this._dataExpirationRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OnlineArchiveDataExpirationRuleList",
+      },
+      partition_fields: {
+        value: cdktf.listMapperHcl(onlineArchivePartitionFieldsToHclTerraform, true)(this._partitionFields.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OnlineArchivePartitionFieldsList",
+      },
+      schedule: {
+        value: onlineArchiveScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OnlineArchiveScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

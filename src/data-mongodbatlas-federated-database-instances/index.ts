@@ -36,6 +36,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderCo
   }
 }
 
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAwsToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAws): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAwsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -120,6 +131,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderCo
   }
 }
 
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -183,6 +205,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsDataProcessRegi
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsDataProcessRegionToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsDataProcessRegion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsDataProcessRegionOutputReference extends cdktf.ComplexObject {
@@ -252,6 +285,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabase
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsDataSourcesToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsDataSources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsDataSourcesOutputReference extends cdktf.ComplexObject {
@@ -368,6 +412,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabase
   }
 }
 
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -436,6 +491,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabase
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesViewsToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesViews): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesViewsOutputReference extends cdktf.ComplexObject {
@@ -510,6 +576,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabase
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabases): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesOutputReference extends cdktf.ComplexObject {
@@ -593,6 +670,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresRe
   }
 }
 
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsTagsToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -662,6 +750,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresRe
   }
 }
 
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -725,6 +824,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresRe
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceOutputReference extends cdktf.ComplexObject {
@@ -800,6 +910,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresTo
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResultsStorageStores): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresOutputReference extends cdktf.ComplexObject {
@@ -940,6 +1061,17 @@ export function dataMongodbatlasFederatedDatabaseInstancesResultsToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedDatabaseInstancesResultsToHclTerraform(struct?: DataMongodbatlasFederatedDatabaseInstancesResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedDatabaseInstancesResultsOutputReference extends cdktf.ComplexObject {
@@ -1137,5 +1269,25 @@ export class DataMongodbatlasFederatedDatabaseInstances extends cdktf.TerraformD
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

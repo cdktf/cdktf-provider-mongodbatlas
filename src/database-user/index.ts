@@ -85,6 +85,31 @@ export function databaseUserLabelsToTerraform(struct?: DatabaseUserLabels | cdkt
   }
 }
 
+
+export function databaseUserLabelsToHclTerraform(struct?: DatabaseUserLabels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatabaseUserLabelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -212,6 +237,37 @@ export function databaseUserRolesToTerraform(struct?: DatabaseUserRoles | cdktf.
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     role_name: cdktf.stringToTerraform(struct!.roleName),
   }
+}
+
+
+export function databaseUserRolesToHclTerraform(struct?: DatabaseUserRoles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    collection_name: {
+      value: cdktf.stringToHclTerraform(struct!.collectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_name: {
+      value: cdktf.stringToHclTerraform(struct!.roleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatabaseUserRolesOutputReference extends cdktf.ComplexObject {
@@ -352,6 +408,31 @@ export function databaseUserScopesToTerraform(struct?: DatabaseUserScopes | cdkt
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function databaseUserScopesToHclTerraform(struct?: DatabaseUserScopes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatabaseUserScopesOutputReference extends cdktf.ComplexObject {
@@ -715,5 +796,79 @@ export class DatabaseUser extends cdktf.TerraformResource {
       roles: cdktf.listMapper(databaseUserRolesToTerraform, true)(this._roles.internalValue),
       scopes: cdktf.listMapper(databaseUserScopesToTerraform, true)(this._scopes.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_database_name: {
+        value: cdktf.stringToHclTerraform(this._authDatabaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_iam_type: {
+        value: cdktf.stringToHclTerraform(this._awsIamType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ldap_auth_type: {
+        value: cdktf.stringToHclTerraform(this._ldapAuthType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_auth_type: {
+        value: cdktf.stringToHclTerraform(this._oidcAuthType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      x509_type: {
+        value: cdktf.stringToHclTerraform(this._x509Type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.listMapperHcl(databaseUserLabelsToHclTerraform, true)(this._labels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DatabaseUserLabelsList",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(databaseUserRolesToHclTerraform, true)(this._roles.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DatabaseUserRolesList",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(databaseUserScopesToHclTerraform, true)(this._scopes.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DatabaseUserScopesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

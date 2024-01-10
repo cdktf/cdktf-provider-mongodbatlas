@@ -39,6 +39,17 @@ export function dataMongodbatlasAlertConfigurationMatcherToTerraform(struct?: Da
   }
 }
 
+
+export function dataMongodbatlasAlertConfigurationMatcherToHclTerraform(struct?: DataMongodbatlasAlertConfigurationMatcher): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasAlertConfigurationMatcherOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -111,6 +122,17 @@ export function dataMongodbatlasAlertConfigurationMetricThresholdConfigToTerrafo
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasAlertConfigurationMetricThresholdConfigToHclTerraform(struct?: DataMongodbatlasAlertConfigurationMetricThresholdConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasAlertConfigurationMetricThresholdConfigOutputReference extends cdktf.ComplexObject {
@@ -195,6 +217,17 @@ export function dataMongodbatlasAlertConfigurationNotificationToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasAlertConfigurationNotificationToHclTerraform(struct?: DataMongodbatlasAlertConfigurationNotification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasAlertConfigurationNotificationOutputReference extends cdktf.ComplexObject {
@@ -376,6 +409,17 @@ export function dataMongodbatlasAlertConfigurationThresholdConfigToTerraform(str
   }
 }
 
+
+export function dataMongodbatlasAlertConfigurationThresholdConfigToHclTerraform(struct?: DataMongodbatlasAlertConfigurationThresholdConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasAlertConfigurationThresholdConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -458,6 +502,31 @@ export function dataMongodbatlasAlertConfigurationOutputToTerraform(struct?: Dat
     label: cdktf.stringToTerraform(struct!.label),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function dataMongodbatlasAlertConfigurationOutputToHclTerraform(struct?: DataMongodbatlasAlertConfigurationOutput | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataMongodbatlasAlertConfigurationOutputOutputReference extends cdktf.ComplexObject {
@@ -726,5 +795,31 @@ export class DataMongodbatlasAlertConfiguration extends cdktf.TerraformDataSourc
       project_id: cdktf.stringToTerraform(this._projectId),
       output: cdktf.listMapper(dataMongodbatlasAlertConfigurationOutputToTerraform, true)(this._output.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alert_configuration_id: {
+        value: cdktf.stringToHclTerraform(this._alertConfigurationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      output: {
+        value: cdktf.listMapperHcl(dataMongodbatlasAlertConfigurationOutputToHclTerraform, true)(this._output.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasAlertConfigurationOutputList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

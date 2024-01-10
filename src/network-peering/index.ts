@@ -487,4 +487,114 @@ export class NetworkPeering extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      accepter_region_name: {
+        value: cdktf.stringToHclTerraform(this._accepterRegionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      atlas_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._atlasCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      atlas_gcp_project_id: {
+        value: cdktf.stringToHclTerraform(this._atlasGcpProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      atlas_vpc_name: {
+        value: cdktf.stringToHclTerraform(this._atlasVpcName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_directory_id: {
+        value: cdktf.stringToHclTerraform(this._azureDirectoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_subscription_id: {
+        value: cdktf.stringToHclTerraform(this._azureSubscriptionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container_id: {
+        value: cdktf.stringToHclTerraform(this._containerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gcp_project_id: {
+        value: cdktf.stringToHclTerraform(this._gcpProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_name: {
+        value: cdktf.stringToHclTerraform(this._networkName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_group_name: {
+        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_table_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._routeTableCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vnet_name: {
+        value: cdktf.stringToHclTerraform(this._vnetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

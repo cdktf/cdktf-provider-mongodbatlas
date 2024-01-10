@@ -71,6 +71,49 @@ export function dataMongodbatlasGlobalClusterConfigManagedNamespacesToTerraform(
   }
 }
 
+
+export function dataMongodbatlasGlobalClusterConfigManagedNamespacesToHclTerraform(struct?: DataMongodbatlasGlobalClusterConfigManagedNamespaces | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    collection: {
+      value: cdktf.stringToHclTerraform(struct!.collection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_shard_key: {
+      value: cdktf.stringToHclTerraform(struct!.customShardKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    db: {
+      value: cdktf.stringToHclTerraform(struct!.db),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_custom_shard_key_hashed: {
+      value: cdktf.booleanToHclTerraform(struct!.isCustomShardKeyHashed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_shard_key_unique: {
+      value: cdktf.booleanToHclTerraform(struct!.isShardKeyUnique),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataMongodbatlasGlobalClusterConfigManagedNamespacesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -367,5 +410,37 @@ export class DataMongodbatlasGlobalClusterConfig extends cdktf.TerraformDataSour
       project_id: cdktf.stringToTerraform(this._projectId),
       managed_namespaces: cdktf.listMapper(dataMongodbatlasGlobalClusterConfigManagedNamespacesToTerraform, true)(this._managedNamespaces.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_namespaces: {
+        value: cdktf.listMapperHcl(dataMongodbatlasGlobalClusterConfigManagedNamespacesToHclTerraform, true)(this._managedNamespaces.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataMongodbatlasGlobalClusterConfigManagedNamespacesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

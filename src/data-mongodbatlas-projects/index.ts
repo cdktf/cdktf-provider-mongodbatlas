@@ -33,6 +33,17 @@ export function dataMongodbatlasProjectsResultsLimitsToTerraform(struct?: DataMo
   }
 }
 
+
+export function dataMongodbatlasProjectsResultsLimitsToHclTerraform(struct?: DataMongodbatlasProjectsResultsLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasProjectsResultsLimitsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -117,6 +128,17 @@ export function dataMongodbatlasProjectsResultsTeamsToTerraform(struct?: DataMon
   }
 }
 
+
+export function dataMongodbatlasProjectsResultsTeamsToHclTerraform(struct?: DataMongodbatlasProjectsResultsTeams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasProjectsResultsTeamsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -184,6 +206,17 @@ export function dataMongodbatlasProjectsResultsToTerraform(struct?: DataMongodba
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasProjectsResultsToHclTerraform(struct?: DataMongodbatlasProjectsResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasProjectsResultsOutputReference extends cdktf.ComplexObject {
@@ -427,5 +460,25 @@ export class DataMongodbatlasProjects extends cdktf.TerraformDataSource {
       items_per_page: cdktf.numberToTerraform(this._itemsPerPage),
       page_num: cdktf.numberToTerraform(this._pageNum),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      items_per_page: {
+        value: cdktf.numberToHclTerraform(this._itemsPerPage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      page_num: {
+        value: cdktf.numberToHclTerraform(this._pageNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

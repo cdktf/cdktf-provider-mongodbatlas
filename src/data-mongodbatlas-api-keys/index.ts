@@ -44,6 +44,17 @@ export function dataMongodbatlasApiKeysResultsToTerraform(struct?: DataMongodbat
   }
 }
 
+
+export function dataMongodbatlasApiKeysResultsToHclTerraform(struct?: DataMongodbatlasApiKeysResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasApiKeysResultsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -251,5 +262,37 @@ export class DataMongodbatlasApiKeys extends cdktf.TerraformDataSource {
       org_id: cdktf.stringToTerraform(this._orgId),
       page_num: cdktf.numberToTerraform(this._pageNum),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      items_per_page: {
+        value: cdktf.numberToHclTerraform(this._itemsPerPage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      page_num: {
+        value: cdktf.numberToHclTerraform(this._pageNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

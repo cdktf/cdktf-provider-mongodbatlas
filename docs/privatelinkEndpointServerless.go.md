@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 privatelinkendpointserverless.NewPrivatelinkEndpointServerless(scope Construct, id *string, config PrivatelinkEndpointServerlessConfig) PrivatelinkEndpointServerless
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 privatelinkendpointserverless.PrivatelinkEndpointServerless_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 privatelinkendpointserverless.PrivatelinkEndpointServerless_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ privatelinkendpointserverless.PrivatelinkEndpointServerless_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 privatelinkendpointserverless.PrivatelinkEndpointServerless_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ privatelinkendpointserverless.PrivatelinkEndpointServerless_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerless.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 privatelinkendpointserverless.PrivatelinkEndpointServerless_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -841,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerlessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 &privatelinkendpointserverless.PrivatelinkEndpointServerlessConfig {
 	Connection: interface{},
@@ -855,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatel
 	ProjectId: *string,
 	ProviderName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6.privatelinkEndpointServerless.PrivatelinkEndpointServerlessTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.privatelinkEndpointServerless.PrivatelinkEndpointServerlessTimeouts,
 }
 ```
 
@@ -1018,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerlessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 &privatelinkendpointserverless.PrivatelinkEndpointServerlessTimeouts {
 	Create: *string,
@@ -1066,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privatelinkEndpointServerless.PrivatelinkEndpointServerlessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/privatelinkendpointserverless"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/privatelinkendpointserverless"
 
 privatelinkendpointserverless.NewPrivatelinkEndpointServerlessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatelinkEndpointServerlessTimeoutsOutputReference
 ```

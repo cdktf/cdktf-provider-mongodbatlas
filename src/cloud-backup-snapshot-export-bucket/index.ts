@@ -165,4 +165,36 @@ export class CloudBackupSnapshotExportBucket extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket_name: {
+        value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloud_provider: {
+        value: cdktf.stringToHclTerraform(this._cloudProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_role_id: {
+        value: cdktf.stringToHclTerraform(this._iamRoleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
