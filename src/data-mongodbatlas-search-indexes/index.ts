@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes
 // generated from terraform resource schema
 
@@ -54,6 +49,17 @@ export function dataMongodbatlasSearchIndexesResultsSynonymsToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasSearchIndexesResultsSynonymsToHclTerraform(struct?: DataMongodbatlasSearchIndexesResultsSynonyms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasSearchIndexesResultsSynonymsOutputReference extends cdktf.ComplexObject {
@@ -128,6 +134,17 @@ export function dataMongodbatlasSearchIndexesResultsToTerraform(struct?: DataMon
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasSearchIndexesResultsToHclTerraform(struct?: DataMongodbatlasSearchIndexesResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasSearchIndexesResultsOutputReference extends cdktf.ComplexObject {
@@ -448,5 +465,55 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
       page_num: cdktf.numberToTerraform(this._pageNum),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      collection_name: {
+        value: cdktf.stringToHclTerraform(this._collectionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      items_per_page: {
+        value: cdktf.numberToHclTerraform(this._itemsPerPage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      page_num: {
+        value: cdktf.numberToHclTerraform(this._pageNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

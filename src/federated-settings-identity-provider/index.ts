@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_identity_provider
 // generated from terraform resource schema
 
@@ -282,5 +277,73 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
       sso_url: cdktf.stringToTerraform(this._ssoUrl),
       status: cdktf.stringToTerraform(this._status),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      associated_domains: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._associatedDomains),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      federation_settings_id: {
+        value: cdktf.stringToHclTerraform(this._federationSettingsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer_uri: {
+        value: cdktf.stringToHclTerraform(this._issuerUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_binding: {
+        value: cdktf.stringToHclTerraform(this._requestBinding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_signature_algorithm: {
+        value: cdktf.stringToHclTerraform(this._responseSignatureAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sso_debug_enabled: {
+        value: cdktf.booleanToHclTerraform(this._ssoDebugEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sso_url: {
+        value: cdktf.stringToHclTerraform(this._ssoUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

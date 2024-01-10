@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs
 // generated from terraform resource schema
 
@@ -164,6 +159,73 @@ export function mongodbatlasProviderAssumeRoleToTerraform(struct?: MongodbatlasP
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     transitive_tag_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.transitiveTagKeys),
   }
+}
+
+
+export function mongodbatlasProviderAssumeRoleToHclTerraform(struct?: MongodbatlasProviderAssumeRole | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.stringToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktf.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policyArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_name: {
+      value: cdktf.stringToHclTerraform(struct!.sessionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_identity: {
+      value: cdktf.stringToHclTerraform(struct!.sourceIdentity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    transitive_tag_keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.transitiveTagKeys),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -459,5 +521,91 @@ export class MongodbatlasProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       assume_role: cdktf.listMapper(mongodbatlasProviderAssumeRoleToTerraform, true)(this._assumeRole),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_access_key_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccessKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_secret_access_key: {
+        value: cdktf.stringToHclTerraform(this._awsSecretAccessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_session_token: {
+        value: cdktf.stringToHclTerraform(this._awsSessionToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      base_url: {
+        value: cdktf.stringToHclTerraform(this._baseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_mongodbgov_cloud: {
+        value: cdktf.booleanToHclTerraform(this._isMongodbgovCloud),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_key: {
+        value: cdktf.stringToHclTerraform(this._publicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      realm_base_url: {
+        value: cdktf.stringToHclTerraform(this._realmBaseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_name: {
+        value: cdktf.stringToHclTerraform(this._secretName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sts_endpoint: {
+        value: cdktf.stringToHclTerraform(this._stsEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      assume_role: {
+        value: cdktf.listMapperHcl(mongodbatlasProviderAssumeRoleToHclTerraform, true)(this._assumeRole),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MongodbatlasProviderAssumeRoleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

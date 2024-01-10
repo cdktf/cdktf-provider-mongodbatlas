@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_query_limit
 // generated from terraform resource schema
 
@@ -252,5 +247,61 @@ export class FederatedQueryLimit extends cdktf.TerraformResource {
       tenant_name: cdktf.stringToTerraform(this._tenantName),
       value: cdktf.numberToTerraform(this._value),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_limit: {
+        value: cdktf.numberToHclTerraform(this._defaultLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit_name: {
+        value: cdktf.stringToHclTerraform(this._limitName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maximum_limit: {
+        value: cdktf.numberToHclTerraform(this._maximumLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      overrun_policy: {
+        value: cdktf.stringToHclTerraform(this._overrunPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_name: {
+        value: cdktf.stringToHclTerraform(this._tenantName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.numberToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

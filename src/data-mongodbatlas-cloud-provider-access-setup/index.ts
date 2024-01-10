@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/cloud_provider_access_setup
 // generated from terraform resource schema
 
@@ -48,6 +43,17 @@ export function dataMongodbatlasCloudProviderAccessSetupAwsConfigToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasCloudProviderAccessSetupAwsConfigToHclTerraform(struct?: DataMongodbatlasCloudProviderAccessSetupAwsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasCloudProviderAccessSetupAwsConfigOutputReference extends cdktf.ComplexObject {
@@ -117,6 +123,17 @@ export function dataMongodbatlasCloudProviderAccessSetupAzureConfigToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasCloudProviderAccessSetupAzureConfigToHclTerraform(struct?: DataMongodbatlasCloudProviderAccessSetupAzureConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasCloudProviderAccessSetupAzureConfigOutputReference extends cdktf.ComplexObject {
@@ -360,5 +377,43 @@ export class DataMongodbatlasCloudProviderAccessSetup extends cdktf.TerraformDat
       role_id: cdktf.stringToTerraform(this._roleId),
       azure_config: cdktf.listMapper(dataMongodbatlasCloudProviderAccessSetupAzureConfigToTerraform, true)(this._azureConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_id: {
+        value: cdktf.stringToHclTerraform(this._roleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_config: {
+        value: cdktf.listMapperHcl(dataMongodbatlasCloudProviderAccessSetupAzureConfigToHclTerraform, true)(this._azureConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasCloudProviderAccessSetupAzureConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

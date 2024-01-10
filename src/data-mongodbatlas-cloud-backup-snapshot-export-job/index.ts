@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/cloud_backup_snapshot_export_job
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataMongodbatlasCloudBackupSnapshotExportJobComponentsToTerrafor
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasCloudBackupSnapshotExportJobComponentsToHclTerraform(struct?: DataMongodbatlasCloudBackupSnapshotExportJobComponents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasCloudBackupSnapshotExportJobComponentsOutputReference extends cdktf.ComplexObject {
@@ -111,6 +117,17 @@ export function dataMongodbatlasCloudBackupSnapshotExportJobCustomDataToTerrafor
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasCloudBackupSnapshotExportJobCustomDataToHclTerraform(struct?: DataMongodbatlasCloudBackupSnapshotExportJobCustomData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasCloudBackupSnapshotExportJobCustomDataOutputReference extends cdktf.ComplexObject {
@@ -352,5 +369,37 @@ export class DataMongodbatlasCloudBackupSnapshotExportJob extends cdktf.Terrafor
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      export_job_id: {
+        value: cdktf.stringToHclTerraform(this._exportJobId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

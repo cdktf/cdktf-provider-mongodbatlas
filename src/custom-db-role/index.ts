@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/custom_db_role
 // generated from terraform resource schema
 
@@ -65,6 +60,37 @@ export function customDbRoleActionsResourcesToTerraform(struct?: CustomDbRoleAct
     collection_name: cdktf.stringToTerraform(struct!.collectionName),
     database_name: cdktf.stringToTerraform(struct!.databaseName),
   }
+}
+
+
+export function customDbRoleActionsResourcesToHclTerraform(struct?: CustomDbRoleActionsResources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster: {
+      value: cdktf.booleanToHclTerraform(struct!.cluster),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    collection_name: {
+      value: cdktf.stringToHclTerraform(struct!.collectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomDbRoleActionsResourcesOutputReference extends cdktf.ComplexObject {
@@ -215,6 +241,31 @@ export function customDbRoleActionsToTerraform(struct?: CustomDbRoleActions | cd
   }
 }
 
+
+export function customDbRoleActionsToHclTerraform(struct?: CustomDbRoleActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resources: {
+      value: cdktf.listMapperHcl(customDbRoleActionsResourcesToHclTerraform, true)(struct!.resources),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CustomDbRoleActionsResourcesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomDbRoleActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -331,6 +382,31 @@ export function customDbRoleInheritedRolesToTerraform(struct?: CustomDbRoleInher
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     role_name: cdktf.stringToTerraform(struct!.roleName),
   }
+}
+
+
+export function customDbRoleInheritedRolesToHclTerraform(struct?: CustomDbRoleInheritedRoles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_name: {
+      value: cdktf.stringToHclTerraform(struct!.roleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomDbRoleInheritedRolesOutputReference extends cdktf.ComplexObject {
@@ -578,5 +654,43 @@ export class CustomDbRole extends cdktf.TerraformResource {
       actions: cdktf.listMapper(customDbRoleActionsToTerraform, true)(this._actions.internalValue),
       inherited_roles: cdktf.listMapper(customDbRoleInheritedRolesToTerraform, true)(this._inheritedRoles.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      actions: {
+        value: cdktf.listMapperHcl(customDbRoleActionsToHclTerraform, true)(this._actions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CustomDbRoleActionsList",
+      },
+      inherited_roles: {
+        value: cdktf.listMapperHcl(customDbRoleInheritedRolesToHclTerraform, true)(this._inheritedRoles.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CustomDbRoleInheritedRolesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

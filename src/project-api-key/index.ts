@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_api_key
 // generated from terraform resource schema
 
@@ -54,6 +49,31 @@ export function projectApiKeyProjectAssignmentToTerraform(struct?: ProjectApiKey
     project_id: cdktf.stringToTerraform(struct!.projectId),
     role_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roleNames),
   }
+}
+
+
+export function projectApiKeyProjectAssignmentToHclTerraform(struct?: ProjectApiKeyProjectAssignment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roleNames),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectApiKeyProjectAssignmentOutputReference extends cdktf.ComplexObject {
@@ -298,5 +318,37 @@ export class ProjectApiKey extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       project_assignment: cdktf.listMapper(projectApiKeyProjectAssignmentToTerraform, true)(this._projectAssignment.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_assignment: {
+        value: cdktf.listMapperHcl(projectApiKeyProjectAssignmentToHclTerraform, true)(this._projectAssignment.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ProjectApiKeyProjectAssignmentList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

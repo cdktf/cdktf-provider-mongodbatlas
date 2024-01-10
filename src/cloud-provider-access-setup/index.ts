@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/cloud_provider_access_setup
 // generated from terraform resource schema
 
@@ -44,6 +39,17 @@ export function cloudProviderAccessSetupAwsConfigToTerraform(struct?: CloudProvi
   }
   return {
   }
+}
+
+
+export function cloudProviderAccessSetupAwsConfigToHclTerraform(struct?: CloudProviderAccessSetupAwsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class CloudProviderAccessSetupAwsConfigOutputReference extends cdktf.ComplexObject {
@@ -128,6 +134,37 @@ export function cloudProviderAccessSetupAzureConfigToTerraform(struct?: CloudPro
     service_principal_id: cdktf.stringToTerraform(struct!.servicePrincipalId),
     tenant_id: cdktf.stringToTerraform(struct!.tenantId),
   }
+}
+
+
+export function cloudProviderAccessSetupAzureConfigToHclTerraform(struct?: CloudProviderAccessSetupAzureConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    atlas_azure_app_id: {
+      value: cdktf.stringToHclTerraform(struct!.atlasAzureAppId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_principal_id: {
+      value: cdktf.stringToHclTerraform(struct!.servicePrincipalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudProviderAccessSetupAzureConfigOutputReference extends cdktf.ComplexObject {
@@ -397,5 +434,37 @@ export class CloudProviderAccessSetup extends cdktf.TerraformResource {
       provider_name: cdktf.stringToTerraform(this._providerName),
       azure_config: cdktf.listMapper(cloudProviderAccessSetupAzureConfigToTerraform, true)(this._azureConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_config: {
+        value: cdktf.listMapperHcl(cloudProviderAccessSetupAzureConfigToHclTerraform, true)(this._azureConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudProviderAccessSetupAzureConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

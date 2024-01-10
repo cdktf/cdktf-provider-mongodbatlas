@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_org_role_mapping
 // generated from terraform resource schema
 
@@ -56,6 +51,37 @@ export function federatedSettingsOrgRoleMappingRoleAssignmentsToTerraform(struct
     org_id: cdktf.stringToTerraform(struct!.orgId),
     roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
   }
+}
+
+
+export function federatedSettingsOrgRoleMappingRoleAssignmentsToHclTerraform(struct?: FederatedSettingsOrgRoleMappingRoleAssignments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.stringToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    org_id: {
+      value: cdktf.stringToHclTerraform(struct!.orgId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference extends cdktf.ComplexObject {
@@ -312,5 +338,37 @@ export class FederatedSettingsOrgRoleMapping extends cdktf.TerraformResource {
       org_id: cdktf.stringToTerraform(this._orgId),
       role_assignments: cdktf.listMapper(federatedSettingsOrgRoleMappingRoleAssignmentsToTerraform, true)(this._roleAssignments.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      external_group_name: {
+        value: cdktf.stringToHclTerraform(this._externalGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      federation_settings_id: {
+        value: cdktf.stringToHclTerraform(this._federationSettingsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_assignments: {
+        value: cdktf.listMapperHcl(federatedSettingsOrgRoleMappingRoleAssignmentsToHclTerraform, true)(this._roleAssignments.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FederatedSettingsOrgRoleMappingRoleAssignmentsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

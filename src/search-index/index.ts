@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/search_index
 // generated from terraform resource schema
 
@@ -113,6 +108,37 @@ export function searchIndexSynonymsToTerraform(struct?: SearchIndexSynonyms | cd
     name: cdktf.stringToTerraform(struct!.name),
     source_collection: cdktf.stringToTerraform(struct!.sourceCollection),
   }
+}
+
+
+export function searchIndexSynonymsToHclTerraform(struct?: SearchIndexSynonyms | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    analyzer: {
+      value: cdktf.stringToHclTerraform(struct!.analyzer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_collection: {
+      value: cdktf.stringToHclTerraform(struct!.sourceCollection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SearchIndexSynonymsOutputReference extends cdktf.ComplexObject {
@@ -255,6 +281,37 @@ export function searchIndexTimeoutsToTerraform(struct?: SearchIndexTimeouts | cd
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function searchIndexTimeoutsToHclTerraform(struct?: SearchIndexTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SearchIndexTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -720,5 +777,115 @@ export class SearchIndex extends cdktf.TerraformResource {
       synonyms: cdktf.listMapper(searchIndexSynonymsToTerraform, true)(this._synonyms.internalValue),
       timeouts: searchIndexTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      analyzer: {
+        value: cdktf.stringToHclTerraform(this._analyzer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      analyzers: {
+        value: cdktf.stringToHclTerraform(this._analyzers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      collection_name: {
+        value: cdktf.stringToHclTerraform(this._collectionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fields: {
+        value: cdktf.stringToHclTerraform(this._fields),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mappings_dynamic: {
+        value: cdktf.booleanToHclTerraform(this._mappingsDynamic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mappings_fields: {
+        value: cdktf.stringToHclTerraform(this._mappingsFields),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search_analyzer: {
+        value: cdktf.stringToHclTerraform(this._searchAnalyzer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_index_build_completion: {
+        value: cdktf.booleanToHclTerraform(this._waitForIndexBuildCompletion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      synonyms: {
+        value: cdktf.listMapperHcl(searchIndexSynonymsToHclTerraform, true)(this._synonyms.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SearchIndexSynonymsList",
+      },
+      timeouts: {
+        value: searchIndexTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SearchIndexTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

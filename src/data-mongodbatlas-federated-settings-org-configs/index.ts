@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_org_configs
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsRo
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsRoleAssignmentsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsRoleAssignments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsRoleAssignmentsOutputReference extends cdktf.ComplexObject {
@@ -118,6 +124,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsTo
   }
 }
 
+
+export function dataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -191,6 +208,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigsResultsUserConflictsT
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedSettingsOrgConfigsResultsUserConflictsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigsResultsUserConflicts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedSettingsOrgConfigsResultsUserConflictsOutputReference extends cdktf.ComplexObject {
@@ -275,6 +303,17 @@ export function dataMongodbatlasFederatedSettingsOrgConfigsResultsToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasFederatedSettingsOrgConfigsResultsToHclTerraform(struct?: DataMongodbatlasFederatedSettingsOrgConfigsResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasFederatedSettingsOrgConfigsResultsOutputReference extends cdktf.ComplexObject {
@@ -501,5 +540,37 @@ export class DataMongodbatlasFederatedSettingsOrgConfigs extends cdktf.Terraform
       items_per_page: cdktf.numberToTerraform(this._itemsPerPage),
       page_num: cdktf.numberToTerraform(this._pageNum),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      federation_settings_id: {
+        value: cdktf.stringToHclTerraform(this._federationSettingsId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      items_per_page: {
+        value: cdktf.numberToHclTerraform(this._itemsPerPage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      page_num: {
+        value: cdktf.numberToHclTerraform(this._pageNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

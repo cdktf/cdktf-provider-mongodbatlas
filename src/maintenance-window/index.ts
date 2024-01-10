@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/maintenance_window
 // generated from terraform resource schema
 
@@ -259,5 +254,61 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       number_of_deferrals: cdktf.numberToTerraform(this._numberOfDeferrals),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_defer: {
+        value: cdktf.booleanToHclTerraform(this._autoDefer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_defer_once_enabled: {
+        value: cdktf.booleanToHclTerraform(this._autoDeferOnceEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      day_of_week: {
+        value: cdktf.numberToHclTerraform(this._dayOfWeek),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      defer: {
+        value: cdktf.booleanToHclTerraform(this._defer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hour_of_day: {
+        value: cdktf.numberToHclTerraform(this._hourOfDay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number_of_deferrals: {
+        value: cdktf.numberToHclTerraform(this._numberOfDeferrals),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

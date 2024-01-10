@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_index
 // generated from terraform resource schema
 
@@ -86,6 +81,17 @@ export function dataMongodbatlasSearchIndexSynonymsToTerraform(struct?: DataMong
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasSearchIndexSynonymsToHclTerraform(struct?: DataMongodbatlasSearchIndexSynonyms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasSearchIndexSynonymsOutputReference extends cdktf.ComplexObject {
@@ -482,5 +488,103 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
       status: cdktf.stringToTerraform(this._status),
       type: cdktf.stringToTerraform(this._type),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      analyzer: {
+        value: cdktf.stringToHclTerraform(this._analyzer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      analyzers: {
+        value: cdktf.stringToHclTerraform(this._analyzers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_name: {
+        value: cdktf.stringToHclTerraform(this._clusterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      collection_name: {
+        value: cdktf.stringToHclTerraform(this._collectionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fields: {
+        value: cdktf.stringToHclTerraform(this._fields),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index_id: {
+        value: cdktf.stringToHclTerraform(this._indexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mappings_dynamic: {
+        value: cdktf.booleanToHclTerraform(this._mappingsDynamic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mappings_fields: {
+        value: cdktf.stringToHclTerraform(this._mappingsFields),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search_analyzer: {
+        value: cdktf.stringToHclTerraform(this._searchAnalyzer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

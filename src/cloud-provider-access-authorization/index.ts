@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/cloud_provider_access_authorization
 // generated from terraform resource schema
 
@@ -50,6 +45,17 @@ export function cloudProviderAccessAuthorizationFeatureUsagesToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function cloudProviderAccessAuthorizationFeatureUsagesToHclTerraform(struct?: CloudProviderAccessAuthorizationFeatureUsages): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class CloudProviderAccessAuthorizationFeatureUsagesOutputReference extends cdktf.ComplexObject {
@@ -127,6 +133,25 @@ export function cloudProviderAccessAuthorizationAwsToTerraform(struct?: CloudPro
   }
 }
 
+
+export function cloudProviderAccessAuthorizationAwsToHclTerraform(struct?: CloudProviderAccessAuthorizationAwsOutputReference | CloudProviderAccessAuthorizationAws): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iam_assumed_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.iamAssumedRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudProviderAccessAuthorizationAwsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -197,6 +222,37 @@ export function cloudProviderAccessAuthorizationAzureToTerraform(struct?: CloudP
     service_principal_id: cdktf.stringToTerraform(struct!.servicePrincipalId),
     tenant_id: cdktf.stringToTerraform(struct!.tenantId),
   }
+}
+
+
+export function cloudProviderAccessAuthorizationAzureToHclTerraform(struct?: CloudProviderAccessAuthorizationAzureOutputReference | CloudProviderAccessAuthorizationAzure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    atlas_azure_app_id: {
+      value: cdktf.stringToHclTerraform(struct!.atlasAzureAppId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_principal_id: {
+      value: cdktf.stringToHclTerraform(struct!.servicePrincipalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudProviderAccessAuthorizationAzureOutputReference extends cdktf.ComplexObject {
@@ -442,5 +498,43 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
       aws: cloudProviderAccessAuthorizationAwsToTerraform(this._aws.internalValue),
       azure: cloudProviderAccessAuthorizationAzureToTerraform(this._azure.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_id: {
+        value: cdktf.stringToHclTerraform(this._roleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws: {
+        value: cloudProviderAccessAuthorizationAwsToHclTerraform(this._aws.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudProviderAccessAuthorizationAwsList",
+      },
+      azure: {
+        value: cloudProviderAccessAuthorizationAzureToHclTerraform(this._azure.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudProviderAccessAuthorizationAzureList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

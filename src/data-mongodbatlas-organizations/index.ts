@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organizations
 // generated from terraform resource schema
 
@@ -46,6 +41,17 @@ export function dataMongodbatlasOrganizationsResultsLinksToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasOrganizationsResultsLinksToHclTerraform(struct?: DataMongodbatlasOrganizationsResultsLinks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasOrganizationsResultsLinksOutputReference extends cdktf.ComplexObject {
@@ -115,6 +121,17 @@ export function dataMongodbatlasOrganizationsResultsToTerraform(struct?: DataMon
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasOrganizationsResultsToHclTerraform(struct?: DataMongodbatlasOrganizationsResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasOrganizationsResultsOutputReference extends cdktf.ComplexObject {
@@ -351,5 +368,43 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       page_num: cdktf.numberToTerraform(this._pageNum),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_deleted_orgs: {
+        value: cdktf.booleanToHclTerraform(this._includeDeletedOrgs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      items_per_page: {
+        value: cdktf.numberToHclTerraform(this._itemsPerPage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      page_num: {
+        value: cdktf.numberToHclTerraform(this._pageNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

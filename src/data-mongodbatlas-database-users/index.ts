@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/database_users
 // generated from terraform resource schema
 
@@ -27,6 +22,17 @@ export function dataMongodbatlasDatabaseUsersResultsLabelsToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasDatabaseUsersResultsLabelsToHclTerraform(struct?: DataMongodbatlasDatabaseUsersResultsLabels): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasDatabaseUsersResultsLabelsOutputReference extends cdktf.ComplexObject {
@@ -96,6 +102,17 @@ export function dataMongodbatlasDatabaseUsersResultsRolesToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasDatabaseUsersResultsRolesToHclTerraform(struct?: DataMongodbatlasDatabaseUsersResultsRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasDatabaseUsersResultsRolesOutputReference extends cdktf.ComplexObject {
@@ -172,6 +189,17 @@ export function dataMongodbatlasDatabaseUsersResultsScopesToTerraform(struct?: D
   }
 }
 
+
+export function dataMongodbatlasDatabaseUsersResultsScopesToHclTerraform(struct?: DataMongodbatlasDatabaseUsersResultsScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataMongodbatlasDatabaseUsersResultsScopesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -239,6 +267,17 @@ export function dataMongodbatlasDatabaseUsersResultsToTerraform(struct?: DataMon
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasDatabaseUsersResultsToHclTerraform(struct?: DataMongodbatlasDatabaseUsersResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasDatabaseUsersResultsOutputReference extends cdktf.ComplexObject {
@@ -442,5 +481,19 @@ export class DataMongodbatlasDatabaseUsers extends cdktf.TerraformDataSource {
     return {
       project_id: cdktf.stringToTerraform(this._projectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

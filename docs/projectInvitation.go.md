@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation"
 
 projectinvitation.NewProjectInvitation(scope Construct, id *string, config ProjectInvitationConfig) ProjectInvitation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.toMetadata"></a>
 
@@ -378,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation"
 
 projectinvitation.ProjectInvitation_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation"
 
 projectinvitation.ProjectInvitation_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ projectinvitation.ProjectInvitation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation"
 
 projectinvitation.ProjectInvitation_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ projectinvitation.ProjectInvitation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation"
 
 projectinvitation.ProjectInvitation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/projectinvitation"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation"
 
 &projectinvitation.ProjectInvitationConfig {
 	Connection: interface{},

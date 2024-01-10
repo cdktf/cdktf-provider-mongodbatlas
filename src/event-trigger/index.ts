@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/event_trigger
 // generated from terraform resource schema
 
@@ -120,6 +115,31 @@ export function eventTriggerEventProcessorsAwsEventbridgeToTerraform(struct?: Ev
   }
 }
 
+
+export function eventTriggerEventProcessorsAwsEventbridgeToHclTerraform(struct?: EventTriggerEventProcessorsAwsEventbridgeOutputReference | EventTriggerEventProcessorsAwsEventbridge): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    config_account_id: {
+      value: cdktf.stringToHclTerraform(struct!.configAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    config_region: {
+      value: cdktf.stringToHclTerraform(struct!.configRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EventTriggerEventProcessorsAwsEventbridgeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -207,6 +227,25 @@ export function eventTriggerEventProcessorsToTerraform(struct?: EventTriggerEven
   return {
     aws_eventbridge: eventTriggerEventProcessorsAwsEventbridgeToTerraform(struct!.awsEventbridge),
   }
+}
+
+
+export function eventTriggerEventProcessorsToHclTerraform(struct?: EventTriggerEventProcessorsOutputReference | EventTriggerEventProcessors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_eventbridge: {
+      value: eventTriggerEventProcessorsAwsEventbridgeToHclTerraform(struct!.awsEventbridge),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EventTriggerEventProcessorsAwsEventbridgeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EventTriggerEventProcessorsOutputReference extends cdktf.ComplexObject {
@@ -685,5 +724,133 @@ export class EventTrigger extends cdktf.TerraformResource {
       unordered: cdktf.booleanToTerraform(this._unordered),
       event_processors: eventTriggerEventProcessorsToTerraform(this._eventProcessors.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_collection: {
+        value: cdktf.stringToHclTerraform(this._configCollection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_database: {
+        value: cdktf.stringToHclTerraform(this._configDatabase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_full_document: {
+        value: cdktf.booleanToHclTerraform(this._configFullDocument),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      config_full_document_before: {
+        value: cdktf.booleanToHclTerraform(this._configFullDocumentBefore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      config_match: {
+        value: cdktf.stringToHclTerraform(this._configMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_operation_type: {
+        value: cdktf.stringToHclTerraform(this._configOperationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_operation_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._configOperationTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      config_project: {
+        value: cdktf.stringToHclTerraform(this._configProject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_providers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._configProviders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      config_schedule: {
+        value: cdktf.stringToHclTerraform(this._configSchedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_service_id: {
+        value: cdktf.stringToHclTerraform(this._configServiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      function_id: {
+        value: cdktf.stringToHclTerraform(this._functionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unordered: {
+        value: cdktf.booleanToHclTerraform(this._unordered),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      event_processors: {
+        value: eventTriggerEventProcessorsToHclTerraform(this._eventProcessors.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EventTriggerEventProcessorsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project
 // generated from terraform resource schema
 
@@ -89,6 +84,31 @@ export function projectLimitsToTerraform(struct?: ProjectLimits | cdktf.IResolva
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function projectLimitsToHclTerraform(struct?: ProjectLimits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectLimitsOutputReference extends cdktf.ComplexObject {
@@ -222,6 +242,31 @@ export function projectTeamsToTerraform(struct?: ProjectTeams | cdktf.IResolvabl
     role_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roleNames),
     team_id: cdktf.stringToTerraform(struct!.teamId),
   }
+}
+
+
+export function projectTeamsToHclTerraform(struct?: ProjectTeams | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roleNames),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    team_id: {
+      value: cdktf.stringToHclTerraform(struct!.teamId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectTeamsOutputReference extends cdktf.ComplexObject {
@@ -628,5 +673,91 @@ export class Project extends cdktf.TerraformResource {
       limits: cdktf.listMapper(projectLimitsToTerraform, true)(this._limits.internalValue),
       teams: cdktf.listMapper(projectTeamsToTerraform, true)(this._teams.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      is_collect_database_specifics_statistics_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isCollectDatabaseSpecificsStatisticsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_data_explorer_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isDataExplorerEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_extended_storage_sizes_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isExtendedStorageSizesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_performance_advisor_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isPerformanceAdvisorEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_realtime_performance_panel_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isRealtimePerformancePanelEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_schema_advisor_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isSchemaAdvisorEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_owner_id: {
+        value: cdktf.stringToHclTerraform(this._projectOwnerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region_usage_restrictions: {
+        value: cdktf.stringToHclTerraform(this._regionUsageRestrictions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      with_default_alerts_settings: {
+        value: cdktf.booleanToHclTerraform(this._withDefaultAlertsSettings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      limits: {
+        value: cdktf.listMapperHcl(projectLimitsToHclTerraform, true)(this._limits.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ProjectLimitsList",
+      },
+      teams: {
+        value: cdktf.listMapperHcl(projectTeamsToHclTerraform, true)(this._teams.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ProjectTeamsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

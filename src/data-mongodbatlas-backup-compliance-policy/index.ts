@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy
 // generated from terraform resource schema
 
@@ -64,6 +59,17 @@ export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToTerraf
   }
   return {
   }
+}
+
+
+export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference | DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference extends cdktf.ComplexObject {
@@ -142,6 +148,37 @@ export function dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToTerraform
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
     retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
+}
+
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference | DataMongodbatlasBackupCompliancePolicyPolicyItemDaily): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference extends cdktf.ComplexObject {
@@ -264,6 +301,37 @@ export function dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToTerrafor
   }
 }
 
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference | DataMongodbatlasBackupCompliancePolicyPolicyItemHourly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -382,6 +450,37 @@ export function dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToTerrafo
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
     retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
+}
+
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference extends cdktf.ComplexObject {
@@ -534,6 +633,37 @@ export function dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToTerrafor
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
     retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
+}
+
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference extends cdktf.ComplexObject {
@@ -899,5 +1029,55 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
       policy_item_monthly: cdktf.listMapper(dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToTerraform, true)(this._policyItemMonthly.internalValue),
       policy_item_weekly: cdktf.listMapper(dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToTerraform, true)(this._policyItemWeekly.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_demand_policy_item: {
+        value: dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToHclTerraform(this._onDemandPolicyItem.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList",
+      },
+      policy_item_daily: {
+        value: dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToHclTerraform(this._policyItemDaily.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList",
+      },
+      policy_item_hourly: {
+        value: dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToHclTerraform(this._policyItemHourly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList",
+      },
+      policy_item_monthly: {
+        value: cdktf.listMapperHcl(dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToHclTerraform, true)(this._policyItemMonthly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList",
+      },
+      policy_item_weekly: {
+        value: cdktf.listMapperHcl(dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToHclTerraform, true)(this._policyItemWeekly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
