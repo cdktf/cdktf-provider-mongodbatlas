@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface FederatedDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#id FederatedDatabaseInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#id FederatedDatabaseInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#project_id FederatedDatabaseInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#project_id FederatedDatabaseInstance#project_id}
   */
   readonly projectId: string;
   /**
   * cloud_provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#cloud_provider_config FederatedDatabaseInstance#cloud_provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#cloud_provider_config FederatedDatabaseInstance#cloud_provider_config}
   */
   readonly cloudProviderConfig?: FederatedDatabaseInstanceCloudProviderConfig;
   /**
   * data_process_region block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#data_process_region FederatedDatabaseInstance#data_process_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#data_process_region FederatedDatabaseInstance#data_process_region}
   */
   readonly dataProcessRegion?: FederatedDatabaseInstanceDataProcessRegion;
   /**
   * storage_databases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#storage_databases FederatedDatabaseInstance#storage_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#storage_databases FederatedDatabaseInstance#storage_databases}
   */
   readonly storageDatabases?: FederatedDatabaseInstanceStorageDatabases[] | cdktf.IResolvable;
   /**
   * storage_stores block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#storage_stores FederatedDatabaseInstance#storage_stores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#storage_stores FederatedDatabaseInstance#storage_stores}
   */
   readonly storageStores?: FederatedDatabaseInstanceStorageStores[] | cdktf.IResolvable;
 }
 export interface FederatedDatabaseInstanceCloudProviderConfigAws {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#role_id FederatedDatabaseInstance#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#role_id FederatedDatabaseInstance#role_id}
   */
   readonly roleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#test_s3_bucket FederatedDatabaseInstance#test_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#test_s3_bucket FederatedDatabaseInstance#test_s3_bucket}
   */
   readonly testS3Bucket: string;
 }
@@ -182,7 +177,7 @@ export interface FederatedDatabaseInstanceCloudProviderConfig {
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#aws FederatedDatabaseInstance#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#aws FederatedDatabaseInstance#aws}
   */
   readonly aws: FederatedDatabaseInstanceCloudProviderConfigAws;
 }
@@ -263,11 +258,11 @@ export class FederatedDatabaseInstanceCloudProviderConfigOutputReference extends
 }
 export interface FederatedDatabaseInstanceDataProcessRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#cloud_provider FederatedDatabaseInstance#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#cloud_provider FederatedDatabaseInstance#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#region FederatedDatabaseInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#region FederatedDatabaseInstance#region}
   */
   readonly region: string;
 }
@@ -374,47 +369,47 @@ export class FederatedDatabaseInstanceDataProcessRegionOutputReference extends c
 }
 export interface FederatedDatabaseInstanceStorageDatabasesCollectionsDataSources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#allow_insecure FederatedDatabaseInstance#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#allow_insecure FederatedDatabaseInstance#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#collection FederatedDatabaseInstance#collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#collection FederatedDatabaseInstance#collection}
   */
   readonly collection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#collection_regex FederatedDatabaseInstance#collection_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#collection_regex FederatedDatabaseInstance#collection_regex}
   */
   readonly collectionRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#database FederatedDatabaseInstance#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#database FederatedDatabaseInstance#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#database_regex FederatedDatabaseInstance#database_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#database_regex FederatedDatabaseInstance#database_regex}
   */
   readonly databaseRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#dataset_name FederatedDatabaseInstance#dataset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#dataset_name FederatedDatabaseInstance#dataset_name}
   */
   readonly datasetName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#default_format FederatedDatabaseInstance#default_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#default_format FederatedDatabaseInstance#default_format}
   */
   readonly defaultFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#path FederatedDatabaseInstance#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#path FederatedDatabaseInstance#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#provenance_field_name FederatedDatabaseInstance#provenance_field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#provenance_field_name FederatedDatabaseInstance#provenance_field_name}
   */
   readonly provenanceFieldName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#store_name FederatedDatabaseInstance#store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#store_name FederatedDatabaseInstance#store_name}
   */
   readonly storeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#urls FederatedDatabaseInstance#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#urls FederatedDatabaseInstance#urls}
   */
   readonly urls?: string[];
 }
@@ -622,7 +617,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     }
   }
 
-  // allow_insecure - computed: false, optional: true, required: false
+  // allow_insecure - computed: true, optional: true, required: false
   private _allowInsecure?: boolean | cdktf.IResolvable; 
   public get allowInsecure() {
     return this.getBooleanAttribute('allow_insecure');
@@ -638,7 +633,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._allowInsecure;
   }
 
-  // collection - computed: false, optional: true, required: false
+  // collection - computed: true, optional: true, required: false
   private _collection?: string; 
   public get collection() {
     return this.getStringAttribute('collection');
@@ -654,7 +649,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._collection;
   }
 
-  // collection_regex - computed: false, optional: true, required: false
+  // collection_regex - computed: true, optional: true, required: false
   private _collectionRegex?: string; 
   public get collectionRegex() {
     return this.getStringAttribute('collection_regex');
@@ -670,7 +665,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._collectionRegex;
   }
 
-  // database - computed: false, optional: true, required: false
+  // database - computed: true, optional: true, required: false
   private _database?: string; 
   public get database() {
     return this.getStringAttribute('database');
@@ -686,7 +681,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._database;
   }
 
-  // database_regex - computed: false, optional: true, required: false
+  // database_regex - computed: true, optional: true, required: false
   private _databaseRegex?: string; 
   public get databaseRegex() {
     return this.getStringAttribute('database_regex');
@@ -702,7 +697,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._databaseRegex;
   }
 
-  // dataset_name - computed: false, optional: true, required: false
+  // dataset_name - computed: true, optional: true, required: false
   private _datasetName?: string; 
   public get datasetName() {
     return this.getStringAttribute('dataset_name');
@@ -718,7 +713,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._datasetName;
   }
 
-  // default_format - computed: false, optional: true, required: false
+  // default_format - computed: true, optional: true, required: false
   private _defaultFormat?: string; 
   public get defaultFormat() {
     return this.getStringAttribute('default_format');
@@ -734,7 +729,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._defaultFormat;
   }
 
-  // path - computed: false, optional: true, required: false
+  // path - computed: true, optional: true, required: false
   private _path?: string; 
   public get path() {
     return this.getStringAttribute('path');
@@ -750,7 +745,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._path;
   }
 
-  // provenance_field_name - computed: false, optional: true, required: false
+  // provenance_field_name - computed: true, optional: true, required: false
   private _provenanceFieldName?: string; 
   public get provenanceFieldName() {
     return this.getStringAttribute('provenance_field_name');
@@ -766,7 +761,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._provenanceFieldName;
   }
 
-  // store_name - computed: false, optional: true, required: false
+  // store_name - computed: true, optional: true, required: false
   private _storeName?: string; 
   public get storeName() {
     return this.getStringAttribute('store_name');
@@ -782,7 +777,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutp
     return this._storeName;
   }
 
-  // urls - computed: false, optional: true, required: false
+  // urls - computed: true, optional: true, required: false
   private _urls?: string[]; 
   public get urls() {
     return this.getListAttribute('urls');
@@ -820,13 +815,13 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesList
 }
 export interface FederatedDatabaseInstanceStorageDatabasesCollections {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
   */
   readonly name?: string;
   /**
   * data_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#data_sources FederatedDatabaseInstance#data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#data_sources FederatedDatabaseInstance#data_sources}
   */
   readonly dataSources?: FederatedDatabaseInstanceStorageDatabasesCollectionsDataSources[] | cdktf.IResolvable;
 }
@@ -917,7 +912,7 @@ export class FederatedDatabaseInstanceStorageDatabasesCollectionsOutputReference
     }
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -1067,19 +1062,19 @@ export class FederatedDatabaseInstanceStorageDatabasesViewsList extends cdktf.Co
 }
 export interface FederatedDatabaseInstanceStorageDatabases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
   */
   readonly name?: string;
   /**
   * collections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#collections FederatedDatabaseInstance#collections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#collections FederatedDatabaseInstance#collections}
   */
   readonly collections?: FederatedDatabaseInstanceStorageDatabasesCollections[] | cdktf.IResolvable;
   /**
   * views block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#views FederatedDatabaseInstance#views}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#views FederatedDatabaseInstance#views}
   */
   readonly views?: FederatedDatabaseInstanceStorageDatabasesViews[] | cdktf.IResolvable;
 }
@@ -1188,7 +1183,7 @@ export class FederatedDatabaseInstanceStorageDatabasesOutputReference extends cd
     return this.getNumberAttribute('max_wildcard_collections');
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -1258,11 +1253,11 @@ export class FederatedDatabaseInstanceStorageDatabasesList extends cdktf.Complex
 }
 export interface FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#value FederatedDatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#value FederatedDatabaseInstance#value}
   */
   readonly value?: string;
 }
@@ -1353,7 +1348,7 @@ export class FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutp
     }
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -1369,7 +1364,7 @@ export class FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutp
     return this._name;
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -1409,7 +1404,7 @@ export interface FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets {
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#tags FederatedDatabaseInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#tags FederatedDatabaseInstance#tags}
   */
   readonly tags: FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags[] | cdktf.IResolvable;
 }
@@ -1522,17 +1517,17 @@ export class FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList ext
 }
 export interface FederatedDatabaseInstanceStorageStoresReadPreference {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#max_staleness_seconds FederatedDatabaseInstance#max_staleness_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#max_staleness_seconds FederatedDatabaseInstance#max_staleness_seconds}
   */
   readonly maxStalenessSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#mode FederatedDatabaseInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#mode FederatedDatabaseInstance#mode}
   */
   readonly mode?: string;
   /**
   * tag_sets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#tag_sets FederatedDatabaseInstance#tag_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#tag_sets FederatedDatabaseInstance#tag_sets}
   */
   readonly tagSets?: FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets[] | cdktf.IResolvable;
 }
@@ -1624,7 +1619,7 @@ export class FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference
     }
   }
 
-  // max_staleness_seconds - computed: false, optional: true, required: false
+  // max_staleness_seconds - computed: true, optional: true, required: false
   private _maxStalenessSeconds?: number; 
   public get maxStalenessSeconds() {
     return this.getNumberAttribute('max_staleness_seconds');
@@ -1640,7 +1635,7 @@ export class FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference
     return this._maxStalenessSeconds;
   }
 
-  // mode - computed: false, optional: true, required: false
+  // mode - computed: true, optional: true, required: false
   private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
@@ -1674,69 +1669,69 @@ export class FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference
 }
 export interface FederatedDatabaseInstanceStorageStores {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#additional_storage_classes FederatedDatabaseInstance#additional_storage_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#additional_storage_classes FederatedDatabaseInstance#additional_storage_classes}
   */
   readonly additionalStorageClasses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#allow_insecure FederatedDatabaseInstance#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#allow_insecure FederatedDatabaseInstance#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#bucket FederatedDatabaseInstance#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#bucket FederatedDatabaseInstance#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#cluster_id FederatedDatabaseInstance#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#cluster_id FederatedDatabaseInstance#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#cluster_name FederatedDatabaseInstance#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#cluster_name FederatedDatabaseInstance#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#default_format FederatedDatabaseInstance#default_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#default_format FederatedDatabaseInstance#default_format}
   */
   readonly defaultFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#delimiter FederatedDatabaseInstance#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#delimiter FederatedDatabaseInstance#delimiter}
   */
   readonly delimiter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#include_tags FederatedDatabaseInstance#include_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#include_tags FederatedDatabaseInstance#include_tags}
   */
   readonly includeTags?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#name FederatedDatabaseInstance#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#prefix FederatedDatabaseInstance#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#prefix FederatedDatabaseInstance#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#project_id FederatedDatabaseInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#project_id FederatedDatabaseInstance#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#provider FederatedDatabaseInstance#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#provider FederatedDatabaseInstance#provider}
   */
   readonly provider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#public FederatedDatabaseInstance#public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#public FederatedDatabaseInstance#public}
   */
   readonly public?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#region FederatedDatabaseInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#region FederatedDatabaseInstance#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#urls FederatedDatabaseInstance#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#urls FederatedDatabaseInstance#urls}
   */
   readonly urls?: string[];
   /**
   * read_preference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#read_preference FederatedDatabaseInstance#read_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#read_preference FederatedDatabaseInstance#read_preference}
   */
   readonly readPreference?: FederatedDatabaseInstanceStorageStoresReadPreference;
 }
@@ -2009,7 +2004,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     }
   }
 
-  // additional_storage_classes - computed: false, optional: true, required: false
+  // additional_storage_classes - computed: true, optional: true, required: false
   private _additionalStorageClasses?: string[]; 
   public get additionalStorageClasses() {
     return this.getListAttribute('additional_storage_classes');
@@ -2025,7 +2020,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._additionalStorageClasses;
   }
 
-  // allow_insecure - computed: false, optional: true, required: false
+  // allow_insecure - computed: true, optional: true, required: false
   private _allowInsecure?: boolean | cdktf.IResolvable; 
   public get allowInsecure() {
     return this.getBooleanAttribute('allow_insecure');
@@ -2041,7 +2036,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._allowInsecure;
   }
 
-  // bucket - computed: false, optional: true, required: false
+  // bucket - computed: true, optional: true, required: false
   private _bucket?: string; 
   public get bucket() {
     return this.getStringAttribute('bucket');
@@ -2057,7 +2052,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._bucket;
   }
 
-  // cluster_id - computed: false, optional: true, required: false
+  // cluster_id - computed: true, optional: true, required: false
   private _clusterId?: string; 
   public get clusterId() {
     return this.getStringAttribute('cluster_id');
@@ -2073,7 +2068,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._clusterId;
   }
 
-  // cluster_name - computed: false, optional: true, required: false
+  // cluster_name - computed: true, optional: true, required: false
   private _clusterName?: string; 
   public get clusterName() {
     return this.getStringAttribute('cluster_name');
@@ -2089,7 +2084,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._clusterName;
   }
 
-  // default_format - computed: false, optional: true, required: false
+  // default_format - computed: true, optional: true, required: false
   private _defaultFormat?: string; 
   public get defaultFormat() {
     return this.getStringAttribute('default_format');
@@ -2105,7 +2100,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._defaultFormat;
   }
 
-  // delimiter - computed: false, optional: true, required: false
+  // delimiter - computed: true, optional: true, required: false
   private _delimiter?: string; 
   public get delimiter() {
     return this.getStringAttribute('delimiter');
@@ -2121,7 +2116,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._delimiter;
   }
 
-  // include_tags - computed: false, optional: true, required: false
+  // include_tags - computed: true, optional: true, required: false
   private _includeTags?: boolean | cdktf.IResolvable; 
   public get includeTags() {
     return this.getBooleanAttribute('include_tags');
@@ -2137,7 +2132,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._includeTags;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -2153,7 +2148,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._name;
   }
 
-  // prefix - computed: false, optional: true, required: false
+  // prefix - computed: true, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -2169,7 +2164,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._prefix;
   }
 
-  // project_id - computed: false, optional: true, required: false
+  // project_id - computed: true, optional: true, required: false
   private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
@@ -2185,7 +2180,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._projectId;
   }
 
-  // provider - computed: false, optional: true, required: false
+  // provider - computed: true, optional: true, required: false
   private _provider?: string; 
   public get provider() {
     return this.getStringAttribute('provider');
@@ -2201,7 +2196,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._provider;
   }
 
-  // public - computed: false, optional: true, required: false
+  // public - computed: true, optional: true, required: false
   private _public?: string; 
   public get public() {
     return this.getStringAttribute('public');
@@ -2217,7 +2212,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._public;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -2233,7 +2228,7 @@ export class FederatedDatabaseInstanceStorageStoresOutputReference extends cdktf
     return this._region;
   }
 
-  // urls - computed: false, optional: true, required: false
+  // urls - computed: true, optional: true, required: false
   private _urls?: string[]; 
   public get urls() {
     return this.getListAttribute('urls');
@@ -2287,7 +2282,7 @@ export class FederatedDatabaseInstanceStorageStoresList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance mongodbatlas_federated_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance mongodbatlas_federated_database_instance}
 */
 export class FederatedDatabaseInstance extends cdktf.TerraformResource {
 
@@ -2303,7 +2298,7 @@ export class FederatedDatabaseInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FederatedDatabaseInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FederatedDatabaseInstance to import
-  * @param importFromId The id of the existing FederatedDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FederatedDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FederatedDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2315,7 +2310,7 @@ export class FederatedDatabaseInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_database_instance mongodbatlas_federated_database_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_database_instance mongodbatlas_federated_database_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2326,7 +2321,7 @@ export class FederatedDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_federated_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.14.0',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

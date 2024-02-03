@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#description Organization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}
+  */
+  readonly apiAccessListRequired?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#description Organization#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}
   */
   readonly federationSettingsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#id Organization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#id Organization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#name Organization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}
+  */
+  readonly multiFactorAuthRequired?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#name Organization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#org_owner_id Organization#org_owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#org_owner_id Organization#org_owner_id}
   */
   readonly orgOwnerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#role_names Organization#role_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}
+  */
+  readonly restrictEmployeeAccess?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#role_names Organization#role_names}
   */
   readonly roleNames: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization mongodbatlas_organization}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization mongodbatlas_organization}
 */
 export class Organization extends cdktf.TerraformResource {
 
@@ -58,7 +65,7 @@ export class Organization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Organization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Organization to import
-  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Organization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +77,7 @@ export class Organization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization mongodbatlas_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization mongodbatlas_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +88,7 @@ export class Organization extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_organization',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.14.0',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -92,17 +99,36 @@ export class Organization extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._apiAccessListRequired = config.apiAccessListRequired;
     this._description = config.description;
     this._federationSettingsId = config.federationSettingsId;
     this._id = config.id;
+    this._multiFactorAuthRequired = config.multiFactorAuthRequired;
     this._name = config.name;
     this._orgOwnerId = config.orgOwnerId;
+    this._restrictEmployeeAccess = config.restrictEmployeeAccess;
     this._roleNames = config.roleNames;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // api_access_list_required - computed: true, optional: true, required: false
+  private _apiAccessListRequired?: boolean | cdktf.IResolvable; 
+  public get apiAccessListRequired() {
+    return this.getBooleanAttribute('api_access_list_required');
+  }
+  public set apiAccessListRequired(value: boolean | cdktf.IResolvable) {
+    this._apiAccessListRequired = value;
+  }
+  public resetApiAccessListRequired() {
+    this._apiAccessListRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiAccessListRequiredInput() {
+    return this._apiAccessListRequired;
+  }
 
   // description - computed: false, optional: false, required: true
   private _description?: string; 
@@ -149,6 +175,22 @@ export class Organization extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // multi_factor_auth_required - computed: true, optional: true, required: false
+  private _multiFactorAuthRequired?: boolean | cdktf.IResolvable; 
+  public get multiFactorAuthRequired() {
+    return this.getBooleanAttribute('multi_factor_auth_required');
+  }
+  public set multiFactorAuthRequired(value: boolean | cdktf.IResolvable) {
+    this._multiFactorAuthRequired = value;
+  }
+  public resetMultiFactorAuthRequired() {
+    this._multiFactorAuthRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiFactorAuthRequiredInput() {
+    return this._multiFactorAuthRequired;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -190,6 +232,22 @@ export class Organization extends cdktf.TerraformResource {
     return this.getStringAttribute('public_key');
   }
 
+  // restrict_employee_access - computed: true, optional: true, required: false
+  private _restrictEmployeeAccess?: boolean | cdktf.IResolvable; 
+  public get restrictEmployeeAccess() {
+    return this.getBooleanAttribute('restrict_employee_access');
+  }
+  public set restrictEmployeeAccess(value: boolean | cdktf.IResolvable) {
+    this._restrictEmployeeAccess = value;
+  }
+  public resetRestrictEmployeeAccess() {
+    this._restrictEmployeeAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictEmployeeAccessInput() {
+    return this._restrictEmployeeAccess;
+  }
+
   // role_names - computed: false, optional: false, required: true
   private _roleNames?: string[]; 
   public get roleNames() {
@@ -209,17 +267,26 @@ export class Organization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      api_access_list_required: cdktf.booleanToTerraform(this._apiAccessListRequired),
       description: cdktf.stringToTerraform(this._description),
       federation_settings_id: cdktf.stringToTerraform(this._federationSettingsId),
       id: cdktf.stringToTerraform(this._id),
+      multi_factor_auth_required: cdktf.booleanToTerraform(this._multiFactorAuthRequired),
       name: cdktf.stringToTerraform(this._name),
       org_owner_id: cdktf.stringToTerraform(this._orgOwnerId),
+      restrict_employee_access: cdktf.booleanToTerraform(this._restrictEmployeeAccess),
       role_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleNames),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      api_access_list_required: {
+        value: cdktf.booleanToHclTerraform(this._apiAccessListRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
@@ -238,6 +305,12 @@ export class Organization extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      multi_factor_auth_required: {
+        value: cdktf.booleanToHclTerraform(this._multiFactorAuthRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
@@ -249,6 +322,12 @@ export class Organization extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      restrict_employee_access: {
+        value: cdktf.booleanToHclTerraform(this._restrictEmployeeAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       role_names: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roleNames),

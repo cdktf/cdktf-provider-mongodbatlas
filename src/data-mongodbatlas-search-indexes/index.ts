@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasSearchIndexesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#cluster_name DataMongodbatlasSearchIndexes#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes#cluster_name DataMongodbatlasSearchIndexes#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#collection_name DataMongodbatlasSearchIndexes#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes#collection_name DataMongodbatlasSearchIndexes#collection_name}
   */
   readonly collectionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#database DataMongodbatlasSearchIndexes#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes#database DataMongodbatlasSearchIndexes#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#id DataMongodbatlasSearchIndexes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes#id DataMongodbatlasSearchIndexes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#items_per_page DataMongodbatlasSearchIndexes#items_per_page}
-  */
-  readonly itemsPerPage?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#page_num DataMongodbatlasSearchIndexes#page_num}
-  */
-  readonly pageNum?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#project_id DataMongodbatlasSearchIndexes#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes#project_id DataMongodbatlasSearchIndexes#project_id}
   */
   readonly projectId: string;
 }
@@ -282,7 +269,7 @@ export class DataMongodbatlasSearchIndexesResultsList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes mongodbatlas_search_indexes}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes mongodbatlas_search_indexes}
 */
 export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
 
@@ -298,7 +285,7 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasSearchIndexes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasSearchIndexes to import
-  * @param importFromId The id of the existing DataMongodbatlasSearchIndexes that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasSearchIndexes that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasSearchIndexes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -310,7 +297,7 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes mongodbatlas_search_indexes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes mongodbatlas_search_indexes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -321,7 +308,7 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_search_indexes',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.14.0',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -336,8 +323,6 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
     this._collectionName = config.collectionName;
     this._database = config.database;
     this._id = config.id;
-    this._itemsPerPage = config.itemsPerPage;
-    this._pageNum = config.pageNum;
     this._projectId = config.projectId;
   }
 
@@ -400,38 +385,6 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // items_per_page - computed: false, optional: true, required: false
-  private _itemsPerPage?: number; 
-  public get itemsPerPage() {
-    return this.getNumberAttribute('items_per_page');
-  }
-  public set itemsPerPage(value: number) {
-    this._itemsPerPage = value;
-  }
-  public resetItemsPerPage() {
-    this._itemsPerPage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get itemsPerPageInput() {
-    return this._itemsPerPage;
-  }
-
-  // page_num - computed: false, optional: true, required: false
-  private _pageNum?: number; 
-  public get pageNum() {
-    return this.getNumberAttribute('page_num');
-  }
-  public set pageNum(value: number) {
-    this._pageNum = value;
-  }
-  public resetPageNum() {
-    this._pageNum = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pageNumInput() {
-    return this._pageNum;
-  }
-
   // project_id - computed: false, optional: false, required: true
   private _projectId?: string; 
   public get projectId() {
@@ -466,8 +419,6 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
       collection_name: cdktf.stringToTerraform(this._collectionName),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
-      items_per_page: cdktf.numberToTerraform(this._itemsPerPage),
-      page_num: cdktf.numberToTerraform(this._pageNum),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
@@ -497,18 +448,6 @@ export class DataMongodbatlasSearchIndexes extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      items_per_page: {
-        value: cdktf.numberToHclTerraform(this._itemsPerPage),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
-      page_num: {
-        value: cdktf.numberToHclTerraform(this._pageNum),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       project_id: {
         value: cdktf.stringToHclTerraform(this._projectId),

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organization
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organization#id DataMongodbatlasOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/organization#id DataMongodbatlasOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}
   */
   readonly orgId: string;
 }
@@ -106,7 +101,7 @@ export class DataMongodbatlasOrganizationLinksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organization mongodbatlas_organization}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/organization mongodbatlas_organization}
 */
 export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
 
@@ -122,7 +117,7 @@ export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasOrganization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasOrganization to import
-  * @param importFromId The id of the existing DataMongodbatlasOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -134,7 +129,7 @@ export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/organization mongodbatlas_organization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/organization mongodbatlas_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +140,7 @@ export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_organization',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.14.0',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -163,6 +158,11 @@ export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // api_access_list_required - computed: true, optional: false, required: false
+  public get apiAccessListRequired() {
+    return this.getBooleanAttribute('api_access_list_required');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -191,6 +191,11 @@ export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
     return this._links;
   }
 
+  // multi_factor_auth_required - computed: true, optional: false, required: false
+  public get multiFactorAuthRequired() {
+    return this.getBooleanAttribute('multi_factor_auth_required');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -207,6 +212,11 @@ export class DataMongodbatlasOrganization extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get orgIdInput() {
     return this._orgId;
+  }
+
+  // restrict_employee_access - computed: true, optional: false, required: false
+  public get restrictEmployeeAccess() {
+    return this.getBooleanAttribute('restrict_employee_access');
   }
 
   // =========

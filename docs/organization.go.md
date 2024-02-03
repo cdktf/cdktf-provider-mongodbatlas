@@ -4,12 +4,12 @@
 
 ### Organization <a name="Organization" id="@cdktf/provider-mongodbatlas.organization.Organization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization mongodbatlas_organization}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization mongodbatlas_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/organization"
 
 organization.NewOrganization(scope Construct, id *string, config OrganizationConfig) Organization
 ```
@@ -73,8 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetApiAccessListRequired">ResetApiAccessListRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetFederationSettingsId">ResetFederationSettingsId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetMultiFactorAuthRequired">ResetMultiFactorAuthRequired</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetRestrictEmployeeAccess">ResetRestrictEmployeeAccess</a></code> | *No description.* |
 
 ---
 
@@ -366,6 +369,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetApiAccessListRequired` <a name="ResetApiAccessListRequired" id="@cdktf/provider-mongodbatlas.organization.Organization.resetApiAccessListRequired"></a>
+
+```go
+func ResetApiAccessListRequired()
+```
+
 ##### `ResetFederationSettingsId` <a name="ResetFederationSettingsId" id="@cdktf/provider-mongodbatlas.organization.Organization.resetFederationSettingsId"></a>
 
 ```go
@@ -376,6 +385,18 @@ func ResetFederationSettingsId()
 
 ```go
 func ResetId()
+```
+
+##### `ResetMultiFactorAuthRequired` <a name="ResetMultiFactorAuthRequired" id="@cdktf/provider-mongodbatlas.organization.Organization.resetMultiFactorAuthRequired"></a>
+
+```go
+func ResetMultiFactorAuthRequired()
+```
+
+##### `ResetRestrictEmployeeAccess` <a name="ResetRestrictEmployeeAccess" id="@cdktf/provider-mongodbatlas.organization.Organization.resetRestrictEmployeeAccess"></a>
+
+```go
+func ResetRestrictEmployeeAccess()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -392,7 +413,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.organization.Organization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/organization"
 
 organization.Organization_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.organization.Organization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/organization"
 
 organization.Organization_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +459,7 @@ organization.Organization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.organization.Organization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/organization"
 
 organization.Organization_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +473,7 @@ organization.Organization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.organization.Organization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/organization"
 
 organization.Organization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +502,7 @@ The construct id used in the generated config for the Organization to import.
 
 The id of the existing Organization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,17 +535,23 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.orgId">OrgId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.publicKey">PublicKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.apiAccessListRequiredInput">ApiAccessListRequiredInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.federationSettingsIdInput">FederationSettingsIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.multiFactorAuthRequiredInput">MultiFactorAuthRequiredInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.orgOwnerIdInput">OrgOwnerIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.restrictEmployeeAccessInput">RestrictEmployeeAccessInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.roleNamesInput">RoleNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.apiAccessListRequired">ApiAccessListRequired</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.federationSettingsId">FederationSettingsId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.multiFactorAuthRequired">MultiFactorAuthRequired</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.orgOwnerId">OrgOwnerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.restrictEmployeeAccess">RestrictEmployeeAccess</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.property.roleNames">RoleNames</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
@@ -701,6 +728,16 @@ func PublicKey() *string
 
 ---
 
+##### `ApiAccessListRequiredInput`<sup>Optional</sup> <a name="ApiAccessListRequiredInput" id="@cdktf/provider-mongodbatlas.organization.Organization.property.apiAccessListRequiredInput"></a>
+
+```go
+func ApiAccessListRequiredInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-mongodbatlas.organization.Organization.property.descriptionInput"></a>
 
 ```go
@@ -731,6 +768,16 @@ func IdInput() *string
 
 ---
 
+##### `MultiFactorAuthRequiredInput`<sup>Optional</sup> <a name="MultiFactorAuthRequiredInput" id="@cdktf/provider-mongodbatlas.organization.Organization.property.multiFactorAuthRequiredInput"></a>
+
+```go
+func MultiFactorAuthRequiredInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-mongodbatlas.organization.Organization.property.nameInput"></a>
 
 ```go
@@ -751,6 +798,16 @@ func OrgOwnerIdInput() *string
 
 ---
 
+##### `RestrictEmployeeAccessInput`<sup>Optional</sup> <a name="RestrictEmployeeAccessInput" id="@cdktf/provider-mongodbatlas.organization.Organization.property.restrictEmployeeAccessInput"></a>
+
+```go
+func RestrictEmployeeAccessInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `RoleNamesInput`<sup>Optional</sup> <a name="RoleNamesInput" id="@cdktf/provider-mongodbatlas.organization.Organization.property.roleNamesInput"></a>
 
 ```go
@@ -758,6 +815,16 @@ func RoleNamesInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `ApiAccessListRequired`<sup>Required</sup> <a name="ApiAccessListRequired" id="@cdktf/provider-mongodbatlas.organization.Organization.property.apiAccessListRequired"></a>
+
+```go
+func ApiAccessListRequired() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -791,6 +858,16 @@ func Id() *string
 
 ---
 
+##### `MultiFactorAuthRequired`<sup>Required</sup> <a name="MultiFactorAuthRequired" id="@cdktf/provider-mongodbatlas.organization.Organization.property.multiFactorAuthRequired"></a>
+
+```go
+func MultiFactorAuthRequired() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-mongodbatlas.organization.Organization.property.name"></a>
 
 ```go
@@ -808,6 +885,16 @@ func OrgOwnerId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `RestrictEmployeeAccess`<sup>Required</sup> <a name="RestrictEmployeeAccess" id="@cdktf/provider-mongodbatlas.organization.Organization.property.restrictEmployeeAccess"></a>
+
+```go
+func RestrictEmployeeAccess() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -846,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/organization"
 
 &organization.OrganizationConfig {
 	Connection: interface{},
@@ -860,8 +947,11 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organiza
 	Name: *string,
 	OrgOwnerId: *string,
 	RoleNames: *[]*string,
+	ApiAccessListRequired: interface{},
 	FederationSettingsId: *string,
 	Id: *string,
+	MultiFactorAuthRequired: interface{},
+	RestrictEmployeeAccess: interface{},
 }
 ```
 
@@ -876,12 +966,15 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/organiza
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#description Organization#description}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId">OrgOwnerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames">RoleNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#role_names Organization#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.federationSettingsId">FederationSettingsId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#description Organization#description}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#name Organization#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId">OrgOwnerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames">RoleNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#role_names Organization#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.apiAccessListRequired">ApiAccessListRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.federationSettingsId">FederationSettingsId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.multiFactorAuthRequired">MultiFactorAuthRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.restrictEmployeeAccess">RestrictEmployeeAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
 
 ---
 
@@ -963,7 +1056,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#description Organization#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#description Organization#description}.
 
 ---
 
@@ -975,7 +1068,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#name Organization#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#name Organization#name}.
 
 ---
 
@@ -987,7 +1080,7 @@ OrgOwnerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
 
 ---
 
@@ -999,7 +1092,19 @@ RoleNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#role_names Organization#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#role_names Organization#role_names}.
+
+---
+
+##### `ApiAccessListRequired`<sup>Optional</sup> <a name="ApiAccessListRequired" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.apiAccessListRequired"></a>
+
+```go
+ApiAccessListRequired interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
 
 ---
 
@@ -1011,7 +1116,7 @@ FederationSettingsId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
 
 ---
 
@@ -1023,10 +1128,34 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `MultiFactorAuthRequired`<sup>Optional</sup> <a name="MultiFactorAuthRequired" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.multiFactorAuthRequired"></a>
+
+```go
+MultiFactorAuthRequired interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+
+---
+
+##### `RestrictEmployeeAccess`<sup>Optional</sup> <a name="RestrictEmployeeAccess" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.restrictEmployeeAccess"></a>
+
+```go
+RestrictEmployeeAccess interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,51 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasBackupCompliancePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#id DataMongodbatlasBackupCompliancePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy#id DataMongodbatlasBackupCompliancePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#project_id DataMongodbatlasBackupCompliancePolicy#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy#project_id DataMongodbatlasBackupCompliancePolicy#project_id}
   */
   readonly projectId: string;
-  /**
-  * on_demand_policy_item block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#on_demand_policy_item DataMongodbatlasBackupCompliancePolicy#on_demand_policy_item}
-  */
-  readonly onDemandPolicyItem?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem;
-  /**
-  * policy_item_daily block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#policy_item_daily DataMongodbatlasBackupCompliancePolicy#policy_item_daily}
-  */
-  readonly policyItemDaily?: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily;
-  /**
-  * policy_item_hourly block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#policy_item_hourly DataMongodbatlasBackupCompliancePolicy#policy_item_hourly}
-  */
-  readonly policyItemHourly?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly;
-  /**
-  * policy_item_monthly block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#policy_item_monthly DataMongodbatlasBackupCompliancePolicy#policy_item_monthly}
-  */
-  readonly policyItemMonthly?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly[] | cdktf.IResolvable;
-  /**
-  * policy_item_weekly block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#policy_item_weekly DataMongodbatlasBackupCompliancePolicy#policy_item_weekly}
-  */
-  readonly policyItemWeekly?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly[] | cdktf.IResolvable;
 }
 export interface DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem {
 }
 
-export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference | DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem): any {
+export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -67,7 +32,7 @@ export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToTerraf
 }
 
 
-export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference | DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem): any {
+export function dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -83,9 +48,11 @@ export class DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem | undefined {
@@ -128,369 +95,50 @@ export class DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputRefer
     return this.getNumberAttribute('retention_value');
   }
 }
+
+export class DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference {
+    return new DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataMongodbatlasBackupCompliancePolicyPolicyItemDaily {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#frequency_interval DataMongodbatlasBackupCompliancePolicy#frequency_interval}
-  */
-  readonly frequencyInterval: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_unit DataMongodbatlasBackupCompliancePolicy#retention_unit}
-  */
-  readonly retentionUnit: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_value DataMongodbatlasBackupCompliancePolicy#retention_value}
-  */
-  readonly retentionValue: number;
 }
 
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference | DataMongodbatlasBackupCompliancePolicyPolicyItemDaily): any {
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
-    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
-    retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
 }
 
 
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference | DataMongodbatlasBackupCompliancePolicyPolicyItemDaily): any {
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    frequency_interval: {
-      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    retention_unit: {
-      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    retention_value: {
-      value: cdktf.numberToHclTerraform(struct!.retentionValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemDaily | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._frequencyInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.frequencyInterval = this._frequencyInterval;
-    }
-    if (this._retentionUnit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionUnit = this._retentionUnit;
-    }
-    if (this._retentionValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionValue = this._retentionValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._frequencyInterval = undefined;
-      this._retentionUnit = undefined;
-      this._retentionValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._frequencyInterval = value.frequencyInterval;
-      this._retentionUnit = value.retentionUnit;
-      this._retentionValue = value.retentionValue;
-    }
-  }
-
-  // frequency_interval - computed: false, optional: false, required: true
-  private _frequencyInterval?: number; 
-  public get frequencyInterval() {
-    return this.getNumberAttribute('frequency_interval');
-  }
-  public set frequencyInterval(value: number) {
-    this._frequencyInterval = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get frequencyIntervalInput() {
-    return this._frequencyInterval;
-  }
-
-  // frequency_type - computed: true, optional: false, required: false
-  public get frequencyType() {
-    return this.getStringAttribute('frequency_type');
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-
-  // retention_unit - computed: false, optional: false, required: true
-  private _retentionUnit?: string; 
-  public get retentionUnit() {
-    return this.getStringAttribute('retention_unit');
-  }
-  public set retentionUnit(value: string) {
-    this._retentionUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionUnitInput() {
-    return this._retentionUnit;
-  }
-
-  // retention_value - computed: false, optional: false, required: true
-  private _retentionValue?: number; 
-  public get retentionValue() {
-    return this.getNumberAttribute('retention_value');
-  }
-  public set retentionValue(value: number) {
-    this._retentionValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionValueInput() {
-    return this._retentionValue;
-  }
-}
-export interface DataMongodbatlasBackupCompliancePolicyPolicyItemHourly {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#frequency_interval DataMongodbatlasBackupCompliancePolicy#frequency_interval}
-  */
-  readonly frequencyInterval: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_unit DataMongodbatlasBackupCompliancePolicy#retention_unit}
-  */
-  readonly retentionUnit: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_value DataMongodbatlasBackupCompliancePolicy#retention_value}
-  */
-  readonly retentionValue: number;
-}
-
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference | DataMongodbatlasBackupCompliancePolicyPolicyItemHourly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
-    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
-    retention_value: cdktf.numberToTerraform(struct!.retentionValue),
-  }
-}
-
-
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference | DataMongodbatlasBackupCompliancePolicyPolicyItemHourly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    frequency_interval: {
-      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    retention_unit: {
-      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    retention_value: {
-      value: cdktf.numberToHclTerraform(struct!.retentionValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemHourly | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._frequencyInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.frequencyInterval = this._frequencyInterval;
-    }
-    if (this._retentionUnit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionUnit = this._retentionUnit;
-    }
-    if (this._retentionValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionValue = this._retentionValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._frequencyInterval = undefined;
-      this._retentionUnit = undefined;
-      this._retentionValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._frequencyInterval = value.frequencyInterval;
-      this._retentionUnit = value.retentionUnit;
-      this._retentionValue = value.retentionValue;
-    }
-  }
-
-  // frequency_interval - computed: false, optional: false, required: true
-  private _frequencyInterval?: number; 
-  public get frequencyInterval() {
-    return this.getNumberAttribute('frequency_interval');
-  }
-  public set frequencyInterval(value: number) {
-    this._frequencyInterval = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get frequencyIntervalInput() {
-    return this._frequencyInterval;
-  }
-
-  // frequency_type - computed: true, optional: false, required: false
-  public get frequencyType() {
-    return this.getStringAttribute('frequency_type');
-  }
-
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-
-  // retention_unit - computed: false, optional: false, required: true
-  private _retentionUnit?: string; 
-  public get retentionUnit() {
-    return this.getStringAttribute('retention_unit');
-  }
-  public set retentionUnit(value: string) {
-    this._retentionUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionUnitInput() {
-    return this._retentionUnit;
-  }
-
-  // retention_value - computed: false, optional: false, required: true
-  private _retentionValue?: number; 
-  public get retentionValue() {
-    return this.getNumberAttribute('retention_value');
-  }
-  public set retentionValue(value: number) {
-    this._retentionValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionValueInput() {
-    return this._retentionValue;
-  }
-}
-export interface DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#frequency_interval DataMongodbatlasBackupCompliancePolicy#frequency_interval}
-  */
-  readonly frequencyInterval: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_unit DataMongodbatlasBackupCompliancePolicy#retention_unit}
-  */
-  readonly retentionUnit: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_value DataMongodbatlasBackupCompliancePolicy#retention_value}
-  */
-  readonly retentionValue: number;
-}
-
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
-    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
-    retention_value: cdktf.numberToTerraform(struct!.retentionValue),
-  }
-}
-
-
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    frequency_interval: {
-      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    retention_unit: {
-      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    retention_value: {
-      value: cdktf.numberToHclTerraform(struct!.retentionValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -502,59 +150,24 @@ export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputRefere
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemDaily | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._frequencyInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.frequencyInterval = this._frequencyInterval;
-    }
-    if (this._retentionUnit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionUnit = this._retentionUnit;
-    }
-    if (this._retentionValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionValue = this._retentionValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._frequencyInterval = undefined;
-      this._retentionUnit = undefined;
-      this._retentionValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._frequencyInterval = value.frequencyInterval;
-      this._retentionUnit = value.retentionUnit;
-      this._retentionValue = value.retentionValue;
     }
   }
 
-  // frequency_interval - computed: false, optional: false, required: true
-  private _frequencyInterval?: number; 
+  // frequency_interval - computed: true, optional: false, required: false
   public get frequencyInterval() {
     return this.getNumberAttribute('frequency_interval');
-  }
-  public set frequencyInterval(value: number) {
-    this._frequencyInterval = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get frequencyIntervalInput() {
-    return this._frequencyInterval;
   }
 
   // frequency_type - computed: true, optional: false, required: false
@@ -567,35 +180,208 @@ export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputRefere
     return this.getStringAttribute('id');
   }
 
-  // retention_unit - computed: false, optional: false, required: true
-  private _retentionUnit?: string; 
+  // retention_unit - computed: true, optional: false, required: false
   public get retentionUnit() {
     return this.getStringAttribute('retention_unit');
   }
-  public set retentionUnit(value: string) {
-    this._retentionUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionUnitInput() {
-    return this._retentionUnit;
-  }
 
-  // retention_value - computed: false, optional: false, required: true
-  private _retentionValue?: number; 
+  // retention_value - computed: true, optional: false, required: false
   public get retentionValue() {
     return this.getNumberAttribute('retention_value');
   }
-  public set retentionValue(value: number) {
-    this._retentionValue = value;
+}
+
+export class DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
-  // Temporarily expose input value. Use with caution.
-  public get retentionValueInput() {
-    return this._retentionValue;
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference {
+    return new DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasBackupCompliancePolicyPolicyItemHourly {
+}
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemHourly | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // frequency_interval - computed: true, optional: false, required: false
+  public get frequencyInterval() {
+    return this.getNumberAttribute('frequency_interval');
+  }
+
+  // frequency_type - computed: true, optional: false, required: false
+  public get frequencyType() {
+    return this.getStringAttribute('frequency_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // retention_unit - computed: true, optional: false, required: false
+  public get retentionUnit() {
+    return this.getStringAttribute('retention_unit');
+  }
+
+  // retention_value - computed: true, optional: false, required: false
+  public get retentionValue() {
+    return this.getNumberAttribute('retention_value');
+  }
+}
+
+export class DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference {
+    return new DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly {
+}
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // frequency_interval - computed: true, optional: false, required: false
+  public get frequencyInterval() {
+    return this.getNumberAttribute('frequency_interval');
+  }
+
+  // frequency_type - computed: true, optional: false, required: false
+  public get frequencyType() {
+    return this.getStringAttribute('frequency_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // retention_unit - computed: true, optional: false, required: false
+  public get retentionUnit() {
+    return this.getStringAttribute('retention_unit');
+  }
+
+  // retention_value - computed: true, optional: false, required: false
+  public get retentionValue() {
+    return this.getNumberAttribute('retention_value');
   }
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList extends cdktf.ComplexList {
-  public internalValue? : DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -614,66 +400,30 @@ export class DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList extends
   }
 }
 export interface DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#frequency_interval DataMongodbatlasBackupCompliancePolicy#frequency_interval}
-  */
-  readonly frequencyInterval: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_unit DataMongodbatlasBackupCompliancePolicy#retention_unit}
-  */
-  readonly retentionUnit: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#retention_value DataMongodbatlasBackupCompliancePolicy#retention_value}
-  */
-  readonly retentionValue: number;
 }
 
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | cdktf.IResolvable): any {
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
-    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
-    retention_value: cdktf.numberToTerraform(struct!.retentionValue),
   }
 }
 
 
-export function dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | cdktf.IResolvable): any {
+export function dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToHclTerraform(struct?: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    frequency_interval: {
-      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    retention_unit: {
-      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    retention_value: {
-      value: cdktf.numberToHclTerraform(struct!.retentionValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -685,59 +435,24 @@ export class DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReferen
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._frequencyInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.frequencyInterval = this._frequencyInterval;
-    }
-    if (this._retentionUnit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionUnit = this._retentionUnit;
-    }
-    if (this._retentionValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionValue = this._retentionValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._frequencyInterval = undefined;
-      this._retentionUnit = undefined;
-      this._retentionValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._frequencyInterval = value.frequencyInterval;
-      this._retentionUnit = value.retentionUnit;
-      this._retentionValue = value.retentionValue;
     }
   }
 
-  // frequency_interval - computed: false, optional: false, required: true
-  private _frequencyInterval?: number; 
+  // frequency_interval - computed: true, optional: false, required: false
   public get frequencyInterval() {
     return this.getNumberAttribute('frequency_interval');
-  }
-  public set frequencyInterval(value: number) {
-    this._frequencyInterval = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get frequencyIntervalInput() {
-    return this._frequencyInterval;
   }
 
   // frequency_type - computed: true, optional: false, required: false
@@ -750,35 +465,18 @@ export class DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReferen
     return this.getStringAttribute('id');
   }
 
-  // retention_unit - computed: false, optional: false, required: true
-  private _retentionUnit?: string; 
+  // retention_unit - computed: true, optional: false, required: false
   public get retentionUnit() {
     return this.getStringAttribute('retention_unit');
   }
-  public set retentionUnit(value: string) {
-    this._retentionUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionUnitInput() {
-    return this._retentionUnit;
-  }
 
-  // retention_value - computed: false, optional: false, required: true
-  private _retentionValue?: number; 
+  // retention_value - computed: true, optional: false, required: false
   public get retentionValue() {
     return this.getNumberAttribute('retention_value');
-  }
-  public set retentionValue(value: number) {
-    this._retentionValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionValueInput() {
-    return this._retentionValue;
   }
 }
 
 export class DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList extends cdktf.ComplexList {
-  public internalValue? : DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -798,7 +496,7 @@ export class DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy}
 */
 export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataSource {
 
@@ -814,7 +512,7 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataMongodbatlasBackupCompliancePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasBackupCompliancePolicy to import
-  * @param importFromId The id of the existing DataMongodbatlasBackupCompliancePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasBackupCompliancePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasBackupCompliancePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -826,7 +524,7 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -837,7 +535,7 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
       terraformResourceType: 'mongodbatlas_backup_compliance_policy',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.14.0',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -850,11 +548,6 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
     });
     this._id = config.id;
     this._projectId = config.projectId;
-    this._onDemandPolicyItem.internalValue = config.onDemandPolicyItem;
-    this._policyItemDaily.internalValue = config.policyItemDaily;
-    this._policyItemHourly.internalValue = config.policyItemHourly;
-    this._policyItemMonthly.internalValue = config.policyItemMonthly;
-    this._policyItemWeekly.internalValue = config.policyItemWeekly;
   }
 
   // ==========
@@ -902,9 +595,39 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
     return this._id;
   }
 
+  // on_demand_policy_item - computed: true, optional: false, required: false
+  private _onDemandPolicyItem = new DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList(this, "on_demand_policy_item", false);
+  public get onDemandPolicyItem() {
+    return this._onDemandPolicyItem;
+  }
+
   // pit_enabled - computed: true, optional: false, required: false
   public get pitEnabled() {
     return this.getBooleanAttribute('pit_enabled');
+  }
+
+  // policy_item_daily - computed: true, optional: false, required: false
+  private _policyItemDaily = new DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList(this, "policy_item_daily", false);
+  public get policyItemDaily() {
+    return this._policyItemDaily;
+  }
+
+  // policy_item_hourly - computed: true, optional: false, required: false
+  private _policyItemHourly = new DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList(this, "policy_item_hourly", false);
+  public get policyItemHourly() {
+    return this._policyItemHourly;
+  }
+
+  // policy_item_monthly - computed: true, optional: false, required: false
+  private _policyItemMonthly = new DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList(this, "policy_item_monthly", false);
+  public get policyItemMonthly() {
+    return this._policyItemMonthly;
+  }
+
+  // policy_item_weekly - computed: true, optional: false, required: false
+  private _policyItemWeekly = new DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList(this, "policy_item_weekly", false);
+  public get policyItemWeekly() {
+    return this._policyItemWeekly;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -940,86 +663,6 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
     return this.getStringAttribute('updated_user');
   }
 
-  // on_demand_policy_item - computed: false, optional: true, required: false
-  private _onDemandPolicyItem = new DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference(this, "on_demand_policy_item");
-  public get onDemandPolicyItem() {
-    return this._onDemandPolicyItem;
-  }
-  public putOnDemandPolicyItem(value: DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem) {
-    this._onDemandPolicyItem.internalValue = value;
-  }
-  public resetOnDemandPolicyItem() {
-    this._onDemandPolicyItem.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get onDemandPolicyItemInput() {
-    return this._onDemandPolicyItem.internalValue;
-  }
-
-  // policy_item_daily - computed: false, optional: true, required: false
-  private _policyItemDaily = new DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference(this, "policy_item_daily");
-  public get policyItemDaily() {
-    return this._policyItemDaily;
-  }
-  public putPolicyItemDaily(value: DataMongodbatlasBackupCompliancePolicyPolicyItemDaily) {
-    this._policyItemDaily.internalValue = value;
-  }
-  public resetPolicyItemDaily() {
-    this._policyItemDaily.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyItemDailyInput() {
-    return this._policyItemDaily.internalValue;
-  }
-
-  // policy_item_hourly - computed: false, optional: true, required: false
-  private _policyItemHourly = new DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference(this, "policy_item_hourly");
-  public get policyItemHourly() {
-    return this._policyItemHourly;
-  }
-  public putPolicyItemHourly(value: DataMongodbatlasBackupCompliancePolicyPolicyItemHourly) {
-    this._policyItemHourly.internalValue = value;
-  }
-  public resetPolicyItemHourly() {
-    this._policyItemHourly.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyItemHourlyInput() {
-    return this._policyItemHourly.internalValue;
-  }
-
-  // policy_item_monthly - computed: false, optional: true, required: false
-  private _policyItemMonthly = new DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList(this, "policy_item_monthly", false);
-  public get policyItemMonthly() {
-    return this._policyItemMonthly;
-  }
-  public putPolicyItemMonthly(value: DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly[] | cdktf.IResolvable) {
-    this._policyItemMonthly.internalValue = value;
-  }
-  public resetPolicyItemMonthly() {
-    this._policyItemMonthly.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyItemMonthlyInput() {
-    return this._policyItemMonthly.internalValue;
-  }
-
-  // policy_item_weekly - computed: false, optional: true, required: false
-  private _policyItemWeekly = new DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList(this, "policy_item_weekly", false);
-  public get policyItemWeekly() {
-    return this._policyItemWeekly;
-  }
-  public putPolicyItemWeekly(value: DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly[] | cdktf.IResolvable) {
-    this._policyItemWeekly.internalValue = value;
-  }
-  public resetPolicyItemWeekly() {
-    this._policyItemWeekly.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyItemWeeklyInput() {
-    return this._policyItemWeekly.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -1028,11 +671,6 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
     return {
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
-      on_demand_policy_item: dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToTerraform(this._onDemandPolicyItem.internalValue),
-      policy_item_daily: dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToTerraform(this._policyItemDaily.internalValue),
-      policy_item_hourly: dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToTerraform(this._policyItemHourly.internalValue),
-      policy_item_monthly: cdktf.listMapper(dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToTerraform, true)(this._policyItemMonthly.internalValue),
-      policy_item_weekly: cdktf.listMapper(dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToTerraform, true)(this._policyItemWeekly.internalValue),
     };
   }
 
@@ -1049,36 +687,6 @@ export class DataMongodbatlasBackupCompliancePolicy extends cdktf.TerraformDataS
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      on_demand_policy_item: {
-        value: dataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemToHclTerraform(this._onDemandPolicyItem.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList",
-      },
-      policy_item_daily: {
-        value: dataMongodbatlasBackupCompliancePolicyPolicyItemDailyToHclTerraform(this._policyItemDaily.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList",
-      },
-      policy_item_hourly: {
-        value: dataMongodbatlasBackupCompliancePolicyPolicyItemHourlyToHclTerraform(this._policyItemHourly.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList",
-      },
-      policy_item_monthly: {
-        value: cdktf.listMapperHcl(dataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyToHclTerraform, true)(this._policyItemMonthly.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList",
-      },
-      policy_item_weekly: {
-        value: cdktf.listMapperHcl(dataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyToHclTerraform, true)(this._policyItemWeekly.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList",
       },
     };
 
