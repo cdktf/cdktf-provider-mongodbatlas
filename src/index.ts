@@ -15,7 +15,6 @@ export * as cloudBackupSnapshot from './cloud-backup-snapshot';
 export * as cloudBackupSnapshotExportBucket from './cloud-backup-snapshot-export-bucket';
 export * as cloudBackupSnapshotExportJob from './cloud-backup-snapshot-export-job';
 export * as cloudBackupSnapshotRestoreJob from './cloud-backup-snapshot-restore-job';
-export * as cloudProviderAccess from './cloud-provider-access';
 export * as cloudProviderAccessAuthorization from './cloud-provider-access-authorization';
 export * as cloudProviderAccessSetup from './cloud-provider-access-setup';
 export * as cluster from './cluster';
@@ -78,7 +77,6 @@ export * as dataMongodbatlasCloudBackupSnapshotExportJobs from './data-mongodbat
 export * as dataMongodbatlasCloudBackupSnapshotRestoreJob from './data-mongodbatlas-cloud-backup-snapshot-restore-job';
 export * as dataMongodbatlasCloudBackupSnapshotRestoreJobs from './data-mongodbatlas-cloud-backup-snapshot-restore-jobs';
 export * as dataMongodbatlasCloudBackupSnapshots from './data-mongodbatlas-cloud-backup-snapshots';
-export * as dataMongodbatlasCloudProviderAccess from './data-mongodbatlas-cloud-provider-access';
 export * as dataMongodbatlasCloudProviderAccessSetup from './data-mongodbatlas-cloud-provider-access-setup';
 export * as dataMongodbatlasCluster from './data-mongodbatlas-cluster';
 export * as dataMongodbatlasClusterOutageSimulation from './data-mongodbatlas-cluster-outage-simulation';

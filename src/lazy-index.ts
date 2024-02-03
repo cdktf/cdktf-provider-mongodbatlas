@@ -15,7 +15,6 @@ Object.defineProperty(exports, 'cloudBackupSnapshot', { get: function () { retur
 Object.defineProperty(exports, 'cloudBackupSnapshotExportBucket', { get: function () { return require('./cloud-backup-snapshot-export-bucket'); } });
 Object.defineProperty(exports, 'cloudBackupSnapshotExportJob', { get: function () { return require('./cloud-backup-snapshot-export-job'); } });
 Object.defineProperty(exports, 'cloudBackupSnapshotRestoreJob', { get: function () { return require('./cloud-backup-snapshot-restore-job'); } });
-Object.defineProperty(exports, 'cloudProviderAccess', { get: function () { return require('./cloud-provider-access'); } });
 Object.defineProperty(exports, 'cloudProviderAccessAuthorization', { get: function () { return require('./cloud-provider-access-authorization'); } });
 Object.defineProperty(exports, 'cloudProviderAccessSetup', { get: function () { return require('./cloud-provider-access-setup'); } });
 Object.defineProperty(exports, 'cluster', { get: function () { return require('./cluster'); } });
@@ -78,7 +77,6 @@ Object.defineProperty(exports, 'dataMongodbatlasCloudBackupSnapshotExportJobs', 
 Object.defineProperty(exports, 'dataMongodbatlasCloudBackupSnapshotRestoreJob', { get: function () { return require('./data-mongodbatlas-cloud-backup-snapshot-restore-job'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCloudBackupSnapshotRestoreJobs', { get: function () { return require('./data-mongodbatlas-cloud-backup-snapshot-restore-jobs'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCloudBackupSnapshots', { get: function () { return require('./data-mongodbatlas-cloud-backup-snapshots'); } });
-Object.defineProperty(exports, 'dataMongodbatlasCloudProviderAccess', { get: function () { return require('./data-mongodbatlas-cloud-provider-access'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCloudProviderAccessSetup', { get: function () { return require('./data-mongodbatlas-cloud-provider-access-setup'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCluster', { get: function () { return require('./data-mongodbatlas-cluster'); } });
 Object.defineProperty(exports, 'dataMongodbatlasClusterOutageSimulation', { get: function () { return require('./data-mongodbatlas-cluster-outage-simulation'); } });

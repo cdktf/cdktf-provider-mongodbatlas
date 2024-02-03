@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedSettingsIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider#federation_settings_id DataMongodbatlasFederatedSettingsIdentityProvider#federation_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider#federation_settings_id DataMongodbatlasFederatedSettingsIdentityProvider#federation_settings_id}
   */
   readonly federationSettingsId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider#id DataMongodbatlasFederatedSettingsIdentityProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider#id DataMongodbatlasFederatedSettingsIdentityProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider#identity_provider_id DataMongodbatlasFederatedSettingsIdentityProvider#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider#identity_provider_id DataMongodbatlasFederatedSettingsIdentityProvider#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
@@ -564,7 +564,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProviderPemFileInfoList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}
 */
 export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.TerraformDataSource {
 
@@ -580,7 +580,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
   * Generates CDKTF code for importing a DataMongodbatlasFederatedSettingsIdentityProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasFederatedSettingsIdentityProvider to import
-  * @param importFromId The id of the existing DataMongodbatlasFederatedSettingsIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasFederatedSettingsIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasFederatedSettingsIdentityProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -592,7 +592,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -603,7 +603,7 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
       terraformResourceType: 'mongodbatlas_federated_settings_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.14.0',
+        providerVersion: '1.15.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -639,9 +639,19 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
     return this._associatedOrgs;
   }
 
+  // audience_claim - computed: true, optional: false, required: false
+  public get audienceClaim() {
+    return this.getListAttribute('audience_claim');
+  }
+
   // audience_uri - computed: true, optional: false, required: false
   public get audienceUri() {
     return this.getStringAttribute('audience_uri');
+  }
+
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
   }
 
   // display_name - computed: true, optional: false, required: false
@@ -660,6 +670,11 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
   // Temporarily expose input value. Use with caution.
   public get federationSettingsIdInput() {
     return this._federationSettingsId;
+  }
+
+  // groups_claim - computed: true, optional: false, required: false
+  public get groupsClaim() {
+    return this.getStringAttribute('groups_claim');
   }
 
   // id - computed: true, optional: true, required: false
@@ -691,6 +706,11 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
     return this._identityProviderId;
   }
 
+  // idp_id - computed: true, optional: false, required: false
+  public get idpId() {
+    return this.getStringAttribute('idp_id');
+  }
+
   // issuer_uri - computed: true, optional: false, required: false
   public get issuerUri() {
     return this.getStringAttribute('issuer_uri');
@@ -707,9 +727,19 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
     return this._pemFileInfo;
   }
 
+  // protocol - computed: true, optional: false, required: false
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+
   // request_binding - computed: true, optional: false, required: false
   public get requestBinding() {
     return this.getStringAttribute('request_binding');
+  }
+
+  // requested_scopes - computed: true, optional: false, required: false
+  public get requestedScopes() {
+    return this.getListAttribute('requested_scopes');
   }
 
   // response_signature_algorithm - computed: true, optional: false, required: false
@@ -730,6 +760,11 @@ export class DataMongodbatlasFederatedSettingsIdentityProvider extends cdktf.Ter
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // user_claim - computed: true, optional: false, required: false
+  public get userClaim() {
+    return this.getStringAttribute('user_claim');
   }
 
   // =========
