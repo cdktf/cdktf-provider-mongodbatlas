@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlascloudbackupsnapshotexportbucket"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbucket"
 
 datamongodbatlascloudbackupsnapshotexportbucket.NewDataMongodbatlasCloudBackupSnapshotExportBucket(scope Construct, id *string, config DataMongodbatlasCloudBackupSnapshotExportBucketConfig) DataMongodbatlasCloudBackupSnapshotExportBucket
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlascloudbackupsnapshotexportbucket"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbucket"
 
 datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnapshotExportBucket_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlascloudbackupsnapshotexportbucket"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbucket"
 
 datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnapshotExportBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnaps
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlascloudbackupsnapshotexportbucket"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbucket"
 
 datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnapshotExportBucket_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnaps
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlascloudbackupsnapshotexportbucket"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbucket"
 
 datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnapshotExportBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlascloudbackupsnapshotexportbucket"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupsnapshotexportbucket"
 
 &datamongodbatlascloudbackupsnapshotexportbucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig {
 	Connection: interface{},
