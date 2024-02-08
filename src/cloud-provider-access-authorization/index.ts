@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface CloudProviderAccessAuthorizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#id CloudProviderAccessAuthorization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#id CloudProviderAccessAuthorization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#project_id CloudProviderAccessAuthorization#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#project_id CloudProviderAccessAuthorization#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#role_id CloudProviderAccessAuthorization#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#role_id CloudProviderAccessAuthorization#role_id}
   */
   readonly roleId: string;
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#aws CloudProviderAccessAuthorization#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#aws CloudProviderAccessAuthorization#aws}
   */
   readonly aws?: CloudProviderAccessAuthorizationAws;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#azure CloudProviderAccessAuthorization#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#azure CloudProviderAccessAuthorization#azure}
   */
   readonly azure?: CloudProviderAccessAuthorizationAzure;
 }
@@ -123,7 +123,7 @@ export class CloudProviderAccessAuthorizationFeatureUsagesList extends cdktf.Com
 }
 export interface CloudProviderAccessAuthorizationAws {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#iam_assumed_role_arn CloudProviderAccessAuthorization#iam_assumed_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#iam_assumed_role_arn CloudProviderAccessAuthorization#iam_assumed_role_arn}
   */
   readonly iamAssumedRoleArn: string;
 }
@@ -204,15 +204,15 @@ export class CloudProviderAccessAuthorizationAwsOutputReference extends cdktf.Co
 }
 export interface CloudProviderAccessAuthorizationAzure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#atlas_azure_app_id CloudProviderAccessAuthorization#atlas_azure_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#atlas_azure_app_id CloudProviderAccessAuthorization#atlas_azure_app_id}
   */
   readonly atlasAzureAppId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#service_principal_id CloudProviderAccessAuthorization#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#service_principal_id CloudProviderAccessAuthorization#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#tenant_id CloudProviderAccessAuthorization#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#tenant_id CloudProviderAccessAuthorization#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -345,7 +345,7 @@ export class CloudProviderAccessAuthorizationAzureOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}
 */
 export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
 
@@ -361,7 +361,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudProviderAccessAuthorization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudProviderAccessAuthorization to import
-  * @param importFromId The id of the existing CloudProviderAccessAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudProviderAccessAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudProviderAccessAuthorization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -373,7 +373,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -384,7 +384,7 @@ export class CloudProviderAccessAuthorization extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cloud_provider_access_authorization',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.15.0',
+        providerVersion: '1.15.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
