@@ -1,3 +1,3 @@
 # `data_mongodbatlas_backup_compliance_policy`
 
-Refer to the Terraform Registry for docs: [`data_mongodbatlas_backup_compliance_policy`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/backup_compliance_policy).
+Refer to the Terraform Registry for docs: [`data_mongodbatlas_backup_compliance_policy`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/backup_compliance_policy).
