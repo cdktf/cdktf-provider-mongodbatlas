@@ -1,3 +1,3 @@
 # `mongodbatlas_cluster`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/cluster).
+Refer to the Terraform Registry for docs: [`mongodbatlas_cluster`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cluster).

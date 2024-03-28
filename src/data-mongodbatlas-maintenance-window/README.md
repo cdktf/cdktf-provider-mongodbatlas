@@ -1,3 +1,3 @@
 # `data_mongodbatlas_maintenance_window`
 
-Refer to the Terraform Registry for docs: [`data_mongodbatlas_maintenance_window`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/maintenance_window).
+Refer to the Terraform Registry for docs: [`data_mongodbatlas_maintenance_window`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/maintenance_window).

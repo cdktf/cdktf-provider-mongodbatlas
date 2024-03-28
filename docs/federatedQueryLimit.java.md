@@ -4,7 +4,7 @@
 
 ### FederatedQueryLimit <a name="FederatedQueryLimit" id="@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit mongodbatlas_federated_query_limit}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit mongodbatlas_federated_query_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer"></a>
 
@@ -45,14 +45,14 @@ FederatedQueryLimit.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.limitName">limitName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.overrunPolicy">overrunPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.tenantName">tenantName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#value FederatedQueryLimit#value}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.defaultLimit">defaultLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#id FederatedQueryLimit#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.maximumLimit">maximumLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.limitName">limitName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.overrunPolicy">overrunPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.tenantName">tenantName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#value FederatedQueryLimit#value}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.defaultLimit">defaultLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#id FederatedQueryLimit#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimit.Initializer.parameter.maximumLimit">maximumLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#value FederatedQueryLimit#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#value FederatedQueryLimit#value}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#id FederatedQueryLimit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#id FederatedQueryLimit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}.
 
 ---
 
@@ -627,7 +627,7 @@ The construct id used in the generated config for the FederatedQueryLimit to imp
 
 The id of the existing FederatedQueryLimit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1061,14 +1061,14 @@ FederatedQueryLimitConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.limitName">limitName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.overrunPolicy">overrunPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.tenantName">tenantName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#value FederatedQueryLimit#value}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.defaultLimit">defaultLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#id FederatedQueryLimit#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.maximumLimit">maximumLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.limitName">limitName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.overrunPolicy">overrunPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.tenantName">tenantName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#value FederatedQueryLimit#value}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.defaultLimit">defaultLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#id FederatedQueryLimit#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.federatedQueryLimit.FederatedQueryLimitConfig.property.maximumLimit">maximumLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.lang.String getLimitName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#limit_name FederatedQueryLimit#limit_name}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public java.lang.String getOverrunPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#overrun_policy FederatedQueryLimit#overrun_policy}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#project_id FederatedQueryLimit#project_id}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getTenantName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#tenant_name FederatedQueryLimit#tenant_name}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#value FederatedQueryLimit#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#value FederatedQueryLimit#value}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.Number getDefaultLimit();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#default_limit FederatedQueryLimit#default_limit}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#id FederatedQueryLimit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#id FederatedQueryLimit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1237,7 +1237,7 @@ public java.lang.Number getMaximumLimit();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/federated_query_limit#maximum_limit FederatedQueryLimit#maximum_limit}.
 
 ---
 
