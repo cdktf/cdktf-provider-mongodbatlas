@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.NewServerlessInstance(scope Construct, id *string, config ServerlessInstanceConfig) ServerlessInstance
 ```
@@ -446,7 +446,7 @@ func ResetTerminationProtectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.ServerlessInstance_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.ServerlessInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ serverlessinstance.ServerlessInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.ServerlessInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ serverlessinstance.ServerlessInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.ServerlessInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1021,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 &serverlessinstance.ServerlessInstanceConfig {
 	Connection: interface{},
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 &serverlessinstance.ServerlessInstanceLinks {
 	Href: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 &serverlessinstance.ServerlessInstanceTags {
 	Key: *string,
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.NewServerlessInstanceLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerlessInstanceLinksList
 ```
@@ -1538,7 +1538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.NewServerlessInstanceLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerlessInstanceLinksOutputReference
 ```
@@ -1863,7 +1863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.NewServerlessInstanceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerlessInstanceTagsList
 ```
@@ -2023,7 +2023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstanceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/serverlessinstance"
 
 serverlessinstance.NewServerlessInstanceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerlessInstanceTagsOutputReference
 ```
