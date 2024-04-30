@@ -4,12 +4,12 @@
 
 ### DataMongodbatlasPrivateEndpointRegionalMode <a name="DataMongodbatlasPrivateEndpointRegionalMode" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.NewDataMongodbatlasPrivateEndpointRegionalMode(scope Construct, id *string, config DataMongodbatlasPrivateEndpointRegionalModeConfig) DataMongodbatlasPrivateEndpointRegionalMode
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegio
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalMode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
 
 datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalMode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataMongodbatlasPrivateEnd
 
 The id of the existing DataMongodbatlasPrivateEndpointRegionalMode that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasprivateendpointregionalmode"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode"
 
 &datamongodbatlasprivateendpointregionalmode.DataMongodbatlasPrivateEndpointRegionalModeConfig {
 	Connection: interface{},
@@ -650,9 +650,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#project_id DataMongodbatlasPrivateEndpointRegionalMode#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#enabled DataMongodbatlasPrivateEndpointRegionalMode#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#id DataMongodbatlasPrivateEndpointRegionalMode#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#project_id DataMongodbatlasPrivateEndpointRegionalMode#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#enabled DataMongodbatlasPrivateEndpointRegionalMode#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasPrivateEndpointRegionalMode.DataMongodbatlasPrivateEndpointRegionalModeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#id DataMongodbatlasPrivateEndpointRegionalMode#id}. |
 
 ---
 
@@ -734,7 +734,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#project_id DataMongodbatlasPrivateEndpointRegionalMode#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#project_id DataMongodbatlasPrivateEndpointRegionalMode#project_id}.
 
 ---
 
@@ -746,7 +746,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#enabled DataMongodbatlasPrivateEndpointRegionalMode#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#enabled DataMongodbatlasPrivateEndpointRegionalMode#enabled}.
 
 ---
 
@@ -758,7 +758,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/private_endpoint_regional_mode#id DataMongodbatlasPrivateEndpointRegionalMode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/private_endpoint_regional_mode#id DataMongodbatlasPrivateEndpointRegionalMode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

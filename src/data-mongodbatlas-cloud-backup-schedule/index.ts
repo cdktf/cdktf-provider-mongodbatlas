@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasCloudBackupScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule#cluster_name DataMongodbatlasCloudBackupSchedule#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule#cluster_name DataMongodbatlasCloudBackupSchedule#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule#id DataMongodbatlasCloudBackupSchedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule#id DataMongodbatlasCloudBackupSchedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule#project_id DataMongodbatlasCloudBackupSchedule#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule#project_id DataMongodbatlasCloudBackupSchedule#project_id}
   */
   readonly projectId: string;
 }
@@ -583,9 +578,104 @@ export class DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyList extends cdk
     return new DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataMongodbatlasCloudBackupSchedulePolicyItemYearly {
+}
+
+export function dataMongodbatlasCloudBackupSchedulePolicyItemYearlyToTerraform(struct?: DataMongodbatlasCloudBackupSchedulePolicyItemYearly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasCloudBackupSchedulePolicyItemYearlyToHclTerraform(struct?: DataMongodbatlasCloudBackupSchedulePolicyItemYearly): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasCloudBackupSchedulePolicyItemYearlyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasCloudBackupSchedulePolicyItemYearly | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasCloudBackupSchedulePolicyItemYearly | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // frequency_interval - computed: true, optional: false, required: false
+  public get frequencyInterval() {
+    return this.getNumberAttribute('frequency_interval');
+  }
+
+  // frequency_type - computed: true, optional: false, required: false
+  public get frequencyType() {
+    return this.getStringAttribute('frequency_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // retention_unit - computed: true, optional: false, required: false
+  public get retentionUnit() {
+    return this.getStringAttribute('retention_unit');
+  }
+
+  // retention_value - computed: true, optional: false, required: false
+  public get retentionValue() {
+    return this.getNumberAttribute('retention_value');
+  }
+}
+
+export class DataMongodbatlasCloudBackupSchedulePolicyItemYearlyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasCloudBackupSchedulePolicyItemYearlyOutputReference {
+    return new DataMongodbatlasCloudBackupSchedulePolicyItemYearlyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}
 */
 export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSource {
 
@@ -601,7 +691,7 @@ export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataMongodbatlasCloudBackupSchedule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasCloudBackupSchedule to import
-  * @param importFromId The id of the existing DataMongodbatlasCloudBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasCloudBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasCloudBackupSchedule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -613,7 +703,7 @@ export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -624,7 +714,7 @@ export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_cloud_backup_schedule',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.15.3',
+        providerVersion: '1.16.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -727,6 +817,12 @@ export class DataMongodbatlasCloudBackupSchedule extends cdktf.TerraformDataSour
   private _policyItemWeekly = new DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyList(this, "policy_item_weekly", false);
   public get policyItemWeekly() {
     return this._policyItemWeekly;
+  }
+
+  // policy_item_yearly - computed: true, optional: false, required: false
+  private _policyItemYearly = new DataMongodbatlasCloudBackupSchedulePolicyItemYearlyList(this, "policy_item_yearly", false);
+  public get policyItemYearly() {
+    return this._policyItemYearly;
   }
 
   // project_id - computed: false, optional: false, required: true

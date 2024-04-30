@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,100 +8,106 @@ import * as cdktf from 'cdktf';
 
 export interface CloudBackupScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#auto_export_enabled CloudBackupSchedule#auto_export_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#auto_export_enabled CloudBackupSchedule#auto_export_enabled}
   */
   readonly autoExportEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#cluster_name CloudBackupSchedule#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#cluster_name CloudBackupSchedule#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#id CloudBackupSchedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#id CloudBackupSchedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#project_id CloudBackupSchedule#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#project_id CloudBackupSchedule#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#reference_hour_of_day CloudBackupSchedule#reference_hour_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#reference_hour_of_day CloudBackupSchedule#reference_hour_of_day}
   */
   readonly referenceHourOfDay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#reference_minute_of_hour CloudBackupSchedule#reference_minute_of_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#reference_minute_of_hour CloudBackupSchedule#reference_minute_of_hour}
   */
   readonly referenceMinuteOfHour?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#restore_window_days CloudBackupSchedule#restore_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#restore_window_days CloudBackupSchedule#restore_window_days}
   */
   readonly restoreWindowDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#update_snapshots CloudBackupSchedule#update_snapshots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#update_snapshots CloudBackupSchedule#update_snapshots}
   */
   readonly updateSnapshots?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#use_org_and_group_names_in_export_prefix CloudBackupSchedule#use_org_and_group_names_in_export_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#use_org_and_group_names_in_export_prefix CloudBackupSchedule#use_org_and_group_names_in_export_prefix}
   */
   readonly useOrgAndGroupNamesInExportPrefix?: boolean | cdktf.IResolvable;
   /**
   * copy_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#copy_settings CloudBackupSchedule#copy_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#copy_settings CloudBackupSchedule#copy_settings}
   */
   readonly copySettings?: CloudBackupScheduleCopySettings[] | cdktf.IResolvable;
   /**
   * export block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#export CloudBackupSchedule#export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#export CloudBackupSchedule#export}
   */
   readonly export?: CloudBackupScheduleExport;
   /**
   * policy_item_daily block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#policy_item_daily CloudBackupSchedule#policy_item_daily}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#policy_item_daily CloudBackupSchedule#policy_item_daily}
   */
   readonly policyItemDaily?: CloudBackupSchedulePolicyItemDaily;
   /**
   * policy_item_hourly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#policy_item_hourly CloudBackupSchedule#policy_item_hourly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#policy_item_hourly CloudBackupSchedule#policy_item_hourly}
   */
   readonly policyItemHourly?: CloudBackupSchedulePolicyItemHourly;
   /**
   * policy_item_monthly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#policy_item_monthly CloudBackupSchedule#policy_item_monthly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#policy_item_monthly CloudBackupSchedule#policy_item_monthly}
   */
   readonly policyItemMonthly?: CloudBackupSchedulePolicyItemMonthly[] | cdktf.IResolvable;
   /**
   * policy_item_weekly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#policy_item_weekly CloudBackupSchedule#policy_item_weekly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#policy_item_weekly CloudBackupSchedule#policy_item_weekly}
   */
   readonly policyItemWeekly?: CloudBackupSchedulePolicyItemWeekly[] | cdktf.IResolvable;
+  /**
+  * policy_item_yearly block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#policy_item_yearly CloudBackupSchedule#policy_item_yearly}
+  */
+  readonly policyItemYearly?: CloudBackupSchedulePolicyItemYearly[] | cdktf.IResolvable;
 }
 export interface CloudBackupScheduleCopySettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#cloud_provider CloudBackupSchedule#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#cloud_provider CloudBackupSchedule#cloud_provider}
   */
   readonly cloudProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#frequencies CloudBackupSchedule#frequencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequencies CloudBackupSchedule#frequencies}
   */
   readonly frequencies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#region_name CloudBackupSchedule#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#region_name CloudBackupSchedule#region_name}
   */
   readonly regionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#replication_spec_id CloudBackupSchedule#replication_spec_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#replication_spec_id CloudBackupSchedule#replication_spec_id}
   */
   readonly replicationSpecId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#should_copy_oplogs CloudBackupSchedule#should_copy_oplogs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#should_copy_oplogs CloudBackupSchedule#should_copy_oplogs}
   */
   readonly shouldCopyOplogs?: boolean | cdktf.IResolvable;
 }
@@ -338,11 +339,11 @@ export class CloudBackupScheduleCopySettingsList extends cdktf.ComplexList {
 }
 export interface CloudBackupScheduleExport {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#export_bucket_id CloudBackupSchedule#export_bucket_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#export_bucket_id CloudBackupSchedule#export_bucket_id}
   */
   readonly exportBucketId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#frequency_type CloudBackupSchedule#frequency_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequency_type CloudBackupSchedule#frequency_type}
   */
   readonly frequencyType?: string;
 }
@@ -455,15 +456,15 @@ export class CloudBackupScheduleExportOutputReference extends cdktf.ComplexObjec
 }
 export interface CloudBackupSchedulePolicyItemDaily {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -606,15 +607,15 @@ export class CloudBackupSchedulePolicyItemDailyOutputReference extends cdktf.Com
 }
 export interface CloudBackupSchedulePolicyItemHourly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -757,15 +758,15 @@ export class CloudBackupSchedulePolicyItemHourlyOutputReference extends cdktf.Co
 }
 export interface CloudBackupSchedulePolicyItemMonthly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -940,15 +941,15 @@ export class CloudBackupSchedulePolicyItemMonthlyList extends cdktf.ComplexList 
 }
 export interface CloudBackupSchedulePolicyItemWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -1121,9 +1122,192 @@ export class CloudBackupSchedulePolicyItemWeeklyList extends cdktf.ComplexList {
     return new CloudBackupSchedulePolicyItemWeeklyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CloudBackupSchedulePolicyItemYearly {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#frequency_interval CloudBackupSchedule#frequency_interval}
+  */
+  readonly frequencyInterval: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_unit CloudBackupSchedule#retention_unit}
+  */
+  readonly retentionUnit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#retention_value CloudBackupSchedule#retention_value}
+  */
+  readonly retentionValue: number;
+}
+
+export function cloudBackupSchedulePolicyItemYearlyToTerraform(struct?: CloudBackupSchedulePolicyItemYearly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
+    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
+    retention_value: cdktf.numberToTerraform(struct!.retentionValue),
+  }
+}
+
+
+export function cloudBackupSchedulePolicyItemYearlyToHclTerraform(struct?: CloudBackupSchedulePolicyItemYearly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudBackupSchedulePolicyItemYearlyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudBackupSchedulePolicyItemYearly | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._frequencyInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.frequencyInterval = this._frequencyInterval;
+    }
+    if (this._retentionUnit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionUnit = this._retentionUnit;
+    }
+    if (this._retentionValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionValue = this._retentionValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudBackupSchedulePolicyItemYearly | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._frequencyInterval = undefined;
+      this._retentionUnit = undefined;
+      this._retentionValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._frequencyInterval = value.frequencyInterval;
+      this._retentionUnit = value.retentionUnit;
+      this._retentionValue = value.retentionValue;
+    }
+  }
+
+  // frequency_interval - computed: false, optional: false, required: true
+  private _frequencyInterval?: number; 
+  public get frequencyInterval() {
+    return this.getNumberAttribute('frequency_interval');
+  }
+  public set frequencyInterval(value: number) {
+    this._frequencyInterval = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get frequencyIntervalInput() {
+    return this._frequencyInterval;
+  }
+
+  // frequency_type - computed: true, optional: false, required: false
+  public get frequencyType() {
+    return this.getStringAttribute('frequency_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // retention_unit - computed: false, optional: false, required: true
+  private _retentionUnit?: string; 
+  public get retentionUnit() {
+    return this.getStringAttribute('retention_unit');
+  }
+  public set retentionUnit(value: string) {
+    this._retentionUnit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionUnitInput() {
+    return this._retentionUnit;
+  }
+
+  // retention_value - computed: false, optional: false, required: true
+  private _retentionValue?: number; 
+  public get retentionValue() {
+    return this.getNumberAttribute('retention_value');
+  }
+  public set retentionValue(value: number) {
+    this._retentionValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionValueInput() {
+    return this._retentionValue;
+  }
+}
+
+export class CloudBackupSchedulePolicyItemYearlyList extends cdktf.ComplexList {
+  public internalValue? : CloudBackupSchedulePolicyItemYearly[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudBackupSchedulePolicyItemYearlyOutputReference {
+    return new CloudBackupSchedulePolicyItemYearlyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}
 */
 export class CloudBackupSchedule extends cdktf.TerraformResource {
 
@@ -1139,7 +1323,7 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudBackupSchedule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudBackupSchedule to import
-  * @param importFromId The id of the existing CloudBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudBackupSchedule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1151,7 +1335,7 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1162,7 +1346,7 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cloud_backup_schedule',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.15.3',
+        providerVersion: '1.16.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1188,6 +1372,7 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
     this._policyItemHourly.internalValue = config.policyItemHourly;
     this._policyItemMonthly.internalValue = config.policyItemMonthly;
     this._policyItemWeekly.internalValue = config.policyItemWeekly;
+    this._policyItemYearly.internalValue = config.policyItemYearly;
   }
 
   // ==========
@@ -1443,6 +1628,22 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
     return this._policyItemWeekly.internalValue;
   }
 
+  // policy_item_yearly - computed: false, optional: true, required: false
+  private _policyItemYearly = new CloudBackupSchedulePolicyItemYearlyList(this, "policy_item_yearly", false);
+  public get policyItemYearly() {
+    return this._policyItemYearly;
+  }
+  public putPolicyItemYearly(value: CloudBackupSchedulePolicyItemYearly[] | cdktf.IResolvable) {
+    this._policyItemYearly.internalValue = value;
+  }
+  public resetPolicyItemYearly() {
+    this._policyItemYearly.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyItemYearlyInput() {
+    return this._policyItemYearly.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1464,6 +1665,7 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
       policy_item_hourly: cloudBackupSchedulePolicyItemHourlyToTerraform(this._policyItemHourly.internalValue),
       policy_item_monthly: cdktf.listMapper(cloudBackupSchedulePolicyItemMonthlyToTerraform, true)(this._policyItemMonthly.internalValue),
       policy_item_weekly: cdktf.listMapper(cloudBackupSchedulePolicyItemWeeklyToTerraform, true)(this._policyItemWeekly.internalValue),
+      policy_item_yearly: cdktf.listMapper(cloudBackupSchedulePolicyItemYearlyToTerraform, true)(this._policyItemYearly.internalValue),
     };
   }
 
@@ -1558,6 +1760,12 @@ export class CloudBackupSchedule extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CloudBackupSchedulePolicyItemWeeklyList",
+      },
+      policy_item_yearly: {
+        value: cdktf.listMapperHcl(cloudBackupSchedulePolicyItemYearlyToHclTerraform, true)(this._policyItemYearly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudBackupSchedulePolicyItemYearlyList",
       },
     };
 

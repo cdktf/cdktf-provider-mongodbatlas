@@ -4,12 +4,12 @@
 
 ### CustomDnsConfigurationClusterAws <a name="CustomDnsConfigurationClusterAws" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdnsconfigurationclusteraws"
 
 customdnsconfigurationclusteraws.NewCustomDnsConfigurationClusterAws(scope Construct, id *string, config CustomDnsConfigurationClusterAwsConfig) CustomDnsConfigurationClusterAws
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdnsconfigurationclusteraws"
 
 customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAws_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdnsconfigurationclusteraws"
 
 customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAws_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdnsconfigurationclusteraws"
 
 customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAws_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAws_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdnsconfigurationclusteraws"
 
 customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CustomDnsConfigurationClus
 
 The id of the existing CustomDnsConfigurationClusterAws that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdnsconfigurationclusteraws"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdnsconfigurationclusteraws"
 
 &customdnsconfigurationclusteraws.CustomDnsConfigurationClusterAwsConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/customdn
 | <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}.
 
 ---
 
@@ -863,7 +863,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
