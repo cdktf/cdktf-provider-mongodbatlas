@@ -4,7 +4,7 @@
 
 ### SearchDeployment <a name="SearchDeployment" id="@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment mongodbatlas_search_deployment}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment mongodbatlas_search_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment.Initializer"></a>
 
@@ -45,7 +45,7 @@ SearchDeployment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment.Initializer.parameter.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Label that identifies the cluster to return the search nodes for. |
 | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Unique 24-hexadecimal character string that identifies the project. |
 | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment.Initializer.parameter.specs">specs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentSpecs">SearchDeploymentSpecs</a>></code> | List of settings that configure the search nodes for your cluster. |
-| <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentTimeouts">SearchDeploymentTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeployment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentTimeouts">SearchDeploymentTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}. |
 
 ---
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 Label that identifies the cluster to return the search nodes for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 Unique 24-hexadecimal character string that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#project_id SearchDeployment#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#project_id SearchDeployment#project_id}
 
 ---
 
@@ -137,7 +137,7 @@ List of settings that configure the search nodes for your cluster.
 
 This list is currently limited to defining a single element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#specs SearchDeployment#specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#specs SearchDeployment#specs}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentTimeouts">SearchDeploymentTimeouts</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}.
 
 ---
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the SearchDeployment to import
 
 The id of the existing SearchDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ SearchDeploymentConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentConfig.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Label that identifies the cluster to return the search nodes for. |
 | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Unique 24-hexadecimal character string that identifies the project. |
 | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentConfig.property.specs">specs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentSpecs">SearchDeploymentSpecs</a>></code> | List of settings that configure the search nodes for your cluster. |
-| <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentTimeouts">SearchDeploymentTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentTimeouts">SearchDeploymentTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}. |
 
 ---
 
@@ -1035,7 +1035,7 @@ public java.lang.String getClusterName();
 
 Label that identifies the cluster to return the search nodes for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getProjectId();
 
 Unique 24-hexadecimal character string that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#project_id SearchDeployment#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#project_id SearchDeployment#project_id}
 
 ---
 
@@ -1065,7 +1065,7 @@ List of settings that configure the search nodes for your cluster.
 
 This list is currently limited to defining a single element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#specs SearchDeployment#specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#specs SearchDeployment#specs}
 
 ---
 
@@ -1077,7 +1077,7 @@ public SearchDeploymentTimeouts getTimeouts();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.searchDeployment.SearchDeploymentTimeouts">SearchDeploymentTimeouts</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Hardware specification for the search node instance sizes.
 
 The [MongoDB Atlas API](https://www.mongodb.com/docs/atlas/reference/api-resources-spec/#tag/Atlas-Search/operation/createAtlasSearchDeployment) describes the valid values. More details can also be found in the [Search Node Documentation](https://www.mongodb.com/docs/atlas/cluster-config/multi-cloud-distribution/#search-tier).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#instance_size SearchDeployment#instance_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#instance_size SearchDeployment#instance_size}
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.Number getNodeCount();
 
 Number of search nodes in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#node_count SearchDeployment#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#node_count SearchDeployment#node_count}
 
 ---
 
@@ -1167,7 +1167,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#create SearchDeployment#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#create SearchDeployment#create}
 
 ---
 
@@ -1181,7 +1181,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#delete SearchDeployment#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#delete SearchDeployment#delete}
 
 ---
 
@@ -1195,7 +1195,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/search_deployment#update SearchDeployment#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment#update SearchDeployment#update}
 
 ---
 

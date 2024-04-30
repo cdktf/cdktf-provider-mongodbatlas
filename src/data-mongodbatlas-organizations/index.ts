@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasOrganizationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations#id DataMongodbatlasOrganizations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations#id DataMongodbatlasOrganizations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations#include_deleted_orgs DataMongodbatlasOrganizations#include_deleted_orgs}
-  */
-  readonly includeDeletedOrgs?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations#items_per_page DataMongodbatlasOrganizations#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations#items_per_page DataMongodbatlasOrganizations#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations#name DataMongodbatlasOrganizations#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations#name DataMongodbatlasOrganizations#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations#page_num DataMongodbatlasOrganizations#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations#page_num DataMongodbatlasOrganizations#page_num}
   */
   readonly pageNum?: number;
 }
@@ -224,7 +220,7 @@ export class DataMongodbatlasOrganizationsResultsList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations mongodbatlas_organizations}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations mongodbatlas_organizations}
 */
 export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
 
@@ -240,7 +236,7 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasOrganizations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasOrganizations to import
-  * @param importFromId The id of the existing DataMongodbatlasOrganizations that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasOrganizations that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasOrganizations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -252,7 +248,7 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/organizations mongodbatlas_organizations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/organizations mongodbatlas_organizations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,7 +259,7 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_organizations',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.15.3',
+        providerVersion: '1.16.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -275,7 +271,6 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._includeDeletedOrgs = config.includeDeletedOrgs;
     this._itemsPerPage = config.itemsPerPage;
     this._name = config.name;
     this._pageNum = config.pageNum;
@@ -299,22 +294,6 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // include_deleted_orgs - computed: false, optional: true, required: false
-  private _includeDeletedOrgs?: boolean | cdktf.IResolvable; 
-  public get includeDeletedOrgs() {
-    return this.getBooleanAttribute('include_deleted_orgs');
-  }
-  public set includeDeletedOrgs(value: boolean | cdktf.IResolvable) {
-    this._includeDeletedOrgs = value;
-  }
-  public resetIncludeDeletedOrgs() {
-    this._includeDeletedOrgs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeDeletedOrgsInput() {
-    return this._includeDeletedOrgs;
   }
 
   // items_per_page - computed: false, optional: true, required: false
@@ -383,7 +362,6 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      include_deleted_orgs: cdktf.booleanToTerraform(this._includeDeletedOrgs),
       items_per_page: cdktf.numberToTerraform(this._itemsPerPage),
       name: cdktf.stringToTerraform(this._name),
       page_num: cdktf.numberToTerraform(this._pageNum),
@@ -397,12 +375,6 @@ export class DataMongodbatlasOrganizations extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      include_deleted_orgs: {
-        value: cdktf.booleanToHclTerraform(this._includeDeletedOrgs),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       items_per_page: {
         value: cdktf.numberToHclTerraform(this._itemsPerPage),

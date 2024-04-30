@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasFederatedSettings <a name="DataMongodbatlasFederatedSettings" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/federated_settings mongodbatlas_federated_settings}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/federated_settings mongodbatlas_federated_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettings.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasFederatedS
 
 The id of the existing DataMongodbatlasFederatedSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/federated_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/federated_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettings.DataMongodbatlasFederatedSettingsConfig.property.orgId">OrgId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}. |
 
 ---
 
@@ -727,7 +727,7 @@ OrgId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/federated_settings#org_id DataMongodbatlasFederatedSettings#org_id}.
 
 ---
 

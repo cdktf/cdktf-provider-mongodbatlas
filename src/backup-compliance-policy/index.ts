@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +13,92 @@ import * as cdktf from 'cdktf';
 
 export interface BackupCompliancePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#authorized_email BackupCompliancePolicy#authorized_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#authorized_email BackupCompliancePolicy#authorized_email}
   */
   readonly authorizedEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#authorized_user_first_name BackupCompliancePolicy#authorized_user_first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#authorized_user_first_name BackupCompliancePolicy#authorized_user_first_name}
   */
   readonly authorizedUserFirstName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#authorized_user_last_name BackupCompliancePolicy#authorized_user_last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#authorized_user_last_name BackupCompliancePolicy#authorized_user_last_name}
   */
   readonly authorizedUserLastName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#copy_protection_enabled BackupCompliancePolicy#copy_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#copy_protection_enabled BackupCompliancePolicy#copy_protection_enabled}
   */
   readonly copyProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#encryption_at_rest_enabled BackupCompliancePolicy#encryption_at_rest_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#encryption_at_rest_enabled BackupCompliancePolicy#encryption_at_rest_enabled}
   */
   readonly encryptionAtRestEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#id BackupCompliancePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#id BackupCompliancePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#pit_enabled BackupCompliancePolicy#pit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#pit_enabled BackupCompliancePolicy#pit_enabled}
   */
   readonly pitEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#project_id BackupCompliancePolicy#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#project_id BackupCompliancePolicy#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#restore_window_days BackupCompliancePolicy#restore_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#restore_window_days BackupCompliancePolicy#restore_window_days}
   */
   readonly restoreWindowDays?: number;
   /**
   * on_demand_policy_item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#on_demand_policy_item BackupCompliancePolicy#on_demand_policy_item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#on_demand_policy_item BackupCompliancePolicy#on_demand_policy_item}
   */
   readonly onDemandPolicyItem: BackupCompliancePolicyOnDemandPolicyItem;
   /**
   * policy_item_daily block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#policy_item_daily BackupCompliancePolicy#policy_item_daily}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#policy_item_daily BackupCompliancePolicy#policy_item_daily}
   */
   readonly policyItemDaily?: BackupCompliancePolicyPolicyItemDaily;
   /**
   * policy_item_hourly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#policy_item_hourly BackupCompliancePolicy#policy_item_hourly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#policy_item_hourly BackupCompliancePolicy#policy_item_hourly}
   */
   readonly policyItemHourly?: BackupCompliancePolicyPolicyItemHourly;
   /**
   * policy_item_monthly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#policy_item_monthly BackupCompliancePolicy#policy_item_monthly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#policy_item_monthly BackupCompliancePolicy#policy_item_monthly}
   */
   readonly policyItemMonthly?: BackupCompliancePolicyPolicyItemMonthly[] | cdktf.IResolvable;
   /**
   * policy_item_weekly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#policy_item_weekly BackupCompliancePolicy#policy_item_weekly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#policy_item_weekly BackupCompliancePolicy#policy_item_weekly}
   */
   readonly policyItemWeekly?: BackupCompliancePolicyPolicyItemWeekly[] | cdktf.IResolvable;
+  /**
+  * policy_item_yearly block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#policy_item_yearly BackupCompliancePolicy#policy_item_yearly}
+  */
+  readonly policyItemYearly?: BackupCompliancePolicyPolicyItemYearly[] | cdktf.IResolvable;
 }
 export interface BackupCompliancePolicyOnDemandPolicyItem {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -235,15 +241,15 @@ export class BackupCompliancePolicyOnDemandPolicyItemOutputReference extends cdk
 }
 export interface BackupCompliancePolicyPolicyItemDaily {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -386,15 +392,15 @@ export class BackupCompliancePolicyPolicyItemDailyOutputReference extends cdktf.
 }
 export interface BackupCompliancePolicyPolicyItemHourly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -537,15 +543,15 @@ export class BackupCompliancePolicyPolicyItemHourlyOutputReference extends cdktf
 }
 export interface BackupCompliancePolicyPolicyItemMonthly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -720,15 +726,15 @@ export class BackupCompliancePolicyPolicyItemMonthlyList extends cdktf.ComplexLi
 }
 export interface BackupCompliancePolicyPolicyItemWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
   */
   readonly retentionUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
   */
   readonly retentionValue: number;
 }
@@ -901,9 +907,192 @@ export class BackupCompliancePolicyPolicyItemWeeklyList extends cdktf.ComplexLis
     return new BackupCompliancePolicyPolicyItemWeeklyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BackupCompliancePolicyPolicyItemYearly {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#frequency_interval BackupCompliancePolicy#frequency_interval}
+  */
+  readonly frequencyInterval: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_unit BackupCompliancePolicy#retention_unit}
+  */
+  readonly retentionUnit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#retention_value BackupCompliancePolicy#retention_value}
+  */
+  readonly retentionValue: number;
+}
+
+export function backupCompliancePolicyPolicyItemYearlyToTerraform(struct?: BackupCompliancePolicyPolicyItemYearly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
+    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
+    retention_value: cdktf.numberToTerraform(struct!.retentionValue),
+  }
+}
+
+
+export function backupCompliancePolicyPolicyItemYearlyToHclTerraform(struct?: BackupCompliancePolicyPolicyItemYearly | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency_interval: {
+      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_value: {
+      value: cdktf.numberToHclTerraform(struct!.retentionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BackupCompliancePolicyPolicyItemYearlyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupCompliancePolicyPolicyItemYearly | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._frequencyInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.frequencyInterval = this._frequencyInterval;
+    }
+    if (this._retentionUnit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionUnit = this._retentionUnit;
+    }
+    if (this._retentionValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionValue = this._retentionValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupCompliancePolicyPolicyItemYearly | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._frequencyInterval = undefined;
+      this._retentionUnit = undefined;
+      this._retentionValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._frequencyInterval = value.frequencyInterval;
+      this._retentionUnit = value.retentionUnit;
+      this._retentionValue = value.retentionValue;
+    }
+  }
+
+  // frequency_interval - computed: false, optional: false, required: true
+  private _frequencyInterval?: number; 
+  public get frequencyInterval() {
+    return this.getNumberAttribute('frequency_interval');
+  }
+  public set frequencyInterval(value: number) {
+    this._frequencyInterval = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get frequencyIntervalInput() {
+    return this._frequencyInterval;
+  }
+
+  // frequency_type - computed: true, optional: false, required: false
+  public get frequencyType() {
+    return this.getStringAttribute('frequency_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // retention_unit - computed: false, optional: false, required: true
+  private _retentionUnit?: string; 
+  public get retentionUnit() {
+    return this.getStringAttribute('retention_unit');
+  }
+  public set retentionUnit(value: string) {
+    this._retentionUnit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionUnitInput() {
+    return this._retentionUnit;
+  }
+
+  // retention_value - computed: false, optional: false, required: true
+  private _retentionValue?: number; 
+  public get retentionValue() {
+    return this.getNumberAttribute('retention_value');
+  }
+  public set retentionValue(value: number) {
+    this._retentionValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionValueInput() {
+    return this._retentionValue;
+  }
+}
+
+export class BackupCompliancePolicyPolicyItemYearlyList extends cdktf.ComplexList {
+  public internalValue? : BackupCompliancePolicyPolicyItemYearly[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupCompliancePolicyPolicyItemYearlyOutputReference {
+    return new BackupCompliancePolicyPolicyItemYearlyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}
 */
 export class BackupCompliancePolicy extends cdktf.TerraformResource {
 
@@ -919,7 +1108,7 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BackupCompliancePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupCompliancePolicy to import
-  * @param importFromId The id of the existing BackupCompliancePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupCompliancePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupCompliancePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -931,7 +1120,7 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -942,7 +1131,7 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_backup_compliance_policy',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.15.3',
+        providerVersion: '1.16.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -967,6 +1156,7 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
     this._policyItemHourly.internalValue = config.policyItemHourly;
     this._policyItemMonthly.internalValue = config.policyItemMonthly;
     this._policyItemWeekly.internalValue = config.policyItemWeekly;
+    this._policyItemYearly.internalValue = config.policyItemYearly;
   }
 
   // ==========
@@ -1197,6 +1387,22 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
     return this._policyItemWeekly.internalValue;
   }
 
+  // policy_item_yearly - computed: false, optional: true, required: false
+  private _policyItemYearly = new BackupCompliancePolicyPolicyItemYearlyList(this, "policy_item_yearly", false);
+  public get policyItemYearly() {
+    return this._policyItemYearly;
+  }
+  public putPolicyItemYearly(value: BackupCompliancePolicyPolicyItemYearly[] | cdktf.IResolvable) {
+    this._policyItemYearly.internalValue = value;
+  }
+  public resetPolicyItemYearly() {
+    this._policyItemYearly.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyItemYearlyInput() {
+    return this._policyItemYearly.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1217,6 +1423,7 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
       policy_item_hourly: backupCompliancePolicyPolicyItemHourlyToTerraform(this._policyItemHourly.internalValue),
       policy_item_monthly: cdktf.listMapper(backupCompliancePolicyPolicyItemMonthlyToTerraform, true)(this._policyItemMonthly.internalValue),
       policy_item_weekly: cdktf.listMapper(backupCompliancePolicyPolicyItemWeeklyToTerraform, true)(this._policyItemWeekly.internalValue),
+      policy_item_yearly: cdktf.listMapper(backupCompliancePolicyPolicyItemYearlyToTerraform, true)(this._policyItemYearly.internalValue),
     };
   }
 
@@ -1305,6 +1512,12 @@ export class BackupCompliancePolicy extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BackupCompliancePolicyPolicyItemWeeklyList",
+      },
+      policy_item_yearly: {
+        value: cdktf.listMapperHcl(backupCompliancePolicyPolicyItemYearlyToHclTerraform, true)(this._policyItemYearly.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BackupCompliancePolicyPolicyItemYearlyList",
       },
     };
 
