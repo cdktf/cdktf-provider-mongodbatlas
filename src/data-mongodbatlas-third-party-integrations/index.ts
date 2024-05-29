@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integrations
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/third_party_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasThirdPartyIntegrationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integrations#id DataMongodbatlasThirdPartyIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/third_party_integrations#id DataMongodbatlasThirdPartyIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integrations#project_id DataMongodbatlasThirdPartyIntegrations#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/third_party_integrations#project_id DataMongodbatlasThirdPartyIntegrations#project_id}
   */
   readonly projectId: string;
 }
@@ -181,7 +176,7 @@ export class DataMongodbatlasThirdPartyIntegrationsResultsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}
 */
 export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataSource {
 
@@ -197,7 +192,7 @@ export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataMongodbatlasThirdPartyIntegrations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasThirdPartyIntegrations to import
-  * @param importFromId The id of the existing DataMongodbatlasThirdPartyIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasThirdPartyIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/third_party_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasThirdPartyIntegrations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -209,7 +204,7 @@ export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +215,7 @@ export class DataMongodbatlasThirdPartyIntegrations extends cdktf.TerraformDataS
       terraformResourceType: 'mongodbatlas_third_party_integrations',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.16.0',
+        providerVersion: '1.16.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

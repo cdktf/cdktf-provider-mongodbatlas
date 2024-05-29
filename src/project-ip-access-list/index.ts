@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectIpAccessListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#aws_security_group ProjectIpAccessList#aws_security_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#aws_security_group ProjectIpAccessList#aws_security_group}
   */
   readonly awsSecurityGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#cidr_block ProjectIpAccessList#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#cidr_block ProjectIpAccessList#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#comment ProjectIpAccessList#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#comment ProjectIpAccessList#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#ip_address ProjectIpAccessList#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#ip_address ProjectIpAccessList#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#project_id ProjectIpAccessList#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#project_id ProjectIpAccessList#project_id}
   */
   readonly projectId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#timeouts ProjectIpAccessList#timeouts}
   */
   readonly timeouts?: ProjectIpAccessListTimeouts;
 }
@@ -43,13 +38,13 @@ export interface ProjectIpAccessListTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#delete ProjectIpAccessList#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#delete ProjectIpAccessList#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#read ProjectIpAccessList#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#read ProjectIpAccessList#read}
   */
   readonly read?: string;
 }
@@ -172,7 +167,7 @@ export class ProjectIpAccessListTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}
 */
 export class ProjectIpAccessList extends cdktf.TerraformResource {
 
@@ -188,7 +183,7 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectIpAccessList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIpAccessList to import
-  * @param importFromId The id of the existing ProjectIpAccessList that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectIpAccessList that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIpAccessList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -200,7 +195,7 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +206,7 @@ export class ProjectIpAccessList extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_project_ip_access_list',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.16.0',
+        providerVersion: '1.16.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
