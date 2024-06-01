@@ -4,12 +4,12 @@
 
 ### DataMongodbatlasNetworkContainer <a name="DataMongodbatlasNetworkContainer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container mongodbatlas_network_container}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container mongodbatlas_network_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.NewDataMongodbatlasNetworkContainer(scope Construct, id *string, config DataMongodbatlasNetworkContainerConfig) DataMongodbatlasNetworkContainer
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataMongodbatlasNetworkCon
 
 The id of the existing DataMongodbatlasNetworkContainer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasnetworkcontainer"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkcontainer"
 
 &datamongodbatlasnetworkcontainer.DataMongodbatlasNetworkContainerConfig {
 	Connection: interface{},
@@ -764,9 +764,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.containerId">ContainerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#container_id DataMongodbatlasNetworkContainer#container_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#project_id DataMongodbatlasNetworkContainer#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#id DataMongodbatlasNetworkContainer#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.containerId">ContainerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#container_id DataMongodbatlasNetworkContainer#container_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#project_id DataMongodbatlasNetworkContainer#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasNetworkContainer.DataMongodbatlasNetworkContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#id DataMongodbatlasNetworkContainer#id}. |
 
 ---
 
@@ -848,7 +848,7 @@ ContainerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#container_id DataMongodbatlasNetworkContainer#container_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#container_id DataMongodbatlasNetworkContainer#container_id}.
 
 ---
 
@@ -860,7 +860,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#project_id DataMongodbatlasNetworkContainer#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#project_id DataMongodbatlasNetworkContainer#project_id}.
 
 ---
 
@@ -872,7 +872,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/network_container#id DataMongodbatlasNetworkContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/network_container#id DataMongodbatlasNetworkContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
