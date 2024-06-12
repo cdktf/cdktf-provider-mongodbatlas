@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasPrivatelinkEndpointsServiceServerlessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless#id DataMongodbatlasPrivatelinkEndpointsServiceServerless#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless#id DataMongodbatlasPrivatelinkEndpointsServiceServerless#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless#instance_name DataMongodbatlasPrivatelinkEndpointsServiceServerless#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless#instance_name DataMongodbatlasPrivatelinkEndpointsServiceServerless#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless#items_per_page DataMongodbatlasPrivatelinkEndpointsServiceServerless#items_per_page}
-  */
-  readonly itemsPerPage?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless#page_num DataMongodbatlasPrivatelinkEndpointsServiceServerless#page_num}
-  */
-  readonly pageNum?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless#project_id DataMongodbatlasPrivatelinkEndpointsServiceServerless#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless#project_id DataMongodbatlasPrivatelinkEndpointsServiceServerless#project_id}
   */
   readonly projectId: string;
 }
@@ -148,7 +140,7 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerlessResultsList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless}
 */
 export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf.TerraformDataSource {
 
@@ -164,7 +156,7 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
   * Generates CDKTF code for importing a DataMongodbatlasPrivatelinkEndpointsServiceServerless resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasPrivatelinkEndpointsServiceServerless to import
-  * @param importFromId The id of the existing DataMongodbatlasPrivatelinkEndpointsServiceServerless that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasPrivatelinkEndpointsServiceServerless that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasPrivatelinkEndpointsServiceServerless to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -176,7 +168,7 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,7 +179,7 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
       terraformResourceType: 'mongodbatlas_privatelink_endpoints_service_serverless',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.16.2',
+        providerVersion: '1.17.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -200,8 +192,6 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
     });
     this._id = config.id;
     this._instanceName = config.instanceName;
-    this._itemsPerPage = config.itemsPerPage;
-    this._pageNum = config.pageNum;
     this._projectId = config.projectId;
   }
 
@@ -238,38 +228,6 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
     return this._instanceName;
   }
 
-  // items_per_page - computed: false, optional: true, required: false
-  private _itemsPerPage?: number; 
-  public get itemsPerPage() {
-    return this.getNumberAttribute('items_per_page');
-  }
-  public set itemsPerPage(value: number) {
-    this._itemsPerPage = value;
-  }
-  public resetItemsPerPage() {
-    this._itemsPerPage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get itemsPerPageInput() {
-    return this._itemsPerPage;
-  }
-
-  // page_num - computed: false, optional: true, required: false
-  private _pageNum?: number; 
-  public get pageNum() {
-    return this.getNumberAttribute('page_num');
-  }
-  public set pageNum(value: number) {
-    this._pageNum = value;
-  }
-  public resetPageNum() {
-    this._pageNum = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pageNumInput() {
-    return this._pageNum;
-  }
-
   // project_id - computed: false, optional: false, required: true
   private _projectId?: string; 
   public get projectId() {
@@ -297,8 +255,6 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
     return {
       id: cdktf.stringToTerraform(this._id),
       instance_name: cdktf.stringToTerraform(this._instanceName),
-      items_per_page: cdktf.numberToTerraform(this._itemsPerPage),
-      page_num: cdktf.numberToTerraform(this._pageNum),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
@@ -316,18 +272,6 @@ export class DataMongodbatlasPrivatelinkEndpointsServiceServerless extends cdktf
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      items_per_page: {
-        value: cdktf.numberToHclTerraform(this._itemsPerPage),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
-      page_num: {
-        value: cdktf.numberToHclTerraform(this._pageNum),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       project_id: {
         value: cdktf.stringToHclTerraform(this._projectId),

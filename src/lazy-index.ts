@@ -84,6 +84,7 @@ Object.defineProperty(exports, 'dataMongodbatlasCloudProviderAccessSetup', { get
 Object.defineProperty(exports, 'dataMongodbatlasCluster', { get: function () { return require('./data-mongodbatlas-cluster'); } });
 Object.defineProperty(exports, 'dataMongodbatlasClusterOutageSimulation', { get: function () { return require('./data-mongodbatlas-cluster-outage-simulation'); } });
 Object.defineProperty(exports, 'dataMongodbatlasClusters', { get: function () { return require('./data-mongodbatlas-clusters'); } });
+Object.defineProperty(exports, 'dataMongodbatlasControlPlaneIpAddresses', { get: function () { return require('./data-mongodbatlas-control-plane-ip-addresses'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCustomDbRole', { get: function () { return require('./data-mongodbatlas-custom-db-role'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCustomDbRoles', { get: function () { return require('./data-mongodbatlas-custom-db-roles'); } });
 Object.defineProperty(exports, 'dataMongodbatlasCustomDnsConfigurationClusterAws', { get: function () { return require('./data-mongodbatlas-custom-dns-configuration-cluster-aws'); } });

@@ -84,6 +84,7 @@ export * as dataMongodbatlasCloudProviderAccessSetup from './data-mongodbatlas-c
 export * as dataMongodbatlasCluster from './data-mongodbatlas-cluster';
 export * as dataMongodbatlasClusterOutageSimulation from './data-mongodbatlas-cluster-outage-simulation';
 export * as dataMongodbatlasClusters from './data-mongodbatlas-clusters';
+export * as dataMongodbatlasControlPlaneIpAddresses from './data-mongodbatlas-control-plane-ip-addresses';
 export * as dataMongodbatlasCustomDbRole from './data-mongodbatlas-custom-db-role';
 export * as dataMongodbatlasCustomDbRoles from './data-mongodbatlas-custom-db-roles';
 export * as dataMongodbatlasCustomDnsConfigurationClusterAws from './data-mongodbatlas-custom-dns-configuration-cluster-aws';

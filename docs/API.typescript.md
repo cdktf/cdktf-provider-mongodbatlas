@@ -47,6 +47,7 @@ The following submodules are available:
 - [dataMongodbatlasCluster](./dataMongodbatlasCluster.typescript.md)
 - [dataMongodbatlasClusterOutageSimulation](./dataMongodbatlasClusterOutageSimulation.typescript.md)
 - [dataMongodbatlasClusters](./dataMongodbatlasClusters.typescript.md)
+- [dataMongodbatlasControlPlaneIpAddresses](./dataMongodbatlasControlPlaneIpAddresses.typescript.md)
 - [dataMongodbatlasCustomDbRole](./dataMongodbatlasCustomDbRole.typescript.md)
 - [dataMongodbatlasCustomDbRoles](./dataMongodbatlasCustomDbRoles.typescript.md)
 - [dataMongodbatlasCustomDnsConfigurationClusterAws](./dataMongodbatlasCustomDnsConfigurationClusterAws.typescript.md)

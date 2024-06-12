@@ -47,6 +47,7 @@ The following submodules are available:
 - [dataMongodbatlasCluster](./dataMongodbatlasCluster.java.md)
 - [dataMongodbatlasClusterOutageSimulation](./dataMongodbatlasClusterOutageSimulation.java.md)
 - [dataMongodbatlasClusters](./dataMongodbatlasClusters.java.md)
+- [dataMongodbatlasControlPlaneIpAddresses](./dataMongodbatlasControlPlaneIpAddresses.java.md)
 - [dataMongodbatlasCustomDbRole](./dataMongodbatlasCustomDbRole.java.md)
 - [dataMongodbatlasCustomDbRoles](./dataMongodbatlasCustomDbRoles.java.md)
 - [dataMongodbatlasCustomDnsConfigurationClusterAws](./dataMongodbatlasCustomDnsConfigurationClusterAws.java.md)
