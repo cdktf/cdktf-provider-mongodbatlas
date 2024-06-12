@@ -47,6 +47,7 @@ The following submodules are available:
 - [dataMongodbatlasCluster](./dataMongodbatlasCluster.csharp.md)
 - [dataMongodbatlasClusterOutageSimulation](./dataMongodbatlasClusterOutageSimulation.csharp.md)
 - [dataMongodbatlasClusters](./dataMongodbatlasClusters.csharp.md)
+- [dataMongodbatlasControlPlaneIpAddresses](./dataMongodbatlasControlPlaneIpAddresses.csharp.md)
 - [dataMongodbatlasCustomDbRole](./dataMongodbatlasCustomDbRole.csharp.md)
 - [dataMongodbatlasCustomDbRoles](./dataMongodbatlasCustomDbRoles.csharp.md)
 - [dataMongodbatlasCustomDnsConfigurationClusterAws](./dataMongodbatlasCustomDnsConfigurationClusterAws.csharp.md)

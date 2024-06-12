@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +8,88 @@ import * as cdktf from 'cdktf';
 
 export interface FederatedSettingsIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#associated_domains FederatedSettingsIdentityProvider#associated_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#associated_domains FederatedSettingsIdentityProvider#associated_domains}
   */
   readonly associatedDomains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#audience_claim FederatedSettingsIdentityProvider#audience_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#audience FederatedSettingsIdentityProvider#audience}
   */
-  readonly audienceClaim?: string[];
+  readonly audience?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#client_id FederatedSettingsIdentityProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#authorization_type FederatedSettingsIdentityProvider#authorization_type}
+  */
+  readonly authorizationType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#client_id FederatedSettingsIdentityProvider#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#federation_settings_id FederatedSettingsIdentityProvider#federation_settings_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#description FederatedSettingsIdentityProvider#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#federation_settings_id FederatedSettingsIdentityProvider#federation_settings_id}
   */
   readonly federationSettingsId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#groups_claim FederatedSettingsIdentityProvider#groups_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#groups_claim FederatedSettingsIdentityProvider#groups_claim}
   */
   readonly groupsClaim?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#id FederatedSettingsIdentityProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#id FederatedSettingsIdentityProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#issuer_uri FederatedSettingsIdentityProvider#issuer_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#idp_type FederatedSettingsIdentityProvider#idp_type}
+  */
+  readonly idpType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#issuer_uri FederatedSettingsIdentityProvider#issuer_uri}
   */
   readonly issuerUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#name FederatedSettingsIdentityProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#name FederatedSettingsIdentityProvider#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#protocol FederatedSettingsIdentityProvider#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#protocol FederatedSettingsIdentityProvider#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#request_binding FederatedSettingsIdentityProvider#request_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#request_binding FederatedSettingsIdentityProvider#request_binding}
   */
   readonly requestBinding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#requested_scopes FederatedSettingsIdentityProvider#requested_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#requested_scopes FederatedSettingsIdentityProvider#requested_scopes}
   */
   readonly requestedScopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#response_signature_algorithm FederatedSettingsIdentityProvider#response_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#response_signature_algorithm FederatedSettingsIdentityProvider#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#sso_debug_enabled FederatedSettingsIdentityProvider#sso_debug_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#sso_debug_enabled FederatedSettingsIdentityProvider#sso_debug_enabled}
   */
   readonly ssoDebugEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#sso_url FederatedSettingsIdentityProvider#sso_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#sso_url FederatedSettingsIdentityProvider#sso_url}
   */
   readonly ssoUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#status FederatedSettingsIdentityProvider#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#status FederatedSettingsIdentityProvider#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#user_claim FederatedSettingsIdentityProvider#user_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#user_claim FederatedSettingsIdentityProvider#user_claim}
   */
   readonly userClaim?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}
 */
 export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
 
@@ -98,7 +105,7 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FederatedSettingsIdentityProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FederatedSettingsIdentityProvider to import
-  * @param importFromId The id of the existing FederatedSettingsIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FederatedSettingsIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FederatedSettingsIdentityProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +117,7 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +128,7 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_federated_settings_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.16.2',
+        providerVersion: '1.17.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -133,11 +140,14 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._associatedDomains = config.associatedDomains;
-    this._audienceClaim = config.audienceClaim;
+    this._audience = config.audience;
+    this._authorizationType = config.authorizationType;
     this._clientId = config.clientId;
+    this._description = config.description;
     this._federationSettingsId = config.federationSettingsId;
     this._groupsClaim = config.groupsClaim;
     this._id = config.id;
+    this._idpType = config.idpType;
     this._issuerUri = config.issuerUri;
     this._name = config.name;
     this._protocol = config.protocol;
@@ -170,20 +180,36 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
     return this._associatedDomains;
   }
 
-  // audience_claim - computed: false, optional: true, required: false
-  private _audienceClaim?: string[]; 
-  public get audienceClaim() {
-    return this.getListAttribute('audience_claim');
+  // audience - computed: false, optional: true, required: false
+  private _audience?: string; 
+  public get audience() {
+    return this.getStringAttribute('audience');
   }
-  public set audienceClaim(value: string[]) {
-    this._audienceClaim = value;
+  public set audience(value: string) {
+    this._audience = value;
   }
-  public resetAudienceClaim() {
-    this._audienceClaim = undefined;
+  public resetAudience() {
+    this._audience = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get audienceClaimInput() {
-    return this._audienceClaim;
+  public get audienceInput() {
+    return this._audience;
+  }
+
+  // authorization_type - computed: false, optional: true, required: false
+  private _authorizationType?: string; 
+  public get authorizationType() {
+    return this.getStringAttribute('authorization_type');
+  }
+  public set authorizationType(value: string) {
+    this._authorizationType = value;
+  }
+  public resetAuthorizationType() {
+    this._authorizationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationTypeInput() {
+    return this._authorizationType;
   }
 
   // client_id - computed: false, optional: true, required: false
@@ -200,6 +226,22 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clientIdInput() {
     return this._clientId;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // federation_settings_id - computed: false, optional: false, required: true
@@ -250,6 +292,22 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
   // idp_id - computed: true, optional: false, required: false
   public get idpId() {
     return this.getStringAttribute('idp_id');
+  }
+
+  // idp_type - computed: true, optional: true, required: false
+  private _idpType?: string; 
+  public get idpType() {
+    return this.getStringAttribute('idp_type');
+  }
+  public set idpType(value: string) {
+    this._idpType = value;
+  }
+  public resetIdpType() {
+    this._idpType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idpTypeInput() {
+    return this._idpType;
   }
 
   // issuer_uri - computed: false, optional: false, required: true
@@ -418,11 +476,14 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       associated_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._associatedDomains),
-      audience_claim: cdktf.listMapper(cdktf.stringToTerraform, false)(this._audienceClaim),
+      audience: cdktf.stringToTerraform(this._audience),
+      authorization_type: cdktf.stringToTerraform(this._authorizationType),
       client_id: cdktf.stringToTerraform(this._clientId),
+      description: cdktf.stringToTerraform(this._description),
       federation_settings_id: cdktf.stringToTerraform(this._federationSettingsId),
       groups_claim: cdktf.stringToTerraform(this._groupsClaim),
       id: cdktf.stringToTerraform(this._id),
+      idp_type: cdktf.stringToTerraform(this._idpType),
       issuer_uri: cdktf.stringToTerraform(this._issuerUri),
       name: cdktf.stringToTerraform(this._name),
       protocol: cdktf.stringToTerraform(this._protocol),
@@ -444,14 +505,26 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "stringList",
       },
-      audience_claim: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._audienceClaim),
+      audience: {
+        value: cdktf.stringToHclTerraform(this._audience),
         isBlock: false,
-        type: "list",
-        storageClassType: "stringList",
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorization_type: {
+        value: cdktf.stringToHclTerraform(this._authorizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       client_id: {
         value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -470,6 +543,12 @@ export class FederatedSettingsIdentityProvider extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_type: {
+        value: cdktf.stringToHclTerraform(this._idpType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
