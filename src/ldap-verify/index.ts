@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface LdapVerifyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#authz_query_template LdapVerify#authz_query_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#authz_query_template LdapVerify#authz_query_template}
   */
   readonly authzQueryTemplate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#bind_password LdapVerify#bind_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#bind_password LdapVerify#bind_password}
   */
   readonly bindPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#bind_username LdapVerify#bind_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#bind_username LdapVerify#bind_username}
   */
   readonly bindUsername: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#ca_certificate LdapVerify#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#ca_certificate LdapVerify#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#hostname LdapVerify#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#hostname LdapVerify#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#id LdapVerify#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#id LdapVerify#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#port LdapVerify#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#port LdapVerify#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#project_id LdapVerify#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#project_id LdapVerify#project_id}
   */
   readonly projectId: string;
 }
@@ -210,7 +205,7 @@ export class LdapVerifyValidationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify mongodbatlas_ldap_verify}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify mongodbatlas_ldap_verify}
 */
 export class LdapVerify extends cdktf.TerraformResource {
 
@@ -226,7 +221,7 @@ export class LdapVerify extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LdapVerify resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LdapVerify to import
-  * @param importFromId The id of the existing LdapVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LdapVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LdapVerify to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -238,7 +233,7 @@ export class LdapVerify extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +244,7 @@ export class LdapVerify extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_ldap_verify',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.1',
+        providerVersion: '1.17.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

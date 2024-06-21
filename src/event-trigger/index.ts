@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +8,98 @@ import * as cdktf from 'cdktf';
 
 export interface EventTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#app_id EventTrigger#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#app_id EventTrigger#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_collection EventTrigger#config_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_collection EventTrigger#config_collection}
   */
   readonly configCollection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_database EventTrigger#config_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_database EventTrigger#config_database}
   */
   readonly configDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_full_document EventTrigger#config_full_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_full_document EventTrigger#config_full_document}
   */
   readonly configFullDocument?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_full_document_before EventTrigger#config_full_document_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_full_document_before EventTrigger#config_full_document_before}
   */
   readonly configFullDocumentBefore?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_match EventTrigger#config_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_match EventTrigger#config_match}
   */
   readonly configMatch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_operation_type EventTrigger#config_operation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_operation_type EventTrigger#config_operation_type}
   */
   readonly configOperationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_operation_types EventTrigger#config_operation_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_operation_types EventTrigger#config_operation_types}
   */
   readonly configOperationTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_project EventTrigger#config_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_project EventTrigger#config_project}
   */
   readonly configProject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_providers EventTrigger#config_providers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_providers EventTrigger#config_providers}
   */
   readonly configProviders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_schedule EventTrigger#config_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_schedule EventTrigger#config_schedule}
   */
   readonly configSchedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_service_id EventTrigger#config_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_service_id EventTrigger#config_service_id}
   */
   readonly configServiceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#disabled EventTrigger#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#disabled EventTrigger#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#function_id EventTrigger#function_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#function_id EventTrigger#function_id}
   */
   readonly functionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#id EventTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#id EventTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#name EventTrigger#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#name EventTrigger#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#project_id EventTrigger#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#project_id EventTrigger#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#type EventTrigger#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#type EventTrigger#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#unordered EventTrigger#unordered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#unordered EventTrigger#unordered}
   */
   readonly unordered?: boolean | cdktf.IResolvable;
   /**
   * event_processors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#event_processors EventTrigger#event_processors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#event_processors EventTrigger#event_processors}
   */
   readonly eventProcessors?: EventTriggerEventProcessors;
 }
 export interface EventTriggerEventProcessorsAwsEventbridge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_account_id EventTrigger#config_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_account_id EventTrigger#config_account_id}
   */
   readonly configAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#config_region EventTrigger#config_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#config_region EventTrigger#config_region}
   */
   readonly configRegion?: string;
 }
@@ -219,7 +214,7 @@ export interface EventTriggerEventProcessors {
   /**
   * aws_eventbridge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#aws_eventbridge EventTrigger#aws_eventbridge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#aws_eventbridge EventTrigger#aws_eventbridge}
   */
   readonly awsEventbridge?: EventTriggerEventProcessorsAwsEventbridge;
 }
@@ -303,7 +298,7 @@ export class EventTriggerEventProcessorsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger mongodbatlas_event_trigger}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger mongodbatlas_event_trigger}
 */
 export class EventTrigger extends cdktf.TerraformResource {
 
@@ -319,7 +314,7 @@ export class EventTrigger extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventTrigger resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventTrigger to import
-  * @param importFromId The id of the existing EventTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventTrigger to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -331,7 +326,7 @@ export class EventTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/event_trigger mongodbatlas_event_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/resources/event_trigger mongodbatlas_event_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -342,7 +337,7 @@ export class EventTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_event_trigger',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.1',
+        providerVersion: '1.17.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
