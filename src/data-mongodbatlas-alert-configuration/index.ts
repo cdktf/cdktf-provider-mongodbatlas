@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAlertConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration#alert_configuration_id DataMongodbatlasAlertConfiguration#alert_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration#alert_configuration_id DataMongodbatlasAlertConfiguration#alert_configuration_id}
   */
   readonly alertConfigurationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration#project_id DataMongodbatlasAlertConfiguration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration#project_id DataMongodbatlasAlertConfiguration#project_id}
   */
   readonly projectId: string;
   /**
   * output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration#output DataMongodbatlasAlertConfiguration#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration#output DataMongodbatlasAlertConfiguration#output}
   */
   readonly output?: DataMongodbatlasAlertConfigurationOutput[] | cdktf.IResolvable;
 }
@@ -489,11 +489,11 @@ export class DataMongodbatlasAlertConfigurationThresholdConfigList extends cdktf
 }
 export interface DataMongodbatlasAlertConfigurationOutput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration#label DataMongodbatlasAlertConfiguration#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration#label DataMongodbatlasAlertConfiguration#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration#type DataMongodbatlasAlertConfiguration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration#type DataMongodbatlasAlertConfiguration#type}
   */
   readonly type: string;
 }
@@ -640,7 +640,7 @@ export class DataMongodbatlasAlertConfigurationOutputList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration mongodbatlas_alert_configuration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration mongodbatlas_alert_configuration}
 */
 export class DataMongodbatlasAlertConfiguration extends cdktf.TerraformDataSource {
 
@@ -656,7 +656,7 @@ export class DataMongodbatlasAlertConfiguration extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataMongodbatlasAlertConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasAlertConfiguration to import
-  * @param importFromId The id of the existing DataMongodbatlasAlertConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasAlertConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasAlertConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -668,7 +668,7 @@ export class DataMongodbatlasAlertConfiguration extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -679,7 +679,7 @@ export class DataMongodbatlasAlertConfiguration extends cdktf.TerraformDataSourc
       terraformResourceType: 'mongodbatlas_alert_configuration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.2',
+        providerVersion: '1.17.3',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
