@@ -4,12 +4,12 @@
 
 ### DataMongodbatlasFederatedQueryLimits <a name="DataMongodbatlasFederatedQueryLimits" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimits"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.NewDataMongodbatlasFederatedQueryLimits(scope Construct, id *string, config DataMongodbatlasFederatedQueryLimitsConfig) DataMongodbatlasFederatedQueryLimits
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimits.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimits_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimits.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimits_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimits_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimits.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimits_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimits_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimits.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimits_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataMongodbatlasFederatedQ
 
 The id of the existing DataMongodbatlasFederatedQueryLimits that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 &datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimitsConfig {
 	Connection: interface{},
@@ -654,9 +654,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#project_id DataMongodbatlasFederatedQueryLimits#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.tenantName">TenantName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#tenant_name DataMongodbatlasFederatedQueryLimits#tenant_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#id DataMongodbatlasFederatedQueryLimits#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#project_id DataMongodbatlasFederatedQueryLimits#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.tenantName">TenantName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#tenant_name DataMongodbatlasFederatedQueryLimits#tenant_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#id DataMongodbatlasFederatedQueryLimits#id}. |
 
 ---
 
@@ -738,7 +738,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#project_id DataMongodbatlasFederatedQueryLimits#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#project_id DataMongodbatlasFederatedQueryLimits#project_id}.
 
 ---
 
@@ -750,7 +750,7 @@ TenantName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#tenant_name DataMongodbatlasFederatedQueryLimits#tenant_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#tenant_name DataMongodbatlasFederatedQueryLimits#tenant_name}.
 
 ---
 
@@ -762,7 +762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.2/docs/data-sources/federated_query_limits#id DataMongodbatlasFederatedQueryLimits#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_query_limits#id DataMongodbatlasFederatedQueryLimits#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 &datamongodbatlasfederatedquerylimits.DataMongodbatlasFederatedQueryLimitsResults {
 
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.NewDataMongodbatlasFederatedQueryLimitsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFederatedQueryLimitsResultsList
 ```
@@ -938,7 +938,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedQueryLimits.DataMongodbatlasFederatedQueryLimitsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasfederatedquerylimits"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedquerylimits"
 
 datamongodbatlasfederatedquerylimits.NewDataMongodbatlasFederatedQueryLimitsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedQueryLimitsResultsOutputReference
 ```
