@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasSearchIndexConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#analyzer DataMongodbatlasSearchIndex#analyzer}
-  */
-  readonly analyzer?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#analyzers DataMongodbatlasSearchIndex#analyzers}
-  */
-  readonly analyzers?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#cluster_name DataMongodbatlasSearchIndex#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index#cluster_name DataMongodbatlasSearchIndex#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#collection_name DataMongodbatlasSearchIndex#collection_name}
-  */
-  readonly collectionName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#database DataMongodbatlasSearchIndex#database}
-  */
-  readonly database?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#fields DataMongodbatlasSearchIndex#fields}
-  */
-  readonly fields?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#id DataMongodbatlasSearchIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index#id DataMongodbatlasSearchIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#index_id DataMongodbatlasSearchIndex#index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index#index_id DataMongodbatlasSearchIndex#index_id}
   */
   readonly indexId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#mappings_dynamic DataMongodbatlasSearchIndex#mappings_dynamic}
-  */
-  readonly mappingsDynamic?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#mappings_fields DataMongodbatlasSearchIndex#mappings_fields}
-  */
-  readonly mappingsFields?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#name DataMongodbatlasSearchIndex#name}
-  */
-  readonly name?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#project_id DataMongodbatlasSearchIndex#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index#project_id DataMongodbatlasSearchIndex#project_id}
   */
   readonly projectId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#search_analyzer DataMongodbatlasSearchIndex#search_analyzer}
-  */
-  readonly searchAnalyzer?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#type DataMongodbatlasSearchIndex#type}
-  */
-  readonly type?: string;
 }
 export interface DataMongodbatlasSearchIndexSynonyms {
 }
@@ -159,7 +119,7 @@ export class DataMongodbatlasSearchIndexSynonymsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index mongodbatlas_search_index}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index mongodbatlas_search_index}
 */
 export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
 
@@ -175,7 +135,7 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasSearchIndex resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasSearchIndex to import
-  * @param importFromId The id of the existing DataMongodbatlasSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasSearchIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -187,7 +147,7 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index mongodbatlas_search_index} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index mongodbatlas_search_index} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +158,7 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_search_index',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.3',
+        providerVersion: '1.17.4',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -209,56 +169,24 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._analyzer = config.analyzer;
-    this._analyzers = config.analyzers;
     this._clusterName = config.clusterName;
-    this._collectionName = config.collectionName;
-    this._database = config.database;
-    this._fields = config.fields;
     this._id = config.id;
     this._indexId = config.indexId;
-    this._mappingsDynamic = config.mappingsDynamic;
-    this._mappingsFields = config.mappingsFields;
-    this._name = config.name;
     this._projectId = config.projectId;
-    this._searchAnalyzer = config.searchAnalyzer;
-    this._type = config.type;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // analyzer - computed: false, optional: true, required: false
-  private _analyzer?: string; 
+  // analyzer - computed: true, optional: false, required: false
   public get analyzer() {
     return this.getStringAttribute('analyzer');
   }
-  public set analyzer(value: string) {
-    this._analyzer = value;
-  }
-  public resetAnalyzer() {
-    this._analyzer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get analyzerInput() {
-    return this._analyzer;
-  }
 
-  // analyzers - computed: false, optional: true, required: false
-  private _analyzers?: string; 
+  // analyzers - computed: true, optional: false, required: false
   public get analyzers() {
     return this.getStringAttribute('analyzers');
-  }
-  public set analyzers(value: string) {
-    this._analyzers = value;
-  }
-  public resetAnalyzers() {
-    this._analyzers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get analyzersInput() {
-    return this._analyzers;
   }
 
   // cluster_name - computed: false, optional: false, required: true
@@ -274,52 +202,19 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
     return this._clusterName;
   }
 
-  // collection_name - computed: false, optional: true, required: false
-  private _collectionName?: string; 
+  // collection_name - computed: true, optional: false, required: false
   public get collectionName() {
     return this.getStringAttribute('collection_name');
   }
-  public set collectionName(value: string) {
-    this._collectionName = value;
-  }
-  public resetCollectionName() {
-    this._collectionName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get collectionNameInput() {
-    return this._collectionName;
-  }
 
-  // database - computed: false, optional: true, required: false
-  private _database?: string; 
+  // database - computed: true, optional: false, required: false
   public get database() {
     return this.getStringAttribute('database');
   }
-  public set database(value: string) {
-    this._database = value;
-  }
-  public resetDatabase() {
-    this._database = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInput() {
-    return this._database;
-  }
 
-  // fields - computed: false, optional: true, required: false
-  private _fields?: string; 
+  // fields - computed: true, optional: false, required: false
   public get fields() {
     return this.getStringAttribute('fields');
-  }
-  public set fields(value: string) {
-    this._fields = value;
-  }
-  public resetFields() {
-    this._fields = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fieldsInput() {
-    return this._fields;
   }
 
   // id - computed: true, optional: true, required: false
@@ -351,52 +246,19 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
     return this._indexId;
   }
 
-  // mappings_dynamic - computed: false, optional: true, required: false
-  private _mappingsDynamic?: boolean | cdktf.IResolvable; 
+  // mappings_dynamic - computed: true, optional: false, required: false
   public get mappingsDynamic() {
     return this.getBooleanAttribute('mappings_dynamic');
   }
-  public set mappingsDynamic(value: boolean | cdktf.IResolvable) {
-    this._mappingsDynamic = value;
-  }
-  public resetMappingsDynamic() {
-    this._mappingsDynamic = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mappingsDynamicInput() {
-    return this._mappingsDynamic;
-  }
 
-  // mappings_fields - computed: false, optional: true, required: false
-  private _mappingsFields?: string; 
+  // mappings_fields - computed: true, optional: false, required: false
   public get mappingsFields() {
     return this.getStringAttribute('mappings_fields');
   }
-  public set mappingsFields(value: string) {
-    this._mappingsFields = value;
-  }
-  public resetMappingsFields() {
-    this._mappingsFields = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mappingsFieldsInput() {
-    return this._mappingsFields;
-  }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -412,25 +274,19 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
     return this._projectId;
   }
 
-  // search_analyzer - computed: false, optional: true, required: false
-  private _searchAnalyzer?: string; 
+  // search_analyzer - computed: true, optional: false, required: false
   public get searchAnalyzer() {
     return this.getStringAttribute('search_analyzer');
-  }
-  public set searchAnalyzer(value: string) {
-    this._searchAnalyzer = value;
-  }
-  public resetSearchAnalyzer() {
-    this._searchAnalyzer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get searchAnalyzerInput() {
-    return this._searchAnalyzer;
   }
 
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // stored_source - computed: true, optional: false, required: false
+  public get storedSource() {
+    return this.getStringAttribute('stored_source');
   }
 
   // synonyms - computed: true, optional: false, required: false
@@ -439,20 +295,9 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
     return this._synonyms;
   }
 
-  // type - computed: false, optional: true, required: false
-  private _type?: string; 
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
-  }
-  public set type(value: string) {
-    this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
   }
 
   // =========
@@ -461,57 +306,17 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analyzer: cdktf.stringToTerraform(this._analyzer),
-      analyzers: cdktf.stringToTerraform(this._analyzers),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
-      collection_name: cdktf.stringToTerraform(this._collectionName),
-      database: cdktf.stringToTerraform(this._database),
-      fields: cdktf.stringToTerraform(this._fields),
       id: cdktf.stringToTerraform(this._id),
       index_id: cdktf.stringToTerraform(this._indexId),
-      mappings_dynamic: cdktf.booleanToTerraform(this._mappingsDynamic),
-      mappings_fields: cdktf.stringToTerraform(this._mappingsFields),
-      name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
-      search_analyzer: cdktf.stringToTerraform(this._searchAnalyzer),
-      type: cdktf.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      analyzer: {
-        value: cdktf.stringToHclTerraform(this._analyzer),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      analyzers: {
-        value: cdktf.stringToHclTerraform(this._analyzers),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       cluster_name: {
         value: cdktf.stringToHclTerraform(this._clusterName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      collection_name: {
-        value: cdktf.stringToHclTerraform(this._collectionName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      database: {
-        value: cdktf.stringToHclTerraform(this._database),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      fields: {
-        value: cdktf.stringToHclTerraform(this._fields),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -528,38 +333,8 @@ export class DataMongodbatlasSearchIndex extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      mappings_dynamic: {
-        value: cdktf.booleanToHclTerraform(this._mappingsDynamic),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      mappings_fields: {
-        value: cdktf.stringToHclTerraform(this._mappingsFields),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      name: {
-        value: cdktf.stringToHclTerraform(this._name),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       project_id: {
         value: cdktf.stringToHclTerraform(this._projectId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      search_analyzer: {
-        value: cdktf.stringToHclTerraform(this._searchAnalyzer),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      type: {
-        value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
