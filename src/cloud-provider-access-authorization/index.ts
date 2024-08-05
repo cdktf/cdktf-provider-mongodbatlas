@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/cloud_provider_access_authorization
 // generated from terraform resource schema
 
