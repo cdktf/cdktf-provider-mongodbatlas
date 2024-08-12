@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/private_endpoint_regional_mode
 // generated from terraform resource schema
 
