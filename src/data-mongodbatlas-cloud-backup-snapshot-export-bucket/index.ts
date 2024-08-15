@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasCloudBackupSnapshotExportBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#export_bucket_id DataMongodbatlasCloudBackupSnapshotExportBucket#export_bucket_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#export_bucket_id DataMongodbatlasCloudBackupSnapshotExportBucket#export_bucket_id}
   */
   readonly exportBucketId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#id DataMongodbatlasCloudBackupSnapshotExportBucket#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#project_id DataMongodbatlasCloudBackupSnapshotExportBucket#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#project_id DataMongodbatlasCloudBackupSnapshotExportBucket#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}
 */
 export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.TerraformDataSource {
 
@@ -46,7 +34,7 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
   * Generates CDKTF code for importing a DataMongodbatlasCloudBackupSnapshotExportBucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasCloudBackupSnapshotExportBucket to import
-  * @param importFromId The id of the existing DataMongodbatlasCloudBackupSnapshotExportBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasCloudBackupSnapshotExportBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasCloudBackupSnapshotExportBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +46,7 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +57,7 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
       terraformResourceType: 'mongodbatlas_cloud_backup_snapshot_export_bucket',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.6',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -81,7 +69,6 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
       forEach: config.forEach
     });
     this._exportBucketId = config.exportBucketId;
-    this._id = config.id;
     this._projectId = config.projectId;
   }
 
@@ -117,20 +104,9 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
     return this.getStringAttribute('iam_role_id');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -146,6 +122,21 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
     return this._projectId;
   }
 
+  // role_id - computed: true, optional: false, required: false
+  public get roleId() {
+    return this.getStringAttribute('role_id');
+  }
+
+  // service_url - computed: true, optional: false, required: false
+  public get serviceUrl() {
+    return this.getStringAttribute('service_url');
+  }
+
+  // tenant_id - computed: true, optional: false, required: false
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -153,7 +144,6 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       export_bucket_id: cdktf.stringToTerraform(this._exportBucketId),
-      id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
@@ -162,12 +152,6 @@ export class DataMongodbatlasCloudBackupSnapshotExportBucket extends cdktf.Terra
     const attrs = {
       export_bucket_id: {
         value: cdktf.stringToHclTerraform(this._exportBucketId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

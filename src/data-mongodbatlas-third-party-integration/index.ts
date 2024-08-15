@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasThirdPartyIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#enabled DataMongodbatlasThirdPartyIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#enabled DataMongodbatlasThirdPartyIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#microsoft_teams_webhook_url DataMongodbatlasThirdPartyIntegration#microsoft_teams_webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#microsoft_teams_webhook_url DataMongodbatlasThirdPartyIntegration#microsoft_teams_webhook_url}
   */
   readonly microsoftTeamsWebhookUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#project_id DataMongodbatlasThirdPartyIntegration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#project_id DataMongodbatlasThirdPartyIntegration#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#scheme DataMongodbatlasThirdPartyIntegration#scheme}
-  */
-  readonly scheme?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#service_discovery DataMongodbatlasThirdPartyIntegration#service_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#service_discovery DataMongodbatlasThirdPartyIntegration#service_discovery}
   */
   readonly serviceDiscovery?: string;
   /**
   * Third-party service integration identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#type DataMongodbatlasThirdPartyIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#type DataMongodbatlasThirdPartyIntegration#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#user_name DataMongodbatlasThirdPartyIntegration#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#user_name DataMongodbatlasThirdPartyIntegration#user_name}
   */
   readonly userName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}
 */
 export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSource {
 
@@ -61,7 +52,7 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataMongodbatlasThirdPartyIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasThirdPartyIntegration to import
-  * @param importFromId The id of the existing DataMongodbatlasThirdPartyIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasThirdPartyIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasThirdPartyIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +64,7 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +75,7 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
       terraformResourceType: 'mongodbatlas_third_party_integration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.6',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -98,7 +89,6 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
     this._enabled = config.enabled;
     this._microsoftTeamsWebhookUrl = config.microsoftTeamsWebhookUrl;
     this._projectId = config.projectId;
-    this._scheme = config.scheme;
     this._serviceDiscovery = config.serviceDiscovery;
     this._type = config.type;
     this._userName = config.userName;
@@ -183,22 +173,6 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
     return this.getStringAttribute('routing_key');
   }
 
-  // scheme - computed: false, optional: true, required: false
-  private _scheme?: string; 
-  public get scheme() {
-    return this.getStringAttribute('scheme');
-  }
-  public set scheme(value: string) {
-    this._scheme = value;
-  }
-  public resetScheme() {
-    this._scheme = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemeInput() {
-    return this._scheme;
-  }
-
   // secret - computed: true, optional: false, required: false
   public get secret() {
     return this.getStringAttribute('secret');
@@ -273,7 +247,6 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
       enabled: cdktf.booleanToTerraform(this._enabled),
       microsoft_teams_webhook_url: cdktf.stringToTerraform(this._microsoftTeamsWebhookUrl),
       project_id: cdktf.stringToTerraform(this._projectId),
-      scheme: cdktf.stringToTerraform(this._scheme),
       service_discovery: cdktf.stringToTerraform(this._serviceDiscovery),
       type: cdktf.stringToTerraform(this._type),
       user_name: cdktf.stringToTerraform(this._userName),
@@ -296,12 +269,6 @@ export class DataMongodbatlasThirdPartyIntegration extends cdktf.TerraformDataSo
       },
       project_id: {
         value: cdktf.stringToHclTerraform(this._projectId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      scheme: {
-        value: cdktf.stringToHclTerraform(this._scheme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

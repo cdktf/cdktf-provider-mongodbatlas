@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAdvancedClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster#id DataMongodbatlasAdvancedCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster#id DataMongodbatlasAdvancedCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster#name DataMongodbatlasAdvancedCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster#name DataMongodbatlasAdvancedCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster#pit_enabled DataMongodbatlasAdvancedCluster#pit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster#pit_enabled DataMongodbatlasAdvancedCluster#pit_enabled}
   */
   readonly pitEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster#project_id DataMongodbatlasAdvancedCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster#project_id DataMongodbatlasAdvancedCluster#project_id}
   */
   readonly projectId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster#use_replication_spec_per_shard DataMongodbatlasAdvancedCluster#use_replication_spec_per_shard}
+  */
+  readonly useReplicationSpecPerShard?: boolean | cdktf.IResolvable;
 }
 export interface DataMongodbatlasAdvancedClusterAdvancedConfiguration {
 }
@@ -745,6 +744,11 @@ export class DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsAnalyti
     return this.getNumberAttribute('disk_iops');
   }
 
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
+  }
+
   // ebs_volume_type - computed: true, optional: false, required: false
   public get ebsVolumeType() {
     return this.getStringAttribute('ebs_volume_type');
@@ -930,6 +934,11 @@ export class DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsElectab
     return this.getNumberAttribute('disk_iops');
   }
 
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
+  }
+
   // ebs_volume_type - computed: true, optional: false, required: false
   public get ebsVolumeType() {
     return this.getStringAttribute('ebs_volume_type');
@@ -1018,6 +1027,11 @@ export class DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsReadOnl
   // disk_iops - computed: true, optional: false, required: false
   public get diskIops() {
     return this.getNumberAttribute('disk_iops');
+  }
+
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
   }
 
   // ebs_volume_type - computed: true, optional: false, required: false
@@ -1231,6 +1245,11 @@ export class DataMongodbatlasAdvancedClusterReplicationSpecsOutputReference exte
     return this._containerId;
   }
 
+  // external_id - computed: true, optional: false, required: false
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -1245,6 +1264,11 @@ export class DataMongodbatlasAdvancedClusterReplicationSpecsOutputReference exte
   private _regionConfigs = new DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsList(this, "region_configs", false);
   public get regionConfigs() {
     return this._regionConfigs;
+  }
+
+  // zone_id - computed: true, optional: false, required: false
+  public get zoneId() {
+    return this.getStringAttribute('zone_id');
   }
 
   // zone_name - computed: true, optional: false, required: false
@@ -1353,7 +1377,7 @@ export class DataMongodbatlasAdvancedClusterTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster}
 */
 export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
 
@@ -1369,7 +1393,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasAdvancedCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasAdvancedCluster to import
-  * @param importFromId The id of the existing DataMongodbatlasAdvancedCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasAdvancedCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasAdvancedCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1381,7 +1405,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1392,7 +1416,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_advanced_cluster',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.6',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1407,6 +1431,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
     this._name = config.name;
     this._pitEnabled = config.pitEnabled;
     this._projectId = config.projectId;
+    this._useReplicationSpecPerShard = config.useReplicationSpecPerShard;
   }
 
   // ==========
@@ -1567,6 +1592,22 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('termination_protection_enabled');
   }
 
+  // use_replication_spec_per_shard - computed: false, optional: true, required: false
+  private _useReplicationSpecPerShard?: boolean | cdktf.IResolvable; 
+  public get useReplicationSpecPerShard() {
+    return this.getBooleanAttribute('use_replication_spec_per_shard');
+  }
+  public set useReplicationSpecPerShard(value: boolean | cdktf.IResolvable) {
+    this._useReplicationSpecPerShard = value;
+  }
+  public resetUseReplicationSpecPerShard() {
+    this._useReplicationSpecPerShard = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useReplicationSpecPerShardInput() {
+    return this._useReplicationSpecPerShard;
+  }
+
   // version_release_system - computed: true, optional: false, required: false
   public get versionReleaseSystem() {
     return this.getStringAttribute('version_release_system');
@@ -1582,6 +1623,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       pit_enabled: cdktf.booleanToTerraform(this._pitEnabled),
       project_id: cdktf.stringToTerraform(this._projectId),
+      use_replication_spec_per_shard: cdktf.booleanToTerraform(this._useReplicationSpecPerShard),
     };
   }
 
@@ -1610,6 +1652,12 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      use_replication_spec_per_shard: {
+        value: cdktf.booleanToHclTerraform(this._useReplicationSpecPerShard),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 
