@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,16 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAdvancedClustersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters#id DataMongodbatlasAdvancedClusters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters#id DataMongodbatlasAdvancedClusters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters#project_id DataMongodbatlasAdvancedClusters#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters#project_id DataMongodbatlasAdvancedClusters#project_id}
   */
   readonly projectId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters#use_replication_spec_per_shard DataMongodbatlasAdvancedClusters#use_replication_spec_per_shard}
+  */
+  readonly useReplicationSpecPerShard?: boolean | cdktf.IResolvable;
 }
 export interface DataMongodbatlasAdvancedClustersResultsAdvancedConfiguration {
 }
@@ -737,6 +741,11 @@ export class DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfig
     return this.getNumberAttribute('disk_iops');
   }
 
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
+  }
+
   // ebs_volume_type - computed: true, optional: false, required: false
   public get ebsVolumeType() {
     return this.getStringAttribute('ebs_volume_type');
@@ -922,6 +931,11 @@ export class DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfig
     return this.getNumberAttribute('disk_iops');
   }
 
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
+  }
+
   // ebs_volume_type - computed: true, optional: false, required: false
   public get ebsVolumeType() {
     return this.getStringAttribute('ebs_volume_type');
@@ -1010,6 +1024,11 @@ export class DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfig
   // disk_iops - computed: true, optional: false, required: false
   public get diskIops() {
     return this.getNumberAttribute('disk_iops');
+  }
+
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
   }
 
   // ebs_volume_type - computed: true, optional: false, required: false
@@ -1223,6 +1242,11 @@ export class DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputRefere
     return this._containerId;
   }
 
+  // external_id - computed: true, optional: false, required: false
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -1237,6 +1261,11 @@ export class DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputRefere
   private _regionConfigs = new DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfigsList(this, "region_configs", false);
   public get regionConfigs() {
     return this._regionConfigs;
+  }
+
+  // zone_id - computed: true, optional: false, required: false
+  public get zoneId() {
+    return this.getStringAttribute('zone_id');
   }
 
   // zone_name - computed: true, optional: false, required: false
@@ -1526,7 +1555,7 @@ export class DataMongodbatlasAdvancedClustersResultsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters}
 */
 export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource {
 
@@ -1542,7 +1571,7 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataMongodbatlasAdvancedClusters resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasAdvancedClusters to import
-  * @param importFromId The id of the existing DataMongodbatlasAdvancedClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasAdvancedClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasAdvancedClusters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1554,7 +1583,7 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1565,7 +1594,7 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
       terraformResourceType: 'mongodbatlas_advanced_clusters',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.6',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1578,6 +1607,7 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
     });
     this._id = config.id;
     this._projectId = config.projectId;
+    this._useReplicationSpecPerShard = config.useReplicationSpecPerShard;
   }
 
   // ==========
@@ -1619,6 +1649,22 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
     return this._results;
   }
 
+  // use_replication_spec_per_shard - computed: false, optional: true, required: false
+  private _useReplicationSpecPerShard?: boolean | cdktf.IResolvable; 
+  public get useReplicationSpecPerShard() {
+    return this.getBooleanAttribute('use_replication_spec_per_shard');
+  }
+  public set useReplicationSpecPerShard(value: boolean | cdktf.IResolvable) {
+    this._useReplicationSpecPerShard = value;
+  }
+  public resetUseReplicationSpecPerShard() {
+    this._useReplicationSpecPerShard = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useReplicationSpecPerShardInput() {
+    return this._useReplicationSpecPerShard;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1627,6 +1673,7 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
     return {
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
+      use_replication_spec_per_shard: cdktf.booleanToTerraform(this._useReplicationSpecPerShard),
     };
   }
 
@@ -1643,6 +1690,12 @@ export class DataMongodbatlasAdvancedClusters extends cdktf.TerraformDataSource 
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      use_replication_spec_per_shard: {
+        value: cdktf.booleanToHclTerraform(this._useReplicationSpecPerShard),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 

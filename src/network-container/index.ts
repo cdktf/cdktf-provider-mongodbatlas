@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkContainerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#atlas_cidr_block NetworkContainer#atlas_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#atlas_cidr_block NetworkContainer#atlas_cidr_block}
   */
   readonly atlasCidrBlock: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#id NetworkContainer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#id NetworkContainer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#project_id NetworkContainer#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#project_id NetworkContainer#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#provider_name NetworkContainer#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#provider_name NetworkContainer#provider_name}
   */
   readonly providerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#region NetworkContainer#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#region NetworkContainer#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#region_name NetworkContainer#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#region_name NetworkContainer#region_name}
   */
   readonly regionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#regions NetworkContainer#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#regions NetworkContainer#regions}
   */
   readonly regions?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container mongodbatlas_network_container}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container mongodbatlas_network_container}
 */
 export class NetworkContainer extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class NetworkContainer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkContainer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkContainer to import
-  * @param importFromId The id of the existing NetworkContainer that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkContainer that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkContainer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class NetworkContainer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/network_container mongodbatlas_network_container} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/network_container mongodbatlas_network_container} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class NetworkContainer extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_network_container',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.17.6',
+        providerVersion: '1.18.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

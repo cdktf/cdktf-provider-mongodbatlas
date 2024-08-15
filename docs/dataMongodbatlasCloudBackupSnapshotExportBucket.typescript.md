@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasCloudBackupSnapshotExportBucket <a name="DataMongodbatlasCloudBackupSnapshotExportBucket" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasCloudBacku
 
 The id of the existing DataMongodbatlasCloudBackupSnapshotExportBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -403,11 +396,13 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.cloudProvider">cloudProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.iamRoleId">iamRoleId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.roleId">roleId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.serviceUrl">serviceUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.exportBucketIdInput">exportBucketIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.exportBucketId">exportBucketId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -564,20 +559,50 @@ public readonly iamRoleId: string;
 
 ---
 
-##### `exportBucketIdInput`<sup>Optional</sup> <a name="exportBucketIdInput" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.exportBucketIdInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.id"></a>
 
 ```typescript
-public readonly exportBucketIdInput: string;
+public readonly id: string;
 ```
 
 - *Type:* string
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.idInput"></a>
+##### `roleId`<sup>Required</sup> <a name="roleId" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.roleId"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly roleId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceUrl`<sup>Required</sup> <a name="serviceUrl" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.serviceUrl"></a>
+
+```typescript
+public readonly serviceUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="tenantId" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.tenantId"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `exportBucketIdInput`<sup>Optional</sup> <a name="exportBucketIdInput" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.exportBucketIdInput"></a>
+
+```typescript
+public readonly exportBucketIdInput: string;
 ```
 
 - *Type:* string
@@ -598,16 +623,6 @@ public readonly projectIdInput: string;
 
 ```typescript
 public readonly exportBucketId: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucket.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -665,9 +680,8 @@ const dataMongodbatlasCloudBackupSnapshotExportBucketConfig: dataMongodbatlasClo
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.exportBucketId">exportBucketId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#export_bucket_id DataMongodbatlasCloudBackupSnapshotExportBucket#export_bucket_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#project_id DataMongodbatlasCloudBackupSnapshotExportBucket#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#id DataMongodbatlasCloudBackupSnapshotExportBucket#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.exportBucketId">exportBucketId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#export_bucket_id DataMongodbatlasCloudBackupSnapshotExportBucket#export_bucket_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#project_id DataMongodbatlasCloudBackupSnapshotExportBucket#project_id}. |
 
 ---
 
@@ -749,7 +763,7 @@ public readonly exportBucketId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#export_bucket_id DataMongodbatlasCloudBackupSnapshotExportBucket#export_bucket_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#export_bucket_id DataMongodbatlasCloudBackupSnapshotExportBucket#export_bucket_id}.
 
 ---
 
@@ -761,22 +775,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#project_id DataMongodbatlasCloudBackupSnapshotExportBucket#project_id}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-mongodbatlas.dataMongodbatlasCloudBackupSnapshotExportBucket.DataMongodbatlasCloudBackupSnapshotExportBucketConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_snapshot_export_bucket#id DataMongodbatlasCloudBackupSnapshotExportBucket#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_snapshot_export_bucket#project_id DataMongodbatlasCloudBackupSnapshotExportBucket#project_id}.
 
 ---
 
