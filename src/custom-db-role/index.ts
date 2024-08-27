@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface CustomDbRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#id CustomDbRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#id CustomDbRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#project_id CustomDbRole#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#project_id CustomDbRole#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#role_name CustomDbRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#role_name CustomDbRole#role_name}
   */
   readonly roleName: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#actions CustomDbRole#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#actions CustomDbRole#actions}
   */
   readonly actions?: CustomDbRoleActions[] | cdktf.IResolvable;
   /**
   * inherited_roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#inherited_roles CustomDbRole#inherited_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#inherited_roles CustomDbRole#inherited_roles}
   */
   readonly inheritedRoles?: CustomDbRoleInheritedRoles[] | cdktf.IResolvable;
 }
 export interface CustomDbRoleActionsResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#cluster CustomDbRole#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#cluster CustomDbRole#cluster}
   */
   readonly cluster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#collection_name CustomDbRole#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#collection_name CustomDbRole#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#database_name CustomDbRole#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#database_name CustomDbRole#database_name}
   */
   readonly databaseName?: string;
 }
@@ -224,13 +224,13 @@ export class CustomDbRoleActionsResourcesList extends cdktf.ComplexList {
 }
 export interface CustomDbRoleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#action CustomDbRole#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#action CustomDbRole#action}
   */
   readonly action: string;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#resources CustomDbRole#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#resources CustomDbRole#resources}
   */
   readonly resources: CustomDbRoleActionsResources[] | cdktf.IResolvable;
 }
@@ -369,11 +369,11 @@ export class CustomDbRoleActionsList extends cdktf.ComplexList {
 }
 export interface CustomDbRoleInheritedRoles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#database_name CustomDbRole#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#database_name CustomDbRole#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#role_name CustomDbRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#role_name CustomDbRole#role_name}
   */
   readonly roleName: string;
 }
@@ -512,7 +512,7 @@ export class CustomDbRoleInheritedRolesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role mongodbatlas_custom_db_role}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role mongodbatlas_custom_db_role}
 */
 export class CustomDbRole extends cdktf.TerraformResource {
 
@@ -528,7 +528,7 @@ export class CustomDbRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomDbRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomDbRole to import
-  * @param importFromId The id of the existing CustomDbRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomDbRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomDbRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -540,7 +540,7 @@ export class CustomDbRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -551,7 +551,7 @@ export class CustomDbRole extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_custom_db_role',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.18.0',
+        providerVersion: '1.18.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
