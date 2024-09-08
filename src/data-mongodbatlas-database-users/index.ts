@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/database_users
 // generated from terraform resource schema
 
