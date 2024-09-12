@@ -24,6 +24,7 @@ export * as customDnsConfigurationClusterAws from './custom-dns-configuration-cl
 export * as dataLakePipeline from './data-lake-pipeline';
 export * as databaseUser from './database-user';
 export * as encryptionAtRest from './encryption-at-rest';
+export * as encryptionAtRestPrivateEndpoint from './encryption-at-rest-private-endpoint';
 export * as eventTrigger from './event-trigger';
 export * as federatedDatabaseInstance from './federated-database-instance';
 export * as federatedQueryLimit from './federated-query-limit';
@@ -55,6 +56,7 @@ export * as searchIndex from './search-index';
 export * as serverlessInstance from './serverless-instance';
 export * as streamConnection from './stream-connection';
 export * as streamInstance from './stream-instance';
+export * as streamProcessor from './stream-processor';
 export * as team from './team';
 export * as teams from './teams';
 export * as thirdPartyIntegration from './third-party-integration';
@@ -94,6 +96,9 @@ export * as dataMongodbatlasDataLakePipelineRuns from './data-mongodbatlas-data-
 export * as dataMongodbatlasDataLakePipelines from './data-mongodbatlas-data-lake-pipelines';
 export * as dataMongodbatlasDatabaseUser from './data-mongodbatlas-database-user';
 export * as dataMongodbatlasDatabaseUsers from './data-mongodbatlas-database-users';
+export * as dataMongodbatlasEncryptionAtRest from './data-mongodbatlas-encryption-at-rest';
+export * as dataMongodbatlasEncryptionAtRestPrivateEndpoint from './data-mongodbatlas-encryption-at-rest-private-endpoint';
+export * as dataMongodbatlasEncryptionAtRestPrivateEndpoints from './data-mongodbatlas-encryption-at-rest-private-endpoints';
 export * as dataMongodbatlasEventTrigger from './data-mongodbatlas-event-trigger';
 export * as dataMongodbatlasEventTriggers from './data-mongodbatlas-event-triggers';
 export * as dataMongodbatlasFederatedDatabaseInstance from './data-mongodbatlas-federated-database-instance';
@@ -132,6 +137,7 @@ export * as dataMongodbatlasProjectApiKey from './data-mongodbatlas-project-api-
 export * as dataMongodbatlasProjectApiKeys from './data-mongodbatlas-project-api-keys';
 export * as dataMongodbatlasProjectInvitation from './data-mongodbatlas-project-invitation';
 export * as dataMongodbatlasProjectIpAccessList from './data-mongodbatlas-project-ip-access-list';
+export * as dataMongodbatlasProjectIpAddresses from './data-mongodbatlas-project-ip-addresses';
 export * as dataMongodbatlasProjects from './data-mongodbatlas-projects';
 export * as dataMongodbatlasPushBasedLogExport from './data-mongodbatlas-push-based-log-export';
 export * as dataMongodbatlasRolesOrgId from './data-mongodbatlas-roles-org-id';
@@ -148,6 +154,8 @@ export * as dataMongodbatlasStreamConnection from './data-mongodbatlas-stream-co
 export * as dataMongodbatlasStreamConnections from './data-mongodbatlas-stream-connections';
 export * as dataMongodbatlasStreamInstance from './data-mongodbatlas-stream-instance';
 export * as dataMongodbatlasStreamInstances from './data-mongodbatlas-stream-instances';
+export * as dataMongodbatlasStreamProcessor from './data-mongodbatlas-stream-processor';
+export * as dataMongodbatlasStreamProcessors from './data-mongodbatlas-stream-processors';
 export * as dataMongodbatlasTeam from './data-mongodbatlas-team';
 export * as dataMongodbatlasTeams from './data-mongodbatlas-teams';
 export * as dataMongodbatlasThirdPartyIntegration from './data-mongodbatlas-third-party-integration';

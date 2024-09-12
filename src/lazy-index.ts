@@ -24,6 +24,7 @@ Object.defineProperty(exports, 'customDnsConfigurationClusterAws', { get: functi
 Object.defineProperty(exports, 'dataLakePipeline', { get: function () { return require('./data-lake-pipeline'); } });
 Object.defineProperty(exports, 'databaseUser', { get: function () { return require('./database-user'); } });
 Object.defineProperty(exports, 'encryptionAtRest', { get: function () { return require('./encryption-at-rest'); } });
+Object.defineProperty(exports, 'encryptionAtRestPrivateEndpoint', { get: function () { return require('./encryption-at-rest-private-endpoint'); } });
 Object.defineProperty(exports, 'eventTrigger', { get: function () { return require('./event-trigger'); } });
 Object.defineProperty(exports, 'federatedDatabaseInstance', { get: function () { return require('./federated-database-instance'); } });
 Object.defineProperty(exports, 'federatedQueryLimit', { get: function () { return require('./federated-query-limit'); } });
@@ -55,6 +56,7 @@ Object.defineProperty(exports, 'searchIndex', { get: function () { return requir
 Object.defineProperty(exports, 'serverlessInstance', { get: function () { return require('./serverless-instance'); } });
 Object.defineProperty(exports, 'streamConnection', { get: function () { return require('./stream-connection'); } });
 Object.defineProperty(exports, 'streamInstance', { get: function () { return require('./stream-instance'); } });
+Object.defineProperty(exports, 'streamProcessor', { get: function () { return require('./stream-processor'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
 Object.defineProperty(exports, 'teams', { get: function () { return require('./teams'); } });
 Object.defineProperty(exports, 'thirdPartyIntegration', { get: function () { return require('./third-party-integration'); } });
@@ -94,6 +96,9 @@ Object.defineProperty(exports, 'dataMongodbatlasDataLakePipelineRuns', { get: fu
 Object.defineProperty(exports, 'dataMongodbatlasDataLakePipelines', { get: function () { return require('./data-mongodbatlas-data-lake-pipelines'); } });
 Object.defineProperty(exports, 'dataMongodbatlasDatabaseUser', { get: function () { return require('./data-mongodbatlas-database-user'); } });
 Object.defineProperty(exports, 'dataMongodbatlasDatabaseUsers', { get: function () { return require('./data-mongodbatlas-database-users'); } });
+Object.defineProperty(exports, 'dataMongodbatlasEncryptionAtRest', { get: function () { return require('./data-mongodbatlas-encryption-at-rest'); } });
+Object.defineProperty(exports, 'dataMongodbatlasEncryptionAtRestPrivateEndpoint', { get: function () { return require('./data-mongodbatlas-encryption-at-rest-private-endpoint'); } });
+Object.defineProperty(exports, 'dataMongodbatlasEncryptionAtRestPrivateEndpoints', { get: function () { return require('./data-mongodbatlas-encryption-at-rest-private-endpoints'); } });
 Object.defineProperty(exports, 'dataMongodbatlasEventTrigger', { get: function () { return require('./data-mongodbatlas-event-trigger'); } });
 Object.defineProperty(exports, 'dataMongodbatlasEventTriggers', { get: function () { return require('./data-mongodbatlas-event-triggers'); } });
 Object.defineProperty(exports, 'dataMongodbatlasFederatedDatabaseInstance', { get: function () { return require('./data-mongodbatlas-federated-database-instance'); } });
@@ -132,6 +137,7 @@ Object.defineProperty(exports, 'dataMongodbatlasProjectApiKey', { get: function 
 Object.defineProperty(exports, 'dataMongodbatlasProjectApiKeys', { get: function () { return require('./data-mongodbatlas-project-api-keys'); } });
 Object.defineProperty(exports, 'dataMongodbatlasProjectInvitation', { get: function () { return require('./data-mongodbatlas-project-invitation'); } });
 Object.defineProperty(exports, 'dataMongodbatlasProjectIpAccessList', { get: function () { return require('./data-mongodbatlas-project-ip-access-list'); } });
+Object.defineProperty(exports, 'dataMongodbatlasProjectIpAddresses', { get: function () { return require('./data-mongodbatlas-project-ip-addresses'); } });
 Object.defineProperty(exports, 'dataMongodbatlasProjects', { get: function () { return require('./data-mongodbatlas-projects'); } });
 Object.defineProperty(exports, 'dataMongodbatlasPushBasedLogExport', { get: function () { return require('./data-mongodbatlas-push-based-log-export'); } });
 Object.defineProperty(exports, 'dataMongodbatlasRolesOrgId', { get: function () { return require('./data-mongodbatlas-roles-org-id'); } });
@@ -148,6 +154,8 @@ Object.defineProperty(exports, 'dataMongodbatlasStreamConnection', { get: functi
 Object.defineProperty(exports, 'dataMongodbatlasStreamConnections', { get: function () { return require('./data-mongodbatlas-stream-connections'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamInstance', { get: function () { return require('./data-mongodbatlas-stream-instance'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamInstances', { get: function () { return require('./data-mongodbatlas-stream-instances'); } });
+Object.defineProperty(exports, 'dataMongodbatlasStreamProcessor', { get: function () { return require('./data-mongodbatlas-stream-processor'); } });
+Object.defineProperty(exports, 'dataMongodbatlasStreamProcessors', { get: function () { return require('./data-mongodbatlas-stream-processors'); } });
 Object.defineProperty(exports, 'dataMongodbatlasTeam', { get: function () { return require('./data-mongodbatlas-team'); } });
 Object.defineProperty(exports, 'dataMongodbatlasTeams', { get: function () { return require('./data-mongodbatlas-teams'); } });
 Object.defineProperty(exports, 'dataMongodbatlasThirdPartyIntegration', { get: function () { return require('./data-mongodbatlas-third-party-integration'); } });

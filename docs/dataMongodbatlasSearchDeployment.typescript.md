@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasSearchDeployment <a name="DataMongodbatlasSearchDeployment" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/search_deployment mongodbatlas_search_deployment}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/search_deployment mongodbatlas_search_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasSearchDeployment.DataMongodbatlasSearchDeployment.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasSearchDepl
 
 The id of the existing DataMongodbatlasSearchDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/search_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/search_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ public readonly clusterName: string;
 
 Label that identifies the cluster to return the search nodes for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}
 
 ---
 
@@ -735,7 +735,7 @@ public readonly projectId: string;
 
 Unique 24-hexadecimal digit string that identifies your project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}
 
 ---
 
