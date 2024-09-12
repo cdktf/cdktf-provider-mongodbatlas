@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs).
+Refer to the Terraform Registry for docs: [`mongodbatlas`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs).

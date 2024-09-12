@@ -4,7 +4,7 @@
 
 ### ProjectInvitation <a name="ProjectInvitation" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation mongodbatlas_project_invitation}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation mongodbatlas_project_invitation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitation.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ProjectInvitation to impor
 
 The id of the existing ProjectInvitation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,10 +822,10 @@ const projectInvitationConfig: projectInvitation.ProjectInvitationConfig = { ...
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#project_id ProjectInvitation#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.roles">roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#roles ProjectInvitation#roles}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#username ProjectInvitation#username}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#id ProjectInvitation#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#project_id ProjectInvitation#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.roles">roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#roles ProjectInvitation#roles}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#username ProjectInvitation#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.projectInvitation.ProjectInvitationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#id ProjectInvitation#id}. |
 
 ---
 
@@ -907,7 +907,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#project_id ProjectInvitation#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#project_id ProjectInvitation#project_id}.
 
 ---
 
@@ -919,7 +919,7 @@ public readonly roles: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#roles ProjectInvitation#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#roles ProjectInvitation#roles}.
 
 ---
 
@@ -931,7 +931,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#username ProjectInvitation#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#username ProjectInvitation#username}.
 
 ---
 
@@ -943,7 +943,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/project_invitation#id ProjectInvitation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/project_invitation#id ProjectInvitation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
