@@ -35,6 +35,7 @@ export * as globalClusterConfig from './global-cluster-config';
 export * as ldapConfiguration from './ldap-configuration';
 export * as ldapVerify from './ldap-verify';
 export * as maintenanceWindow from './maintenance-window';
+export * as mongodbEmployeeAccessGrant from './mongodb-employee-access-grant';
 export * as networkContainer from './network-container';
 export * as networkPeering from './network-peering';
 export * as onlineArchive from './online-archive';
@@ -116,6 +117,7 @@ export * as dataMongodbatlasGlobalClusterConfig from './data-mongodbatlas-global
 export * as dataMongodbatlasLdapConfiguration from './data-mongodbatlas-ldap-configuration';
 export * as dataMongodbatlasLdapVerify from './data-mongodbatlas-ldap-verify';
 export * as dataMongodbatlasMaintenanceWindow from './data-mongodbatlas-maintenance-window';
+export * as dataMongodbatlasMongodbEmployeeAccessGrant from './data-mongodbatlas-mongodb-employee-access-grant';
 export * as dataMongodbatlasNetworkContainer from './data-mongodbatlas-network-container';
 export * as dataMongodbatlasNetworkContainers from './data-mongodbatlas-network-containers';
 export * as dataMongodbatlasNetworkPeering from './data-mongodbatlas-network-peering';
