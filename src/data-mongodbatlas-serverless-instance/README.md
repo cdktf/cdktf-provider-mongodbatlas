@@ -1,3 +1,3 @@
 # `data_mongodbatlas_serverless_instance`
 
-Refer to the Terraform Registry for docs: [`data_mongodbatlas_serverless_instance`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/serverless_instance).
+Refer to the Terraform Registry for docs: [`data_mongodbatlas_serverless_instance`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/serverless_instance).

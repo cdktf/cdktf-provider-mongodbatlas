@@ -1,3 +1,3 @@
 # `data_mongodbatlas_search_deployment`
 
-Refer to the Terraform Registry for docs: [`data_mongodbatlas_search_deployment`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/search_deployment).
+Refer to the Terraform Registry for docs: [`data_mongodbatlas_search_deployment`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/search_deployment).

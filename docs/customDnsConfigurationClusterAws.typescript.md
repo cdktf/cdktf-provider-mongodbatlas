@@ -4,7 +4,7 @@
 
 ### CustomDnsConfigurationClusterAws <a name="CustomDnsConfigurationClusterAws" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAws.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CustomDnsConfigurationClus
 
 The id of the existing CustomDnsConfigurationClusterAws that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,9 +756,9 @@ const customDnsConfigurationClusterAwsConfig: customDnsConfigurationClusterAws.C
 | <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.projectId">projectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.customDnsConfigurationClusterAws.CustomDnsConfigurationClusterAwsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}. |
 
 ---
 
@@ -840,7 +840,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#enabled CustomDnsConfigurationClusterAws#enabled}.
 
 ---
 
@@ -852,7 +852,7 @@ public readonly projectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#project_id CustomDnsConfigurationClusterAws#project_id}.
 
 ---
 
@@ -864,7 +864,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/custom_dns_configuration_cluster_aws#id CustomDnsConfigurationClusterAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
