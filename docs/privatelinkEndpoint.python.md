@@ -4,7 +4,7 @@
 
 ### PrivatelinkEndpoint <a name="PrivatelinkEndpoint" id="@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer"></a>
 
@@ -40,10 +40,10 @@ privatelinkEndpoint.PrivatelinkEndpoint(
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpoint.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointTimeouts">PrivatelinkEndpointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#timeouts PrivatelinkEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#timeouts PrivatelinkEndpoint#timeouts}
 
 ---
 
@@ -524,7 +524,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#create PrivatelinkEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#create PrivatelinkEndpoint#create}.
 
 ---
 
@@ -532,7 +532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#delete PrivatelinkEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#delete PrivatelinkEndpoint#delete}.
 
 ---
 
@@ -662,7 +662,7 @@ The construct id used in the generated config for the PrivatelinkEndpoint to imp
 
 The id of the existing PrivatelinkEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1122,10 +1122,10 @@ privatelinkEndpoint.PrivatelinkEndpointConfig(
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.providerName">provider_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}. |
 | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointTimeouts">PrivatelinkEndpointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1208,7 +1208,7 @@ project_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#project_id PrivatelinkEndpoint#project_id}.
 
 ---
 
@@ -1220,7 +1220,7 @@ provider_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#provider_name PrivatelinkEndpoint#provider_name}.
 
 ---
 
@@ -1232,7 +1232,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#region PrivatelinkEndpoint#region}.
 
 ---
 
@@ -1244,7 +1244,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#id PrivatelinkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1261,7 +1261,7 @@ timeouts: PrivatelinkEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#timeouts PrivatelinkEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#timeouts PrivatelinkEndpoint#timeouts}
 
 ---
 
@@ -1282,8 +1282,8 @@ privatelinkEndpoint.PrivatelinkEndpointTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#create PrivatelinkEndpoint#create}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#delete PrivatelinkEndpoint#delete}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#create PrivatelinkEndpoint#create}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.privatelinkEndpoint.PrivatelinkEndpointTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#delete PrivatelinkEndpoint#delete}. |
 
 ---
 
@@ -1295,7 +1295,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#create PrivatelinkEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#create PrivatelinkEndpoint#create}.
 
 ---
 
@@ -1307,7 +1307,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/privatelink_endpoint#delete PrivatelinkEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/privatelink_endpoint#delete PrivatelinkEndpoint#delete}.
 
 ---
 

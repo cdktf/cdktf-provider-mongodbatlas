@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasMongodbEmployeeAccessGrant <a name="DataMongodbatlasMongodbEmployeeAccessGrant" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasMongodbEmp
 
 The id of the existing DataMongodbatlasMongodbEmployeeAccessGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/mongodb_employee_access_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/mongodb_employee_access_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -720,7 +720,7 @@ ClusterName *string
 
 Human-readable label that identifies this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/mongodb_employee_access_grant#cluster_name DataMongodbatlasMongodbEmployeeAccessGrant#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/mongodb_employee_access_grant#cluster_name DataMongodbatlasMongodbEmployeeAccessGrant#cluster_name}
 
 ---
 
@@ -738,7 +738,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/mongodb_employee_access_grant#project_id DataMongodbatlasMongodbEmployeeAccessGrant#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/mongodb_employee_access_grant#project_id DataMongodbatlasMongodbEmployeeAccessGrant#project_id}
 
 ---
 
