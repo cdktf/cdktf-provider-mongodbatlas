@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasStreamProcessor <a name="DataMongodbatlasStreamProcessor" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamProcessor.DataMongodbatlasStreamProcessor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processor mongodbatlas_stream_processor}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/stream_processor mongodbatlas_stream_processor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamProcessor.DataMongodbatlasStreamProcessor.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasStreamProc
 
 The id of the existing DataMongodbatlasStreamProcessor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/stream_processor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ public string InstanceName { get; set; }
 
 Human-readable label that identifies the stream instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processor#instance_name DataMongodbatlasStreamProcessor#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/stream_processor#instance_name DataMongodbatlasStreamProcessor#instance_name}
 
 ---
 
@@ -791,7 +791,7 @@ public string ProcessorName { get; set; }
 
 Human-readable label that identifies the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processor#processor_name DataMongodbatlasStreamProcessor#processor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/stream_processor#processor_name DataMongodbatlasStreamProcessor#processor_name}
 
 ---
 
@@ -809,7 +809,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processor#project_id DataMongodbatlasStreamProcessor#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/stream_processor#project_id DataMongodbatlasStreamProcessor#project_id}
 
 ---
 
