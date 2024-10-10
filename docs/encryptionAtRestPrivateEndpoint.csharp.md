@@ -4,7 +4,7 @@
 
 ### EncryptionAtRestPrivateEndpoint <a name="EncryptionAtRestPrivateEndpoint" id="@cdktf/provider-mongodbatlas.encryptionAtRestPrivateEndpoint.EncryptionAtRestPrivateEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.encryptionAtRestPrivateEndpoint.EncryptionAtRestPrivateEndpoint.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the EncryptionAtRestPrivateEnd
 
 The id of the existing EncryptionAtRestPrivateEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/encryption_at_rest_private_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/encryption_at_rest_private_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ public string CloudProvider { get; set; }
 
 Label that identifies the cloud provider for the Encryption At Rest private endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/encryption_at_rest_private_endpoint#cloud_provider EncryptionAtRestPrivateEndpoint#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/encryption_at_rest_private_endpoint#cloud_provider EncryptionAtRestPrivateEndpoint#cloud_provider}
 
 ---
 
@@ -904,7 +904,7 @@ public string ProjectId { get; set; }
 
 Unique 24-hexadecimal digit string that identifies your project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/encryption_at_rest_private_endpoint#project_id EncryptionAtRestPrivateEndpoint#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/encryption_at_rest_private_endpoint#project_id EncryptionAtRestPrivateEndpoint#project_id}
 
 ---
 
@@ -918,7 +918,7 @@ public string RegionName { get; set; }
 
 Cloud provider region in which the Encryption At Rest private endpoint is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/encryption_at_rest_private_endpoint#region_name EncryptionAtRestPrivateEndpoint#region_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/encryption_at_rest_private_endpoint#region_name EncryptionAtRestPrivateEndpoint#region_name}
 
 ---
 
