@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataLakePipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#name DataLakePipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#name DataLakePipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#project_id DataLakePipeline#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#project_id DataLakePipeline#project_id}
   */
   readonly projectId: string;
   /**
   * sink block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#sink DataLakePipeline#sink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#sink DataLakePipeline#sink}
   */
   readonly sink?: DataLakePipelineSink;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#source DataLakePipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#source DataLakePipeline#source}
   */
   readonly source?: DataLakePipelineSource;
   /**
   * transformations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#transformations DataLakePipeline#transformations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#transformations DataLakePipeline#transformations}
   */
   readonly transformations?: DataLakePipelineTransformations[] | cdktf.IResolvable;
 }
@@ -276,11 +276,11 @@ export class DataLakePipelineSnapshotsList extends cdktf.ComplexList {
 }
 export interface DataLakePipelineSinkPartitionFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#field_name DataLakePipeline#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#field_name DataLakePipeline#field_name}
   */
   readonly fieldName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#order DataLakePipeline#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#order DataLakePipeline#order}
   */
   readonly order: number;
 }
@@ -419,21 +419,21 @@ export class DataLakePipelineSinkPartitionFieldsList extends cdktf.ComplexList {
 }
 export interface DataLakePipelineSink {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#provider DataLakePipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#provider DataLakePipeline#provider}
   */
   readonly provider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#region DataLakePipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#region DataLakePipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#type DataLakePipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#type DataLakePipeline#type}
   */
   readonly type?: string;
   /**
   * partition_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#partition_fields DataLakePipeline#partition_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#partition_fields DataLakePipeline#partition_fields}
   */
   readonly partitionFields?: DataLakePipelineSinkPartitionFields[] | cdktf.IResolvable;
 }
@@ -604,27 +604,27 @@ export class DataLakePipelineSinkOutputReference extends cdktf.ComplexObject {
 }
 export interface DataLakePipelineSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#cluster_name DataLakePipeline#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#cluster_name DataLakePipeline#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#collection_name DataLakePipeline#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#collection_name DataLakePipeline#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#database_name DataLakePipeline#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#database_name DataLakePipeline#database_name}
   */
   readonly databaseName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#policy_item_id DataLakePipeline#policy_item_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#policy_item_id DataLakePipeline#policy_item_id}
   */
   readonly policyItemId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#project_id DataLakePipeline#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#project_id DataLakePipeline#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#type DataLakePipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#type DataLakePipeline#type}
   */
   readonly type?: string;
 }
@@ -853,11 +853,11 @@ export class DataLakePipelineSourceOutputReference extends cdktf.ComplexObject {
 }
 export interface DataLakePipelineTransformations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#field DataLakePipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#field DataLakePipeline#field}
   */
   readonly field?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#type DataLakePipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#type DataLakePipeline#type}
   */
   readonly type?: string;
 }
@@ -1002,7 +1002,7 @@ export class DataLakePipelineTransformationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline}
 */
 export class DataLakePipeline extends cdktf.TerraformResource {
 
@@ -1018,7 +1018,7 @@ export class DataLakePipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataLakePipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLakePipeline to import
-  * @param importFromId The id of the existing DataLakePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLakePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLakePipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1030,7 +1030,7 @@ export class DataLakePipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1041,7 +1041,7 @@ export class DataLakePipeline extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_data_lake_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.21.1',
+        providerVersion: '1.21.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

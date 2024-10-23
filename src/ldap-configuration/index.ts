@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,66 @@ import * as cdktf from 'cdktf';
 
 export interface LdapConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#authentication_enabled LdapConfiguration#authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#authentication_enabled LdapConfiguration#authentication_enabled}
   */
   readonly authenticationEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#authorization_enabled LdapConfiguration#authorization_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#authorization_enabled LdapConfiguration#authorization_enabled}
   */
   readonly authorizationEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#authz_query_template LdapConfiguration#authz_query_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#authz_query_template LdapConfiguration#authz_query_template}
   */
   readonly authzQueryTemplate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#bind_password LdapConfiguration#bind_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#bind_password LdapConfiguration#bind_password}
   */
   readonly bindPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#bind_username LdapConfiguration#bind_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#bind_username LdapConfiguration#bind_username}
   */
   readonly bindUsername: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#ca_certificate LdapConfiguration#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#ca_certificate LdapConfiguration#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#hostname LdapConfiguration#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#hostname LdapConfiguration#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#id LdapConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#id LdapConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#port LdapConfiguration#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#port LdapConfiguration#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#project_id LdapConfiguration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#project_id LdapConfiguration#project_id}
   */
   readonly projectId: string;
   /**
   * user_to_dn_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#user_to_dn_mapping LdapConfiguration#user_to_dn_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#user_to_dn_mapping LdapConfiguration#user_to_dn_mapping}
   */
   readonly userToDnMapping?: LdapConfigurationUserToDnMapping[] | cdktf.IResolvable;
 }
 export interface LdapConfigurationUserToDnMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#ldap_query LdapConfiguration#ldap_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#ldap_query LdapConfiguration#ldap_query}
   */
   readonly ldapQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#match LdapConfiguration#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#match LdapConfiguration#match}
   */
   readonly match?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#substitution LdapConfiguration#substitution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#substitution LdapConfiguration#substitution}
   */
   readonly substitution?: string;
 }
@@ -246,7 +246,7 @@ export class LdapConfigurationUserToDnMappingList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration mongodbatlas_ldap_configuration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration mongodbatlas_ldap_configuration}
 */
 export class LdapConfiguration extends cdktf.TerraformResource {
 
@@ -262,7 +262,7 @@ export class LdapConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LdapConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LdapConfiguration to import
-  * @param importFromId The id of the existing LdapConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LdapConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LdapConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -274,7 +274,7 @@ export class LdapConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/ldap_configuration mongodbatlas_ldap_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/ldap_configuration mongodbatlas_ldap_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -285,7 +285,7 @@ export class LdapConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_ldap_configuration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.21.1',
+        providerVersion: '1.21.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

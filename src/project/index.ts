@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,63 +13,67 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#is_collect_database_specifics_statistics_enabled Project#is_collect_database_specifics_statistics_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_collect_database_specifics_statistics_enabled Project#is_collect_database_specifics_statistics_enabled}
   */
   readonly isCollectDatabaseSpecificsStatisticsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#is_data_explorer_enabled Project#is_data_explorer_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_data_explorer_enabled Project#is_data_explorer_enabled}
   */
   readonly isDataExplorerEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#is_extended_storage_sizes_enabled Project#is_extended_storage_sizes_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_extended_storage_sizes_enabled Project#is_extended_storage_sizes_enabled}
   */
   readonly isExtendedStorageSizesEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#is_performance_advisor_enabled Project#is_performance_advisor_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_performance_advisor_enabled Project#is_performance_advisor_enabled}
   */
   readonly isPerformanceAdvisorEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#is_realtime_performance_panel_enabled Project#is_realtime_performance_panel_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_realtime_performance_panel_enabled Project#is_realtime_performance_panel_enabled}
   */
   readonly isRealtimePerformancePanelEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#is_schema_advisor_enabled Project#is_schema_advisor_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_schema_advisor_enabled Project#is_schema_advisor_enabled}
   */
   readonly isSchemaAdvisorEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#name Project#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#is_slow_operation_thresholding_enabled Project#is_slow_operation_thresholding_enabled}
+  */
+  readonly isSlowOperationThresholdingEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#name Project#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#org_id Project#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#org_id Project#org_id}
   */
   readonly orgId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#project_owner_id Project#project_owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#project_owner_id Project#project_owner_id}
   */
   readonly projectOwnerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#region_usage_restrictions Project#region_usage_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#region_usage_restrictions Project#region_usage_restrictions}
   */
   readonly regionUsageRestrictions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#tags Project#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#tags Project#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#with_default_alerts_settings Project#with_default_alerts_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#with_default_alerts_settings Project#with_default_alerts_settings}
   */
   readonly withDefaultAlertsSettings?: boolean | cdktf.IResolvable;
   /**
   * limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#limits Project#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#limits Project#limits}
   */
   readonly limits?: ProjectLimits[] | cdktf.IResolvable;
   /**
   * teams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#teams Project#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#teams Project#teams}
   */
   readonly teams?: ProjectTeams[] | cdktf.IResolvable;
 }
@@ -270,11 +274,11 @@ export class ProjectIpAddressesOutputReference extends cdktf.ComplexObject {
 }
 export interface ProjectLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#name Project#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#name Project#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#value Project#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#value Project#value}
   */
   readonly value: number;
 }
@@ -428,11 +432,11 @@ export class ProjectLimitsList extends cdktf.ComplexList {
 }
 export interface ProjectTeams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#role_names Project#role_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#role_names Project#role_names}
   */
   readonly roleNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#team_id Project#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#team_id Project#team_id}
   */
   readonly teamId: string;
 }
@@ -571,7 +575,7 @@ export class ProjectTeamsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project mongodbatlas_project}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project mongodbatlas_project}
 */
 export class Project extends cdktf.TerraformResource {
 
@@ -587,7 +591,7 @@ export class Project extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Project resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Project to import
-  * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Project to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -599,7 +603,7 @@ export class Project extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project mongodbatlas_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project mongodbatlas_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -610,7 +614,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_project',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.21.1',
+        providerVersion: '1.21.2',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -627,6 +631,7 @@ export class Project extends cdktf.TerraformResource {
     this._isPerformanceAdvisorEnabled = config.isPerformanceAdvisorEnabled;
     this._isRealtimePerformancePanelEnabled = config.isRealtimePerformancePanelEnabled;
     this._isSchemaAdvisorEnabled = config.isSchemaAdvisorEnabled;
+    this._isSlowOperationThresholdingEnabled = config.isSlowOperationThresholdingEnabled;
     this._name = config.name;
     this._orgId = config.orgId;
     this._projectOwnerId = config.projectOwnerId;
@@ -756,6 +761,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get isSchemaAdvisorEnabledInput() {
     return this._isSchemaAdvisorEnabled;
+  }
+
+  // is_slow_operation_thresholding_enabled - computed: true, optional: true, required: false
+  private _isSlowOperationThresholdingEnabled?: boolean | cdktf.IResolvable; 
+  public get isSlowOperationThresholdingEnabled() {
+    return this.getBooleanAttribute('is_slow_operation_thresholding_enabled');
+  }
+  public set isSlowOperationThresholdingEnabled(value: boolean | cdktf.IResolvable) {
+    this._isSlowOperationThresholdingEnabled = value;
+  }
+  public resetIsSlowOperationThresholdingEnabled() {
+    this._isSlowOperationThresholdingEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isSlowOperationThresholdingEnabledInput() {
+    return this._isSlowOperationThresholdingEnabled;
   }
 
   // name - computed: false, optional: false, required: true
@@ -892,6 +913,7 @@ export class Project extends cdktf.TerraformResource {
       is_performance_advisor_enabled: cdktf.booleanToTerraform(this._isPerformanceAdvisorEnabled),
       is_realtime_performance_panel_enabled: cdktf.booleanToTerraform(this._isRealtimePerformancePanelEnabled),
       is_schema_advisor_enabled: cdktf.booleanToTerraform(this._isSchemaAdvisorEnabled),
+      is_slow_operation_thresholding_enabled: cdktf.booleanToTerraform(this._isSlowOperationThresholdingEnabled),
       name: cdktf.stringToTerraform(this._name),
       org_id: cdktf.stringToTerraform(this._orgId),
       project_owner_id: cdktf.stringToTerraform(this._projectOwnerId),
@@ -937,6 +959,12 @@ export class Project extends cdktf.TerraformResource {
       },
       is_schema_advisor_enabled: {
         value: cdktf.booleanToHclTerraform(this._isSchemaAdvisorEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_slow_operation_thresholding_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isSlowOperationThresholdingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
