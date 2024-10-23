@@ -4,12 +4,12 @@
 
 ### DataMongodbatlasEncryptionAtRestPrivateEndpoint <a name="DataMongodbatlasEncryptionAtRestPrivateEndpoint" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasencryptionatrestprivateendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasencryptionatrestprivateendpoint"
 
 datamongodbatlasencryptionatrestprivateendpoint.NewDataMongodbatlasEncryptionAtRestPrivateEndpoint(scope Construct, id *string, config DataMongodbatlasEncryptionAtRestPrivateEndpointConfig) DataMongodbatlasEncryptionAtRestPrivateEndpoint
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasencryptionatrestprivateendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasencryptionatrestprivateendpoint"
 
 datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasencryptionatrestprivateendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasencryptionatrestprivateendpoint"
 
 datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRest
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasencryptionatrestprivateendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasencryptionatrestprivateendpoint"
 
 datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRest
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasencryptionatrestprivateendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasencryptionatrestprivateendpoint"
 
 datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRestPrivateEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasEncryption
 
 The id of the existing DataMongodbatlasEncryptionAtRestPrivateEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/encryption_at_rest_private_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/encryption_at_rest_private_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasEncryptionAtRestPrivateEndpoint.DataMongodbatlasEncryptionAtRestPrivateEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasencryptionatrestprivateendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasencryptionatrestprivateendpoint"
 
 &datamongodbatlasencryptionatrestprivateendpoint.DataMongodbatlasEncryptionAtRestPrivateEndpointConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ CloudProvider *string
 
 Label that identifies the cloud provider of the private endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/encryption_at_rest_private_endpoint#cloud_provider DataMongodbatlasEncryptionAtRestPrivateEndpoint#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/encryption_at_rest_private_endpoint#cloud_provider DataMongodbatlasEncryptionAtRestPrivateEndpoint#cloud_provider}
 
 ---
 
@@ -780,7 +780,7 @@ Id *string
 
 Unique 24-hexadecimal digit string that identifies the Private Endpoint Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/encryption_at_rest_private_endpoint#id DataMongodbatlasEncryptionAtRestPrivateEndpoint#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/encryption_at_rest_private_endpoint#id DataMongodbatlasEncryptionAtRestPrivateEndpoint#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -797,7 +797,7 @@ ProjectId *string
 
 Unique 24-hexadecimal digit string that identifies your project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/encryption_at_rest_private_endpoint#project_id DataMongodbatlasEncryptionAtRestPrivateEndpoint#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/encryption_at_rest_private_endpoint#project_id DataMongodbatlasEncryptionAtRestPrivateEndpoint#project_id}
 
 ---
 

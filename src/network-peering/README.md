@@ -1,3 +1,3 @@
 # `mongodbatlas_network_peering`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas_network_peering`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/network_peering).
+Refer to the Terraform Registry for docs: [`mongodbatlas_network_peering`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/network_peering).
