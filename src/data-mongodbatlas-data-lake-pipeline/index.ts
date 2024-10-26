@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/data_lake_pipeline
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/data_lake_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasDataLakePipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/data_lake_pipeline#name DataMongodbatlasDataLakePipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/data_lake_pipeline#name DataMongodbatlasDataLakePipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/data_lake_pipeline#project_id DataMongodbatlasDataLakePipeline#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/data_lake_pipeline#project_id DataMongodbatlasDataLakePipeline#project_id}
   */
   readonly projectId: string;
 }
@@ -599,7 +599,7 @@ export class DataMongodbatlasDataLakePipelineTransformationsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline}
 */
 export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource {
 
@@ -615,7 +615,7 @@ export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataMongodbatlasDataLakePipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasDataLakePipeline to import
-  * @param importFromId The id of the existing DataMongodbatlasDataLakePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/data_lake_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasDataLakePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/data_lake_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasDataLakePipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -627,7 +627,7 @@ export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -638,7 +638,7 @@ export class DataMongodbatlasDataLakePipeline extends cdktf.TerraformDataSource 
       terraformResourceType: 'mongodbatlas_data_lake_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.21.2',
+        providerVersion: '1.21.3',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
