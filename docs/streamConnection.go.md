@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnection(scope Construct, id *string, config StreamConnectionConfig) StreamConnection
 ```
@@ -459,7 +459,7 @@ func ResetSecurity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ streamconnection.StreamConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ streamconnection.StreamConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionAuthentication {
 	Mechanism: *string,
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionConfig {
 	Connection: interface{},
@@ -1053,12 +1053,12 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamco
 	InstanceName: *string,
 	ProjectId: *string,
 	Type: *string,
-	Authentication: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamConnection.StreamConnectionAuthentication,
+	Authentication: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionAuthentication,
 	BootstrapServers: *string,
 	ClusterName: *string,
 	Config: *map[string]*string,
-	DbRoleToExecute: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamConnection.StreamConnectionDbRoleToExecute,
-	Security: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamConnection.StreamConnectionSecurity,
+	DbRoleToExecute: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute,
+	Security: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionSecurity,
 }
 ```
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionDbRoleToExecute {
 	Role: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionSecurity {
 	BrokerPublicCertificate: *string,
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnectionAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionAuthenticationOutputReference
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecuteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnectionDbRoleToExecuteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionDbRoleToExecuteOutputReference
 ```
@@ -2004,7 +2004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnectionSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionSecurityOutputReference
 ```
