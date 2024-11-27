@@ -4,7 +4,7 @@
 
 ### PushBasedLogExport <a name="PushBasedLogExport" id="@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export mongodbatlas_push_based_log_export}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExport.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the PushBasedLogExport to impo
 
 The id of the existing PushBasedLogExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/pushbase
 | <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportConfig.property.iamRoleId">IamRoleId</a></code> | <code>*string</code> | ID of the AWS IAM role that is used to write to the S3 bucket. |
 | <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Unique 24-hexadecimal digit string that identifies your project. |
 | <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportConfig.property.prefixPath">PrefixPath</a></code> | <code>*string</code> | S3 directory in which vector writes in order to store the logs. An empty string denotes the root directory. |
-| <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportTimeouts">PushBasedLogExportTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#timeouts PushBasedLogExport#timeouts}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportTimeouts">PushBasedLogExportTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#timeouts PushBasedLogExport#timeouts}. |
 
 ---
 
@@ -943,7 +943,7 @@ BucketName *string
 
 The name of the bucket to which the agent sends the logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#bucket_name PushBasedLogExport#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#bucket_name PushBasedLogExport#bucket_name}
 
 ---
 
@@ -957,7 +957,7 @@ IamRoleId *string
 
 ID of the AWS IAM role that is used to write to the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#iam_role_id PushBasedLogExport#iam_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#iam_role_id PushBasedLogExport#iam_role_id}
 
 ---
 
@@ -975,7 +975,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#project_id PushBasedLogExport#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#project_id PushBasedLogExport#project_id}
 
 ---
 
@@ -989,7 +989,7 @@ PrefixPath *string
 
 S3 directory in which vector writes in order to store the logs. An empty string denotes the root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#prefix_path PushBasedLogExport#prefix_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#prefix_path PushBasedLogExport#prefix_path}
 
 ---
 
@@ -1001,7 +1001,7 @@ Timeouts PushBasedLogExportTimeouts
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.pushBasedLogExport.PushBasedLogExportTimeouts">PushBasedLogExportTimeouts</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#timeouts PushBasedLogExport#timeouts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#timeouts PushBasedLogExport#timeouts}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#create PushBasedLogExport#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#create PushBasedLogExport#create}
 
 ---
 
@@ -1053,7 +1053,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#delete PushBasedLogExport#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#delete PushBasedLogExport#delete}
 
 ---
 
@@ -1067,7 +1067,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/push_based_log_export#update PushBasedLogExport#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/push_based_log_export#update PushBasedLogExport#update}
 
 ---
 
