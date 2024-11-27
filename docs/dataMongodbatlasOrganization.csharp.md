@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasOrganization <a name="DataMongodbatlasOrganization" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization mongodbatlas_organization}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization mongodbatlas_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataMongodbatlasOrganizati
 
 The id of the existing DataMongodbatlasOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -401,6 +401,7 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.apiAccessListRequired">ApiAccessListRequired</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.genAiFeaturesEnabled">GenAiFeaturesEnabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.isDeleted">IsDeleted</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.links">Links</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationLinksList">DataMongodbatlasOrganizationLinksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.multiFactorAuthRequired">MultiFactorAuthRequired</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -539,6 +540,16 @@ public TerraformProvider Provider { get; }
 
 ```csharp
 public IResolvable ApiAccessListRequired { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `GenAiFeaturesEnabled`<sup>Required</sup> <a name="GenAiFeaturesEnabled" id="@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganization.property.genAiFeaturesEnabled"></a>
+
+```csharp
+public IResolvable GenAiFeaturesEnabled { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.IResolvable
@@ -686,8 +697,8 @@ new DataMongodbatlasOrganizationConfig {
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.orgId">OrgId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization#id DataMongodbatlasOrganization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.orgId">OrgId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasOrganization.DataMongodbatlasOrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization#id DataMongodbatlasOrganization#id}. |
 
 ---
 
@@ -769,7 +780,7 @@ public string OrgId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization#org_id DataMongodbatlasOrganization#org_id}.
 
 ---
 
@@ -781,7 +792,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization#id DataMongodbatlasOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization#id DataMongodbatlasOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
