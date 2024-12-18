@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/alert_configuration
 // generated from terraform resource schema
 
