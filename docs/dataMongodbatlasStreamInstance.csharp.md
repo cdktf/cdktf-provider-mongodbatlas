@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasStreamInstance <a name="DataMongodbatlasStreamInstance" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/stream_instance mongodbatlas_stream_instance}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/stream_instance mongodbatlas_stream_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstance.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasStreamInst
 
 The id of the existing DataMongodbatlasStreamInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/stream_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/stream_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -657,8 +657,8 @@ new DataMongodbatlasStreamInstanceConfig {
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/stream_instance#instance_name DataMongodbatlasStreamInstance#instance_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/stream_instance#project_id DataMongodbatlasStreamInstance#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/stream_instance#instance_name DataMongodbatlasStreamInstance#instance_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamInstance.DataMongodbatlasStreamInstanceConfig.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/stream_instance#project_id DataMongodbatlasStreamInstance#project_id}. |
 
 ---
 
@@ -740,7 +740,7 @@ public string InstanceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/stream_instance#instance_name DataMongodbatlasStreamInstance#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/stream_instance#instance_name DataMongodbatlasStreamInstance#instance_name}.
 
 ---
 
@@ -752,7 +752,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/stream_instance#project_id DataMongodbatlasStreamInstance#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/stream_instance#project_id DataMongodbatlasStreamInstance#project_id}.
 
 ---
 

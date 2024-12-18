@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasTeamsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams#id DataMongodbatlasTeams#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams#id DataMongodbatlasTeams#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams#name DataMongodbatlasTeams#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams#name DataMongodbatlasTeams#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams#org_id DataMongodbatlasTeams#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams#org_id DataMongodbatlasTeams#org_id}
   */
   readonly orgId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams#team_id DataMongodbatlasTeams#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams#team_id DataMongodbatlasTeams#team_id}
   */
   readonly teamId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams mongodbatlas_teams}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams mongodbatlas_teams}
 */
 export class DataMongodbatlasTeams extends cdktf.TerraformDataSource {
 
@@ -50,7 +50,7 @@ export class DataMongodbatlasTeams extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasTeams resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasTeams to import
-  * @param importFromId The id of the existing DataMongodbatlasTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasTeams to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class DataMongodbatlasTeams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/teams mongodbatlas_teams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/teams mongodbatlas_teams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class DataMongodbatlasTeams extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_teams',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.22.0',
+        providerVersion: '1.23.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

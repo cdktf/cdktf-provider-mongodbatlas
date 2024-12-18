@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasAdvancedClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster#id DataMongodbatlasAdvancedCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster#id DataMongodbatlasAdvancedCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster#name DataMongodbatlasAdvancedCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster#name DataMongodbatlasAdvancedCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster#pit_enabled DataMongodbatlasAdvancedCluster#pit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster#pit_enabled DataMongodbatlasAdvancedCluster#pit_enabled}
   */
   readonly pitEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster#project_id DataMongodbatlasAdvancedCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster#project_id DataMongodbatlasAdvancedCluster#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster#use_replication_spec_per_shard DataMongodbatlasAdvancedCluster#use_replication_spec_per_shard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster#use_replication_spec_per_shard DataMongodbatlasAdvancedCluster#use_replication_spec_per_shard}
   */
   readonly useReplicationSpecPerShard?: boolean | cdktf.IResolvable;
 }
@@ -90,6 +90,11 @@ export class DataMongodbatlasAdvancedClusterAdvancedConfigurationOutputReference
   // change_stream_options_pre_and_post_images_expire_after_seconds - computed: true, optional: false, required: false
   public get changeStreamOptionsPreAndPostImagesExpireAfterSeconds() {
     return this.getNumberAttribute('change_stream_options_pre_and_post_images_expire_after_seconds');
+  }
+
+  // default_max_time_ms - computed: true, optional: false, required: false
+  public get defaultMaxTimeMs() {
+    return this.getNumberAttribute('default_max_time_ms');
   }
 
   // default_read_concern - computed: true, optional: false, required: false
@@ -601,6 +606,86 @@ export class DataMongodbatlasAdvancedClusterLabelsList extends cdktf.ComplexList
   */
   public get(index: number): DataMongodbatlasAdvancedClusterLabelsOutputReference {
     return new DataMongodbatlasAdvancedClusterLabelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasAdvancedClusterPinnedFcv {
+}
+
+export function dataMongodbatlasAdvancedClusterPinnedFcvToTerraform(struct?: DataMongodbatlasAdvancedClusterPinnedFcv): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasAdvancedClusterPinnedFcvToHclTerraform(struct?: DataMongodbatlasAdvancedClusterPinnedFcv): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasAdvancedClusterPinnedFcvOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasAdvancedClusterPinnedFcv | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasAdvancedClusterPinnedFcv | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expiration_date - computed: true, optional: false, required: false
+  public get expirationDate() {
+    return this.getStringAttribute('expiration_date');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+}
+
+export class DataMongodbatlasAdvancedClusterPinnedFcvList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasAdvancedClusterPinnedFcvOutputReference {
+    return new DataMongodbatlasAdvancedClusterPinnedFcvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling {
@@ -1387,7 +1472,7 @@ export class DataMongodbatlasAdvancedClusterTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster}
 */
 export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
 
@@ -1403,7 +1488,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasAdvancedCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasAdvancedCluster to import
-  * @param importFromId The id of the existing DataMongodbatlasAdvancedCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasAdvancedCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasAdvancedCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1415,7 +1500,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1426,7 +1511,7 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_advanced_cluster',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.22.0',
+        providerVersion: '1.23.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -1554,6 +1639,12 @@ export class DataMongodbatlasAdvancedCluster extends cdktf.TerraformDataSource {
   // paused - computed: true, optional: false, required: false
   public get paused() {
     return this.getBooleanAttribute('paused');
+  }
+
+  // pinned_fcv - computed: true, optional: false, required: false
+  private _pinnedFcv = new DataMongodbatlasAdvancedClusterPinnedFcvList(this, "pinned_fcv", false);
+  public get pinnedFcv() {
+    return this._pinnedFcv;
   }
 
   // pit_enabled - computed: true, optional: true, required: false
