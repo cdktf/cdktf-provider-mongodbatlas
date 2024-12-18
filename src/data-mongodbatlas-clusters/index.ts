@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/clusters
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/clusters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasClustersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/clusters#id DataMongodbatlasClusters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/clusters#id DataMongodbatlasClusters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/clusters#project_id DataMongodbatlasClusters#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/clusters#project_id DataMongodbatlasClusters#project_id}
   */
   readonly projectId: string;
 }
@@ -78,6 +73,11 @@ export class DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference
   // change_stream_options_pre_and_post_images_expire_after_seconds - computed: true, optional: false, required: false
   public get changeStreamOptionsPreAndPostImagesExpireAfterSeconds() {
     return this.getNumberAttribute('change_stream_options_pre_and_post_images_expire_after_seconds');
+  }
+
+  // default_max_time_ms - computed: true, optional: false, required: false
+  public get defaultMaxTimeMs() {
+    return this.getNumberAttribute('default_max_time_ms');
   }
 
   // default_read_concern - computed: true, optional: false, required: false
@@ -601,6 +601,86 @@ export class DataMongodbatlasClustersResultsLabelsList extends cdktf.ComplexList
   */
   public get(index: number): DataMongodbatlasClustersResultsLabelsOutputReference {
     return new DataMongodbatlasClustersResultsLabelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataMongodbatlasClustersResultsPinnedFcv {
+}
+
+export function dataMongodbatlasClustersResultsPinnedFcvToTerraform(struct?: DataMongodbatlasClustersResultsPinnedFcv): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasClustersResultsPinnedFcvToHclTerraform(struct?: DataMongodbatlasClustersResultsPinnedFcv): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasClustersResultsPinnedFcvOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataMongodbatlasClustersResultsPinnedFcv | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasClustersResultsPinnedFcv | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expiration_date - computed: true, optional: false, required: false
+  public get expirationDate() {
+    return this.getStringAttribute('expiration_date');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+}
+
+export class DataMongodbatlasClustersResultsPinnedFcvList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataMongodbatlasClustersResultsPinnedFcvOutputReference {
+    return new DataMongodbatlasClustersResultsPinnedFcvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataMongodbatlasClustersResultsReplicationSpecsRegionsConfig {
@@ -1316,6 +1396,12 @@ export class DataMongodbatlasClustersResultsOutputReference extends cdktf.Comple
     return this.getBooleanAttribute('paused');
   }
 
+  // pinned_fcv - computed: true, optional: false, required: false
+  private _pinnedFcv = new DataMongodbatlasClustersResultsPinnedFcvList(this, "pinned_fcv", false);
+  public get pinnedFcv() {
+    return this._pinnedFcv;
+  }
+
   // pit_enabled - computed: true, optional: false, required: false
   public get pitEnabled() {
     return this.getBooleanAttribute('pit_enabled');
@@ -1440,7 +1526,7 @@ export class DataMongodbatlasClustersResultsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/clusters mongodbatlas_clusters}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/clusters mongodbatlas_clusters}
 */
 export class DataMongodbatlasClusters extends cdktf.TerraformDataSource {
 
@@ -1456,7 +1542,7 @@ export class DataMongodbatlasClusters extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasClusters resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasClusters to import
-  * @param importFromId The id of the existing DataMongodbatlasClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasClusters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1468,7 +1554,7 @@ export class DataMongodbatlasClusters extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/clusters mongodbatlas_clusters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/clusters mongodbatlas_clusters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1479,7 +1565,7 @@ export class DataMongodbatlasClusters extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_clusters',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.22.0',
+        providerVersion: '1.23.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
