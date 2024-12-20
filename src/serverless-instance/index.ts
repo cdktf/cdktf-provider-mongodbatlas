@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,68 @@ import * as cdktf from 'cdktf';
 
 export interface ServerlessInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#auto_indexing ServerlessInstance#auto_indexing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#auto_indexing ServerlessInstance#auto_indexing}
   */
   readonly autoIndexing?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#continuous_backup_enabled ServerlessInstance#continuous_backup_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#continuous_backup_enabled ServerlessInstance#continuous_backup_enabled}
   */
   readonly continuousBackupEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#id ServerlessInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#id ServerlessInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#name ServerlessInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#name ServerlessInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#project_id ServerlessInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#project_id ServerlessInstance#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#provider_settings_backing_provider_name ServerlessInstance#provider_settings_backing_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#provider_settings_backing_provider_name ServerlessInstance#provider_settings_backing_provider_name}
   */
   readonly providerSettingsBackingProviderName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#provider_settings_provider_name ServerlessInstance#provider_settings_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#provider_settings_provider_name ServerlessInstance#provider_settings_provider_name}
   */
   readonly providerSettingsProviderName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#provider_settings_region_name ServerlessInstance#provider_settings_region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#provider_settings_region_name ServerlessInstance#provider_settings_region_name}
   */
   readonly providerSettingsRegionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#state_name ServerlessInstance#state_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#state_name ServerlessInstance#state_name}
   */
   readonly stateName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#termination_protection_enabled ServerlessInstance#termination_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#termination_protection_enabled ServerlessInstance#termination_protection_enabled}
   */
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * links block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#links ServerlessInstance#links}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#links ServerlessInstance#links}
   */
   readonly links?: ServerlessInstanceLinks[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#tags ServerlessInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#tags ServerlessInstance#tags}
   */
   readonly tags?: ServerlessInstanceTags[] | cdktf.IResolvable;
 }
 export interface ServerlessInstanceLinks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#href ServerlessInstance#href}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#href ServerlessInstance#href}
   */
   readonly href?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#rel ServerlessInstance#rel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#rel ServerlessInstance#rel}
   */
   readonly rel?: string;
 }
@@ -219,11 +219,11 @@ export class ServerlessInstanceLinksList extends cdktf.ComplexList {
 }
 export interface ServerlessInstanceTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#key ServerlessInstance#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#key ServerlessInstance#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#value ServerlessInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#value ServerlessInstance#value}
   */
   readonly value: string;
 }
@@ -362,7 +362,7 @@ export class ServerlessInstanceTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance mongodbatlas_serverless_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance mongodbatlas_serverless_instance}
 */
 export class ServerlessInstance extends cdktf.TerraformResource {
 
@@ -378,7 +378,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServerlessInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServerlessInstance to import
-  * @param importFromId The id of the existing ServerlessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServerlessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServerlessInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -390,7 +390,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -401,7 +401,7 @@ export class ServerlessInstance extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_serverless_instance',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.23.0',
+        providerVersion: '1.24.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
