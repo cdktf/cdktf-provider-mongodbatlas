@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/cloud_backup_schedule
 // generated from terraform resource schema
 
