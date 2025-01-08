@@ -1,3 +1,3 @@
 # `mongodbatlas_api_key`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/api_key).
+Refer to the Terraform Registry for docs: [`mongodbatlas_api_key`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/api_key).

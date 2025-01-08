@@ -1,3 +1,3 @@
 # `mongodbatlas_stream_instance`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas_stream_instance`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_instance).
+Refer to the Terraform Registry for docs: [`mongodbatlas_stream_instance`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_instance).

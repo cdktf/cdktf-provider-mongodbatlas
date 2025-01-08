@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasStreamConnectionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections#instance_name DataMongodbatlasStreamConnections#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections#instance_name DataMongodbatlasStreamConnections#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections#items_per_page DataMongodbatlasStreamConnections#items_per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections#items_per_page DataMongodbatlasStreamConnections#items_per_page}
   */
   readonly itemsPerPage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections#page_num DataMongodbatlasStreamConnections#page_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections#page_num DataMongodbatlasStreamConnections#page_num}
   */
   readonly pageNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections#project_id DataMongodbatlasStreamConnections#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections#project_id DataMongodbatlasStreamConnections#project_id}
   */
   readonly projectId: string;
 }
@@ -150,6 +145,115 @@ export class DataMongodbatlasStreamConnectionsResultsDbRoleToExecuteOutputRefere
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
+  }
+}
+export interface DataMongodbatlasStreamConnectionsResultsNetworkingAccess {
+}
+
+export function dataMongodbatlasStreamConnectionsResultsNetworkingAccessToTerraform(struct?: DataMongodbatlasStreamConnectionsResultsNetworkingAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasStreamConnectionsResultsNetworkingAccessToHclTerraform(struct?: DataMongodbatlasStreamConnectionsResultsNetworkingAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasStreamConnectionsResultsNetworkingAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataMongodbatlasStreamConnectionsResultsNetworkingAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasStreamConnectionsResultsNetworkingAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+export interface DataMongodbatlasStreamConnectionsResultsNetworking {
+}
+
+export function dataMongodbatlasStreamConnectionsResultsNetworkingToTerraform(struct?: DataMongodbatlasStreamConnectionsResultsNetworking): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataMongodbatlasStreamConnectionsResultsNetworkingToHclTerraform(struct?: DataMongodbatlasStreamConnectionsResultsNetworking): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataMongodbatlasStreamConnectionsResultsNetworkingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataMongodbatlasStreamConnectionsResultsNetworking | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataMongodbatlasStreamConnectionsResultsNetworking | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // access - computed: true, optional: false, required: false
+  private _access = new DataMongodbatlasStreamConnectionsResultsNetworkingAccessOutputReference(this, "access");
+  public get access() {
+    return this._access;
   }
 }
 export interface DataMongodbatlasStreamConnectionsResultsSecurity {
@@ -305,6 +409,12 @@ export class DataMongodbatlasStreamConnectionsResultsOutputReference extends cdk
     return this.getStringAttribute('instance_name');
   }
 
+  // networking - computed: true, optional: false, required: false
+  private _networking = new DataMongodbatlasStreamConnectionsResultsNetworkingOutputReference(this, "networking");
+  public get networking() {
+    return this._networking;
+  }
+
   // project_id - computed: true, optional: false, required: false
   public get projectId() {
     return this.getStringAttribute('project_id');
@@ -342,7 +452,7 @@ export class DataMongodbatlasStreamConnectionsResultsList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections mongodbatlas_stream_connections}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections mongodbatlas_stream_connections}
 */
 export class DataMongodbatlasStreamConnections extends cdktf.TerraformDataSource {
 
@@ -358,7 +468,7 @@ export class DataMongodbatlasStreamConnections extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataMongodbatlasStreamConnections resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasStreamConnections to import
-  * @param importFromId The id of the existing DataMongodbatlasStreamConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasStreamConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasStreamConnections to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -370,7 +480,7 @@ export class DataMongodbatlasStreamConnections extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/data-sources/stream_connections mongodbatlas_stream_connections} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/stream_connections mongodbatlas_stream_connections} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -381,7 +491,7 @@ export class DataMongodbatlasStreamConnections extends cdktf.TerraformDataSource
       terraformResourceType: 'mongodbatlas_stream_connections',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.24.0',
+        providerVersion: '1.25.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

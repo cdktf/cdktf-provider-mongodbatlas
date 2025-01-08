@@ -4,12 +4,12 @@
 
 ### StreamConnection <a name="StreamConnection" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnection(scope Construct, id *string, config StreamConnectionConfig) StreamConnection
 ```
@@ -75,12 +75,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putAuthentication">PutAuthentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putDbRoleToExecute">PutDbRoleToExecute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putNetworking">PutNetworking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putSecurity">PutSecurity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetAuthentication">ResetAuthentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetBootstrapServers">ResetBootstrapServers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetClusterName">ResetClusterName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetConfig">ResetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetDbRoleToExecute">ResetDbRoleToExecute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetNetworking">ResetNetworking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetSecurity">ResetSecurity</a></code> | *No description.* |
 
 ---
@@ -397,6 +399,18 @@ func PutDbRoleToExecute(value StreamConnectionDbRoleToExecute)
 
 ---
 
+##### `PutNetworking` <a name="PutNetworking" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putNetworking"></a>
+
+```go
+func PutNetworking(value StreamConnectionNetworking)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putNetworking.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a>
+
+---
+
 ##### `PutSecurity` <a name="PutSecurity" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.putSecurity"></a>
 
 ```go
@@ -439,6 +453,12 @@ func ResetConfig()
 func ResetDbRoleToExecute()
 ```
 
+##### `ResetNetworking` <a name="ResetNetworking" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetNetworking"></a>
+
+```go
+func ResetNetworking()
+```
+
 ##### `ResetSecurity` <a name="ResetSecurity" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetSecurity"></a>
 
 ```go
@@ -459,7 +479,7 @@ func ResetSecurity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +525,7 @@ streamconnection.StreamConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +539,7 @@ streamconnection.StreamConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.StreamConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -548,7 +568,7 @@ The construct id used in the generated config for the StreamConnection to import
 
 The id of the existing StreamConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,6 +601,7 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.authentication">Authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthenticationOutputReference">StreamConnectionAuthenticationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.dbRoleToExecute">DbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecuteOutputReference">StreamConnectionDbRoleToExecuteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.networking">Networking</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference">StreamConnectionNetworkingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.security">Security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurityOutputReference">StreamConnectionSecurityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.authenticationInput">AuthenticationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.bootstrapServersInput">BootstrapServersInput</a></code> | <code>*string</code> | *No description.* |
@@ -589,6 +610,7 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.connectionNameInput">ConnectionNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.dbRoleToExecuteInput">DbRoleToExecuteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.instanceNameInput">InstanceNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.networkingInput">NetworkingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.securityInput">SecurityInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -774,6 +796,16 @@ func Id() *string
 
 ---
 
+##### `Networking`<sup>Required</sup> <a name="Networking" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.networking"></a>
+
+```go
+func Networking() StreamConnectionNetworkingOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference">StreamConnectionNetworkingOutputReference</a>
+
+---
+
 ##### `Security`<sup>Required</sup> <a name="Security" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.security"></a>
 
 ```go
@@ -851,6 +883,16 @@ func InstanceNameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `NetworkingInput`<sup>Optional</sup> <a name="NetworkingInput" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.networkingInput"></a>
+
+```go
+func NetworkingInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -979,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionAuthentication {
 	Mechanism: *string,
@@ -992,9 +1034,9 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.mechanism">Mechanism</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#password StreamConnection#password}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#username StreamConnection#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.mechanism">Mechanism</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#password StreamConnection#password}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#username StreamConnection#username}. |
 
 ---
 
@@ -1006,7 +1048,7 @@ Mechanism *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}.
 
 ---
 
@@ -1018,7 +1060,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#password StreamConnection#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#password StreamConnection#password}.
 
 ---
 
@@ -1030,7 +1072,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#username StreamConnection#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#username StreamConnection#username}.
 
 ---
 
@@ -1039,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionConfig {
 	Connection: interface{},
@@ -1053,12 +1095,13 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamco
 	InstanceName: *string,
 	ProjectId: *string,
 	Type: *string,
-	Authentication: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamConnection.StreamConnectionAuthentication,
+	Authentication: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionAuthentication,
 	BootstrapServers: *string,
 	ClusterName: *string,
 	Config: *map[string]*string,
-	DbRoleToExecute: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamConnection.StreamConnectionDbRoleToExecute,
-	Security: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamConnection.StreamConnectionSecurity,
+	DbRoleToExecute: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute,
+	Networking: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionNetworking,
+	Security: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionSecurity,
 }
 ```
 
@@ -1073,16 +1116,17 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamco
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.connectionName">ConnectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#project_id StreamConnection#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#type StreamConnection#type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.authentication">Authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#authentication StreamConnection#authentication}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.bootstrapServers">BootstrapServers</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.config">Config</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#config StreamConnection#config}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.dbRoleToExecute">DbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.security">Security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#security StreamConnection#security}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.connectionName">ConnectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#project_id StreamConnection#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#type StreamConnection#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.authentication">Authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#authentication StreamConnection#authentication}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.bootstrapServers">BootstrapServers</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.config">Config</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#config StreamConnection#config}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.dbRoleToExecute">DbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.networking">Networking</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#networking StreamConnection#networking}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.security">Security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#security StreamConnection#security}. |
 
 ---
 
@@ -1164,7 +1208,7 @@ ConnectionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}.
 
 ---
 
@@ -1176,7 +1220,7 @@ InstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}.
 
 ---
 
@@ -1188,7 +1232,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#project_id StreamConnection#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#project_id StreamConnection#project_id}.
 
 ---
 
@@ -1200,7 +1244,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#type StreamConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#type StreamConnection#type}.
 
 ---
 
@@ -1212,7 +1256,7 @@ Authentication StreamConnectionAuthentication
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#authentication StreamConnection#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#authentication StreamConnection#authentication}.
 
 ---
 
@@ -1224,7 +1268,7 @@ BootstrapServers *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}.
 
 ---
 
@@ -1236,7 +1280,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}.
 
 ---
 
@@ -1248,7 +1292,7 @@ Config *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#config StreamConnection#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#config StreamConnection#config}.
 
 ---
 
@@ -1260,7 +1304,19 @@ DbRoleToExecute StreamConnectionDbRoleToExecute
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}.
+
+---
+
+##### `Networking`<sup>Optional</sup> <a name="Networking" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.networking"></a>
+
+```go
+Networking StreamConnectionNetworking
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#networking StreamConnection#networking}.
 
 ---
 
@@ -1272,7 +1328,7 @@ Security StreamConnectionSecurity
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#security StreamConnection#security}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#security StreamConnection#security}.
 
 ---
 
@@ -1281,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionDbRoleToExecute {
 	Role: *string,
@@ -1293,8 +1349,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#role StreamConnection#role}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#type StreamConnection#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#role StreamConnection#role}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#type StreamConnection#type}. |
 
 ---
 
@@ -1306,7 +1362,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#role StreamConnection#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#role StreamConnection#role}.
 
 ---
 
@@ -1318,7 +1374,71 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#type StreamConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#type StreamConnection#type}.
+
+---
+
+### StreamConnectionNetworking <a name="StreamConnectionNetworking" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
+
+&streamconnection.StreamConnectionNetworking {
+	Access: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamConnection.StreamConnectionNetworkingAccess,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking.property.access">Access</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#access StreamConnection#access}. |
+
+---
+
+##### `Access`<sup>Required</sup> <a name="Access" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking.property.access"></a>
+
+```go
+Access StreamConnectionNetworkingAccess
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#access StreamConnection#access}.
+
+---
+
+### StreamConnectionNetworkingAccess <a name="StreamConnectionNetworkingAccess" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
+
+&streamconnection.StreamConnectionNetworkingAccess {
+	Type: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#type StreamConnection#type}. |
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.property.type"></a>
+
+```go
+Type *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#type StreamConnection#type}.
 
 ---
 
@@ -1327,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 &streamconnection.StreamConnectionSecurity {
 	BrokerPublicCertificate: *string,
@@ -1339,8 +1459,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.brokerPublicCertificate">BrokerPublicCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#protocol StreamConnection#protocol}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.brokerPublicCertificate">BrokerPublicCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#protocol StreamConnection#protocol}. |
 
 ---
 
@@ -1352,7 +1472,7 @@ BrokerPublicCertificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}.
 
 ---
 
@@ -1364,7 +1484,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection#protocol StreamConnection#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection#protocol StreamConnection#protocol}.
 
 ---
 
@@ -1375,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnectionAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionAuthenticationOutputReference
 ```
@@ -1711,7 +1831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecuteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnectionDbRoleToExecuteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionDbRoleToExecuteOutputReference
 ```
@@ -1999,12 +2119,567 @@ func InternalValue() interface{}
 ---
 
 
+### StreamConnectionNetworkingAccessOutputReference <a name="StreamConnectionNetworkingAccessOutputReference" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
+
+streamconnection.NewStreamConnectionNetworkingAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionNetworkingAccessOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.typeInput"></a>
+
+```go
+func TypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.type"></a>
+
+```go
+func Type() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() StreamConnectionNetworkingAccess
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a>
+
+---
+
+
+### StreamConnectionNetworkingOutputReference <a name="StreamConnectionNetworkingOutputReference" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
+
+streamconnection.NewStreamConnectionNetworkingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionNetworkingOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.putAccess">PutAccess</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAccess` <a name="PutAccess" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.putAccess"></a>
+
+```go
+func PutAccess(value StreamConnectionNetworkingAccess)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.putAccess.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.access">Access</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference">StreamConnectionNetworkingAccessOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.accessInput">AccessInput</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Access`<sup>Required</sup> <a name="Access" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.access"></a>
+
+```go
+func Access() StreamConnectionNetworkingAccessOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccessOutputReference">StreamConnectionNetworkingAccessOutputReference</a>
+
+---
+
+##### `AccessInput`<sup>Optional</sup> <a name="AccessInput" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.accessInput"></a>
+
+```go
+func AccessInput() StreamConnectionNetworkingAccess
+```
+
+- *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### StreamConnectionSecurityOutputReference <a name="StreamConnectionSecurityOutputReference" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurityOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamconnection"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamconnection"
 
 streamconnection.NewStreamConnectionSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamConnectionSecurityOutputReference
 ```

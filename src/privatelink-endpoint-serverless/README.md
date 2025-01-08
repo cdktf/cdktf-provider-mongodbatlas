@@ -1,3 +1,3 @@
 # `mongodbatlas_privatelink_endpoint_serverless`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas_privatelink_endpoint_serverless`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/privatelink_endpoint_serverless).
+Refer to the Terraform Registry for docs: [`mongodbatlas_privatelink_endpoint_serverless`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/privatelink_endpoint_serverless).
