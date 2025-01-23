@@ -57,6 +57,7 @@ export * as searchIndex from './search-index';
 export * as serverlessInstance from './serverless-instance';
 export * as streamConnection from './stream-connection';
 export * as streamInstance from './stream-instance';
+export * as streamPrivatelinkEndpoint from './stream-privatelink-endpoint';
 export * as streamProcessor from './stream-processor';
 export * as team from './team';
 export * as teams from './teams';
@@ -156,6 +157,8 @@ export * as dataMongodbatlasStreamConnection from './data-mongodbatlas-stream-co
 export * as dataMongodbatlasStreamConnections from './data-mongodbatlas-stream-connections';
 export * as dataMongodbatlasStreamInstance from './data-mongodbatlas-stream-instance';
 export * as dataMongodbatlasStreamInstances from './data-mongodbatlas-stream-instances';
+export * as dataMongodbatlasStreamPrivatelinkEndpoint from './data-mongodbatlas-stream-privatelink-endpoint';
+export * as dataMongodbatlasStreamPrivatelinkEndpoints from './data-mongodbatlas-stream-privatelink-endpoints';
 export * as dataMongodbatlasStreamProcessor from './data-mongodbatlas-stream-processor';
 export * as dataMongodbatlasStreamProcessors from './data-mongodbatlas-stream-processors';
 export * as dataMongodbatlasTeam from './data-mongodbatlas-team';

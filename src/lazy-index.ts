@@ -57,6 +57,7 @@ Object.defineProperty(exports, 'searchIndex', { get: function () { return requir
 Object.defineProperty(exports, 'serverlessInstance', { get: function () { return require('./serverless-instance'); } });
 Object.defineProperty(exports, 'streamConnection', { get: function () { return require('./stream-connection'); } });
 Object.defineProperty(exports, 'streamInstance', { get: function () { return require('./stream-instance'); } });
+Object.defineProperty(exports, 'streamPrivatelinkEndpoint', { get: function () { return require('./stream-privatelink-endpoint'); } });
 Object.defineProperty(exports, 'streamProcessor', { get: function () { return require('./stream-processor'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
 Object.defineProperty(exports, 'teams', { get: function () { return require('./teams'); } });
@@ -156,6 +157,8 @@ Object.defineProperty(exports, 'dataMongodbatlasStreamConnection', { get: functi
 Object.defineProperty(exports, 'dataMongodbatlasStreamConnections', { get: function () { return require('./data-mongodbatlas-stream-connections'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamInstance', { get: function () { return require('./data-mongodbatlas-stream-instance'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamInstances', { get: function () { return require('./data-mongodbatlas-stream-instances'); } });
+Object.defineProperty(exports, 'dataMongodbatlasStreamPrivatelinkEndpoint', { get: function () { return require('./data-mongodbatlas-stream-privatelink-endpoint'); } });
+Object.defineProperty(exports, 'dataMongodbatlasStreamPrivatelinkEndpoints', { get: function () { return require('./data-mongodbatlas-stream-privatelink-endpoints'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamProcessor', { get: function () { return require('./data-mongodbatlas-stream-processor'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamProcessors', { get: function () { return require('./data-mongodbatlas-stream-processors'); } });
 Object.defineProperty(exports, 'dataMongodbatlasTeam', { get: function () { return require('./data-mongodbatlas-team'); } });
