@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -495,7 +495,7 @@ func ResetWithDefaultAlertsSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1158,7 +1158,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectIpAddresses {
 
@@ -1487,7 +1487,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddressesServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectIpAddressesServices {
 
@@ -1500,7 +1500,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddressesServicesClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectIpAddressesServicesClusters {
 
@@ -1513,7 +1513,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectLimits {
 	Name: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.project.ProjectTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 &project.ProjectTeams {
 	RoleNames: *[]*string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectIpAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectIpAddressesOutputReference
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() ProjectIpAddresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddressesServicesClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectIpAddressesServicesClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIpAddressesServicesClustersList
 ```
@@ -2016,7 +2016,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddressesServicesClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectIpAddressesServicesClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectIpAddressesServicesClustersOutputReference
 ```
@@ -2316,7 +2316,7 @@ func InternalValue() ProjectIpAddressesServicesClusters
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectIpAddressesServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectIpAddressesServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectIpAddressesServicesOutputReference
 ```
@@ -2576,7 +2576,7 @@ func InternalValue() ProjectIpAddressesServices
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectLimitsList
 ```
@@ -2736,7 +2736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectLimitsOutputReference
 ```
@@ -3080,7 +3080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectTeamsList
 ```
@@ -3240,7 +3240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.project.ProjectTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/project"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/project"
 
 project.NewProjectTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectTeamsOutputReference
 ```
