@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprivatelinkendpoint"
 
 streamprivatelinkendpoint.NewStreamPrivatelinkEndpoint(scope Construct, id *string, config StreamPrivatelinkEndpointConfig) StreamPrivatelinkEndpoint
 ```
@@ -406,7 +406,7 @@ func ResetServiceEndpointId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprivatelinkendpoint"
 
 streamprivatelinkendpoint.StreamPrivatelinkEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprivatelinkendpoint"
 
 streamprivatelinkendpoint.StreamPrivatelinkEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ streamprivatelinkendpoint.StreamPrivatelinkEndpoint_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprivatelinkendpoint"
 
 streamprivatelinkendpoint.StreamPrivatelinkEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ streamprivatelinkendpoint.StreamPrivatelinkEndpoint_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprivatelinkendpoint"
 
 streamprivatelinkendpoint.StreamPrivatelinkEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprivatelinkendpoint"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprivatelinkendpoint"
 
 &streamprivatelinkendpoint.StreamPrivatelinkEndpointConfig {
 	Connection: interface{},
