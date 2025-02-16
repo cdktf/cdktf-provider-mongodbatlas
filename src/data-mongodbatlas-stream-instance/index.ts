@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/data-sources/stream_instance
 // generated from terraform resource schema
 
