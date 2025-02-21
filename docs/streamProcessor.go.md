@@ -4,12 +4,12 @@
 
 ### StreamProcessor <a name="StreamProcessor" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor mongodbatlas_stream_processor}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor mongodbatlas_stream_processor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.NewStreamProcessor(scope Construct, id *string, config StreamProcessorConfig) StreamProcessor
 ```
@@ -405,7 +405,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.StreamProcessor_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.StreamProcessor_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ streamprocessor.StreamProcessor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.StreamProcessor_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ streamprocessor.StreamProcessor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.StreamProcessor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the StreamProcessor to import.
 
 The id of the existing StreamProcessor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 &streamprocessor.StreamProcessorConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streampr
 	Pipeline: *string,
 	ProcessorName: *string,
 	ProjectId: *string,
-	Options: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamProcessor.StreamProcessorOptions,
+	Options: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamProcessor.StreamProcessorOptions,
 	State: *string,
 }
 ```
@@ -967,7 +967,7 @@ InstanceName *string
 
 Human-readable label that identifies the stream instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#instance_name StreamProcessor#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#instance_name StreamProcessor#instance_name}
 
 ---
 
@@ -983,7 +983,7 @@ Stream aggregation pipeline you want to apply to your streaming data.
 
 [MongoDB Atlas Docs](https://www.mongodb.com/docs/atlas/atlas-stream-processing/stream-aggregation/#std-label-stream-aggregation) contain more information. Using [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode) is recommended when setting this attribute. For more details see the [Aggregation Pipelines Documentation](https://www.mongodb.com/docs/atlas/atlas-stream-processing/stream-aggregation/)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#pipeline StreamProcessor#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#pipeline StreamProcessor#pipeline}
 
 ---
 
@@ -997,7 +997,7 @@ ProcessorName *string
 
 Human-readable label that identifies the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#processor_name StreamProcessor#processor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#processor_name StreamProcessor#processor_name}
 
 ---
 
@@ -1015,7 +1015,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#project_id StreamProcessor#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#project_id StreamProcessor#project_id}
 
 ---
 
@@ -1029,7 +1029,7 @@ Options StreamProcessorOptions
 
 Optional configuration for the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#options StreamProcessor#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#options StreamProcessor#options}
 
 ---
 
@@ -1047,7 +1047,7 @@ Commonly occurring states are 'CREATED', 'STARTED', 'STOPPED' and 'FAILED'. Used
 
 **NOTE** When creating a stream processor, setting the state to STARTED can automatically start the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#state StreamProcessor#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#state StreamProcessor#state}
 
 ---
 
@@ -1056,10 +1056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 &streamprocessor.StreamProcessorOptions {
-	Dlq: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamProcessor.StreamProcessorOptionsDlq,
+	Dlq: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.streamProcessor.StreamProcessorOptionsDlq,
 }
 ```
 
@@ -1081,7 +1081,7 @@ Dlq StreamProcessorOptionsDlq
 
 Dead letter queue for the stream processor. Refer to the [MongoDB Atlas Docs](https://www.mongodb.com/docs/atlas/reference/glossary/#std-term-dead-letter-queue) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#dlq StreamProcessor#dlq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#dlq StreamProcessor#dlq}
 
 ---
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessorOptionsDlq.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 &streamprocessor.StreamProcessorOptionsDlq {
 	Coll: *string,
@@ -1119,7 +1119,7 @@ Coll *string
 
 Name of the collection to use for the DLQ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#coll StreamProcessor#coll}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#coll StreamProcessor#coll}
 
 ---
 
@@ -1133,7 +1133,7 @@ ConnectionName *string
 
 Name of the connection to write DLQ messages to. Must be an Atlas connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#connection_name StreamProcessor#connection_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#connection_name StreamProcessor#connection_name}
 
 ---
 
@@ -1147,7 +1147,7 @@ Db *string
 
 Name of the database to use for the DLQ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/stream_processor#db StreamProcessor#db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#db StreamProcessor#db}
 
 ---
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessorOptionsDlqOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.NewStreamProcessorOptionsDlqOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamProcessorOptionsDlqOutputReference
 ```
@@ -1473,7 +1473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamProcessor.StreamProcessorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamprocessor"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/streamprocessor"
 
 streamprocessor.NewStreamProcessorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamProcessorOptionsOutputReference
 ```
