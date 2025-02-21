@@ -31,6 +31,7 @@ Object.defineProperty(exports, 'federatedQueryLimit', { get: function () { retur
 Object.defineProperty(exports, 'federatedSettingsIdentityProvider', { get: function () { return require('./federated-settings-identity-provider'); } });
 Object.defineProperty(exports, 'federatedSettingsOrgConfig', { get: function () { return require('./federated-settings-org-config'); } });
 Object.defineProperty(exports, 'federatedSettingsOrgRoleMapping', { get: function () { return require('./federated-settings-org-role-mapping'); } });
+Object.defineProperty(exports, 'flexCluster', { get: function () { return require('./flex-cluster'); } });
 Object.defineProperty(exports, 'globalClusterConfig', { get: function () { return require('./global-cluster-config'); } });
 Object.defineProperty(exports, 'ldapConfiguration', { get: function () { return require('./ldap-configuration'); } });
 Object.defineProperty(exports, 'ldapVerify', { get: function () { return require('./ldap-verify'); } });
@@ -114,6 +115,12 @@ Object.defineProperty(exports, 'dataMongodbatlasFederatedSettingsOrgConfig', { g
 Object.defineProperty(exports, 'dataMongodbatlasFederatedSettingsOrgConfigs', { get: function () { return require('./data-mongodbatlas-federated-settings-org-configs'); } });
 Object.defineProperty(exports, 'dataMongodbatlasFederatedSettingsOrgRoleMapping', { get: function () { return require('./data-mongodbatlas-federated-settings-org-role-mapping'); } });
 Object.defineProperty(exports, 'dataMongodbatlasFederatedSettingsOrgRoleMappings', { get: function () { return require('./data-mongodbatlas-federated-settings-org-role-mappings'); } });
+Object.defineProperty(exports, 'dataMongodbatlasFlexCluster', { get: function () { return require('./data-mongodbatlas-flex-cluster'); } });
+Object.defineProperty(exports, 'dataMongodbatlasFlexClusters', { get: function () { return require('./data-mongodbatlas-flex-clusters'); } });
+Object.defineProperty(exports, 'dataMongodbatlasFlexRestoreJob', { get: function () { return require('./data-mongodbatlas-flex-restore-job'); } });
+Object.defineProperty(exports, 'dataMongodbatlasFlexRestoreJobs', { get: function () { return require('./data-mongodbatlas-flex-restore-jobs'); } });
+Object.defineProperty(exports, 'dataMongodbatlasFlexSnapshot', { get: function () { return require('./data-mongodbatlas-flex-snapshot'); } });
+Object.defineProperty(exports, 'dataMongodbatlasFlexSnapshots', { get: function () { return require('./data-mongodbatlas-flex-snapshots'); } });
 Object.defineProperty(exports, 'dataMongodbatlasGlobalClusterConfig', { get: function () { return require('./data-mongodbatlas-global-cluster-config'); } });
 Object.defineProperty(exports, 'dataMongodbatlasLdapConfiguration', { get: function () { return require('./data-mongodbatlas-ldap-configuration'); } });
 Object.defineProperty(exports, 'dataMongodbatlasLdapVerify', { get: function () { return require('./data-mongodbatlas-ldap-verify'); } });
