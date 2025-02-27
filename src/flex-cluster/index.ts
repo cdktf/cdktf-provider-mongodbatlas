@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface FlexClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Human-readable label that identifies the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#name FlexCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#name FlexCluster#name}
   */
   readonly name: string;
   /**
   * Unique 24-hexadecimal character string that identifies the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#project_id FlexCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#project_id FlexCluster#project_id}
   */
   readonly projectId: string;
   /**
   * Group of cloud provider settings that configure the provisioned MongoDB flex cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#provider_settings FlexCluster#provider_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#provider_settings FlexCluster#provider_settings}
   */
   readonly providerSettings: FlexClusterProviderSettings;
   /**
   * Map that contains key-value pairs between 1 to 255 characters in length for tagging and categorizing the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#tags FlexCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#tags FlexCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * Flag that indicates whether termination protection is enabled on the cluster. If set to `true`, MongoDB Cloud won't delete the cluster. If set to `false`, MongoDB Cloud will delete the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#termination_protection_enabled FlexCluster#termination_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#termination_protection_enabled FlexCluster#termination_protection_enabled}
   */
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
 }
@@ -160,13 +155,13 @@ export interface FlexClusterProviderSettings {
   /**
   * Cloud service provider on which MongoDB Cloud provisioned the flex cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#backing_provider_name FlexCluster#backing_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#backing_provider_name FlexCluster#backing_provider_name}
   */
   readonly backingProviderName: string;
   /**
   * Human-readable label that identifies the geographic location of your MongoDB flex cluster. The region you choose can affect network latency for clients accessing your databases. For a complete list of region names, see [AWS](https://docs.atlas.mongodb.com/reference/amazon-aws/#std-label-amazon-aws), [GCP](https://docs.atlas.mongodb.com/reference/google-gcp/), and [Azure](https://docs.atlas.mongodb.com/reference/microsoft-azure/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#region_name FlexCluster#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#region_name FlexCluster#region_name}
   */
   readonly regionName: string;
 }
@@ -293,7 +288,7 @@ export class FlexClusterProviderSettingsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster mongodbatlas_flex_cluster}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster mongodbatlas_flex_cluster}
 */
 export class FlexCluster extends cdktf.TerraformResource {
 
@@ -309,7 +304,7 @@ export class FlexCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FlexCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FlexCluster to import
-  * @param importFromId The id of the existing FlexCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FlexCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FlexCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -321,7 +316,7 @@ export class FlexCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/flex_cluster mongodbatlas_flex_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/flex_cluster mongodbatlas_flex_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +327,7 @@ export class FlexCluster extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_flex_cluster',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.27.0',
+        providerVersion: '1.28.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataMongodbatlasStreamProcessorConfig extends cdktf.TerraformMe
   /**
   * Human-readable label that identifies the stream instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor#instance_name DataMongodbatlasStreamProcessor#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor#instance_name DataMongodbatlasStreamProcessor#instance_name}
   */
   readonly instanceName: string;
   /**
   * Human-readable label that identifies the stream processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor#processor_name DataMongodbatlasStreamProcessor#processor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor#processor_name DataMongodbatlasStreamProcessor#processor_name}
   */
   readonly processorName: string;
   /**
@@ -29,7 +24,7 @@ export interface DataMongodbatlasStreamProcessorConfig extends cdktf.TerraformMe
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor#project_id DataMongodbatlasStreamProcessor#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor#project_id DataMongodbatlasStreamProcessor#project_id}
   */
   readonly projectId: string;
 }
@@ -154,7 +149,7 @@ export class DataMongodbatlasStreamProcessorOptionsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor mongodbatlas_stream_processor}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor mongodbatlas_stream_processor}
 */
 export class DataMongodbatlasStreamProcessor extends cdktf.TerraformDataSource {
 
@@ -170,7 +165,7 @@ export class DataMongodbatlasStreamProcessor extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasStreamProcessor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasStreamProcessor to import
-  * @param importFromId The id of the existing DataMongodbatlasStreamProcessor that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasStreamProcessor that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasStreamProcessor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -182,7 +177,7 @@ export class DataMongodbatlasStreamProcessor extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/data-sources/stream_processor mongodbatlas_stream_processor} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/stream_processor mongodbatlas_stream_processor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +188,7 @@ export class DataMongodbatlasStreamProcessor extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_stream_processor',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.27.0',
+        providerVersion: '1.28.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

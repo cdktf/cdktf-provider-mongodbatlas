@@ -4,7 +4,7 @@
 
 ### EncryptionAtRest <a name="EncryptionAtRest" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest.Initializer"></a>
 
@@ -527,7 +527,7 @@ The construct id used in the generated config for the EncryptionAtRest to import
 
 The id of the existing EncryptionAtRest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,6 +839,7 @@ const encryptionAtRestAwsKmsConfig: encryptionAtRest.EncryptionAtRestAwsKmsConfi
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.customerMasterKeyId">customerMasterKeyId</a></code> | <code>string</code> | Unique alphanumeric string that identifies the Amazon Web Services (AWS) Customer Master Key (CMK) you used to encrypt and decrypt the MongoDB master keys. |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag that indicates whether someone enabled encryption at rest for the specified project through Amazon Web Services (AWS) Key Management Service (KMS). |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.region">region</a></code> | <code>string</code> | Physical location where MongoDB Atlas deploys your AWS-hosted MongoDB cluster nodes. |
+| <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.requirePrivateNetworking">requirePrivateNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable connection to your Amazon Web Services (AWS) Key Management Service (KMS) over private networking. |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.roleId">roleId</a></code> | <code>string</code> | Unique 24-hexadecimal digit string that identifies an Amazon Web Services (AWS) Identity and Access Management (IAM) role. |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | Human-readable label of the Identity and Access Management (IAM) secret access key with permissions required to access your Amazon Web Services (AWS) customer master key. |
 
@@ -854,7 +855,7 @@ public readonly accessKeyId: string;
 
 Unique alphanumeric string that identifies an Identity and Access Management (IAM) access key with permissions required to access your Amazon Web Services (AWS) Customer Master Key (CMK).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#access_key_id EncryptionAtRest#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#access_key_id EncryptionAtRest#access_key_id}
 
 ---
 
@@ -868,7 +869,7 @@ public readonly customerMasterKeyId: string;
 
 Unique alphanumeric string that identifies the Amazon Web Services (AWS) Customer Master Key (CMK) you used to encrypt and decrypt the MongoDB master keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#customer_master_key_id EncryptionAtRest#customer_master_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#customer_master_key_id EncryptionAtRest#customer_master_key_id}
 
 ---
 
@@ -884,7 +885,7 @@ Flag that indicates whether someone enabled encryption at rest for the specified
 
 To disable encryption at rest using customer key management and remove the configuration details, pass only this parameter with a value of `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
 
 ---
 
@@ -900,7 +901,21 @@ Physical location where MongoDB Atlas deploys your AWS-hosted MongoDB cluster no
 
 The region you choose can affect network latency for clients accessing your databases. When MongoDB Cloud deploys a dedicated cluster, it checks if a VPC or VPC connection exists for that provider and region. If not, MongoDB Atlas creates them as part of the deployment. MongoDB Atlas assigns the VPC a CIDR block. To limit a new VPC peering connection to one CIDR block and region, create the connection first. Deploy the cluster after the connection starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#region EncryptionAtRest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#region EncryptionAtRest#region}
+
+---
+
+##### `requirePrivateNetworking`<sup>Optional</sup> <a name="requirePrivateNetworking" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig.property.requirePrivateNetworking"></a>
+
+```typescript
+public readonly requirePrivateNetworking: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable connection to your Amazon Web Services (AWS) Key Management Service (KMS) over private networking.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#require_private_networking EncryptionAtRest#require_private_networking}
 
 ---
 
@@ -916,7 +931,7 @@ Unique 24-hexadecimal digit string that identifies an Amazon Web Services (AWS) 
 
 This IAM role has the permissions required to manage your AWS customer master key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#role_id EncryptionAtRest#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#role_id EncryptionAtRest#role_id}
 
 ---
 
@@ -930,7 +945,7 @@ public readonly secretAccessKey: string;
 
 Human-readable label of the Identity and Access Management (IAM) secret access key with permissions required to access your Amazon Web Services (AWS) customer master key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#secret_access_key EncryptionAtRest#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#secret_access_key EncryptionAtRest#secret_access_key}
 
 ---
 
@@ -971,7 +986,7 @@ public readonly azureEnvironment: string;
 
 Azure environment in which your account credentials reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#azure_environment EncryptionAtRest#azure_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#azure_environment EncryptionAtRest#azure_environment}
 
 ---
 
@@ -985,7 +1000,7 @@ public readonly clientId: string;
 
 Unique 36-hexadecimal character string that identifies an Azure application associated with your Azure Active Directory tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#client_id EncryptionAtRest#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#client_id EncryptionAtRest#client_id}
 
 ---
 
@@ -1001,7 +1016,7 @@ Flag that indicates whether someone enabled encryption at rest for the specified
 
 To disable encryption at rest using customer key management and remove the configuration details, pass only this parameter with a value of `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
 
 ---
 
@@ -1015,7 +1030,7 @@ public readonly keyIdentifier: string;
 
 Web address with a unique key that identifies for your Azure Key Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#key_identifier EncryptionAtRest#key_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#key_identifier EncryptionAtRest#key_identifier}
 
 ---
 
@@ -1029,7 +1044,7 @@ public readonly keyVaultName: string;
 
 Unique string that identifies the Azure Key Vault that contains your key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#key_vault_name EncryptionAtRest#key_vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#key_vault_name EncryptionAtRest#key_vault_name}
 
 ---
 
@@ -1043,7 +1058,7 @@ public readonly requirePrivateNetworking: boolean | IResolvable;
 
 Enable connection to your Azure Key Vault over private networking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#require_private_networking EncryptionAtRest#require_private_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#require_private_networking EncryptionAtRest#require_private_networking}
 
 ---
 
@@ -1057,7 +1072,7 @@ public readonly resourceGroupName: string;
 
 Name of the Azure resource group that contains your Azure Key Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#resource_group_name EncryptionAtRest#resource_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#resource_group_name EncryptionAtRest#resource_group_name}
 
 ---
 
@@ -1071,7 +1086,7 @@ public readonly secret: string;
 
 Private data that you need secured and that belongs to the specified Azure Key Vault (AKV) tenant (**azureKeyVault.tenantID**). This data can include any type of sensitive data such as passwords, database connection strings, API keys, and the like. AKV stores this information as encrypted binary data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#secret EncryptionAtRest#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#secret EncryptionAtRest#secret}
 
 ---
 
@@ -1085,7 +1100,7 @@ public readonly subscriptionId: string;
 
 Unique 36-hexadecimal character string that identifies your Azure subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#subscription_id EncryptionAtRest#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#subscription_id EncryptionAtRest#subscription_id}
 
 ---
 
@@ -1099,7 +1114,7 @@ public readonly tenantId: string;
 
 Unique 36-hexadecimal character string that identifies the Azure Active Directory tenant within your Azure subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#tenant_id EncryptionAtRest#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#tenant_id EncryptionAtRest#tenant_id}
 
 ---
 
@@ -1211,7 +1226,7 @@ public readonly projectId: string;
 
 Unique 24-hexadecimal digit string that identifies your project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}
 
 ---
 
@@ -1225,7 +1240,7 @@ public readonly awsKmsConfig: IResolvable | EncryptionAtRestAwsKmsConfig[];
 
 aws_kms_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
 
 ---
 
@@ -1239,7 +1254,7 @@ public readonly azureKeyVaultConfig: IResolvable | EncryptionAtRestAzureKeyVault
 
 azure_key_vault_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
 
 ---
 
@@ -1253,7 +1268,7 @@ public readonly googleCloudKmsConfig: IResolvable | EncryptionAtRestGoogleCloudK
 
 google_cloud_kms_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
 
 ---
 
@@ -1289,7 +1304,7 @@ Flag that indicates whether someone enabled encryption at rest for the specified
 
 To disable encryption at rest using customer key management and remove the configuration details, pass only this parameter with a value of `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#enabled EncryptionAtRest#enabled}
 
 ---
 
@@ -1303,7 +1318,7 @@ public readonly keyVersionResourceId: string;
 
 Resource path that displays the key version resource ID for your Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#key_version_resource_id EncryptionAtRest#key_version_resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#key_version_resource_id EncryptionAtRest#key_version_resource_id}
 
 ---
 
@@ -1319,7 +1334,7 @@ JavaScript Object Notation (JSON) object that contains the Google Cloud Key Mana
 
 Format the JSON as a string and not as an object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/encryption_at_rest#service_account_key EncryptionAtRest#service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/encryption_at_rest#service_account_key EncryptionAtRest#service_account_key}
 
 ---
 
@@ -1557,6 +1572,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetCustomerMasterKeyId">resetCustomerMasterKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetRequirePrivateNetworking">resetRequirePrivateNetworking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetRoleId">resetRoleId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetSecretAccessKey">resetSecretAccessKey</a></code> | *No description.* |
 
@@ -1736,6 +1752,12 @@ public resetEnabled(): void
 public resetRegion(): void
 ```
 
+##### `resetRequirePrivateNetworking` <a name="resetRequirePrivateNetworking" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetRequirePrivateNetworking"></a>
+
+```typescript
+public resetRequirePrivateNetworking(): void
+```
+
 ##### `resetRoleId` <a name="resetRoleId" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.resetRoleId"></a>
 
 ```typescript
@@ -1760,12 +1782,14 @@ public resetSecretAccessKey(): void
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.customerMasterKeyIdInput">customerMasterKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.requirePrivateNetworkingInput">requirePrivateNetworkingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.roleIdInput">roleIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.secretAccessKeyInput">secretAccessKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.customerMasterKeyId">customerMasterKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.requirePrivateNetworking">requirePrivateNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.roleId">roleId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig">EncryptionAtRestAwsKmsConfig</a></code> | *No description.* |
@@ -1846,6 +1870,16 @@ public readonly regionInput: string;
 
 ---
 
+##### `requirePrivateNetworkingInput`<sup>Optional</sup> <a name="requirePrivateNetworkingInput" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.requirePrivateNetworkingInput"></a>
+
+```typescript
+public readonly requirePrivateNetworkingInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `roleIdInput`<sup>Optional</sup> <a name="roleIdInput" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.roleIdInput"></a>
 
 ```typescript
@@ -1903,6 +1937,16 @@ public readonly region: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `requirePrivateNetworking`<sup>Required</sup> <a name="requirePrivateNetworking" id="@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference.property.requirePrivateNetworking"></a>
+
+```typescript
+public readonly requirePrivateNetworking: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 

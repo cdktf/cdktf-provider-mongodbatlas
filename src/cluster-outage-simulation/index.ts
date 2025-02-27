@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterOutageSimulationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#cluster_name ClusterOutageSimulation#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#cluster_name ClusterOutageSimulation#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#id ClusterOutageSimulation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#id ClusterOutageSimulation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#project_id ClusterOutageSimulation#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#project_id ClusterOutageSimulation#project_id}
   */
   readonly projectId: string;
   /**
   * outage_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#outage_filters ClusterOutageSimulation#outage_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#outage_filters ClusterOutageSimulation#outage_filters}
   */
   readonly outageFilters: ClusterOutageSimulationOutageFilters[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#timeouts ClusterOutageSimulation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#timeouts ClusterOutageSimulation#timeouts}
   */
   readonly timeouts?: ClusterOutageSimulationTimeouts;
 }
 export interface ClusterOutageSimulationOutageFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#cloud_provider ClusterOutageSimulation#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#cloud_provider ClusterOutageSimulation#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#region_name ClusterOutageSimulation#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#region_name ClusterOutageSimulation#region_name}
   */
   readonly regionName: string;
 }
@@ -190,7 +185,7 @@ export class ClusterOutageSimulationOutageFiltersList extends cdktf.ComplexList 
 }
 export interface ClusterOutageSimulationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#delete ClusterOutageSimulation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#delete ClusterOutageSimulation#delete}
   */
   readonly delete?: string;
 }
@@ -284,7 +279,7 @@ export class ClusterOutageSimulationTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation}
 */
 export class ClusterOutageSimulation extends cdktf.TerraformResource {
 
@@ -300,7 +295,7 @@ export class ClusterOutageSimulation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ClusterOutageSimulation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClusterOutageSimulation to import
-  * @param importFromId The id of the existing ClusterOutageSimulation that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ClusterOutageSimulation that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClusterOutageSimulation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -312,7 +307,7 @@ export class ClusterOutageSimulation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -323,7 +318,7 @@ export class ClusterOutageSimulation extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cluster_outage_simulation',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.27.0',
+        providerVersion: '1.28.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
