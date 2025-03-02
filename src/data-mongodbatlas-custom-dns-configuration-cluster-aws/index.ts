@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/custom_dns_configuration_cluster_aws
 // generated from terraform resource schema
 
