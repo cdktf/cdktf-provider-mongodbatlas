@@ -1,3 +1,3 @@
 # `mongodbatlas_auditing`
 
-Refer to the Terraform Registry for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/auditing).
+Refer to the Terraform Registry for docs: [`mongodbatlas_auditing`](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/auditing).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,61 +13,65 @@ import * as cdktf from 'cdktf';
 
 export interface StreamConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#authentication StreamConnection#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#authentication StreamConnection#authentication}
   */
   readonly authentication?: StreamConnectionAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#aws StreamConnection#aws}
+  */
+  readonly aws?: StreamConnectionAws;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}
   */
   readonly bootstrapServers?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#config StreamConnection#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#config StreamConnection#config}
   */
   readonly config?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}
   */
   readonly connectionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}
   */
   readonly dbRoleToExecute?: StreamConnectionDbRoleToExecute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#networking StreamConnection#networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#networking StreamConnection#networking}
   */
   readonly networking?: StreamConnectionNetworking;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#project_id StreamConnection#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#project_id StreamConnection#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#security StreamConnection#security}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#security StreamConnection#security}
   */
   readonly security?: StreamConnectionSecurity;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#type StreamConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}
   */
   readonly type: string;
 }
 export interface StreamConnectionAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}
   */
   readonly mechanism?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#password StreamConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#password StreamConnection#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#username StreamConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#username StreamConnection#username}
   */
   readonly username?: string;
 }
@@ -217,13 +221,104 @@ export class StreamConnectionAuthenticationOutputReference extends cdktf.Complex
     return this._username;
   }
 }
+export interface StreamConnectionAws {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#role_arn StreamConnection#role_arn}
+  */
+  readonly roleArn: string;
+}
+
+export function streamConnectionAwsToTerraform(struct?: StreamConnectionAws | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+
+export function streamConnectionAwsToHclTerraform(struct?: StreamConnectionAws | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class StreamConnectionAwsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): StreamConnectionAws | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StreamConnectionAws | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
 export interface StreamConnectionDbRoleToExecute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#role StreamConnection#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#role StreamConnection#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#type StreamConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}
   */
   readonly type: string;
 }
@@ -340,11 +435,11 @@ export class StreamConnectionDbRoleToExecuteOutputReference extends cdktf.Comple
 }
 export interface StreamConnectionNetworkingAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#connection_id StreamConnection#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_id StreamConnection#connection_id}
   */
   readonly connectionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#type StreamConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}
   */
   readonly type: string;
 }
@@ -454,7 +549,7 @@ export class StreamConnectionNetworkingAccessOutputReference extends cdktf.Compl
 }
 export interface StreamConnectionNetworking {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#access StreamConnection#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#access StreamConnection#access}
   */
   readonly access: StreamConnectionNetworkingAccess;
 }
@@ -545,11 +640,11 @@ export class StreamConnectionNetworkingOutputReference extends cdktf.ComplexObje
 }
 export interface StreamConnectionSecurity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}
   */
   readonly brokerPublicCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#protocol StreamConnection#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#protocol StreamConnection#protocol}
   */
   readonly protocol?: string;
 }
@@ -672,7 +767,7 @@ export class StreamConnectionSecurityOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection mongodbatlas_stream_connection}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection}
 */
 export class StreamConnection extends cdktf.TerraformResource {
 
@@ -688,7 +783,7 @@ export class StreamConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StreamConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamConnection to import
-  * @param importFromId The id of the existing StreamConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -700,7 +795,7 @@ export class StreamConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -711,7 +806,7 @@ export class StreamConnection extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_stream_connection',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.28.0',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -723,6 +818,7 @@ export class StreamConnection extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._authentication.internalValue = config.authentication;
+    this._aws.internalValue = config.aws;
     this._bootstrapServers = config.bootstrapServers;
     this._clusterName = config.clusterName;
     this._config = config.config;
@@ -753,6 +849,22 @@ export class StreamConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get authenticationInput() {
     return this._authentication.internalValue;
+  }
+
+  // aws - computed: false, optional: true, required: false
+  private _aws = new StreamConnectionAwsOutputReference(this, "aws");
+  public get aws() {
+    return this._aws;
+  }
+  public putAws(value: StreamConnectionAws) {
+    this._aws.internalValue = value;
+  }
+  public resetAws() {
+    this._aws.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsInput() {
+    return this._aws.internalValue;
   }
 
   // bootstrap_servers - computed: false, optional: true, required: false
@@ -915,6 +1027,7 @@ export class StreamConnection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       authentication: streamConnectionAuthenticationToTerraform(this._authentication.internalValue),
+      aws: streamConnectionAwsToTerraform(this._aws.internalValue),
       bootstrap_servers: cdktf.stringToTerraform(this._bootstrapServers),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       config: cdktf.hashMapper(cdktf.stringToTerraform)(this._config),
@@ -935,6 +1048,12 @@ export class StreamConnection extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "StreamConnectionAuthentication",
+      },
+      aws: {
+        value: streamConnectionAwsToHclTerraform(this._aws.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "StreamConnectionAws",
       },
       bootstrap_servers: {
         value: cdktf.stringToHclTerraform(this._bootstrapServers),

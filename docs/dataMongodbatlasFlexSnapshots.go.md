@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasFlexSnapshots <a name="DataMongodbatlasFlexSnapshots" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/flex_snapshots mongodbatlas_flex_snapshots}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/flex_snapshots mongodbatlas_flex_snapshots}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataMongodbatlasFlexSnapsh
 
 The id of the existing DataMongodbatlasFlexSnapshots that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/flex_snapshots#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/flex_snapshots#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,7 +709,7 @@ Name *string
 
 Human-readable label that identifies the flex cluster whose snapshot you want to restore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/flex_snapshots#name DataMongodbatlasFlexSnapshots#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/flex_snapshots#name DataMongodbatlasFlexSnapshots#name}
 
 ---
 
@@ -727,7 +727,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/flex_snapshots#project_id DataMongodbatlasFlexSnapshots#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/flex_snapshots#project_id DataMongodbatlasFlexSnapshots#project_id}
 
 ---
 
