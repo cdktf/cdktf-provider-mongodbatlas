@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface CloudProviderAccessSetupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#id CloudProviderAccessSetup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#id CloudProviderAccessSetup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#project_id CloudProviderAccessSetup#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#project_id CloudProviderAccessSetup#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#provider_name CloudProviderAccessSetup#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#provider_name CloudProviderAccessSetup#provider_name}
   */
   readonly providerName: string;
   /**
   * azure_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#azure_config CloudProviderAccessSetup#azure_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#azure_config CloudProviderAccessSetup#azure_config}
   */
   readonly azureConfig?: CloudProviderAccessSetupAzureConfig[] | cdktf.IResolvable;
 }
@@ -116,15 +111,15 @@ export class CloudProviderAccessSetupAwsConfigList extends cdktf.ComplexList {
 }
 export interface CloudProviderAccessSetupAzureConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#atlas_azure_app_id CloudProviderAccessSetup#atlas_azure_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#atlas_azure_app_id CloudProviderAccessSetup#atlas_azure_app_id}
   */
   readonly atlasAzureAppId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#service_principal_id CloudProviderAccessSetup#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#service_principal_id CloudProviderAccessSetup#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#tenant_id CloudProviderAccessSetup#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#tenant_id CloudProviderAccessSetup#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -289,7 +284,7 @@ export class CloudProviderAccessSetupAzureConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}
 */
 export class CloudProviderAccessSetup extends cdktf.TerraformResource {
 
@@ -305,7 +300,7 @@ export class CloudProviderAccessSetup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudProviderAccessSetup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudProviderAccessSetup to import
-  * @param importFromId The id of the existing CloudProviderAccessSetup that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudProviderAccessSetup that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudProviderAccessSetup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -317,7 +312,7 @@ export class CloudProviderAccessSetup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -328,7 +323,7 @@ export class CloudProviderAccessSetup extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cloud_provider_access_setup',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.28.0',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
