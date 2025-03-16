@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.NewCloudBackupSnapshotExportJob(scope Construct, id *string, config CloudBackupSnapshotExportJobConfig) CloudBackupSnapshotExportJob
 ```
@@ -398,7 +398,7 @@ func ResetCustomData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJob_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJob_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJob_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -896,7 +896,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobComponents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 &cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJobComponents {
 
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackup
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 &cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJobConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobCustomData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 &cloudbackupsnapshotexportjob.CloudBackupSnapshotExportJobCustomData {
 	Key: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobComponentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.NewCloudBackupSnapshotExportJobComponentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudBackupSnapshotExportJobComponentsList
 ```
@@ -1280,7 +1280,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobComponentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.NewCloudBackupSnapshotExportJobComponentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudBackupSnapshotExportJobComponentsOutputReference
 ```
@@ -1569,7 +1569,7 @@ func InternalValue() CloudBackupSnapshotExportJobComponents
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobCustomDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.NewCloudBackupSnapshotExportJobCustomDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudBackupSnapshotExportJobCustomDataList
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudBackupSnapshotExportJob.CloudBackupSnapshotExportJobCustomDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/cloudbackupsnapshotexportjob"
 
 cloudbackupsnapshotexportjob.NewCloudBackupSnapshotExportJobCustomDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudBackupSnapshotExportJobCustomDataOutputReference
 ```
