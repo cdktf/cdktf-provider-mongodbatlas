@@ -4,12 +4,12 @@
 
 ### FlexCluster <a name="FlexCluster" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster mongodbatlas_flex_cluster}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster mongodbatlas_flex_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.NewFlexCluster(scope Construct, id *string, config FlexClusterConfig) FlexCluster
 ```
@@ -405,7 +405,7 @@ func ResetTerminationProtectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.FlexCluster_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.FlexCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ flexcluster.FlexCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.FlexCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ flexcluster.FlexCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.FlexCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the FlexCluster to import.
 
 The id of the existing FlexCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterBackupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 &flexcluster.FlexClusterBackupSettings {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexclus
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 &flexcluster.FlexClusterConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexclus
 	Provisioners: *[]interface{},
 	Name: *string,
 	ProjectId: *string,
-	ProviderSettings: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.flexCluster.FlexClusterProviderSettings,
+	ProviderSettings: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.flexCluster.FlexClusterProviderSettings,
 	Tags: *map[string]*string,
 	TerminationProtectionEnabled: interface{},
 }
@@ -1022,7 +1022,7 @@ Name *string
 
 Human-readable label that identifies the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#name FlexCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#name FlexCluster#name}
 
 ---
 
@@ -1036,7 +1036,7 @@ ProjectId *string
 
 Unique 24-hexadecimal character string that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#project_id FlexCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#project_id FlexCluster#project_id}
 
 ---
 
@@ -1050,7 +1050,7 @@ ProviderSettings FlexClusterProviderSettings
 
 Group of cloud provider settings that configure the provisioned MongoDB flex cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#provider_settings FlexCluster#provider_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#provider_settings FlexCluster#provider_settings}
 
 ---
 
@@ -1064,7 +1064,7 @@ Tags *map[string]*string
 
 Map that contains key-value pairs between 1 to 255 characters in length for tagging and categorizing the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#tags FlexCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#tags FlexCluster#tags}
 
 ---
 
@@ -1080,7 +1080,7 @@ Flag that indicates whether termination protection is enabled on the cluster.
 
 If set to `true`, MongoDB Cloud won't delete the cluster. If set to `false`, MongoDB Cloud will delete the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#termination_protection_enabled FlexCluster#termination_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#termination_protection_enabled FlexCluster#termination_protection_enabled}
 
 ---
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 &flexcluster.FlexClusterConnectionStrings {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexclus
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterProviderSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 &flexcluster.FlexClusterProviderSettings {
 	BackingProviderName: *string,
@@ -1129,7 +1129,7 @@ BackingProviderName *string
 
 Cloud service provider on which MongoDB Cloud provisioned the flex cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#backing_provider_name FlexCluster#backing_provider_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#backing_provider_name FlexCluster#backing_provider_name}
 
 ---
 
@@ -1145,7 +1145,7 @@ Human-readable label that identifies the geographic location of your MongoDB fle
 
 The region you choose can affect network latency for clients accessing your databases. For a complete list of region names, see [AWS](https://docs.atlas.mongodb.com/reference/amazon-aws/#std-label-amazon-aws), [GCP](https://docs.atlas.mongodb.com/reference/google-gcp/), and [Azure](https://docs.atlas.mongodb.com/reference/microsoft-azure/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/flex_cluster#region_name FlexCluster#region_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#region_name FlexCluster#region_name}
 
 ---
 
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterBackupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.NewFlexClusterBackupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlexClusterBackupSettingsOutputReference
 ```
@@ -1416,7 +1416,7 @@ func InternalValue() FlexClusterBackupSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.NewFlexClusterConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlexClusterConnectionStringsOutputReference
 ```
@@ -1687,7 +1687,7 @@ func InternalValue() FlexClusterConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterProviderSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/flexcluster"
 
 flexcluster.NewFlexClusterProviderSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlexClusterProviderSettingsOutputReference
 ```

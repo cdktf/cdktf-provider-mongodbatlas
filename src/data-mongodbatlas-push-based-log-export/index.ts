@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/push_based_log_export
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/push_based_log_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,13 +12,13 @@ export interface DataMongodbatlasPushBasedLogExportConfig extends cdktf.Terrafor
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/push_based_log_export#project_id DataMongodbatlasPushBasedLogExport#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/push_based_log_export#project_id DataMongodbatlasPushBasedLogExport#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export}
 */
 export class DataMongodbatlasPushBasedLogExport extends cdktf.TerraformDataSource {
 
@@ -39,7 +34,7 @@ export class DataMongodbatlasPushBasedLogExport extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataMongodbatlasPushBasedLogExport resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasPushBasedLogExport to import
-  * @param importFromId The id of the existing DataMongodbatlasPushBasedLogExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/push_based_log_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasPushBasedLogExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/push_based_log_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasPushBasedLogExport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +46,7 @@ export class DataMongodbatlasPushBasedLogExport extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +57,7 @@ export class DataMongodbatlasPushBasedLogExport extends cdktf.TerraformDataSourc
       terraformResourceType: 'mongodbatlas_push_based_log_export',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.29.0',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

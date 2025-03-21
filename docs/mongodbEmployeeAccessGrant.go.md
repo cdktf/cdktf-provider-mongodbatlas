@@ -4,12 +4,12 @@
 
 ### MongodbEmployeeAccessGrant <a name="MongodbEmployeeAccessGrant" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/mongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/mongodbemployeeaccessgrant"
 
 mongodbemployeeaccessgrant.NewMongodbEmployeeAccessGrant(scope Construct, id *string, config MongodbEmployeeAccessGrantConfig) MongodbEmployeeAccessGrant
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/mongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/mongodbemployeeaccessgrant"
 
 mongodbemployeeaccessgrant.MongodbEmployeeAccessGrant_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/mongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/mongodbemployeeaccessgrant"
 
 mongodbemployeeaccessgrant.MongodbEmployeeAccessGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ mongodbemployeeaccessgrant.MongodbEmployeeAccessGrant_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/mongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/mongodbemployeeaccessgrant"
 
 mongodbemployeeaccessgrant.MongodbEmployeeAccessGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ mongodbemployeeaccessgrant.MongodbEmployeeAccessGrant_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/mongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/mongodbemployeeaccessgrant"
 
 mongodbemployeeaccessgrant.MongodbEmployeeAccessGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the MongodbEmployeeAccessGrant
 
 The id of the existing MongodbEmployeeAccessGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/mongodb_employee_access_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/mongodb_employee_access_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.mongodbEmployeeAccessGrant.MongodbEmployeeAccessGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/mongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/mongodbemployeeaccessgrant"
 
 &mongodbemployeeaccessgrant.MongodbEmployeeAccessGrantConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ ClusterName *string
 
 Human-readable label that identifies this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/mongodb_employee_access_grant#cluster_name MongodbEmployeeAccessGrant#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/mongodb_employee_access_grant#cluster_name MongodbEmployeeAccessGrant#cluster_name}
 
 ---
 
@@ -884,7 +884,7 @@ ExpirationTime *string
 
 Expiration date for the employee access grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/mongodb_employee_access_grant#expiration_time MongodbEmployeeAccessGrant#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/mongodb_employee_access_grant#expiration_time MongodbEmployeeAccessGrant#expiration_time}
 
 ---
 
@@ -898,7 +898,7 @@ GrantType *string
 
 Level of access to grant to MongoDB Employees. Possible values are CLUSTER_DATABASE_LOGS, CLUSTER_INFRASTRUCTURE or CLUSTER_INFRASTRUCTURE_AND_APP_SERVICES_SYNC_DATA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/mongodb_employee_access_grant#grant_type MongodbEmployeeAccessGrant#grant_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/mongodb_employee_access_grant#grant_type MongodbEmployeeAccessGrant#grant_type}
 
 ---
 
@@ -916,7 +916,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/mongodb_employee_access_grant#project_id MongodbEmployeeAccessGrant#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/mongodb_employee_access_grant#project_id MongodbEmployeeAccessGrant#project_id}
 
 ---
 
