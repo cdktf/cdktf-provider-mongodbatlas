@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasStreamPrivatelinkEndpoint <a name="DataMongodbatlasStreamPrivatelinkEndpoint" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Private Link connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint#id DataMongodbatlasStreamPrivatelinkEndpoint#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint#id DataMongodbatlasStreamPrivatelinkEndpoint#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group or project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint#project_id DataMongodbatlasStreamPrivatelinkEndpoint#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint#project_id DataMongodbatlasStreamPrivatelinkEndpoint#project_id}
 
 ---
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataMongodbatlasStreamPriv
 
 The id of the existing DataMongodbatlasStreamPrivatelinkEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -512,9 +512,13 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.dnsDomain">dns_domain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.dnsSubDomain">dns_sub_domain</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.errorMessage">error_message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.interfaceEndpointId">interface_endpoint_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.interfaceEndpointName">interface_endpoint_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.providerAccountId">provider_account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.providerName">provider_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.serviceEndpointId">service_endpoint_id</a></code> | <code>str</code> | *No description.* |
@@ -649,6 +653,16 @@ provider: TerraformProvider
 
 ---
 
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.arn"></a>
+
+```python
+arn: str
+```
+
+- *Type:* str
+
+---
+
 ##### `dns_domain`<sup>Required</sup> <a name="dns_domain" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.dnsDomain"></a>
 
 ```python
@@ -669,10 +683,40 @@ dns_sub_domain: typing.List[str]
 
 ---
 
+##### `error_message`<sup>Required</sup> <a name="error_message" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.errorMessage"></a>
+
+```python
+error_message: str
+```
+
+- *Type:* str
+
+---
+
 ##### `interface_endpoint_id`<sup>Required</sup> <a name="interface_endpoint_id" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.interfaceEndpointId"></a>
 
 ```python
 interface_endpoint_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `interface_endpoint_name`<sup>Required</sup> <a name="interface_endpoint_name" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.interfaceEndpointName"></a>
+
+```python
+interface_endpoint_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `provider_account_id`<sup>Required</sup> <a name="provider_account_id" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamPrivatelinkEndpoint.DataMongodbatlasStreamPrivatelinkEndpoint.property.providerAccountId"></a>
+
+```python
+provider_account_id: str
 ```
 
 - *Type:* str
@@ -905,7 +949,7 @@ id: str
 
 The ID of the Private Link connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint#id DataMongodbatlasStreamPrivatelinkEndpoint#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint#id DataMongodbatlasStreamPrivatelinkEndpoint#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +970,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group or project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint#project_id DataMongodbatlasStreamPrivatelinkEndpoint#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint#project_id DataMongodbatlasStreamPrivatelinkEndpoint#project_id}
 
 ---
 

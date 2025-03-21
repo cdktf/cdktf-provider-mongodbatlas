@@ -4,7 +4,7 @@
 
 ### StreamConnection <a name="StreamConnection" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer"></a>
 
@@ -33,8 +33,10 @@ StreamConnection.Builder.create(Construct scope, java.lang.String id)
 //  .clusterName(java.lang.String)
 //  .config(java.util.Map<java.lang.String, java.lang.String>)
 //  .dbRoleToExecute(StreamConnectionDbRoleToExecute)
+//  .headers(java.util.Map<java.lang.String, java.lang.String>)
 //  .networking(StreamConnectionNetworking)
 //  .security(StreamConnectionSecurity)
+//  .url(java.lang.String)
     .build();
 ```
 
@@ -49,18 +51,20 @@ StreamConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.instanceName">instanceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#project_id StreamConnection#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.authentication">authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#authentication StreamConnection#authentication}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.aws">aws</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws">StreamConnectionAws</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#aws StreamConnection#aws}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.bootstrapServers">bootstrapServers</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.config">config</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#config StreamConnection#config}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.dbRoleToExecute">dbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.networking">networking</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#networking StreamConnection#networking}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.security">security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#security StreamConnection#security}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.instanceName">instanceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#project_id StreamConnection#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.authentication">authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#authentication StreamConnection#authentication}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.aws">aws</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws">StreamConnectionAws</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#aws StreamConnection#aws}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.bootstrapServers">bootstrapServers</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.config">config</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#config StreamConnection#config}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.dbRoleToExecute">dbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#headers StreamConnection#headers}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.networking">networking</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#networking StreamConnection#networking}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.security">security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#security StreamConnection#security}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#url StreamConnection#url}. |
 
 ---
 
@@ -128,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}.
 
 ---
 
@@ -136,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}.
 
 ---
 
@@ -144,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#project_id StreamConnection#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#project_id StreamConnection#project_id}.
 
 ---
 
@@ -152,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}.
 
 ---
 
@@ -160,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#authentication StreamConnection#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#authentication StreamConnection#authentication}.
 
 ---
 
@@ -168,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws">StreamConnectionAws</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#aws StreamConnection#aws}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#aws StreamConnection#aws}.
 
 ---
 
@@ -176,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}.
 
 ---
 
@@ -184,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}.
 
 ---
 
@@ -192,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#config StreamConnection#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#config StreamConnection#config}.
 
 ---
 
@@ -200,7 +204,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}.
+
+---
+
+##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.headers"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#headers StreamConnection#headers}.
 
 ---
 
@@ -208,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#networking StreamConnection#networking}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#networking StreamConnection#networking}.
 
 ---
 
@@ -216,7 +228,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#security StreamConnection#security}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#security StreamConnection#security}.
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.Initializer.parameter.url"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#url StreamConnection#url}.
 
 ---
 
@@ -258,8 +278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetClusterName">resetClusterName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetConfig">resetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetDbRoleToExecute">resetDbRoleToExecute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetHeaders">resetHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetNetworking">resetNetworking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetSecurity">resetSecurity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetUrl">resetUrl</a></code> | *No description.* |
 
 ---
 
@@ -649,6 +671,12 @@ public void resetConfig()
 public void resetDbRoleToExecute()
 ```
 
+##### `resetHeaders` <a name="resetHeaders" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetHeaders"></a>
+
+```java
+public void resetHeaders()
+```
+
 ##### `resetNetworking` <a name="resetNetworking" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetNetworking"></a>
 
 ```java
@@ -659,6 +687,12 @@ public void resetNetworking()
 
 ```java
 public void resetSecurity()
+```
+
+##### `resetUrl` <a name="resetUrl" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.resetUrl"></a>
+
+```java
+public void resetUrl()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -764,7 +798,7 @@ The construct id used in the generated config for the StreamConnection to import
 
 The id of the existing StreamConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,18 +841,22 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.configInput">configInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.connectionNameInput">connectionNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.dbRoleToExecuteInput">dbRoleToExecuteInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.headersInput">headersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.instanceNameInput">instanceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.networkingInput">networkingInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.securityInput">securityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.bootstrapServers">bootstrapServers</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.config">config</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.instanceName">instanceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -1094,6 +1132,16 @@ public java.lang.Object getDbRoleToExecuteInput();
 
 ---
 
+##### `headersInput`<sup>Optional</sup> <a name="headersInput" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.headersInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getHeadersInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `instanceNameInput`<sup>Optional</sup> <a name="instanceNameInput" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.instanceNameInput"></a>
 
 ```java
@@ -1144,6 +1192,16 @@ public java.lang.String getTypeInput();
 
 ---
 
+##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.urlInput"></a>
+
+```java
+public java.lang.String getUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bootstrapServers`<sup>Required</sup> <a name="bootstrapServers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.bootstrapServers"></a>
 
 ```java
@@ -1184,6 +1242,16 @@ public java.lang.String getConnectionName();
 
 ---
 
+##### `headers`<sup>Required</sup> <a name="headers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.headers"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getHeaders();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `instanceName`<sup>Required</sup> <a name="instanceName" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.instanceName"></a>
 
 ```java
@@ -1208,6 +1276,16 @@ public java.lang.String getProjectId();
 
 ```java
 public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnection.property.url"></a>
+
+```java
+public java.lang.String getUrl();
 ```
 
 - *Type:* java.lang.String
@@ -1252,9 +1330,9 @@ StreamConnectionAuthentication.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.mechanism">mechanism</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#password StreamConnection#password}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#username StreamConnection#username}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.mechanism">mechanism</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#password StreamConnection#password}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#username StreamConnection#username}. |
 
 ---
 
@@ -1266,7 +1344,7 @@ public java.lang.String getMechanism();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#mechanism StreamConnection#mechanism}.
 
 ---
 
@@ -1278,7 +1356,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#password StreamConnection#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#password StreamConnection#password}.
 
 ---
 
@@ -1290,7 +1368,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#username StreamConnection#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#username StreamConnection#username}.
 
 ---
 
@@ -1310,7 +1388,7 @@ StreamConnectionAws.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#role_arn StreamConnection#role_arn}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws.property.roleArn">roleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#role_arn StreamConnection#role_arn}. |
 
 ---
 
@@ -1322,7 +1400,7 @@ public java.lang.String getRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#role_arn StreamConnection#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#role_arn StreamConnection#role_arn}.
 
 ---
 
@@ -1355,8 +1433,10 @@ StreamConnectionConfig.builder()
 //  .clusterName(java.lang.String)
 //  .config(java.util.Map<java.lang.String, java.lang.String>)
 //  .dbRoleToExecute(StreamConnectionDbRoleToExecute)
+//  .headers(java.util.Map<java.lang.String, java.lang.String>)
 //  .networking(StreamConnectionNetworking)
 //  .security(StreamConnectionSecurity)
+//  .url(java.lang.String)
     .build();
 ```
 
@@ -1371,18 +1451,20 @@ StreamConnectionConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.instanceName">instanceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#project_id StreamConnection#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.authentication">authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#authentication StreamConnection#authentication}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.aws">aws</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws">StreamConnectionAws</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#aws StreamConnection#aws}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.bootstrapServers">bootstrapServers</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.config">config</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#config StreamConnection#config}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.dbRoleToExecute">dbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.networking">networking</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#networking StreamConnection#networking}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.security">security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#security StreamConnection#security}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.instanceName">instanceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#project_id StreamConnection#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.authentication">authentication</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#authentication StreamConnection#authentication}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.aws">aws</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws">StreamConnectionAws</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#aws StreamConnection#aws}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.bootstrapServers">bootstrapServers</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.config">config</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#config StreamConnection#config}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.dbRoleToExecute">dbRoleToExecute</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#headers StreamConnection#headers}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.networking">networking</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#networking StreamConnection#networking}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.security">security</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#security StreamConnection#security}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#url StreamConnection#url}. |
 
 ---
 
@@ -1464,7 +1546,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#connection_name StreamConnection#connection_name}.
 
 ---
 
@@ -1476,7 +1558,7 @@ public java.lang.String getInstanceName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#instance_name StreamConnection#instance_name}.
 
 ---
 
@@ -1488,7 +1570,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#project_id StreamConnection#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#project_id StreamConnection#project_id}.
 
 ---
 
@@ -1500,7 +1582,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}.
 
 ---
 
@@ -1512,7 +1594,7 @@ public StreamConnectionAuthentication getAuthentication();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAuthentication">StreamConnectionAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#authentication StreamConnection#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#authentication StreamConnection#authentication}.
 
 ---
 
@@ -1524,7 +1606,7 @@ public StreamConnectionAws getAws();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionAws">StreamConnectionAws</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#aws StreamConnection#aws}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#aws StreamConnection#aws}.
 
 ---
 
@@ -1536,7 +1618,7 @@ public java.lang.String getBootstrapServers();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#bootstrap_servers StreamConnection#bootstrap_servers}.
 
 ---
 
@@ -1548,7 +1630,7 @@ public java.lang.String getClusterName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#cluster_name StreamConnection#cluster_name}.
 
 ---
 
@@ -1560,7 +1642,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfig();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#config StreamConnection#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#config StreamConnection#config}.
 
 ---
 
@@ -1572,7 +1654,19 @@ public StreamConnectionDbRoleToExecute getDbRoleToExecute();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute">StreamConnectionDbRoleToExecute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#db_role_to_execute StreamConnection#db_role_to_execute}.
+
+---
+
+##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.headers"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getHeaders();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#headers StreamConnection#headers}.
 
 ---
 
@@ -1584,7 +1678,7 @@ public StreamConnectionNetworking getNetworking();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking">StreamConnectionNetworking</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#networking StreamConnection#networking}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#networking StreamConnection#networking}.
 
 ---
 
@@ -1596,7 +1690,19 @@ public StreamConnectionSecurity getSecurity();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity">StreamConnectionSecurity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#security StreamConnection#security}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#security StreamConnection#security}.
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionConfig.property.url"></a>
+
+```java
+public java.lang.String getUrl();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#url StreamConnection#url}.
 
 ---
 
@@ -1617,8 +1723,8 @@ StreamConnectionDbRoleToExecute.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#role StreamConnection#role}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#role StreamConnection#role}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionDbRoleToExecute.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}. |
 
 ---
 
@@ -1630,7 +1736,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#role StreamConnection#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#role StreamConnection#role}.
 
 ---
 
@@ -1642,7 +1748,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}.
 
 ---
 
@@ -1662,7 +1768,7 @@ StreamConnectionNetworking.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking.property.access">access</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#access StreamConnection#access}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworking.property.access">access</a></code> | <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#access StreamConnection#access}. |
 
 ---
 
@@ -1674,7 +1780,7 @@ public StreamConnectionNetworkingAccess getAccess();
 
 - *Type:* <a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess">StreamConnectionNetworkingAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#access StreamConnection#access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#access StreamConnection#access}.
 
 ---
 
@@ -1695,8 +1801,8 @@ StreamConnectionNetworkingAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_id StreamConnection#connection_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionNetworkingAccess.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#connection_id StreamConnection#connection_id}. |
 
 ---
 
@@ -1708,7 +1814,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#type StreamConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#type StreamConnection#type}.
 
 ---
 
@@ -1720,7 +1826,7 @@ public java.lang.String getConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#connection_id StreamConnection#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#connection_id StreamConnection#connection_id}.
 
 ---
 
@@ -1741,8 +1847,8 @@ StreamConnectionSecurity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.brokerPublicCertificate">brokerPublicCertificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#protocol StreamConnection#protocol}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.brokerPublicCertificate">brokerPublicCertificate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.streamConnection.StreamConnectionSecurity.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#protocol StreamConnection#protocol}. |
 
 ---
 
@@ -1754,7 +1860,7 @@ public java.lang.String getBrokerPublicCertificate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#broker_public_certificate StreamConnection#broker_public_certificate}.
 
 ---
 
@@ -1766,7 +1872,7 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection#protocol StreamConnection#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection#protocol StreamConnection#protocol}.
 
 ---
 
