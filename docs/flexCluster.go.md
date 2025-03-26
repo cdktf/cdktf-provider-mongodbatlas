@@ -4,7 +4,7 @@
 
 ### FlexCluster <a name="FlexCluster" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster mongodbatlas_flex_cluster}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster mongodbatlas_flex_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the FlexCluster to import.
 
 The id of the existing FlexCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1022,7 +1022,7 @@ Name *string
 
 Human-readable label that identifies the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#name FlexCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#name FlexCluster#name}
 
 ---
 
@@ -1036,7 +1036,7 @@ ProjectId *string
 
 Unique 24-hexadecimal character string that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#project_id FlexCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#project_id FlexCluster#project_id}
 
 ---
 
@@ -1050,7 +1050,7 @@ ProviderSettings FlexClusterProviderSettings
 
 Group of cloud provider settings that configure the provisioned MongoDB flex cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#provider_settings FlexCluster#provider_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#provider_settings FlexCluster#provider_settings}
 
 ---
 
@@ -1064,7 +1064,7 @@ Tags *map[string]*string
 
 Map that contains key-value pairs between 1 to 255 characters in length for tagging and categorizing the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#tags FlexCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#tags FlexCluster#tags}
 
 ---
 
@@ -1080,7 +1080,7 @@ Flag that indicates whether termination protection is enabled on the cluster.
 
 If set to `true`, MongoDB Cloud won't delete the cluster. If set to `false`, MongoDB Cloud will delete the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#termination_protection_enabled FlexCluster#termination_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#termination_protection_enabled FlexCluster#termination_protection_enabled}
 
 ---
 
@@ -1129,7 +1129,7 @@ BackingProviderName *string
 
 Cloud service provider on which MongoDB Cloud provisioned the flex cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#backing_provider_name FlexCluster#backing_provider_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#backing_provider_name FlexCluster#backing_provider_name}
 
 ---
 
@@ -1145,7 +1145,7 @@ Human-readable label that identifies the geographic location of your MongoDB fle
 
 The region you choose can affect network latency for clients accessing your databases. For a complete list of region names, see [AWS](https://docs.atlas.mongodb.com/reference/amazon-aws/#std-label-amazon-aws), [GCP](https://docs.atlas.mongodb.com/reference/google-gcp/), and [Azure](https://docs.atlas.mongodb.com/reference/microsoft-azure/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/flex_cluster#region_name FlexCluster#region_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/flex_cluster#region_name FlexCluster#region_name}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoints
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/stream_privatelink_endpoints
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface DataMongodbatlasStreamPrivatelinkEndpointsConfig extends cdktf.
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group or project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoints#project_id DataMongodbatlasStreamPrivatelinkEndpoints#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/stream_privatelink_endpoints#project_id DataMongodbatlasStreamPrivatelinkEndpoints#project_id}
   */
   readonly projectId: string;
 }
@@ -163,7 +163,7 @@ export class DataMongodbatlasStreamPrivatelinkEndpointsResultsList extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoints mongodbatlas_stream_privatelink_endpoints}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/stream_privatelink_endpoints mongodbatlas_stream_privatelink_endpoints}
 */
 export class DataMongodbatlasStreamPrivatelinkEndpoints extends cdktf.TerraformDataSource {
 
@@ -179,7 +179,7 @@ export class DataMongodbatlasStreamPrivatelinkEndpoints extends cdktf.TerraformD
   * Generates CDKTF code for importing a DataMongodbatlasStreamPrivatelinkEndpoints resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasStreamPrivatelinkEndpoints to import
-  * @param importFromId The id of the existing DataMongodbatlasStreamPrivatelinkEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoints#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasStreamPrivatelinkEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/stream_privatelink_endpoints#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasStreamPrivatelinkEndpoints to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -191,7 +191,7 @@ export class DataMongodbatlasStreamPrivatelinkEndpoints extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoints mongodbatlas_stream_privatelink_endpoints} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/stream_privatelink_endpoints mongodbatlas_stream_privatelink_endpoints} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +202,7 @@ export class DataMongodbatlasStreamPrivatelinkEndpoints extends cdktf.TerraformD
       terraformResourceType: 'mongodbatlas_stream_privatelink_endpoints',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.30.0',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
