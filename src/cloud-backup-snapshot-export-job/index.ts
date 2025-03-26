@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface CloudBackupSnapshotExportJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#cluster_name CloudBackupSnapshotExportJob#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#cluster_name CloudBackupSnapshotExportJob#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#export_bucket_id CloudBackupSnapshotExportJob#export_bucket_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#export_bucket_id CloudBackupSnapshotExportJob#export_bucket_id}
   */
   readonly exportBucketId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#project_id CloudBackupSnapshotExportJob#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#project_id CloudBackupSnapshotExportJob#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#snapshot_id CloudBackupSnapshotExportJob#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#snapshot_id CloudBackupSnapshotExportJob#snapshot_id}
   */
   readonly snapshotId: string;
   /**
   * custom_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#custom_data CloudBackupSnapshotExportJob#custom_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#custom_data CloudBackupSnapshotExportJob#custom_data}
   */
   readonly customData?: CloudBackupSnapshotExportJobCustomData[] | cdktf.IResolvable;
 }
@@ -117,11 +112,11 @@ export class CloudBackupSnapshotExportJobComponentsList extends cdktf.ComplexLis
 }
 export interface CloudBackupSnapshotExportJobCustomData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#key CloudBackupSnapshotExportJob#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#key CloudBackupSnapshotExportJob#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#value CloudBackupSnapshotExportJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#value CloudBackupSnapshotExportJob#value}
   */
   readonly value: string;
 }
@@ -260,7 +255,7 @@ export class CloudBackupSnapshotExportJobCustomDataList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}
 */
 export class CloudBackupSnapshotExportJob extends cdktf.TerraformResource {
 
@@ -276,7 +271,7 @@ export class CloudBackupSnapshotExportJob extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudBackupSnapshotExportJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudBackupSnapshotExportJob to import
-  * @param importFromId The id of the existing CloudBackupSnapshotExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudBackupSnapshotExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudBackupSnapshotExportJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -288,7 +283,7 @@ export class CloudBackupSnapshotExportJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +294,7 @@ export class CloudBackupSnapshotExportJob extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_cloud_backup_snapshot_export_job',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.30.0',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
