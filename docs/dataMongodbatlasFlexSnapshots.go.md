@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.NewDataMongodbatlasFlexSnapshots(scope Construct, id *string, config DataMongodbatlasFlexSnapshotsConfig) DataMongodbatlasFlexSnapshots
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshots_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshots_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshots_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshots_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshots_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshots.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshots_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshotsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 &datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshotsConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshotsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 &datamongodbatlasflexsnapshots.DataMongodbatlasFlexSnapshotsResults {
 
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshotsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.NewDataMongodbatlasFlexSnapshotsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasFlexSnapshotsResultsList
 ```
@@ -900,7 +900,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexSnapshots.DataMongodbatlasFlexSnapshotsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasflexsnapshots"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasflexsnapshots"
 
 datamongodbatlasflexsnapshots.NewDataMongodbatlasFlexSnapshotsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasFlexSnapshotsResultsOutputReference
 ```
