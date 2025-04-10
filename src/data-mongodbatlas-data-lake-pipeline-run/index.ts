@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasDataLakePipelineRunConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run#pipeline_name DataMongodbatlasDataLakePipelineRun#pipeline_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run#pipeline_name DataMongodbatlasDataLakePipelineRun#pipeline_name}
   */
   readonly pipelineName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run#pipeline_run_id DataMongodbatlasDataLakePipelineRun#pipeline_run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run#pipeline_run_id DataMongodbatlasDataLakePipelineRun#pipeline_run_id}
   */
   readonly pipelineRunId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run#project_id DataMongodbatlasDataLakePipelineRun#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run#project_id DataMongodbatlasDataLakePipelineRun#project_id}
   */
   readonly projectId: string;
 }
@@ -107,7 +102,7 @@ export class DataMongodbatlasDataLakePipelineRunStatsList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run mongodbatlas_data_lake_pipeline_run}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run mongodbatlas_data_lake_pipeline_run}
 */
 export class DataMongodbatlasDataLakePipelineRun extends cdktf.TerraformDataSource {
 
@@ -123,7 +118,7 @@ export class DataMongodbatlasDataLakePipelineRun extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataMongodbatlasDataLakePipelineRun resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasDataLakePipelineRun to import
-  * @param importFromId The id of the existing DataMongodbatlasDataLakePipelineRun that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasDataLakePipelineRun that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasDataLakePipelineRun to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -135,7 +130,7 @@ export class DataMongodbatlasDataLakePipelineRun extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/data_lake_pipeline_run mongodbatlas_data_lake_pipeline_run} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/data_lake_pipeline_run mongodbatlas_data_lake_pipeline_run} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +141,7 @@ export class DataMongodbatlasDataLakePipelineRun extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_data_lake_pipeline_run',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.31.0',
+        providerVersion: '1.32.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface StreamInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#data_process_region StreamInstance#data_process_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#data_process_region StreamInstance#data_process_region}
   */
   readonly dataProcessRegion: StreamInstanceDataProcessRegion;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#instance_name StreamInstance#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#instance_name StreamInstance#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#project_id StreamInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#project_id StreamInstance#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#stream_config StreamInstance#stream_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#stream_config StreamInstance#stream_config}
   */
   readonly streamConfig?: StreamInstanceStreamConfig;
 }
 export interface StreamInstanceDataProcessRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#cloud_provider StreamInstance#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#cloud_provider StreamInstance#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#region StreamInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#region StreamInstance#region}
   */
   readonly region: string;
 }
@@ -152,7 +147,7 @@ export class StreamInstanceDataProcessRegionOutputReference extends cdktf.Comple
 }
 export interface StreamInstanceStreamConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#tier StreamInstance#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#tier StreamInstance#tier}
   */
   readonly tier?: string;
 }
@@ -246,7 +241,7 @@ export class StreamInstanceStreamConfigOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance mongodbatlas_stream_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance mongodbatlas_stream_instance}
 */
 export class StreamInstance extends cdktf.TerraformResource {
 
@@ -262,7 +257,7 @@ export class StreamInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StreamInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamInstance to import
-  * @param importFromId The id of the existing StreamInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -274,7 +269,7 @@ export class StreamInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/stream_instance mongodbatlas_stream_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_instance mongodbatlas_stream_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -285,7 +280,7 @@ export class StreamInstance extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_stream_instance',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.31.0',
+        providerVersion: '1.32.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
