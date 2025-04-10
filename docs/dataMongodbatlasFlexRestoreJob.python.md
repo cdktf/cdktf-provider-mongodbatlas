@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasFlexRestoreJob <a name="DataMongodbatlasFlexRestoreJob" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexRestoreJob.DataMongodbatlasFlexRestoreJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexRestoreJob.DataMongodbatlasFlexRestoreJob.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable label that identifies the flex cluster whose snapshot you want to restore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
 
 ---
 
@@ -124,7 +124,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 Unique 24-hexadecimal digit string that identifies the restore job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
 
 ---
 
@@ -493,7 +493,7 @@ The construct id used in the generated config for the DataMongodbatlasFlexRestor
 
 The id of the existing DataMongodbatlasFlexRestoreJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ name: str
 
 Human-readable label that identifies the flex cluster whose snapshot you want to restore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
 
 ---
 
@@ -978,7 +978,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
 
 ---
 
@@ -992,7 +992,7 @@ restore_job_id: str
 
 Unique 24-hexadecimal digit string that identifies the restore job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
 
 ---
 
