@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,29 @@ export interface SearchDeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Label that identifies the cluster to return the search nodes for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
   */
   readonly clusterName: string;
   /**
   * Unique 24-hexadecimal digit string that identifies your project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#project_id SearchDeployment#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#project_id SearchDeployment#project_id}
   */
   readonly projectId: string;
   /**
+  * If true, the resource update is executed without waiting until the [state](#state_name-1) is `IDLE`, making the operation faster. This might cause update errors to go unnoticed and lead to non-empty plans at the next terraform execution.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#skip_wait_on_update SearchDeployment#skip_wait_on_update}
+  */
+  readonly skipWaitOnUpdate?: boolean | cdktf.IResolvable;
+  /**
   * List of settings that configure the search nodes for your cluster. This list is currently limited to defining a single element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#specs SearchDeployment#specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#specs SearchDeployment#specs}
   */
   readonly specs: SearchDeploymentSpecs[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}
   */
   readonly timeouts?: SearchDeploymentTimeouts;
 }
@@ -39,13 +45,13 @@ export interface SearchDeploymentSpecs {
   /**
   * Hardware specification for the search node instance sizes. The [MongoDB Atlas API](https://www.mongodb.com/docs/atlas/reference/api-resources-spec/#tag/Atlas-Search/operation/createAtlasSearchDeployment) describes the valid values. More details can also be found in the [Search Node Documentation](https://www.mongodb.com/docs/atlas/cluster-config/multi-cloud-distribution/#search-tier).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#instance_size SearchDeployment#instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#instance_size SearchDeployment#instance_size}
   */
   readonly instanceSize: string;
   /**
   * Number of search nodes in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#node_count SearchDeployment#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#node_count SearchDeployment#node_count}
   */
   readonly nodeCount: number;
 }
@@ -186,19 +192,19 @@ export interface SearchDeploymentTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#create SearchDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#create SearchDeployment#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#delete SearchDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#delete SearchDeployment#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#update SearchDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#update SearchDeployment#update}
   */
   readonly update?: string;
 }
@@ -350,7 +356,7 @@ export class SearchDeploymentTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment mongodbatlas_search_deployment}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment mongodbatlas_search_deployment}
 */
 export class SearchDeployment extends cdktf.TerraformResource {
 
@@ -366,7 +372,7 @@ export class SearchDeployment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SearchDeployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SearchDeployment to import
-  * @param importFromId The id of the existing SearchDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SearchDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SearchDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -378,7 +384,7 @@ export class SearchDeployment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -389,7 +395,7 @@ export class SearchDeployment extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_search_deployment',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.31.0',
+        providerVersion: '1.32.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -402,6 +408,7 @@ export class SearchDeployment extends cdktf.TerraformResource {
     });
     this._clusterName = config.clusterName;
     this._projectId = config.projectId;
+    this._skipWaitOnUpdate = config.skipWaitOnUpdate;
     this._specs.internalValue = config.specs;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -423,6 +430,11 @@ export class SearchDeployment extends cdktf.TerraformResource {
     return this._clusterName;
   }
 
+  // encryption_at_rest_provider - computed: true, optional: false, required: false
+  public get encryptionAtRestProvider() {
+    return this.getStringAttribute('encryption_at_rest_provider');
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -439,6 +451,22 @@ export class SearchDeployment extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
     return this._projectId;
+  }
+
+  // skip_wait_on_update - computed: false, optional: true, required: false
+  private _skipWaitOnUpdate?: boolean | cdktf.IResolvable; 
+  public get skipWaitOnUpdate() {
+    return this.getBooleanAttribute('skip_wait_on_update');
+  }
+  public set skipWaitOnUpdate(value: boolean | cdktf.IResolvable) {
+    this._skipWaitOnUpdate = value;
+  }
+  public resetSkipWaitOnUpdate() {
+    this._skipWaitOnUpdate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipWaitOnUpdateInput() {
+    return this._skipWaitOnUpdate;
   }
 
   // specs - computed: false, optional: false, required: true
@@ -483,6 +511,7 @@ export class SearchDeployment extends cdktf.TerraformResource {
     return {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       project_id: cdktf.stringToTerraform(this._projectId),
+      skip_wait_on_update: cdktf.booleanToTerraform(this._skipWaitOnUpdate),
       specs: cdktf.listMapper(searchDeploymentSpecsToTerraform, false)(this._specs.internalValue),
       timeouts: searchDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -501,6 +530,12 @@ export class SearchDeployment extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      skip_wait_on_update: {
+        value: cdktf.booleanToHclTerraform(this._skipWaitOnUpdate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       specs: {
         value: cdktf.listMapperHcl(searchDeploymentSpecsToHclTerraform, false)(this._specs.internalValue),
