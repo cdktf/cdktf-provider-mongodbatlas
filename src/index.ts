@@ -53,6 +53,7 @@ export * as projectApiKey from './project-api-key';
 export * as projectInvitation from './project-invitation';
 export * as projectIpAccessList from './project-ip-access-list';
 export * as pushBasedLogExport from './push-based-log-export';
+export * as resourcePolicy from './resource-policy';
 export * as searchDeployment from './search-deployment';
 export * as searchIndex from './search-index';
 export * as serverlessInstance from './serverless-instance';
@@ -150,6 +151,8 @@ export * as dataMongodbatlasProjectIpAccessList from './data-mongodbatlas-projec
 export * as dataMongodbatlasProjectIpAddresses from './data-mongodbatlas-project-ip-addresses';
 export * as dataMongodbatlasProjects from './data-mongodbatlas-projects';
 export * as dataMongodbatlasPushBasedLogExport from './data-mongodbatlas-push-based-log-export';
+export * as dataMongodbatlasResourcePolicies from './data-mongodbatlas-resource-policies';
+export * as dataMongodbatlasResourcePolicy from './data-mongodbatlas-resource-policy';
 export * as dataMongodbatlasRolesOrgId from './data-mongodbatlas-roles-org-id';
 export * as dataMongodbatlasSearchDeployment from './data-mongodbatlas-search-deployment';
 export * as dataMongodbatlasSearchIndex from './data-mongodbatlas-search-index';

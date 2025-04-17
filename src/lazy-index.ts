@@ -53,6 +53,7 @@ Object.defineProperty(exports, 'projectApiKey', { get: function () { return requ
 Object.defineProperty(exports, 'projectInvitation', { get: function () { return require('./project-invitation'); } });
 Object.defineProperty(exports, 'projectIpAccessList', { get: function () { return require('./project-ip-access-list'); } });
 Object.defineProperty(exports, 'pushBasedLogExport', { get: function () { return require('./push-based-log-export'); } });
+Object.defineProperty(exports, 'resourcePolicy', { get: function () { return require('./resource-policy'); } });
 Object.defineProperty(exports, 'searchDeployment', { get: function () { return require('./search-deployment'); } });
 Object.defineProperty(exports, 'searchIndex', { get: function () { return require('./search-index'); } });
 Object.defineProperty(exports, 'serverlessInstance', { get: function () { return require('./serverless-instance'); } });
@@ -150,6 +151,8 @@ Object.defineProperty(exports, 'dataMongodbatlasProjectIpAccessList', { get: fun
 Object.defineProperty(exports, 'dataMongodbatlasProjectIpAddresses', { get: function () { return require('./data-mongodbatlas-project-ip-addresses'); } });
 Object.defineProperty(exports, 'dataMongodbatlasProjects', { get: function () { return require('./data-mongodbatlas-projects'); } });
 Object.defineProperty(exports, 'dataMongodbatlasPushBasedLogExport', { get: function () { return require('./data-mongodbatlas-push-based-log-export'); } });
+Object.defineProperty(exports, 'dataMongodbatlasResourcePolicies', { get: function () { return require('./data-mongodbatlas-resource-policies'); } });
+Object.defineProperty(exports, 'dataMongodbatlasResourcePolicy', { get: function () { return require('./data-mongodbatlas-resource-policy'); } });
 Object.defineProperty(exports, 'dataMongodbatlasRolesOrgId', { get: function () { return require('./data-mongodbatlas-roles-org-id'); } });
 Object.defineProperty(exports, 'dataMongodbatlasSearchDeployment', { get: function () { return require('./data-mongodbatlas-search-deployment'); } });
 Object.defineProperty(exports, 'dataMongodbatlasSearchIndex', { get: function () { return require('./data-mongodbatlas-search-index'); } });
