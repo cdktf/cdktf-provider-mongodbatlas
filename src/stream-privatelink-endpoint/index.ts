@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface StreamPrivatelinkEndpointConfig extends cdktf.TerraformMetaArgu
   /**
   * Amazon Resource Name (ARN).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#arn StreamPrivatelinkEndpoint#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#arn StreamPrivatelinkEndpoint#arn}
   */
   readonly arn?: string;
   /**
   * Domain name of Privatelink connected cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#dns_domain StreamPrivatelinkEndpoint#dns_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#dns_domain StreamPrivatelinkEndpoint#dns_domain}
   */
   readonly dnsDomain?: string;
   /**
   * Sub-Domain name of Confluent cluster. These are typically your availability zones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#dns_sub_domain StreamPrivatelinkEndpoint#dns_sub_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#dns_sub_domain StreamPrivatelinkEndpoint#dns_sub_domain}
   */
   readonly dnsSubDomain?: string[];
   /**
@@ -35,37 +30,37 @@ export interface StreamPrivatelinkEndpointConfig extends cdktf.TerraformMetaArgu
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group or project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#project_id StreamPrivatelinkEndpoint#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#project_id StreamPrivatelinkEndpoint#project_id}
   */
   readonly projectId: string;
   /**
   * Provider where the Kafka cluster is deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#provider_name StreamPrivatelinkEndpoint#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#provider_name StreamPrivatelinkEndpoint#provider_name}
   */
   readonly providerName: string;
   /**
   * When the vendor is `CONFLUENT`, this is the domain name of Confluent cluster. When the vendor is `MSK`, this is computed by the API from the provided `arn`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#region StreamPrivatelinkEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#region StreamPrivatelinkEndpoint#region}
   */
   readonly region?: string;
   /**
   * Service Endpoint ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#service_endpoint_id StreamPrivatelinkEndpoint#service_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#service_endpoint_id StreamPrivatelinkEndpoint#service_endpoint_id}
   */
   readonly serviceEndpointId?: string;
   /**
   * Vendor who manages the Kafka cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#vendor StreamPrivatelinkEndpoint#vendor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#vendor StreamPrivatelinkEndpoint#vendor}
   */
   readonly vendor: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}
 */
 export class StreamPrivatelinkEndpoint extends cdktf.TerraformResource {
 
@@ -81,7 +76,7 @@ export class StreamPrivatelinkEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StreamPrivatelinkEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamPrivatelinkEndpoint to import
-  * @param importFromId The id of the existing StreamPrivatelinkEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamPrivatelinkEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamPrivatelinkEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -93,7 +88,7 @@ export class StreamPrivatelinkEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +99,7 @@ export class StreamPrivatelinkEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_stream_privatelink_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.32.0',
+        providerVersion: '1.33.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
