@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,161 @@ import * as cdktf from 'cdktf';
 
 export interface MaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#auto_defer MaintenanceWindow#auto_defer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#auto_defer MaintenanceWindow#auto_defer}
   */
   readonly autoDefer?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#auto_defer_once_enabled MaintenanceWindow#auto_defer_once_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#auto_defer_once_enabled MaintenanceWindow#auto_defer_once_enabled}
   */
   readonly autoDeferOnceEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#day_of_week MaintenanceWindow#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#day_of_week MaintenanceWindow#day_of_week}
   */
   readonly dayOfWeek: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#defer MaintenanceWindow#defer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#defer MaintenanceWindow#defer}
   */
   readonly defer?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#hour_of_day MaintenanceWindow#hour_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#hour_of_day MaintenanceWindow#hour_of_day}
   */
   readonly hourOfDay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#id MaintenanceWindow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#id MaintenanceWindow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#project_id MaintenanceWindow#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#project_id MaintenanceWindow#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#start_asap MaintenanceWindow#start_asap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#start_asap MaintenanceWindow#start_asap}
   */
   readonly startAsap?: boolean | cdktf.IResolvable;
+  /**
+  * protected_hours block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#protected_hours MaintenanceWindow#protected_hours}
+  */
+  readonly protectedHours?: MaintenanceWindowProtectedHours;
+}
+export interface MaintenanceWindowProtectedHours {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#end_hour_of_day MaintenanceWindow#end_hour_of_day}
+  */
+  readonly endHourOfDay: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#start_hour_of_day MaintenanceWindow#start_hour_of_day}
+  */
+  readonly startHourOfDay: number;
+}
+
+export function maintenanceWindowProtectedHoursToTerraform(struct?: MaintenanceWindowProtectedHoursOutputReference | MaintenanceWindowProtectedHours): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end_hour_of_day: cdktf.numberToTerraform(struct!.endHourOfDay),
+    start_hour_of_day: cdktf.numberToTerraform(struct!.startHourOfDay),
+  }
+}
+
+
+export function maintenanceWindowProtectedHoursToHclTerraform(struct?: MaintenanceWindowProtectedHoursOutputReference | MaintenanceWindowProtectedHours): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_hour_of_day: {
+      value: cdktf.numberToHclTerraform(struct!.endHourOfDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start_hour_of_day: {
+      value: cdktf.numberToHclTerraform(struct!.startHourOfDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MaintenanceWindowProtectedHoursOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MaintenanceWindowProtectedHours | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endHourOfDay !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endHourOfDay = this._endHourOfDay;
+    }
+    if (this._startHourOfDay !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startHourOfDay = this._startHourOfDay;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MaintenanceWindowProtectedHours | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endHourOfDay = undefined;
+      this._startHourOfDay = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endHourOfDay = value.endHourOfDay;
+      this._startHourOfDay = value.startHourOfDay;
+    }
+  }
+
+  // end_hour_of_day - computed: false, optional: false, required: true
+  private _endHourOfDay?: number; 
+  public get endHourOfDay() {
+    return this.getNumberAttribute('end_hour_of_day');
+  }
+  public set endHourOfDay(value: number) {
+    this._endHourOfDay = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endHourOfDayInput() {
+    return this._endHourOfDay;
+  }
+
+  // start_hour_of_day - computed: false, optional: false, required: true
+  private _startHourOfDay?: number; 
+  public get startHourOfDay() {
+    return this.getNumberAttribute('start_hour_of_day');
+  }
+  public set startHourOfDay(value: number) {
+    this._startHourOfDay = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startHourOfDayInput() {
+    return this._startHourOfDay;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window mongodbatlas_maintenance_window}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window mongodbatlas_maintenance_window}
 */
 export class MaintenanceWindow extends cdktf.TerraformResource {
 
@@ -66,7 +178,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MaintenanceWindow resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaintenanceWindow to import
-  * @param importFromId The id of the existing MaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaintenanceWindow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +190,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +201,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.33.0',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -108,6 +220,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
     this._id = config.id;
     this._projectId = config.projectId;
     this._startAsap = config.startAsap;
+    this._protectedHours.internalValue = config.protectedHours;
   }
 
   // ==========
@@ -241,6 +354,27 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
     return this._startAsap;
   }
 
+  // time_zone_id - computed: true, optional: false, required: false
+  public get timeZoneId() {
+    return this.getStringAttribute('time_zone_id');
+  }
+
+  // protected_hours - computed: false, optional: true, required: false
+  private _protectedHours = new MaintenanceWindowProtectedHoursOutputReference(this, "protected_hours");
+  public get protectedHours() {
+    return this._protectedHours;
+  }
+  public putProtectedHours(value: MaintenanceWindowProtectedHours) {
+    this._protectedHours.internalValue = value;
+  }
+  public resetProtectedHours() {
+    this._protectedHours.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protectedHoursInput() {
+    return this._protectedHours.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -255,6 +389,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
       start_asap: cdktf.booleanToTerraform(this._startAsap),
+      protected_hours: maintenanceWindowProtectedHoursToTerraform(this._protectedHours.internalValue),
     };
   }
 
@@ -307,6 +442,12 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      protected_hours: {
+        value: maintenanceWindowProtectedHoursToHclTerraform(this._protectedHours.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MaintenanceWindowProtectedHoursList",
       },
     };
 
