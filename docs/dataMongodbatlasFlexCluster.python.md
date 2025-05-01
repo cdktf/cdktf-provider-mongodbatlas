@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasFlexCluster <a name="DataMongodbatlasFlexCluster" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexCluster.DataMongodbatlasFlexCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasFlexCluster.DataMongodbatlasFlexCluster.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable label that identifies the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_cluster#name DataMongodbatlasFlexCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_cluster#name DataMongodbatlasFlexCluster#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 Unique 24-hexadecimal character string that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_cluster#project_id DataMongodbatlasFlexCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_cluster#project_id DataMongodbatlasFlexCluster#project_id}
 
 ---
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataMongodbatlasFlexCluste
 
 The id of the existing DataMongodbatlasFlexCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -942,7 +942,7 @@ name: str
 
 Human-readable label that identifies the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_cluster#name DataMongodbatlasFlexCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_cluster#name DataMongodbatlasFlexCluster#name}
 
 ---
 
@@ -956,7 +956,7 @@ project_id: str
 
 Unique 24-hexadecimal character string that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_cluster#project_id DataMongodbatlasFlexCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_cluster#project_id DataMongodbatlasFlexCluster#project_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ResourcePolicy <a name="ResourcePolicy" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy mongodbatlas_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy mongodbatlas_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy.Initializer"></a>
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable label that describes the Atlas resource policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#name ResourcePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#name ResourcePolicy#name}
 
 ---
 
@@ -127,7 +127,7 @@ Unique 24-hexadecimal digit string that identifies the organization that contain
 
 Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 List of policies that make up the Atlas resource policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 Description of the Atlas resource policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#description ResourcePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#description ResourcePolicy#description}
 
 ---
 
@@ -594,7 +594,7 @@ The construct id used in the generated config for the ResourcePolicy to import.
 
 The id of the existing ResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,7 +1068,7 @@ public java.lang.String getName();
 
 Human-readable label that describes the Atlas resource policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#name ResourcePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#name ResourcePolicy#name}
 
 ---
 
@@ -1084,7 +1084,7 @@ Unique 24-hexadecimal digit string that identifies the organization that contain
 
 Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
 
 ---
 
@@ -1098,7 +1098,7 @@ public java.lang.Object getPolicies();
 
 List of policies that make up the Atlas resource policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
 
 ---
 
@@ -1112,7 +1112,7 @@ public java.lang.String getDescription();
 
 Description of the Atlas resource policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#description ResourcePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#description ResourcePolicy#description}
 
 ---
 
@@ -1170,7 +1170,7 @@ public java.lang.String getBody();
 
 A string that defines the permissions for the policy. The syntax used is the Cedar Policy language.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/resource_policy#body ResourcePolicy#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#body ResourcePolicy#body}
 
 ---
 
