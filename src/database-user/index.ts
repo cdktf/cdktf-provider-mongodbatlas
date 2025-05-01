@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,63 +13,67 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#auth_database_name DatabaseUser#auth_database_name}
   */
   readonly authDatabaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#aws_iam_type DatabaseUser#aws_iam_type}
   */
   readonly awsIamType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#description DatabaseUser#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#ldap_auth_type DatabaseUser#ldap_auth_type}
   */
   readonly ldapAuthType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#oidc_auth_type DatabaseUser#oidc_auth_type}
   */
   readonly oidcAuthType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#password DatabaseUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#password DatabaseUser#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#project_id DatabaseUser#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#project_id DatabaseUser#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#username DatabaseUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#username DatabaseUser#username}
   */
   readonly username: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#x509_type DatabaseUser#x509_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#x509_type DatabaseUser#x509_type}
   */
   readonly x509Type?: string;
   /**
   * labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#labels DatabaseUser#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#labels DatabaseUser#labels}
   */
   readonly labels?: DatabaseUserLabels[] | cdktf.IResolvable;
   /**
   * roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#roles DatabaseUser#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#roles DatabaseUser#roles}
   */
   readonly roles?: DatabaseUserRoles[] | cdktf.IResolvable;
   /**
   * scopes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#scopes DatabaseUser#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#scopes DatabaseUser#scopes}
   */
   readonly scopes?: DatabaseUserScopes[] | cdktf.IResolvable;
 }
 export interface DatabaseUserLabels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#key DatabaseUser#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#key DatabaseUser#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#value DatabaseUser#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#value DatabaseUser#value}
   */
   readonly value?: string;
 }
@@ -214,15 +218,15 @@ export class DatabaseUserLabelsList extends cdktf.ComplexList {
 }
 export interface DatabaseUserRoles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#collection_name DatabaseUser#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#collection_name DatabaseUser#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#database_name DatabaseUser#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#database_name DatabaseUser#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#role_name DatabaseUser#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#role_name DatabaseUser#role_name}
   */
   readonly roleName: string;
 }
@@ -390,11 +394,11 @@ export class DatabaseUserRolesList extends cdktf.ComplexList {
 }
 export interface DatabaseUserScopes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#name DatabaseUser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#name DatabaseUser#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#type DatabaseUser#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#type DatabaseUser#type}
   */
   readonly type?: string;
 }
@@ -539,7 +543,7 @@ export class DatabaseUserScopesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user mongodbatlas_database_user}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user mongodbatlas_database_user}
 */
 export class DatabaseUser extends cdktf.TerraformResource {
 
@@ -555,7 +559,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseUser to import
-  * @param importFromId The id of the existing DatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -567,7 +571,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/database_user mongodbatlas_database_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/database_user mongodbatlas_database_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -578,7 +582,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_database_user',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.33.0',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
@@ -591,6 +595,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
     });
     this._authDatabaseName = config.authDatabaseName;
     this._awsIamType = config.awsIamType;
+    this._description = config.description;
     this._ldapAuthType = config.ldapAuthType;
     this._oidcAuthType = config.oidcAuthType;
     this._password = config.password;
@@ -633,6 +638,22 @@ export class DatabaseUser extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get awsIamTypeInput() {
     return this._awsIamType;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // id - computed: true, optional: false, required: false
@@ -786,6 +807,7 @@ export class DatabaseUser extends cdktf.TerraformResource {
     return {
       auth_database_name: cdktf.stringToTerraform(this._authDatabaseName),
       aws_iam_type: cdktf.stringToTerraform(this._awsIamType),
+      description: cdktf.stringToTerraform(this._description),
       ldap_auth_type: cdktf.stringToTerraform(this._ldapAuthType),
       oidc_auth_type: cdktf.stringToTerraform(this._oidcAuthType),
       password: cdktf.stringToTerraform(this._password),
@@ -808,6 +830,12 @@ export class DatabaseUser extends cdktf.TerraformResource {
       },
       aws_iam_type: {
         value: cdktf.stringToHclTerraform(this._awsIamType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
