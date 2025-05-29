@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface ResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the Atlas resource policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#description ResourcePolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy#description ResourcePolicy#description}
   */
   readonly description?: string;
   /**
   * Human-readable label that describes the Atlas resource policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#name ResourcePolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy#name ResourcePolicy#name}
   */
   readonly name: string;
   /**
   * Unique 24-hexadecimal digit string that identifies the organization that contains your projects. Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
   */
   readonly orgId: string;
   /**
   * List of policies that make up the Atlas resource policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
   */
   readonly policies: ResourcePolicyPolicies[] | cdktf.IResolvable;
 }
@@ -159,7 +154,7 @@ export interface ResourcePolicyPolicies {
   /**
   * A string that defines the permissions for the policy. The syntax used is the Cedar Policy language.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#body ResourcePolicy#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy#body ResourcePolicy#body}
   */
   readonly body: string;
 }
@@ -277,7 +272,7 @@ export class ResourcePolicyPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy mongodbatlas_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy mongodbatlas_resource_policy}
 */
 export class ResourcePolicy extends cdktf.TerraformResource {
 
@@ -293,7 +288,7 @@ export class ResourcePolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ResourcePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourcePolicy to import
-  * @param importFromId The id of the existing ResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -305,7 +300,7 @@ export class ResourcePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/resource_policy mongodbatlas_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/resource_policy mongodbatlas_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -316,7 +311,7 @@ export class ResourcePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.34.0',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

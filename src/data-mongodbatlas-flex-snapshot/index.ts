@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataMongodbatlasFlexSnapshotConfig extends cdktf.TerraformMetaA
   /**
   * Human-readable label that identifies the flex cluster whose snapshot you want to restore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#name DataMongodbatlasFlexSnapshot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot#name DataMongodbatlasFlexSnapshot#name}
   */
   readonly name: string;
   /**
@@ -23,19 +18,19 @@ export interface DataMongodbatlasFlexSnapshotConfig extends cdktf.TerraformMetaA
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#project_id DataMongodbatlasFlexSnapshot#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot#project_id DataMongodbatlasFlexSnapshot#project_id}
   */
   readonly projectId: string;
   /**
   * Unique 24-hexadecimal digit string that identifies the snapshot to restore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#snapshot_id DataMongodbatlasFlexSnapshot#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot#snapshot_id DataMongodbatlasFlexSnapshot#snapshot_id}
   */
   readonly snapshotId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot}
 */
 export class DataMongodbatlasFlexSnapshot extends cdktf.TerraformDataSource {
 
@@ -51,7 +46,7 @@ export class DataMongodbatlasFlexSnapshot extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasFlexSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasFlexSnapshot to import
-  * @param importFromId The id of the existing DataMongodbatlasFlexSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasFlexSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasFlexSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +58,7 @@ export class DataMongodbatlasFlexSnapshot extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +69,7 @@ export class DataMongodbatlasFlexSnapshot extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_flex_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.34.0',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

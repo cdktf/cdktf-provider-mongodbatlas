@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policy
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataMongodbatlasResourcePolicyConfig extends cdktf.TerraformMet
   /**
   * Unique 24-hexadecimal digit string that identifies an Atlas resource policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policy#id DataMongodbatlasResourcePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/resource_policy#id DataMongodbatlasResourcePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +19,7 @@ export interface DataMongodbatlasResourcePolicyConfig extends cdktf.TerraformMet
   /**
   * Unique 24-hexadecimal digit string that identifies the organization that contains your projects. Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policy#org_id DataMongodbatlasResourcePolicy#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/resource_policy#org_id DataMongodbatlasResourcePolicy#org_id}
   */
   readonly orgId: string;
 }
@@ -228,7 +223,7 @@ export class DataMongodbatlasResourcePolicyPoliciesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policy mongodbatlas_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/resource_policy mongodbatlas_resource_policy}
 */
 export class DataMongodbatlasResourcePolicy extends cdktf.TerraformDataSource {
 
@@ -244,7 +239,7 @@ export class DataMongodbatlasResourcePolicy extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasResourcePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasResourcePolicy to import
-  * @param importFromId The id of the existing DataMongodbatlasResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -256,7 +251,7 @@ export class DataMongodbatlasResourcePolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policy mongodbatlas_resource_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/resource_policy mongodbatlas_resource_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +262,7 @@ export class DataMongodbatlasResourcePolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.34.0',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
