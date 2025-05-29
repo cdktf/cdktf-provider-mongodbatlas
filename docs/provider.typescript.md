@@ -4,7 +4,7 @@
 
 ### MongodbatlasProvider <a name="MongodbatlasProvider" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs mongodbatlas}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs mongodbatlas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer"></a>
 
@@ -324,7 +324,7 @@ The construct id used in the generated config for the MongodbatlasProvider to im
 
 The id of the existing MongodbatlasProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#duration MongodbatlasProvider#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#duration MongodbatlasProvider#duration}
 
 ---
 
@@ -791,7 +791,7 @@ public readonly externalId: string;
 
 A unique identifier that might be required when you assume a role in another account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#external_id MongodbatlasProvider#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#external_id MongodbatlasProvider#external_id}
 
 ---
 
@@ -805,7 +805,7 @@ public readonly policy: string;
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#policy MongodbatlasProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#policy MongodbatlasProvider#policy}
 
 ---
 
@@ -819,7 +819,7 @@ public readonly policyArns: string[];
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#policy_arns MongodbatlasProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#policy_arns MongodbatlasProvider#policy_arns}
 
 ---
 
@@ -833,7 +833,7 @@ public readonly roleArn: string;
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#role_arn MongodbatlasProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#role_arn MongodbatlasProvider#role_arn}
 
 ---
 
@@ -847,7 +847,7 @@ public readonly sessionName: string;
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#session_name MongodbatlasProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#session_name MongodbatlasProvider#session_name}
 
 ---
 
@@ -861,7 +861,7 @@ public readonly sourceIdentity: string;
 
 Source identity specified by the principal assuming the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#source_identity MongodbatlasProvider#source_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#source_identity MongodbatlasProvider#source_identity}
 
 ---
 
@@ -875,7 +875,7 @@ public readonly tags: {[ key: string ]: string};
 
 Assume role session tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#tags MongodbatlasProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#tags MongodbatlasProvider#tags}
 
 ---
 
@@ -889,7 +889,7 @@ public readonly transitiveTagKeys: string[];
 
 Assume role session tag keys to pass to any subsequent sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#transitive_tag_keys MongodbatlasProvider#transitive_tag_keys}
 
 ---
 
@@ -933,7 +933,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#alias MongodbatlasProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#alias MongodbatlasProvider#alias}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly assumeRole: IResolvable | MongodbatlasProviderAssumeRole[];
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#assume_role MongodbatlasProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#assume_role MongodbatlasProvider#assume_role}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly awsAccessKeyId: string;
 
 AWS API Access Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#aws_access_key_id MongodbatlasProvider#aws_access_key_id}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly awsSecretAccessKey: string;
 
 AWS API Access Secret Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#aws_secret_access_key MongodbatlasProvider#aws_secret_access_key}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly awsSessionToken: string;
 
 AWS Security Token Service provided session token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#aws_session_token MongodbatlasProvider#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#aws_session_token MongodbatlasProvider#aws_session_token}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly baseUrl: string;
 
 MongoDB Atlas Base URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#base_url MongodbatlasProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#base_url MongodbatlasProvider#base_url}
 
 ---
 
@@ -1017,7 +1017,7 @@ public readonly isMongodbgovCloud: boolean | IResolvable;
 
 MongoDB Atlas Base URL default to gov.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#is_mongodbgov_cloud MongodbatlasProvider#is_mongodbgov_cloud}
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly privateKey: string;
 
 MongoDB Atlas Programmatic Private Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#private_key MongodbatlasProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#private_key MongodbatlasProvider#private_key}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly publicKey: string;
 
 MongoDB Atlas Programmatic Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#public_key MongodbatlasProvider#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#public_key MongodbatlasProvider#public_key}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly realmBaseUrl: string;
 
 MongoDB Realm Base URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#realm_base_url MongodbatlasProvider#realm_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#realm_base_url MongodbatlasProvider#realm_base_url}
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly region: string;
 
 Region where secret is stored as part of AWS Secret Manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#region MongodbatlasProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#region MongodbatlasProvider#region}
 
 ---
 
@@ -1087,7 +1087,7 @@ public readonly secretName: string;
 
 Name of secret stored in AWS Secret Manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#secret_name MongodbatlasProvider#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#secret_name MongodbatlasProvider#secret_name}
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly stsEndpoint: string;
 
 AWS Security Token Service endpoint. Required for cross-AWS region or cross-AWS account secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs#sts_endpoint MongodbatlasProvider#sts_endpoint}
 
 ---
 

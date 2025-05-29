@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/mongodb_employee_access_grant
 // generated from terraform resource schema
 
