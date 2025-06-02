@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.NewResourcePolicy(scope Construct, id *string, config ResourcePolicyConfig) ResourcePolicy
 ```
@@ -398,7 +398,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.ResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.ResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ resourcepolicy.ResourcePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.ResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ resourcepolicy.ResourcePolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.ResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -841,7 +841,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 &resourcepolicy.ResourcePolicyConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyCreatedByUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 &resourcepolicy.ResourcePolicyCreatedByUser {
 
@@ -1022,7 +1022,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resource
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyLastUpdatedByUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 &resourcepolicy.ResourcePolicyLastUpdatedByUser {
 
@@ -1035,7 +1035,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resource
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 &resourcepolicy.ResourcePolicyPolicies {
 	Body: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyCreatedByUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.NewResourcePolicyCreatedByUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourcePolicyCreatedByUserOutputReference
 ```
@@ -1342,7 +1342,7 @@ func InternalValue() ResourcePolicyCreatedByUser
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyLastUpdatedByUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.NewResourcePolicyLastUpdatedByUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourcePolicyLastUpdatedByUserOutputReference
 ```
@@ -1613,7 +1613,7 @@ func InternalValue() ResourcePolicyLastUpdatedByUser
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.NewResourcePolicyPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResourcePolicyPoliciesList
 ```
@@ -1773,7 +1773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.resourcePolicy.ResourcePolicyPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/resourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/resourcepolicy"
 
 resourcepolicy.NewResourcePolicyPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResourcePolicyPoliciesOutputReference
 ```

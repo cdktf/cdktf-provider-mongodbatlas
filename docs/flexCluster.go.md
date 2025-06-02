@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.NewFlexCluster(scope Construct, id *string, config FlexClusterConfig) FlexCluster
 ```
@@ -405,7 +405,7 @@ func ResetTerminationProtectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.FlexCluster_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.FlexCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ flexcluster.FlexCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.FlexCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ flexcluster.FlexCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.flexCluster.FlexCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.FlexCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterBackupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 &flexcluster.FlexClusterBackupSettings {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexclus
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 &flexcluster.FlexClusterConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexclus
 	Provisioners: *[]interface{},
 	Name: *string,
 	ProjectId: *string,
-	ProviderSettings: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.flexCluster.FlexClusterProviderSettings,
+	ProviderSettings: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8.flexCluster.FlexClusterProviderSettings,
 	Tags: *map[string]*string,
 	TerminationProtectionEnabled: interface{},
 }
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 &flexcluster.FlexClusterConnectionStrings {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexclus
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterProviderSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 &flexcluster.FlexClusterProviderSettings {
 	BackingProviderName: *string,
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterBackupSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.NewFlexClusterBackupSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlexClusterBackupSettingsOutputReference
 ```
@@ -1416,7 +1416,7 @@ func InternalValue() FlexClusterBackupSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.NewFlexClusterConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlexClusterConnectionStringsOutputReference
 ```
@@ -1687,7 +1687,7 @@ func InternalValue() FlexClusterConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.flexCluster.FlexClusterProviderSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/flexcluster"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/flexcluster"
 
 flexcluster.NewFlexClusterProviderSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlexClusterProviderSettingsOutputReference
 ```
