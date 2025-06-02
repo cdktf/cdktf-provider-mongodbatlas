@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.NewDataMongodbatlasResourcePolicy(scope Construct, id *string, config DataMongodbatlasResourcePolicyConfig) DataMongodbatlasResourcePolicy
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicy_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicy_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 &datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicyConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyCreatedByUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 &datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicyCreatedByUser {
 
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyLastUpdatedByUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 &datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicyLastUpdatedByUser {
 
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 &datamongodbatlasresourcepolicy.DataMongodbatlasResourcePolicyPolicies {
 
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamong
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyCreatedByUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.NewDataMongodbatlasResourcePolicyCreatedByUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataMongodbatlasResourcePolicyCreatedByUserOutputReference
 ```
@@ -1126,7 +1126,7 @@ func InternalValue() DataMongodbatlasResourcePolicyCreatedByUser
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyLastUpdatedByUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.NewDataMongodbatlasResourcePolicyLastUpdatedByUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataMongodbatlasResourcePolicyLastUpdatedByUserOutputReference
 ```
@@ -1397,7 +1397,7 @@ func InternalValue() DataMongodbatlasResourcePolicyLastUpdatedByUser
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.NewDataMongodbatlasResourcePolicyPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasResourcePolicyPoliciesList
 ```
@@ -1546,7 +1546,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasResourcePolicy.DataMongodbatlasResourcePolicyPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasresourcepolicy"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasresourcepolicy"
 
 datamongodbatlasresourcepolicy.NewDataMongodbatlasResourcePolicyPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasResourcePolicyPoliciesOutputReference
 ```

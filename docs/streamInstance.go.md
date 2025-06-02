@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.NewStreamInstance(scope Construct, id *string, config StreamInstanceConfig) StreamInstance
 ```
@@ -411,7 +411,7 @@ func ResetStreamConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.StreamInstance_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.StreamInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ streaminstance.StreamInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.StreamInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ streaminstance.StreamInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.StreamInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 &streaminstance.StreamInstanceConfig {
 	Connection: interface{},
@@ -820,10 +820,10 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streamin
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DataProcessRegion: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamInstance.StreamInstanceDataProcessRegion,
+	DataProcessRegion: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8.streamInstance.StreamInstanceDataProcessRegion,
 	InstanceName: *string,
 	ProjectId: *string,
-	StreamConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7.streamInstance.StreamInstanceStreamConfig,
+	StreamConfig: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8.streamInstance.StreamInstanceStreamConfig,
 }
 ```
 
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstanceDataProcessRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 &streaminstance.StreamInstanceDataProcessRegion {
 	CloudProvider: *string,
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstanceStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 &streaminstance.StreamInstanceStreamConfig {
 	Tier: *string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstanceDataProcessRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.NewStreamInstanceDataProcessRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamInstanceDataProcessRegionOutputReference
 ```
@@ -1341,7 +1341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.streamInstance.StreamInstanceStreamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/streaminstance"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/streaminstance"
 
 streaminstance.NewStreamInstanceStreamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamInstanceStreamConfigOutputReference
 ```

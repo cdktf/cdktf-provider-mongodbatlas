@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasmongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasmongodbemployeeaccessgrant"
 
 datamongodbatlasmongodbemployeeaccessgrant.NewDataMongodbatlasMongodbEmployeeAccessGrant(scope Construct, id *string, config DataMongodbatlasMongodbEmployeeAccessGrantConfig) DataMongodbatlasMongodbEmployeeAccessGrant
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasmongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasmongodbemployeeaccessgrant"
 
 datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccessGrant_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasmongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasmongodbemployeeaccessgrant"
 
 datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccessGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccess
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasmongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasmongodbemployeeaccessgrant"
 
 datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccessGrant_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccess
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasmongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasmongodbemployeeaccessgrant"
 
 datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccessGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasMongodbEmployeeAccessGrant.DataMongodbatlasMongodbEmployeeAccessGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v7/datamongodbatlasmongodbemployeeaccessgrant"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasmongodbemployeeaccessgrant"
 
 &datamongodbatlasmongodbemployeeaccessgrant.DataMongodbatlasMongodbEmployeeAccessGrantConfig {
 	Connection: interface{},
