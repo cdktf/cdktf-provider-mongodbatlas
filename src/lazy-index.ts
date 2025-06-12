@@ -163,6 +163,7 @@ Object.defineProperty(exports, 'dataMongodbatlasSharedTierRestoreJob', { get: fu
 Object.defineProperty(exports, 'dataMongodbatlasSharedTierRestoreJobs', { get: function () { return require('./data-mongodbatlas-shared-tier-restore-jobs'); } });
 Object.defineProperty(exports, 'dataMongodbatlasSharedTierSnapshot', { get: function () { return require('./data-mongodbatlas-shared-tier-snapshot'); } });
 Object.defineProperty(exports, 'dataMongodbatlasSharedTierSnapshots', { get: function () { return require('./data-mongodbatlas-shared-tier-snapshots'); } });
+Object.defineProperty(exports, 'dataMongodbatlasStreamAccountDetails', { get: function () { return require('./data-mongodbatlas-stream-account-details'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamConnection', { get: function () { return require('./data-mongodbatlas-stream-connection'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamConnections', { get: function () { return require('./data-mongodbatlas-stream-connections'); } });
 Object.defineProperty(exports, 'dataMongodbatlasStreamInstance', { get: function () { return require('./data-mongodbatlas-stream-instance'); } });
