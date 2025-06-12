@@ -120,6 +120,7 @@ The following submodules are available:
 - [dataMongodbatlasSharedTierRestoreJobs](./dataMongodbatlasSharedTierRestoreJobs.csharp.md)
 - [dataMongodbatlasSharedTierSnapshot](./dataMongodbatlasSharedTierSnapshot.csharp.md)
 - [dataMongodbatlasSharedTierSnapshots](./dataMongodbatlasSharedTierSnapshots.csharp.md)
+- [dataMongodbatlasStreamAccountDetails](./dataMongodbatlasStreamAccountDetails.csharp.md)
 - [dataMongodbatlasStreamConnection](./dataMongodbatlasStreamConnection.csharp.md)
 - [dataMongodbatlasStreamConnections](./dataMongodbatlasStreamConnections.csharp.md)
 - [dataMongodbatlasStreamInstance](./dataMongodbatlasStreamInstance.csharp.md)

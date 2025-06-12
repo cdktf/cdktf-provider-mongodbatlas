@@ -163,6 +163,7 @@ export * as dataMongodbatlasSharedTierRestoreJob from './data-mongodbatlas-share
 export * as dataMongodbatlasSharedTierRestoreJobs from './data-mongodbatlas-shared-tier-restore-jobs';
 export * as dataMongodbatlasSharedTierSnapshot from './data-mongodbatlas-shared-tier-snapshot';
 export * as dataMongodbatlasSharedTierSnapshots from './data-mongodbatlas-shared-tier-snapshots';
+export * as dataMongodbatlasStreamAccountDetails from './data-mongodbatlas-stream-account-details';
 export * as dataMongodbatlasStreamConnection from './data-mongodbatlas-stream-connection';
 export * as dataMongodbatlasStreamConnections from './data-mongodbatlas-stream-connections';
 export * as dataMongodbatlasStreamInstance from './data-mongodbatlas-stream-instance';

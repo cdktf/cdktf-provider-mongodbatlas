@@ -120,6 +120,7 @@ The following submodules are available:
 - [dataMongodbatlasSharedTierRestoreJobs](./dataMongodbatlasSharedTierRestoreJobs.java.md)
 - [dataMongodbatlasSharedTierSnapshot](./dataMongodbatlasSharedTierSnapshot.java.md)
 - [dataMongodbatlasSharedTierSnapshots](./dataMongodbatlasSharedTierSnapshots.java.md)
+- [dataMongodbatlasStreamAccountDetails](./dataMongodbatlasStreamAccountDetails.java.md)
 - [dataMongodbatlasStreamConnection](./dataMongodbatlasStreamConnection.java.md)
 - [dataMongodbatlasStreamConnections](./dataMongodbatlasStreamConnections.java.md)
 - [dataMongodbatlasStreamInstance](./dataMongodbatlasStreamInstance.java.md)

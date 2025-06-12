@@ -120,6 +120,7 @@ The following submodules are available:
 - [dataMongodbatlasSharedTierRestoreJobs](./dataMongodbatlasSharedTierRestoreJobs.python.md)
 - [dataMongodbatlasSharedTierSnapshot](./dataMongodbatlasSharedTierSnapshot.python.md)
 - [dataMongodbatlasSharedTierSnapshots](./dataMongodbatlasSharedTierSnapshots.python.md)
+- [dataMongodbatlasStreamAccountDetails](./dataMongodbatlasStreamAccountDetails.python.md)
 - [dataMongodbatlasStreamConnection](./dataMongodbatlasStreamConnection.python.md)
 - [dataMongodbatlasStreamConnections](./dataMongodbatlasStreamConnections.python.md)
 - [dataMongodbatlasStreamInstance](./dataMongodbatlasStreamInstance.python.md)

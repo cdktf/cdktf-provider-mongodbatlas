@@ -120,6 +120,7 @@ The following submodules are available:
 - [dataMongodbatlasSharedTierRestoreJobs](./dataMongodbatlasSharedTierRestoreJobs.typescript.md)
 - [dataMongodbatlasSharedTierSnapshot](./dataMongodbatlasSharedTierSnapshot.typescript.md)
 - [dataMongodbatlasSharedTierSnapshots](./dataMongodbatlasSharedTierSnapshots.typescript.md)
+- [dataMongodbatlasStreamAccountDetails](./dataMongodbatlasStreamAccountDetails.typescript.md)
 - [dataMongodbatlasStreamConnection](./dataMongodbatlasStreamConnection.typescript.md)
 - [dataMongodbatlasStreamConnections](./dataMongodbatlasStreamConnections.typescript.md)
 - [dataMongodbatlasStreamInstance](./dataMongodbatlasStreamInstance.typescript.md)
