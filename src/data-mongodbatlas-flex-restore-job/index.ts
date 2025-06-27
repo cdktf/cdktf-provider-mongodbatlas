@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataMongodbatlasFlexRestoreJobConfig extends cdktf.TerraformMet
   /**
   * Human-readable label that identifies the flex cluster whose snapshot you want to restore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
   */
   readonly name: string;
   /**
@@ -23,19 +23,19 @@ export interface DataMongodbatlasFlexRestoreJobConfig extends cdktf.TerraformMet
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
   */
   readonly projectId: string;
   /**
   * Unique 24-hexadecimal digit string that identifies the restore job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
   */
   readonly restoreJobId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job}
 */
 export class DataMongodbatlasFlexRestoreJob extends cdktf.TerraformDataSource {
 
@@ -51,7 +51,7 @@ export class DataMongodbatlasFlexRestoreJob extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataMongodbatlasFlexRestoreJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasFlexRestoreJob to import
-  * @param importFromId The id of the existing DataMongodbatlasFlexRestoreJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasFlexRestoreJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasFlexRestoreJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +63,7 @@ export class DataMongodbatlasFlexRestoreJob extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class DataMongodbatlasFlexRestoreJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'mongodbatlas_flex_restore_job',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.36.0',
+        providerVersion: '1.37.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
