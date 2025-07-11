@@ -4,7 +4,7 @@
 
 ### Organization <a name="Organization" id="@cdktf/provider-mongodbatlas.organization.Organization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization mongodbatlas_organization}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization mongodbatlas_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer"></a>
 
@@ -21,16 +21,16 @@ organization.Organization(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  description: str,
   name: str,
-  org_owner_id: str,
-  role_names: typing.List[str],
   api_access_list_required: typing.Union[bool, IResolvable] = None,
+  description: str = None,
   federation_settings_id: str = None,
   gen_ai_features_enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
   multi_factor_auth_required: typing.Union[bool, IResolvable] = None,
+  org_owner_id: str = None,
   restrict_employee_access: typing.Union[bool, IResolvable] = None,
+  role_names: typing.List[str] = None,
   security_contact: str = None,
   skip_default_alerts_settings: typing.Union[bool, IResolvable] = None
 )
@@ -47,18 +47,18 @@ organization.Organization(
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#description Organization#description}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.orgOwnerId">org_owner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#role_names Organization#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.apiAccessListRequired">api_access_list_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.federationSettingsId">federation_settings_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.genAiFeaturesEnabled">gen_ai_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#id Organization#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.multiFactorAuthRequired">multi_factor_auth_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.restrictEmployeeAccess">restrict_employee_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.securityContact">security_contact</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#security_contact Organization#security_contact}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.skipDefaultAlertsSettings">skip_default_alerts_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#name Organization#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.apiAccessListRequired">api_access_list_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#description Organization#description}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.federationSettingsId">federation_settings_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.genAiFeaturesEnabled">gen_ai_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.multiFactorAuthRequired">multi_factor_auth_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.orgOwnerId">org_owner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.restrictEmployeeAccess">restrict_employee_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#role_names Organization#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.securityContact">security_contact</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#security_contact Organization#security_contact}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.skipDefaultAlertsSettings">skip_default_alerts_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}. |
 
 ---
 
@@ -122,35 +122,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.description"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#description Organization#description}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#name Organization#name}.
-
----
-
-##### `org_owner_id`<sup>Required</sup> <a name="org_owner_id" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.orgOwnerId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
-
----
-
-##### `role_names`<sup>Required</sup> <a name="role_names" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.roleNames"></a>
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#role_names Organization#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#name Organization#name}.
 
 ---
 
@@ -158,7 +134,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.description"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#description Organization#description}.
 
 ---
 
@@ -166,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
 
 ---
 
@@ -174,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}.
 
 ---
 
@@ -182,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,7 +177,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+
+---
+
+##### `org_owner_id`<sup>Optional</sup> <a name="org_owner_id" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.orgOwnerId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
 
 ---
 
@@ -201,7 +193,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
+
+---
+
+##### `role_names`<sup>Optional</sup> <a name="role_names" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer.parameter.roleNames"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#role_names Organization#role_names}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#security_contact Organization#security_contact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#security_contact Organization#security_contact}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}.
 
 ---
 
@@ -249,11 +249,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetApiAccessListRequired">reset_api_access_list_required</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetFederationSettingsId">reset_federation_settings_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetGenAiFeaturesEnabled">reset_gen_ai_features_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetMultiFactorAuthRequired">reset_multi_factor_auth_required</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetOrgOwnerId">reset_org_owner_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetRestrictEmployeeAccess">reset_restrict_employee_access</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetRoleNames">reset_role_names</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetSecurityContact">reset_security_contact</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetSkipDefaultAlertsSettings">reset_skip_default_alerts_settings</a></code> | *No description.* |
 
@@ -590,6 +593,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_api_access_list_required() -> None
 ```
 
+##### `reset_description` <a name="reset_description" id="@cdktf/provider-mongodbatlas.organization.Organization.resetDescription"></a>
+
+```python
+def reset_description() -> None
+```
+
 ##### `reset_federation_settings_id` <a name="reset_federation_settings_id" id="@cdktf/provider-mongodbatlas.organization.Organization.resetFederationSettingsId"></a>
 
 ```python
@@ -614,10 +623,22 @@ def reset_id() -> None
 def reset_multi_factor_auth_required() -> None
 ```
 
+##### `reset_org_owner_id` <a name="reset_org_owner_id" id="@cdktf/provider-mongodbatlas.organization.Organization.resetOrgOwnerId"></a>
+
+```python
+def reset_org_owner_id() -> None
+```
+
 ##### `reset_restrict_employee_access` <a name="reset_restrict_employee_access" id="@cdktf/provider-mongodbatlas.organization.Organization.resetRestrictEmployeeAccess"></a>
 
 ```python
 def reset_restrict_employee_access() -> None
+```
+
+##### `reset_role_names` <a name="reset_role_names" id="@cdktf/provider-mongodbatlas.organization.Organization.resetRoleNames"></a>
+
+```python
+def reset_role_names() -> None
 ```
 
 ##### `reset_security_contact` <a name="reset_security_contact" id="@cdktf/provider-mongodbatlas.organization.Organization.resetSecurityContact"></a>
@@ -746,7 +767,7 @@ The construct id used in the generated config for the Organization to import.
 
 The id of the existing Organization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1253,16 +1274,16 @@ organization.OrganizationConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  description: str,
   name: str,
-  org_owner_id: str,
-  role_names: typing.List[str],
   api_access_list_required: typing.Union[bool, IResolvable] = None,
+  description: str = None,
   federation_settings_id: str = None,
   gen_ai_features_enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
   multi_factor_auth_required: typing.Union[bool, IResolvable] = None,
+  org_owner_id: str = None,
   restrict_employee_access: typing.Union[bool, IResolvable] = None,
+  role_names: typing.List[str] = None,
   security_contact: str = None,
   skip_default_alerts_settings: typing.Union[bool, IResolvable] = None
 )
@@ -1279,18 +1300,18 @@ organization.OrganizationConfig(
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#description Organization#description}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId">org_owner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#role_names Organization#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.apiAccessListRequired">api_access_list_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.federationSettingsId">federation_settings_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.genAiFeaturesEnabled">gen_ai_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#id Organization#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.multiFactorAuthRequired">multi_factor_auth_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.restrictEmployeeAccess">restrict_employee_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.securityContact">security_contact</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#security_contact Organization#security_contact}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.skipDefaultAlertsSettings">skip_default_alerts_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#name Organization#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.apiAccessListRequired">api_access_list_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#description Organization#description}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.federationSettingsId">federation_settings_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.genAiFeaturesEnabled">gen_ai_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.multiFactorAuthRequired">multi_factor_auth_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId">org_owner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.restrictEmployeeAccess">restrict_employee_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames">role_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#role_names Organization#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.securityContact">security_contact</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#security_contact Organization#security_contact}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.skipDefaultAlertsSettings">skip_default_alerts_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}. |
 
 ---
 
@@ -1364,18 +1385,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description"></a>
-
-```python
-description: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#description Organization#description}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name"></a>
 
 ```python
@@ -1384,31 +1393,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#name Organization#name}.
-
----
-
-##### `org_owner_id`<sup>Required</sup> <a name="org_owner_id" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId"></a>
-
-```python
-org_owner_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
-
----
-
-##### `role_names`<sup>Required</sup> <a name="role_names" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames"></a>
-
-```python
-role_names: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#role_names Organization#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#name Organization#name}.
 
 ---
 
@@ -1420,7 +1405,19 @@ api_access_list_required: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#description Organization#description}.
 
 ---
 
@@ -1432,7 +1429,7 @@ federation_settings_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
 
 ---
 
@@ -1444,7 +1441,7 @@ gen_ai_features_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}.
 
 ---
 
@@ -1456,7 +1453,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1471,7 +1468,19 @@ multi_factor_auth_required: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+
+---
+
+##### `org_owner_id`<sup>Optional</sup> <a name="org_owner_id" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId"></a>
+
+```python
+org_owner_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
 
 ---
 
@@ -1483,7 +1492,19 @@ restrict_employee_access: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
+
+---
+
+##### `role_names`<sup>Optional</sup> <a name="role_names" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames"></a>
+
+```python
+role_names: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#role_names Organization#role_names}.
 
 ---
 
@@ -1495,7 +1516,7 @@ security_contact: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#security_contact Organization#security_contact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#security_contact Organization#security_contact}.
 
 ---
 
@@ -1507,7 +1528,7 @@ skip_default_alerts_settings: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}.
 
 ---
 

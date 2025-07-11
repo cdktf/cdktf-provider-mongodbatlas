@@ -8,6 +8,7 @@ Object.defineProperty(exports, 'accessListApiKey', { get: function () { return r
 Object.defineProperty(exports, 'advancedCluster', { get: function () { return require('./advanced-cluster'); } });
 Object.defineProperty(exports, 'alertConfiguration', { get: function () { return require('./alert-configuration'); } });
 Object.defineProperty(exports, 'apiKey', { get: function () { return require('./api-key'); } });
+Object.defineProperty(exports, 'apiKeyProjectAssignment', { get: function () { return require('./api-key-project-assignment'); } });
 Object.defineProperty(exports, 'auditing', { get: function () { return require('./auditing'); } });
 Object.defineProperty(exports, 'backupCompliancePolicy', { get: function () { return require('./backup-compliance-policy'); } });
 Object.defineProperty(exports, 'cloudBackupSchedule', { get: function () { return require('./cloud-backup-schedule'); } });
@@ -72,6 +73,8 @@ Object.defineProperty(exports, 'dataMongodbatlasAdvancedClusters', { get: functi
 Object.defineProperty(exports, 'dataMongodbatlasAlertConfiguration', { get: function () { return require('./data-mongodbatlas-alert-configuration'); } });
 Object.defineProperty(exports, 'dataMongodbatlasAlertConfigurations', { get: function () { return require('./data-mongodbatlas-alert-configurations'); } });
 Object.defineProperty(exports, 'dataMongodbatlasApiKey', { get: function () { return require('./data-mongodbatlas-api-key'); } });
+Object.defineProperty(exports, 'dataMongodbatlasApiKeyProjectAssignment', { get: function () { return require('./data-mongodbatlas-api-key-project-assignment'); } });
+Object.defineProperty(exports, 'dataMongodbatlasApiKeyProjectAssignments', { get: function () { return require('./data-mongodbatlas-api-key-project-assignments'); } });
 Object.defineProperty(exports, 'dataMongodbatlasApiKeys', { get: function () { return require('./data-mongodbatlas-api-keys'); } });
 Object.defineProperty(exports, 'dataMongodbatlasAtlasUser', { get: function () { return require('./data-mongodbatlas-atlas-user'); } });
 Object.defineProperty(exports, 'dataMongodbatlasAtlasUsers', { get: function () { return require('./data-mongodbatlas-atlas-users'); } });

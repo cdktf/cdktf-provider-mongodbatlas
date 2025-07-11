@@ -4,7 +4,7 @@
 
 ### Organization <a name="Organization" id="@cdktf/provider-mongodbatlas.organization.Organization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization mongodbatlas_organization}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization mongodbatlas_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.organization.Organization.Initializer"></a>
 
@@ -74,11 +74,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetApiAccessListRequired">ResetApiAccessListRequired</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetFederationSettingsId">ResetFederationSettingsId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetGenAiFeaturesEnabled">ResetGenAiFeaturesEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetMultiFactorAuthRequired">ResetMultiFactorAuthRequired</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetOrgOwnerId">ResetOrgOwnerId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetRestrictEmployeeAccess">ResetRestrictEmployeeAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetRoleNames">ResetRoleNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetSecurityContact">ResetSecurityContact</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.Organization.resetSkipDefaultAlertsSettings">ResetSkipDefaultAlertsSettings</a></code> | *No description.* |
 
@@ -378,6 +381,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetApiAccessListRequired()
 ```
 
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-mongodbatlas.organization.Organization.resetDescription"></a>
+
+```csharp
+private void ResetDescription()
+```
+
 ##### `ResetFederationSettingsId` <a name="ResetFederationSettingsId" id="@cdktf/provider-mongodbatlas.organization.Organization.resetFederationSettingsId"></a>
 
 ```csharp
@@ -402,10 +411,22 @@ private void ResetId()
 private void ResetMultiFactorAuthRequired()
 ```
 
+##### `ResetOrgOwnerId` <a name="ResetOrgOwnerId" id="@cdktf/provider-mongodbatlas.organization.Organization.resetOrgOwnerId"></a>
+
+```csharp
+private void ResetOrgOwnerId()
+```
+
 ##### `ResetRestrictEmployeeAccess` <a name="ResetRestrictEmployeeAccess" id="@cdktf/provider-mongodbatlas.organization.Organization.resetRestrictEmployeeAccess"></a>
 
 ```csharp
 private void ResetRestrictEmployeeAccess()
+```
+
+##### `ResetRoleNames` <a name="ResetRoleNames" id="@cdktf/provider-mongodbatlas.organization.Organization.resetRoleNames"></a>
+
+```csharp
+private void ResetRoleNames()
 ```
 
 ##### `ResetSecurityContact` <a name="ResetSecurityContact" id="@cdktf/provider-mongodbatlas.organization.Organization.resetSecurityContact"></a>
@@ -523,7 +544,7 @@ The construct id used in the generated config for the Organization to import.
 
 The id of the existing Organization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,16 +1051,16 @@ new OrganizationConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Description,
     string Name,
-    string OrgOwnerId,
-    string[] RoleNames,
     object ApiAccessListRequired = null,
+    string Description = null,
     string FederationSettingsId = null,
     object GenAiFeaturesEnabled = null,
     string Id = null,
     object MultiFactorAuthRequired = null,
+    string OrgOwnerId = null,
     object RestrictEmployeeAccess = null,
+    string[] RoleNames = null,
     string SecurityContact = null,
     object SkipDefaultAlertsSettings = null
 };
@@ -1056,18 +1077,18 @@ new OrganizationConfig {
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#description Organization#description}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#name Organization#name}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId">OrgOwnerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames">RoleNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#role_names Organization#role_names}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.apiAccessListRequired">ApiAccessListRequired</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.federationSettingsId">FederationSettingsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.genAiFeaturesEnabled">GenAiFeaturesEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#id Organization#id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.multiFactorAuthRequired">MultiFactorAuthRequired</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.restrictEmployeeAccess">RestrictEmployeeAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.securityContact">SecurityContact</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#security_contact Organization#security_contact}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.skipDefaultAlertsSettings">SkipDefaultAlertsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#name Organization#name}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.apiAccessListRequired">ApiAccessListRequired</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#description Organization#description}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.federationSettingsId">FederationSettingsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.genAiFeaturesEnabled">GenAiFeaturesEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#id Organization#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.multiFactorAuthRequired">MultiFactorAuthRequired</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId">OrgOwnerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#org_owner_id Organization#org_owner_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.restrictEmployeeAccess">RestrictEmployeeAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames">RoleNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#role_names Organization#role_names}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.securityContact">SecurityContact</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#security_contact Organization#security_contact}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.skipDefaultAlertsSettings">SkipDefaultAlertsSettings</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}. |
 
 ---
 
@@ -1141,18 +1162,6 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description"></a>
-
-```csharp
-public string Description { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#description Organization#description}.
-
----
-
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.name"></a>
 
 ```csharp
@@ -1161,31 +1170,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#name Organization#name}.
-
----
-
-##### `OrgOwnerId`<sup>Required</sup> <a name="OrgOwnerId" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId"></a>
-
-```csharp
-public string OrgOwnerId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
-
----
-
-##### `RoleNames`<sup>Required</sup> <a name="RoleNames" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames"></a>
-
-```csharp
-public string[] RoleNames { get; set; }
-```
-
-- *Type:* string[]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#role_names Organization#role_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#name Organization#name}.
 
 ---
 
@@ -1197,7 +1182,19 @@ public object ApiAccessListRequired { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#api_access_list_required Organization#api_access_list_required}.
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.description"></a>
+
+```csharp
+public string Description { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#description Organization#description}.
 
 ---
 
@@ -1209,7 +1206,7 @@ public string FederationSettingsId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#federation_settings_id Organization#federation_settings_id}.
 
 ---
 
@@ -1221,7 +1218,7 @@ public object GenAiFeaturesEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#gen_ai_features_enabled Organization#gen_ai_features_enabled}.
 
 ---
 
@@ -1233,7 +1230,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#id Organization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#id Organization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1248,7 +1245,19 @@ public object MultiFactorAuthRequired { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#multi_factor_auth_required Organization#multi_factor_auth_required}.
+
+---
+
+##### `OrgOwnerId`<sup>Optional</sup> <a name="OrgOwnerId" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.orgOwnerId"></a>
+
+```csharp
+public string OrgOwnerId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#org_owner_id Organization#org_owner_id}.
 
 ---
 
@@ -1260,7 +1269,19 @@ public object RestrictEmployeeAccess { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#restrict_employee_access Organization#restrict_employee_access}.
+
+---
+
+##### `RoleNames`<sup>Optional</sup> <a name="RoleNames" id="@cdktf/provider-mongodbatlas.organization.OrganizationConfig.property.roleNames"></a>
+
+```csharp
+public string[] RoleNames { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#role_names Organization#role_names}.
 
 ---
 
@@ -1272,7 +1293,7 @@ public string SecurityContact { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#security_contact Organization#security_contact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#security_contact Organization#security_contact}.
 
 ---
 
@@ -1284,7 +1305,7 @@ public object SkipDefaultAlertsSettings { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization#skip_default_alerts_settings Organization#skip_default_alerts_settings}.
 
 ---
 
