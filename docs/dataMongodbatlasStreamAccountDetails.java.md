@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasStreamAccountDetails <a name="DataMongodbatlasStreamAccountDetails" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamAccountDetails.DataMongodbatlasStreamAccountDetails"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details mongodbatlas_stream_account_details}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details mongodbatlas_stream_account_details}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasStreamAccountDetails.DataMongodbatlasStreamAccountDetails.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 One of `aws` or `azure`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#cloud_provider DataMongodbatlasStreamAccountDetails#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#cloud_provider DataMongodbatlasStreamAccountDetails#cloud_provider}
 
 ---
 
@@ -126,7 +126,7 @@ Use the [/groups](https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/operat
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#project_id DataMongodbatlasStreamAccountDetails#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#project_id DataMongodbatlasStreamAccountDetails#project_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 The cloud provider specific region name, i.e. `US_EAST_1` for cloud provider `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#region_name DataMongodbatlasStreamAccountDetails#region_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#region_name DataMongodbatlasStreamAccountDetails#region_name}
 
 ---
 
@@ -459,7 +459,7 @@ The construct id used in the generated config for the DataMongodbatlasStreamAcco
 
 The id of the existing DataMongodbatlasStreamAccountDetails that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ public java.lang.String getCloudProvider();
 
 One of `aws` or `azure`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#cloud_provider DataMongodbatlasStreamAccountDetails#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#cloud_provider DataMongodbatlasStreamAccountDetails#cloud_provider}
 
 ---
 
@@ -893,7 +893,7 @@ Use the [/groups](https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/operat
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#project_id DataMongodbatlasStreamAccountDetails#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#project_id DataMongodbatlasStreamAccountDetails#project_id}
 
 ---
 
@@ -907,7 +907,7 @@ public java.lang.String getRegionName();
 
 The cloud provider specific region name, i.e. `US_EAST_1` for cloud provider `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#region_name DataMongodbatlasStreamAccountDetails#region_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_account_details#region_name DataMongodbatlasStreamAccountDetails#region_name}
 
 ---
 
