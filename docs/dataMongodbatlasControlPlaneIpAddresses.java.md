@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasControlPlaneIpAddresses <a name="DataMongodbatlasControlPlaneIpAddresses" id="@cdktf/provider-mongodbatlas.dataMongodbatlasControlPlaneIpAddresses.DataMongodbatlasControlPlaneIpAddresses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasControlPlaneIpAddresses.DataMongodbatlasControlPlaneIpAddresses.Initializer"></a>
 
@@ -419,7 +419,7 @@ The construct id used in the generated config for the DataMongodbatlasControlPla
 
 The id of the existing DataMongodbatlasControlPlaneIpAddresses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/control_plane_ip_addresses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/control_plane_ip_addresses#import import section} in the documentation of this resource for the id to use
 
 ---
 
