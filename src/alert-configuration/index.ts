@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface AlertConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}
   */
   readonly eventType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}
   */
   readonly projectId: string;
   /**
   * matcher block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
   */
   readonly matcher?: AlertConfigurationMatcher[] | cdktf.IResolvable;
   /**
   * metric_threshold_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
   */
   readonly metricThresholdConfig?: AlertConfigurationMetricThresholdConfig[] | cdktf.IResolvable;
   /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
   */
   readonly notification?: AlertConfigurationNotification[] | cdktf.IResolvable;
   /**
   * threshold_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
   */
   readonly thresholdConfig?: AlertConfigurationThresholdConfig[] | cdktf.IResolvable;
 }
 export interface AlertConfigurationMatcher {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}
   */
   readonly fieldName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#value AlertConfiguration#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#value AlertConfiguration#value}
   */
   readonly value: string;
 }
@@ -224,23 +224,23 @@ export class AlertConfigurationMatcherList extends cdktf.ComplexList {
 }
 export interface AlertConfigurationMetricThresholdConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#metric_name AlertConfiguration#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#mode AlertConfiguration#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
   */
   readonly threshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#units AlertConfiguration#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#units AlertConfiguration#units}
   */
   readonly units?: string;
 }
@@ -469,99 +469,99 @@ export class AlertConfigurationMetricThresholdConfigList extends cdktf.ComplexLi
 }
 export interface AlertConfigurationNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#api_token AlertConfiguration#api_token}
   */
   readonly apiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#channel_name AlertConfiguration#channel_name}
   */
   readonly channelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#datadog_api_key AlertConfiguration#datadog_api_key}
   */
   readonly datadogApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#datadog_region AlertConfiguration#datadog_region}
   */
   readonly datadogRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#delay_min AlertConfiguration#delay_min}
   */
   readonly delayMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#email_address AlertConfiguration#email_address}
   */
   readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#email_enabled AlertConfiguration#email_enabled}
   */
   readonly emailEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#integration_id AlertConfiguration#integration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#integration_id AlertConfiguration#integration_id}
   */
   readonly integrationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#interval_min AlertConfiguration#interval_min}
   */
   readonly intervalMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#microsoft_teams_webhook_url AlertConfiguration#microsoft_teams_webhook_url}
   */
   readonly microsoftTeamsWebhookUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#mobile_number AlertConfiguration#mobile_number}
   */
   readonly mobileNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#notifier_id AlertConfiguration#notifier_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#notifier_id AlertConfiguration#notifier_id}
   */
   readonly notifierId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#ops_genie_api_key AlertConfiguration#ops_genie_api_key}
   */
   readonly opsGenieApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#ops_genie_region AlertConfiguration#ops_genie_region}
   */
   readonly opsGenieRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#roles AlertConfiguration#roles}
   */
   readonly roles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#service_key AlertConfiguration#service_key}
   */
   readonly serviceKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#sms_enabled AlertConfiguration#sms_enabled}
   */
   readonly smsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#team_id AlertConfiguration#team_id}
   */
   readonly teamId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#type_name AlertConfiguration#type_name}
   */
   readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#username AlertConfiguration#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#username AlertConfiguration#username}
   */
   readonly username?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#victor_ops_api_key AlertConfiguration#victor_ops_api_key}
   */
   readonly victorOpsApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#victor_ops_routing_key AlertConfiguration#victor_ops_routing_key}
   */
   readonly victorOpsRoutingKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#webhook_secret AlertConfiguration#webhook_secret}
   */
   readonly webhookSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#webhook_url AlertConfiguration#webhook_url}
   */
   readonly webhookUrl?: string;
 }
@@ -1346,15 +1346,15 @@ export class AlertConfigurationNotificationList extends cdktf.ComplexList {
 }
 export interface AlertConfigurationThresholdConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#threshold AlertConfiguration#threshold}
   */
   readonly threshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#units AlertConfiguration#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#units AlertConfiguration#units}
   */
   readonly units?: string;
 }
@@ -1528,7 +1528,7 @@ export class AlertConfigurationThresholdConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}
 */
 export class AlertConfiguration extends cdktf.TerraformResource {
 
@@ -1544,7 +1544,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AlertConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertConfiguration to import
-  * @param importFromId The id of the existing AlertConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1556,7 +1556,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1567,7 +1567,7 @@ export class AlertConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_alert_configuration',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.39.0',
+        providerVersion: '1.40.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
