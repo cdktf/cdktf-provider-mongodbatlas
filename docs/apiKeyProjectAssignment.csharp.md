@@ -4,7 +4,7 @@
 
 ### ApiKeyProjectAssignment <a name="ApiKeyProjectAssignment" id="@cdktf/provider-mongodbatlas.apiKeyProjectAssignment.ApiKeyProjectAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/api_key_project_assignment mongodbatlas_api_key_project_assignment}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment mongodbatlas_api_key_project_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.apiKeyProjectAssignment.ApiKeyProjectAssignment.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ApiKeyProjectAssignment to
 
 The id of the existing ApiKeyProjectAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/api_key_project_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ public string ApiKeyId { get; set; }
 
 Unique 24-hexadecimal digit string that identifies this organization API key that you want to assign to one project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/api_key_project_assignment#api_key_id ApiKeyProjectAssignment#api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#api_key_id ApiKeyProjectAssignment#api_key_id}
 
 ---
 
@@ -864,7 +864,7 @@ Use the [/groups](#tag/Projects/operation/listProjects) endpoint to retrieve all
 
 **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/api_key_project_assignment#project_id ApiKeyProjectAssignment#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#project_id ApiKeyProjectAssignment#project_id}
 
 ---
 
@@ -880,7 +880,7 @@ Human-readable label that identifies the collection of privileges that MongoDB C
 
 These roles include only the specific project-level roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/api_key_project_assignment#roles ApiKeyProjectAssignment#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#roles ApiKeyProjectAssignment#roles}
 
 ---
 
