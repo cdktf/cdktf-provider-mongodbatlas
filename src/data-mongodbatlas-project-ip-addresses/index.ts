@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/project_ip_addresses
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/project_ip_addresses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataMongodbatlasProjectIpAddressesAConfig extends cdktf.Terrafo
   /**
   * Unique 24-hexadecimal digit string that identifies your project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/project_ip_addresses#project_id DataMongodbatlasProjectIpAddressesA#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/project_ip_addresses#project_id DataMongodbatlasProjectIpAddressesA#project_id}
   */
   readonly projectId: string;
 }
@@ -171,7 +171,7 @@ export class DataMongodbatlasProjectIpAddressesServicesAOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses}
 */
 export class DataMongodbatlasProjectIpAddressesA extends cdktf.TerraformDataSource {
 
@@ -187,7 +187,7 @@ export class DataMongodbatlasProjectIpAddressesA extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataMongodbatlasProjectIpAddressesA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasProjectIpAddressesA to import
-  * @param importFromId The id of the existing DataMongodbatlasProjectIpAddressesA that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/project_ip_addresses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasProjectIpAddressesA that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/project_ip_addresses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasProjectIpAddressesA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -199,7 +199,7 @@ export class DataMongodbatlasProjectIpAddressesA extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -210,7 +210,7 @@ export class DataMongodbatlasProjectIpAddressesA extends cdktf.TerraformDataSour
       terraformResourceType: 'mongodbatlas_project_ip_addresses',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.40.0',
+        providerVersion: '1.41.0',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
