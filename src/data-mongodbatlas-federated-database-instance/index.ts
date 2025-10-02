@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataMongodbatlasFederatedDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#id DataMongodbatlasFederatedDatabaseInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#id DataMongodbatlasFederatedDatabaseInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#name DataMongodbatlasFederatedDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#name DataMongodbatlasFederatedDatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#project_id DataMongodbatlasFederatedDatabaseInstance#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#project_id DataMongodbatlasFederatedDatabaseInstance#project_id}
   */
   readonly projectId: string;
   /**
   * cloud_provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#cloud_provider_config DataMongodbatlasFederatedDatabaseInstance#cloud_provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#cloud_provider_config DataMongodbatlasFederatedDatabaseInstance#cloud_provider_config}
   */
   readonly cloudProviderConfig?: DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig[] | cdktf.IResolvable;
 }
@@ -977,7 +977,7 @@ export class DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAzureLi
 }
 export interface DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#test_s3_bucket DataMongodbatlasFederatedDatabaseInstance#test_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#test_s3_bucket DataMongodbatlasFederatedDatabaseInstance#test_s3_bucket}
   */
   readonly testS3Bucket?: string;
 }
@@ -1115,7 +1115,7 @@ export interface DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig {
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#aws DataMongodbatlasFederatedDatabaseInstance#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#aws DataMongodbatlasFederatedDatabaseInstance#aws}
   */
   readonly aws?: DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws[] | cdktf.IResolvable;
 }
@@ -1237,7 +1237,7 @@ export class DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}
 */
 export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDataSource {
 
@@ -1253,7 +1253,7 @@ export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataMongodbatlasFederatedDatabaseInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasFederatedDatabaseInstance to import
-  * @param importFromId The id of the existing DataMongodbatlasFederatedDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasFederatedDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasFederatedDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1265,7 +1265,7 @@ export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1276,7 +1276,7 @@ export class DataMongodbatlasFederatedDatabaseInstance extends cdktf.TerraformDa
       terraformResourceType: 'mongodbatlas_federated_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.41.0',
+        providerVersion: '1.41.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

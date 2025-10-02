@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/control_plane_ip_addresses
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/control_plane_ip_addresses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -149,7 +149,7 @@ export class DataMongodbatlasControlPlaneIpAddressesOutboundOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses}
 */
 export class DataMongodbatlasControlPlaneIpAddresses extends cdktf.TerraformDataSource {
 
@@ -165,7 +165,7 @@ export class DataMongodbatlasControlPlaneIpAddresses extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataMongodbatlasControlPlaneIpAddresses resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataMongodbatlasControlPlaneIpAddresses to import
-  * @param importFromId The id of the existing DataMongodbatlasControlPlaneIpAddresses that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/control_plane_ip_addresses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataMongodbatlasControlPlaneIpAddresses that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/control_plane_ip_addresses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataMongodbatlasControlPlaneIpAddresses to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -177,7 +177,7 @@ export class DataMongodbatlasControlPlaneIpAddresses extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class DataMongodbatlasControlPlaneIpAddresses extends cdktf.TerraformData
       terraformResourceType: 'mongodbatlas_control_plane_ip_addresses',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.41.0',
+        providerVersion: '1.41.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,

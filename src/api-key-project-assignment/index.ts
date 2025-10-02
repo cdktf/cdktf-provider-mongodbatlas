@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment
+// https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ApiKeyProjectAssignmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Unique 24-hexadecimal digit string that identifies this organization API key that you want to assign to one project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#api_key_id ApiKeyProjectAssignment#api_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#api_key_id ApiKeyProjectAssignment#api_key_id}
   */
   readonly apiKeyId: string;
   /**
@@ -23,19 +23,19 @@ export interface ApiKeyProjectAssignmentConfig extends cdktf.TerraformMetaArgume
   * 
   * **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#project_id ApiKeyProjectAssignment#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#project_id ApiKeyProjectAssignment#project_id}
   */
   readonly projectId: string;
   /**
   * Human-readable label that identifies the collection of privileges that MongoDB Cloud grants a specific API key, MongoDB Cloud user, or MongoDB Cloud team. These roles include only the specific project-level roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#roles ApiKeyProjectAssignment#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#roles ApiKeyProjectAssignment#roles}
   */
   readonly roles: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment mongodbatlas_api_key_project_assignment}
+* Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment mongodbatlas_api_key_project_assignment}
 */
 export class ApiKeyProjectAssignment extends cdktf.TerraformResource {
 
@@ -51,7 +51,7 @@ export class ApiKeyProjectAssignment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiKeyProjectAssignment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiKeyProjectAssignment to import
-  * @param importFromId The id of the existing ApiKeyProjectAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiKeyProjectAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiKeyProjectAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +63,7 @@ export class ApiKeyProjectAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment mongodbatlas_api_key_project_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment mongodbatlas_api_key_project_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class ApiKeyProjectAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'mongodbatlas_api_key_project_assignment',
       terraformGeneratorMetadata: {
         providerName: 'mongodbatlas',
-        providerVersion: '1.41.0',
+        providerVersion: '1.41.1',
         providerVersionConstraint: '~> 1.8'
       },
       provider: config.provider,
