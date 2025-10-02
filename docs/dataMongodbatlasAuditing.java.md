@@ -4,7 +4,7 @@
 
 ### DataMongodbatlasAuditing <a name="DataMongodbatlasAuditing" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing mongodbatlas_auditing}.
+Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing mongodbatlas_auditing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer"></a>
 
@@ -39,8 +39,8 @@ DataMongodbatlasAuditing.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditing.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataMongodbatlasAuditing t
 
 The id of the existing DataMongodbatlasAuditing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,8 +745,8 @@ DataMongodbatlasAuditingConfig.builder()
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}. |
-| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}. |
+| <code><a href="#@cdktf/provider-mongodbatlas.dataMongodbatlasAuditing.DataMongodbatlasAuditingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}. |
 
 ---
 
@@ -828,7 +828,7 @@ public java.lang.String getProjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#project_id DataMongodbatlasAuditing#project_id}.
 
 ---
 
@@ -840,7 +840,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/auditing#id DataMongodbatlasAuditing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
