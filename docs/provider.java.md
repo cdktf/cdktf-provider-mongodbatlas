@@ -13,14 +13,12 @@ import com.hashicorp.cdktf.providers.mongodbatlas.provider.MongodbatlasProvider;
 
 MongodbatlasProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
-//  .assumeRole(IResolvable)
-//  .assumeRole(java.util.List<MongodbatlasProviderAssumeRole>)
+//  .assumeRole(IResolvable|java.util.List<MongodbatlasProviderAssumeRole>)
 //  .awsAccessKeyId(java.lang.String)
 //  .awsSecretAccessKey(java.lang.String)
 //  .awsSessionToken(java.lang.String)
 //  .baseUrl(java.lang.String)
-//  .isMongodbgovCloud(java.lang.Boolean)
-//  .isMongodbgovCloud(IResolvable)
+//  .isMongodbgovCloud(java.lang.Boolean|IResolvable)
 //  .privateKey(java.lang.String)
 //  .publicKey(java.lang.String)
 //  .realmBaseUrl(java.lang.String)
@@ -35,12 +33,12 @@ MongodbatlasProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | assume_role block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | assume_role block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | AWS API Access Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | AWS API Access Secret Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | AWS Security Token Service provided session token. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | MongoDB Atlas Base URL. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | MongoDB Atlas Base URL default to gov. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | MongoDB Atlas Base URL default to gov. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.privateKey">privateKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Private Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.publicKey">publicKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Public Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.realmBaseUrl">realmBaseUrl</a></code> | <code>java.lang.String</code> | MongoDB Realm Base URL. |
@@ -80,7 +78,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.assumeRole"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 assume_role block.
 
@@ -130,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 
 ##### `isMongodbgovCloud`<sup>Optional</sup> <a name="isMongodbgovCloud" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.Initializer.parameter.isMongodbgovCloud"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 MongoDB Atlas Base URL default to gov.
 
@@ -502,24 +500,24 @@ Refer to the {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRoleInput">assumeRoleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsAccessKeyIdInput">awsAccessKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSecretAccessKeyInput">awsSecretAccessKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSessionTokenInput">awsSessionTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.baseUrlInput">baseUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.isMongodbgovCloudInput">isMongodbgovCloudInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.isMongodbgovCloudInput">isMongodbgovCloudInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.privateKeyInput">privateKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.publicKeyInput">publicKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.realmBaseUrlInput">realmBaseUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.secretNameInput">secretNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.stsEndpointInput">stsEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.realmBaseUrl">realmBaseUrl</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -634,10 +632,10 @@ public java.lang.String getAliasInput();
 ##### `assumeRoleInput`<sup>Optional</sup> <a name="assumeRoleInput" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRoleInput"></a>
 
 ```java
-public java.lang.Object getAssumeRoleInput();
+public IResolvable|java.util.List<MongodbatlasProviderAssumeRole> getAssumeRoleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 ---
 
@@ -684,10 +682,10 @@ public java.lang.String getBaseUrlInput();
 ##### `isMongodbgovCloudInput`<sup>Optional</sup> <a name="isMongodbgovCloudInput" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.isMongodbgovCloudInput"></a>
 
 ```java
-public java.lang.Object getIsMongodbgovCloudInput();
+public java.lang.Boolean|IResolvable getIsMongodbgovCloudInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -754,10 +752,10 @@ public java.lang.String getStsEndpointInput();
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.assumeRole"></a>
 
 ```java
-public java.lang.Object getAssumeRole();
+public IResolvable|java.util.List<MongodbatlasProviderAssumeRole> getAssumeRole();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 ---
 
@@ -804,10 +802,10 @@ public java.lang.String getBaseUrl();
 ##### `isMongodbgovCloud`<sup>Optional</sup> <a name="isMongodbgovCloud" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProvider.property.isMongodbgovCloud"></a>
 
 ```java
-public java.lang.Object getIsMongodbgovCloud();
+public java.lang.Boolean|IResolvable getIsMongodbgovCloud();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1064,14 +1062,12 @@ import com.hashicorp.cdktf.providers.mongodbatlas.provider.MongodbatlasProviderC
 
 MongodbatlasProviderConfig.builder()
 //  .alias(java.lang.String)
-//  .assumeRole(IResolvable)
-//  .assumeRole(java.util.List<MongodbatlasProviderAssumeRole>)
+//  .assumeRole(IResolvable|java.util.List<MongodbatlasProviderAssumeRole>)
 //  .awsAccessKeyId(java.lang.String)
 //  .awsSecretAccessKey(java.lang.String)
 //  .awsSessionToken(java.lang.String)
 //  .baseUrl(java.lang.String)
-//  .isMongodbgovCloud(java.lang.Boolean)
-//  .isMongodbgovCloud(IResolvable)
+//  .isMongodbgovCloud(java.lang.Boolean|IResolvable)
 //  .privateKey(java.lang.String)
 //  .publicKey(java.lang.String)
 //  .realmBaseUrl(java.lang.String)
@@ -1086,12 +1082,12 @@ MongodbatlasProviderConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | assume_role block. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole">assumeRole</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>></code> | assume_role block. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsAccessKeyId">awsAccessKeyId</a></code> | <code>java.lang.String</code> | AWS API Access Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSecretAccessKey">awsSecretAccessKey</a></code> | <code>java.lang.String</code> | AWS API Access Secret Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.awsSessionToken">awsSessionToken</a></code> | <code>java.lang.String</code> | AWS Security Token Service provided session token. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | MongoDB Atlas Base URL. |
-| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | MongoDB Atlas Base URL default to gov. |
+| <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.isMongodbgovCloud">isMongodbgovCloud</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | MongoDB Atlas Base URL default to gov. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Private Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | MongoDB Atlas Programmatic Public Key. |
 | <code><a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.realmBaseUrl">realmBaseUrl</a></code> | <code>java.lang.String</code> | MongoDB Realm Base URL. |
@@ -1118,10 +1114,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 ##### `assumeRole`<sup>Optional</sup> <a name="assumeRole" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.assumeRole"></a>
 
 ```java
-public java.lang.Object getAssumeRole();
+public IResolvable|java.util.List<MongodbatlasProviderAssumeRole> getAssumeRole();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderAssumeRole">MongodbatlasProviderAssumeRole</a>>
 
 assume_role block.
 
@@ -1188,10 +1184,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 ##### `isMongodbgovCloud`<sup>Optional</sup> <a name="isMongodbgovCloud" id="@cdktf/provider-mongodbatlas.provider.MongodbatlasProviderConfig.property.isMongodbgovCloud"></a>
 
 ```java
-public java.lang.Object getIsMongodbgovCloud();
+public java.lang.Boolean|IResolvable getIsMongodbgovCloud();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 MongoDB Atlas Base URL default to gov.
 
