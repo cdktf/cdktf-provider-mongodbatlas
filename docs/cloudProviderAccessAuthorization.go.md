@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorization(scope Construct, id *string, config CloudProviderAccessAuthorizationConfig) CloudProviderAccessAuthorization
 ```
@@ -425,7 +425,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.CloudProviderAccessAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.CloudProviderAccessAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ cloudprovideraccessauthorization.CloudProviderAccessAuthorization_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.CloudProviderAccessAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ cloudprovideraccessauthorization.CloudProviderAccessAuthorization_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.CloudProviderAccessAuthorization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 &cloudprovideraccessauthorization.CloudProviderAccessAuthorizationAws {
 	IamAssumedRoleArn: *string,
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 &cloudprovideraccessauthorization.CloudProviderAccessAuthorizationAzure {
 	AtlasAzureAppId: *string,
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 &cloudprovideraccessauthorization.CloudProviderAccessAuthorizationConfig {
 	Connection: interface{},
@@ -961,8 +961,8 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudpro
 	Provisioners: *[]interface{},
 	ProjectId: *string,
 	RoleId: *string,
-	Aws: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAws,
-	Azure: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAzure,
+	Aws: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAws,
+	Azure: github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAzure,
 	Id: *string,
 }
 ```
@@ -1128,7 +1128,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationFeatureUsages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 &cloudprovideraccessauthorization.CloudProviderAccessAuthorizationFeatureUsages {
 
@@ -1141,7 +1141,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudpro
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationGcp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 &cloudprovideraccessauthorization.CloudProviderAccessAuthorizationGcp {
 
@@ -1156,7 +1156,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudpro
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorizationAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudProviderAccessAuthorizationAwsOutputReference
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() CloudProviderAccessAuthorizationAws
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorizationAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudProviderAccessAuthorizationAzureOutputReference
 ```
@@ -1742,7 +1742,7 @@ func InternalValue() CloudProviderAccessAuthorizationAzure
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationFeatureUsagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorizationFeatureUsagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudProviderAccessAuthorizationFeatureUsagesList
 ```
@@ -1891,7 +1891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationFeatureUsagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorizationFeatureUsagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudProviderAccessAuthorizationFeatureUsagesOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() CloudProviderAccessAuthorizationFeatureUsages
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationGcpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorizationGcpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudProviderAccessAuthorizationGcpList
 ```
@@ -2329,7 +2329,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.cloudProviderAccessAuthorization.CloudProviderAccessAuthorizationGcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/cloudprovideraccessauthorization"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudprovideraccessauthorization"
 
 cloudprovideraccessauthorization.NewCloudProviderAccessAuthorizationGcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudProviderAccessAuthorizationGcpOutputReference
 ```
