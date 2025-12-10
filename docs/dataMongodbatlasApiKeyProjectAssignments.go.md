@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.NewDataMongodbatlasApiKeyProjectAssignments(scope Construct, id *string, config DataMongodbatlasApiKeyProjectAssignmentsConfig) DataMongodbatlasApiKeyProjectAssignments
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignment
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignment
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 &datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignmentsConfig {
 	Connection: interface{},
@@ -698,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongo
 #### Initializer <a name="Initializer" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignmentsResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 &datamongodbatlasapikeyprojectassignments.DataMongodbatlasApiKeyProjectAssignmentsResults {
 
@@ -713,7 +713,7 @@ import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodb
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignmentsResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.NewDataMongodbatlasApiKeyProjectAssignmentsResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataMongodbatlasApiKeyProjectAssignmentsResultsList
 ```
@@ -862,7 +862,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-mongodbatlas.dataMongodbatlasApiKeyProjectAssignments.DataMongodbatlasApiKeyProjectAssignmentsResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasapikeyprojectassignments"
+import "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v8/datamongodbatlasapikeyprojectassignments"
 
 datamongodbatlasapikeyprojectassignments.NewDataMongodbatlasApiKeyProjectAssignmentsResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataMongodbatlasApiKeyProjectAssignmentsResultsOutputReference
 ```
